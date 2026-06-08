@@ -1,0 +1,23 @@
+{
+  "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_name": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "platform": "chzzk",
+  "video_no": "12577779",
+  "title": "픽셀 신입 환영회 싱크룸 (w. 핑맨,모라라,김뿡,너불) ٩(●'▿'●)۶",
+  "published_at": "2026-04-04T19:39:16+09:00",
+  "published_date_str": "20260404",
+  "duration_sec": 27452,
+  "platform_category": "음악/노래",
+  "content_judgement": null,
+  "summary_md_path": "vods/12577779/report.md",
+  "summary_html_path": "vods/12577779/report.html",
+  "metadata_json_path": "vods/12577779/metadata.json",
+  "thumbnail_url": null,
+  "search_text": "탬탬버린 | 픽셀 신입 환영회 싱크룸 (w. 핑맨,모라라,김뿡,너불) ٩(●'▿'●)۶ | ⚠ **최종 통합 요약 생성에 실패했습니다.** (실패 청크: 3/3)",
+  "stats": {
+    "total_chats": 45971,
+    "highlight_count": 20
+  },
+  "processed_at": "2026-04-21T03:59:29.075067+09:00"
+}

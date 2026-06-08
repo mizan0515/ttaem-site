@@ -1,0 +1,117 @@
+{
+  "video_no": "12940641",
+  "title": "호종컵 DAY1 (치지직 제작지원)",
+  "channel": "플레임",
+  "channel_id": "8b3e8e3a13201cff0836c69cfab62f45",
+  "streamer_id": "channel-8b3e8e3a13201cff0836c69cfab62f45",
+  "platform": "chzzk",
+  "duration": 29103,
+  "publish_date": "2026-04-27 17:30:46",
+  "category": "리그 오브 레전드",
+  "thumbnail_url": null,
+  "total_chats": 155386,
+  "highlight_count": 20,
+  "highlights": [
+    {
+      "sec": 21040,
+      "composite": 0.9945,
+      "count": 215
+    },
+    {
+      "sec": 8000,
+      "composite": 0.9935,
+      "count": 213
+    },
+    {
+      "sec": 18860,
+      "composite": 0.9921,
+      "count": 214
+    },
+    {
+      "sec": 14730,
+      "composite": 0.9851,
+      "count": 207
+    },
+    {
+      "sec": 12280,
+      "composite": 0.9801,
+      "count": 212
+    },
+    {
+      "sec": 10470,
+      "composite": 0.9775,
+      "count": 210
+    },
+    {
+      "sec": 24000,
+      "composite": 0.9769,
+      "count": 210
+    },
+    {
+      "sec": 19730,
+      "composite": 0.9764,
+      "count": 210
+    },
+    {
+      "sec": 11500,
+      "composite": 0.9603,
+      "count": 207
+    },
+    {
+      "sec": 12100,
+      "composite": 0.9561,
+      "count": 204
+    },
+    {
+      "sec": 12570,
+      "composite": 0.956,
+      "count": 206
+    },
+    {
+      "sec": 14420,
+      "composite": 0.9549,
+      "count": 206
+    },
+    {
+      "sec": 19170,
+      "composite": 0.9544,
+      "count": 205
+    },
+    {
+      "sec": 18410,
+      "composite": 0.9539,
+      "count": 205
+    },
+    {
+      "sec": 19280,
+      "composite": 0.9424,
+      "count": 204
+    },
+    {
+      "sec": 21260,
+      "composite": 0.9387,
+      "count": 202
+    },
+    {
+      "sec": 14810,
+      "composite": 0.9381,
+      "count": 202
+    },
+    {
+      "sec": 3800,
+      "composite": 0.9367,
+      "count": 198
+    },
+    {
+      "sec": 11690,
+      "composite": 0.9364,
+      "count": 203
+    },
+    {
+      "sec": 20000,
+      "composite": 0.9359,
+      "count": 202
+    }
+  ],
+  "processed_at": "2026-05-05T13:43:29.783964+09:00"
+}

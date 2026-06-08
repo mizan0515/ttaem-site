@@ -1,0 +1,7350 @@
+{
+  "video_no": "13600970",
+  "title": "스타2 자유의 날개 어려움일까 보통일까 ٩(●'▿'●)۶",
+  "channel": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+  "platform": "chzzk",
+  "duration": 33981,
+  "publish_date": "2026-06-07 16:36:17",
+  "category": "스타크래프트 II : 자유의 날개",
+  "thumbnail_url": null,
+  "total_chats": 93813,
+  "highlight_count": 26,
+  "highlights": [
+    {
+      "sec": 18280,
+      "composite": 1.0,
+      "count": 202,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_938932685b15",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 18280
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 18280,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 27310,
+      "composite": 1.0,
+      "count": 159,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_453b5647455a",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 27310
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 27310,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 14820,
+      "composite": 1.0,
+      "count": 181,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_2bfd4f2b5391",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 14820
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 14820,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 17030,
+      "composite": 1.0,
+      "count": 147,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_63f32dcf516c",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 17030
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 17030,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 6890,
+      "composite": 1.0,
+      "count": 127,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_b3088471b322",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6890
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 6890,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 10340,
+      "composite": 1.0,
+      "count": 124,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_a2e7cec4653a",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 10340
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 10340,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 28600,
+      "composite": 1.0,
+      "count": 115,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_f7dac83ae918",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 28600
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 28600,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 25080,
+      "composite": 1.0,
+      "count": 111,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_29bc3571f473",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 25080
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 25080,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 10740,
+      "composite": 1.0,
+      "count": 109,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_631090b96c65",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 10740
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 10740,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 15100,
+      "composite": 0.9692,
+      "count": 180,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_00f1095c1648",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 15100
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 16280,
+      "composite": 0.9542,
+      "count": 176,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_a59d8f6aba34",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 16280
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 29270,
+      "composite": 0.9224,
+      "count": 171,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_66a7725391d0",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 29270
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 27408,
+      "composite": 0.8491,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_caeac93b32cf",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 27408
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 27408,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 26972,
+      "composite": 0.8469,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_3318d2fe844e",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 26972
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 26972,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 30852,
+      "composite": 0.8374,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_ab9acee0e38a",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 30852
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 30852,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 25158,
+      "composite": 0.8355,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_3632a58deb13",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 25158
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 25158,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 25292,
+      "composite": 0.8327,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_49995a94c850",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 25292
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 25292,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 26602,
+      "composite": 0.832,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_2e72c072e07b",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 26602
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 26602,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 27232,
+      "composite": 0.8191,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_004b9c253712",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 27232
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 27232,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 33020,
+      "composite": 0.7928,
+      "count": 136,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_0df87d42b512",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 33020
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 22850,
+      "composite": 0.7535,
+      "count": 139,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_bf7bb1e6a9e9",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 22850
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 20940,
+      "composite": 0.6288,
+      "count": 116,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_35309e142140",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 20940
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 31010,
+      "composite": 0.5728,
+      "count": 96,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_5d6ce30c6bce",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 31010
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 21770,
+      "composite": 0.5615,
+      "count": 103,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_edc5be07a513",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 21770
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 26270,
+      "composite": 0.5583,
+      "count": 79,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_d0c18e5a754a",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 26270
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 21410,
+      "composite": 0.5534,
+      "count": 99,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_d0d3e7c7a775",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 21410
+        }
+      ],
+      "risk_flags": []
+    }
+  ],
+  "segment_ledger_schema_version": 1,
+  "segment_ledger": [
+    {
+      "segment_id": "seg_summary_5eb30e2eb57b",
+      "kind": "summary",
+      "section": "summary",
+      "index": 1,
+      "timecode": "",
+      "start_sec": null,
+      "end_sec": null,
+      "title": "스타2 자유의 날개 어려움일까 보통일까 ٩(●'▿'●)۶",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "summary",
+          "fields": [
+            "title",
+            "hashtags",
+            "pull_quote"
+          ]
+        }
+      ],
+      "risk_flags": [],
+      "hashtags": [
+        "스타크래프트",
+        "장로컵",
+        "밈드립"
+      ],
+      "pull_quote": "LCK 장로컵으로 다 타오른 뒤, 자유의 날개에서는 인간애와 호너 호감도까지 시험받은 하루."
+    },
+    {
+      "segment_id": "seg_timeline_deb50f67714b",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 1,
+      "timecode": "00:05:18",
+      "start_sec": 318,
+      "end_sec": null,
+      "title": "골드버린 신고식으로 초반부터 기세 올려버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:05:18"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 318,
+          "role": "proximity_signal",
+          "clip_uid": "rs7G20c4yZ",
+          "title": "탬탬등장",
+          "like_count": 3,
+          "play_count": 498
+        }
+      ],
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "방송 초반 전날 새봄버스를 타고 골드에 올라간 이야기와 탬탬버린을 골드 보내줬다는 근황이 나오며 “골드버린” 흐름이 만들어졌다. 본인 플레이 복기 중 “그냥 쉬워”라고 꺼드럭대는 톤까지 붙어 초반 잡담이 바로 캐릭터화됐다."
+    },
+    {
+      "segment_id": "seg_timeline_adb0f83063ea",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 2,
+      "timecode": "00:22:17",
+      "start_sec": 1337,
+      "end_sec": null,
+      "title": "스타2 전에 kt vs DK 같이보기로 판 깔려버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:22:17"
+        }
+      ],
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "“오늘은 맛있는 경기가 있다”며 kt와 디플러스 기아 경기 같이보기로 넘어갔다. 밴픽과 바텀 구도를 보며 세라핀 라인전, 갱 한 번에 흔들리는 위험성 등을 짚었고, 이후 DK가 바텀 압박으로 1세트 흐름을 강하게 가져갔다."
+    },
+    {
+      "segment_id": "seg_timeline_edfde00ed3e3",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 3,
+      "timecode": "01:54:28",
+      "start_sec": 6868,
+      "end_sec": null,
+      "title": "장로 앞 커즈가 잡히며 2세트가 터져버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:54:28"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"T1식 장로 운영\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 6892.5,
+          "delta_sec": 24,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "kt가 케이틀린 성장으로 버티며 장로 한 방을 노리던 상황에서, 장로 싸움 직전 커즈가 잡히며 정글 공백이 생겼다. 본진 압박과 한타가 꼬인 끝에 디플러스 기아가 2세트를 가져갔고, 경기 후에는 “정작 제대로 된 한타 기회를 받지 못했다”는 아쉬움이 남았다."
+    },
+    {
+      "segment_id": "seg_timeline_e75c72469503",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 4,
+      "timecode": "02:49:43",
+      "start_sec": 10183,
+      "end_sec": null,
+      "title": "루시드 대박 진입을 커즈 4용으로 받아쳐버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "02:49:43"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"커즈 캐넬링, 내가 먹을게\" \"줴줴이야\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "용 싸움 직전 긴 추격전 끝에 루시드가 크게 진입하며 kt가 덮이는 듯했지만, 커즈가 혼전 속에서 드래곤을 챙기며 kt가 4용을 확보했다. 이후 장로 앞 마지막 한타에서 kt가 상대를 정리하며 3세트를 가져갔다."
+    },
+    {
+      "segment_id": "seg_timeline_59995cdb6e05",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 5,
+      "timecode": "03:17:37",
+      "start_sec": 11857,
+      "end_sec": null,
+      "title": "4세트 사이온·유미·잭스 구도가 장기전으로 굳어버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "03:17:37"
+        }
+      ],
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "4세트 밴픽에서는 사이온, 유미 견제, 잭스 선택을 두고 애매한 구도라는 해석이 이어졌다. 경기 중반 kt가 용 앞에 모였지만 빈손으로 돌아가고, 딮기가 용 영혼까지 가져가며 kt는 시비르 후반 수비와 장로 한 방을 바라보는 처지가 됐다."
+    },
+    {
+      "segment_id": "seg_timeline_d08d7cd4b5eb",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 6,
+      "timecode": "04:05:47",
+      "start_sec": 14747,
+      "end_sec": null,
+      "title": "kt가 장로 먹고 4세트 세계선을 비틀어버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "04:05:47"
+        }
+      ],
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "장로 앞 대치에서 kt가 장로를 확보한 뒤 한타를 뒤집었고, 아리의 플레이와 잭스 차단이 결정적으로 언급됐다. 이어 관문 변수에 “저게 되네?”라는 반응까지 터지며, kt는 15분을 참아낸 끝에 4세트를 가져갔다."
+    },
+    {
+      "segment_id": "seg_timeline_74b976b4d91a",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 7,
+      "timecode": "04:26:21",
+      "start_sec": 15981,
+      "end_sec": null,
+      "title": "5세트 밴픽 장고 끝에 에포트 블리츠가 판을 흔들어버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "04:26:21"
+        }
+      ],
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "최종전 밴픽에서는 요릭, 뽀삐, 아칼리, 카이사 금지령까지 복잡하게 얽혔고, 긴 고민 끝에 5세트 조합이 완성됐다. 초반에는 에포트의 블리츠가 그랩을 연속으로 맞히며 픽의 의미를 보여줬지만, kt는 라인전 주도권이 밀리며 위험한 출발을 했다."
+    },
+    {
+      "segment_id": "seg_timeline_66cd45991b17",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 8,
+      "timecode": "05:04:41",
+      "start_sec": 18281,
+      "end_sec": null,
+      "title": "장로 앞 시야전 한 번에 5세트가 뒤집혀버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "05:04:41"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"장어게인\" \"역대급 장로컵\""
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 18281,
+          "role": "proximity_signal",
+          "clip_uid": "rUUI7Dy6dB",
+          "title": "장로 존나 잘먹네 ㅋㅋㅋㅋㅋ",
+          "like_count": 5,
+          "play_count": 702
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 18287.5,
+          "delta_sec": 6,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "시청자 클립 지점에서 장로 앞 마오카이 궁, 포킹, 시야 싸움이 겹치며 최종 분기점이 열렸다. 이후 라인 정리가 되지 않자 엔딩 분위기가 급변했고, 장로 싸움으로 게임이 뒤집히며 “장로무비”가 완성됐다."
+    },
+    {
+      "segment_id": "seg_timeline_8648485bf912",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 9,
+      "timecode": "05:20:36",
+      "start_sec": 19236,
+      "end_sec": null,
+      "title": "에포트 인터뷰로 긴 LCK 감정선이 정리돼버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "05:20:36"
+        }
+      ],
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "에포트는 1, 2세트 패배 후 3세트 시작 때 눈물이 날 뻔했다고 털어놨고, 마지막 세트 블리츠크랭크는 후회 없이 해보자는 마음으로 꺼낸 자신 있는 픽이었다고 말했다. 이후 방송은 LCK를 마무리하고 스타크래프트2 캠페인으로 넘어갔다."
+    },
+    {
+      "segment_id": "seg_timeline_42aa4516ac74",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 10,
+      "timecode": "05:33:35",
+      "start_sec": 20015,
+      "end_sec": null,
+      "title": "프로토스 연구 찍자마자 수비 미션에 털려버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "05:33:35"
+        }
+      ],
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "스타2로 전환한 뒤 프로토스 연구와 수비 미션에 들어갔고, “보호막이 제일 좋은 건가?”라며 업그레이드를 고민했다. 곧 자원난과 동선 문제에 부딪히자 “가스가 부족해버려!”, “괜찮아, 할만해”를 오가며 난이도 체감이 시작됐다."
+    },
+    {
+      "segment_id": "seg_timeline_fe294f8589e0",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 11,
+      "timecode": "06:18:19",
+      "start_sec": 22699,
+      "end_sec": null,
+      "title": "제라툴 걸어오라더니 본진이 불타버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "06:18:19"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"어디가\" \"엘리당한다\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "제라툴을 목표 지점까지 직접 이동시켜야 한다는 사실을 깨닫고 “저기에 있는 거를 여기까지 걸어오라고?”라며 당황했다. 본진이 흔들리는 와중에도 핵심 조건은 제라툴 생존이라는 결론을 내리고, “본진이 터지든 말든 무슨 상관인데?” 식으로 클리어만 밀어붙였다."
+    },
+    {
+      "segment_id": "seg_timeline_92004bd610ff",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 12,
+      "timecode": "06:34:34",
+      "start_sec": 23674,
+      "end_sec": null,
+      "title": "프로토스 최후 방어전에서 져야 끝나는 구조를 못 받아들임",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "06:34:34"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"쉽노\" \"님 집 불타요\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "아이어 최후 방어전에서는 초반에 “이거 별거 없노”라며 여유를 보였지만, 미션이 사실상 버티다 무너지는 구조임을 뒤늦게 눈치챘다. 혼종과 저그가 몰려오자 “내가 언제 질 수 있지?”, “내가 왜 져야 하지?”라고 말하며 강제 패배 구조에 끝까지 저항했다."
+    },
+    {
+      "segment_id": "seg_timeline_b654b01e7b55",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 13,
+      "timecode": "07:17:11",
+      "start_sec": 26231,
+      "end_sec": null,
+      "title": "노바보다 상담사 토시 믿고 뉴 폴섬으로 가버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "07:17:11"
+        }
+      ],
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "유령과 악령 선택지에서 성능보다 함께한 정과 신뢰가 기준이 됐고, 결국 토시 편을 들었다. 뉴 폴섬 미션에서는 은폐 잠입을 하다가도 “일단 부숴” 식 정면돌파로 흘러가며, 토시를 앞세운 우직한 악령 운영이 웃음 포인트가 됐다."
+    },
+    {
+      "segment_id": "seg_timeline_f98f7fff62ca",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 14,
+      "timecode": "07:51:30",
+      "start_sec": 28290,
+      "end_sec": null,
+      "title": "호너 강약약강 논쟁으로 호동생들 난리남",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "07:51:30"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"호너맘\" \"호동생\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "뉴 폴섬 탈옥 후 호너가 타이커스에게는 꼽을 주면서 토시 앞에서는 조용한 듯 보인다고 해석하며 “강약약강” 비판이 시작됐다. 채팅의 호너 옹호 반응이 커지자 “내 방에 호너만 왜 이렇게 많아?”라며 받아쳤고, 호너맘과 호동생 구도가 밈·드립처럼 번졌다."
+    },
+    {
+      "segment_id": "seg_timeline_dd131143b7f7",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 15,
+      "timecode": "08:06:24",
+      "start_sec": 29184,
+      "end_sec": null,
+      "title": "헤이븐 선택지에서 윤리보다 연구 점수부터 계산해버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "08:06:24"
+        }
+      ],
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "셀렌디스가 헤이븐을 정화하겠다고 통보하고 헨슨은 치료제를 찾겠다며 도움을 요청하자, 선택지는 곧 윤리보다 연구 점수와 호감도 계산으로 샜다. 방송인은 “사람들의 목숨을 생각은 전혀 안 하고” 있다고 스스로 인정하면서도, 결국 인류뽕과 “인간인 척” 논리로 헨슨 루트를 골랐다."
+    },
+    {
+      "segment_id": "seg_timeline_3f06c8d57017",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 16,
+      "timecode": "08:35:35",
+      "start_sec": 30935,
+      "end_sec": null,
+      "title": "헨슨 루트 결과 보고 ‘성추행슨’까지 가버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "08:35:35"
+        }
+      ],
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "헤이븐 방어 후 방송인은 많이 구하지 못한 점을 “프로토스가 너무 세서 못했구나”라고 자기합리화했다. 하지만 컷신에서 헨슨의 포옹에 “이거 추행이야!”라며 격하게 반응했고, 반대 세계선까지 확인한 뒤 감염 루트의 헨슨이 더 안타까운 희생자로 남는다고 평가했다."
+    },
+    {
+      "segment_id": "seg_timeline_658ecb71073b",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 17,
+      "timecode": "09:16:30",
+      "start_sec": 33390,
+      "end_sec": null,
+      "title": "호너 호감도 해명하다가 이해도까지 올라가버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "09:16:30"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 33390,
+          "role": "proximity_signal",
+          "clip_uid": "vFaptlupWc",
+          "title": "호혐 입장정리",
+          "like_count": 6,
+          "play_count": 678
+        }
+      ],
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "시청자 클립 지점에서 방송인은 호너에 대한 기본 호감도가 “보통보다 낮다”고 솔직히 밝히면서도, 호너를 조금만 꼬집어도 달려드는 반응 때문에 감정이 복잡해졌다고 설명했다. 이후 호너가 레이너를 지키려는 진심으로 타이커스를 경계한다고 다시 해석하며 “호너라는 사람에 대한 이해도가 좀 올라간 것 같다”고 정리했다."
+    },
+    {
+      "segment_id": "seg_timeline_b50479e130b5",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 18,
+      "timecode": "09:24:32",
+      "start_sec": 33872,
+      "end_sec": null,
+      "title": "자유의 날개 진행도 확인하고 다음 방송으로 넘겨버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "09:24:32"
+        }
+      ],
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "방송 말미에는 자유의 날개 진행도가 어느 정도인지 확인하고, 월요일 휴방 가능성과 화요일 합방 일정을 이야기했다. 후원, 구독, 채팅에 감사 인사를 전하며 긴 LCK 관전과 스타2 캠페인 방송을 마무리했다."
+    },
+    {
+      "segment_id": "seg_highlight_a70ed1dd5046",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 1,
+      "timecode": "00:04:18~00:08:32",
+      "start_sec": 258,
+      "end_sec": 512,
+      "title": "골드버린 신고식과 “그냥 쉬워” 꺼드럭",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "00:04:18~00:08:32"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "방송 초반 근황 토크가 바로 캐릭터 밈·드립으로 굳어지는 구간이라 도입 클립으로 쓰기 좋다."
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 318,
+          "role": "proximity_signal",
+          "clip_uid": "rs7G20c4yZ",
+          "title": "탬탬등장",
+          "like_count": 3,
+          "play_count": 498
+        }
+      ],
+      "risk_flags": [],
+      "reason": "방송 초반 근황 토크가 바로 캐릭터 밈·드립으로 굳어지는 구간이라 도입 클립으로 쓰기 좋다."
+    },
+    {
+      "segment_id": "seg_highlight_4a41563c3b1c",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 2,
+      "timecode": "04:05:47~04:08:52",
+      "start_sec": 14747,
+      "end_sec": 14932,
+      "title": "kt 4세트 장로 역전과 “저게 되네?” 리액션",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "04:05:47~04:08:52"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "장기전 끝에 장로 한 번으로 세계선이 뒤집히는 장면이라 경기 클러치와 리액션이 동시에 살아난다."
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 14822.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "장기전 끝에 장로 한 번으로 세계선이 뒤집히는 장면이라 경기 클러치와 리액션이 동시에 살아난다."
+    },
+    {
+      "segment_id": "seg_highlight_c58207ae768e",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 3,
+      "timecode": "05:04:11~05:06:25",
+      "start_sec": 18251,
+      "end_sec": 18385,
+      "title": "5세트 장로 앞 시야전에서 장로무비 완성",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "05:04:11~05:06:25"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "시청자 클립 지점이 포함된 최종 분기점으로, 시야전·라인 정리 실패·장로 역전이 짧은 시간 안에 몰려 있다."
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 18281,
+          "role": "proximity_signal",
+          "clip_uid": "rUUI7Dy6dB",
+          "title": "장로 존나 잘먹네 ㅋㅋㅋㅋㅋ",
+          "like_count": 5,
+          "play_count": 702
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 18287.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "시청자 클립 지점이 포함된 최종 분기점으로, 시야전·라인 정리 실패·장로 역전이 짧은 시간 안에 몰려 있다."
+    },
+    {
+      "segment_id": "seg_highlight_c760c41fa4b6",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 4,
+      "timecode": "08:06:24~08:16:32",
+      "start_sec": 29184,
+      "end_sec": 29792,
+      "title": "헤이븐 선택지에서 인간인 척하기로 결심",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "08:06:24~08:16:32"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "윤리 선택지가 연구 점수와 호감도 계산으로 새다가 인류뽕으로 수습되는 흐름이 탬탬버린식 선택지 리액션을 잘 보여준다."
+        }
+      ],
+      "risk_flags": [],
+      "reason": "윤리 선택지가 연구 점수와 호감도 계산으로 새다가 인류뽕으로 수습되는 흐름이 탬탬버린식 선택지 리액션을 잘 보여준다."
+    },
+    {
+      "segment_id": "seg_highlight_89c637eaee28",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 5,
+      "timecode": "09:15:14~09:20:35",
+      "start_sec": 33314,
+      "end_sec": 33635,
+      "title": "호너 호감도 해명에서 호너 이해도 상승까지",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "09:15:14~09:20:35"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "시청자 클립 지점이 포함된 캐릭터 해석 토크로, 호동생 반응과 방송인의 재평가가 한 번에 정리된다."
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 33390,
+          "role": "proximity_signal",
+          "clip_uid": "vFaptlupWc",
+          "title": "호혐 입장정리",
+          "like_count": 6,
+          "play_count": 678
+        }
+      ],
+      "risk_flags": [],
+      "reason": "시청자 클립 지점이 포함된 캐릭터 해석 토크로, 호동생 반응과 방송인의 재평가가 한 번에 정리된다."
+    },
+    {
+      "segment_id": "seg_chapter_8b7c45cf6cea",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 1,
+      "timecode": "00:05:18",
+      "start_sec": 318,
+      "end_sec": null,
+      "title": "골드버린 근황 토크 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:05:18"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 318,
+          "role": "proximity_signal",
+          "clip_uid": "rs7G20c4yZ",
+          "title": "탬탬등장",
+          "like_count": 3,
+          "play_count": 498
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_394fa100d2c0",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 2,
+      "timecode": "00:22:17",
+      "start_sec": 1337,
+      "end_sec": null,
+      "title": "kt vs DK 같이보기 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:22:17"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_bb4f65f3da59",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 3,
+      "timecode": "01:54:28",
+      "start_sec": 6868,
+      "end_sec": null,
+      "title": "kt vs DK 2세트 장로전 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:54:28"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 6892.5,
+          "delta_sec": 24,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_c5aa642e884d",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 4,
+      "timecode": "02:49:43",
+      "start_sec": 10183,
+      "end_sec": null,
+      "title": "kt vs DK 3세트 용 싸움 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "02:49:43"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_d1cfd92c5ae9",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 5,
+      "timecode": "03:17:37",
+      "start_sec": 11857,
+      "end_sec": null,
+      "title": "kt vs DK 4세트 밴픽 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "03:17:37"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_410dce0c9146",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 6,
+      "timecode": "04:05:47",
+      "start_sec": 14747,
+      "end_sec": null,
+      "title": "kt vs DK 4세트 장로전 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "04:05:47"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_48ca57dcec84",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 7,
+      "timecode": "04:26:21",
+      "start_sec": 15981,
+      "end_sec": null,
+      "title": "kt vs DK 5세트 밴픽 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "04:26:21"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_64d826d8f2a9",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 8,
+      "timecode": "05:04:41",
+      "start_sec": 18281,
+      "end_sec": null,
+      "title": "kt vs DK 5세트 장로전 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "05:04:41"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 18281,
+          "role": "proximity_signal",
+          "clip_uid": "rUUI7Dy6dB",
+          "title": "장로 존나 잘먹네 ㅋㅋㅋㅋㅋ",
+          "like_count": 5,
+          "play_count": 702
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 18287.5,
+          "delta_sec": 6,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_b12d751ab2d3",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 9,
+      "timecode": "05:20:36",
+      "start_sec": 19236,
+      "end_sec": null,
+      "title": "에포트 인터뷰 보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "05:20:36"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_10aa7fb908ea",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 10,
+      "timecode": "05:33:35",
+      "start_sec": 20015,
+      "end_sec": null,
+      "title": "스타2 자유의 날개 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "05:33:35"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_e19c94f0f735",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 11,
+      "timecode": "06:18:19",
+      "start_sec": 22699,
+      "end_sec": null,
+      "title": "제라툴 이동 미션 도전",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "06:18:19"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_eafb671189c0",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 12,
+      "timecode": "06:34:34",
+      "start_sec": 23674,
+      "end_sec": null,
+      "title": "아이어 최후 방어전 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "06:34:34"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_9b30e33b23d5",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 13,
+      "timecode": "07:17:11",
+      "start_sec": 26231,
+      "end_sec": null,
+      "title": "뉴 폴섬 토시 루트 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "07:17:11"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_23d71424f991",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 14,
+      "timecode": "07:51:30",
+      "start_sec": 28290,
+      "end_sec": null,
+      "title": "호너 논쟁 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "07:51:30"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_0ee39b700aa1",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 15,
+      "timecode": "08:06:24",
+      "start_sec": 29184,
+      "end_sec": null,
+      "title": "헤이븐 선택지 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "08:06:24"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_cd25c0f33097",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 16,
+      "timecode": "08:35:35",
+      "start_sec": 30935,
+      "end_sec": null,
+      "title": "헨슨 루트 결과 보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "08:35:35"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_5e5948368c3e",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 17,
+      "timecode": "09:16:30",
+      "start_sec": 33390,
+      "end_sec": null,
+      "title": "호너 호감도 정리",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "09:16:30"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 33390,
+          "role": "proximity_signal",
+          "clip_uid": "vFaptlupWc",
+          "title": "호혐 입장정리",
+          "like_count": 6,
+          "play_count": 678
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_b1d14a5a0de7",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 18,
+      "timecode": "09:24:32",
+      "start_sec": 33872,
+      "end_sec": null,
+      "title": "자유의 날개 진행도 확인",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "09:24:32"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_highlight_candidate_938932685b15",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 1,
+      "timecode": "05:04:40",
+      "start_sec": 18280,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 18280
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 18280,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 18280,
+      "composite": 1.0,
+      "count": 202
+    },
+    {
+      "segment_id": "seg_highlight_candidate_453b5647455a",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 2,
+      "timecode": "07:35:10",
+      "start_sec": 27310,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 27310
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 27310,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 27310,
+      "composite": 1.0,
+      "count": 159
+    },
+    {
+      "segment_id": "seg_highlight_candidate_2bfd4f2b5391",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 3,
+      "timecode": "04:07:00",
+      "start_sec": 14820,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 14820
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 14820,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 14820,
+      "composite": 1.0,
+      "count": 181
+    },
+    {
+      "segment_id": "seg_highlight_candidate_63f32dcf516c",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 4,
+      "timecode": "04:43:50",
+      "start_sec": 17030,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 17030
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 17030,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 17030,
+      "composite": 1.0,
+      "count": 147
+    },
+    {
+      "segment_id": "seg_highlight_candidate_b3088471b322",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 5,
+      "timecode": "01:54:50",
+      "start_sec": 6890,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6890
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 6890,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 6890,
+      "composite": 1.0,
+      "count": 127
+    },
+    {
+      "segment_id": "seg_highlight_candidate_a2e7cec4653a",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 6,
+      "timecode": "02:52:20",
+      "start_sec": 10340,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 10340
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 10340,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 10340,
+      "composite": 1.0,
+      "count": 124
+    },
+    {
+      "segment_id": "seg_highlight_candidate_f7dac83ae918",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 7,
+      "timecode": "07:56:40",
+      "start_sec": 28600,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 28600
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 28600,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 28600,
+      "composite": 1.0,
+      "count": 115
+    },
+    {
+      "segment_id": "seg_highlight_candidate_29bc3571f473",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 8,
+      "timecode": "06:58:00",
+      "start_sec": 25080,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 25080
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 25080,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 25080,
+      "composite": 1.0,
+      "count": 111
+    },
+    {
+      "segment_id": "seg_highlight_candidate_631090b96c65",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 9,
+      "timecode": "02:59:00",
+      "start_sec": 10740,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 10740
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 10740,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 10740,
+      "composite": 1.0,
+      "count": 109
+    },
+    {
+      "segment_id": "seg_highlight_candidate_00f1095c1648",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 10,
+      "timecode": "04:11:40",
+      "start_sec": 15100,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 15100
+        }
+      ],
+      "risk_flags": [],
+      "sec": 15100,
+      "composite": 0.9692,
+      "count": 180
+    },
+    {
+      "segment_id": "seg_highlight_candidate_a59d8f6aba34",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 11,
+      "timecode": "04:31:20",
+      "start_sec": 16280,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 16280
+        }
+      ],
+      "risk_flags": [],
+      "sec": 16280,
+      "composite": 0.9542,
+      "count": 176
+    },
+    {
+      "segment_id": "seg_highlight_candidate_66a7725391d0",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 12,
+      "timecode": "08:07:50",
+      "start_sec": 29270,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 29270
+        }
+      ],
+      "risk_flags": [],
+      "sec": 29270,
+      "composite": 0.9224,
+      "count": 171
+    },
+    {
+      "segment_id": "seg_highlight_candidate_caeac93b32cf",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 13,
+      "timecode": "07:36:48",
+      "start_sec": 27408,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 27408
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 27408,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 27408,
+      "composite": 0.8491,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_3318d2fe844e",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 14,
+      "timecode": "07:29:32",
+      "start_sec": 26972,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 26972
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 26972,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 26972,
+      "composite": 0.8469,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_ab9acee0e38a",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 15,
+      "timecode": "08:34:12",
+      "start_sec": 30852,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 30852
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 30852,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 30852,
+      "composite": 0.8374,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_3632a58deb13",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 16,
+      "timecode": "06:59:18",
+      "start_sec": 25158,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 25158
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 25158,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 25158,
+      "composite": 0.8355,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_49995a94c850",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 17,
+      "timecode": "07:01:32",
+      "start_sec": 25292,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 25292
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 25292,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 25292,
+      "composite": 0.8327,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_2e72c072e07b",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 18,
+      "timecode": "07:23:22",
+      "start_sec": 26602,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 26602
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 26602,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 26602,
+      "composite": 0.832,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_004b9c253712",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 19,
+      "timecode": "07:33:52",
+      "start_sec": 27232,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 27232
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 27232,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 27232,
+      "composite": 0.8191,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_0df87d42b512",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 20,
+      "timecode": "09:10:20",
+      "start_sec": 33020,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 33020
+        }
+      ],
+      "risk_flags": [],
+      "sec": 33020,
+      "composite": 0.7928,
+      "count": 136
+    },
+    {
+      "segment_id": "seg_highlight_candidate_bf7bb1e6a9e9",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 21,
+      "timecode": "06:20:50",
+      "start_sec": 22850,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 22850
+        }
+      ],
+      "risk_flags": [],
+      "sec": 22850,
+      "composite": 0.7535,
+      "count": 139
+    },
+    {
+      "segment_id": "seg_highlight_candidate_35309e142140",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 22,
+      "timecode": "05:49:00",
+      "start_sec": 20940,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 20940
+        }
+      ],
+      "risk_flags": [],
+      "sec": 20940,
+      "composite": 0.6288,
+      "count": 116
+    },
+    {
+      "segment_id": "seg_highlight_candidate_5d6ce30c6bce",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 23,
+      "timecode": "08:36:50",
+      "start_sec": 31010,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 31010
+        }
+      ],
+      "risk_flags": [],
+      "sec": 31010,
+      "composite": 0.5728,
+      "count": 96
+    },
+    {
+      "segment_id": "seg_highlight_candidate_edc5be07a513",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 24,
+      "timecode": "06:02:50",
+      "start_sec": 21770,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 21770
+        }
+      ],
+      "risk_flags": [],
+      "sec": 21770,
+      "composite": 0.5615,
+      "count": 103
+    },
+    {
+      "segment_id": "seg_highlight_candidate_d0c18e5a754a",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 25,
+      "timecode": "07:17:50",
+      "start_sec": 26270,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 26270
+        }
+      ],
+      "risk_flags": [],
+      "sec": 26270,
+      "composite": 0.5583,
+      "count": 79
+    },
+    {
+      "segment_id": "seg_highlight_candidate_d0d3e7c7a775",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 26,
+      "timecode": "05:56:50",
+      "start_sec": 21410,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 21410
+        }
+      ],
+      "risk_flags": [],
+      "sec": 21410,
+      "composite": 0.5534,
+      "count": 99
+    }
+  ],
+  "processed_at": "2026-06-08T12:46:12.670725+09:00",
+  "evidence_verifier": {
+    "schema_version": "evidence_verifier.v1",
+    "status": "fail",
+    "summary": {
+      "checked_segments": 41,
+      "failure_count": 1,
+      "warning_count": 0
+    },
+    "findings": [
+      {
+        "code": "CHAPTER_READINESS_FAIL",
+        "severity": "error",
+        "message": "chapter readiness validator reported fail",
+        "source_fields": [
+          "chapter_readiness"
+        ],
+        "detail": {
+          "status": "fail",
+          "failure_reasons": []
+        }
+      }
+    ]
+  },
+  "summary_input_readiness": {
+    "schema_version": "summary_input_readiness.v1",
+    "status": "ready_with_gaps",
+    "quality_claim": "not_evaluated",
+    "items": [
+      {
+        "key": "srt",
+        "name": "자막 SRT",
+        "required": true,
+        "status": "present",
+        "reason": "요약 청크 입력으로 사용할 SRT가 있습니다.",
+        "retry_condition": "transcribe 단계가 SRT를 생성한 뒤 다시 요약합니다.",
+        "detail": {
+          "filename": "13600970_스타2 자유의 날개 어려움일까 보통일까 ٩(●'▿'●)۶_144p.srt",
+          "size_bytes": 482608
+        }
+      },
+      {
+        "key": "chat",
+        "name": "채팅",
+        "required": false,
+        "status": "present",
+        "reason": "채팅 신호가 요약 후보에 반영됩니다.",
+        "retry_condition": "채팅 수집이 VOD 끝까지 성공한 뒤 다시 요약합니다.",
+        "detail": {
+          "message_count": 93813,
+          "first_message_sec": 0.0,
+          "latest_message_sec": 33966.969,
+          "latest_message_hms": "09:26:06",
+          "expected_duration_sec": 33981.0,
+          "expected_duration_hms": "09:26:21",
+          "coverage_ratio": 0.9996,
+          "coverage_gap_sec": 14.031
+        }
+      },
+      {
+        "key": "community",
+        "name": "커뮤니티",
+        "required": false,
+        "status": "present",
+        "reason": "방송 외부 반응 후보가 있습니다.",
+        "retry_condition": "커뮤니티 수집 또는 수동 입력 뒤 다시 요약합니다.",
+        "detail": {
+          "post_count": 17
+        }
+      },
+      {
+        "key": "context_doc",
+        "name": "VOD 배경 맥락",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "관리자 배경 맥락 없이 요약합니다.",
+        "retry_condition": "work/<video_no>/<video_no>_context.md 작성 뒤 다시 요약합니다.",
+        "detail": {
+          "char_count": 0
+        }
+      },
+      {
+        "key": "timeline_comments",
+        "name": "시청자 시간표 댓글",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "자동 수집 가능한 시청자 시간표 댓글 없이 요약합니다.",
+        "retry_condition": "요약 직전 자동 댓글 수집을 다시 실행합니다. 브라우저 로그인/프로필 잠금 문제일 때만 work/<video_no>/<video_no>_timeline_comments.md 수동 fallback 을 사용합니다.",
+        "detail": {
+          "char_count": 0,
+          "timed_line_count": 0
+        }
+      },
+      {
+        "key": "streamer_vocab",
+        "name": "스트리머 어휘/lexicon",
+        "required": false,
+        "status": "present",
+        "reason": "고유명사/별명 보정 후보가 있습니다.",
+        "retry_condition": "streamer_vocab 저장 또는 lexicon 빌드 뒤 다시 요약합니다.",
+        "detail": {
+          "term_count": 30
+        }
+      },
+      {
+        "key": "manager_edit_lessons",
+        "name": "관리자 수정 사례",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "이전 수정 사례 없이 요약합니다.",
+        "retry_condition": "관리자 저장 이력이 쌓인 뒤 다시 요약합니다.",
+        "detail": {
+          "lesson_count": 0
+        }
+      },
+      {
+        "key": "streamer_recent_context",
+        "name": "최근 공개 맥락",
+        "required": false,
+        "status": "partial",
+        "reason": "일부 공개 맥락 후보가 요약 보조 입력으로 반영됩니다.",
+        "retry_condition": "streamer_recent_context_enabled=true 후 공개 소스 수집을 다시 실행합니다. 실패해도 요약은 계속 진행됩니다.",
+        "detail": {
+          "item_count": 7,
+          "source_count": 2,
+          "sources": [
+            "fmkorea",
+            "chzzk_public"
+          ],
+          "diagnostic_status_counts": {
+            "failed_open": 1,
+            "ok": 2
+          }
+        }
+      },
+      {
+        "key": "user_clips",
+        "name": "시청자 클립",
+        "required": false,
+        "status": "present",
+        "reason": "시청자 클립 anchor 후보가 있습니다.",
+        "retry_condition": "viewer clip 수집/anchor 회수 뒤 다시 요약합니다.",
+        "detail": {
+          "total": 15,
+          "with_offset": 15,
+          "with_engagement": 15,
+          "status": "ok"
+        }
+      },
+      {
+        "key": "audio_peaks",
+        "name": "오디오 반응 피크",
+        "required": false,
+        "status": "present",
+        "reason": "오디오 반응 분석 결과가 있습니다.",
+        "retry_condition": "audio reaction 분석이 성공한 뒤 다시 요약합니다.",
+        "detail": {
+          "peak_count": 20,
+          "status": "available"
+        }
+      },
+      {
+        "key": "source_manifest",
+        "name": "요약 입력 manifest",
+        "required": true,
+        "status": "present",
+        "reason": "요약 입력 manifest가 계산되어 cache/재현성 기준이 있습니다.",
+        "retry_condition": "요약 cache manifest 계산 후 다시 확인합니다.",
+        "detail": {
+          "schema_version": 9,
+          "manifest_key_count": 22,
+          "has_summary_hash": false
+        }
+      },
+      {
+        "key": "segment_ledger",
+        "name": "segment/evidence ledger",
+        "required": false,
+        "status": "present",
+        "reason": "렌더링된 리포트의 segment ledger가 있습니다.",
+        "retry_condition": "summary Markdown parser/metadata generation을 확인한 뒤 다시 렌더링합니다.",
+        "detail": {
+          "segment_count": 68,
+          "kind_counts": {
+            "chapter": 18,
+            "highlight": 5,
+            "highlight_candidate": 26,
+            "summary": 1,
+            "timeline": 18
+          }
+        }
+      }
+    ]
+  },
+  "audio_waveform": {
+    "schema_version": "audio_waveform.v1",
+    "source": "audio_loudness_windows",
+    "sample_count": 720,
+    "max_points": 720,
+    "duration_sec": 33981.0,
+    "channels": "mono_mixed",
+    "unit": "relative_loudness_normalized_0_1",
+    "privacy_class": "public_safe",
+    "decision_rule": "waveform is timeline context only; it does not prove highlight importance",
+    "samples": [
+      {
+        "start_sec": 0.0,
+        "end_sec": 45.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 45.0,
+        "end_sec": 90.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 90.0,
+        "end_sec": 140.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 140.0,
+        "end_sec": 185.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 185.0,
+        "end_sec": 235.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 235.0,
+        "end_sec": 280.0,
+        "value": 0.1286
+      },
+      {
+        "start_sec": 280.0,
+        "end_sec": 330.0,
+        "value": 0.0947
+      },
+      {
+        "start_sec": 330.0,
+        "end_sec": 375.0,
+        "value": 0.4014
+      },
+      {
+        "start_sec": 375.0,
+        "end_sec": 420.0,
+        "value": 0.5175
+      },
+      {
+        "start_sec": 420.0,
+        "end_sec": 470.0,
+        "value": 0.5374
+      },
+      {
+        "start_sec": 470.0,
+        "end_sec": 515.0,
+        "value": 0.4927
+      },
+      {
+        "start_sec": 515.0,
+        "end_sec": 565.0,
+        "value": 0.6415
+      },
+      {
+        "start_sec": 565.0,
+        "end_sec": 610.0,
+        "value": 0.6011
+      },
+      {
+        "start_sec": 610.0,
+        "end_sec": 660.0,
+        "value": 0.6126
+      },
+      {
+        "start_sec": 660.0,
+        "end_sec": 705.0,
+        "value": 0.6108
+      },
+      {
+        "start_sec": 705.0,
+        "end_sec": 755.0,
+        "value": 0.628
+      },
+      {
+        "start_sec": 755.0,
+        "end_sec": 800.0,
+        "value": 0.5878
+      },
+      {
+        "start_sec": 800.0,
+        "end_sec": 845.0,
+        "value": 0.4566
+      },
+      {
+        "start_sec": 845.0,
+        "end_sec": 895.0,
+        "value": 0.6248
+      },
+      {
+        "start_sec": 895.0,
+        "end_sec": 940.0,
+        "value": 0.3491
+      },
+      {
+        "start_sec": 940.0,
+        "end_sec": 990.0,
+        "value": 0.4722
+      },
+      {
+        "start_sec": 990.0,
+        "end_sec": 1035.0,
+        "value": 0.6312
+      },
+      {
+        "start_sec": 1035.0,
+        "end_sec": 1085.0,
+        "value": 0.6623
+      },
+      {
+        "start_sec": 1085.0,
+        "end_sec": 1130.0,
+        "value": 0.6236
+      },
+      {
+        "start_sec": 1130.0,
+        "end_sec": 1180.0,
+        "value": 0.5408
+      },
+      {
+        "start_sec": 1180.0,
+        "end_sec": 1225.0,
+        "value": 0.6038
+      },
+      {
+        "start_sec": 1225.0,
+        "end_sec": 1270.0,
+        "value": 0.612
+      },
+      {
+        "start_sec": 1270.0,
+        "end_sec": 1320.0,
+        "value": 0.7057
+      },
+      {
+        "start_sec": 1320.0,
+        "end_sec": 1365.0,
+        "value": 0.4641
+      },
+      {
+        "start_sec": 1365.0,
+        "end_sec": 1415.0,
+        "value": 0.3401
+      },
+      {
+        "start_sec": 1415.0,
+        "end_sec": 1460.0,
+        "value": 0.5986
+      },
+      {
+        "start_sec": 1460.0,
+        "end_sec": 1510.0,
+        "value": 0.6476
+      },
+      {
+        "start_sec": 1510.0,
+        "end_sec": 1555.0,
+        "value": 0.7079
+      },
+      {
+        "start_sec": 1555.0,
+        "end_sec": 1600.0,
+        "value": 0.661
+      },
+      {
+        "start_sec": 1600.0,
+        "end_sec": 1650.0,
+        "value": 0.6595
+      },
+      {
+        "start_sec": 1650.0,
+        "end_sec": 1695.0,
+        "value": 0.6762
+      },
+      {
+        "start_sec": 1695.0,
+        "end_sec": 1745.0,
+        "value": 0.6239
+      },
+      {
+        "start_sec": 1745.0,
+        "end_sec": 1790.0,
+        "value": 0.6496
+      },
+      {
+        "start_sec": 1790.0,
+        "end_sec": 1840.0,
+        "value": 0.6212
+      },
+      {
+        "start_sec": 1840.0,
+        "end_sec": 1885.0,
+        "value": 0.6106
+      },
+      {
+        "start_sec": 1885.0,
+        "end_sec": 1935.0,
+        "value": 0.6685
+      },
+      {
+        "start_sec": 1935.0,
+        "end_sec": 1980.0,
+        "value": 0.6914
+      },
+      {
+        "start_sec": 1980.0,
+        "end_sec": 2025.0,
+        "value": 0.6873
+      },
+      {
+        "start_sec": 2025.0,
+        "end_sec": 2075.0,
+        "value": 0.6818
+      },
+      {
+        "start_sec": 2075.0,
+        "end_sec": 2120.0,
+        "value": 0.6668
+      },
+      {
+        "start_sec": 2120.0,
+        "end_sec": 2170.0,
+        "value": 0.653
+      },
+      {
+        "start_sec": 2170.0,
+        "end_sec": 2215.0,
+        "value": 0.6276
+      },
+      {
+        "start_sec": 2215.0,
+        "end_sec": 2265.0,
+        "value": 0.7194
+      },
+      {
+        "start_sec": 2265.0,
+        "end_sec": 2310.0,
+        "value": 0.6632
+      },
+      {
+        "start_sec": 2310.0,
+        "end_sec": 2360.0,
+        "value": 0.6335
+      },
+      {
+        "start_sec": 2360.0,
+        "end_sec": 2405.0,
+        "value": 0.6525
+      },
+      {
+        "start_sec": 2405.0,
+        "end_sec": 2450.0,
+        "value": 0.6405
+      },
+      {
+        "start_sec": 2450.0,
+        "end_sec": 2500.0,
+        "value": 0.655
+      },
+      {
+        "start_sec": 2500.0,
+        "end_sec": 2545.0,
+        "value": 0.7463
+      },
+      {
+        "start_sec": 2545.0,
+        "end_sec": 2595.0,
+        "value": 0.6673
+      },
+      {
+        "start_sec": 2595.0,
+        "end_sec": 2640.0,
+        "value": 0.6877
+      },
+      {
+        "start_sec": 2640.0,
+        "end_sec": 2690.0,
+        "value": 0.7913
+      },
+      {
+        "start_sec": 2690.0,
+        "end_sec": 2735.0,
+        "value": 0.6783
+      },
+      {
+        "start_sec": 2735.0,
+        "end_sec": 2780.0,
+        "value": 0.6631
+      },
+      {
+        "start_sec": 2780.0,
+        "end_sec": 2830.0,
+        "value": 0.6467
+      },
+      {
+        "start_sec": 2830.0,
+        "end_sec": 2875.0,
+        "value": 0.6819
+      },
+      {
+        "start_sec": 2875.0,
+        "end_sec": 2925.0,
+        "value": 0.633
+      },
+      {
+        "start_sec": 2925.0,
+        "end_sec": 2970.0,
+        "value": 0.7721
+      },
+      {
+        "start_sec": 2970.0,
+        "end_sec": 3020.0,
+        "value": 0.6925
+      },
+      {
+        "start_sec": 3020.0,
+        "end_sec": 3065.0,
+        "value": 0.655
+      },
+      {
+        "start_sec": 3065.0,
+        "end_sec": 3115.0,
+        "value": 0.7645
+      },
+      {
+        "start_sec": 3115.0,
+        "end_sec": 3160.0,
+        "value": 0.7069
+      },
+      {
+        "start_sec": 3160.0,
+        "end_sec": 3205.0,
+        "value": 0.6451
+      },
+      {
+        "start_sec": 3205.0,
+        "end_sec": 3255.0,
+        "value": 0.787
+      },
+      {
+        "start_sec": 3255.0,
+        "end_sec": 3300.0,
+        "value": 0.7155
+      },
+      {
+        "start_sec": 3300.0,
+        "end_sec": 3350.0,
+        "value": 0.7525
+      },
+      {
+        "start_sec": 3350.0,
+        "end_sec": 3395.0,
+        "value": 0.7418
+      },
+      {
+        "start_sec": 3395.0,
+        "end_sec": 3445.0,
+        "value": 0.7671
+      },
+      {
+        "start_sec": 3445.0,
+        "end_sec": 3490.0,
+        "value": 0.7167
+      },
+      {
+        "start_sec": 3490.0,
+        "end_sec": 3540.0,
+        "value": 0.6305
+      },
+      {
+        "start_sec": 3540.0,
+        "end_sec": 3585.0,
+        "value": 0.689
+      },
+      {
+        "start_sec": 3585.0,
+        "end_sec": 3630.0,
+        "value": 0.6876
+      },
+      {
+        "start_sec": 3630.0,
+        "end_sec": 3680.0,
+        "value": 0.7009
+      },
+      {
+        "start_sec": 3680.0,
+        "end_sec": 3725.0,
+        "value": 0.7072
+      },
+      {
+        "start_sec": 3725.0,
+        "end_sec": 3775.0,
+        "value": 0.6758
+      },
+      {
+        "start_sec": 3775.0,
+        "end_sec": 3820.0,
+        "value": 0.6939
+      },
+      {
+        "start_sec": 3820.0,
+        "end_sec": 3870.0,
+        "value": 0.6757
+      },
+      {
+        "start_sec": 3870.0,
+        "end_sec": 3915.0,
+        "value": 0.6725
+      },
+      {
+        "start_sec": 3915.0,
+        "end_sec": 3960.0,
+        "value": 0.4764
+      },
+      {
+        "start_sec": 3960.0,
+        "end_sec": 4010.0,
+        "value": 0.6552
+      },
+      {
+        "start_sec": 4010.0,
+        "end_sec": 4055.0,
+        "value": 0.6158
+      },
+      {
+        "start_sec": 4055.0,
+        "end_sec": 4105.0,
+        "value": 0.6767
+      },
+      {
+        "start_sec": 4105.0,
+        "end_sec": 4150.0,
+        "value": 0.6131
+      },
+      {
+        "start_sec": 4150.0,
+        "end_sec": 4200.0,
+        "value": 0.6692
+      },
+      {
+        "start_sec": 4200.0,
+        "end_sec": 4245.0,
+        "value": 0.6348
+      },
+      {
+        "start_sec": 4245.0,
+        "end_sec": 4295.0,
+        "value": 0.6495
+      },
+      {
+        "start_sec": 4295.0,
+        "end_sec": 4340.0,
+        "value": 0.6081
+      },
+      {
+        "start_sec": 4340.0,
+        "end_sec": 4385.0,
+        "value": 0.6922
+      },
+      {
+        "start_sec": 4385.0,
+        "end_sec": 4435.0,
+        "value": 0.5762
+      },
+      {
+        "start_sec": 4435.0,
+        "end_sec": 4480.0,
+        "value": 0.6711
+      },
+      {
+        "start_sec": 4480.0,
+        "end_sec": 4530.0,
+        "value": 0.6452
+      },
+      {
+        "start_sec": 4530.0,
+        "end_sec": 4575.0,
+        "value": 0.5791
+      },
+      {
+        "start_sec": 4575.0,
+        "end_sec": 4625.0,
+        "value": 0.6238
+      },
+      {
+        "start_sec": 4625.0,
+        "end_sec": 4670.0,
+        "value": 0.65
+      },
+      {
+        "start_sec": 4670.0,
+        "end_sec": 4720.0,
+        "value": 0.6236
+      },
+      {
+        "start_sec": 4720.0,
+        "end_sec": 4765.0,
+        "value": 0.6334
+      },
+      {
+        "start_sec": 4765.0,
+        "end_sec": 4810.0,
+        "value": 0.5828
+      },
+      {
+        "start_sec": 4810.0,
+        "end_sec": 4860.0,
+        "value": 0.6138
+      },
+      {
+        "start_sec": 4860.0,
+        "end_sec": 4905.0,
+        "value": 0.6881
+      },
+      {
+        "start_sec": 4905.0,
+        "end_sec": 4955.0,
+        "value": 0.6276
+      },
+      {
+        "start_sec": 4955.0,
+        "end_sec": 5000.0,
+        "value": 0.473
+      },
+      {
+        "start_sec": 5000.0,
+        "end_sec": 5050.0,
+        "value": 0.5554
+      },
+      {
+        "start_sec": 5050.0,
+        "end_sec": 5095.0,
+        "value": 0.6634
+      },
+      {
+        "start_sec": 5095.0,
+        "end_sec": 5140.0,
+        "value": 0.545
+      },
+      {
+        "start_sec": 5140.0,
+        "end_sec": 5190.0,
+        "value": 0.6041
+      },
+      {
+        "start_sec": 5190.0,
+        "end_sec": 5235.0,
+        "value": 0.6014
+      },
+      {
+        "start_sec": 5235.0,
+        "end_sec": 5285.0,
+        "value": 0.6638
+      },
+      {
+        "start_sec": 5285.0,
+        "end_sec": 5330.0,
+        "value": 0.7214
+      },
+      {
+        "start_sec": 5330.0,
+        "end_sec": 5380.0,
+        "value": 0.6749
+      },
+      {
+        "start_sec": 5380.0,
+        "end_sec": 5425.0,
+        "value": 0.6822
+      },
+      {
+        "start_sec": 5425.0,
+        "end_sec": 5475.0,
+        "value": 0.6853
+      },
+      {
+        "start_sec": 5475.0,
+        "end_sec": 5520.0,
+        "value": 0.6861
+      },
+      {
+        "start_sec": 5520.0,
+        "end_sec": 5565.0,
+        "value": 0.6134
+      },
+      {
+        "start_sec": 5565.0,
+        "end_sec": 5615.0,
+        "value": 0.643
+      },
+      {
+        "start_sec": 5615.0,
+        "end_sec": 5660.0,
+        "value": 0.6518
+      },
+      {
+        "start_sec": 5660.0,
+        "end_sec": 5710.0,
+        "value": 0.719
+      },
+      {
+        "start_sec": 5710.0,
+        "end_sec": 5755.0,
+        "value": 0.6506
+      },
+      {
+        "start_sec": 5755.0,
+        "end_sec": 5805.0,
+        "value": 0.647
+      },
+      {
+        "start_sec": 5805.0,
+        "end_sec": 5850.0,
+        "value": 0.6171
+      },
+      {
+        "start_sec": 5850.0,
+        "end_sec": 5900.0,
+        "value": 0.7165
+      },
+      {
+        "start_sec": 5900.0,
+        "end_sec": 5945.0,
+        "value": 0.7814
+      },
+      {
+        "start_sec": 5945.0,
+        "end_sec": 5990.0,
+        "value": 0.7615
+      },
+      {
+        "start_sec": 5990.0,
+        "end_sec": 6040.0,
+        "value": 0.6085
+      },
+      {
+        "start_sec": 6040.0,
+        "end_sec": 6085.0,
+        "value": 0.7312
+      },
+      {
+        "start_sec": 6085.0,
+        "end_sec": 6135.0,
+        "value": 0.7138
+      },
+      {
+        "start_sec": 6135.0,
+        "end_sec": 6180.0,
+        "value": 0.64
+      },
+      {
+        "start_sec": 6180.0,
+        "end_sec": 6230.0,
+        "value": 0.6729
+      },
+      {
+        "start_sec": 6230.0,
+        "end_sec": 6275.0,
+        "value": 0.6653
+      },
+      {
+        "start_sec": 6275.0,
+        "end_sec": 6320.0,
+        "value": 0.769
+      },
+      {
+        "start_sec": 6320.0,
+        "end_sec": 6370.0,
+        "value": 0.6785
+      },
+      {
+        "start_sec": 6370.0,
+        "end_sec": 6415.0,
+        "value": 0.6773
+      },
+      {
+        "start_sec": 6415.0,
+        "end_sec": 6465.0,
+        "value": 0.7276
+      },
+      {
+        "start_sec": 6465.0,
+        "end_sec": 6510.0,
+        "value": 0.7163
+      },
+      {
+        "start_sec": 6510.0,
+        "end_sec": 6560.0,
+        "value": 0.6807
+      },
+      {
+        "start_sec": 6560.0,
+        "end_sec": 6605.0,
+        "value": 0.6754
+      },
+      {
+        "start_sec": 6605.0,
+        "end_sec": 6655.0,
+        "value": 0.6837
+      },
+      {
+        "start_sec": 6655.0,
+        "end_sec": 6700.0,
+        "value": 0.6498
+      },
+      {
+        "start_sec": 6700.0,
+        "end_sec": 6745.0,
+        "value": 0.6731
+      },
+      {
+        "start_sec": 6745.0,
+        "end_sec": 6795.0,
+        "value": 0.6413
+      },
+      {
+        "start_sec": 6795.0,
+        "end_sec": 6840.0,
+        "value": 0.6495
+      },
+      {
+        "start_sec": 6840.0,
+        "end_sec": 6890.0,
+        "value": 0.6996
+      },
+      {
+        "start_sec": 6890.0,
+        "end_sec": 6935.0,
+        "value": 0.762
+      },
+      {
+        "start_sec": 6935.0,
+        "end_sec": 6985.0,
+        "value": 0.7483
+      },
+      {
+        "start_sec": 6985.0,
+        "end_sec": 7030.0,
+        "value": 0.7502
+      },
+      {
+        "start_sec": 7030.0,
+        "end_sec": 7080.0,
+        "value": 0.7003
+      },
+      {
+        "start_sec": 7080.0,
+        "end_sec": 7125.0,
+        "value": 0.694
+      },
+      {
+        "start_sec": 7125.0,
+        "end_sec": 7170.0,
+        "value": 0.6143
+      },
+      {
+        "start_sec": 7170.0,
+        "end_sec": 7220.0,
+        "value": 0.6462
+      },
+      {
+        "start_sec": 7220.0,
+        "end_sec": 7265.0,
+        "value": 0.6106
+      },
+      {
+        "start_sec": 7265.0,
+        "end_sec": 7315.0,
+        "value": 0.6898
+      },
+      {
+        "start_sec": 7315.0,
+        "end_sec": 7360.0,
+        "value": 0.6773
+      },
+      {
+        "start_sec": 7360.0,
+        "end_sec": 7410.0,
+        "value": 0.6883
+      },
+      {
+        "start_sec": 7410.0,
+        "end_sec": 7455.0,
+        "value": 0.6642
+      },
+      {
+        "start_sec": 7455.0,
+        "end_sec": 7505.0,
+        "value": 0.6397
+      },
+      {
+        "start_sec": 7505.0,
+        "end_sec": 7550.0,
+        "value": 0.6683
+      },
+      {
+        "start_sec": 7550.0,
+        "end_sec": 7595.0,
+        "value": 0.6816
+      },
+      {
+        "start_sec": 7595.0,
+        "end_sec": 7645.0,
+        "value": 0.6837
+      },
+      {
+        "start_sec": 7645.0,
+        "end_sec": 7690.0,
+        "value": 0.7246
+      },
+      {
+        "start_sec": 7690.0,
+        "end_sec": 7740.0,
+        "value": 0.6499
+      },
+      {
+        "start_sec": 7740.0,
+        "end_sec": 7785.0,
+        "value": 0.6087
+      },
+      {
+        "start_sec": 7785.0,
+        "end_sec": 7835.0,
+        "value": 0.6484
+      },
+      {
+        "start_sec": 7835.0,
+        "end_sec": 7880.0,
+        "value": 0.6166
+      },
+      {
+        "start_sec": 7880.0,
+        "end_sec": 7925.0,
+        "value": 0.6481
+      },
+      {
+        "start_sec": 7925.0,
+        "end_sec": 7975.0,
+        "value": 0.65
+      },
+      {
+        "start_sec": 7975.0,
+        "end_sec": 8020.0,
+        "value": 0.6397
+      },
+      {
+        "start_sec": 8020.0,
+        "end_sec": 8070.0,
+        "value": 0.6278
+      },
+      {
+        "start_sec": 8070.0,
+        "end_sec": 8115.0,
+        "value": 0.6186
+      },
+      {
+        "start_sec": 8115.0,
+        "end_sec": 8165.0,
+        "value": 0.6325
+      },
+      {
+        "start_sec": 8165.0,
+        "end_sec": 8210.0,
+        "value": 0.6304
+      },
+      {
+        "start_sec": 8210.0,
+        "end_sec": 8260.0,
+        "value": 0.573
+      },
+      {
+        "start_sec": 8260.0,
+        "end_sec": 8305.0,
+        "value": 0.5059
+      },
+      {
+        "start_sec": 8305.0,
+        "end_sec": 8350.0,
+        "value": 0.6331
+      },
+      {
+        "start_sec": 8350.0,
+        "end_sec": 8400.0,
+        "value": 0.7072
+      },
+      {
+        "start_sec": 8400.0,
+        "end_sec": 8445.0,
+        "value": 0.654
+      },
+      {
+        "start_sec": 8445.0,
+        "end_sec": 8495.0,
+        "value": 0.5898
+      },
+      {
+        "start_sec": 8495.0,
+        "end_sec": 8540.0,
+        "value": 0.6643
+      },
+      {
+        "start_sec": 8540.0,
+        "end_sec": 8590.0,
+        "value": 0.746
+      },
+      {
+        "start_sec": 8590.0,
+        "end_sec": 8635.0,
+        "value": 0.5949
+      },
+      {
+        "start_sec": 8635.0,
+        "end_sec": 8685.0,
+        "value": 0.5377
+      },
+      {
+        "start_sec": 8685.0,
+        "end_sec": 8730.0,
+        "value": 0.6961
+      },
+      {
+        "start_sec": 8730.0,
+        "end_sec": 8775.0,
+        "value": 0.6319
+      },
+      {
+        "start_sec": 8775.0,
+        "end_sec": 8825.0,
+        "value": 0.5795
+      },
+      {
+        "start_sec": 8825.0,
+        "end_sec": 8870.0,
+        "value": 0.5985
+      },
+      {
+        "start_sec": 8870.0,
+        "end_sec": 8920.0,
+        "value": 0.681
+      },
+      {
+        "start_sec": 8920.0,
+        "end_sec": 8965.0,
+        "value": 0.7764
+      },
+      {
+        "start_sec": 8965.0,
+        "end_sec": 9015.0,
+        "value": 0.6446
+      },
+      {
+        "start_sec": 9015.0,
+        "end_sec": 9060.0,
+        "value": 0.5963
+      },
+      {
+        "start_sec": 9060.0,
+        "end_sec": 9105.0,
+        "value": 0.716
+      },
+      {
+        "start_sec": 9105.0,
+        "end_sec": 9155.0,
+        "value": 0.6631
+      },
+      {
+        "start_sec": 9155.0,
+        "end_sec": 9200.0,
+        "value": 0.5484
+      },
+      {
+        "start_sec": 9200.0,
+        "end_sec": 9250.0,
+        "value": 0.7518
+      },
+      {
+        "start_sec": 9250.0,
+        "end_sec": 9295.0,
+        "value": 0.5774
+      },
+      {
+        "start_sec": 9295.0,
+        "end_sec": 9345.0,
+        "value": 0.6997
+      },
+      {
+        "start_sec": 9345.0,
+        "end_sec": 9390.0,
+        "value": 0.7417
+      },
+      {
+        "start_sec": 9390.0,
+        "end_sec": 9440.0,
+        "value": 0.6346
+      },
+      {
+        "start_sec": 9440.0,
+        "end_sec": 9485.0,
+        "value": 0.6126
+      },
+      {
+        "start_sec": 9485.0,
+        "end_sec": 9530.0,
+        "value": 0.6602
+      },
+      {
+        "start_sec": 9530.0,
+        "end_sec": 9580.0,
+        "value": 0.6532
+      },
+      {
+        "start_sec": 9580.0,
+        "end_sec": 9625.0,
+        "value": 0.5699
+      },
+      {
+        "start_sec": 9625.0,
+        "end_sec": 9675.0,
+        "value": 0.5677
+      },
+      {
+        "start_sec": 9675.0,
+        "end_sec": 9720.0,
+        "value": 0.6336
+      },
+      {
+        "start_sec": 9720.0,
+        "end_sec": 9770.0,
+        "value": 0.6645
+      },
+      {
+        "start_sec": 9770.0,
+        "end_sec": 9815.0,
+        "value": 0.5391
+      },
+      {
+        "start_sec": 9815.0,
+        "end_sec": 9865.0,
+        "value": 0.5204
+      },
+      {
+        "start_sec": 9865.0,
+        "end_sec": 9910.0,
+        "value": 0.7528
+      },
+      {
+        "start_sec": 9910.0,
+        "end_sec": 9955.0,
+        "value": 0.6997
+      },
+      {
+        "start_sec": 9955.0,
+        "end_sec": 10005.0,
+        "value": 0.5591
+      },
+      {
+        "start_sec": 10005.0,
+        "end_sec": 10050.0,
+        "value": 0.5894
+      },
+      {
+        "start_sec": 10050.0,
+        "end_sec": 10100.0,
+        "value": 0.6046
+      },
+      {
+        "start_sec": 10100.0,
+        "end_sec": 10145.0,
+        "value": 0.719
+      },
+      {
+        "start_sec": 10145.0,
+        "end_sec": 10195.0,
+        "value": 0.6796
+      },
+      {
+        "start_sec": 10195.0,
+        "end_sec": 10240.0,
+        "value": 0.7681
+      },
+      {
+        "start_sec": 10240.0,
+        "end_sec": 10285.0,
+        "value": 0.5862
+      },
+      {
+        "start_sec": 10285.0,
+        "end_sec": 10335.0,
+        "value": 0.7235
+      },
+      {
+        "start_sec": 10335.0,
+        "end_sec": 10380.0,
+        "value": 0.7738
+      },
+      {
+        "start_sec": 10380.0,
+        "end_sec": 10430.0,
+        "value": 0.6958
+      },
+      {
+        "start_sec": 10430.0,
+        "end_sec": 10475.0,
+        "value": 0.6646
+      },
+      {
+        "start_sec": 10475.0,
+        "end_sec": 10525.0,
+        "value": 0.6656
+      },
+      {
+        "start_sec": 10525.0,
+        "end_sec": 10570.0,
+        "value": 0.646
+      },
+      {
+        "start_sec": 10570.0,
+        "end_sec": 10620.0,
+        "value": 0.6993
+      },
+      {
+        "start_sec": 10620.0,
+        "end_sec": 10665.0,
+        "value": 0.6585
+      },
+      {
+        "start_sec": 10665.0,
+        "end_sec": 10710.0,
+        "value": 0.6986
+      },
+      {
+        "start_sec": 10710.0,
+        "end_sec": 10760.0,
+        "value": 0.795
+      },
+      {
+        "start_sec": 10760.0,
+        "end_sec": 10805.0,
+        "value": 0.6567
+      },
+      {
+        "start_sec": 10805.0,
+        "end_sec": 10855.0,
+        "value": 0.5224
+      },
+      {
+        "start_sec": 10855.0,
+        "end_sec": 10900.0,
+        "value": 0.5376
+      },
+      {
+        "start_sec": 10900.0,
+        "end_sec": 10950.0,
+        "value": 0.7187
+      },
+      {
+        "start_sec": 10950.0,
+        "end_sec": 10995.0,
+        "value": 0.6108
+      },
+      {
+        "start_sec": 10995.0,
+        "end_sec": 11045.0,
+        "value": 0.6152
+      },
+      {
+        "start_sec": 11045.0,
+        "end_sec": 11090.0,
+        "value": 0.5849
+      },
+      {
+        "start_sec": 11090.0,
+        "end_sec": 11135.0,
+        "value": 0.6113
+      },
+      {
+        "start_sec": 11135.0,
+        "end_sec": 11185.0,
+        "value": 0.7077
+      },
+      {
+        "start_sec": 11185.0,
+        "end_sec": 11230.0,
+        "value": 0.6814
+      },
+      {
+        "start_sec": 11230.0,
+        "end_sec": 11280.0,
+        "value": 0.7131
+      },
+      {
+        "start_sec": 11280.0,
+        "end_sec": 11325.0,
+        "value": 0.6138
+      },
+      {
+        "start_sec": 11325.0,
+        "end_sec": 11375.0,
+        "value": 0.6827
+      },
+      {
+        "start_sec": 11375.0,
+        "end_sec": 11420.0,
+        "value": 0.7219
+      },
+      {
+        "start_sec": 11420.0,
+        "end_sec": 11465.0,
+        "value": 0.5964
+      },
+      {
+        "start_sec": 11465.0,
+        "end_sec": 11515.0,
+        "value": 0.608
+      },
+      {
+        "start_sec": 11515.0,
+        "end_sec": 11560.0,
+        "value": 0.7303
+      },
+      {
+        "start_sec": 11560.0,
+        "end_sec": 11610.0,
+        "value": 0.6857
+      },
+      {
+        "start_sec": 11610.0,
+        "end_sec": 11655.0,
+        "value": 0.6977
+      },
+      {
+        "start_sec": 11655.0,
+        "end_sec": 11705.0,
+        "value": 0.5728
+      },
+      {
+        "start_sec": 11705.0,
+        "end_sec": 11750.0,
+        "value": 0.5169
+      },
+      {
+        "start_sec": 11750.0,
+        "end_sec": 11800.0,
+        "value": 0.6619
+      },
+      {
+        "start_sec": 11800.0,
+        "end_sec": 11845.0,
+        "value": 0.5277
+      },
+      {
+        "start_sec": 11845.0,
+        "end_sec": 11890.0,
+        "value": 0.587
+      },
+      {
+        "start_sec": 11890.0,
+        "end_sec": 11940.0,
+        "value": 0.5604
+      },
+      {
+        "start_sec": 11940.0,
+        "end_sec": 11985.0,
+        "value": 0.6622
+      },
+      {
+        "start_sec": 11985.0,
+        "end_sec": 12035.0,
+        "value": 0.6163
+      },
+      {
+        "start_sec": 12035.0,
+        "end_sec": 12080.0,
+        "value": 0.6517
+      },
+      {
+        "start_sec": 12080.0,
+        "end_sec": 12130.0,
+        "value": 0.6966
+      },
+      {
+        "start_sec": 12130.0,
+        "end_sec": 12175.0,
+        "value": 0.6516
+      },
+      {
+        "start_sec": 12175.0,
+        "end_sec": 12225.0,
+        "value": 0.6258
+      },
+      {
+        "start_sec": 12225.0,
+        "end_sec": 12270.0,
+        "value": 0.7431
+      },
+      {
+        "start_sec": 12270.0,
+        "end_sec": 12315.0,
+        "value": 0.7064
+      },
+      {
+        "start_sec": 12315.0,
+        "end_sec": 12365.0,
+        "value": 0.6329
+      },
+      {
+        "start_sec": 12365.0,
+        "end_sec": 12410.0,
+        "value": 0.649
+      },
+      {
+        "start_sec": 12410.0,
+        "end_sec": 12460.0,
+        "value": 0.6667
+      },
+      {
+        "start_sec": 12460.0,
+        "end_sec": 12505.0,
+        "value": 0.545
+      },
+      {
+        "start_sec": 12505.0,
+        "end_sec": 12555.0,
+        "value": 0.5369
+      },
+      {
+        "start_sec": 12555.0,
+        "end_sec": 12600.0,
+        "value": 0.5115
+      },
+      {
+        "start_sec": 12600.0,
+        "end_sec": 12645.0,
+        "value": 0.5715
+      },
+      {
+        "start_sec": 12645.0,
+        "end_sec": 12695.0,
+        "value": 0.5472
+      },
+      {
+        "start_sec": 12695.0,
+        "end_sec": 12740.0,
+        "value": 0.6127
+      },
+      {
+        "start_sec": 12740.0,
+        "end_sec": 12790.0,
+        "value": 0.6291
+      },
+      {
+        "start_sec": 12790.0,
+        "end_sec": 12835.0,
+        "value": 0.6167
+      },
+      {
+        "start_sec": 12835.0,
+        "end_sec": 12885.0,
+        "value": 0.6494
+      },
+      {
+        "start_sec": 12885.0,
+        "end_sec": 12930.0,
+        "value": 0.7644
+      },
+      {
+        "start_sec": 12930.0,
+        "end_sec": 12980.0,
+        "value": 0.6281
+      },
+      {
+        "start_sec": 12980.0,
+        "end_sec": 13025.0,
+        "value": 0.6237
+      },
+      {
+        "start_sec": 13025.0,
+        "end_sec": 13070.0,
+        "value": 0.7269
+      },
+      {
+        "start_sec": 13070.0,
+        "end_sec": 13120.0,
+        "value": 0.6705
+      },
+      {
+        "start_sec": 13120.0,
+        "end_sec": 13165.0,
+        "value": 0.6561
+      },
+      {
+        "start_sec": 13165.0,
+        "end_sec": 13215.0,
+        "value": 0.5391
+      },
+      {
+        "start_sec": 13215.0,
+        "end_sec": 13260.0,
+        "value": 0.6078
+      },
+      {
+        "start_sec": 13260.0,
+        "end_sec": 13310.0,
+        "value": 0.7584
+      },
+      {
+        "start_sec": 13310.0,
+        "end_sec": 13355.0,
+        "value": 0.7585
+      },
+      {
+        "start_sec": 13355.0,
+        "end_sec": 13405.0,
+        "value": 0.6432
+      },
+      {
+        "start_sec": 13405.0,
+        "end_sec": 13450.0,
+        "value": 0.6028
+      },
+      {
+        "start_sec": 13450.0,
+        "end_sec": 13495.0,
+        "value": 0.7594
+      },
+      {
+        "start_sec": 13495.0,
+        "end_sec": 13545.0,
+        "value": 0.6456
+      },
+      {
+        "start_sec": 13545.0,
+        "end_sec": 13590.0,
+        "value": 0.6541
+      },
+      {
+        "start_sec": 13590.0,
+        "end_sec": 13640.0,
+        "value": 0.75
+      },
+      {
+        "start_sec": 13640.0,
+        "end_sec": 13685.0,
+        "value": 0.6443
+      },
+      {
+        "start_sec": 13685.0,
+        "end_sec": 13735.0,
+        "value": 0.6944
+      },
+      {
+        "start_sec": 13735.0,
+        "end_sec": 13780.0,
+        "value": 0.6415
+      },
+      {
+        "start_sec": 13780.0,
+        "end_sec": 13830.0,
+        "value": 0.6516
+      },
+      {
+        "start_sec": 13830.0,
+        "end_sec": 13875.0,
+        "value": 0.786
+      },
+      {
+        "start_sec": 13875.0,
+        "end_sec": 13920.0,
+        "value": 0.6407
+      },
+      {
+        "start_sec": 13920.0,
+        "end_sec": 13970.0,
+        "value": 0.7561
+      },
+      {
+        "start_sec": 13970.0,
+        "end_sec": 14015.0,
+        "value": 0.5863
+      },
+      {
+        "start_sec": 14015.0,
+        "end_sec": 14065.0,
+        "value": 0.6801
+      },
+      {
+        "start_sec": 14065.0,
+        "end_sec": 14110.0,
+        "value": 0.7251
+      },
+      {
+        "start_sec": 14110.0,
+        "end_sec": 14160.0,
+        "value": 0.7748
+      },
+      {
+        "start_sec": 14160.0,
+        "end_sec": 14205.0,
+        "value": 0.8016
+      },
+      {
+        "start_sec": 14205.0,
+        "end_sec": 14250.0,
+        "value": 0.6212
+      },
+      {
+        "start_sec": 14250.0,
+        "end_sec": 14300.0,
+        "value": 0.7416
+      },
+      {
+        "start_sec": 14300.0,
+        "end_sec": 14345.0,
+        "value": 0.7128
+      },
+      {
+        "start_sec": 14345.0,
+        "end_sec": 14395.0,
+        "value": 0.6465
+      },
+      {
+        "start_sec": 14395.0,
+        "end_sec": 14440.0,
+        "value": 0.6861
+      },
+      {
+        "start_sec": 14440.0,
+        "end_sec": 14490.0,
+        "value": 0.7226
+      },
+      {
+        "start_sec": 14490.0,
+        "end_sec": 14535.0,
+        "value": 0.6587
+      },
+      {
+        "start_sec": 14535.0,
+        "end_sec": 14585.0,
+        "value": 0.7182
+      },
+      {
+        "start_sec": 14585.0,
+        "end_sec": 14630.0,
+        "value": 0.8262
+      },
+      {
+        "start_sec": 14630.0,
+        "end_sec": 14675.0,
+        "value": 0.7995
+      },
+      {
+        "start_sec": 14675.0,
+        "end_sec": 14725.0,
+        "value": 0.7989
+      },
+      {
+        "start_sec": 14725.0,
+        "end_sec": 14770.0,
+        "value": 0.7756
+      },
+      {
+        "start_sec": 14770.0,
+        "end_sec": 14820.0,
+        "value": 0.8087
+      },
+      {
+        "start_sec": 14820.0,
+        "end_sec": 14865.0,
+        "value": 0.8137
+      },
+      {
+        "start_sec": 14865.0,
+        "end_sec": 14915.0,
+        "value": 0.8079
+      },
+      {
+        "start_sec": 14915.0,
+        "end_sec": 14960.0,
+        "value": 0.6735
+      },
+      {
+        "start_sec": 14960.0,
+        "end_sec": 15010.0,
+        "value": 0.6931
+      },
+      {
+        "start_sec": 15010.0,
+        "end_sec": 15055.0,
+        "value": 0.6634
+      },
+      {
+        "start_sec": 15055.0,
+        "end_sec": 15100.0,
+        "value": 0.5502
+      },
+      {
+        "start_sec": 15100.0,
+        "end_sec": 15150.0,
+        "value": 0.5995
+      },
+      {
+        "start_sec": 15150.0,
+        "end_sec": 15195.0,
+        "value": 0.5831
+      },
+      {
+        "start_sec": 15195.0,
+        "end_sec": 15245.0,
+        "value": 0.6265
+      },
+      {
+        "start_sec": 15245.0,
+        "end_sec": 15290.0,
+        "value": 0.6749
+      },
+      {
+        "start_sec": 15290.0,
+        "end_sec": 15340.0,
+        "value": 0.6281
+      },
+      {
+        "start_sec": 15340.0,
+        "end_sec": 15385.0,
+        "value": 0.5522
+      },
+      {
+        "start_sec": 15385.0,
+        "end_sec": 15430.0,
+        "value": 0.4675
+      },
+      {
+        "start_sec": 15430.0,
+        "end_sec": 15480.0,
+        "value": 0.6048
+      },
+      {
+        "start_sec": 15480.0,
+        "end_sec": 15525.0,
+        "value": 0.662
+      },
+      {
+        "start_sec": 15525.0,
+        "end_sec": 15575.0,
+        "value": 0.6505
+      },
+      {
+        "start_sec": 15575.0,
+        "end_sec": 15620.0,
+        "value": 0.6685
+      },
+      {
+        "start_sec": 15620.0,
+        "end_sec": 15670.0,
+        "value": 0.7166
+      },
+      {
+        "start_sec": 15670.0,
+        "end_sec": 15715.0,
+        "value": 0.741
+      },
+      {
+        "start_sec": 15715.0,
+        "end_sec": 15765.0,
+        "value": 0.6491
+      },
+      {
+        "start_sec": 15765.0,
+        "end_sec": 15810.0,
+        "value": 0.7069
+      },
+      {
+        "start_sec": 15810.0,
+        "end_sec": 15855.0,
+        "value": 0.6833
+      },
+      {
+        "start_sec": 15855.0,
+        "end_sec": 15905.0,
+        "value": 0.6204
+      },
+      {
+        "start_sec": 15905.0,
+        "end_sec": 15950.0,
+        "value": 0.6032
+      },
+      {
+        "start_sec": 15950.0,
+        "end_sec": 16000.0,
+        "value": 0.6862
+      },
+      {
+        "start_sec": 16000.0,
+        "end_sec": 16045.0,
+        "value": 0.6831
+      },
+      {
+        "start_sec": 16045.0,
+        "end_sec": 16095.0,
+        "value": 0.7153
+      },
+      {
+        "start_sec": 16095.0,
+        "end_sec": 16140.0,
+        "value": 0.6287
+      },
+      {
+        "start_sec": 16140.0,
+        "end_sec": 16190.0,
+        "value": 0.6527
+      },
+      {
+        "start_sec": 16190.0,
+        "end_sec": 16235.0,
+        "value": 0.7484
+      },
+      {
+        "start_sec": 16235.0,
+        "end_sec": 16280.0,
+        "value": 0.6715
+      },
+      {
+        "start_sec": 16280.0,
+        "end_sec": 16330.0,
+        "value": 0.7035
+      },
+      {
+        "start_sec": 16330.0,
+        "end_sec": 16375.0,
+        "value": 0.7042
+      },
+      {
+        "start_sec": 16375.0,
+        "end_sec": 16425.0,
+        "value": 0.6147
+      },
+      {
+        "start_sec": 16425.0,
+        "end_sec": 16470.0,
+        "value": 0.6357
+      },
+      {
+        "start_sec": 16470.0,
+        "end_sec": 16520.0,
+        "value": 0.703
+      },
+      {
+        "start_sec": 16520.0,
+        "end_sec": 16565.0,
+        "value": 0.6219
+      },
+      {
+        "start_sec": 16565.0,
+        "end_sec": 16610.0,
+        "value": 0.7266
+      },
+      {
+        "start_sec": 16610.0,
+        "end_sec": 16660.0,
+        "value": 0.6026
+      },
+      {
+        "start_sec": 16660.0,
+        "end_sec": 16705.0,
+        "value": 0.494
+      },
+      {
+        "start_sec": 16705.0,
+        "end_sec": 16755.0,
+        "value": 0.655
+      },
+      {
+        "start_sec": 16755.0,
+        "end_sec": 16800.0,
+        "value": 0.7821
+      },
+      {
+        "start_sec": 16800.0,
+        "end_sec": 16850.0,
+        "value": 0.6835
+      },
+      {
+        "start_sec": 16850.0,
+        "end_sec": 16895.0,
+        "value": 0.7184
+      },
+      {
+        "start_sec": 16895.0,
+        "end_sec": 16945.0,
+        "value": 0.5843
+      },
+      {
+        "start_sec": 16945.0,
+        "end_sec": 16990.0,
+        "value": 0.8059
+      },
+      {
+        "start_sec": 16990.0,
+        "end_sec": 17035.0,
+        "value": 0.6673
+      },
+      {
+        "start_sec": 17035.0,
+        "end_sec": 17085.0,
+        "value": 0.7997
+      },
+      {
+        "start_sec": 17085.0,
+        "end_sec": 17130.0,
+        "value": 0.7181
+      },
+      {
+        "start_sec": 17130.0,
+        "end_sec": 17180.0,
+        "value": 0.8244
+      },
+      {
+        "start_sec": 17180.0,
+        "end_sec": 17225.0,
+        "value": 0.7375
+      },
+      {
+        "start_sec": 17225.0,
+        "end_sec": 17275.0,
+        "value": 0.586
+      },
+      {
+        "start_sec": 17275.0,
+        "end_sec": 17320.0,
+        "value": 0.7093
+      },
+      {
+        "start_sec": 17320.0,
+        "end_sec": 17370.0,
+        "value": 0.6121
+      },
+      {
+        "start_sec": 17370.0,
+        "end_sec": 17415.0,
+        "value": 0.6166
+      },
+      {
+        "start_sec": 17415.0,
+        "end_sec": 17460.0,
+        "value": 0.6646
+      },
+      {
+        "start_sec": 17460.0,
+        "end_sec": 17510.0,
+        "value": 0.8039
+      },
+      {
+        "start_sec": 17510.0,
+        "end_sec": 17555.0,
+        "value": 0.6912
+      },
+      {
+        "start_sec": 17555.0,
+        "end_sec": 17605.0,
+        "value": 0.6156
+      },
+      {
+        "start_sec": 17605.0,
+        "end_sec": 17650.0,
+        "value": 0.6186
+      },
+      {
+        "start_sec": 17650.0,
+        "end_sec": 17700.0,
+        "value": 0.557
+      },
+      {
+        "start_sec": 17700.0,
+        "end_sec": 17745.0,
+        "value": 0.6753
+      },
+      {
+        "start_sec": 17745.0,
+        "end_sec": 17790.0,
+        "value": 0.7206
+      },
+      {
+        "start_sec": 17790.0,
+        "end_sec": 17840.0,
+        "value": 0.763
+      },
+      {
+        "start_sec": 17840.0,
+        "end_sec": 17885.0,
+        "value": 0.6719
+      },
+      {
+        "start_sec": 17885.0,
+        "end_sec": 17935.0,
+        "value": 0.7136
+      },
+      {
+        "start_sec": 17935.0,
+        "end_sec": 17980.0,
+        "value": 0.6482
+      },
+      {
+        "start_sec": 17980.0,
+        "end_sec": 18030.0,
+        "value": 0.6293
+      },
+      {
+        "start_sec": 18030.0,
+        "end_sec": 18075.0,
+        "value": 0.6611
+      },
+      {
+        "start_sec": 18075.0,
+        "end_sec": 18125.0,
+        "value": 0.6678
+      },
+      {
+        "start_sec": 18125.0,
+        "end_sec": 18170.0,
+        "value": 0.6798
+      },
+      {
+        "start_sec": 18170.0,
+        "end_sec": 18215.0,
+        "value": 0.5689
+      },
+      {
+        "start_sec": 18215.0,
+        "end_sec": 18265.0,
+        "value": 0.659
+      },
+      {
+        "start_sec": 18265.0,
+        "end_sec": 18310.0,
+        "value": 0.8141
+      },
+      {
+        "start_sec": 18310.0,
+        "end_sec": 18360.0,
+        "value": 0.7629
+      },
+      {
+        "start_sec": 18360.0,
+        "end_sec": 18405.0,
+        "value": 0.6686
+      },
+      {
+        "start_sec": 18405.0,
+        "end_sec": 18455.0,
+        "value": 0.6939
+      },
+      {
+        "start_sec": 18455.0,
+        "end_sec": 18500.0,
+        "value": 0.686
+      },
+      {
+        "start_sec": 18500.0,
+        "end_sec": 18550.0,
+        "value": 0.6848
+      },
+      {
+        "start_sec": 18550.0,
+        "end_sec": 18595.0,
+        "value": 0.7207
+      },
+      {
+        "start_sec": 18595.0,
+        "end_sec": 18640.0,
+        "value": 0.7356
+      },
+      {
+        "start_sec": 18640.0,
+        "end_sec": 18690.0,
+        "value": 0.6625
+      },
+      {
+        "start_sec": 18690.0,
+        "end_sec": 18735.0,
+        "value": 0.6494
+      },
+      {
+        "start_sec": 18735.0,
+        "end_sec": 18785.0,
+        "value": 0.6394
+      },
+      {
+        "start_sec": 18785.0,
+        "end_sec": 18830.0,
+        "value": 0.5724
+      },
+      {
+        "start_sec": 18830.0,
+        "end_sec": 18880.0,
+        "value": 0.6829
+      },
+      {
+        "start_sec": 18880.0,
+        "end_sec": 18925.0,
+        "value": 0.616
+      },
+      {
+        "start_sec": 18925.0,
+        "end_sec": 18970.0,
+        "value": 0.6665
+      },
+      {
+        "start_sec": 18970.0,
+        "end_sec": 19020.0,
+        "value": 0.6985
+      },
+      {
+        "start_sec": 19020.0,
+        "end_sec": 19065.0,
+        "value": 0.6614
+      },
+      {
+        "start_sec": 19065.0,
+        "end_sec": 19115.0,
+        "value": 0.64
+      },
+      {
+        "start_sec": 19115.0,
+        "end_sec": 19160.0,
+        "value": 0.7325
+      },
+      {
+        "start_sec": 19160.0,
+        "end_sec": 19210.0,
+        "value": 0.702
+      },
+      {
+        "start_sec": 19210.0,
+        "end_sec": 19255.0,
+        "value": 0.6277
+      },
+      {
+        "start_sec": 19255.0,
+        "end_sec": 19305.0,
+        "value": 0.6481
+      },
+      {
+        "start_sec": 19305.0,
+        "end_sec": 19350.0,
+        "value": 0.7398
+      },
+      {
+        "start_sec": 19350.0,
+        "end_sec": 19395.0,
+        "value": 0.6391
+      },
+      {
+        "start_sec": 19395.0,
+        "end_sec": 19445.0,
+        "value": 0.6494
+      },
+      {
+        "start_sec": 19445.0,
+        "end_sec": 19490.0,
+        "value": 0.5007
+      },
+      {
+        "start_sec": 19490.0,
+        "end_sec": 19540.0,
+        "value": 0.0647
+      },
+      {
+        "start_sec": 19540.0,
+        "end_sec": 19585.0,
+        "value": 0.3707
+      },
+      {
+        "start_sec": 19585.0,
+        "end_sec": 19635.0,
+        "value": 0.5933
+      },
+      {
+        "start_sec": 19635.0,
+        "end_sec": 19680.0,
+        "value": 0.6024
+      },
+      {
+        "start_sec": 19680.0,
+        "end_sec": 19730.0,
+        "value": 0.5998
+      },
+      {
+        "start_sec": 19730.0,
+        "end_sec": 19775.0,
+        "value": 0.5739
+      },
+      {
+        "start_sec": 19775.0,
+        "end_sec": 19820.0,
+        "value": 0.5327
+      },
+      {
+        "start_sec": 19820.0,
+        "end_sec": 19870.0,
+        "value": 0.6372
+      },
+      {
+        "start_sec": 19870.0,
+        "end_sec": 19915.0,
+        "value": 0.624
+      },
+      {
+        "start_sec": 19915.0,
+        "end_sec": 19965.0,
+        "value": 0.616
+      },
+      {
+        "start_sec": 19965.0,
+        "end_sec": 20010.0,
+        "value": 0.5866
+      },
+      {
+        "start_sec": 20010.0,
+        "end_sec": 20060.0,
+        "value": 0.8
+      },
+      {
+        "start_sec": 20060.0,
+        "end_sec": 20105.0,
+        "value": 0.6312
+      },
+      {
+        "start_sec": 20105.0,
+        "end_sec": 20150.0,
+        "value": 0.7499
+      },
+      {
+        "start_sec": 20150.0,
+        "end_sec": 20200.0,
+        "value": 0.7182
+      },
+      {
+        "start_sec": 20200.0,
+        "end_sec": 20245.0,
+        "value": 0.5473
+      },
+      {
+        "start_sec": 20245.0,
+        "end_sec": 20295.0,
+        "value": 0.603
+      },
+      {
+        "start_sec": 20295.0,
+        "end_sec": 20340.0,
+        "value": 0.6808
+      },
+      {
+        "start_sec": 20340.0,
+        "end_sec": 20390.0,
+        "value": 0.6697
+      },
+      {
+        "start_sec": 20390.0,
+        "end_sec": 20435.0,
+        "value": 0.6482
+      },
+      {
+        "start_sec": 20435.0,
+        "end_sec": 20485.0,
+        "value": 0.6107
+      },
+      {
+        "start_sec": 20485.0,
+        "end_sec": 20530.0,
+        "value": 0.5725
+      },
+      {
+        "start_sec": 20530.0,
+        "end_sec": 20575.0,
+        "value": 0.665
+      },
+      {
+        "start_sec": 20575.0,
+        "end_sec": 20625.0,
+        "value": 0.7294
+      },
+      {
+        "start_sec": 20625.0,
+        "end_sec": 20670.0,
+        "value": 0.6479
+      },
+      {
+        "start_sec": 20670.0,
+        "end_sec": 20720.0,
+        "value": 0.5634
+      },
+      {
+        "start_sec": 20720.0,
+        "end_sec": 20765.0,
+        "value": 0.6978
+      },
+      {
+        "start_sec": 20765.0,
+        "end_sec": 20815.0,
+        "value": 0.7525
+      },
+      {
+        "start_sec": 20815.0,
+        "end_sec": 20860.0,
+        "value": 0.4539
+      },
+      {
+        "start_sec": 20860.0,
+        "end_sec": 20910.0,
+        "value": 0.6725
+      },
+      {
+        "start_sec": 20910.0,
+        "end_sec": 20955.0,
+        "value": 0.5974
+      },
+      {
+        "start_sec": 20955.0,
+        "end_sec": 21000.0,
+        "value": 0.6236
+      },
+      {
+        "start_sec": 21000.0,
+        "end_sec": 21050.0,
+        "value": 0.5501
+      },
+      {
+        "start_sec": 21050.0,
+        "end_sec": 21095.0,
+        "value": 0.5766
+      },
+      {
+        "start_sec": 21095.0,
+        "end_sec": 21145.0,
+        "value": 0.6073
+      },
+      {
+        "start_sec": 21145.0,
+        "end_sec": 21190.0,
+        "value": 0.6033
+      },
+      {
+        "start_sec": 21190.0,
+        "end_sec": 21240.0,
+        "value": 0.5669
+      },
+      {
+        "start_sec": 21240.0,
+        "end_sec": 21285.0,
+        "value": 0.5417
+      },
+      {
+        "start_sec": 21285.0,
+        "end_sec": 21335.0,
+        "value": 0.5921
+      },
+      {
+        "start_sec": 21335.0,
+        "end_sec": 21380.0,
+        "value": 0.5652
+      },
+      {
+        "start_sec": 21380.0,
+        "end_sec": 21425.0,
+        "value": 0.6782
+      },
+      {
+        "start_sec": 21425.0,
+        "end_sec": 21475.0,
+        "value": 0.6304
+      },
+      {
+        "start_sec": 21475.0,
+        "end_sec": 21520.0,
+        "value": 0.5349
+      },
+      {
+        "start_sec": 21520.0,
+        "end_sec": 21570.0,
+        "value": 0.5873
+      },
+      {
+        "start_sec": 21570.0,
+        "end_sec": 21615.0,
+        "value": 0.6093
+      },
+      {
+        "start_sec": 21615.0,
+        "end_sec": 21665.0,
+        "value": 0.732
+      },
+      {
+        "start_sec": 21665.0,
+        "end_sec": 21710.0,
+        "value": 0.6831
+      },
+      {
+        "start_sec": 21710.0,
+        "end_sec": 21755.0,
+        "value": 0.4995
+      },
+      {
+        "start_sec": 21755.0,
+        "end_sec": 21805.0,
+        "value": 0.5051
+      },
+      {
+        "start_sec": 21805.0,
+        "end_sec": 21850.0,
+        "value": 0.6867
+      },
+      {
+        "start_sec": 21850.0,
+        "end_sec": 21900.0,
+        "value": 0.5515
+      },
+      {
+        "start_sec": 21900.0,
+        "end_sec": 21945.0,
+        "value": 0.5513
+      },
+      {
+        "start_sec": 21945.0,
+        "end_sec": 21995.0,
+        "value": 0.6262
+      },
+      {
+        "start_sec": 21995.0,
+        "end_sec": 22040.0,
+        "value": 0.6093
+      },
+      {
+        "start_sec": 22040.0,
+        "end_sec": 22090.0,
+        "value": 0.6081
+      },
+      {
+        "start_sec": 22090.0,
+        "end_sec": 22135.0,
+        "value": 0.5786
+      },
+      {
+        "start_sec": 22135.0,
+        "end_sec": 22180.0,
+        "value": 0.6399
+      },
+      {
+        "start_sec": 22180.0,
+        "end_sec": 22230.0,
+        "value": 0.5827
+      },
+      {
+        "start_sec": 22230.0,
+        "end_sec": 22275.0,
+        "value": 0.6133
+      },
+      {
+        "start_sec": 22275.0,
+        "end_sec": 22325.0,
+        "value": 0.547
+      },
+      {
+        "start_sec": 22325.0,
+        "end_sec": 22370.0,
+        "value": 0.5675
+      },
+      {
+        "start_sec": 22370.0,
+        "end_sec": 22420.0,
+        "value": 0.618
+      },
+      {
+        "start_sec": 22420.0,
+        "end_sec": 22465.0,
+        "value": 0.5785
+      },
+      {
+        "start_sec": 22465.0,
+        "end_sec": 22515.0,
+        "value": 0.7108
+      },
+      {
+        "start_sec": 22515.0,
+        "end_sec": 22560.0,
+        "value": 0.7039
+      },
+      {
+        "start_sec": 22560.0,
+        "end_sec": 22605.0,
+        "value": 0.7973
+      },
+      {
+        "start_sec": 22605.0,
+        "end_sec": 22655.0,
+        "value": 0.7405
+      },
+      {
+        "start_sec": 22655.0,
+        "end_sec": 22700.0,
+        "value": 0.6306
+      },
+      {
+        "start_sec": 22700.0,
+        "end_sec": 22750.0,
+        "value": 0.6641
+      },
+      {
+        "start_sec": 22750.0,
+        "end_sec": 22795.0,
+        "value": 0.8053
+      },
+      {
+        "start_sec": 22795.0,
+        "end_sec": 22845.0,
+        "value": 0.6768
+      },
+      {
+        "start_sec": 22845.0,
+        "end_sec": 22890.0,
+        "value": 0.4305
+      },
+      {
+        "start_sec": 22890.0,
+        "end_sec": 22935.0,
+        "value": 0.7859
+      },
+      {
+        "start_sec": 22935.0,
+        "end_sec": 22985.0,
+        "value": 0.6815
+      },
+      {
+        "start_sec": 22985.0,
+        "end_sec": 23030.0,
+        "value": 0.6066
+      },
+      {
+        "start_sec": 23030.0,
+        "end_sec": 23080.0,
+        "value": 0.653
+      },
+      {
+        "start_sec": 23080.0,
+        "end_sec": 23125.0,
+        "value": 0.5033
+      },
+      {
+        "start_sec": 23125.0,
+        "end_sec": 23175.0,
+        "value": 0.5989
+      },
+      {
+        "start_sec": 23175.0,
+        "end_sec": 23220.0,
+        "value": 0.5407
+      },
+      {
+        "start_sec": 23220.0,
+        "end_sec": 23270.0,
+        "value": 0.681
+      },
+      {
+        "start_sec": 23270.0,
+        "end_sec": 23315.0,
+        "value": 0.5605
+      },
+      {
+        "start_sec": 23315.0,
+        "end_sec": 23360.0,
+        "value": 0.6194
+      },
+      {
+        "start_sec": 23360.0,
+        "end_sec": 23410.0,
+        "value": 0.6522
+      },
+      {
+        "start_sec": 23410.0,
+        "end_sec": 23455.0,
+        "value": 0.5525
+      },
+      {
+        "start_sec": 23455.0,
+        "end_sec": 23505.0,
+        "value": 0.6179
+      },
+      {
+        "start_sec": 23505.0,
+        "end_sec": 23550.0,
+        "value": 0.6023
+      },
+      {
+        "start_sec": 23550.0,
+        "end_sec": 23600.0,
+        "value": 0.6364
+      },
+      {
+        "start_sec": 23600.0,
+        "end_sec": 23645.0,
+        "value": 0.5251
+      },
+      {
+        "start_sec": 23645.0,
+        "end_sec": 23695.0,
+        "value": 0.5457
+      },
+      {
+        "start_sec": 23695.0,
+        "end_sec": 23740.0,
+        "value": 0.5022
+      },
+      {
+        "start_sec": 23740.0,
+        "end_sec": 23785.0,
+        "value": 0.7013
+      },
+      {
+        "start_sec": 23785.0,
+        "end_sec": 23835.0,
+        "value": 0.6442
+      },
+      {
+        "start_sec": 23835.0,
+        "end_sec": 23880.0,
+        "value": 0.5811
+      },
+      {
+        "start_sec": 23880.0,
+        "end_sec": 23930.0,
+        "value": 0.636
+      },
+      {
+        "start_sec": 23930.0,
+        "end_sec": 23975.0,
+        "value": 0.7795
+      },
+      {
+        "start_sec": 23975.0,
+        "end_sec": 24025.0,
+        "value": 0.6487
+      },
+      {
+        "start_sec": 24025.0,
+        "end_sec": 24070.0,
+        "value": 0.5662
+      },
+      {
+        "start_sec": 24070.0,
+        "end_sec": 24115.0,
+        "value": 0.599
+      },
+      {
+        "start_sec": 24115.0,
+        "end_sec": 24165.0,
+        "value": 0.646
+      },
+      {
+        "start_sec": 24165.0,
+        "end_sec": 24210.0,
+        "value": 0.5949
+      },
+      {
+        "start_sec": 24210.0,
+        "end_sec": 24260.0,
+        "value": 0.759
+      },
+      {
+        "start_sec": 24260.0,
+        "end_sec": 24305.0,
+        "value": 0.5164
+      },
+      {
+        "start_sec": 24305.0,
+        "end_sec": 24355.0,
+        "value": 0.5768
+      },
+      {
+        "start_sec": 24355.0,
+        "end_sec": 24400.0,
+        "value": 0.662
+      },
+      {
+        "start_sec": 24400.0,
+        "end_sec": 24450.0,
+        "value": 0.697
+      },
+      {
+        "start_sec": 24450.0,
+        "end_sec": 24495.0,
+        "value": 0.5486
+      },
+      {
+        "start_sec": 24495.0,
+        "end_sec": 24540.0,
+        "value": 0.6653
+      },
+      {
+        "start_sec": 24540.0,
+        "end_sec": 24590.0,
+        "value": 0.5766
+      },
+      {
+        "start_sec": 24590.0,
+        "end_sec": 24635.0,
+        "value": 0.6634
+      },
+      {
+        "start_sec": 24635.0,
+        "end_sec": 24685.0,
+        "value": 0.644
+      },
+      {
+        "start_sec": 24685.0,
+        "end_sec": 24730.0,
+        "value": 0.799
+      },
+      {
+        "start_sec": 24730.0,
+        "end_sec": 24780.0,
+        "value": 0.6986
+      },
+      {
+        "start_sec": 24780.0,
+        "end_sec": 24825.0,
+        "value": 0.5824
+      },
+      {
+        "start_sec": 24825.0,
+        "end_sec": 24875.0,
+        "value": 0.6266
+      },
+      {
+        "start_sec": 24875.0,
+        "end_sec": 24920.0,
+        "value": 0.5392
+      },
+      {
+        "start_sec": 24920.0,
+        "end_sec": 24965.0,
+        "value": 0.6972
+      },
+      {
+        "start_sec": 24965.0,
+        "end_sec": 25015.0,
+        "value": 0.7057
+      },
+      {
+        "start_sec": 25015.0,
+        "end_sec": 25060.0,
+        "value": 0.785
+      },
+      {
+        "start_sec": 25060.0,
+        "end_sec": 25110.0,
+        "value": 0.7639
+      },
+      {
+        "start_sec": 25110.0,
+        "end_sec": 25155.0,
+        "value": 0.6727
+      },
+      {
+        "start_sec": 25155.0,
+        "end_sec": 25205.0,
+        "value": 0.8483
+      },
+      {
+        "start_sec": 25205.0,
+        "end_sec": 25250.0,
+        "value": 0.8289
+      },
+      {
+        "start_sec": 25250.0,
+        "end_sec": 25295.0,
+        "value": 0.8452
+      },
+      {
+        "start_sec": 25295.0,
+        "end_sec": 25345.0,
+        "value": 0.7914
+      },
+      {
+        "start_sec": 25345.0,
+        "end_sec": 25390.0,
+        "value": 0.8276
+      },
+      {
+        "start_sec": 25390.0,
+        "end_sec": 25440.0,
+        "value": 0.7743
+      },
+      {
+        "start_sec": 25440.0,
+        "end_sec": 25485.0,
+        "value": 0.6801
+      },
+      {
+        "start_sec": 25485.0,
+        "end_sec": 25535.0,
+        "value": 0.6792
+      },
+      {
+        "start_sec": 25535.0,
+        "end_sec": 25580.0,
+        "value": 0.6596
+      },
+      {
+        "start_sec": 25580.0,
+        "end_sec": 25630.0,
+        "value": 0.6761
+      },
+      {
+        "start_sec": 25630.0,
+        "end_sec": 25675.0,
+        "value": 0.6617
+      },
+      {
+        "start_sec": 25675.0,
+        "end_sec": 25720.0,
+        "value": 0.7585
+      },
+      {
+        "start_sec": 25720.0,
+        "end_sec": 25770.0,
+        "value": 0.634
+      },
+      {
+        "start_sec": 25770.0,
+        "end_sec": 25815.0,
+        "value": 0.6863
+      },
+      {
+        "start_sec": 25815.0,
+        "end_sec": 25865.0,
+        "value": 0.6954
+      },
+      {
+        "start_sec": 25865.0,
+        "end_sec": 25910.0,
+        "value": 0.5619
+      },
+      {
+        "start_sec": 25910.0,
+        "end_sec": 25960.0,
+        "value": 0.6446
+      },
+      {
+        "start_sec": 25960.0,
+        "end_sec": 26005.0,
+        "value": 0.662
+      },
+      {
+        "start_sec": 26005.0,
+        "end_sec": 26055.0,
+        "value": 0.6197
+      },
+      {
+        "start_sec": 26055.0,
+        "end_sec": 26100.0,
+        "value": 0.5746
+      },
+      {
+        "start_sec": 26100.0,
+        "end_sec": 26145.0,
+        "value": 0.5321
+      },
+      {
+        "start_sec": 26145.0,
+        "end_sec": 26195.0,
+        "value": 0.5449
+      },
+      {
+        "start_sec": 26195.0,
+        "end_sec": 26240.0,
+        "value": 0.5422
+      },
+      {
+        "start_sec": 26240.0,
+        "end_sec": 26290.0,
+        "value": 0.567
+      },
+      {
+        "start_sec": 26290.0,
+        "end_sec": 26335.0,
+        "value": 0.7074
+      },
+      {
+        "start_sec": 26335.0,
+        "end_sec": 26385.0,
+        "value": 0.6269
+      },
+      {
+        "start_sec": 26385.0,
+        "end_sec": 26430.0,
+        "value": 0.673
+      },
+      {
+        "start_sec": 26430.0,
+        "end_sec": 26475.0,
+        "value": 0.6403
+      },
+      {
+        "start_sec": 26475.0,
+        "end_sec": 26525.0,
+        "value": 0.6313
+      },
+      {
+        "start_sec": 26525.0,
+        "end_sec": 26570.0,
+        "value": 0.6549
+      },
+      {
+        "start_sec": 26570.0,
+        "end_sec": 26620.0,
+        "value": 0.8444
+      },
+      {
+        "start_sec": 26620.0,
+        "end_sec": 26665.0,
+        "value": 0.7777
+      },
+      {
+        "start_sec": 26665.0,
+        "end_sec": 26715.0,
+        "value": 0.5434
+      },
+      {
+        "start_sec": 26715.0,
+        "end_sec": 26760.0,
+        "value": 0.5901
+      },
+      {
+        "start_sec": 26760.0,
+        "end_sec": 26810.0,
+        "value": 0.7525
+      },
+      {
+        "start_sec": 26810.0,
+        "end_sec": 26855.0,
+        "value": 0.831
+      },
+      {
+        "start_sec": 26855.0,
+        "end_sec": 26900.0,
+        "value": 0.8162
+      },
+      {
+        "start_sec": 26900.0,
+        "end_sec": 26950.0,
+        "value": 0.7872
+      },
+      {
+        "start_sec": 26950.0,
+        "end_sec": 26995.0,
+        "value": 0.861
+      },
+      {
+        "start_sec": 26995.0,
+        "end_sec": 27045.0,
+        "value": 0.788
+      },
+      {
+        "start_sec": 27045.0,
+        "end_sec": 27090.0,
+        "value": 0.734
+      },
+      {
+        "start_sec": 27090.0,
+        "end_sec": 27140.0,
+        "value": 0.7932
+      },
+      {
+        "start_sec": 27140.0,
+        "end_sec": 27185.0,
+        "value": 0.7686
+      },
+      {
+        "start_sec": 27185.0,
+        "end_sec": 27235.0,
+        "value": 0.8301
+      },
+      {
+        "start_sec": 27235.0,
+        "end_sec": 27280.0,
+        "value": 0.7988
+      },
+      {
+        "start_sec": 27280.0,
+        "end_sec": 27325.0,
+        "value": 0.8571
+      },
+      {
+        "start_sec": 27325.0,
+        "end_sec": 27375.0,
+        "value": 0.7338
+      },
+      {
+        "start_sec": 27375.0,
+        "end_sec": 27420.0,
+        "value": 0.8634
+      },
+      {
+        "start_sec": 27420.0,
+        "end_sec": 27470.0,
+        "value": 0.7844
+      },
+      {
+        "start_sec": 27470.0,
+        "end_sec": 27515.0,
+        "value": 0.7235
+      },
+      {
+        "start_sec": 27515.0,
+        "end_sec": 27565.0,
+        "value": 0.7629
+      },
+      {
+        "start_sec": 27565.0,
+        "end_sec": 27610.0,
+        "value": 0.7013
+      },
+      {
+        "start_sec": 27610.0,
+        "end_sec": 27660.0,
+        "value": 0.8227
+      },
+      {
+        "start_sec": 27660.0,
+        "end_sec": 27705.0,
+        "value": 0.7856
+      },
+      {
+        "start_sec": 27705.0,
+        "end_sec": 27750.0,
+        "value": 0.8143
+      },
+      {
+        "start_sec": 27750.0,
+        "end_sec": 27800.0,
+        "value": 0.7692
+      },
+      {
+        "start_sec": 27800.0,
+        "end_sec": 27845.0,
+        "value": 0.7899
+      },
+      {
+        "start_sec": 27845.0,
+        "end_sec": 27895.0,
+        "value": 0.7156
+      },
+      {
+        "start_sec": 27895.0,
+        "end_sec": 27940.0,
+        "value": 0.7255
+      },
+      {
+        "start_sec": 27940.0,
+        "end_sec": 27990.0,
+        "value": 0.7909
+      },
+      {
+        "start_sec": 27990.0,
+        "end_sec": 28035.0,
+        "value": 0.8705
+      },
+      {
+        "start_sec": 28035.0,
+        "end_sec": 28080.0,
+        "value": 0.7743
+      },
+      {
+        "start_sec": 28080.0,
+        "end_sec": 28130.0,
+        "value": 0.8169
+      },
+      {
+        "start_sec": 28130.0,
+        "end_sec": 28175.0,
+        "value": 0.7148
+      },
+      {
+        "start_sec": 28175.0,
+        "end_sec": 28225.0,
+        "value": 0.7565
+      },
+      {
+        "start_sec": 28225.0,
+        "end_sec": 28270.0,
+        "value": 0.8002
+      },
+      {
+        "start_sec": 28270.0,
+        "end_sec": 28320.0,
+        "value": 0.5668
+      },
+      {
+        "start_sec": 28320.0,
+        "end_sec": 28365.0,
+        "value": 0.6083
+      },
+      {
+        "start_sec": 28365.0,
+        "end_sec": 28415.0,
+        "value": 0.6034
+      },
+      {
+        "start_sec": 28415.0,
+        "end_sec": 28460.0,
+        "value": 0.6289
+      },
+      {
+        "start_sec": 28460.0,
+        "end_sec": 28505.0,
+        "value": 0.5603
+      },
+      {
+        "start_sec": 28505.0,
+        "end_sec": 28555.0,
+        "value": 0.6464
+      },
+      {
+        "start_sec": 28555.0,
+        "end_sec": 28600.0,
+        "value": 0.673
+      },
+      {
+        "start_sec": 28600.0,
+        "end_sec": 28650.0,
+        "value": 0.7708
+      },
+      {
+        "start_sec": 28650.0,
+        "end_sec": 28695.0,
+        "value": 0.652
+      },
+      {
+        "start_sec": 28695.0,
+        "end_sec": 28745.0,
+        "value": 0.735
+      },
+      {
+        "start_sec": 28745.0,
+        "end_sec": 28790.0,
+        "value": 0.7507
+      },
+      {
+        "start_sec": 28790.0,
+        "end_sec": 28840.0,
+        "value": 0.5762
+      },
+      {
+        "start_sec": 28840.0,
+        "end_sec": 28885.0,
+        "value": 0.5364
+      },
+      {
+        "start_sec": 28885.0,
+        "end_sec": 28930.0,
+        "value": 0.5615
+      },
+      {
+        "start_sec": 28930.0,
+        "end_sec": 28980.0,
+        "value": 0.7039
+      },
+      {
+        "start_sec": 28980.0,
+        "end_sec": 29025.0,
+        "value": 0.4903
+      },
+      {
+        "start_sec": 29025.0,
+        "end_sec": 29075.0,
+        "value": 0.6639
+      },
+      {
+        "start_sec": 29075.0,
+        "end_sec": 29120.0,
+        "value": 0.7291
+      },
+      {
+        "start_sec": 29120.0,
+        "end_sec": 29170.0,
+        "value": 0.627
+      },
+      {
+        "start_sec": 29170.0,
+        "end_sec": 29215.0,
+        "value": 0.5704
+      },
+      {
+        "start_sec": 29215.0,
+        "end_sec": 29260.0,
+        "value": 0.6828
+      },
+      {
+        "start_sec": 29260.0,
+        "end_sec": 29310.0,
+        "value": 0.5522
+      },
+      {
+        "start_sec": 29310.0,
+        "end_sec": 29355.0,
+        "value": 0.5096
+      },
+      {
+        "start_sec": 29355.0,
+        "end_sec": 29405.0,
+        "value": 0.6034
+      },
+      {
+        "start_sec": 29405.0,
+        "end_sec": 29450.0,
+        "value": 0.5604
+      },
+      {
+        "start_sec": 29450.0,
+        "end_sec": 29500.0,
+        "value": 0.5197
+      },
+      {
+        "start_sec": 29500.0,
+        "end_sec": 29545.0,
+        "value": 0.5284
+      },
+      {
+        "start_sec": 29545.0,
+        "end_sec": 29595.0,
+        "value": 0.6454
+      },
+      {
+        "start_sec": 29595.0,
+        "end_sec": 29640.0,
+        "value": 0.6298
+      },
+      {
+        "start_sec": 29640.0,
+        "end_sec": 29685.0,
+        "value": 0.6199
+      },
+      {
+        "start_sec": 29685.0,
+        "end_sec": 29735.0,
+        "value": 0.6494
+      },
+      {
+        "start_sec": 29735.0,
+        "end_sec": 29780.0,
+        "value": 0.667
+      },
+      {
+        "start_sec": 29780.0,
+        "end_sec": 29830.0,
+        "value": 0.6628
+      },
+      {
+        "start_sec": 29830.0,
+        "end_sec": 29875.0,
+        "value": 0.6967
+      },
+      {
+        "start_sec": 29875.0,
+        "end_sec": 29925.0,
+        "value": 0.5388
+      },
+      {
+        "start_sec": 29925.0,
+        "end_sec": 29970.0,
+        "value": 0.6501
+      },
+      {
+        "start_sec": 29970.0,
+        "end_sec": 30020.0,
+        "value": 0.5772
+      },
+      {
+        "start_sec": 30020.0,
+        "end_sec": 30065.0,
+        "value": 0.6884
+      },
+      {
+        "start_sec": 30065.0,
+        "end_sec": 30110.0,
+        "value": 0.6451
+      },
+      {
+        "start_sec": 30110.0,
+        "end_sec": 30160.0,
+        "value": 0.5595
+      },
+      {
+        "start_sec": 30160.0,
+        "end_sec": 30205.0,
+        "value": 0.6765
+      },
+      {
+        "start_sec": 30205.0,
+        "end_sec": 30255.0,
+        "value": 0.7268
+      },
+      {
+        "start_sec": 30255.0,
+        "end_sec": 30300.0,
+        "value": 0.647
+      },
+      {
+        "start_sec": 30300.0,
+        "end_sec": 30350.0,
+        "value": 0.5791
+      },
+      {
+        "start_sec": 30350.0,
+        "end_sec": 30395.0,
+        "value": 0.5917
+      },
+      {
+        "start_sec": 30395.0,
+        "end_sec": 30440.0,
+        "value": 0.6158
+      },
+      {
+        "start_sec": 30440.0,
+        "end_sec": 30490.0,
+        "value": 0.604
+      },
+      {
+        "start_sec": 30490.0,
+        "end_sec": 30535.0,
+        "value": 0.6699
+      },
+      {
+        "start_sec": 30535.0,
+        "end_sec": 30585.0,
+        "value": 0.705
+      },
+      {
+        "start_sec": 30585.0,
+        "end_sec": 30630.0,
+        "value": 0.7181
+      },
+      {
+        "start_sec": 30630.0,
+        "end_sec": 30680.0,
+        "value": 0.6031
+      },
+      {
+        "start_sec": 30680.0,
+        "end_sec": 30725.0,
+        "value": 0.7209
+      },
+      {
+        "start_sec": 30725.0,
+        "end_sec": 30775.0,
+        "value": 0.6824
+      },
+      {
+        "start_sec": 30775.0,
+        "end_sec": 30820.0,
+        "value": 0.7301
+      },
+      {
+        "start_sec": 30820.0,
+        "end_sec": 30865.0,
+        "value": 0.8504
+      },
+      {
+        "start_sec": 30865.0,
+        "end_sec": 30915.0,
+        "value": 0.7453
+      },
+      {
+        "start_sec": 30915.0,
+        "end_sec": 30960.0,
+        "value": 0.6662
+      },
+      {
+        "start_sec": 30960.0,
+        "end_sec": 31010.0,
+        "value": 0.6154
+      },
+      {
+        "start_sec": 31010.0,
+        "end_sec": 31055.0,
+        "value": 0.5551
+      },
+      {
+        "start_sec": 31055.0,
+        "end_sec": 31105.0,
+        "value": 0.7302
+      },
+      {
+        "start_sec": 31105.0,
+        "end_sec": 31150.0,
+        "value": 0.675
+      },
+      {
+        "start_sec": 31150.0,
+        "end_sec": 31200.0,
+        "value": 0.6536
+      },
+      {
+        "start_sec": 31200.0,
+        "end_sec": 31245.0,
+        "value": 0.652
+      },
+      {
+        "start_sec": 31245.0,
+        "end_sec": 31290.0,
+        "value": 0.6146
+      },
+      {
+        "start_sec": 31290.0,
+        "end_sec": 31340.0,
+        "value": 0.6963
+      },
+      {
+        "start_sec": 31340.0,
+        "end_sec": 31385.0,
+        "value": 0.643
+      },
+      {
+        "start_sec": 31385.0,
+        "end_sec": 31435.0,
+        "value": 0.7394
+      },
+      {
+        "start_sec": 31435.0,
+        "end_sec": 31480.0,
+        "value": 0.6639
+      },
+      {
+        "start_sec": 31480.0,
+        "end_sec": 31530.0,
+        "value": 0.5937
+      },
+      {
+        "start_sec": 31530.0,
+        "end_sec": 31575.0,
+        "value": 0.6072
+      },
+      {
+        "start_sec": 31575.0,
+        "end_sec": 31620.0,
+        "value": 0.6229
+      },
+      {
+        "start_sec": 31620.0,
+        "end_sec": 31670.0,
+        "value": 0.5184
+      },
+      {
+        "start_sec": 31670.0,
+        "end_sec": 31715.0,
+        "value": 0.4799
+      },
+      {
+        "start_sec": 31715.0,
+        "end_sec": 31765.0,
+        "value": 0.4096
+      },
+      {
+        "start_sec": 31765.0,
+        "end_sec": 31810.0,
+        "value": 0.5981
+      },
+      {
+        "start_sec": 31810.0,
+        "end_sec": 31860.0,
+        "value": 0.6065
+      },
+      {
+        "start_sec": 31860.0,
+        "end_sec": 31905.0,
+        "value": 0.5227
+      },
+      {
+        "start_sec": 31905.0,
+        "end_sec": 31955.0,
+        "value": 0.5793
+      },
+      {
+        "start_sec": 31955.0,
+        "end_sec": 32000.0,
+        "value": 0.6227
+      },
+      {
+        "start_sec": 32000.0,
+        "end_sec": 32045.0,
+        "value": 0.6582
+      },
+      {
+        "start_sec": 32045.0,
+        "end_sec": 32095.0,
+        "value": 0.541
+      },
+      {
+        "start_sec": 32095.0,
+        "end_sec": 32140.0,
+        "value": 0.5225
+      },
+      {
+        "start_sec": 32140.0,
+        "end_sec": 32190.0,
+        "value": 0.5625
+      },
+      {
+        "start_sec": 32190.0,
+        "end_sec": 32235.0,
+        "value": 0.6624
+      },
+      {
+        "start_sec": 32235.0,
+        "end_sec": 32285.0,
+        "value": 0.6939
+      },
+      {
+        "start_sec": 32285.0,
+        "end_sec": 32330.0,
+        "value": 0.7034
+      },
+      {
+        "start_sec": 32330.0,
+        "end_sec": 32380.0,
+        "value": 0.6777
+      },
+      {
+        "start_sec": 32380.0,
+        "end_sec": 32425.0,
+        "value": 0.6441
+      },
+      {
+        "start_sec": 32425.0,
+        "end_sec": 32470.0,
+        "value": 0.6873
+      },
+      {
+        "start_sec": 32470.0,
+        "end_sec": 32520.0,
+        "value": 0.6559
+      },
+      {
+        "start_sec": 32520.0,
+        "end_sec": 32565.0,
+        "value": 0.6201
+      },
+      {
+        "start_sec": 32565.0,
+        "end_sec": 32615.0,
+        "value": 0.6346
+      },
+      {
+        "start_sec": 32615.0,
+        "end_sec": 32660.0,
+        "value": 0.519
+      },
+      {
+        "start_sec": 32660.0,
+        "end_sec": 32710.0,
+        "value": 0.7044
+      },
+      {
+        "start_sec": 32710.0,
+        "end_sec": 32755.0,
+        "value": 0.6812
+      },
+      {
+        "start_sec": 32755.0,
+        "end_sec": 32800.0,
+        "value": 0.5945
+      },
+      {
+        "start_sec": 32800.0,
+        "end_sec": 32850.0,
+        "value": 0.6712
+      },
+      {
+        "start_sec": 32850.0,
+        "end_sec": 32895.0,
+        "value": 0.6346
+      },
+      {
+        "start_sec": 32895.0,
+        "end_sec": 32945.0,
+        "value": 0.6847
+      },
+      {
+        "start_sec": 32945.0,
+        "end_sec": 32990.0,
+        "value": 0.6844
+      },
+      {
+        "start_sec": 32990.0,
+        "end_sec": 33040.0,
+        "value": 0.6514
+      },
+      {
+        "start_sec": 33040.0,
+        "end_sec": 33085.0,
+        "value": 0.6646
+      },
+      {
+        "start_sec": 33085.0,
+        "end_sec": 33135.0,
+        "value": 0.6674
+      },
+      {
+        "start_sec": 33135.0,
+        "end_sec": 33180.0,
+        "value": 0.6556
+      },
+      {
+        "start_sec": 33180.0,
+        "end_sec": 33225.0,
+        "value": 0.6946
+      },
+      {
+        "start_sec": 33225.0,
+        "end_sec": 33275.0,
+        "value": 0.6789
+      },
+      {
+        "start_sec": 33275.0,
+        "end_sec": 33320.0,
+        "value": 0.6734
+      },
+      {
+        "start_sec": 33320.0,
+        "end_sec": 33370.0,
+        "value": 0.68
+      },
+      {
+        "start_sec": 33370.0,
+        "end_sec": 33415.0,
+        "value": 0.6933
+      },
+      {
+        "start_sec": 33415.0,
+        "end_sec": 33465.0,
+        "value": 0.7038
+      },
+      {
+        "start_sec": 33465.0,
+        "end_sec": 33510.0,
+        "value": 0.6324
+      },
+      {
+        "start_sec": 33510.0,
+        "end_sec": 33560.0,
+        "value": 0.6179
+      },
+      {
+        "start_sec": 33560.0,
+        "end_sec": 33605.0,
+        "value": 0.6835
+      },
+      {
+        "start_sec": 33605.0,
+        "end_sec": 33650.0,
+        "value": 0.6659
+      },
+      {
+        "start_sec": 33650.0,
+        "end_sec": 33700.0,
+        "value": 0.7523
+      },
+      {
+        "start_sec": 33700.0,
+        "end_sec": 33745.0,
+        "value": 0.7009
+      },
+      {
+        "start_sec": 33745.0,
+        "end_sec": 33795.0,
+        "value": 0.687
+      },
+      {
+        "start_sec": 33795.0,
+        "end_sec": 33840.0,
+        "value": 0.6081
+      },
+      {
+        "start_sec": 33840.0,
+        "end_sec": 33890.0,
+        "value": 0.589
+      },
+      {
+        "start_sec": 33890.0,
+        "end_sec": 33935.0,
+        "value": 0.5391
+      },
+      {
+        "start_sec": 33935.0,
+        "end_sec": 33981.0,
+        "value": 0.6306
+      }
+    ]
+  },
+  "audio_loudness_per_min": [
+    -41.279,
+    -41.402,
+    -41.89,
+    -42.327,
+    -38.046,
+    -34.511,
+    -29.166,
+    -25.744,
+    -25.682,
+    -26.567,
+    -27.663,
+    -23.353,
+    -24.847,
+    -28.802,
+    -23.822,
+    -28.037,
+    -26.922,
+    -23.824,
+    -24.951,
+    -26.825,
+    -21.72,
+    -20.18,
+    -26.071,
+    -33.138,
+    -20.582,
+    -20.562,
+    -21.381,
+    -21.52,
+    -21.314,
+    -20.278,
+    -20.144,
+    -20.489,
+    -20.507,
+    -18.705,
+    -21.735,
+    -20.038,
+    -21.239,
+    -20.919,
+    -21.744,
+    -20.946,
+    -19.761,
+    -19.551,
+    -18.933,
+    -19.562,
+    -17.278,
+    -20.499,
+    -19.679,
+    -20.145,
+    -19.098,
+    -16.731,
+    -19.299,
+    -16.917,
+    -19.43,
+    -18.204,
+    -19.151,
+    -18.629,
+    -18.175,
+    -16.729,
+    -20.321,
+    -18.339,
+    -18.124,
+    -18.899,
+    -21.014,
+    -22.467,
+    -22.343,
+    -23.317,
+    -22.601,
+    -21.415,
+    -19.959,
+    -19.177,
+    -19.732,
+    -20.163,
+    -19.468,
+    -22.843,
+    -21.638,
+    -23.187,
+    -22.356,
+    -20.204,
+    -21.173,
+    -23.314,
+    -22.265,
+    -19.847,
+    -22.274,
+    -22.977,
+    -21.592,
+    -24.542,
+    -21.343,
+    -21.764,
+    -17.458,
+    -19.996,
+    -19.441,
+    -22.47,
+    -21.14,
+    -20.155,
+    -22.653,
+    -20.46,
+    -20.784,
+    -21.161,
+    -18.792,
+    -18.525,
+    -22.096,
+    -18.358,
+    -20.313,
+    -19.769,
+    -20.546,
+    -18.737,
+    -20.468,
+    -19.202,
+    -19.104,
+    -21.037,
+    -20.36,
+    -19.63,
+    -20.197,
+    -20.375,
+    -17.237,
+    -17.1,
+    -17.091,
+    -18.144,
+    -19.27,
+    -20.066,
+    -19.714,
+    -19.079,
+    -19.185,
+    -23.005,
+    -22.31,
+    -22.821,
+    -19.17,
+    -18.245,
+    -20.095,
+    -20.226,
+    -20.117,
+    -20.737,
+    -20.926,
+    -22.101,
+    -20.635,
+    -22.636,
+    -22.247,
+    -21.951,
+    -22.91,
+    -19.535,
+    -21.081,
+    -22.782,
+    -19.887,
+    -22.935,
+    -22.692,
+    -23.172,
+    -22.887,
+    -22.148,
+    -20.498,
+    -20.735,
+    -23.209,
+    -19.091,
+    -21.35,
+    -20.088,
+    -21.665,
+    -18.226,
+    -21.039,
+    -22.356,
+    -20.948,
+    -21.434,
+    -23.829,
+    -22.757,
+    -21.824,
+    -22.189,
+    -22.449,
+    -17.505,
+    -22.43,
+    -21.28,
+    -20.13,
+    -19.552,
+    -18.148,
+    -21.489,
+    -16.506,
+    -19.432,
+    -20.809,
+    -21.633,
+    -19.016,
+    -19.849,
+    -18.322,
+    -18.123,
+    -21.751,
+    -20.952,
+    -19.969,
+    -20.158,
+    -21.099,
+    -19.736,
+    -20.203,
+    -18.827,
+    -21.059,
+    -20.394,
+    -20.47,
+    -20.626,
+    -19.257,
+    -19.228,
+    -22.409,
+    -23.234,
+    -22.23,
+    -23.568,
+    -22.443,
+    -21.911,
+    -22.619,
+    -19.493,
+    -21.932,
+    -22.418,
+    -21.961,
+    -22.101,
+    -21.555,
+    -22.274,
+    -23.972,
+    -23.225,
+    -23.459,
+    -24.924,
+    -21.233,
+    -21.731,
+    -19.637,
+    -20.034,
+    -21.388,
+    -21.482,
+    -20.653,
+    -21.931,
+    -22.669,
+    -20.01,
+    -21.099,
+    -21.311,
+    -19.492,
+    -20.421,
+    -18.377,
+    -20.153,
+    -20.938,
+    -20.894,
+    -19.075,
+    -20.01,
+    -18.992,
+    -21.024,
+    -19.114,
+    -18.286,
+    -17.184,
+    -19.143,
+    -19.46,
+    -19.799,
+    -20.588,
+    -20.51,
+    -20.738,
+    -19.076,
+    -15.896,
+    -15.521,
+    -17.601,
+    -14.707,
+    -17.309,
+    -18.638,
+    -20.365,
+    -23.472,
+    -20.212,
+    -18.983,
+    -20.064,
+    -22.159,
+    -26.639,
+    -23.117,
+    -20.151,
+    -21.761,
+    -18.821,
+    -18.629,
+    -20.604,
+    -18.215,
+    -19.633,
+    -22.667,
+    -21.867,
+    -19.31,
+    -20.477,
+    -23.705,
+    -21.389,
+    -19.731,
+    -19.138,
+    -20.581,
+    -20.054,
+    -22.1,
+    -20.218,
+    -24.7,
+    -21.369,
+    -21.212,
+    -21.102,
+    -21.735,
+    -20.145,
+    -19.347,
+    -16.874,
+    -19.671,
+    -18.897,
+    -21.94,
+    -20.161,
+    -21.119,
+    -21.904,
+    -19.181,
+    -22.483,
+    -21.523,
+    -22.645,
+    -20.027,
+    -20.283,
+    -17.924,
+    -19.096,
+    -20.298,
+    -20.496,
+    -21.452,
+    -22.373,
+    -21.183,
+    -17.485,
+    -16.195,
+    -18.504,
+    -17.9,
+    -18.876,
+    -18.324,
+    -18.716,
+    -19.285,
+    -20.464,
+    -21.977,
+    -20.247,
+    -22.116,
+    -21.742,
+    -19.111,
+    -19.0,
+    -19.626,
+    -19.741,
+    -18.874,
+    -27.974,
+    -31.22,
+    -27.826,
+    -37.049,
+    -25.226,
+    -24.869,
+    -21.959,
+    -26.076,
+    -23.237,
+    -22.177,
+    -22.673,
+    -23.908,
+    -21.219,
+    -20.623,
+    -20.531,
+    -22.441,
+    -23.619,
+    -22.115,
+    -23.015,
+    -21.565,
+    -22.631,
+    -21.089,
+    -22.059,
+    -25.174,
+    -20.774,
+    -25.245,
+    -20.829,
+    -20.426,
+    -25.227,
+    -24.037,
+    -21.131,
+    -24.452,
+    -23.084,
+    -22.628,
+    -22.961,
+    -23.615,
+    -23.503,
+    -21.561,
+    -22.05,
+    -21.849,
+    -24.542,
+    -23.22,
+    -22.256,
+    -23.477,
+    -24.329,
+    -22.618,
+    -24.806,
+    -24.047,
+    -23.056,
+    -24.085,
+    -21.667,
+    -23.506,
+    -25.243,
+    -20.928,
+    -19.581,
+    -22.601,
+    -23.1,
+    -21.448,
+    -25.759,
+    -27.616,
+    -25.696,
+    -23.409,
+    -22.616,
+    -23.775,
+    -22.708,
+    -28.663,
+    -26.342,
+    -22.051,
+    -22.775,
+    -22.299,
+    -23.321,
+    -25.296,
+    -24.639,
+    -24.994,
+    -23.069,
+    -25.165,
+    -24.898,
+    -20.912,
+    -23.892,
+    -23.956,
+    -23.806,
+    -23.011,
+    -23.704,
+    -25.599,
+    -20.039,
+    -23.098,
+    -21.844,
+    -22.844,
+    -22.612,
+    -19.616,
+    -23.884,
+    -21.222,
+    -22.628,
+    -21.15,
+    -23.793,
+    -18.843,
+    -18.649,
+    -18.93,
+    -19.81,
+    -16.161,
+    -18.238,
+    -16.686,
+    -20.0,
+    -22.313,
+    -21.909,
+    -21.917,
+    -21.237,
+    -19.92,
+    -18.594,
+    -24.061,
+    -23.598,
+    -23.395,
+    -23.388,
+    -23.149,
+    -23.763,
+    -25.782,
+    -20.564,
+    -21.992,
+    -23.299,
+    -22.092,
+    -22.819,
+    -21.304,
+    -25.783,
+    -24.009,
+    -18.722,
+    -17.017,
+    -17.71,
+    -19.156,
+    -19.731,
+    -20.599,
+    -16.381,
+    -16.603,
+    -17.668,
+    -19.425,
+    -18.182,
+    -19.702,
+    -19.689,
+    -21.289,
+    -16.666,
+    -15.975,
+    -20.239,
+    -17.823,
+    -21.299,
+    -18.595,
+    -14.807,
+    -16.031,
+    -16.544,
+    -18.723,
+    -17.347,
+    -23.179,
+    -22.194,
+    -24.565,
+    -21.452,
+    -23.362,
+    -20.275,
+    -23.951,
+    -21.93,
+    -19.364,
+    -25.574,
+    -26.807,
+    -19.708,
+    -26.638,
+    -19.517,
+    -24.712,
+    -22.642,
+    -21.819,
+    -24.842,
+    -23.322,
+    -23.034,
+    -24.322,
+    -23.57,
+    -22.98,
+    -21.863,
+    -21.895,
+    -21.039,
+    -21.216,
+    -23.707,
+    -23.352,
+    -24.014,
+    -22.342,
+    -22.992,
+    -21.319,
+    -23.098,
+    -23.311,
+    -23.725,
+    -21.835,
+    -21.426,
+    -20.858,
+    -22.606,
+    -22.974,
+    -24.951,
+    -22.673,
+    -18.287,
+    -24.664,
+    -23.988,
+    -24.609,
+    -20.762,
+    -21.357,
+    -21.78,
+    -19.016,
+    -19.683,
+    -21.63,
+    -23.579,
+    -23.347,
+    -23.531,
+    -25.112,
+    -26.564,
+    -25.414,
+    -25.253,
+    -23.224,
+    -26.266,
+    -22.993,
+    -24.304,
+    -25.213,
+    -21.0,
+    -22.785,
+    -24.339,
+    -21.093,
+    -22.137,
+    -23.695,
+    -23.619,
+    -23.551,
+    -23.597,
+    -22.888,
+    -23.11,
+    -24.888,
+    -20.01,
+    -20.095,
+    -19.709,
+    -20.559,
+    -20.039,
+    -20.577,
+    -19.943,
+    -22.856,
+    -22.988,
+    -18.794,
+    -20.393,
+    -21.862,
+    -21.261,
+    -20.048,
+    -21.0,
+    -23.215,
+    -31.57,
+    -26.3,
+    -34.534
+  ],
+  "audio_feature_source": {
+    "kind": "relative_loudness_main_pipeline",
+    "enabled_by_default": true,
+    "window_sec": 5,
+    "min_percentile": 0.95,
+    "min_gap_sec": 30,
+    "chat_overlap_sec": 60,
+    "max_peaks": 20,
+    "waveform_max_points": 720,
+    "normalization": "per_vod_relative_percentile_and_z_score",
+    "decision_rule": "audio is supporting evidence; audio-only peaks do not prove highlight importance",
+    "sample_count": 33982,
+    "source_kind": "whisper_wav_cache",
+    "sample_extraction": "wav_pcm_python",
+    "source_count": 10,
+    "include_lufs": false,
+    "reused_from_cache": true
+  },
+  "audio_reaction_peaks": [
+    {
+      "start_sec": 6890.0,
+      "end_sec": 6895.0,
+      "center_sec": 6892.5,
+      "loudness_db": -14.342,
+      "peak_db": -0.008,
+      "percentile": 0.9815,
+      "z_score": 1.5717,
+      "normalized": 0.762,
+      "score": 0.922,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 6925.0,
+      "end_sec": 6930.0,
+      "center_sec": 6927.5,
+      "loudness_db": -14.668,
+      "peak_db": 0.0,
+      "percentile": 0.9767,
+      "z_score": 1.5019,
+      "normalized": 0.7503,
+      "score": 0.9103,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 10340.0,
+      "end_sec": 10345.0,
+      "center_sec": 10342.5,
+      "loudness_db": -14.01,
+      "peak_db": 0.0,
+      "percentile": 0.9859,
+      "z_score": 1.6425,
+      "normalized": 0.7738,
+      "score": 0.9338,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 10730.0,
+      "end_sec": 10735.0,
+      "center_sec": 10732.5,
+      "loudness_db": -13.414,
+      "peak_db": -0.032,
+      "percentile": 0.993,
+      "z_score": 1.77,
+      "normalized": 0.795,
+      "score": 0.955,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 14820.0,
+      "end_sec": 14825.0,
+      "center_sec": 14822.5,
+      "loudness_db": -12.887,
+      "peak_db": 0.0,
+      "percentile": 0.9965,
+      "z_score": 1.8824,
+      "normalized": 0.8137,
+      "score": 0.9737,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 14870.0,
+      "end_sec": 14875.0,
+      "center_sec": 14872.5,
+      "loudness_db": -13.051,
+      "peak_db": 0.0,
+      "percentile": 0.996,
+      "z_score": 1.8475,
+      "normalized": 0.8079,
+      "score": 0.9679,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 16985.0,
+      "end_sec": 16990.0,
+      "center_sec": 16987.5,
+      "loudness_db": -13.108,
+      "peak_db": 0.0,
+      "percentile": 0.9957,
+      "z_score": 1.8353,
+      "normalized": 0.8059,
+      "score": 0.9659,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 17045.0,
+      "end_sec": 17050.0,
+      "center_sec": 17047.5,
+      "loudness_db": -13.281,
+      "peak_db": 0.0,
+      "percentile": 0.994,
+      "z_score": 1.7983,
+      "normalized": 0.7997,
+      "score": 0.9597,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 18285.0,
+      "end_sec": 18290.0,
+      "center_sec": 18287.5,
+      "loudness_db": -12.878,
+      "peak_db": 0.0,
+      "percentile": 0.9967,
+      "z_score": 1.8843,
+      "normalized": 0.8141,
+      "score": 0.9741,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 25025.0,
+      "end_sec": 25030.0,
+      "center_sec": 25027.5,
+      "loudness_db": -13.695,
+      "peak_db": -0.872,
+      "percentile": 0.9896,
+      "z_score": 1.7098,
+      "normalized": 0.785,
+      "score": 0.945,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 25155.0,
+      "end_sec": 25160.0,
+      "center_sec": 25157.5,
+      "loudness_db": -11.917,
+      "peak_db": 0.0,
+      "percentile": 0.9992,
+      "z_score": 2.0898,
+      "normalized": 0.8483,
+      "score": 0.9283,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 25290.0,
+      "end_sec": 25295.0,
+      "center_sec": 25292.5,
+      "loudness_db": -12.003,
+      "peak_db": 0.0,
+      "percentile": 0.999,
+      "z_score": 2.0714,
+      "normalized": 0.8452,
+      "score": 0.9252,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 26600.0,
+      "end_sec": 26605.0,
+      "center_sec": 26602.5,
+      "loudness_db": -12.026,
+      "peak_db": 0.0,
+      "percentile": 0.9989,
+      "z_score": 2.0664,
+      "normalized": 0.8444,
+      "score": 0.9244,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 26970.0,
+      "end_sec": 26975.0,
+      "center_sec": 26972.5,
+      "loudness_db": -11.561,
+      "peak_db": 0.0,
+      "percentile": 0.9996,
+      "z_score": 2.1657,
+      "normalized": 0.861,
+      "score": 0.941,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 27230.0,
+      "end_sec": 27235.0,
+      "center_sec": 27232.5,
+      "loudness_db": -12.429,
+      "peak_db": 0.0,
+      "percentile": 0.9983,
+      "z_score": 1.9804,
+      "normalized": 0.8301,
+      "score": 0.9101,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 27275.0,
+      "end_sec": 27280.0,
+      "center_sec": 27277.5,
+      "loudness_db": -13.306,
+      "peak_db": -0.825,
+      "percentile": 0.9935,
+      "z_score": 1.793,
+      "normalized": 0.7988,
+      "score": 0.9588,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 27315.0,
+      "end_sec": 27320.0,
+      "center_sec": 27317.5,
+      "loudness_db": -11.668,
+      "peak_db": 0.0,
+      "percentile": 0.9995,
+      "z_score": 2.1429,
+      "normalized": 0.8571,
+      "score": 0.9371,
+      "labels": [
+        "audio_energy_peak",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 27405.0,
+      "end_sec": 27410.0,
+      "center_sec": 27407.5,
+      "loudness_db": -11.494,
+      "peak_db": 0.0,
+      "percentile": 0.9998,
+      "z_score": 2.1802,
+      "normalized": 0.8634,
+      "score": 0.9434,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 28610.0,
+      "end_sec": 28615.0,
+      "center_sec": 28612.5,
+      "loudness_db": -14.092,
+      "peak_db": -1.164,
+      "percentile": 0.9846,
+      "z_score": 1.6251,
+      "normalized": 0.7708,
+      "score": 0.9308,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 30850.0,
+      "end_sec": 30855.0,
+      "center_sec": 30852.5,
+      "loudness_db": -11.859,
+      "peak_db": -0.657,
+      "percentile": 0.9993,
+      "z_score": 2.1022,
+      "normalized": 0.8504,
+      "score": 0.9304,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    }
+  ],
+  "summary_run_ledger": {
+    "schema_version": "summary_run_ledger.v1",
+    "run_id": "13600970_20260607_스타2 자유의 날개 어려움일까 보통일까 ٩(●'▿'●)۶",
+    "path": "output/summary_run_ledger.jsonl"
+  }
+}

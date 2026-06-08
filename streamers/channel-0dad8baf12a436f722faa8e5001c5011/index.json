@@ -1,0 +1,23 @@
+{
+  "streamer": {
+    "streamer_id": "channel-0dad8baf12a436f722faa8e5001c5011",
+    "streamer_name": "따효니",
+    "channel_id": "0dad8baf12a436f722faa8e5001c5011",
+    "platform": "chzzk",
+    "vod_count": 1
+  },
+  "vods": [
+    {
+      "video_no": "12862847",
+      "title": "압도적긍정적 원딜",
+      "published_at": "2026-04-22T18:37:10+09:00",
+      "published_date_str": "20260422",
+      "duration_sec": 33995,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 113111,
+        "highlight_count": 20
+      }
+    }
+  ]
+}

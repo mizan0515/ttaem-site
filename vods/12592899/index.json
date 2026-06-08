@@ -1,0 +1,23 @@
+{
+  "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_name": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "platform": "chzzk",
+  "video_no": "12592899",
+  "title": "세시내전 출동٩(●'▿'●)۶",
+  "published_at": "2026-04-05T15:01:05+09:00",
+  "published_date_str": "20260405",
+  "duration_sec": 37372,
+  "platform_category": "리그 오브 레전드",
+  "content_judgement": null,
+  "summary_md_path": "vods/12592899/report.md",
+  "summary_html_path": "vods/12592899/report.html",
+  "metadata_json_path": "vods/12592899/metadata.json",
+  "thumbnail_url": null,
+  "search_text": "탬탬버린 | 세시내전 출동٩(●'▿'●)۶ | ⚠ **최종 통합 요약 생성에 실패했습니다.** (실패 청크: 6/6)",
+  "stats": {
+    "total_chats": 43921,
+    "highlight_count": 20
+  },
+  "processed_at": "2026-04-21T03:18:25.841998+09:00"
+}

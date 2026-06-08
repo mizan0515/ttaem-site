@@ -1,0 +1,23 @@
+{
+  "streamer": {
+    "streamer_id": "channel-c42cd75ec4855a9edf204a407c3c1dd2",
+    "streamer_name": "치지직",
+    "channel_id": "c42cd75ec4855a9edf204a407c3c1dd2",
+    "platform": "chzzk",
+    "vod_count": 1
+  },
+  "vods": [
+    {
+      "video_no": "13460979",
+      "title": "[치즈쇼 1화🧀] 치지직 분기 결산 퀴즈쇼 - 따효니,소우릎,탬탬버린",
+      "published_at": "2026-05-30T11:55:01+09:00",
+      "published_date_str": "20260530",
+      "duration_sec": 14585,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 64600,
+        "highlight_count": 22
+      }
+    }
+  ]
+}

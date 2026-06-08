@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOD 요약 — VOD 요약 허브</title>
+<link rel="stylesheet" href="assets/app.css?v=4568e0dcd448">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">VOD 요약 허브</a>
+    <nav>
+      <a href="index.html">스트리머</a>
+      <a href="search.html">검색</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap main">
+  <a class="backlink" id="backlink" href="index.html">← 스트리머 목록</a>
+  <h1 class="page-title" id="vod-title">로딩 중...</h1>
+  <p class="page-sub" id="vod-meta"></p>
+
+  <div class="vod-actions" id="vod-nav" hidden></div>
+
+  <div class="redirect-panel" id="redirect-status" role="status" aria-live="polite">
+    리포트를 여는 중입니다.
+  </div>
+
+  <div id="empty" class="empty" hidden>
+    <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="10"></circle>
+      <line x1="12" y1="8" x2="12" y2="12"></line>
+      <line x1="12" y1="16" x2="12.01" y2="16"></line>
+    </svg>
+    해당 VOD를 찾을 수 없습니다.<br>
+    <span class="empty-hint">URL 이 올바른지, 또는 리포트가 아직 발행되었는지 확인해 주세요.</span>
+  </div>
+</main>
+
+<script src="assets/app.js?v=e91751c81758"></script>
+<script>
+window.ACG.renderVodDetail();
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+[
+  {
+    "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+    "streamer_name": "탬탬버린",
+    "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+    "platform": "chzzk",
+    "vod_count": 60
+  },
+  {
+    "streamer_id": "channel-0dad8baf12a436f722faa8e5001c5011",
+    "streamer_name": "따효니",
+    "channel_id": "0dad8baf12a436f722faa8e5001c5011",
+    "platform": "chzzk",
+    "vod_count": 1
+  },
+  {
+    "streamer_id": "channel-8b3e8e3a13201cff0836c69cfab62f45",
+    "streamer_name": "플레임",
+    "channel_id": "8b3e8e3a13201cff0836c69cfab62f45",
+    "platform": "chzzk",
+    "vod_count": 2
+  },
+  {
+    "streamer_id": "channel-c42cd75ec4855a9edf204a407c3c1dd2",
+    "streamer_name": "치지직",
+    "channel_id": "c42cd75ec4855a9edf204a407c3c1dd2",
+    "platform": "chzzk",
+    "vod_count": 1
+  }
+]

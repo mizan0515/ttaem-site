@@ -1,0 +1,35 @@
+{
+  "streamer": {
+    "streamer_id": "channel-8b3e8e3a13201cff0836c69cfab62f45",
+    "streamer_name": "플레임",
+    "channel_id": "8b3e8e3a13201cff0836c69cfab62f45",
+    "platform": "chzzk",
+    "vod_count": 2
+  },
+  "vods": [
+    {
+      "video_no": "12956014",
+      "title": "호종컵 DAY2 (치지직 제작지원)",
+      "published_at": "2026-04-28T17:30:21+09:00",
+      "published_date_str": "20260428",
+      "duration_sec": 29213,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 115388,
+        "highlight_count": 20
+      }
+    },
+    {
+      "video_no": "12940641",
+      "title": "호종컵 DAY1 (치지직 제작지원)",
+      "published_at": "2026-04-27T17:30:46+09:00",
+      "published_date_str": "20260427",
+      "duration_sec": 29103,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 155386,
+        "highlight_count": 20
+      }
+    }
+  ]
+}

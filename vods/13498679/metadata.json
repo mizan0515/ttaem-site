@@ -1,0 +1,3489 @@
+{
+  "video_no": "13498679",
+  "title": "13년이나 방송을 했다니 새삼 문득 신기٩(●'▿'●)۶",
+  "channel": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+  "platform": "chzzk",
+  "duration": 20663,
+  "publish_date": "2026-06-01 17:05:46",
+  "category": "talk",
+  "thumbnail_url": "https://video-phinf.pstatic.net/20260601_242/1780322177234qeWTD_JPEG/Ida4g12nXZ_03.jpg",
+  "total_chats": 135855,
+  "highlight_count": 21,
+  "highlights": [
+    {
+      "sec": 6620,
+      "composite": 1.0,
+      "count": 187,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_2072e7fb75ee",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6620
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 6620,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 10310,
+      "composite": 1.0,
+      "count": 192,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_add8cf149059",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 10310
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 10310,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 10500,
+      "composite": 1.0,
+      "count": 194,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_4aa537385ba6",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 10500
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 10500,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 9540,
+      "composite": 1.0,
+      "count": 200,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_4511200cf387",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 9540
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 13660,
+      "composite": 1.0,
+      "count": 213,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_9aca3e88f703",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 13660
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 18350,
+      "composite": 1.0,
+      "count": 205,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_0580009e1175",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 18350
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 20640,
+      "composite": 1.0,
+      "count": 193,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_7725273de9a0",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 20640
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 4350,
+      "composite": 0.9982,
+      "count": 158,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_surprise",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_fd947b2dddd7",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4350
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4350,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 19190,
+      "composite": 0.9571,
+      "count": 175,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_8b4883b268f5",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 19190
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 5250,
+      "composite": 0.9499,
+      "count": 104,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_surprise",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_09472af943ba",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5250
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5250,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 9090,
+      "composite": 0.8663,
+      "count": 190,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_468e5a28f344",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 9090
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 15542,
+      "composite": 0.8629,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_a4620ec251e0",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 15542
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 15542,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 14418,
+      "composite": 0.8611,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_1b1f0d1ac875",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 14418
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 14418,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 13502,
+      "composite": 0.7519,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_951d1f2562f5",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 13502
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 13502,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 12088,
+      "composite": 0.7508,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_62815ecaf4c5",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 12088
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 12088,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 14568,
+      "composite": 0.7387,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_965ece274e79",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 14568
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 14568,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 15272,
+      "composite": 0.7365,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_d699e065339c",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 15272
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 15272,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 11072,
+      "composite": 0.7344,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_791cb9a34ae6",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 11072
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 11072,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 12258,
+      "composite": 0.7324,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_7015ee00e4e1",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 12258
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 12258,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 18152,
+      "composite": 0.7318,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_7ddf6a75d6ea",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 18152
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 18152,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 5532,
+      "composite": 0.7273,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_25e480c151e1",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5532
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5532,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    }
+  ],
+  "segment_ledger_schema_version": 1,
+  "segment_ledger": [
+    {
+      "segment_id": "seg_summary_a9ee4d16059b",
+      "kind": "summary",
+      "section": "summary",
+      "index": 1,
+      "timecode": "",
+      "start_sec": null,
+      "end_sec": null,
+      "title": "13년이나 방송을 했다니 새삼 문득 신기٩(●'▿'●)۶",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "summary",
+          "fields": [
+            "title",
+            "hashtags",
+            "pull_quote"
+          ]
+        }
+      ],
+      "risk_flags": [],
+      "hashtags": [
+        "방송13주년",
+        "축구토크",
+        "메시서사"
+      ],
+      "pull_quote": "잡담으로 시작해 주식 드립과 밈·드립을 거쳐, 축구 규칙 해설과 메시 서사, 그리고 13년 방송의 진심 고백으로 닫아버린 방송."
+    },
+    {
+      "segment_id": "seg_timeline_1f75562a9373",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 1,
+      "timecode": "00:05:30",
+      "start_sec": 330,
+      "end_sec": null,
+      "title": "13주년을 뒤늦게 체감한 오프닝이 방송 제목감을 바로 만들어버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:05:30"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"13주년, 주녀룰.\" \"생일이랑 너무 가까워요.\" [실제 시점: 00:09:01] \"주녀룰.\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "탬탬버린이 방송 13주년을 어제야 알았다고 말하면서, 기념일이 생일과 너무 가깝고 시작 기준도 애매했다는 얘기를 풀었다. 초반부터 감사 인사가 이어지며 “13년이나 방송을 했다니”라는 방송 전체의 제목감이 자연스럽게 잡혔다."
+    },
+    {
+      "segment_id": "seg_timeline_6a662ecdc693",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 2,
+      "timecode": "00:36:04",
+      "start_sec": 2164,
+      "end_sec": null,
+      "title": "다시보기 채널과 썸네일 운영 이야기가 방송 뒷단의 현실을 드러냄",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:36:04"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"썸네일 갖고 그냥 지아미님한테 자동 돌리고요.\" [실제 시점: 00:25:36] \"진짜 제목학원만 하고 있어요.\" \"어느정도 다시 보기 채널이 정상화가\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "다시보기 업로드, 썸네일 작업, 멤버십 관리가 어떻게 돌아가는지 설명하며 방송 외 작업 구조를 길게 풀어놨다. 편집자 구하기가 지쳤다는 뉘앙스와 함께 자동화, 업로드 책임 분담 같은 현실적인 운영 이야기가 중심이었다."
+    },
+    {
+      "segment_id": "seg_timeline_9cbcbc386926",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 3,
+      "timecode": "01:07:44",
+      "start_sec": 4064,
+      "end_sec": null,
+      "title": "롤이 재미없어졌다는 고백 뒤로 투자 잡담이 터져버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:07:44"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"그냥 롤이 요즘 재미가 없네.\" \"애사심으로 샀어요.\" [실제 시점: 01:12:36] \"잃어도 내 삶에 지장이 없을 정도만\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "솔랭 서포트와 롤 실력 얘기를 하다가, 요즘은 게임이 재미가 없고 심장이 큐를 거부하는 느낌이라고 털어놨다. 이어서 네이버 매수 이야기로 넘어가며 오늘 산 타이밍, 평단, 수익 계산이 이어졌고, 여윳돈만 투자해야 한다는 현실론으로 잡담이 정리됐다."
+    },
+    {
+      "segment_id": "seg_timeline_2f7bfa6fd419",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 4,
+      "timecode": "01:31:51",
+      "start_sec": 5511,
+      "end_sec": null,
+      "title": "“누구인가?” 밈이 말맛으로 폭발해버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:31:51"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"누가 기침소리 내었는가?\" \"누구인가? 누가 크크 소리를 내었는가?\" \"아ㅏㅏㅏㅏㅏ\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 5532.5,
+          "delta_sec": 22,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "자막에서 “누구인가?”, “누가 기침소리를 내었는가?” 같은 표현이 반복되면서 말맛이 살아났고, 시청자들도 그 리듬에 맞춰 웃음으로 받아쳤다. 말장난과 과장된 연기 톤이 밈·드립처럼 굳어진 구간이었다."
+    },
+    {
+      "segment_id": "seg_timeline_db87506863d5",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 5,
+      "timecode": "01:45:02",
+      "start_sec": 6302,
+      "end_sec": null,
+      "title": "축구 지식 검증하다가 메시·호날두 이야기로 과열됨",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:45:02"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"날두가 진짜 형이라고?\" [실제 시점: 01:50:24] \"메시 87년생인 호날두 85년생\" \"아, 진짜 어렵네.\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "오프사이드와 축구 상식 설명을 하려다 선수 이름, 은퇴 여부, 국대 여부가 꼬이면서 대화가 과열됐다. 특히 호날두와 메시의 나이, 형동생 구도, 은퇴 여부를 헷갈리는 흐름이 웃음 포인트로 이어졌다."
+    },
+    {
+      "segment_id": "seg_timeline_1411069d5ecb",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 6,
+      "timecode": "01:52:41",
+      "start_sec": 6761,
+      "end_sec": null,
+      "title": "메시 은퇴설과 태세전환 농담이 살짝 매운맛으로 번짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:52:41"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"아르헨티나 국민들이 메시를 존나 욕 했다고?\" \"아, 욕해서 은퇴한 거라고?\" \"이렇게 된거구나.\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "아르헨티나 팬 반응, 욕설 논란, 은퇴 번복처럼 들리는 이야기들이 섞이면서 진실과 구라를 구분 못 하는 혼란이 핵심이었다. 스포츠 전설도 욕을 먹는다는 식의 얘기가 나오며 논쟁성 잡담으로 번졌다."
+    },
+    {
+      "segment_id": "seg_timeline_4043fb123b76",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 7,
+      "timecode": "02:20:06",
+      "start_sec": 8406,
+      "end_sec": null,
+      "title": "이름 풀이에서 오프사이드 강의로 자연스럽게 넘어가버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "02:20:06"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"오늘의 토막상식을 전해줄 스피드웨건\" \"오프사이드 룰에 대해 얼마나 알고 계신가요?\" [실제 시점: 02:24:36] \"패스를 기준이라고 하잖아.\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "여자 이름은 제인, 남자는 존이라는 식의 설명에서 시작해, 축구 룰 설명으로 자연스럽게 넘어갔다. 이후 오프사이드 기준을 그림 그리듯 풀어 설명하면서 잡담이 전술 해설처럼 바뀌었다."
+    },
+    {
+      "segment_id": "seg_timeline_906d995b1ec8",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 8,
+      "timecode": "02:29:03",
+      "start_sec": 8943,
+      "end_sec": null,
+      "title": "오프사이드 기준을 다시 세우며 이해가 꼬였다가 풀려버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "02:29:03"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"차는 순간 받는 사람 기준\" \"그게 옵사이드 트랩임\" \"패스를 주는 사람이 공을 차는 바로 그 순간!\" [실제 시점: 02:38:55]"
+        }
+      ],
+      "risk_flags": [],
+      "summary": "오프사이드 기준을 두고 “패스를 기준이라고 하잖아”부터 시작해, 수비 라인과 침투 타이밍을 그림처럼 풀어 설명했다. 초반엔 이해가 꼬였지만, 패스를 차는 순간 기준으로 정리되면서 설명의 뼈대가 잡혔다."
+    },
+    {
+      "segment_id": "seg_timeline_ac092a9d506e",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 9,
+      "timecode": "02:47:11",
+      "start_sec": 10031,
+      "end_sec": null,
+      "title": "오프사이드가 지능플레이라는 깨달음으로 분위기가 확 바뀜",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "02:47:11"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"진짜 이게 빠는 수비구나\" \"이게 지능플레이가 좀 많이 필요하네\" \"공짜니까\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "규칙을 이해한 뒤에는 “생각보다 선수들은 이런 많은 심리전을 생각하면서 뛰고 있는 거구나”처럼 감탄으로 분위기가 바뀌었다. 오프사이드가 단순한 반칙이 아니라, 공격과 수비가 서로를 속이는 구조라는 점이 강조됐다."
+    },
+    {
+      "segment_id": "seg_timeline_7c375f70d4e3",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 10,
+      "timecode": "02:54:55",
+      "start_sec": 10495,
+      "end_sec": null,
+      "title": "메시의 무해한 척 플레이가 전술의 끝판왕처럼 터져버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "02:54:55"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"메시가 어캐로를 줬나\" \"빠는 척고 개 지렸다\" \"되게 천연 덕스럽다고\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 10512.5,
+          "delta_sec": 18,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "메시가 일부러 존재감을 낮추고 서 있다가, 수비 시선을 끈 뒤 갑자기 연결되는 장면이 “지렸다”는 반응으로 폭발했다. 규칙 설명의 결론처럼, 왜 그런 전술이 무서운지 체감시키는 하이라이트였다."
+    },
+    {
+      "segment_id": "seg_timeline_cbe2641dc8fc",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 11,
+      "timecode": "03:01:16",
+      "start_sec": 10876,
+      "end_sec": null,
+      "title": "축구 1·2·3 설명이 터지면서 클립 구간이 본격적으로 열림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "03:01:16"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"블루록 ㄷㄷㄷㄷ\" \"찰 장 군\" \"저게 축구지\""
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 10879,
+          "role": "proximity_signal",
+          "clip_uid": "f3xPD91Esw",
+          "title": "전설의 축구3 1",
+          "like_count": 4,
+          "play_count": 1296
+        }
+      ],
+      "risk_flags": [],
+      "summary": "자막에서 “전설의 축구 3”을 소개하면서, 일반 축구를 넘어 점유율·드리블·몸싸움 중심의 다른 축구 개념을 풀어냈다. 시청자 클립으로 잘린 구간도 이 흐름과 맞물리며, 밈·드립 반응이 가장 강하게 붙은 축으로 읽힌다."
+    },
+    {
+      "segment_id": "seg_timeline_c48a3b6c685f",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 12,
+      "timecode": "03:03:09",
+      "start_sec": 10989,
+      "end_sec": null,
+      "title": "전설의 축구3 2",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "03:03:09"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"시청자 클립 anchor\""
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "section": "timeline",
+          "label": "[INJECTED · 시청자 클립 9/1100]",
+          "role": "deterministic_injection"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 10989,
+          "role": "proximity_signal",
+          "clip_uid": "CnnzEDuTFQ",
+          "title": "전설의 축구3 2",
+          "like_count": 9,
+          "play_count": 1100
+        }
+      ],
+      "risk_flags": [
+        "injected_viewer_clip_anchor"
+      ],
+      "summary": "시청자가 클립으로 잘라낸 시점. 본문 evidence 는 같은 시각의 자막/채팅을 참조."
+    },
+    {
+      "segment_id": "seg_timeline_7a15cb60c61d",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 13,
+      "timecode": "03:07:01",
+      "start_sec": 11221,
+      "end_sec": null,
+      "title": "전설의 축구3 4",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "03:07:01"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"시청자 클립 anchor\""
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "section": "timeline",
+          "label": "[INJECTED · 시청자 클립 7/1526]",
+          "role": "deterministic_injection"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 11221,
+          "role": "proximity_signal",
+          "clip_uid": "L8AT14hVcF",
+          "title": "전설의 축구3 4",
+          "like_count": 7,
+          "play_count": 1526
+        }
+      ],
+      "risk_flags": [
+        "injected_viewer_clip_anchor"
+      ],
+      "summary": "시청자가 클립으로 잘라낸 시점. 본문 evidence 는 같은 시각의 자막/채팅을 참조."
+    },
+    {
+      "segment_id": "seg_timeline_db93e52ed868",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 14,
+      "timecode": "03:10:00",
+      "start_sec": 11400,
+      "end_sec": null,
+      "title": "몸싸움 축구와 ‘찰장군’ 밈이 본격적으로 굳어짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "03:10:00"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"발이 어떻게 여기...\" \"저거 밟는거봐 ㅋㅋ\" \"사뿐히 즈려밟네\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "자막이 축구를 사실상 “사람을 담그는” 방향으로 해석하면서, 강한 몸싸움과 반칙성 플레이가 강조됐다. 다리 밟고 지나가는 장면까지 이어지며 ‘찰장군’ 같은 별명과 과장된 호응이 반복됐다."
+    },
+    {
+      "segment_id": "seg_timeline_c4e883e49932",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 15,
+      "timecode": "03:15:38",
+      "start_sec": 11738,
+      "end_sec": null,
+      "title": "전설의 축구3 8",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "03:15:38"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"시청자 클립 anchor\""
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "section": "timeline",
+          "label": "[INJECTED · 시청자 클립 5/1172]",
+          "role": "deterministic_injection"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 11738,
+          "role": "proximity_signal",
+          "clip_uid": "qg74WSErvb",
+          "title": "전설의 축구3 8",
+          "like_count": 5,
+          "play_count": 1172
+        }
+      ],
+      "risk_flags": [
+        "injected_viewer_clip_anchor"
+      ],
+      "summary": "시청자가 클립으로 잘라낸 시점. 본문 evidence 는 같은 시각의 자막/채팅을 참조."
+    },
+    {
+      "segment_id": "seg_timeline_3d46cca16e2e",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 16,
+      "timecode": "03:21:05",
+      "start_sec": 12065,
+      "end_sec": null,
+      "title": "메시 드리블 하이라이트가 절정으로 치솟아버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "03:21:05"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"GOAT\" \"왜 못 막냐고! 여섯 명이 붙는데!\" [실제 시점: 03:25:53] \"이게 진짜 축구이구나!\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 12087.5,
+          "delta_sec": 22,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "메시가 여러 명을 제치고 전진하는 장면이 길게 이어지며, 자막도 “이게 축구이구나”라고 감탄했다. 사실상 이 방송 전반의 첫 번째 정점으로, 플레이 자체의 완성도가 가장 선명하게 드러난 구간이었다."
+    },
+    {
+      "segment_id": "seg_timeline_e72b6bbfb78d",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 17,
+      "timecode": "03:41:06",
+      "start_sec": 13266,
+      "end_sec": null,
+      "title": "메시의 압박감과 은퇴 서사가 감정선까지 끌어올림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "03:41:06"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"눈물 찔끔 날 것 같아.\" [실제 시점: 03:45:03] \"메시를 위해서 더 열심히 뛴다는 게 정말 눈물 나.\" \"메시, 도나와요 메시!\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "메시가 “항상 1등해야 하는” 기준과 준우승의 누적 때문에 느꼈을 부담을 짚으며, 왜 은퇴 서사가 붙는지 풀어냈다. 단순 실력 칭찬을 넘어 기대치 자체가 인간의 부담이었음을 강조한 구간이었다."
+    },
+    {
+      "segment_id": "seg_timeline_6e10ba963b16",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 18,
+      "timecode": "04:13:30",
+      "start_sec": 15210,
+      "end_sec": null,
+      "title": "메호대전이 다시 불붙으며 비교 감상이 폭발함",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "04:13:30"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"메호대전 ㄷㄷ\" \"SIUUUUUUUUUUUUUUUUUUUUUUUUUUUUU\" \"간지는 날두지 ㅋㅋ\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "메시와 호날두를 한 화면에 두고 비교하는 흐름에서 채팅이 급격히 달아올랐다. 둘의 스타일 차이가 선명하게 드러나며, 오래된 팬덤 대결의 감정선이 다시 살아난 순간이었다."
+    },
+    {
+      "segment_id": "seg_timeline_2ad17c563c53",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 19,
+      "timecode": "04:46:00",
+      "start_sec": 17160,
+      "end_sec": null,
+      "title": "메시·수아레즈·네이마르가 한꺼번에 소환되며 스타 회상이 터짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "04:46:00"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"와 나 다 아는 이름이야! 네이마르, 메쉬, 수아레즈.\" \"네이마르도 초신성이었음\" \"네이마르 스페셜 ㄱㄱ\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "화제는 바르셀로나 전성기와 익숙한 이름들로 넘어가며, 네이마르와 메시 스타일 차이까지 자연스럽게 비교했다. “아는 이름”이 쏟아지자 시청자 반응도 크게 붙었다."
+    },
+    {
+      "segment_id": "seg_timeline_9c3dc19b3e60",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 20,
+      "timecode": "05:09:30",
+      "start_sec": 18570,
+      "end_sec": null,
+      "title": "바르셀로나식 삼각형 패스와 압박 전술에 감탄이 몰림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "05:09:30"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"삼각형으로 서 있네?\" \"뒤로 패스는 지렸다잉?\" \"대단한데? 아니, 심경!\" [실제 시점: 04:52:12]"
+        }
+      ],
+      "risk_flags": [],
+      "summary": "바르셀로나식 점유와 삼각형 패스 구조가 본격적으로 설명되며, “뒤로 패스는 지렸다잉?” 같은 반응이 나왔다. 단순한 경기 감상이 아니라 전술의 재미를 체감하는 구간이었다."
+    },
+    {
+      "segment_id": "seg_timeline_6873eda7f7f6",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 21,
+      "timecode": "05:19:20",
+      "start_sec": 19160,
+      "end_sec": null,
+      "title": "더 보고 싶지만 여기서 멈추는 엔딩 분위기가 잡힘",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "05:19:20"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"재밌어서 더 보고 싶긴 한데\" \"오늘은 여기까지.\" \"다음에도 또 좀... 약간 축구 좀 더 배워볼까요?\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "“오늘은 여기까지”로 마무리 분위기가 잡히지만, 시청자는 아직 더 보고 싶다는 반응을 남겼다. 축구가 생각보다 재밌었다는 체감과 함께 다음 콘텐츠로 이어질 여지가 열렸다."
+    },
+    {
+      "segment_id": "seg_timeline_0088c103f44b",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 22,
+      "timecode": "05:21:13",
+      "start_sec": 19273,
+      "end_sec": null,
+      "title": "팀 영업과 추갈못 선언이 밈처럼 정리됨",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "05:21:13"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"제 팀을 소개합니다\" \"아직 저는 추갈못이라\" \"사람 새끼면 토트넘 추천하지 마라\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "시청자들이 각자 응원팀을 소개하는 흐름으로 이어지지만, 본인은 아직 팀을 고르지 않겠다고 선을 그었다. “토트넘 추천하지 마라” 같은 농담이 나오며 팀 영업 밈·드립이 굳어졌다."
+    },
+    {
+      "segment_id": "seg_timeline_5e841638744a",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 23,
+      "timecode": "05:39:01",
+      "start_sec": 20341,
+      "end_sec": null,
+      "title": "후반 잡담이 방송 전체를 조용하게 접어버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "05:39:01"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"오늘 재밌었어요\" \"어찌저찌 이게 이렇게 흘러가서 좀 잘 놀다 갑니다\" \"다음에도 축구보는 거지\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "“내 취향은 아니었어” 같은 반응과 함께 영화나 다음 일정 이야기가 오가며 느슨한 잡담 흐름이 이어졌다. 시청자들에게 잘 놀다 간다고 인사하며 방송 마무리 분위기가 서서히 잡혔다."
+    },
+    {
+      "segment_id": "seg_timeline_fca645fdd707",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 24,
+      "timecode": "05:41:46",
+      "start_sec": 20506,
+      "end_sec": null,
+      "title": "13년 방송을 버티게 한 진심 고백이 나와버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "05:41:46"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"13년이나 방송할 수 있었던 거는\" \"맨날 봐주시니깐\" \"항상 저를 축하하고 응원\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "“제가 이렇게 13년이나 방송할 수 있었던 거는”이라고 말하며, 오랜 방송 생활의 이유를 시청자들 덕분이라고 직접 전했다. 감사 인사가 단순한 의례가 아니라 진심 어린 회고로 읽히는 구간이었다."
+    },
+    {
+      "segment_id": "seg_timeline_5a45742e8462",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 25,
+      "timecode": "05:44:09",
+      "start_sec": 20649,
+      "end_sec": null,
+      "title": "저녁 먹으러 가는 깔끔한 종료로 13주년 방송이 닫힘",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "05:44:09"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"바이바이! 안녕!\" \"다음 방송에서 만나자\" \"13주년에 13부 안 하네\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "“일단 저녁을 좀 먹으러 갈게요”라며 방송을 확실히 종료했고, 다음 방송에서 보자는 인사로 마무리했다. 별다른 사건보다 담백한 퇴장이었지만, 축하와 배웅이 겹치며 잔잔한 엔딩이 됐다."
+    },
+    {
+      "segment_id": "seg_highlight_e551d3dcec2b",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 1,
+      "timecode": "01:31:51~01:33:33",
+      "start_sec": 5511,
+      "end_sec": 5613,
+      "title": "“누구인가?” 밈이 말맛으로 터진 구간",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "01:31:51~01:33:33"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "짧은 시간 안에 말장난, 과장된 리액션, 채팅 웃음이 한꺼번에 붙어 숏클립으로 잘 잘린다."
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 5532.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "짧은 시간 안에 말장난, 과장된 리액션, 채팅 웃음이 한꺼번에 붙어 숏클립으로 잘 잘린다."
+    },
+    {
+      "segment_id": "seg_highlight_82e684c0ab7a",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 2,
+      "timecode": "02:29:03~02:57:08",
+      "start_sec": 8943,
+      "end_sec": 10628,
+      "title": "오프사이드 설명이 전술 해설로 뒤집히는 구간",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "02:29:03~02:57:08"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "이해가 꼬였다가 정리되고, 메시 예시와 심리전 설명까지 이어져 지식형 하이라이트로 밀도가 높다."
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 10272.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "이해가 꼬였다가 정리되고, 메시 예시와 심리전 설명까지 이어져 지식형 하이라이트로 밀도가 높다."
+    },
+    {
+      "segment_id": "seg_highlight_8efbc343f2e9",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 3,
+      "timecode": "03:01:16~03:21:05",
+      "start_sec": 10876,
+      "end_sec": 12065,
+      "title": "축구 1·2·3과 찰장군 밈이 폭발한 구간",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "03:01:16~03:21:05"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "클립 앵커와 채팅 반응이 겹치는 핵심 구간이라 밈·드립 완성도가 높고, 웃음 포인트가 명확하다."
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 10879,
+          "role": "proximity_signal",
+          "clip_uid": "f3xPD91Esw",
+          "title": "전설의 축구3 1",
+          "like_count": 4,
+          "play_count": 1296
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 10989,
+          "role": "proximity_signal",
+          "clip_uid": "CnnzEDuTFQ",
+          "title": "전설의 축구3 2",
+          "like_count": 9,
+          "play_count": 1100
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 11221,
+          "role": "proximity_signal",
+          "clip_uid": "L8AT14hVcF",
+          "title": "전설의 축구3 4",
+          "like_count": 7,
+          "play_count": 1526
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 11738,
+          "role": "proximity_signal",
+          "clip_uid": "qg74WSErvb",
+          "title": "전설의 축구3 8",
+          "like_count": 5,
+          "play_count": 1172
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 11072.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "클립 앵커와 채팅 반응이 겹치는 핵심 구간이라 밈·드립 완성도가 높고, 웃음 포인트가 명확하다."
+    },
+    {
+      "segment_id": "seg_highlight_e1be320be2df",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 4,
+      "timecode": "03:21:05~03:25:50",
+      "start_sec": 12065,
+      "end_sec": 12350,
+      "title": "메시 드리블이 신으로 수렴하는 구간",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "03:21:05~03:25:50"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "실제 플레이 완성도와 감탄 반응이 직결돼 있어, 축구 하이라이트로 가장 직관적이다."
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 12087.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "실제 플레이 완성도와 감탄 반응이 직결돼 있어, 축구 하이라이트로 가장 직관적이다."
+    },
+    {
+      "segment_id": "seg_highlight_6c84a96083c6",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 5,
+      "timecode": "05:41:46~05:44:09",
+      "start_sec": 20506,
+      "end_sec": 20649,
+      "title": "13년 방송 진심 고백과 방종 엔딩",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "05:41:46~05:44:09"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "감동과 마무리가 동시에 살아서 방송의 결말을 대표하는 짧은 엔딩 클립으로 적합하다."
+        }
+      ],
+      "risk_flags": [],
+      "reason": "감동과 마무리가 동시에 살아서 방송의 결말을 대표하는 짧은 엔딩 클립으로 적합하다."
+    },
+    {
+      "segment_id": "seg_chapter_04415e16a59b",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 1,
+      "timecode": "00:05:30",
+      "start_sec": 330,
+      "end_sec": null,
+      "title": "13주년 오프닝 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:05:30"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_29761df56ec0",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 2,
+      "timecode": "00:36:04",
+      "start_sec": 2164,
+      "end_sec": null,
+      "title": "다시보기 운영 알아보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:36:04"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_d42e718c9225",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 3,
+      "timecode": "01:07:44",
+      "start_sec": 4064,
+      "end_sec": null,
+      "title": "주식 잡담 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:07:44"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_8a3c0e8804d0",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 4,
+      "timecode": "01:31:51",
+      "start_sec": 5511,
+      "end_sec": null,
+      "title": "누구인가 밈 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:31:51"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 5532.5,
+          "delta_sec": 22,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_802d8f883294",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 5,
+      "timecode": "01:45:02",
+      "start_sec": 6302,
+      "end_sec": null,
+      "title": "메시·호날두 이야기 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:45:02"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_ebcb4e2912be",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 6,
+      "timecode": "01:52:41",
+      "start_sec": 6761,
+      "end_sec": null,
+      "title": "메시 은퇴설 이야기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:52:41"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_175c4f7b2c38",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 7,
+      "timecode": "02:20:06",
+      "start_sec": 8406,
+      "end_sec": null,
+      "title": "오프사이드 설명 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "02:20:06"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_3ff97bf64acf",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 8,
+      "timecode": "02:47:11",
+      "start_sec": 10031,
+      "end_sec": null,
+      "title": "오프사이드 이해 정리",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "02:47:11"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_0292a2e88ade",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 9,
+      "timecode": "02:54:55",
+      "start_sec": 10495,
+      "end_sec": null,
+      "title": "메시 전술 하이라이트",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "02:54:55"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 10512.5,
+          "delta_sec": 18,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_c528407708d2",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 10,
+      "timecode": "03:01:16",
+      "start_sec": 10876,
+      "end_sec": null,
+      "title": "축구 1·2·3 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "03:01:16"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 10879,
+          "role": "proximity_signal",
+          "clip_uid": "f3xPD91Esw",
+          "title": "전설의 축구3 1",
+          "like_count": 4,
+          "play_count": 1296
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_dd44242a82d9",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 11,
+      "timecode": "03:21:05",
+      "start_sec": 12065,
+      "end_sec": null,
+      "title": "메시 드리블 하이라이트",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "03:21:05"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 12087.5,
+          "delta_sec": 22,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_050f89e0d5d5",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 12,
+      "timecode": "04:13:30",
+      "start_sec": 15210,
+      "end_sec": null,
+      "title": "메호대전 재점화",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "04:13:30"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_15f40635e2c5",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 13,
+      "timecode": "05:09:30",
+      "start_sec": 18570,
+      "end_sec": null,
+      "title": "바르셀로나 전술 알아보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "05:09:30"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_8ed4bf773dff",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 14,
+      "timecode": "05:19:20",
+      "start_sec": 19160,
+      "end_sec": null,
+      "title": "방송 마무리 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "05:19:20"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_45c88736cfcc",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 15,
+      "timecode": "05:41:46",
+      "start_sec": 20506,
+      "end_sec": null,
+      "title": "13년 방송 진심 고백",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "05:41:46"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_e4a9c05e562c",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 16,
+      "timecode": "05:44:09",
+      "start_sec": 20649,
+      "end_sec": null,
+      "title": "방송 종료",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "05:44:09"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_highlight_candidate_2072e7fb75ee",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 1,
+      "timecode": "01:50:20",
+      "start_sec": 6620,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6620
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 6620,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 6620,
+      "composite": 1.0,
+      "count": 187
+    },
+    {
+      "segment_id": "seg_highlight_candidate_add8cf149059",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 2,
+      "timecode": "02:51:50",
+      "start_sec": 10310,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 10310
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 10310,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 10310,
+      "composite": 1.0,
+      "count": 192
+    },
+    {
+      "segment_id": "seg_highlight_candidate_4aa537385ba6",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 3,
+      "timecode": "02:55:00",
+      "start_sec": 10500,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 10500
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 10500,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 10500,
+      "composite": 1.0,
+      "count": 194
+    },
+    {
+      "segment_id": "seg_highlight_candidate_4511200cf387",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 4,
+      "timecode": "02:39:00",
+      "start_sec": 9540,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 9540
+        }
+      ],
+      "risk_flags": [],
+      "sec": 9540,
+      "composite": 1.0,
+      "count": 200
+    },
+    {
+      "segment_id": "seg_highlight_candidate_9aca3e88f703",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 5,
+      "timecode": "03:47:40",
+      "start_sec": 13660,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 13660
+        }
+      ],
+      "risk_flags": [],
+      "sec": 13660,
+      "composite": 1.0,
+      "count": 213
+    },
+    {
+      "segment_id": "seg_highlight_candidate_0580009e1175",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 6,
+      "timecode": "05:05:50",
+      "start_sec": 18350,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 18350
+        }
+      ],
+      "risk_flags": [],
+      "sec": 18350,
+      "composite": 1.0,
+      "count": 205
+    },
+    {
+      "segment_id": "seg_highlight_candidate_7725273de9a0",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 7,
+      "timecode": "05:44:00",
+      "start_sec": 20640,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 20640
+        }
+      ],
+      "risk_flags": [],
+      "sec": 20640,
+      "composite": 1.0,
+      "count": 193
+    },
+    {
+      "segment_id": "seg_highlight_candidate_fd947b2dddd7",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 8,
+      "timecode": "01:12:30",
+      "start_sec": 4350,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4350
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4350,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 4350,
+      "composite": 0.9982,
+      "count": 158
+    },
+    {
+      "segment_id": "seg_highlight_candidate_8b4883b268f5",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 9,
+      "timecode": "05:19:50",
+      "start_sec": 19190,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 19190
+        }
+      ],
+      "risk_flags": [],
+      "sec": 19190,
+      "composite": 0.9571,
+      "count": 175
+    },
+    {
+      "segment_id": "seg_highlight_candidate_09472af943ba",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 10,
+      "timecode": "01:27:30",
+      "start_sec": 5250,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5250
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5250,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 5250,
+      "composite": 0.9499,
+      "count": 104
+    },
+    {
+      "segment_id": "seg_highlight_candidate_468e5a28f344",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 11,
+      "timecode": "02:31:30",
+      "start_sec": 9090,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 9090
+        }
+      ],
+      "risk_flags": [],
+      "sec": 9090,
+      "composite": 0.8663,
+      "count": 190
+    },
+    {
+      "segment_id": "seg_highlight_candidate_a4620ec251e0",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 12,
+      "timecode": "04:19:02",
+      "start_sec": 15542,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 15542
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 15542,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 15542,
+      "composite": 0.8629,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_1b1f0d1ac875",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 13,
+      "timecode": "04:00:18",
+      "start_sec": 14418,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 14418
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 14418,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 14418,
+      "composite": 0.8611,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_951d1f2562f5",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 14,
+      "timecode": "03:45:02",
+      "start_sec": 13502,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 13502
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 13502,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 13502,
+      "composite": 0.7519,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_62815ecaf4c5",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 15,
+      "timecode": "03:21:28",
+      "start_sec": 12088,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 12088
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 12088,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 12088,
+      "composite": 0.7508,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_965ece274e79",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 16,
+      "timecode": "04:02:48",
+      "start_sec": 14568,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 14568
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 14568,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 14568,
+      "composite": 0.7387,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_d699e065339c",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 17,
+      "timecode": "04:14:32",
+      "start_sec": 15272,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 15272
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 15272,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 15272,
+      "composite": 0.7365,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_791cb9a34ae6",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 18,
+      "timecode": "03:04:32",
+      "start_sec": 11072,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 11072
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 11072,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 11072,
+      "composite": 0.7344,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_7015ee00e4e1",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 19,
+      "timecode": "03:24:18",
+      "start_sec": 12258,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 12258
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 12258,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 12258,
+      "composite": 0.7324,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_7ddf6a75d6ea",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 20,
+      "timecode": "05:02:32",
+      "start_sec": 18152,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 18152
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 18152,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 18152,
+      "composite": 0.7318,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_25e480c151e1",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 21,
+      "timecode": "01:32:12",
+      "start_sec": 5532,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5532
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5532,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 5532,
+      "composite": 0.7273,
+      "count": 0
+    }
+  ],
+  "processed_at": "2026-06-03T11:50:47.821585+09:00",
+  "evidence_verifier": {
+    "schema_version": "evidence_verifier.v1",
+    "status": "fail",
+    "summary": {
+      "checked_segments": 46,
+      "failure_count": 1,
+      "warning_count": 0
+    },
+    "findings": [
+      {
+        "code": "CHAPTER_READINESS_FAIL",
+        "severity": "error",
+        "message": "chapter readiness validator reported fail",
+        "source_fields": [
+          "chapter_readiness"
+        ],
+        "detail": {
+          "status": "fail",
+          "failure_reasons": []
+        }
+      }
+    ]
+  },
+  "summary_input_readiness": {
+    "schema_version": "summary_input_readiness.v1",
+    "status": "ready_with_gaps",
+    "quality_claim": "not_evaluated",
+    "items": [
+      {
+        "key": "srt",
+        "name": "자막 SRT",
+        "required": true,
+        "status": "present",
+        "reason": "요약 청크 입력으로 사용할 SRT가 있습니다.",
+        "retry_condition": "transcribe 단계가 SRT를 생성한 뒤 다시 요약합니다.",
+        "detail": {
+          "filename": "13498679_13년이나 방송을 했다니 새삼 문득 신기٩(●'▿'●)۶_144p.srt",
+          "size_bytes": 309336
+        }
+      },
+      {
+        "key": "chat",
+        "name": "채팅",
+        "required": false,
+        "status": "present",
+        "reason": "채팅 신호가 요약 후보에 반영됩니다.",
+        "retry_condition": "채팅 수집이 VOD 끝까지 성공한 뒤 다시 요약합니다.",
+        "detail": {
+          "message_count": 135855,
+          "first_message_sec": 0.0,
+          "latest_message_sec": 20653.192,
+          "latest_message_hms": "05:44:13",
+          "expected_duration_sec": 20663.0,
+          "expected_duration_hms": "05:44:23",
+          "coverage_ratio": 0.9995,
+          "coverage_gap_sec": 9.808
+        }
+      },
+      {
+        "key": "community",
+        "name": "커뮤니티",
+        "required": false,
+        "status": "present",
+        "reason": "방송 외부 반응 후보가 있습니다.",
+        "retry_condition": "커뮤니티 수집 또는 수동 입력 뒤 다시 요약합니다.",
+        "detail": {
+          "post_count": 65
+        }
+      },
+      {
+        "key": "context_doc",
+        "name": "VOD 배경 맥락",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "관리자 배경 맥락 없이 요약합니다.",
+        "retry_condition": "work/<video_no>/<video_no>_context.md 작성 뒤 다시 요약합니다.",
+        "detail": {
+          "char_count": 0
+        }
+      },
+      {
+        "key": "streamer_vocab",
+        "name": "스트리머 어휘/lexicon",
+        "required": false,
+        "status": "present",
+        "reason": "고유명사/별명 보정 후보가 있습니다.",
+        "retry_condition": "streamer_vocab 저장 또는 lexicon 빌드 뒤 다시 요약합니다.",
+        "detail": {
+          "term_count": 40
+        }
+      },
+      {
+        "key": "manager_edit_lessons",
+        "name": "관리자 수정 사례",
+        "required": false,
+        "status": "present",
+        "reason": "이전 관리자 수정 사례가 프롬프트에 반영됩니다.",
+        "retry_condition": "관리자 저장 이력이 쌓인 뒤 다시 요약합니다.",
+        "detail": {
+          "lesson_count": 2
+        }
+      },
+      {
+        "key": "user_clips",
+        "name": "시청자 클립",
+        "required": false,
+        "status": "present",
+        "reason": "시청자 클립 anchor 후보가 있습니다.",
+        "retry_condition": "viewer clip 수집/anchor 회수 뒤 다시 요약합니다.",
+        "detail": {
+          "total": 9,
+          "with_offset": 9,
+          "with_engagement": 9,
+          "status": "ok"
+        }
+      },
+      {
+        "key": "audio_peaks",
+        "name": "오디오 반응 피크",
+        "required": false,
+        "status": "present",
+        "reason": "오디오 반응 분석 결과가 있습니다.",
+        "retry_condition": "audio reaction 분석이 성공한 뒤 다시 요약합니다.",
+        "detail": {
+          "peak_count": 20,
+          "status": "available"
+        }
+      },
+      {
+        "key": "source_manifest",
+        "name": "요약 입력 manifest",
+        "required": true,
+        "status": "present",
+        "reason": "요약 입력 manifest가 계산되어 cache/재현성 기준이 있습니다.",
+        "retry_condition": "요약 cache manifest 계산 후 다시 확인합니다.",
+        "detail": {
+          "schema_version": 7,
+          "manifest_key_count": 20,
+          "has_summary_hash": false
+        }
+      },
+      {
+        "key": "segment_ledger",
+        "name": "segment/evidence ledger",
+        "required": false,
+        "status": "present",
+        "reason": "렌더링된 리포트의 segment ledger가 있습니다.",
+        "retry_condition": "summary Markdown parser/metadata generation을 확인한 뒤 다시 렌더링합니다.",
+        "detail": {
+          "segment_count": 68,
+          "kind_counts": {
+            "chapter": 16,
+            "highlight": 5,
+            "highlight_candidate": 21,
+            "summary": 1,
+            "timeline": 25
+          }
+        }
+      }
+    ]
+  },
+  "audio_reaction_peaks": [
+    {
+      "start_sec": 4345.0,
+      "end_sec": 4350.0,
+      "center_sec": 4347.5,
+      "loudness_db": -16.523,
+      "peak_db": -1.024,
+      "percentile": 0.9522,
+      "z_score": 1.0695,
+      "normalized": 0.6782,
+      "score": 0.8382,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4400.0,
+      "end_sec": 4405.0,
+      "center_sec": 4402.5,
+      "loudness_db": -16.378,
+      "peak_db": -0.947,
+      "percentile": 0.9604,
+      "z_score": 1.0914,
+      "normalized": 0.6819,
+      "score": 0.8419,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5255.0,
+      "end_sec": 5260.0,
+      "center_sec": 5257.5,
+      "loudness_db": -15.267,
+      "peak_db": -1.224,
+      "percentile": 0.988,
+      "z_score": 1.2594,
+      "normalized": 0.7099,
+      "score": 0.8699,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5530.0,
+      "end_sec": 5535.0,
+      "center_sec": 5532.5,
+      "loudness_db": -14.543,
+      "peak_db": -0.682,
+      "percentile": 0.9967,
+      "z_score": 1.3689,
+      "normalized": 0.7281,
+      "score": 0.8081,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 6590.0,
+      "end_sec": 6595.0,
+      "center_sec": 6592.5,
+      "loudness_db": -16.502,
+      "peak_db": -0.931,
+      "percentile": 0.9537,
+      "z_score": 1.0727,
+      "normalized": 0.6788,
+      "score": 0.8388,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 6645.0,
+      "end_sec": 6650.0,
+      "center_sec": 6647.5,
+      "loudness_db": -14.381,
+      "peak_db": -1.446,
+      "percentile": 0.9972,
+      "z_score": 1.3934,
+      "normalized": 0.7322,
+      "score": 0.8922,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 10270.0,
+      "end_sec": 10275.0,
+      "center_sec": 10272.5,
+      "loudness_db": -16.611,
+      "peak_db": -1.293,
+      "percentile": 0.95,
+      "z_score": 1.0562,
+      "normalized": 0.676,
+      "score": 0.836,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 10510.0,
+      "end_sec": 10515.0,
+      "center_sec": 10512.5,
+      "loudness_db": -14.825,
+      "peak_db": -1.326,
+      "percentile": 0.9941,
+      "z_score": 1.3262,
+      "normalized": 0.721,
+      "score": 0.881,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 10555.0,
+      "end_sec": 10560.0,
+      "center_sec": 10557.5,
+      "loudness_db": -15.009,
+      "peak_db": -1.185,
+      "percentile": 0.9926,
+      "z_score": 1.2985,
+      "normalized": 0.7164,
+      "score": 0.8764,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 11070.0,
+      "end_sec": 11075.0,
+      "center_sec": 11072.5,
+      "loudness_db": -14.231,
+      "peak_db": -1.456,
+      "percentile": 0.9982,
+      "z_score": 1.416,
+      "normalized": 0.736,
+      "score": 0.816,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 12085.0,
+      "end_sec": 12090.0,
+      "center_sec": 12087.5,
+      "loudness_db": -13.508,
+      "peak_db": 0.0,
+      "percentile": 0.9996,
+      "z_score": 1.5254,
+      "normalized": 0.7542,
+      "score": 0.8342,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 12255.0,
+      "end_sec": 12260.0,
+      "center_sec": 12257.5,
+      "loudness_db": -14.319,
+      "peak_db": -0.029,
+      "percentile": 0.9977,
+      "z_score": 1.4027,
+      "normalized": 0.7338,
+      "score": 0.8138,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 13500.0,
+      "end_sec": 13505.0,
+      "center_sec": 13502.5,
+      "loudness_db": -13.463,
+      "peak_db": 0.0,
+      "percentile": 0.9999,
+      "z_score": 1.5322,
+      "normalized": 0.7554,
+      "score": 0.8354,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 14415.0,
+      "end_sec": 14420.0,
+      "center_sec": 14417.5,
+      "loudness_db": -14.411,
+      "peak_db": -0.368,
+      "percentile": 0.997,
+      "z_score": 1.3889,
+      "normalized": 0.7315,
+      "score": 0.8115,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 14445.0,
+      "end_sec": 14450.0,
+      "center_sec": 14447.5,
+      "loudness_db": -14.027,
+      "peak_db": -1.007,
+      "percentile": 0.9992,
+      "z_score": 1.4469,
+      "normalized": 0.7411,
+      "score": 0.8211,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 14565.0,
+      "end_sec": 14570.0,
+      "center_sec": 14567.5,
+      "loudness_db": -14.04,
+      "peak_db": -0.45,
+      "percentile": 0.9989,
+      "z_score": 1.445,
+      "normalized": 0.7408,
+      "score": 0.8208,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 15270.0,
+      "end_sec": 15275.0,
+      "center_sec": 15272.5,
+      "loudness_db": -14.138,
+      "peak_db": -0.672,
+      "percentile": 0.9987,
+      "z_score": 1.4301,
+      "normalized": 0.7383,
+      "score": 0.8183,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 15540.0,
+      "end_sec": 15545.0,
+      "center_sec": 15542.5,
+      "loudness_db": -14.29,
+      "peak_db": 0.0,
+      "percentile": 0.9979,
+      "z_score": 1.4071,
+      "normalized": 0.7345,
+      "score": 0.8145,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 15590.0,
+      "end_sec": 15595.0,
+      "center_sec": 15592.5,
+      "loudness_db": -13.959,
+      "peak_db": -0.443,
+      "percentile": 0.9994,
+      "z_score": 1.4572,
+      "normalized": 0.7429,
+      "score": 0.8229,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 18150.0,
+      "end_sec": 18155.0,
+      "center_sec": 18152.5,
+      "loudness_db": -14.347,
+      "peak_db": 0.0,
+      "percentile": 0.9975,
+      "z_score": 1.3986,
+      "normalized": 0.7331,
+      "score": 0.8131,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    }
+  ],
+  "audio_loudness_per_min": [
+    -38.42,
+    -35.497,
+    -36.799,
+    -35.705,
+    -28.9,
+    -22.045,
+    -24.414,
+    -24.528,
+    -27.625,
+    -20.285,
+    -21.04,
+    -22.504,
+    -21.037,
+    -22.777,
+    -21.836,
+    -26.744,
+    -21.695,
+    -20.818,
+    -24.92,
+    -24.464,
+    -24.357,
+    -22.666,
+    -23.985,
+    -22.113,
+    -21.57,
+    -21.368,
+    -21.37,
+    -22.85,
+    -25.848,
+    -22.394,
+    -19.346,
+    -23.363,
+    -22.945,
+    -22.497,
+    -22.192,
+    -22.937,
+    -21.615,
+    -23.41,
+    -25.263,
+    -25.989,
+    -24.95,
+    -20.234,
+    -20.295,
+    -28.758,
+    -29.702,
+    -21.542,
+    -21.303,
+    -26.427,
+    -30.134,
+    -26.19,
+    -22.003,
+    -21.588,
+    -20.794,
+    -20.516,
+    -21.453,
+    -20.79,
+    -22.327,
+    -21.699,
+    -22.61,
+    -23.223,
+    -23.256,
+    -19.852,
+    -26.718,
+    -18.685,
+    -22.438,
+    -21.545,
+    -21.649,
+    -20.146,
+    -22.923,
+    -27.269,
+    -25.911,
+    -23.73,
+    -21.905,
+    -20.638,
+    -21.977,
+    -19.754,
+    -24.307,
+    -23.298,
+    -21.262,
+    -23.344,
+    -24.279,
+    -25.574,
+    -25.215,
+    -20.655,
+    -20.444,
+    -22.376,
+    -21.428,
+    -22.843,
+    -23.904,
+    -24.594,
+    -21.828,
+    -24.575,
+    -23.654,
+    -23.031,
+    -27.662,
+    -21.372,
+    -21.59,
+    -27.611,
+    -26.56,
+    -37.668,
+    -34.844,
+    -29.627,
+    -27.127,
+    -29.04,
+    -26.793,
+    -25.212,
+    -21.487,
+    -23.093,
+    -28.543,
+    -24.083,
+    -21.963,
+    -22.447,
+    -23.247,
+    -22.421,
+    -23.683,
+    -24.716,
+    -24.072,
+    -22.991,
+    -26.254,
+    -24.847,
+    -21.538,
+    -30.314,
+    -26.479,
+    -29.53,
+    -27.094,
+    -28.966,
+    -33.524,
+    -28.84,
+    -28.443,
+    -26.871,
+    -28.341,
+    -28.331,
+    -31.469,
+    -31.886,
+    -28.428,
+    -29.868,
+    -30.197,
+    -26.329,
+    -27.59,
+    -25.323,
+    -23.365,
+    -29.802,
+    -29.502,
+    -25.632,
+    -24.976,
+    -23.495,
+    -21.014,
+    -18.054,
+    -27.403,
+    -32.595,
+    -28.36,
+    -22.457,
+    -23.478,
+    -26.786,
+    -27.095,
+    -27.308,
+    -31.954,
+    -24.046,
+    -30.276,
+    -27.049,
+    -22.023,
+    -21.932,
+    -26.065,
+    -26.157,
+    -26.994,
+    -23.892,
+    -24.253,
+    -20.708,
+    -20.385,
+    -21.761,
+    -23.219,
+    -24.835,
+    -30.278,
+    -33.444,
+    -23.045,
+    -17.806,
+    -18.25,
+    -17.217,
+    -21.778,
+    -25.187,
+    -25.196,
+    -29.745,
+    -23.018,
+    -21.537,
+    -20.713,
+    -22.809,
+    -21.595,
+    -22.599,
+    -25.427,
+    -26.994,
+    -23.185,
+    -23.365,
+    -23.9,
+    -22.924,
+    -33.157,
+    -25.812,
+    -31.539,
+    -26.342,
+    -26.318,
+    -22.704,
+    -26.405,
+    -17.851,
+    -19.184,
+    -17.531,
+    -16.943,
+    -17.076,
+    -19.31,
+    -18.42,
+    -17.385,
+    -17.385,
+    -19.729,
+    -30.799,
+    -21.667,
+    -17.732,
+    -18.58,
+    -18.886,
+    -23.36,
+    -30.136,
+    -22.71,
+    -23.136,
+    -17.084,
+    -19.095,
+    -17.07,
+    -17.238,
+    -21.503,
+    -21.085,
+    -22.469,
+    -25.613,
+    -27.603,
+    -21.421,
+    -24.261,
+    -19.924,
+    -19.957,
+    -22.318,
+    -20.061,
+    -20.277,
+    -20.87,
+    -19.915,
+    -23.576,
+    -20.643,
+    -18.044,
+    -19.332,
+    -17.897,
+    -25.874,
+    -22.327,
+    -24.724,
+    -20.579,
+    -20.668,
+    -18.504,
+    -19.777,
+    -20.709,
+    -20.353,
+    -19.794,
+    -24.058,
+    -21.04,
+    -18.77,
+    -17.074,
+    -19.896,
+    -21.129,
+    -16.341,
+    -20.018,
+    -19.457,
+    -21.416,
+    -24.732,
+    -29.013,
+    -22.842,
+    -22.329,
+    -22.098,
+    -22.048,
+    -24.986,
+    -23.133,
+    -22.229,
+    -21.611,
+    -20.607,
+    -20.811,
+    -20.944,
+    -24.851,
+    -22.389,
+    -21.254,
+    -21.241,
+    -21.619,
+    -21.58,
+    -19.939,
+    -19.64,
+    -20.069,
+    -20.471,
+    -24.485,
+    -24.104,
+    -19.363,
+    -18.133,
+    -18.492,
+    -18.487,
+    -17.698,
+    -24.302,
+    -25.234,
+    -25.342,
+    -19.013,
+    -23.555,
+    -18.645,
+    -17.594,
+    -17.748,
+    -17.87,
+    -17.147,
+    -17.781,
+    -17.158,
+    -24.945,
+    -27.845,
+    -39.291,
+    -26.65,
+    -25.526,
+    -23.595,
+    -24.367,
+    -26.192,
+    -24.547,
+    -24.513,
+    -25.284,
+    -24.964,
+    -26.493,
+    -27.979,
+    -28.437,
+    -23.124,
+    -22.263,
+    -23.502,
+    -23.876,
+    -21.964,
+    -22.019,
+    -21.065,
+    -27.45,
+    -26.102,
+    -23.363,
+    -23.333,
+    -20.654,
+    -25.004,
+    -22.976,
+    -24.998,
+    -26.171,
+    -20.79,
+    -21.401,
+    -25.631,
+    -28.805,
+    -24.491,
+    -23.168,
+    -22.63,
+    -22.548,
+    -23.589
+  ],
+  "audio_feature_source": {
+    "kind": "relative_loudness_main_pipeline",
+    "enabled_by_default": true,
+    "window_sec": 5,
+    "min_percentile": 0.95,
+    "min_gap_sec": 30,
+    "chat_overlap_sec": 60,
+    "max_peaks": 20,
+    "normalization": "per_vod_relative_percentile_and_z_score",
+    "decision_rule": "audio is supporting evidence; audio-only peaks do not prove highlight importance",
+    "sample_count": 20664,
+    "source_kind": "whisper_wav_cache",
+    "sample_extraction": "wav_pcm_python",
+    "source_count": 6,
+    "include_lufs": false
+  },
+  "summary_run_ledger": {
+    "schema_version": "summary_run_ledger.v1",
+    "run_id": "13498679_20260601_13년이나 방송을 했다니 새삼 문득 신기٩(●'▿'●)۶",
+    "path": "output\\summary_run_ledger.jsonl"
+  }
+}

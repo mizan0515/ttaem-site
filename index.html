@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOD 요약 허브 — 스트리머 목록</title>
+<link rel="stylesheet" href="assets/app.css?v=4568e0dcd448">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">VOD 요약 허브</a>
+    <nav>
+      <a href="index.html" class="active">스트리머</a>
+      <a href="search.html">검색</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap main">
+  <section class="kpi-hero" id="kpi-hero">
+    <div class="kpi-stat">
+      <div class="kpi-num" id="kpi-streamers">—</div>
+      <div class="kpi-label">스트리머</div>
+    </div>
+    <div class="kpi-stat">
+      <div class="kpi-num" id="kpi-vods">—</div>
+      <div class="kpi-label">VOD 요약</div>
+    </div>
+    <div class="kpi-stat">
+      <div class="kpi-num" id="kpi-updated">—</div>
+      <div class="kpi-label">최근 갱신</div>
+    </div>
+  </section>
+
+  <p class="page-hint">
+    스트리머를 골라 모든 방송 요약을 보거나, <kbd>/</kbd> 키를 눌러 바로 검색할 수 있습니다.
+  </p>
+
+  <section id="recent-section" hidden>
+    <div class="section-head">
+      <span class="section-title">최근 업데이트</span>
+      <span class="section-aside"><a href="search.html">전체 검색 →</a></span>
+    </div>
+    <ul id="recent-strip" class="recent-strip"></ul>
+  </section>
+
+  <div class="section-head">
+    <span class="section-title">스트리머</span>
+  </div>
+  <ul id="streamer-list" class="streamer-grid"></ul>
+  <div id="empty" class="empty" hidden>
+    <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+      <path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11Z"></path>
+    </svg>
+    아직 공개된 스트리머가 없습니다.<br>
+    <span class="empty-hint">관리자가 리포트를 발행하면 여기에 표시됩니다.</span>
+  </div>
+</main>
+
+<script src="assets/app.js?v=e91751c81758"></script>
+<script>
+window.ACG.renderStreamerIndex();
+</script>
+</body>
+</html>

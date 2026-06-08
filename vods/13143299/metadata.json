@@ -1,0 +1,42 @@
+{
+  "video_no": "13143299",
+  "title": "해방 어케하나요 해방만 하고 다섯시에 경기 ㄱㄱ ٩(●'▿'●)۶  ",
+  "channel": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+  "platform": "chzzk",
+  "duration": 1387,
+  "publish_date": "2026-05-10 16:35:00",
+  "category": "메이플스토리",
+  "thumbnail_url": null,
+  "total_chats": 2651,
+  "highlight_count": 5,
+  "highlights": [
+    {
+      "sec": 1080,
+      "composite": 1.0,
+      "count": 60
+    },
+    {
+      "sec": 1160,
+      "composite": 0.9902,
+      "count": 60
+    },
+    {
+      "sec": 1230,
+      "composite": 0.9854,
+      "count": 60
+    },
+    {
+      "sec": 970,
+      "composite": 0.8917,
+      "count": 54
+    },
+    {
+      "sec": 490,
+      "composite": 0.8704,
+      "count": 53
+    }
+  ],
+  "processed_at": "2026-05-15T15:29:35.372264+09:00"
+}

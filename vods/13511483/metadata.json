@@ -1,0 +1,3103 @@
+{
+  "video_no": "13511483",
+  "title": "오늘의 아침밥 라볶이 묵땨 ٩(●'▿'●)۶",
+  "channel": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_id": "",
+  "platform": "chzzk",
+  "duration": 8865,
+  "publish_date": "2026-06-02 18:24:38",
+  "category": "talk",
+  "thumbnail_url": null,
+  "total_chats": 31278,
+  "highlight_count": 18,
+  "highlights": [
+    {
+      "sec": 5390,
+      "composite": 1.0,
+      "count": 201,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_54d322c1bbfb",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5390
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5390,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 6350,
+      "composite": 1.0,
+      "count": 199,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_573a98dcbc9c",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6350
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 6350,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 6550,
+      "composite": 1.0,
+      "count": 178,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_1947dfa97b6d",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6550
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 6550,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 7070,
+      "composite": 1.0,
+      "count": 150,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_4b898b6a4f81",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 7070
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 7070,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 8730,
+      "composite": 1.0,
+      "count": 157,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_38191f748971",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 8730
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 8730,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 7790,
+      "composite": 1.0,
+      "count": 179,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_0b849dd2ca64",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 7790
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 5940,
+      "composite": 0.9978,
+      "count": 103,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_e8f4bb0c4a6f",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5940
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5940,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 5622,
+      "composite": 0.7218,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_c006a3bed1d0",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5622
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5622,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 7212,
+      "composite": 0.7174,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_86f4575eba3a",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 7212
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 7212,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 7542,
+      "composite": 0.7135,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_869ec6613b34",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 7542
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 7542,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 4718,
+      "composite": 0.7133,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_3f72fbe773a7",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4718
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4718,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 8628,
+      "composite": 0.7122,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_b63855c42a1a",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 8628
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 8628,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 5022,
+      "composite": 0.7061,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_0fc1602070dd",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5022
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5022,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 6942,
+      "composite": 0.7053,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_2139601da0c1",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6942
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 6942,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 882,
+      "composite": 0.7051,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_2b7c799cbc16",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 882
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 882,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 1548,
+      "composite": 0.7002,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_9dc612155cb1",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1548
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1548,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 5760,
+      "composite": 0.6988,
+      "count": 141,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_f78f01fb32cd",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5760
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 6622,
+      "composite": 0.6968,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_f6e6654ebb55",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6622
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 6622,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    }
+  ],
+  "segment_ledger_schema_version": 1,
+  "segment_ledger": [
+    {
+      "segment_id": "seg_summary_5279cd19edbc",
+      "kind": "summary",
+      "section": "summary",
+      "index": 1,
+      "timecode": "",
+      "start_sec": null,
+      "end_sec": null,
+      "title": "오늘의 아침밥 라볶이 묵땨 ٩(●'▿'●)۶",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "summary",
+          "fields": [
+            "title",
+            "hashtags",
+            "pull_quote"
+          ]
+        }
+      ],
+      "risk_flags": [],
+      "hashtags": [
+        "탬탬버린",
+        "축구토크",
+        "밈드립"
+      ],
+      "pull_quote": "솔랭 스트레스에서 시작해 축구 해설과 밈·드립, 그리고 옵사이드 논쟁까지 밀고 가며 끝내는 방송이었다."
+    },
+    {
+      "segment_id": "seg_timeline_d0dc90820fb4",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 1,
+      "timecode": "00:09:53",
+      "start_sec": 593,
+      "end_sec": null,
+      "title": "솔랭 스트레스가 바로 터져버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:09:53"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"심지어 야스오가 가던데 못막는놈이\" \"녹턴이 있는데ㅋㅋ\" \"머리가 띵\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "초반부터 롤 솔로랭크에서 팀 판단과 운영이 답답하다는 얘기가 길게 이어진다. 바텀, 사이드, 오더가 엇갈리며 \"왜 안 끝나냐\"는 짜증이 쌓이고, 방송 분위기가 빠르게 날카로워진다."
+    },
+    {
+      "segment_id": "seg_timeline_3a31b926d934",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 2,
+      "timecode": "00:25:44",
+      "start_sec": 1544,
+      "end_sec": null,
+      "title": "탱폿 해보고 더 짜증난 결론이 굳어짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:25:44"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"탱폿은 팀빨이지\" \"딜폿하면 내가 누구 짤라서 뭐라도 하지\" \"레오나 하니까 더 짜증나\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1547.5,
+          "delta_sec": 4,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "레오나를 포함한 탱폿을 직접 해봤지만 오히려 더 답답하고 스트레스만 커졌다고 정리한다. 결국 솔랭 탱폿의 억울함이 밈·드립처럼 굳어지는 구간이다."
+    },
+    {
+      "segment_id": "seg_timeline_e70fb17030d2",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 3,
+      "timecode": "00:32:10",
+      "start_sec": 1930,
+      "end_sec": null,
+      "title": "포지션 고민이 미드로 기울어버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:32:10"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"그래서 롤하면 미드할라고.\" \"내 잘못 아닌데 욕먹는 거 개알받으니깐\" \"동왕이 아니라 친구였네\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "서포트의 한계와 솔랭 피로를 반복해서 말한 뒤, 결국 미드로 갈까 하는 생각이 드러난다. \"내가 못해서 지면 어쩔 수 없다\"는 식으로 책임이 더 분명한 역할을 찾는 흐름이 잡힌다."
+    },
+    {
+      "segment_id": "seg_timeline_aa20aa456a46",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 4,
+      "timecode": "00:57:32",
+      "start_sec": 3452,
+      "end_sec": null,
+      "title": "전술 얘기로 분위기가 잠깐 환기됨",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:57:32"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"공간을 만들어주거나 순식간에 빈공간으로\" \"이게 용어까지 있구나?\" \"디테일보다는 빠른 플레이가 맞을 듯\" [실제 시점: 01:01:34]"
+        }
+      ],
+      "risk_flags": [],
+      "summary": "롤 스트레스 구간을 지나 공간 만들기와 시선 분산 같은 전술 개념을 풀어 설명하는 흐름으로 넘어간다. 단순 잡담이 아니라 경기 이해 포인트를 짚는 소통 파트다."
+    },
+    {
+      "segment_id": "seg_timeline_fe24ceb21b07",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 5,
+      "timecode": "01:08:35",
+      "start_sec": 4115,
+      "end_sec": null,
+      "title": "백룸·호러 영상으로 급전환됨",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:08:35"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"개꿀잼! 안 자고 타!\" \"백룸이 되어버린 홈플러스.\" \"전부 호러 장르네\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "후반부 초입은 게임 하소연에서 벗어나 백룸, VR 영상, 호러 장르 이야기로 분위기가 갈라진다. 무섭지만 재밌는 콘텐츠 쪽으로 관심이 옮겨가며 전환점이 생긴다."
+    },
+    {
+      "segment_id": "seg_timeline_9758be70997a",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 6,
+      "timecode": "01:19:25",
+      "start_sec": 4765,
+      "end_sec": null,
+      "title": "공짜 치즈가 덫이라는 말장난이 터짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:19:25"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"공짜 치즈가 아니기 때문에 괜찮습니다\" [실제 시점: 01:23:23] \"여러분들은 다 쥐였고, 나는 쥐덫이었어\" \"비ㅣㅣㅣㅣ상 탬덫이다\""
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 4765,
+          "role": "proximity_signal",
+          "clip_uid": "Y7fUGcxNpz",
+          "title": "탬 치 즈",
+          "like_count": 10,
+          "play_count": 1619
+        }
+      ],
+      "risk_flags": [],
+      "summary": "생지가 무심코 치즈를 집으려는 장면을 두고 \"공짜 치즈는 없다\"는 식으로 덫의 구조를 설명한다. 이걸 돈, 수수료, 유료 치즈로 비틀면서 말장난이 이어진다."
+    },
+    {
+      "segment_id": "seg_timeline_21f332883a3d",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 7,
+      "timecode": "01:29:30",
+      "start_sec": 5370,
+      "end_sec": null,
+      "title": "실버급과 전범국 드립이 한꺼번에 터져버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:29:30"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"니네 두번 다 졌자나\" \"전범국드립 에반데\" \"탬 리 아\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 5357.5,
+          "delta_sec": 12,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "자막에서 \"실버급\"과 \"골드를 못 가\" 같은 반응이 이어지고, 채팅은 라장군 성격 드립과 탬탬버린 관련 밈·드립으로 번진다. 분위기는 축구/게임 얘기처럼 보이지만 실제로는 인물 평판을 두고 웃음이 몰린다."
+    },
+    {
+      "segment_id": "seg_timeline_71878a64fca6",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 8,
+      "timecode": "01:36:46",
+      "start_sec": 5806,
+      "end_sec": null,
+      "title": "올리세 슛 한 번에 분위기가 확 바뀜",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:36:46"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"올리세 잘하지\" \"축구로 가득해 ㅋㅋ\" \"와 이상한 개잘 꺾는\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "올리세의 움직임과 슛이 본격적으로 나오면서, \"와, 저게 저기서 이렇게 꺾이냐?\" 같은 감탄이 쏟아진다. 채팅도 축구 하이라이트를 보듯 몰입하면서 감탄과 밈·드립이 동시에 붙는다."
+    },
+    {
+      "segment_id": "seg_timeline_10edfc0683e5",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 9,
+      "timecode": "01:45:01",
+      "start_sec": 6301,
+      "end_sec": null,
+      "title": "이글콥 정체가 풀리며 팬덤 설명이 폭발함",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:45:01"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"저거 별명이라고? 어?\" \"레전드다. 그런 뜻이구나\" \"손케 듀오\""
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 6352,
+          "role": "proximity_signal",
+          "clip_uid": "GotPnLglBC",
+          "title": "이글콥 빨간약",
+          "like_count": 5,
+          "play_count": 2070
+        }
+      ],
+      "risk_flags": [],
+      "summary": "\"이글콥\"이 무엇인지, 왜 그런 이름인지 설명이 이어지면서 채팅이 크게 반응한다. 손케 듀오, 팬덤명, 별명 구조가 한 번에 풀리며 이름 밈이 탄생한 느낌이다."
+    },
+    {
+      "segment_id": "seg_timeline_fb9f5886bd2d",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 10,
+      "timecode": "01:49:10",
+      "start_sec": 6550,
+      "end_sec": null,
+      "title": "손흥민 몰아주기 회상이 레전드 경기로 묶여버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:49:10"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"애들 전부다 몰아줌 ㅋㅋㅋㅋㅋㅋㅋ\" \"진짜 다 몰아줌\" \"마지막경기였는데 골키퍼가 ㅈㄴ잘막음\""
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 6554,
+          "role": "proximity_signal",
+          "clip_uid": "FrD4vUa33g",
+          "title": "다이어",
+          "like_count": 6,
+          "play_count": 1418
+        }
+      ],
+      "risk_flags": [],
+      "summary": "마지막 경기에서 팀이 손흥민에게 득점을 몰아줬던 장면을 두고 \"진짜 몰아줌\"이라는 회상이 이어진다. 득점왕 경쟁, 상대 키퍼 선방, 손흥민의 기록이 함께 묶이며 레전드 경기로 정리된다."
+    },
+    {
+      "segment_id": "seg_timeline_53fa65175751",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 11,
+      "timecode": "01:56:05",
+      "start_sec": 6965,
+      "end_sec": null,
+      "title": "존의 영역이라고 할 만한 예술축구가 나옴",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:56:05"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"와 이거 근데 지린다\" \"이건 존에 이거 다시 하라 그래도 못한다\" \"야 이거 우리 어떻게 했냐\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 6942.5,
+          "delta_sec": 22,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "옵사이드까지 계산하면서 패스와 위치를 동시에 읽는 장면이 나오자 \"이건 존에 이거 다시 하라 그래도 못한다\"는 식의 감탄이 붙는다. 단순 공격 장면이 아니라 완성도 높은 플레이로 기억되는 구간이다."
+    },
+    {
+      "segment_id": "seg_timeline_7074ec584e42",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 12,
+      "timecode": "01:57:50",
+      "start_sec": 7070,
+      "end_sec": null,
+      "title": "축구3 응징 드립이 밈·드립으로 굳어짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:57:50"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"축구2를 축구3으로\" \"바로 참교육\" \"극한의 축구2를 축구3으로 ㅋㅋㅋ\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 7067.5,
+          "delta_sec": 2,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "특정 플레이를 두고 채팅이 \"축구2를 축구3으로\" \"바로 축구3\" 같은 말로 몰아가며 장면을 설명하는 밈·드립이 폭발한다. 이후에도 별명처럼 반복될 만한 말맛이 생긴 구간이다."
+    },
+    {
+      "segment_id": "seg_timeline_a8ef39de8ad5",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 13,
+      "timecode": "02:05:42",
+      "start_sec": 7542,
+      "end_sec": null,
+      "title": "해버지 서사가 다시 살아남",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "02:05:42"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"해 버 지\" \"해축의 아버지\" \"퍼거슨 눈에 들어옴\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 7542.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "박지성의 맨유 이적과 커리어 서사가 다시 강조되면서 \"해버지\"라는 호칭이 자연스럽게 채팅에 퍼진다. 단순한 선수 칭찬을 넘어 한국 팬들의 자부심과 애정이 섞인 분위기다."
+    },
+    {
+      "segment_id": "seg_timeline_e38f6494e311",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 14,
+      "timecode": "02:09:50",
+      "start_sec": 7790,
+      "end_sec": null,
+      "title": "방송이 사실상 축구 게시판처럼 변해버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "02:09:50"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"탬축갤 ㅋㅋㅋ\" \"축구갤\" \"게시판을 따로 파는 것도\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "채팅이 \"탬축갤\"을 연달아 외치며 방송이 사실상 축구 게시판처럼 변한다. 축구 얘기가 너무 진해져서 시청자들이 아예 별도 갤러리를 만들자는 식으로 놀리는 흐름이 강하게 잡힌다."
+    },
+    {
+      "segment_id": "seg_timeline_d6a86fbe5876",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 15,
+      "timecode": "02:18:50",
+      "start_sec": 8330,
+      "end_sec": null,
+      "title": "옵사이드 이해가 열리는 순간이 나옴",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "02:18:50"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"나 진짜 옵서 완벽하게 이해했어\" \"개념만 이해했는데\" \"아직 좀 적응이 안된다고 해야되나?\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "시청자가 옵사이드 개념을 이해해 가는 과정을 피아노 악보 읽기에 비유하면서, 개념은 알겠는데 순간판단이 어렵다는 고백이 길게 이어진다. 웃기면서도 실제로 학습이 진행되는 소통 파트다."
+    },
+    {
+      "segment_id": "seg_timeline_398f8927fbf2",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 16,
+      "timecode": "02:23:48",
+      "start_sec": 8628,
+      "end_sec": null,
+      "title": "장난이 성별 드립으로 번져서 공기가 매워짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "02:23:48"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"여자라 당했다\" \"그럼 여자와 남자를 갈라치게 하겠다는 거였니?\" \"우리 방송에선 이러지 맙시다!\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 8627.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "장난 섞인 말이 성별 언급으로 튀면서 채팅과 방송 쪽이 잠깐 날카로워진다. 농담으로 시작했지만 받아치는 과정에서 경계가 생기며 분위기가 바뀐다."
+    },
+    {
+      "segment_id": "seg_timeline_3133e696eb09",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 17,
+      "timecode": "02:25:44",
+      "start_sec": 8744,
+      "end_sec": null,
+      "title": "방 규칙 선언 뒤 밈·드립이 폭주함",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "02:25:44"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"ㅋㅋㅋㅋㅋㅋㅋ\" \"저게 왜 옵사야\" \"거기까지가 축구임 ㅇㅇ\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 8732.5,
+          "delta_sec": 12,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "방송인이 \"우리 방에서는 그러지 맙시다\"라며 선을 긋자, 대화가 곧바로 내부 밈과 장난 섞인 해석으로 번지며 웃음 포인트가 된다. 말장난 분위기가 강하게 이어진다."
+    },
+    {
+      "segment_id": "seg_timeline_c21dcdc36905",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 18,
+      "timecode": "02:26:59",
+      "start_sec": 8819,
+      "end_sec": null,
+      "title": "다음 콘텐츠를 고민하며 조용히 정리됨",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "02:26:59"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"아, 그러면은 리방 한 번 할게요.\" \"아는 장면이 하정우와 김먹는 장면밖에 없어요\" \"안 본다구요.\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "원래 하려던 걸 정리한 뒤, \"기왕 오늘 이렇게 된 거 그거 볼까?\" 하며 다음 콘텐츠를 고민한다. 결국 \"황해\" 이야기가 나오고, 본 적이 없다고 말하며 가볍게 시청 방향을 정리한다."
+    },
+    {
+      "segment_id": "seg_highlight_fbb375af2528",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 1,
+      "timecode": "01:45:01~01:49:10",
+      "start_sec": 6301,
+      "end_sec": 6550,
+      "title": "이글콥 설명과 손흥민 회상이 한 번에 터짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "01:45:01~01:49:10"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "팬덤 설명, 별명 밈·드립, 손흥민 득점왕 회상이 연달아 붙어 리액션과 대화 밀도가 가장 좋은 구간이다."
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 6352,
+          "role": "proximity_signal",
+          "clip_uid": "GotPnLglBC",
+          "title": "이글콥 빨간약",
+          "like_count": 5,
+          "play_count": 2070
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 6554,
+          "role": "proximity_signal",
+          "clip_uid": "FrD4vUa33g",
+          "title": "다이어",
+          "like_count": 6,
+          "play_count": 1418
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 6357.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "팬덤 설명, 별명 밈·드립, 손흥민 득점왕 회상이 연달아 붙어 리액션과 대화 밀도가 가장 좋은 구간이다."
+    },
+    {
+      "segment_id": "seg_highlight_c470221c6203",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 2,
+      "timecode": "01:56:05~01:57:50",
+      "start_sec": 6965,
+      "end_sec": 7070,
+      "title": "예술축구 감탄에서 축구3 밈·드립까지 폭발함",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "01:56:05~01:57:50"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "완성도 높은 플레이에 대한 감탄이 바로 밈·드립으로 변하면서, 하이라이트용으로 가장 선명한 반응 곡선을 만든다."
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 7032.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "완성도 높은 플레이에 대한 감탄이 바로 밈·드립으로 변하면서, 하이라이트용으로 가장 선명한 반응 곡선을 만든다."
+    },
+    {
+      "segment_id": "seg_highlight_0412a1c5c2fc",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 3,
+      "timecode": "02:23:48~02:25:44",
+      "start_sec": 8628,
+      "end_sec": 8744,
+      "title": "장난이 매운맛으로 번졌다가 방 규칙 선언으로 정리됨",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "02:23:48~02:25:44"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "민감한 장난과 선 긋기가 한 세트로 보여서, 짧은 클립으로도 상황 전개가 분명하게 읽힌다."
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 8697.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "민감한 장난과 선 긋기가 한 세트로 보여서, 짧은 클립으로도 상황 전개가 분명하게 읽힌다."
+    },
+    {
+      "segment_id": "seg_highlight_b4e5f792224e",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 4,
+      "timecode": "01:36:46~01:45:01",
+      "start_sec": 5806,
+      "end_sec": 6301,
+      "title": "올리세 감탄부터 손케 설명까지 축구 토크가 크게 달아오름",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "01:36:46~01:45:01"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "한 장면 감탄에서 팬덤 설명으로 이어져 축구 얘기의 재미가 가장 농축된 흐름이다."
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 6352,
+          "role": "proximity_signal",
+          "clip_uid": "GotPnLglBC",
+          "title": "이글콥 빨간약",
+          "like_count": 5,
+          "play_count": 2070
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 5947.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "한 장면 감탄에서 팬덤 설명으로 이어져 축구 얘기의 재미가 가장 농축된 흐름이다."
+    },
+    {
+      "segment_id": "seg_highlight_5252e7e0cd3f",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 5,
+      "timecode": "02:18:50~02:26:59",
+      "start_sec": 8330,
+      "end_sec": 8819,
+      "title": "옵사이드 설명, 성별 드립, 방 규칙, 다음 콘텐츠 고민까지 후반부 정리",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "02:18:50~02:26:59"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "방송 후반의 논쟁, 정리, 전환이 한 구간에 묶여 있어 전체 마무리 톤을 보여주기 좋다."
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 8627.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "방송 후반의 논쟁, 정리, 전환이 한 구간에 묶여 있어 전체 마무리 톤을 보여주기 좋다."
+    },
+    {
+      "segment_id": "seg_highlight_32715e612a34",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 6,
+      "timecode": "01:19:25~01:19:25",
+      "start_sec": 4765,
+      "end_sec": 4765,
+      "title": "탬 치 즈",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "01:19:25~01:19:25"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "시청자가 직접 클립으로 잘라낸 호평 신호 시점."
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "section": "highlights",
+          "label": "[INJECTED · 시청자 클립 10/1619]",
+          "role": "deterministic_injection"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 4765,
+          "role": "proximity_signal",
+          "clip_uid": "Y7fUGcxNpz",
+          "title": "탬 치 즈",
+          "like_count": 10,
+          "play_count": 1619
+        }
+      ],
+      "risk_flags": [
+        "injected_viewer_clip_anchor"
+      ],
+      "reason": "시청자가 직접 클립으로 잘라낸 호평 신호 시점."
+    },
+    {
+      "segment_id": "seg_chapter_1801d1f5944e",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 1,
+      "timecode": "00:09:53",
+      "start_sec": 593,
+      "end_sec": null,
+      "title": "솔랭 스트레스 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:09:53"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_d9e2776da8f1",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 2,
+      "timecode": "00:25:44",
+      "start_sec": 1544,
+      "end_sec": null,
+      "title": "탱폿 불만 정리",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:25:44"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1547.5,
+          "delta_sec": 4,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_41fe56eef17c",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 3,
+      "timecode": "00:32:10",
+      "start_sec": 1930,
+      "end_sec": null,
+      "title": "미드 전환 고민",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:32:10"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_9a193b21ce9d",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 4,
+      "timecode": "00:57:32",
+      "start_sec": 3452,
+      "end_sec": null,
+      "title": "전술 토크 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:57:32"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_dd9a480fc1ca",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 5,
+      "timecode": "01:08:35",
+      "start_sec": 4115,
+      "end_sec": null,
+      "title": "백룸·호러 보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:08:35"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_af57f4bd358e",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 6,
+      "timecode": "01:19:25",
+      "start_sec": 4765,
+      "end_sec": null,
+      "title": "공짜 치즈 말장난",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:19:25"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 4765,
+          "role": "proximity_signal",
+          "clip_uid": "Y7fUGcxNpz",
+          "title": "탬 치 즈",
+          "like_count": 10,
+          "play_count": 1619
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_a0030595a3ce",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 7,
+      "timecode": "01:29:30",
+      "start_sec": 5370,
+      "end_sec": null,
+      "title": "실버급 드립",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:29:30"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 5357.5,
+          "delta_sec": 12,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_84a1d6dc22a2",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 8,
+      "timecode": "01:36:46",
+      "start_sec": 5806,
+      "end_sec": null,
+      "title": "올리세 감탄",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:36:46"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_f8ce309998da",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 9,
+      "timecode": "01:45:01",
+      "start_sec": 6301,
+      "end_sec": null,
+      "title": "이글콥 설명",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:45:01"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 6352,
+          "role": "proximity_signal",
+          "clip_uid": "GotPnLglBC",
+          "title": "이글콥 빨간약",
+          "like_count": 5,
+          "play_count": 2070
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_8f30d8d9e967",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 10,
+      "timecode": "01:49:10",
+      "start_sec": 6550,
+      "end_sec": null,
+      "title": "손흥민 회상",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:49:10"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 6554,
+          "role": "proximity_signal",
+          "clip_uid": "FrD4vUa33g",
+          "title": "다이어",
+          "like_count": 6,
+          "play_count": 1418
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_711ac18c8fa2",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 11,
+      "timecode": "01:56:05",
+      "start_sec": 6965,
+      "end_sec": null,
+      "title": "예술축구 감탄",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:56:05"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 6942.5,
+          "delta_sec": 22,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_7497377c17ea",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 12,
+      "timecode": "01:57:50",
+      "start_sec": 7070,
+      "end_sec": null,
+      "title": "축구3 밈",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:57:50"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 7067.5,
+          "delta_sec": 2,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_f950668d6a0c",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 13,
+      "timecode": "02:05:42",
+      "start_sec": 7542,
+      "end_sec": null,
+      "title": "해버지 서사",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "02:05:42"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 7542.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_ffc0a6d7b886",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 14,
+      "timecode": "02:09:50",
+      "start_sec": 7790,
+      "end_sec": null,
+      "title": "축구 토크 폭주",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "02:09:50"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_57a85bb7a2c1",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 15,
+      "timecode": "02:18:50",
+      "start_sec": 8330,
+      "end_sec": null,
+      "title": "옵사이드 이해",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "02:18:50"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_98da69adbf9d",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 16,
+      "timecode": "02:23:48",
+      "start_sec": 8628,
+      "end_sec": null,
+      "title": "매운 드립",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "02:23:48"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 8627.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_60ab256b2c16",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 17,
+      "timecode": "02:25:44",
+      "start_sec": 8744,
+      "end_sec": null,
+      "title": "방 규칙 선언",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "02:25:44"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 8732.5,
+          "delta_sec": 12,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_bb42bb913806",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 18,
+      "timecode": "02:26:59",
+      "start_sec": 8819,
+      "end_sec": null,
+      "title": "다음 콘텐츠 정리",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "02:26:59"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_highlight_candidate_54d322c1bbfb",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 1,
+      "timecode": "01:29:50",
+      "start_sec": 5390,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5390
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5390,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 5390,
+      "composite": 1.0,
+      "count": 201
+    },
+    {
+      "segment_id": "seg_highlight_candidate_573a98dcbc9c",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 2,
+      "timecode": "01:45:50",
+      "start_sec": 6350,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6350
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 6350,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 6350,
+      "composite": 1.0,
+      "count": 199
+    },
+    {
+      "segment_id": "seg_highlight_candidate_1947dfa97b6d",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 3,
+      "timecode": "01:49:10",
+      "start_sec": 6550,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6550
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 6550,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 6550,
+      "composite": 1.0,
+      "count": 178
+    },
+    {
+      "segment_id": "seg_highlight_candidate_4b898b6a4f81",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 4,
+      "timecode": "01:57:50",
+      "start_sec": 7070,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 7070
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 7070,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 7070,
+      "composite": 1.0,
+      "count": 150
+    },
+    {
+      "segment_id": "seg_highlight_candidate_38191f748971",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 5,
+      "timecode": "02:25:30",
+      "start_sec": 8730,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 8730
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 8730,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 8730,
+      "composite": 1.0,
+      "count": 157
+    },
+    {
+      "segment_id": "seg_highlight_candidate_0b849dd2ca64",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 6,
+      "timecode": "02:09:50",
+      "start_sec": 7790,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 7790
+        }
+      ],
+      "risk_flags": [],
+      "sec": 7790,
+      "composite": 1.0,
+      "count": 179
+    },
+    {
+      "segment_id": "seg_highlight_candidate_e8f4bb0c4a6f",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 7,
+      "timecode": "01:39:00",
+      "start_sec": 5940,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5940
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5940,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 5940,
+      "composite": 0.9978,
+      "count": 103
+    },
+    {
+      "segment_id": "seg_highlight_candidate_c006a3bed1d0",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 8,
+      "timecode": "01:33:42",
+      "start_sec": 5622,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5622
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5622,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 5622,
+      "composite": 0.7218,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_86f4575eba3a",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 9,
+      "timecode": "02:00:12",
+      "start_sec": 7212,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 7212
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 7212,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 7212,
+      "composite": 0.7174,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_869ec6613b34",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 10,
+      "timecode": "02:05:42",
+      "start_sec": 7542,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 7542
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 7542,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 7542,
+      "composite": 0.7135,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_3f72fbe773a7",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 11,
+      "timecode": "01:18:38",
+      "start_sec": 4718,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4718
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4718,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 4718,
+      "composite": 0.7133,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_b63855c42a1a",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 12,
+      "timecode": "02:23:48",
+      "start_sec": 8628,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 8628
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 8628,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 8628,
+      "composite": 0.7122,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_0fc1602070dd",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 13,
+      "timecode": "01:23:42",
+      "start_sec": 5022,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5022
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5022,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 5022,
+      "composite": 0.7061,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_2139601da0c1",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 14,
+      "timecode": "01:55:42",
+      "start_sec": 6942,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6942
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 6942,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 6942,
+      "composite": 0.7053,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_2b7c799cbc16",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 15,
+      "timecode": "00:14:42",
+      "start_sec": 882,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 882
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 882,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 882,
+      "composite": 0.7051,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_9dc612155cb1",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 16,
+      "timecode": "00:25:48",
+      "start_sec": 1548,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1548
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1548,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 1548,
+      "composite": 0.7002,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_f78f01fb32cd",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 17,
+      "timecode": "01:36:00",
+      "start_sec": 5760,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5760
+        }
+      ],
+      "risk_flags": [],
+      "sec": 5760,
+      "composite": 0.6988,
+      "count": 141
+    },
+    {
+      "segment_id": "seg_highlight_candidate_f6e6654ebb55",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 18,
+      "timecode": "01:50:22",
+      "start_sec": 6622,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6622
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 6622,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 6622,
+      "composite": 0.6968,
+      "count": 0
+    }
+  ],
+  "processed_at": "2026-06-03T10:51:24.188164+09:00",
+  "evidence_verifier": {
+    "schema_version": "evidence_verifier.v1",
+    "status": "fail",
+    "summary": {
+      "checked_segments": 42,
+      "failure_count": 1,
+      "warning_count": 0
+    },
+    "findings": [
+      {
+        "code": "CHAPTER_READINESS_FAIL",
+        "severity": "error",
+        "message": "chapter readiness validator reported fail",
+        "source_fields": [
+          "chapter_readiness"
+        ],
+        "detail": {
+          "status": "fail",
+          "failure_reasons": []
+        }
+      }
+    ]
+  },
+  "summary_input_readiness": {
+    "schema_version": "summary_input_readiness.v1",
+    "status": "ready_with_gaps",
+    "quality_claim": "not_evaluated",
+    "items": [
+      {
+        "key": "srt",
+        "name": "자막 SRT",
+        "required": true,
+        "status": "present",
+        "reason": "요약 청크 입력으로 사용할 SRT가 있습니다.",
+        "retry_condition": "transcribe 단계가 SRT를 생성한 뒤 다시 요약합니다.",
+        "detail": {
+          "filename": "13511483_오늘의 아침밥 라볶이 묵땨 ٩(●'▿'●)۶_144p.srt",
+          "size_bytes": 122864
+        }
+      },
+      {
+        "key": "chat",
+        "name": "채팅",
+        "required": false,
+        "status": "present",
+        "reason": "채팅 신호가 요약 후보에 반영됩니다.",
+        "retry_condition": "채팅 수집이 VOD 끝까지 성공한 뒤 다시 요약합니다.",
+        "detail": {
+          "message_count": 31278,
+          "first_message_sec": 0.0,
+          "latest_message_sec": 8859.011,
+          "latest_message_hms": "02:27:39",
+          "expected_duration_sec": 8865.0,
+          "expected_duration_hms": "02:27:45",
+          "coverage_ratio": 0.9993,
+          "coverage_gap_sec": 5.989
+        }
+      },
+      {
+        "key": "community",
+        "name": "커뮤니티",
+        "required": false,
+        "status": "present",
+        "reason": "방송 외부 반응 후보가 있습니다.",
+        "retry_condition": "커뮤니티 수집 또는 수동 입력 뒤 다시 요약합니다.",
+        "detail": {
+          "post_count": 50
+        }
+      },
+      {
+        "key": "context_doc",
+        "name": "VOD 배경 맥락",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "관리자 배경 맥락 없이 요약합니다.",
+        "retry_condition": "work/<video_no>/<video_no>_context.md 작성 뒤 다시 요약합니다.",
+        "detail": {
+          "char_count": 0
+        }
+      },
+      {
+        "key": "streamer_vocab",
+        "name": "스트리머 어휘/lexicon",
+        "required": false,
+        "status": "present",
+        "reason": "고유명사/별명 보정 후보가 있습니다.",
+        "retry_condition": "streamer_vocab 저장 또는 lexicon 빌드 뒤 다시 요약합니다.",
+        "detail": {
+          "term_count": 40
+        }
+      },
+      {
+        "key": "manager_edit_lessons",
+        "name": "관리자 수정 사례",
+        "required": false,
+        "status": "present",
+        "reason": "이전 관리자 수정 사례가 프롬프트에 반영됩니다.",
+        "retry_condition": "관리자 저장 이력이 쌓인 뒤 다시 요약합니다.",
+        "detail": {
+          "lesson_count": 2
+        }
+      },
+      {
+        "key": "user_clips",
+        "name": "시청자 클립",
+        "required": false,
+        "status": "present",
+        "reason": "시청자 클립 anchor 후보가 있습니다.",
+        "retry_condition": "viewer clip 수집/anchor 회수 뒤 다시 요약합니다.",
+        "detail": {
+          "total": 7,
+          "with_offset": 7,
+          "with_engagement": 7,
+          "status": "ok"
+        }
+      },
+      {
+        "key": "audio_peaks",
+        "name": "오디오 반응 피크",
+        "required": false,
+        "status": "present",
+        "reason": "오디오 반응 분석 결과가 있습니다.",
+        "retry_condition": "audio reaction 분석이 성공한 뒤 다시 요약합니다.",
+        "detail": {
+          "peak_count": 20,
+          "status": "available"
+        }
+      },
+      {
+        "key": "source_manifest",
+        "name": "요약 입력 manifest",
+        "required": true,
+        "status": "present",
+        "reason": "요약 입력 manifest가 계산되어 cache/재현성 기준이 있습니다.",
+        "retry_condition": "요약 cache manifest 계산 후 다시 확인합니다.",
+        "detail": {
+          "schema_version": 7,
+          "manifest_key_count": 20,
+          "has_summary_hash": false
+        }
+      },
+      {
+        "key": "segment_ledger",
+        "name": "segment/evidence ledger",
+        "required": false,
+        "status": "present",
+        "reason": "렌더링된 리포트의 segment ledger가 있습니다.",
+        "retry_condition": "summary Markdown parser/metadata generation을 확인한 뒤 다시 렌더링합니다.",
+        "detail": {
+          "segment_count": 61,
+          "kind_counts": {
+            "chapter": 18,
+            "highlight": 6,
+            "highlight_candidate": 18,
+            "summary": 1,
+            "timeline": 18
+          }
+        }
+      }
+    ]
+  },
+  "audio_reaction_peaks": [
+    {
+      "start_sec": 880.0,
+      "end_sec": 885.0,
+      "center_sec": 882.5,
+      "loudness_db": -16.089,
+      "peak_db": -1.143,
+      "percentile": 0.9935,
+      "z_score": 1.2209,
+      "normalized": 0.7035,
+      "score": 0.7835,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 1545.0,
+      "end_sec": 1550.0,
+      "center_sec": 1547.5,
+      "loudness_db": -16.373,
+      "peak_db": -0.944,
+      "percentile": 0.9918,
+      "z_score": 1.1882,
+      "normalized": 0.698,
+      "score": 0.778,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4715.0,
+      "end_sec": 4720.0,
+      "center_sec": 4717.5,
+      "loudness_db": -15.622,
+      "peak_db": -0.162,
+      "percentile": 0.998,
+      "z_score": 1.2749,
+      "normalized": 0.7125,
+      "score": 0.7925,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5020.0,
+      "end_sec": 5025.0,
+      "center_sec": 5022.5,
+      "loudness_db": -16.029,
+      "peak_db": -1.319,
+      "percentile": 0.9946,
+      "z_score": 1.2279,
+      "normalized": 0.7046,
+      "score": 0.7846,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5355.0,
+      "end_sec": 5360.0,
+      "center_sec": 5357.5,
+      "loudness_db": -17.615,
+      "peak_db": -1.563,
+      "percentile": 0.9563,
+      "z_score": 1.0448,
+      "normalized": 0.6741,
+      "score": 0.8341,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5620.0,
+      "end_sec": 5625.0,
+      "center_sec": 5622.5,
+      "loudness_db": -15.13,
+      "peak_db": -0.12,
+      "percentile": 0.9997,
+      "z_score": 1.3317,
+      "normalized": 0.722,
+      "score": 0.802,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5945.0,
+      "end_sec": 5950.0,
+      "center_sec": 5947.5,
+      "loudness_db": -17.426,
+      "peak_db": -1.377,
+      "percentile": 0.9693,
+      "z_score": 1.0667,
+      "normalized": 0.6778,
+      "score": 0.8378,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5975.0,
+      "end_sec": 5980.0,
+      "center_sec": 5977.5,
+      "loudness_db": -16.406,
+      "peak_db": -0.977,
+      "percentile": 0.9913,
+      "z_score": 1.1844,
+      "normalized": 0.6974,
+      "score": 0.8574,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 6355.0,
+      "end_sec": 6360.0,
+      "center_sec": 6357.5,
+      "loudness_db": -17.041,
+      "peak_db": -1.137,
+      "percentile": 0.9811,
+      "z_score": 1.1111,
+      "normalized": 0.6852,
+      "score": 0.8452,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 6585.0,
+      "end_sec": 6590.0,
+      "center_sec": 6587.5,
+      "loudness_db": -15.653,
+      "peak_db": -1.396,
+      "percentile": 0.9975,
+      "z_score": 1.2713,
+      "normalized": 0.7119,
+      "score": 0.8719,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 6620.0,
+      "end_sec": 6625.0,
+      "center_sec": 6622.5,
+      "loudness_db": -16.574,
+      "peak_db": -0.231,
+      "percentile": 0.9901,
+      "z_score": 1.165,
+      "normalized": 0.6942,
+      "score": 0.7742,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 6940.0,
+      "end_sec": 6945.0,
+      "center_sec": 6942.5,
+      "loudness_db": -16.077,
+      "peak_db": -1.379,
+      "percentile": 0.9941,
+      "z_score": 1.2223,
+      "normalized": 0.7037,
+      "score": 0.7837,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 7030.0,
+      "end_sec": 7035.0,
+      "center_sec": 7032.5,
+      "loudness_db": -15.945,
+      "peak_db": -1.245,
+      "percentile": 0.9952,
+      "z_score": 1.2376,
+      "normalized": 0.7063,
+      "score": 0.8663,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 7065.0,
+      "end_sec": 7070.0,
+      "center_sec": 7067.5,
+      "loudness_db": -17.282,
+      "peak_db": -1.101,
+      "percentile": 0.9744,
+      "z_score": 1.0833,
+      "normalized": 0.6806,
+      "score": 0.8406,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 7125.0,
+      "end_sec": 7130.0,
+      "center_sec": 7127.5,
+      "loudness_db": -17.433,
+      "peak_db": -0.324,
+      "percentile": 0.9682,
+      "z_score": 1.0658,
+      "normalized": 0.6776,
+      "score": 0.8376,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 7210.0,
+      "end_sec": 7215.0,
+      "center_sec": 7212.5,
+      "loudness_db": -15.381,
+      "peak_db": -0.46,
+      "percentile": 0.9992,
+      "z_score": 1.3027,
+      "normalized": 0.7171,
+      "score": 0.7971,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 7540.0,
+      "end_sec": 7545.0,
+      "center_sec": 7542.5,
+      "loudness_db": -15.608,
+      "peak_db": -0.295,
+      "percentile": 0.9986,
+      "z_score": 1.2765,
+      "normalized": 0.7128,
+      "score": 0.7928,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 8625.0,
+      "end_sec": 8630.0,
+      "center_sec": 8627.5,
+      "loudness_db": -15.684,
+      "peak_db": -1.225,
+      "percentile": 0.9969,
+      "z_score": 1.2677,
+      "normalized": 0.7113,
+      "score": 0.7913,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 8695.0,
+      "end_sec": 8700.0,
+      "center_sec": 8697.5,
+      "loudness_db": -17.459,
+      "peak_db": -1.318,
+      "percentile": 0.9665,
+      "z_score": 1.0628,
+      "normalized": 0.6771,
+      "score": 0.8371,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 8730.0,
+      "end_sec": 8735.0,
+      "center_sec": 8732.5,
+      "loudness_db": -16.493,
+      "peak_db": -0.893,
+      "percentile": 0.9907,
+      "z_score": 1.1744,
+      "normalized": 0.6957,
+      "score": 0.8557,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    }
+  ],
+  "audio_loudness_per_min": [
+    -50.124,
+    -36.948,
+    -36.99,
+    -36.736,
+    -35.051,
+    -29.021,
+    -27.864,
+    -31.201,
+    -30.214,
+    -32.087,
+    -26.2,
+    -24.081,
+    -27.645,
+    -25.383,
+    -20.109,
+    -28.669,
+    -29.309,
+    -29.803,
+    -30.456,
+    -29.218,
+    -27.055,
+    -26.117,
+    -24.635,
+    -27.653,
+    -24.519,
+    -23.486,
+    -25.093,
+    -24.466,
+    -25.619,
+    -23.404,
+    -19.83,
+    -22.311,
+    -27.358,
+    -23.116,
+    -25.539,
+    -25.622,
+    -27.143,
+    -26.839,
+    -32.194,
+    -35.37,
+    -27.317,
+    -27.199,
+    -30.972,
+    -29.243,
+    -28.995,
+    -30.074,
+    -25.663,
+    -28.12,
+    -28.056,
+    -28.3,
+    -25.584,
+    -21.364,
+    -25.508,
+    -25.883,
+    -26.715,
+    -22.534,
+    -24.373,
+    -36.019,
+    -30.722,
+    -24.808,
+    -20.603,
+    -24.545,
+    -35.341,
+    -29.155,
+    -31.969,
+    -25.46,
+    -28.606,
+    -26.009,
+    -32.539,
+    -34.581,
+    -37.97,
+    -35.841,
+    -31.178,
+    -38.714,
+    -29.427,
+    -35.797,
+    -27.753,
+    -26.336,
+    -21.823,
+    -21.961,
+    -20.612,
+    -20.934,
+    -23.595,
+    -21.634,
+    -24.025,
+    -26.369,
+    -26.965,
+    -45.873,
+    -31.395,
+    -31.892,
+    -33.031,
+    -40.859,
+    -22.577,
+    -18.877,
+    -21.405,
+    -29.309,
+    -24.565,
+    -21.201,
+    -19.732,
+    -19.834,
+    -20.992,
+    -22.973,
+    -19.525,
+    -22.369,
+    -21.738,
+    -23.209,
+    -21.728,
+    -22.251,
+    -24.515,
+    -20.762,
+    -21.036,
+    -24.752,
+    -23.52,
+    -21.89,
+    -20.463,
+    -28.92,
+    -30.724,
+    -22.43,
+    -20.455,
+    -19.098,
+    -19.458,
+    -22.672,
+    -24.48,
+    -21.944,
+    -24.768,
+    -20.075,
+    -22.592,
+    -23.645,
+    -21.952,
+    -23.427,
+    -30.986,
+    -24.262,
+    -29.429,
+    -23.955,
+    -30.417,
+    -24.265,
+    -28.218,
+    -28.747,
+    -29.361,
+    -22.297,
+    -20.918,
+    -23.257,
+    -26.521,
+    -21.621,
+    -21.936,
+    -21.965,
+    -22.107,
+    -37.995
+  ],
+  "audio_feature_source": {
+    "kind": "relative_loudness_main_pipeline",
+    "enabled_by_default": true,
+    "window_sec": 5,
+    "min_percentile": 0.95,
+    "min_gap_sec": 30,
+    "chat_overlap_sec": 60,
+    "max_peaks": 20,
+    "normalization": "per_vod_relative_percentile_and_z_score",
+    "decision_rule": "audio is supporting evidence; audio-only peaks do not prove highlight importance",
+    "sample_count": 8866,
+    "source_kind": "whisper_wav_cache",
+    "sample_extraction": "wav_pcm_python",
+    "source_count": 3,
+    "include_lufs": false
+  },
+  "summary_run_ledger": {
+    "schema_version": "summary_run_ledger.v1",
+    "run_id": "13511483_20260602_오늘의 아침밥 라볶이 묵땨 ٩(●'▿'●)۶",
+    "path": "output\\summary_run_ledger.jsonl"
+  }
+}

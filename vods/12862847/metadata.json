@@ -1,0 +1,117 @@
+{
+  "video_no": "12862847",
+  "title": "압도적긍정적 원딜",
+  "channel": "따효니",
+  "channel_id": "0dad8baf12a436f722faa8e5001c5011",
+  "streamer_id": "channel-0dad8baf12a436f722faa8e5001c5011",
+  "platform": "chzzk",
+  "duration": 33995,
+  "publish_date": "2026-04-22 18:37:10",
+  "category": "리그 오브 레전드",
+  "thumbnail_url": null,
+  "total_chats": 113111,
+  "highlight_count": 20,
+  "highlights": [
+    {
+      "sec": 21430,
+      "composite": 1.0,
+      "count": 209
+    },
+    {
+      "sec": 26330,
+      "composite": 0.9572,
+      "count": 200
+    },
+    {
+      "sec": 20200,
+      "composite": 0.8967,
+      "count": 194
+    },
+    {
+      "sec": 30460,
+      "composite": 0.8855,
+      "count": 187
+    },
+    {
+      "sec": 30960,
+      "composite": 0.8588,
+      "count": 186
+    },
+    {
+      "sec": 30250,
+      "composite": 0.8271,
+      "count": 179
+    },
+    {
+      "sec": 30060,
+      "composite": 0.8244,
+      "count": 179
+    },
+    {
+      "sec": 26530,
+      "composite": 0.7832,
+      "count": 169
+    },
+    {
+      "sec": 19100,
+      "composite": 0.7759,
+      "count": 168
+    },
+    {
+      "sec": 30510,
+      "composite": 0.7396,
+      "count": 159
+    },
+    {
+      "sec": 25750,
+      "composite": 0.7358,
+      "count": 158
+    },
+    {
+      "sec": 28640,
+      "composite": 0.7341,
+      "count": 157
+    },
+    {
+      "sec": 31470,
+      "composite": 0.7257,
+      "count": 155
+    },
+    {
+      "sec": 24970,
+      "composite": 0.7068,
+      "count": 153
+    },
+    {
+      "sec": 21260,
+      "composite": 0.7057,
+      "count": 153
+    },
+    {
+      "sec": 22240,
+      "composite": 0.6992,
+      "count": 151
+    },
+    {
+      "sec": 21120,
+      "composite": 0.6968,
+      "count": 151
+    },
+    {
+      "sec": 31690,
+      "composite": 0.6968,
+      "count": 150
+    },
+    {
+      "sec": 32510,
+      "composite": 0.6952,
+      "count": 150
+    },
+    {
+      "sec": 23540,
+      "composite": 0.6824,
+      "count": 145
+    }
+  ],
+  "processed_at": "2026-05-05T15:02:50.606061+09:00"
+}

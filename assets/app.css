@@ -1,0 +1,866 @@
+/* ─────────────────────────────────────────────────────────────
+   VOD 요약 허브 — Tokyo Night 디자인 시스템
+   참고: Anthropic Claude Cookbook (Prompting for Frontend Aesthetics) +
+         frontend-design SKILL 공식 가이드라인 (안티-슬롭 룰).
+   원칙:
+     - IDE 테마 참조 (Tokyo Night) 으로 일관 아이덴티티
+     - typography: 본문 sans + accent serif (Noto Serif KR) 로 위계 대비
+     - weight 페어링: 400 본문 ↔ 700/800 강조 (300/600 같은 미지근 페어 금지)
+     - motion: 페이지 로드 시 staggered fade-in 1회. 호버/포커스에 micro-motion.
+     - 색은 Tokyo Night 9색 유지, focus/shadow 토큰만 신규 추가.
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  /* 색상 — Tokyo Night */
+  --bg:          #1a1b26;
+  --bg-elev:     #1f2335;
+  --surface:     #24283b;
+  --surface-2:   #2a2f43;
+  --border:      #363b54;
+  --border-soft: #2e3248;
+  --text:        #c0caf5;
+  --text-strong: #e8ebf3;
+  --muted:       #7982a9;
+  --faint:       #565c7e;
+  --tc:          #7aa2f7;   /* Tokyo cyan-blue */
+  --tc-soft:     #9ab8ff;
+  --accent:      #9ece6a;   /* green */
+  --accent-warm: #e0af68;   /* yellow */
+  --danger:      #f7768e;
+
+  /* 그림자 — 다크모드 전용 (light 보다 더 넓고 옅게) */
+  --shadow-sm:   0 1px 2px 0 rgba(0,0,0,0.25);
+  --shadow-md:   0 4px 12px -2px rgba(0,0,0,0.35), 0 2px 4px -2px rgba(0,0,0,0.25);
+  --shadow-lg:   0 12px 28px -8px rgba(0,0,0,0.45), 0 4px 8px -4px rgba(0,0,0,0.30);
+  --shadow-glow: 0 0 0 3px rgba(122,162,247,0.22);
+
+  /* 모션 */
+  --ease:        cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast:    120ms;
+  --dur:         180ms;
+
+  /* 라운드 */
+  --r-sm: 6px;
+  --r:    10px;
+  --r-lg: 14px;
+
+  /* Font system: local/system fonts only. Public staging must pass strict
+     external dependency policy without fetching Google Fonts. */
+  --font-sans:    "Geist", -apple-system, BlinkMacSystemFont, "Pretendard",
+                  "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --font-mono:    "Geist Mono", "JetBrains Mono", ui-monospace,
+                  SFMono-Regular, Consolas, monospace;
+
+  /* 그라데이션 — KPI 큰 숫자 / 중요 강조 */
+  --grad-tc:      linear-gradient(135deg, var(--tc) 0%, #b8c8ff 60%, var(--accent-warm) 100%);
+  --grad-card:    linear-gradient(180deg, var(--surface) 0%, var(--bg-elev) 100%);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--bg); color: var(--text); min-height: 100%; }
+body {
+  font-family: var(--font-sans);
+  font-size: 15px; line-height: 1.6;
+  font-feature-settings: "ss01", "cv11";  /* Geist 의 단순 1 / 더 둥근 글꼴 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* 배경 atmosphere — 두 겹 그라데이션 (위 청록 + 아래 보라). 평평하지 않게. */
+  background:
+    radial-gradient(1100px 580px at 50% -8%, rgba(122,162,247,0.10), transparent 55%),
+    radial-gradient(800px 600px at 100% 110%, rgba(187,154,247,0.06), transparent 50%),
+    var(--bg);
+  background-attachment: fixed;
+}
+
+a { color: var(--tc); text-decoration: none; transition: color var(--dur-fast) var(--ease); }
+a:hover { color: var(--tc-soft); text-decoration: underline; }
+
+/* 전역 focus ring — 키보드 접근성 */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-glow);
+  border-radius: var(--r-sm);
+}
+
+code {
+  font-family: var(--font-mono);
+  background: var(--surface-2);
+  padding: 1px 6px; border-radius: 4px; color: var(--accent); font-size: 0.9em;
+}
+
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+/* ── topbar ── */
+.topbar {
+  border-bottom: 1px solid var(--border);
+  background: rgba(36,40,59,0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  position: sticky; top: 0; z-index: 10;
+}
+.topbar .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-top: 14px; padding-bottom: 14px;
+}
+.brand {
+  font-weight: 800; color: var(--text-strong); font-size: 16px;
+  text-decoration: none; letter-spacing: -0.3px;
+}
+.brand:hover { text-decoration: none; color: var(--text-strong); }
+.topbar nav { display: flex; gap: 4px; }
+.topbar nav a {
+  color: var(--muted); padding: 6px 12px; border-radius: 8px;
+  font-size: 14px; transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+.topbar nav a:hover {
+  color: var(--text-strong); background: var(--surface-2); text-decoration: none;
+}
+
+.main { padding-top: 32px; padding-bottom: 80px; }
+
+/* ── page heading ── typography 3x 점프 (cookbook 룰) ── */
+.page-title {
+  font-size: 28px; font-weight: 800; color: var(--text-strong);
+  letter-spacing: -0.4px; margin-bottom: 8px;
+  /* staggered page-load 1번째 */
+  animation: fadeUp 360ms var(--ease) both;
+}
+.page-sub {
+  color: var(--muted); font-size: 13px; margin-bottom: 24px;
+  animation: fadeUp 360ms var(--ease) both; animation-delay: 60ms;
+}
+
+.backlink {
+  display: inline-flex; align-items: center; gap: 4px;
+  color: var(--muted); font-size: 13px;
+  margin-bottom: 16px;
+  transition: color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+}
+.backlink:hover { color: var(--text-strong); text-decoration: none; transform: translateX(-2px); }
+
+/* ── empty / error ── */
+.empty {
+  margin-top: 20px; padding: 28px 20px;
+  background: var(--surface); border: 1px dashed var(--border);
+  border-radius: var(--r); color: var(--muted); font-size: 14px;
+  text-align: center;
+}
+.empty .empty-icon {
+  display: block; margin: 0 auto 10px; width: 28px; height: 28px;
+  color: var(--faint);
+}
+.empty .empty-hint {
+  display: inline-block; margin-top: 6px;
+  font-size: 12px; color: var(--faint);
+}
+
+/* ── streamer grid ── */
+.streamer-grid {
+  list-style: none;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+  /* 페이지 로드 staggered (3번째 그룹) */
+  animation: fadeUp 420ms var(--ease) both; animation-delay: 120ms;
+}
+.streamer-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 18px 20px;
+  transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), background var(--dur) var(--ease);
+}
+.streamer-card:hover {
+  border-color: var(--tc);
+  background: var(--surface-2);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.streamer-card a { display: block; color: inherit; text-decoration: none; }
+.streamer-card a:hover { text-decoration: none; }
+.streamer-card .name {
+  font-size: 16px; font-weight: 700; color: var(--text-strong);
+  margin-bottom: 6px; letter-spacing: -0.1px;
+}
+.streamer-card .meta {
+  font-size: 13px; color: var(--muted);
+  font-feature-settings: "tnum";
+}
+.streamer-card .meta-dot { margin: 0 6px; color: var(--faint); }
+.streamer-card .meta-recent { color: var(--accent); }
+
+/* ── vod list ── */
+.vod-list {
+  list-style: none; display: flex; flex-direction: column; gap: 10px;
+  animation: fadeUp 420ms var(--ease) both; animation-delay: 120ms;
+}
+.vod-row {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-sm); padding: 14px 18px;
+  transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), background var(--dur) var(--ease);
+}
+.vod-row:hover {
+  border-color: var(--tc);
+  background: var(--surface-2);
+  transform: translateX(2px);
+  box-shadow: var(--shadow-sm);
+}
+.vod-row a { color: inherit; text-decoration: none; display: block; }
+.vod-row a:hover { text-decoration: none; }
+.vod-row .title {
+  font-weight: 700; color: var(--text-strong); font-size: 15px;
+  margin-bottom: 6px; letter-spacing: -0.15px;
+}
+.vod-row .meta {
+  font-size: 12px; color: var(--muted);
+  font-family: var(--font-mono);
+}
+.vod-row .meta span + span::before { content: " · "; color: var(--faint); }
+.vod-row .streamer-chip {
+  display: inline-block; margin-right: 8px;
+  color: var(--accent); border: 1px solid rgba(158,206,106,0.28);
+  background: rgba(158,206,106,0.08); border-radius: 999px;
+  padding: 1px 10px; font-size: 11px;
+  font-family: var(--font-sans);
+}
+
+/* ── legacy VOD route redirect ── */
+.redirect-panel {
+  border: 1px solid var(--border); border-radius: var(--r);
+  background: var(--surface);
+  box-shadow: var(--shadow-md);
+  color: var(--muted);
+  padding: 18px 20px;
+  font-size: 14px;
+  animation: fadeUp 480ms var(--ease) both; animation-delay: 120ms;
+}
+.redirect-panel a {
+  font-weight: 700;
+}
+
+/* ── search form ── */
+.search-form {
+  display: flex; gap: 8px; margin-bottom: 18px;
+  animation: fadeUp 360ms var(--ease) both; animation-delay: 60ms;
+}
+.search-input-wrap {
+  position: relative; flex: 1; min-width: 0;
+}
+.search-input-wrap .icon {
+  position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+  width: 16px; height: 16px; color: var(--muted); pointer-events: none;
+}
+.search-form input {
+  width: 100%;
+  padding: 11px 14px 11px 38px;
+  background: var(--surface); color: var(--text-strong);
+  border: 1px solid var(--border); border-radius: var(--r-sm);
+  font-size: 14px; font-family: inherit;
+  transition: border-color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+}
+.search-form input::placeholder { color: var(--faint); }
+.search-form input:focus { outline: none; border-color: var(--tc); background: var(--bg-elev); }
+.search-form button {
+  padding: 11px 20px;
+  background: var(--tc); color: var(--bg);
+  border: 1px solid var(--tc); border-radius: var(--r-sm);
+  font-weight: 700; cursor: pointer; font-size: 14px;
+  letter-spacing: -0.1px;
+  transition: background var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
+}
+.search-form button:hover {
+  background: var(--tc-soft); border-color: var(--tc-soft);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+.search-form button:active { transform: translateY(0); }
+
+.search-meta {
+  color: var(--muted); font-size: 13px; margin-bottom: 12px;
+  font-family: var(--font-mono);
+}
+mark {
+  background: rgba(224,175,104,0.28); color: var(--accent-warm);
+  padding: 0 2px; border-radius: 3px;
+}
+.search-snippet {
+  margin-top: 6px;
+  padding: 6px 10px;
+  border-left: 2px solid var(--faint);
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+  word-break: break-word;
+}
+.vod-row .search-snippet:first-of-type { margin-top: 10px; }
+
+/* ── 모션 keyframes ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── 모바일 ── */
+@media (max-width: 640px) {
+  body { font-size: 14px; }
+  .wrap { padding: 0 16px; }
+  .main { padding-top: 22px; padding-bottom: 56px; }
+  .page-title { font-size: 22px; }
+  .topbar .wrap { padding-top: 12px; padding-bottom: 12px; }
+  .topbar nav a { padding: 5px 9px; font-size: 13px; }
+  .search-form { flex-wrap: wrap; }
+  .search-form button { width: 100%; }
+  .streamer-grid { grid-template-columns: 1fr; gap: 10px; }
+  .streamer-card { padding: 14px 16px; }
+  .vod-row { padding: 12px 14px; }
+}
+
+/* ── 접근성: prefers-reduced-motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   KPI hero / search-hero / streamer-head — #98 자산을
+   본 디자인 시스템 토큰 위에 다시 얹는다.
+   shadow / motion / radius 토큰을 모두 활용해 "예쁘게".
+   ───────────────────────────────────────────────────────────── */
+
+/* KPI hero — 첫 화면 큰 숫자 3개. Geist Sans 800 + 그라데이션 텍스트 +
+   카드 default 미묘 그라데이션 + 좌측 4px accent bar. 평평하지 않게.
+
+   Linear / Vercel 의 KPI hero 패턴: hover 없는 default 상태에서도
+   시각적 임팩트 — 좌측 색 바 + 그라데이션 텍스트 + 카드 그라데이션. */
+.kpi-hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 8px 0 36px;
+  animation: fadeUp 380ms var(--ease) both;
+}
+.kpi-stat {
+  position: relative;
+  background: var(--grad-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 28px 24px 24px;
+  overflow: hidden;
+  transition: border-color var(--dur) var(--ease),
+              transform var(--dur) var(--ease),
+              box-shadow var(--dur) var(--ease);
+}
+/* 좌측 accent bar — KPI 별 다른 색 (1=tc / 2=accent / 3=accent-warm) */
+.kpi-stat::before {
+  content: "";
+  position: absolute; left: 0; top: 0; bottom: 0;
+  width: 4px; background: var(--tc);
+  opacity: 0.85;
+}
+.kpi-stat:nth-child(2)::before { background: var(--accent); }
+.kpi-stat:nth-child(3)::before { background: var(--accent-warm); }
+
+/* hover: 떠오름 + glow */
+.kpi-stat:hover {
+  border-color: var(--tc);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.kpi-num {
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum", "ss01", "cv11";
+  /* 그라데이션 텍스트 — 큰 숫자 시각 임팩트 핵심. */
+  background: var(--grad-tc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.kpi-label {
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+@media (max-width: 640px) {
+  .kpi-hero { grid-template-columns: 1fr; gap: 10px; margin-bottom: 24px; }
+  .kpi-num { font-size: 36px; }
+  .kpi-stat { padding: 22px 20px 18px; }
+}
+
+/* search 페이지 hero — 큰 검색 진입 */
+.search-hero {
+  margin: 0 0 32px;
+  animation: fadeUp 360ms var(--ease) both;
+}
+.search-hero-title {
+  font-size: 40px; font-weight: 800; color: var(--text-strong);
+  letter-spacing: -1.2px; line-height: 1.05; margin-bottom: 18px;
+}
+.search-form-big { display: flex; gap: 10px; }
+.search-form-big .search-input-wrap { flex: 1; min-width: 0; position: relative; }
+.search-form-big .search-input-wrap .icon {
+  position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+  width: 18px; height: 18px; color: var(--muted); pointer-events: none;
+}
+.search-form-big input {
+  width: 100%;
+  padding: 16px 20px 16px 46px;
+  background: var(--surface); color: var(--text-strong);
+  border: 1px solid var(--border); border-radius: var(--r);
+  font-size: 16px; font-family: inherit;
+  transition: border-color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+}
+.search-form-big input::placeholder { color: var(--faint); }
+.search-form-big input:focus {
+  outline: none; border-color: var(--tc); background: var(--bg-elev);
+}
+.search-form-big button {
+  padding: 16px 28px;
+  background: var(--tc); color: var(--bg);
+  border: 1px solid var(--tc); border-radius: var(--r);
+  font-weight: 700; cursor: pointer; font-size: 15px;
+  letter-spacing: -0.1px;
+  transition: background var(--dur-fast) var(--ease),
+              transform var(--dur-fast) var(--ease),
+              box-shadow var(--dur-fast) var(--ease);
+}
+.search-form-big button:hover {
+  background: var(--tc-soft); border-color: var(--tc-soft);
+  transform: translateY(-1px); box-shadow: var(--shadow-md);
+}
+.search-form-big button:active { transform: translateY(0); }
+.search-hint {
+  margin-top: 10px; font-size: 12px; color: var(--muted);
+  font-family: var(--font-mono);
+}
+@media (max-width: 640px) {
+  .search-hero-title { font-size: 26px; }
+  .search-form-big { flex-direction: column; }
+  .search-form-big input { font-size: 16px; padding: 14px 16px 14px 42px; }
+}
+
+/* streamer 상세 큰 제목 */
+.streamer-head {
+  margin: 4px 0 24px;
+  animation: fadeUp 360ms var(--ease) both;
+}
+.streamer-name {
+  font-size: 36px; font-weight: 800; color: var(--text-strong);
+  letter-spacing: -1px; line-height: 1.1;
+  margin: 0 0 8px;
+}
+.streamer-meta {
+  color: var(--muted); font-size: 13px;
+  font-family: var(--font-mono);
+}
+@media (max-width: 640px) {
+  .streamer-name { font-size: 24px; }
+}
+
+/* topbar nav active 표시 */
+.topbar nav a.active {
+  color: var(--text-strong);
+  background: var(--surface-2);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   pass8 — streamer 상세 KPI mini row + 검색 필터 칩
+   ───────────────────────────────────────────────────────────── */
+
+/* 스트리머 상세 — KPI mini (hero 보다 작은 변형, 이름 아래 한 줄) */
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 4px 0 24px;
+  animation: fadeUp 380ms var(--ease) both; animation-delay: 60ms;
+}
+.kpi-mini {
+  position: relative;
+  background: var(--grad-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 14px 16px 12px 18px;
+  overflow: hidden;
+  transition: border-color var(--dur) var(--ease),
+              transform var(--dur) var(--ease),
+              box-shadow var(--dur) var(--ease);
+}
+.kpi-mini::before {
+  content: "";
+  position: absolute; left: 0; top: 0; bottom: 0;
+  width: 3px; background: var(--tc); opacity: 0.85;
+}
+.kpi-mini:nth-child(2)::before { background: var(--accent); }
+.kpi-mini:nth-child(3)::before { background: var(--accent-warm); }
+.kpi-mini:hover {
+  border-color: var(--tc);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.kpi-mini-num {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  line-height: 1.15;
+  color: var(--text-strong);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum", "ss01", "cv11";
+}
+.kpi-mini-label {
+  margin-top: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+@media (max-width: 640px) {
+  .kpi-row { grid-template-columns: 1fr; gap: 8px; margin-bottom: 18px; }
+  .kpi-mini { padding: 12px 14px 10px 16px; }
+  .kpi-mini-num { font-size: 19px; }
+}
+
+/* 검색 — 결과 후 노출되는 스트리머 필터 칩 (Primer FilterList 패턴) */
+.streamer-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0 16px;
+  flex-wrap: wrap;
+  animation: fadeUp 240ms var(--ease) both;
+}
+.streamer-filter-label {
+  font-size: 11px; font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.7px; text-transform: uppercase;
+}
+.streamer-filter-chips {
+  display: flex; flex-wrap: wrap; gap: 6px;
+}
+.filter-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 11px;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font: 500 12.5px var(--font-sans);
+  cursor: pointer;
+  letter-spacing: -0.05px;
+  transition: border-color var(--dur-fast) var(--ease),
+              background var(--dur-fast) var(--ease),
+              color var(--dur-fast) var(--ease),
+              transform var(--dur-fast) var(--ease);
+}
+.filter-chip:hover {
+  border-color: var(--tc);
+  background: var(--surface-2);
+  color: var(--text-strong);
+}
+.filter-chip.is-active {
+  background: rgba(122,162,247,0.18);
+  border-color: var(--tc);
+  color: var(--text-strong);
+}
+.filter-chip .chip-count {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+  background: var(--bg-elev);
+  border-radius: 999px;
+  padding: 0 7px;
+  line-height: 1.55;
+}
+.filter-chip.is-active .chip-count {
+  color: var(--tc);
+  background: rgba(122,162,247,0.10);
+}
+@media (max-width: 640px) {
+  .streamer-filter-label { width: 100%; }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   pass9 — UX 디벨롭: 최근 업데이트 피드 / 정렬 segmented /
+            카테고리 필터 / 공유 버튼 / 토스트 / 빈 상태 힌트 /
+            검색 발견 칩 / iconified meta row
+   참고 패턴: GitHub Primer FilterList, Linear/Vercel "what's new" 피드,
+              Radix UI radio-group(아리아 의미만 차용, 라이브러리 무도입).
+   ───────────────────────────────────────────────────────────── */
+
+/* page-sub 보조 — 홈 KPI 아래에 한 줄 안내 */
+.page-hint {
+  margin: -20px 0 28px;
+  color: var(--muted);
+  font-size: 13px;
+  font-family: var(--font-mono);
+  animation: fadeUp 320ms var(--ease) both; animation-delay: 80ms;
+}
+.page-hint kbd {
+  display: inline-block;
+  padding: 1px 7px;
+  margin: 0 2px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-strong);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+/* 섹션 헤더 — 홈에서 "최근 업데이트" / "스트리머" 구분 */
+.section-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  margin: 36px 0 14px;
+  gap: 12px;
+}
+.section-head:first-child { margin-top: 8px; }
+.section-title {
+  font-size: 18px; font-weight: 700; color: var(--text-strong);
+  letter-spacing: -0.3px;
+}
+.section-aside {
+  font-size: 12px; color: var(--muted); font-family: var(--font-mono);
+}
+.section-aside a { color: var(--muted); }
+.section-aside a:hover { color: var(--tc-soft); }
+
+/* 최근 업데이트 카드 행 — 가로 스크롤 1줄, 모바일은 stacked */
+.recent-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  list-style: none;
+  animation: fadeUp 420ms var(--ease) both; animation-delay: 90ms;
+}
+.recent-card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 14px 16px 13px;
+  transition: border-color var(--dur) var(--ease),
+              transform var(--dur) var(--ease),
+              box-shadow var(--dur) var(--ease),
+              background var(--dur) var(--ease);
+  min-height: 110px;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.recent-card a { color: inherit; text-decoration: none; display: block; }
+.recent-card:hover {
+  border-color: var(--tc);
+  background: var(--surface-2);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.recent-card-streamer {
+  display: inline-flex; align-items: center;
+  font-size: 11px; font-weight: 600;
+  color: var(--accent);
+  background: rgba(158,206,106,0.10);
+  border: 1px solid rgba(158,206,106,0.28);
+  border-radius: 999px;
+  padding: 2px 9px;
+  margin-bottom: 8px;
+  letter-spacing: -0.05px;
+}
+.recent-card-title {
+  color: var(--text-strong); font-weight: 700; font-size: 14px;
+  letter-spacing: -0.1px; line-height: 1.4;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.recent-card-meta {
+  font-family: var(--font-mono); font-size: 11px; color: var(--muted);
+  display: flex; align-items: center; gap: 6px;
+}
+.recent-card-meta .dot { color: var(--faint); }
+
+/* iconified meta row — VOD 행에서 "·" 구분자 대신 아이콘 + 숫자 */
+.vod-row .meta { display: flex; flex-wrap: wrap; gap: 12px 14px; align-items: center; }
+.vod-row .meta span + span::before { content: none; }
+.vod-row .meta .meta-item {
+  display: inline-flex; align-items: center; gap: 5px;
+  color: var(--muted);
+}
+.vod-row .meta .meta-item svg {
+  width: 13px; height: 13px;
+  stroke: currentColor; fill: none; stroke-width: 1.8;
+  flex-shrink: 0; opacity: 0.85;
+}
+.vod-row .meta .meta-item.is-emphasis { color: var(--tc-soft); }
+.vod-row .meta .meta-item.is-warm { color: var(--accent-warm); }
+.vod-row .meta .meta-cat {
+  display: inline-flex; align-items: center;
+  padding: 1px 9px;
+  font-family: var(--font-sans);
+  font-size: 11px; font-weight: 500;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  letter-spacing: -0.05px;
+}
+
+/* 정렬 / 카테고리 컨트롤 바 (스트리머 상세 + 검색 페이지) */
+.list-controls {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  align-items: center; justify-content: space-between;
+  margin: 4px 0 14px;
+  animation: fadeUp 280ms var(--ease) both;
+}
+.list-controls-left { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.list-controls-count {
+  font-size: 12px; color: var(--muted); font-family: var(--font-mono);
+}
+.segmented {
+  display: inline-flex;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: 2px;
+  gap: 0;
+}
+.segmented button {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: var(--muted);
+  padding: 5px 11px;
+  font: 500 12.5px var(--font-sans);
+  cursor: pointer;
+  border-radius: 5px;
+  letter-spacing: -0.05px;
+  transition: color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+}
+.segmented button:hover { color: var(--text-strong); }
+.segmented button[aria-pressed="true"] {
+  background: rgba(122,162,247,0.18);
+  color: var(--text-strong);
+  box-shadow: 0 0 0 1px rgba(122,162,247,0.35) inset;
+}
+
+/* 카테고리 필터 한 줄 (스트리머 상세) — streamer-filter 와 같은 vocabulary */
+.category-filter {
+  display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+  margin: 0 0 14px;
+}
+.category-filter .streamer-filter-label { display: inline-block; }
+
+/* 공유 / 액션 — VOD 상세 페이지 */
+.vod-actions {
+  display: flex; gap: 8px; align-items: center;
+  margin: 4px 0 18px;
+  animation: fadeUp 300ms var(--ease) both; animation-delay: 60ms;
+}
+.icon-button {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 12px;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  font: 500 12.5px var(--font-sans);
+  cursor: pointer;
+  letter-spacing: -0.05px;
+  transition: border-color var(--dur-fast) var(--ease),
+              background var(--dur-fast) var(--ease),
+              color var(--dur-fast) var(--ease),
+              transform var(--dur-fast) var(--ease);
+}
+.icon-button:hover {
+  border-color: var(--tc); background: var(--surface-2); color: var(--text-strong);
+  transform: translateY(-1px);
+}
+.icon-button:active { transform: translateY(0); }
+.icon-button svg {
+  width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 1.8;
+}
+.icon-button.is-success { border-color: var(--accent); color: var(--accent); }
+
+/* 토스트 — 우하단 1회 알림 (copy 등) */
+.toast {
+  position: fixed; right: 20px; bottom: 24px;
+  background: var(--surface);
+  color: var(--text-strong);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 10px 16px;
+  font-size: 13px;
+  box-shadow: var(--shadow-lg);
+  display: inline-flex; align-items: center; gap: 8px;
+  animation: toastIn 240ms var(--ease) both;
+  z-index: 100;
+}
+.toast.is-leaving { animation: toastOut 200ms var(--ease) both; }
+.toast svg { width: 14px; height: 14px; stroke: var(--accent); fill: none; stroke-width: 2.2; }
+@keyframes toastIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes toastOut {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(8px); }
+}
+
+/* 스켈레톤 — 로딩 placeholder */
+.skeleton {
+  background: linear-gradient(90deg,
+    var(--surface) 0%, var(--surface-2) 50%, var(--surface) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+  border-radius: var(--r-sm);
+  color: transparent !important;
+  user-select: none;
+}
+@keyframes shimmer {
+  from { background-position: 200% 0; }
+  to   { background-position: -200% 0; }
+}
+
+/* empty-hint — 빈 상태 보조 한 줄 */
+.empty-hint {
+  display: block;
+  margin-top: 8px;
+  color: var(--faint);
+  font-size: 12px;
+  font-family: var(--font-mono);
+}
+
+/* 검색 발견 — 빈 검색 시 노출되는 인기 스트리머 / 최근 칩 */
+.search-discover {
+  margin: 10px 0 18px;
+  animation: fadeUp 280ms var(--ease) both;
+}
+.search-discover-label {
+  font-size: 11px; font-weight: 600; color: var(--muted);
+  letter-spacing: 0.7px; text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+/* 검색 결과 강조 — search-snippet 가독성 개선 (왼쪽 색바, 작은 padding) */
+.search-snippet {
+  border-left-color: var(--tc);
+  background: rgba(122,162,247,0.04);
+  border-radius: 0 4px 4px 0;
+}
+
+@media (max-width: 640px) {
+  .recent-strip { grid-template-columns: 1fr; }
+  .list-controls { flex-direction: column; align-items: stretch; gap: 8px; }
+  .list-controls-left { width: 100%; }
+  .segmented { width: 100%; }
+  .segmented button { flex: 1; }
+  .toast { right: 12px; left: 12px; bottom: 14px; justify-content: center; }
+}
