@@ -4,9 +4,21 @@
     "streamer_name": "탬탬버린",
     "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
     "platform": "chzzk",
-    "vod_count": 60
+    "vod_count": 61
   },
   "vods": [
+    {
+      "video_no": "13630912",
+      "title": "8시 인생게임 삼식태권도팟 드디어 모이다 ٩(●'▿'●)۶",
+      "published_at": "2026-06-09T18:48:59+09:00",
+      "published_date_str": "20260609",
+      "duration_sec": 27856,
+      "platform_category": "더 게임 오브 라이프 포 닌텐도 스위치",
+      "stats": {
+        "total_chats": 48631,
+        "highlight_count": 16
+      }
+    },
     {
       "video_no": "13600970",
       "title": "스타2 자유의 날개 어려움일까 보통일까 ٩(●'▿'●)۶",

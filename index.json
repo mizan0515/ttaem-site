@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-08T06:07:45+00:00",
-  "built_at": "2026-06-08T06:07:45+00:00",
-  "latest_processed_at": "2026-06-08T12:46:12.670725+09:00",
+  "generated_at": "2026-06-10T02:52:49+00:00",
+  "built_at": "2026-06-10T02:52:49+00:00",
+  "latest_processed_at": "2026-06-10T10:16:34.430146+09:00",
   "total_streamers": 4,
-  "total_vods": 64,
+  "total_vods": 65,
   "total_bundles": 2,
   "streamers": [
     {
@@ -11,8 +11,8 @@
       "streamer_name": "탬탬버린",
       "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
       "platform": "chzzk",
-      "vod_count": 60,
-      "last_vod_at": "2026-06-07T16:36:17+09:00"
+      "vod_count": 61,
+      "last_vod_at": "2026-06-09T18:48:59+09:00"
     },
     {
       "streamer_id": "channel-0dad8baf12a436f722faa8e5001c5011",
@@ -40,6 +40,14 @@
     }
   ],
   "recent_vods": [
+    {
+      "video_no": "13630912",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "8시 인생게임 삼식태권도팟 드디어 모이다 ٩(●'▿'●)۶",
+      "published_at": "2026-06-09T18:48:59+09:00",
+      "duration_sec": 27856
+    },
     {
       "video_no": "13600970",
       "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
@@ -79,14 +87,6 @@
       "title": "13년이나 방송을 했다니 새삼 문득 신기٩(●'▿'●)۶",
       "published_at": "2026-06-01T17:05:46+09:00",
       "duration_sec": 20663
-    },
-    {
-      "video_no": "13484561",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "이세계 T1으로 1등 갈게요 톰톰버린 종신해 탬 종 신",
-      "published_at": "2026-05-31T17:01:38+09:00",
-      "duration_sec": 21907
     }
   ]
 }
