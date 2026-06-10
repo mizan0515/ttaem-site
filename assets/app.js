@@ -163,11 +163,11 @@
           return;
         }
 
-        // 스트리머 카드: 최근 X일 전 + VOD 편수 + 플랫폼
+        // 스트리머 카드: 최근 방송 시각 + VOD 편수 + 플랫폼
         listEl.innerHTML = idx.streamers
           .map((s) => {
             const last = s.last_vod_at
-              ? `<span class="meta-dot">·</span><span class="meta-recent">최근 ${escapeHtml(fmtRelative(s.last_vod_at))}</span>`
+              ? `<span class="meta-dot">·</span><span class="meta-recent">최근 방송 ${escapeHtml(fmtRelative(s.last_vod_at))}</span>`
               : "";
             return `
 <li class="streamer-card">
