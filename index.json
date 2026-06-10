@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-10T03:17:03+00:00",
-  "built_at": "2026-06-10T03:17:03+00:00",
+  "generated_at": "2026-06-10T03:20:26+00:00",
+  "built_at": "2026-06-10T03:20:26+00:00",
   "latest_processed_at": "2026-06-10T10:16:34.430146+09:00",
   "total_streamers": 4,
   "total_vods": 65,
@@ -12,7 +12,8 @@
       "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
       "platform": "chzzk",
       "vod_count": 61,
-      "last_vod_at": "2026-06-09T18:48:59+09:00"
+      "last_vod_at": "2026-06-09T18:48:59+09:00",
+      "last_vod_ended_at": "2026-06-10T02:33:15+09:00"
     },
     {
       "streamer_id": "channel-0dad8baf12a436f722faa8e5001c5011",
@@ -20,7 +21,8 @@
       "channel_id": "0dad8baf12a436f722faa8e5001c5011",
       "platform": "chzzk",
       "vod_count": 1,
-      "last_vod_at": "2026-04-22T18:37:10+09:00"
+      "last_vod_at": "2026-04-22T18:37:10+09:00",
+      "last_vod_ended_at": "2026-04-23T04:03:45+09:00"
     },
     {
       "streamer_id": "channel-8b3e8e3a13201cff0836c69cfab62f45",
@@ -28,7 +30,8 @@
       "channel_id": "8b3e8e3a13201cff0836c69cfab62f45",
       "platform": "chzzk",
       "vod_count": 2,
-      "last_vod_at": "2026-04-28T17:30:21+09:00"
+      "last_vod_at": "2026-04-28T17:30:21+09:00",
+      "last_vod_ended_at": "2026-04-29T01:37:14+09:00"
     },
     {
       "streamer_id": "channel-c42cd75ec4855a9edf204a407c3c1dd2",
@@ -36,7 +39,8 @@
       "channel_id": "c42cd75ec4855a9edf204a407c3c1dd2",
       "platform": "chzzk",
       "vod_count": 1,
-      "last_vod_at": "2026-05-30T11:55:01+09:00"
+      "last_vod_at": "2026-05-30T11:55:01+09:00",
+      "last_vod_ended_at": "2026-05-30T15:58:06+09:00"
     }
   ],
   "recent_vods": [
@@ -46,6 +50,7 @@
       "streamer_name": "탬탬버린",
       "title": "8시 인생게임 삼식태권도팟 드디어 모이다 ٩(●'▿'●)۶",
       "published_at": "2026-06-09T18:48:59+09:00",
+      "ended_at": "2026-06-10T02:33:15+09:00",
       "duration_sec": 27856
     },
     {
@@ -54,6 +59,7 @@
       "streamer_name": "탬탬버린",
       "title": "스타2 자유의 날개 어려움일까 보통일까 ٩(●'▿'●)۶",
       "published_at": "2026-06-07T16:36:17+09:00",
+      "ended_at": "2026-06-08T02:02:38+09:00",
       "duration_sec": 33981
     },
     {
@@ -62,6 +68,7 @@
       "streamer_name": "탬탬버린",
       "title": "이게 무슨 협동게임인가여 ٩(●'▿'●)۶",
       "published_at": "2026-06-06T16:43:04+09:00",
+      "ended_at": "2026-06-07T01:03:33+09:00",
       "duration_sec": 30029
     },
     {
@@ -70,6 +77,7 @@
       "streamer_name": "탬탬버린",
       "title": "스알못의 스타 캠페인 1 같이보기 후 2 도전하기٩(●'▿'●)۶",
       "published_at": "2026-06-03T17:31:02+09:00",
+      "ended_at": "2026-06-04T01:31:55+09:00",
       "duration_sec": 28853
     },
     {
@@ -78,6 +86,7 @@
       "streamer_name": "탬탬버린",
       "title": "오늘의 아침밥 라볶이 묵땨 ٩(●'▿'●)۶",
       "published_at": "2026-06-02T18:24:38+09:00",
+      "ended_at": "2026-06-02T20:52:23+09:00",
       "duration_sec": 8865
     },
     {
@@ -86,6 +95,7 @@
       "streamer_name": "탬탬버린",
       "title": "13년이나 방송을 했다니 새삼 문득 신기٩(●'▿'●)۶",
       "published_at": "2026-06-01T17:05:46+09:00",
+      "ended_at": "2026-06-01T22:50:09+09:00",
       "duration_sec": 20663
     }
   ]

@@ -163,11 +163,12 @@
           return;
         }
 
-        // 스트리머 카드: 최근 방송 시각 + VOD 편수 + 플랫폼
+        // 스트리머 카드: 최근 방송 종료 시각 + VOD 편수 + 플랫폼
         listEl.innerHTML = idx.streamers
           .map((s) => {
-            const last = s.last_vod_at
-              ? `<span class="meta-dot">·</span><span class="meta-recent">최근 방송 ${escapeHtml(fmtRelative(s.last_vod_at))}</span>`
+            const lastAt = s.last_vod_ended_at || s.last_vod_at;
+            const last = lastAt
+              ? `<span class="meta-dot">·</span><span class="meta-recent">최근 방송 종료 ${escapeHtml(fmtRelative(lastAt))}</span>`
               : "";
             return `
 <li class="streamer-card">
@@ -194,7 +195,7 @@
     <span class="recent-card-streamer">${escapeHtml(r.streamer_name || r.streamer_id || "")}</span>
     <div class="recent-card-title">${escapeHtml(r.title || "(제목 없음)")}</div>
     <div class="recent-card-meta">
-      <span>${escapeHtml(fmtRelative(r.published_at))}</span>
+      <span>${escapeHtml(r.ended_at ? "종료 " + fmtRelative(r.ended_at) : fmtRelative(r.published_at))}</span>
       ${r.duration_sec ? `<span class="dot">·</span><span>${escapeHtml(secToHms(r.duration_sec))}</span>` : ""}
     </div>
   </a>
@@ -340,7 +341,7 @@
         // KPI mini row
         const totalChats = _streamerVods.reduce(
           (sum, v) => sum + Number(v.stats?.total_chats || 0), 0);
-        const latest = _streamerVods.map((v) => v.published_at).filter(Boolean).sort().pop();
+        const latest = _streamerVods.map((v) => v.ended_at || v.published_at).filter(Boolean).sort().pop();
         const kpiRow = document.getElementById("kpi-row");
         if (kpiRow) {
           setKpi("kpi-vod-count", Number(_streamerVods.length).toLocaleString());
