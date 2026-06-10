@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 6시 모라하지마 모라하지마 모라하지마 서버 고고링 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13339879/report](https://auto-caption-generator-site.pages.dev/vods/13339879/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13339879/report](https://ttaem.com/vods/13339879/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13339879](https://chzzk.naver.com/video/13339879)
 
 - **핵심 요약:** #마인크래프트 #모라하지마서버 #도둑질밈드립

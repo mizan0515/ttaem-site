@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 해방 어케하나요 해방만 하고 다섯시에 경기 ㄱㄱ ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13143299/report](https://auto-caption-generator-site.pages.dev/vods/13143299/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13143299/report](https://ttaem.com/vods/13143299/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13143299](https://chzzk.naver.com/video/13143299)
 
 - **핵심 요약:** #메이플복귀 #하드스우해방 #R꾹밈

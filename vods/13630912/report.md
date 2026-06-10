@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 8시 인생게임 삼식태권도팟 드디어 모이다 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13630912/report](https://auto-caption-generator-site.pages.dev/vods/13630912/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13630912/report](https://ttaem.com/vods/13630912/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13630912](https://chzzk.naver.com/video/13630912)
 
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13630912](https://chzzk.naver.com/video/13630912)

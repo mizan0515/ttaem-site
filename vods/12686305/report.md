@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 픽셀 합방으로 오버워치 탬딜러 출동 ㄷㄷ ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12686305/report](https://auto-caption-generator-site.pages.dev/vods/12686305/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12686305/report](https://ttaem.com/vods/12686305/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12686305](https://chzzk.naver.com/video/12686305)
 
 - **핵심 요약:** #픽셀합방 #국밥ASMR #탬금술사

@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 스타2 자유의 날개 어려움일까 보통일까 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13600970/report](https://auto-caption-generator-site.pages.dev/vods/13600970/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13600970/report](https://ttaem.com/vods/13600970/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13600970](https://chzzk.naver.com/video/13600970)
 
 - **핵심 요약:** #스타크래프트 #장로컵 #밈드립

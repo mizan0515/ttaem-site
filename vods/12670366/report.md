@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 바텀이 먼저 터지냐 VS 탑이 먼저 터지냐 대결 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12670366/report](https://auto-caption-generator-site.pages.dev/vods/12670366/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12670366/report](https://ttaem.com/vods/12670366/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12670366](https://chzzk.naver.com/video/12670366)
 
 - **핵심 요약:** #탑바텀대결 #자석체질 #십덕망상붕괴

@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 아니근데진짜 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13003574/report](https://auto-caption-generator-site.pages.dev/vods/13003574/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13003574/report](https://ttaem.com/vods/13003574/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13003574](https://chzzk.naver.com/video/13003574)
 
 - **핵심 요약:** #LCK같이보기 #칼국수비상 #사회불안공감

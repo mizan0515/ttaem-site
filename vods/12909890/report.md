@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: [호종컵] 고수달을 변기에 내려 내리지마 내려 내리지마 내려 내리지마 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12909890/report](https://auto-caption-generator-site.pages.dev/vods/12909890/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12909890/report](https://ttaem.com/vods/12909890/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12909890](https://chzzk.naver.com/video/12909890)
 
 - **핵심 요약:** #탬탬버린 #호종컵 #레나타캐리
