@@ -1,0 +1,35 @@
+{
+  "bundle_id": "20260610_football_13637282_13639978",
+  "bundle_title": "2026-06-10 축구 배우기 + 이탈리아전 같이보기 번들",
+  "vod_count": 2,
+  "video_nos": [
+    "13637282",
+    "13639978"
+  ],
+  "display_order": [
+    "13637282",
+    "13639978"
+  ],
+  "vods": [
+    {
+      "video_no": "13637282",
+      "title": "3시 축구 배우기 w.이글콥 ٩(●'▿'●)۶",
+      "channel_name": "탬탬버린",
+      "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+      "duration": 16006,
+      "publish_date": "2026-06-10 14:55:35",
+      "category": "talk"
+    },
+    {
+      "video_no": "13639978",
+      "title": "02년 이탈리아전 같이보기 축알못의 시선;; ٩(●'▿'●)۶",
+      "channel_name": "탬탬버린",
+      "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+      "duration": 10925,
+      "publish_date": "2026-06-10 19:23:21",
+      "category": ""
+    }
+  ],
+  "created_at": "2026-06-11T04:06:33.86385+09:00",
+  "schema_version": 1
+}

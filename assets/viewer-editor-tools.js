@@ -239,13 +239,14 @@ function initViewerEditorTools() {
     const end = Number.isFinite(endRaw) ? endRaw : start;
     return Number.isFinite(start) && Number.isFinite(sec) && start - radius <= sec && sec <= end + radius;
   }
-  function seekUrl(sec) {
-    const videoNo = String(data.video_no || '');
+  function seekUrl(sec, row) {
+    const videoNo = String(row && (row.video_no || row.source_video_no) || data.video_no || '');
     if (!videoNo) return '';
-    return `https://chzzk.naver.com/video/${encodeURIComponent(videoNo)}?currentTime=${Math.max(0, Math.floor(Number(sec || 0)))}`;
+    const targetSec = row && row.seek_sec != null ? row.seek_sec : sec;
+    return `https://chzzk.naver.com/video/${encodeURIComponent(videoNo)}?currentTime=${Math.max(0, Math.floor(Number(targetSec || 0)))}`;
   }
-  function syncSplitEditorSeek(sec) {
-    const url = seekUrl(sec);
+  function syncSplitEditorSeek(sec, row) {
+    const url = seekUrl(sec, row);
     if (!url) return '';
     const frame = document.querySelector('[data-editor-chzzk-frame]');
     if (frame) frame.setAttribute('src', url);
@@ -259,14 +260,14 @@ function initViewerEditorTools() {
     if (raw === 'viewer_clip_anchor') return '';
     return `https://chzzk.naver.com/clips/${encodeURIComponent(raw)}`;
   }
-  function timeLink(sec) {
-    const url = seekUrl(sec);
-    const label = fmt(sec);
+  function timeLink(sec, row) {
+    const url = seekUrl(sec, row);
+    const label = row && row.timecode ? String(row.timecode) : fmt(sec);
     return url ? `<a class="viewer-editor-time-link" href="${esc(url)}" target="_blank" rel="noopener">${label}</a>` : esc(label);
   }
-  function timeChip(sec) {
-    const url = seekUrl(sec);
-    const label = fmt(sec);
+  function timeChip(sec, row) {
+    const url = seekUrl(sec, row);
+    const label = row && row.timecode ? String(row.timecode) : fmt(sec);
     return url ? `<a class="viewer-editor-chip" href="${esc(url)}" target="_blank" rel="noopener">${label}</a>` : `<span class="viewer-editor-chip">${label}</span>`;
   }
   function timecodeToSec(value) {
@@ -299,7 +300,7 @@ function initViewerEditorTools() {
       const text = rawText && !looksLikeUid ? `${esc(rawText)} · 치지직 클립 열기` : '치지직 클립 열기';
       return `<div class="viewer-editor-row"><strong>${label}</strong><br><a class="viewer-editor-evidence-link" href="${esc(row.clipUrl)}" target="_blank" rel="noopener">${text}</a></div>`;
     }
-    const label = row.sec != null ? `${esc(row.label || '근거')} · ${timeLink(row.sec)}` : linkTimecodesText(row.label || '근거');
+    const label = row.sec != null ? `${esc(row.label || '근거')} · ${timeLink(row.sec, row)}` : linkTimecodesText(row.label || '근거');
     return `<div class="viewer-editor-row"><strong>${label}</strong><br>${linkTimecodesText(row.text || '')}</div>`;
   }
   function viewerClipLinkInfo(eventList, selectedEvent) {
@@ -567,7 +568,7 @@ function initViewerEditorTools() {
       marker.classList.toggle('selected', marker.dataset.eventId === selectedEventId);
       marker.addEventListener('click', () => {
         const event = events.find((item) => item.id === marker.dataset.eventId);
-        syncSplitEditorSeek(event && event.start_sec);
+        syncSplitEditorSeek(event && event.start_sec, event);
         renderEvidence(event || null);
       });
     });
@@ -589,7 +590,7 @@ function initViewerEditorTools() {
     }
     const introEl = document.getElementById('viewerEditorEvidenceIntro');
     if (introEl) introEl.hidden = true;
-    syncSplitEditorSeek(sec);
+    syncSplitEditorSeek(sec, event);
     selectedEventId = String(event.id || '');
     axisEl.querySelectorAll('[data-event-id]').forEach((marker) => marker.classList.toggle('selected', marker.dataset.eventId === selectedEventId));
     const nearbyEvents = events.filter((row) => near(row, sec, 45)).slice(0, 8);
@@ -613,8 +614,10 @@ function initViewerEditorTools() {
         return { label, text, clipUid: rawLabel || selectedClipLink.uid, clipUrl: url };
       }))
       .concat(nearbyEvents.filter((row) => row.id !== event.id).map((row) => ({
-        label: optionLabel(row.kind),
+        label: row.vod_label ? `${row.vod_label} · ${optionLabel(row.kind)}` : optionLabel(row.kind),
         sec: row.start_sec,
+        seek_sec: row.seek_sec,
+        video_no: row.video_no,
         text: isTimeOnlyTitle(row.title, row.start_sec) || friendlyEventTitle(row) === selectedTitleText ? '' : friendlyEventTitle(row)
       })))
       .filter((row) => row.text)
@@ -627,7 +630,7 @@ function initViewerEditorTools() {
     const selectedColor = markerColor(event.kind);
     const kindLabel = optionLabel(event.kind);
     const titleMatchesKind = selectedTitleText === kindLabel;
-    const chipRows = [timeChip(sec)];
+    const chipRows = [timeChip(sec, event)];
     if (summaryStatus.label === kindLabel) {
       chipRows.push(`<span class="viewer-editor-chip ${summaryStatus.warning ? 'warning' : ''}">${esc(summaryStatus.label)}</span>`);
     } else if (summaryStatus.label === '요약에 포함됨' && (event.kind === 'timeline' || event.kind === 'existing_segments')) {
@@ -647,7 +650,7 @@ function initViewerEditorTools() {
     </div>
     ${renderContextSummary(nearbySubtitles, nearbyBuckets)}
     ${guidanceHtml}
-    ${seekUrl(sec) ? `<div class="viewer-editor-row"><strong>원본 확인</strong><br><a href="${esc(seekUrl(sec))}" target="_blank" rel="noopener" style="color:var(--tc)">치지직에서 이 시각 열기</a></div>` : ''}
+    ${seekUrl(sec, event) ? `<div class="viewer-editor-row"><strong>원본 확인</strong><br><a href="${esc(seekUrl(sec, event))}" target="_blank" rel="noopener" style="color:var(--tc)">치지직에서 이 시각 열기</a></div>` : ''}
     <div class="viewer-editor-list">${evidenceRows.map(renderEvidenceRow).join('') || '<div class="viewer-editor-empty">근처 근거가 없습니다.</div>'}</div>`;
   }
   function renderCuts() {
