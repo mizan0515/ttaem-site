@@ -482,7 +482,7 @@ function initViewerEditorTools() {
     const chatHtml = chatRows.length
       ? chatRows.map((row) => {
           const sample = (row.samples || []).map((item) => item.text).filter(Boolean).slice(0, 3).join(' / ');
-          return `<div class="viewer-editor-context-line"><span class="viewer-editor-context-time">${timeLink(row.start_sec)}</span><span class="viewer-editor-context-text">채팅 ${Number(row.count || 0)}개${sample ? ` · ${linkTimecodesText(sample)}` : ''}</span></div>`;
+          return `<div class="viewer-editor-context-line"><span class="viewer-editor-context-time">${timeLink(row.start_sec, row)}</span><span class="viewer-editor-context-text">채팅 ${Number(row.count || 0)}개${sample ? ` · ${linkTimecodesText(sample)}` : ''}</span></div>`;
         }).join('')
       : '<div class="viewer-editor-empty">근처 채팅 샘플 없음</div>';
     return `<div class="viewer-editor-context" aria-label="선택 시각 주변 방송 맥락">
