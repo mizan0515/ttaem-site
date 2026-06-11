@@ -267,11 +267,138 @@
     header h1 { font-size: 22px; }
     .stats { grid-template-columns: repeat(2, 1fr); }
   }
+.public-report-nav {
+    position: sticky; top: 0; z-index: 1000;
+    background: rgba(26,27,38,0.96);
+    border-bottom: 1px solid var(--border, #363b54);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .public-report-nav-inner {
+    max-width: 960px; margin: 0 auto; padding: 12px 40px;
+    display: flex; justify-content: space-between; gap: 16px;
+    align-items: center;
+  }
+  .public-report-nav-links {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  }
+  .public-report-brand {
+    color: var(--text-strong, #e8ebf3); font-weight: 800; font-size: 15px;
+    text-decoration: none; white-space: nowrap;
+  }
+  .public-report-brand:hover { color: var(--text-strong, #e8ebf3); text-decoration: none; }
+  .public-report-nav-link {
+    color: var(--muted, #7982a9); padding: 6px 10px; border-radius: 8px;
+    font: inherit; font-size: 13px; font-weight: 700; text-decoration: none;
+    white-space: nowrap;
+  }
+  .public-report-nav-link:hover {
+    background: rgba(122,162,247,0.12); color: var(--text-strong, #e8ebf3);
+    text-decoration: none;
+  }
+  .public-report-hero-tools {
+    margin: 0 0 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  }
+  .public-report-vod-switcher {
+    display: inline-flex; align-items: center; min-width: 0; overflow: hidden;
+    border: 1px solid rgba(121,130,169,0.24); border-radius: 999px;
+    background: rgba(255,255,255,0.025);
+  }
+  .public-report-vod-link,
+  .public-report-copy-button {
+    color: var(--muted, #7982a9); font: inherit; font-size: 12px; font-weight: 800;
+    line-height: 1.2; text-decoration: none; white-space: nowrap;
+  }
+  .public-report-vod-link {
+    display: inline-flex; align-items: center; gap: 5px; min-height: 30px;
+    padding: 0 10px; border-right: 1px solid rgba(121,130,169,0.18);
+  }
+  .public-report-vod-link:last-child { border-right: 0; }
+  .public-report-vod-link:hover,
+  .public-report-copy-button:hover {
+    background: rgba(122,162,247,0.10); color: var(--text-strong, #e8ebf3);
+    text-decoration: none;
+  }
+  .public-report-vod-link.is-current {
+    color: var(--text, #c0caf5); background: rgba(122,162,247,0.08);
+  }
+  .public-report-vod-link.is-disabled {
+    color: rgba(121,130,169,0.46); pointer-events: none;
+  }
+  .public-report-share {
+    display: flex; align-items: center; gap: 8px; flex: 0 0 auto;
+  }
+  .public-report-copy-button {
+    appearance: none; border: 1px solid rgba(121,130,169,0.32);
+    border-radius: 999px; background: rgba(255,255,255,0.03); cursor: pointer;
+    display: inline-flex; align-items: center; gap: 6px; min-height: 28px;
+    padding: 5px 10px;
+  }
+  .public-report-vod-link svg,
+  .public-report-copy-button svg {
+    width: 14px; height: 14px; stroke: currentColor; stroke-width: 2;
+    fill: none; flex: 0 0 auto;
+    stroke-linecap: round; stroke-linejoin: round;
+  }
+  .public-report-toast {
+    position: fixed; right: 24px; bottom: 24px; z-index: 2000;
+    display: inline-flex; align-items: center; gap: 8px;
+    max-width: min(360px, calc(100vw - 32px)); padding: 10px 14px;
+    border: 1px solid rgba(158,206,106,0.42); border-radius: 999px;
+    background: rgba(26,27,38,0.96); color: var(--text-strong, #e8ebf3);
+    box-shadow: 0 16px 42px rgba(0,0,0,0.34);
+    font: inherit; font-size: 13px; font-weight: 800; line-height: 1.3;
+    opacity: 0; transform: translateY(10px); pointer-events: none;
+    transition: opacity 160ms ease, transform 160ms ease;
+  }
+  .public-report-toast.is-visible {
+    opacity: 1; transform: translateY(0);
+  }
+  .public-report-toast svg {
+    width: 15px; height: 15px; stroke: var(--accent, #9ece6a);
+    stroke-width: 2.2; fill: none; stroke-linecap: round; stroke-linejoin: round;
+  }
+  .main { padding-top: 32px !important; }
+  @media (max-width: 760px) {
+    .public-report-nav-inner { padding: 10px 16px; }
+    .public-report-nav-links { overflow-x: auto; max-width: 100%; flex-wrap: nowrap; padding-bottom: 2px; }
+    .public-report-hero-tools { margin-bottom: 18px; gap: 10px; overflow-x: auto; }
+    .public-report-vod-switcher { flex: 0 0 auto; }
+    .public-report-toast { right: 12px; left: 12px; bottom: 14px; justify-content: center; }
+  }
+
 </style>
 </head>
 <body>
+<nav class="public-report-nav" data-report-block="public-report-nav" aria-label="리포트 이동">
+  <div class="public-report-nav-inner">
+    <a class="public-report-brand" href="../../index.html">VOD 요약 허브</a>
+    <div class="public-report-nav-links">
+      <a class="public-report-nav-link" href="../../index.html">스트리머</a>
+      <a class="public-report-nav-link" href="../../search.html">검색</a>
+      <button type="button" class="report-editor-nav-button" hidden>편집자 모드로 보기</button>
+    </div>
+  </div>
+</nav>
+
 
 <header><div class="bleed-inner">
+<div class="public-report-hero-tools" data-report-block="public-report-tools" aria-label="현재 리포트 도구">
+  <div class="public-report-vod-switcher" aria-label="방송 이동">
+    <span class="public-report-vod-link is-disabled" aria-label="이전 방송 없음" title="이전 방송 없음"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg><span>이전</span></span>
+    <a class="public-report-vod-link is-current" href="../../streamer.html?s=channel-a7e175625fdea5a7d98428302b7aa57f" aria-label="탬탬버린 방송 목록" title="탬탬버린 방송 목록">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13"></path><path d="M8 12h13"></path><path d="M8 18h13"></path><path d="M3 6h.01"></path><path d="M3 12h.01"></path><path d="M3 18h.01"></path></svg><span>목록</span>
+    </a>
+    <span class="public-report-vod-link is-disabled" aria-label="다음 방송 없음" title="다음 방송 없음"><span>다음</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></span>
+  </div>
+  <div class="public-report-share">
+    <button class="public-report-copy-button" type="button" data-copy-report-link aria-label="현재 리포트 링크 복사">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1"></path><path d="M14 11a5 5 0 0 0-7.1 0l-2 2a5 5 0 0 0 7.1 7.1l1.1-1.1"></path></svg><span>복사</span>
+    </button>
+  </div>
+</div>
+
   <div class="crumb">탬탬버린 · 번들 3개 VOD</div>
   <h1>📦 5월 10일분 전체 방송 방송 분석 리포트 — 해방하고, 대황란 보고, 방주 탑승 — 탬탬버린 버라이어티 풀코스</h1>
   <div class="meta">
@@ -884,66 +1011,45 @@ function toggleAll(btn) {
   items.forEach(i => i.setAttribute('data-open', anyClosed ? '1' : '0'));
   btn.textContent = anyClosed ? '근거 모두 접기' : '근거 모두 펼치기';
 }
-
-async function copyNaverCafeHtml(btn) {
-  const template = document.getElementById('naverCafeTemplate');
-  const status = document.getElementById('naverCafeCopyStatus');
-  const sandbox = document.getElementById('naverCafeClipboard');
-  if (!template || !status || !sandbox) return;
-  const html = template.innerHTML.trim();
-  const text = (template.content.textContent || '').replace(/\u00a0/g, ' ').replace(/\n\s*\n\s*\n+/g, '\n\n').trim();
-  try {
-    if (navigator.clipboard && window.ClipboardItem) {
-      await navigator.clipboard.write([
-        new ClipboardItem({
-          'text/html': new Blob([html], { type: 'text/html' }),
-          'text/plain': new Blob([text], { type: 'text/plain' })
-        })
-      ]);
-    } else {
-      sandbox.innerHTML = html;
-      const range = document.createRange();
-      range.selectNodeContents(sandbox);
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-      const ok = document.execCommand('copy');
-      selection.removeAllRanges();
-      sandbox.innerHTML = '';
-      if (!ok) throw new Error('execCommand copy failed');
-    }
-    status.textContent = '복사됨. 네이버 카페 글쓰기 창에 바로 붙여넣으세요.';
-    btn.blur();
-  } catch (err) {
-    status.textContent = '브라우저가 HTML 복사를 막았습니다. 미리보기 내용을 직접 복사해 주세요.';
-  }
-}
-
-async function copyChzzkText(preId, btn) {
-  const pre = document.getElementById(preId);
-  const status = document.getElementById(preId + 'Status');
-  if (!pre || !status) return;
-  const text = pre.textContent || '';
-  try {
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      await navigator.clipboard.writeText(text);
-    } else {
-      const range = document.createRange();
-      range.selectNodeContents(pre);
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-      const ok = document.execCommand('copy');
-      selection.removeAllRanges();
-      if (!ok) throw new Error('execCommand copy failed');
-    }
-    status.textContent = '복사됨. 치지직 다시보기 댓글창에 바로 붙여넣으세요.';
-    btn.blur();
-  } catch (err) {
-    status.textContent = '브라우저가 복사를 막았습니다. 미리보기 내용을 직접 복사해 주세요.';
-  }
-}
 </script>
 
+<div class="public-report-toast" data-copy-report-toast role="status" aria-live="polite"></div>
+<script id="publicReportNavScript">
+(() => {
+  const copyBtn = document.querySelector('[data-copy-report-link]');
+  const toast = document.querySelector('[data-copy-report-toast]');
+  let toastTimer = null;
+  const showToast = (message, ok = true) => {
+    if (!toast) return;
+    toast.innerHTML = ok
+      ? '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>' + message + '</span>'
+      : '<span>' + message + '</span>';
+    toast.classList.add('is-visible');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => { toast.classList.remove('is-visible'); }, 1700);
+  };
+  if (!copyBtn) return;
+  copyBtn.addEventListener('click', async () => {
+    const href = location.href.split('#')[0];
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(href);
+      } else {
+        const ta = document.createElement('textarea');
+        ta.value = href;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        ta.remove();
+      }
+      showToast('링크 복사됨');
+    } catch {
+      showToast('복사 실패', false);
+    }
+  });
+})();
+</script>
 </body>
 </html>

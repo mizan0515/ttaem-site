@@ -203,6 +203,22 @@
     margin: 0 0 10px; color: var(--text-strong);
     font-size: 17px; line-height: 1.4; letter-spacing: 0; font-weight: 750;
   }
+  .viewer-editor-panel.cut-panel > summary {
+    cursor: pointer; margin: 0; color: var(--text-strong);
+    font-size: 17px; line-height: 1.4; letter-spacing: 0; font-weight: 750;
+    list-style: none;
+  }
+  .viewer-editor-panel.cut-panel > summary::-webkit-details-marker { display: none; }
+  .viewer-editor-panel.cut-panel > summary::before {
+    content: "▸"; display: inline-block; margin-right: 8px;
+    color: var(--muted); transition: transform 160ms ease;
+  }
+  .viewer-editor-panel.cut-panel[open] > summary::before { transform: rotate(90deg); }
+  .viewer-editor-panel.cut-panel > summary:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.62); outline-offset: 3px;
+    border-radius: 6px;
+  }
+  .viewer-editor-panel.cut-panel[open] > summary { margin-bottom: 10px; }
   .viewer-editor-panel p {
     margin: 0 0 14px; color: var(--muted); font-size: 14px; line-height: 1.75;
     max-width: 72ch;

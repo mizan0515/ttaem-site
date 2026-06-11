@@ -233,6 +233,14 @@ function initViewerEditorTools() {
     const two = (v) => String(v).padStart(2, '0');
     return h ? `${two(h)}:${two(m)}:${two(s)}` : `${two(m)}:${two(s)}`;
   }
+  function displayTime(row, fallbackSec) {
+    const vodLabel = String(row && row.vod_label || '').trim();
+    const seek = row && row.seek_sec != null ? Number(row.seek_sec) : NaN;
+    const base = Number.isFinite(seek) ? seek : fallbackSec;
+    if (vodLabel) return `${vodLabel} ${fmt(base)}`;
+    const tc = String(row && row.timecode || '').trim();
+    return tc || fmt(base);
+  }
   function near(row, sec, radius) {
     const start = Number(row && row.start_sec);
     const endRaw = row && row.end_sec != null ? Number(row.end_sec) : start;
@@ -262,13 +270,13 @@ function initViewerEditorTools() {
   }
   function timeLink(sec, row) {
     const url = seekUrl(sec, row);
-    const label = row && row.timecode ? String(row.timecode) : fmt(sec);
-    return url ? `<a class="viewer-editor-time-link" href="${esc(url)}" target="_blank" rel="noopener">${label}</a>` : esc(label);
+    const label = displayTime(row, sec);
+    return url ? `<a class="viewer-editor-time-link" href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>` : esc(label);
   }
   function timeChip(sec, row) {
     const url = seekUrl(sec, row);
-    const label = row && row.timecode ? String(row.timecode) : fmt(sec);
-    return url ? `<a class="viewer-editor-chip" href="${esc(url)}" target="_blank" rel="noopener">${label}</a>` : `<span class="viewer-editor-chip">${label}</span>`;
+    const label = displayTime(row, sec);
+    return url ? `<a class="viewer-editor-chip" href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>` : `<span class="viewer-editor-chip">${esc(label)}</span>`;
   }
   function timecodeToSec(value) {
     const parts = String(value || '').split(':').map((part) => Number(part));
@@ -415,7 +423,11 @@ function initViewerEditorTools() {
   function clipMemoText(clips) {
     return clips.map((clip, index) => {
       const title = clipTitle(clip, index + 1);
-      return `${index + 1}. ${fmt(clip.start_sec)}-${fmt(clip.end_sec)} | ${title}`;
+      const start = displayTime(clip, clip.start_sec);
+      const end = clip && clip.end_seek_sec != null
+        ? displayTime({ ...clip, seek_sec: clip.end_seek_sec }, clip.end_sec)
+        : displayTime(clip, clip.end_sec);
+      return `${index + 1}. ${start}-${end} | ${title}`;
     }).join('\n');
   }
   function publicEdlText() {
@@ -452,7 +464,7 @@ function initViewerEditorTools() {
     return { label: '요약 밖 참고 장면', inSummary: false, warning: true };
   }
   function contextLine(row) {
-    return `<div class="viewer-editor-context-line"><span class="viewer-editor-context-time">${timeLink(row.start_sec)}</span><span class="viewer-editor-context-text">${linkTimecodesText(row.text || '')}</span></div>`;
+    return `<div class="viewer-editor-context-line"><span class="viewer-editor-context-time">${timeLink(row.start_sec, row)}</span><span class="viewer-editor-context-text">${linkTimecodesText(row.text || '')}</span></div>`;
   }
   function renderContextSummary(nearbySubtitles, nearbyBuckets) {
     const subtitleRows = nearbySubtitles
@@ -618,6 +630,8 @@ function initViewerEditorTools() {
         sec: row.start_sec,
         seek_sec: row.seek_sec,
         video_no: row.video_no,
+        vod_label: row.vod_label,
+        timecode: row.timecode,
         text: isTimeOnlyTitle(row.title, row.start_sec) || friendlyEventTitle(row) === selectedTitleText ? '' : friendlyEventTitle(row)
       })))
       .filter((row) => row.text)
@@ -660,7 +674,11 @@ function initViewerEditorTools() {
     const edlText = publicEdlText();
     const rows = clips.slice(0, 12).map((clip, index) => {
       const duration = Math.max(0, Math.floor(Number(clip.end_sec || 0) - Number(clip.start_sec || 0)));
-      return `<div class="viewer-editor-row"><strong>${esc(clipTitle(clip, index + 1))}</strong><br>${fmt(clip.start_sec)}-${fmt(clip.end_sec)} · ${duration}초</div>`;
+      const start = displayTime(clip, clip.start_sec);
+      const end = clip && clip.end_seek_sec != null
+        ? displayTime({ ...clip, seek_sec: clip.end_seek_sec }, clip.end_sec)
+        : displayTime(clip, clip.end_sec);
+      return `<div class="viewer-editor-row"><strong>${esc(clipTitle(clip, index + 1))}</strong><br>${esc(start)}-${esc(end)} · ${duration}초</div>`;
     }).join('');
     const status = failures.length ? '일부 후보는 시각이나 길이를 다시 확인해야 합니다.' : '자동 편집이나 업로드는 하지 않습니다. 사람이 확인할 시간표만 제공합니다.';
     const jsonText = JSON.stringify(preview.otio || preview || {}, null, 2);
