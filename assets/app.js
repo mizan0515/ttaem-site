@@ -139,6 +139,7 @@
     cal:  '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',
     clock:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
     chat: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>',
+    play: '<svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg>',
     star: '<svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.1 8.6 22 9.6 17 14.5 18.2 21.4 12 18.1 5.8 21.4 7 14.5 2 9.6 8.9 8.6 12 2"/></svg>',
     share:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>',
     check:'<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>',
@@ -237,6 +238,7 @@
   };
 
   // --- 스트리머 상세 — 정렬 segmented + 카테고리 필터 ---
+  let _streamerReports = [];
   let _streamerVods = [];
   let _streamerSort = "newest";
   let _streamerCategory = "";
@@ -245,7 +247,7 @@
     const listEl = document.getElementById("vod-list");
     const countEl = document.getElementById("list-count");
 
-    let rows = _streamerVods.slice();
+    let rows = _streamerReports.slice();
     if (_streamerCategory) {
       rows = rows.filter((v) => (v.platform_category || "") === _streamerCategory);
     }
@@ -261,20 +263,23 @@
 
     if (countEl) {
       countEl.textContent = _streamerCategory
-        ? `${rows.length}편 (전체 ${_streamerVods.length}편 중)`
-        : `${rows.length}편`;
+        ? `${rows.length}개 (전체 ${_streamerReports.length}개 중)`
+        : `${rows.length}개`;
     }
 
     listEl.innerHTML = rows.map((v) => `
 <li class="vod-row">
-  <a href="${vodReportHref(v.video_no)}">
+  <a href="${v.kind === "bundle" ? bundleReportHref(v.bundle_id) : vodReportHref(v.video_no)}">
     <div class="title">${escapeHtml(v.title || "(제목 없음)")}</div>
     <div class="meta">
-      <span class="meta-item">${ICON.cal}<span>${escapeHtml(fmtDate(v.published_at))}</span></span>
-      <span class="meta-item">${ICON.clock}<span>${escapeHtml(secToHms(v.duration_sec))}</span></span>
+      ${v.kind === "bundle" ? `<span class="meta-cat is-bundle">통합 요약</span>` : ""}
+      <span class="meta-item">${ICON.cal}<span>${escapeHtml(fmtDate(v.published_at || v.created_at))}</span></span>
+      ${v.kind === "bundle"
+        ? `<span class="meta-item">${ICON.play}<span>VOD ${Number(v.vod_count || 0).toLocaleString()}개</span></span>`
+        : `<span class="meta-item">${ICON.clock}<span>${escapeHtml(secToHms(v.duration_sec))}</span></span>`}
       ${v.platform_category ? `<span class="meta-cat">${escapeHtml(v.platform_category)}</span>` : ""}
-      <span class="meta-item is-emphasis">${ICON.chat}<span>${Number(v.stats?.total_chats || 0).toLocaleString()}</span></span>
-      ${Number(v.stats?.highlight_count || 0) > 0
+      ${v.kind === "bundle" ? "" : `<span class="meta-item is-emphasis">${ICON.chat}<span>${Number(v.stats?.total_chats || 0).toLocaleString()}</span></span>`}
+      ${v.kind !== "bundle" && Number(v.stats?.highlight_count || 0) > 0
         ? `<span class="meta-item is-warm">${ICON.star}<span>${Number(v.stats.highlight_count)}</span></span>`
         : ""}
     </div>
@@ -346,17 +351,22 @@
       .then((doc) => {
         const s = doc.streamer;
         nameEl.textContent = s.streamer_name || s.streamer_id;
-        metaEl.textContent = `${s.platform} · VOD ${s.vod_count}편`;
-        if (!doc.vods || doc.vods.length === 0) {
+        const bundles = Array.isArray(doc.bundles) ? doc.bundles : [];
+        const reports = Array.isArray(doc.reports) && doc.reports.length
+          ? doc.reports
+          : (Array.isArray(doc.vods) ? doc.vods : []);
+        metaEl.textContent = `${s.platform} · VOD ${s.vod_count}편${bundles.length ? ` · 통합 요약 ${bundles.length}개` : ""}`;
+        if (!reports.length) {
           emptyEl.hidden = false;
           return;
         }
-        _streamerVods = doc.vods;
+        _streamerVods = Array.isArray(doc.vods) ? doc.vods : [];
+        _streamerReports = reports;
 
         // KPI mini row
         const totalChats = _streamerVods.reduce(
           (sum, v) => sum + Number(v.stats?.total_chats || 0), 0);
-        const latest = _streamerVods.map((v) => v.ended_at || v.published_at).filter(Boolean).sort().pop();
+        const latest = _streamerReports.map((v) => v.ended_at || v.published_at || v.created_at).filter(Boolean).sort().pop();
         const kpiRow = document.getElementById("kpi-row");
         if (kpiRow) {
           setKpi("kpi-vod-count", Number(_streamerVods.length).toLocaleString());
