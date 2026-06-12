@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-11T01:26:01+00:00",
-  "built_at": "2026-06-11T01:26:01+00:00",
+  "generated_at": "2026-06-12T12:22:44+00:00",
+  "built_at": "2026-06-12T12:22:44+00:00",
   "latest_processed_at": "2026-06-11T06:02:56.823379+09:00",
   "total_streamers": 4,
   "total_vods": 67,
@@ -97,6 +97,69 @@
       "published_at": "2026-06-03T17:31:02+09:00",
       "ended_at": "2026-06-04T01:31:55+09:00",
       "duration_sec": 28853
+    }
+  ],
+  "recent_updates": [
+    {
+      "kind": "bundle",
+      "bundle_id": "20260610_football_13637282_13639978",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "2026-06-10 축구 배우기 + 이탈리아전 같이보기",
+      "published_at": "2026-06-11T04:06:33.86385+09:00",
+      "created_at": "2026-06-11T04:06:33.86385+09:00",
+      "vod_count": 2,
+      "date_span": "20260610"
+    },
+    {
+      "kind": "vod",
+      "video_no": "13639978",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "02년 이탈리아전 같이보기 축알못의 시선;; ٩(●'▿'●)۶",
+      "published_at": "2026-06-10T19:23:21+09:00",
+      "ended_at": "2026-06-10T22:25:26+09:00",
+      "duration_sec": 10925
+    },
+    {
+      "kind": "vod",
+      "video_no": "13637282",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "3시 축구 배우기 w.이글콥 ٩(●'▿'●)۶",
+      "published_at": "2026-06-10T14:55:35+09:00",
+      "ended_at": "2026-06-10T19:22:21+09:00",
+      "duration_sec": 16006
+    },
+    {
+      "kind": "vod",
+      "video_no": "13630912",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "8시 인생게임 삼식태권도팟 드디어 모이다 ٩(●'▿'●)۶",
+      "published_at": "2026-06-09T18:48:59+09:00",
+      "ended_at": "2026-06-10T02:33:15+09:00",
+      "duration_sec": 27856
+    },
+    {
+      "kind": "vod",
+      "video_no": "13600970",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "스타2 자유의 날개 어려움일까 보통일까 ٩(●'▿'●)۶",
+      "published_at": "2026-06-07T16:36:17+09:00",
+      "ended_at": "2026-06-08T02:02:38+09:00",
+      "duration_sec": 33981
+    },
+    {
+      "kind": "vod",
+      "video_no": "13582509",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "이게 무슨 협동게임인가여 ٩(●'▿'●)۶",
+      "published_at": "2026-06-06T16:43:04+09:00",
+      "ended_at": "2026-06-07T01:03:33+09:00",
+      "duration_sec": 30029
     }
   ]
 }

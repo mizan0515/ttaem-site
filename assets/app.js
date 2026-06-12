@@ -186,24 +186,39 @@
           const renderRecent = (rows) => {
             const top = rows
               .slice()
-              .sort((a, b) => String(b.published_at || "").localeCompare(String(a.published_at || "")))
+              .sort((a, b) => String(b.published_at || b.created_at || "").localeCompare(String(a.published_at || a.created_at || "")))
               .slice(0, 5);
             if (!top.length) { recentSec.hidden = true; return; }
-            recentEl.innerHTML = top.map((r) => `
+            recentEl.innerHTML = top.map((r) => {
+              const isBundle = r.kind === "bundle";
+              const href = isBundle
+                ? bundleReportHref(r.bundle_id)
+                : vodReportHref(r.video_no);
+              const timeLabel = isBundle
+                ? `통합 ${fmtRelative(r.created_at || r.published_at)}`
+                : (r.ended_at ? "종료 " + fmtRelative(r.ended_at) : fmtRelative(r.published_at));
+              const extraMeta = isBundle && r.vod_count
+                ? `<span class="dot">·</span><span>VOD ${Number(r.vod_count).toLocaleString()}개</span>`
+                : (!isBundle && r.duration_sec ? `<span class="dot">·</span><span>${escapeHtml(secToHms(r.duration_sec))}</span>` : "");
+              const badge = isBundle ? "통합 요약" : (r.streamer_name || r.streamer_id || "");
+              return `
 <li class="recent-card">
-  <a href="${vodReportHref(r.video_no)}">
-    <span class="recent-card-streamer">${escapeHtml(r.streamer_name || r.streamer_id || "")}</span>
+  <a href="${href}">
+    <span class="recent-card-streamer${isBundle ? " is-bundle" : ""}">${escapeHtml(badge)}</span>
     <div class="recent-card-title">${escapeHtml(r.title || "(제목 없음)")}</div>
     <div class="recent-card-meta">
-      <span>${escapeHtml(r.ended_at ? "종료 " + fmtRelative(r.ended_at) : fmtRelative(r.published_at))}</span>
-      ${r.duration_sec ? `<span class="dot">·</span><span>${escapeHtml(secToHms(r.duration_sec))}</span>` : ""}
+      <span>${escapeHtml(timeLabel)}</span>
+      ${extraMeta}
     </div>
   </a>
-</li>`).join("");
+</li>`;
+            }).join("");
             recentSec.hidden = false;
           };
 
-          if (Array.isArray(idx.recent_vods) && idx.recent_vods.length) {
+          if (Array.isArray(idx.recent_updates) && idx.recent_updates.length) {
+            renderRecent(idx.recent_updates);
+          } else if (Array.isArray(idx.recent_vods) && idx.recent_vods.length) {
             renderRecent(idx.recent_vods);
           } else {
             // fallback: 검색 인덱스에서 가져옴 (구 빌드 호환)
