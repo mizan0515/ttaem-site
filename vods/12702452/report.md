@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 7시 인생게임 (w. 지누,뿡,똘복)
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12702452/report](https://ttaem.com/vods/12702452/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12702452/report](https://auto-caption-generator-site.pages.dev/vods/12702452/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12702452](https://chzzk.naver.com/video/12702452)
 
 - **핵심 요약:** #인생게임 #탬탬버린 #우린모두아마추어

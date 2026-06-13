@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 애니 노래 월드컵 달려잇ㅅㅅㅅㅅㅅ ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13137734/report](https://ttaem.com/vods/13137734/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13137734/report](https://auto-caption-generator-site.pages.dev/vods/13137734/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13137734](https://chzzk.naver.com/video/13137734)
 
 - **핵심 요약:** #애니노래월드컵 #테트리스대회 #12시간대여정

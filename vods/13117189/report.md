@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 땅으로 내려가잇 w.리코,춘향,강지 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13117189/report](https://ttaem.com/vods/13117189/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13117189/report](https://auto-caption-generator-site.pages.dev/vods/13117189/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13117189](https://chzzk.naver.com/video/13117189)
 
 - **핵심 요약:** #어버이날합방 #케리아두꺼비 #강지미친두더지

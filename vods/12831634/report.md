@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 오늘 나 열심히 전투력 측정 해볼게요 구경 ㄱㄱ ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12831634/report](https://ttaem.com/vods/12831634/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12831634/report](https://auto-caption-generator-site.pages.dev/vods/12831634/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12831634](https://chzzk.naver.com/video/12831634)
 
 - **핵심 요약:** #모의드래프트 #대삼식 #채연찌각성

@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 어린이날 기념 애니 ost 월드컵 달리기 ㄱㄱ ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13074979/report](https://ttaem.com/vods/13074979/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13074979/report](https://auto-caption-generator-site.pages.dev/vods/13074979/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13074979](https://chzzk.naver.com/video/13074979)
 
 - **핵심 요약:** #애니OST월드컵 #어린이날특집 #탬탬버린덕력해부

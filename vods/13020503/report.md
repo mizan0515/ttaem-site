@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 아기와 나 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13020503/report](https://ttaem.com/vods/13020503/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13020503/report](https://auto-caption-generator-site.pages.dev/vods/13020503/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13020503](https://chzzk.naver.com/video/13020503)
 
 - **핵심 요약:** #아기와나 #픽셀합방 #욕설교육

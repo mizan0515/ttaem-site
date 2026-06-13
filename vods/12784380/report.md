@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 서포터의 피가 끓는 밤... 내전 렛츠고....
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12784380/report](https://ttaem.com/vods/12784380/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12784380/report](https://auto-caption-generator-site.pages.dev/vods/12784380/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12784380](https://chzzk.naver.com/video/12784380)
 
 - **핵심 요약:** #케버지 #절박한스킬샷 #내전렛츠고

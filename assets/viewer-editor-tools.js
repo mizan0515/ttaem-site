@@ -278,6 +278,24 @@ function initViewerEditorTools() {
     const label = displayTime(row, sec);
     return url ? `<a class="viewer-editor-chip" href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>` : `<span class="viewer-editor-chip">${esc(label)}</span>`;
   }
+  function contextSourceRow(row) {
+    const scoped = { ...(row || {}) };
+    if (scoped.video_no && scoped.vod_label && scoped.seek_sec != null) return scoped;
+    const samples = Array.isArray(scoped.samples) ? scoped.samples : [];
+    const sample = samples.find((item) => item && (item.video_no || item.vod_label || item.seek_sec != null));
+    if (!sample) return scoped;
+    if (!scoped.video_no && sample.video_no) scoped.video_no = sample.video_no;
+    if (!scoped.vod_label && sample.vod_label) scoped.vod_label = sample.vod_label;
+    if (scoped.seek_sec == null && sample.seek_sec != null) {
+      const rowStart = Number(scoped.start_sec);
+      const sampleSec = Number(sample.sec);
+      const sampleSeek = Number(sample.seek_sec);
+      scoped.seek_sec = Number.isFinite(rowStart) && Number.isFinite(sampleSec) && Number.isFinite(sampleSeek)
+        ? rowStart - (sampleSec - sampleSeek)
+        : sampleSeek;
+    }
+    return scoped;
+  }
   function timecodeToSec(value) {
     const parts = String(value || '').split(':').map((part) => Number(part));
     if (parts.some((part) => !Number.isFinite(part))) return NaN;
@@ -285,7 +303,7 @@ function initViewerEditorTools() {
     if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
     return NaN;
   }
-  function linkTimecodesText(text) {
+  function linkTimecodesText(text, row) {
     const raw = String(text || '');
     const re = /\b(\d{1,2}:\d{2}(?::\d{2})?)\b/g;
     let out = '';
@@ -293,8 +311,7 @@ function initViewerEditorTools() {
     for (const match of raw.matchAll(re)) {
       out += esc(raw.slice(last, match.index));
       const sec = timecodeToSec(match[1]);
-      const url = seekUrl(sec);
-      out += url ? `<a class="viewer-editor-time-link" href="${esc(url)}" target="_blank" rel="noopener">${esc(match[1])}</a>` : esc(match[1]);
+      out += timeLink(sec, row || {});
       last = match.index + match[1].length;
     }
     out += esc(raw.slice(last));
@@ -308,8 +325,8 @@ function initViewerEditorTools() {
       const text = rawText && !looksLikeUid ? `${esc(rawText)} · 치지직 클립 열기` : '치지직 클립 열기';
       return `<div class="viewer-editor-row"><strong>${label}</strong><br><a class="viewer-editor-evidence-link" href="${esc(row.clipUrl)}" target="_blank" rel="noopener">${text}</a></div>`;
     }
-    const label = row.sec != null ? `${esc(row.label || '근거')} · ${timeLink(row.sec, row)}` : linkTimecodesText(row.label || '근거');
-    return `<div class="viewer-editor-row"><strong>${label}</strong><br>${linkTimecodesText(row.text || '')}</div>`;
+    const label = row.sec != null ? `${esc(row.label || '근거')} · ${timeLink(row.sec, row)}` : linkTimecodesText(row.label || '근거', row);
+    return `<div class="viewer-editor-row"><strong>${label}</strong><br>${linkTimecodesText(row.text || '', row)}</div>`;
   }
   function viewerClipLinkInfo(eventList, selectedEvent) {
     const selectedStart = Number(selectedEvent && selectedEvent.start_sec);
@@ -464,7 +481,8 @@ function initViewerEditorTools() {
     return { label: '요약 밖 참고 장면', inSummary: false, warning: true };
   }
   function contextLine(row) {
-    return `<div class="viewer-editor-context-line"><span class="viewer-editor-context-time">${timeLink(row.start_sec, row)}</span><span class="viewer-editor-context-text">${linkTimecodesText(row.text || '')}</span></div>`;
+    const scoped = contextSourceRow(row);
+    return `<div class="viewer-editor-context-line"><span class="viewer-editor-context-time">${timeLink(scoped.start_sec, scoped)}</span><span class="viewer-editor-context-text">${linkTimecodesText(scoped.text || '', scoped)}</span></div>`;
   }
   function renderContextSummary(nearbySubtitles, nearbyBuckets) {
     const subtitleRows = nearbySubtitles
@@ -481,8 +499,9 @@ function initViewerEditorTools() {
       .slice(0, 2);
     const chatHtml = chatRows.length
       ? chatRows.map((row) => {
-          const sample = (row.samples || []).map((item) => item.text).filter(Boolean).slice(0, 3).join(' / ');
-          return `<div class="viewer-editor-context-line"><span class="viewer-editor-context-time">${timeLink(row.start_sec, row)}</span><span class="viewer-editor-context-text">채팅 ${Number(row.count || 0)}개${sample ? ` · ${linkTimecodesText(sample)}` : ''}</span></div>`;
+          const scoped = contextSourceRow(row);
+          const sample = (scoped.samples || []).map((item) => item.text).filter(Boolean).slice(0, 3).join(' / ');
+          return `<div class="viewer-editor-context-line"><span class="viewer-editor-context-time">${timeLink(scoped.start_sec, scoped)}</span><span class="viewer-editor-context-text">채팅 ${Number(scoped.count || 0)}개${sample ? ` · ${linkTimecodesText(sample, scoped)}` : ''}</span></div>`;
         }).join('')
       : '<div class="viewer-editor-empty">근처 채팅 샘플 없음</div>';
     return `<div class="viewer-editor-context" aria-label="선택 시각 주변 방송 맥락">
