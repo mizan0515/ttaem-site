@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-12T13:51:13+00:00",
-  "built_at": "2026-06-12T13:51:13+00:00",
-  "latest_processed_at": "2026-06-11T06:02:56.823379+09:00",
+  "generated_at": "2026-06-13T04:35:35+00:00",
+  "built_at": "2026-06-13T04:35:35+00:00",
+  "latest_processed_at": "2026-06-13T13:35:18.394867+09:00",
   "total_streamers": 4,
-  "total_vods": 67,
-  "total_bundles": 3,
+  "total_vods": 70,
+  "total_bundles": 4,
   "streamers": [
     {
       "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
       "streamer_name": "탬탬버린",
       "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
       "platform": "chzzk",
-      "vod_count": 63,
-      "last_vod_at": "2026-06-10T19:23:21+09:00",
-      "last_vod_ended_at": "2026-06-10T22:25:26+09:00"
+      "vod_count": 66,
+      "last_vod_at": "2026-06-12T16:56:41+09:00",
+      "last_vod_ended_at": "2026-06-12T23:25:58+09:00"
     },
     {
       "streamer_id": "channel-0dad8baf12a436f722faa8e5001c5011",
@@ -45,6 +45,33 @@
   ],
   "recent_vods": [
     {
+      "video_no": "13673447",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "9시 픽셀 언레일드2 픽셀 내전 [광고]٩(●'▿'●)۶",
+      "published_at": "2026-06-12T16:56:41+09:00",
+      "ended_at": "2026-06-12T23:25:58+09:00",
+      "duration_sec": 23357
+    },
+    {
+      "video_no": "13666153",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "2026 북중미 월드컵 국뽕 가즈아ㅏㅏㅏㅏ 대한민국 파이팅 ٩(●'▿'●)۶",
+      "published_at": "2026-06-12T10:32:00+09:00",
+      "ended_at": "2026-06-12T13:09:08+09:00",
+      "duration_sec": 9428
+    },
+    {
+      "video_no": "13664702",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "월드컵 전까지 새봄님이랑 듀오 달리기٩(●'▿'●)۶",
+      "published_at": "2026-06-12T09:08:37+09:00",
+      "ended_at": "2026-06-12T10:31:53+09:00",
+      "duration_sec": 4996
+    },
+    {
       "video_no": "13639978",
       "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
       "streamer_name": "탬탬버린",
@@ -70,36 +97,65 @@
       "published_at": "2026-06-09T18:48:59+09:00",
       "ended_at": "2026-06-10T02:33:15+09:00",
       "duration_sec": 27856
-    },
-    {
-      "video_no": "13600970",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "스타2 자유의 날개 어려움일까 보통일까 ٩(●'▿'●)۶",
-      "published_at": "2026-06-07T16:36:17+09:00",
-      "ended_at": "2026-06-08T02:02:38+09:00",
-      "duration_sec": 33981
-    },
-    {
-      "video_no": "13582509",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "이게 무슨 협동게임인가여 ٩(●'▿'●)۶",
-      "published_at": "2026-06-06T16:43:04+09:00",
-      "ended_at": "2026-06-07T01:03:33+09:00",
-      "duration_sec": 30029
-    },
-    {
-      "video_no": "13535609",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "스알못의 스타 캠페인 1 같이보기 후 2 도전하기٩(●'▿'●)۶",
-      "published_at": "2026-06-03T17:31:02+09:00",
-      "ended_at": "2026-06-04T01:31:55+09:00",
-      "duration_sec": 28853
     }
   ],
   "recent_updates": [
+    {
+      "kind": "bundle",
+      "bundle_id": "20260613_052952",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "📦 6월 12일분 전체 방송 분석 리포트 — 9시 픽셀 언레일드2 픽셀 내전 [광고]٩(●'▿'●)…",
+      "published_at": "2026-06-13T05:29:52.423307+09:00",
+      "created_at": "2026-06-13T05:29:52.423307+09:00",
+      "vod_count": 3,
+      "date_span": "20260612"
+    },
+    {
+      "kind": "vod",
+      "video_no": "13673447",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "9시 픽셀 언레일드2 픽셀 내전 [광고]٩(●'▿'●)۶",
+      "published_at": "2026-06-12T16:56:41+09:00",
+      "ended_at": "2026-06-12T23:25:58+09:00",
+      "duration_sec": 23357,
+      "platform_category": null,
+      "stats": {
+        "total_chats": 74611,
+        "highlight_count": 30
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13666153",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "2026 북중미 월드컵 국뽕 가즈아ㅏㅏㅏㅏ 대한민국 파이팅 ٩(●'▿'●)۶",
+      "published_at": "2026-06-12T10:32:00+09:00",
+      "ended_at": "2026-06-12T13:09:08+09:00",
+      "duration_sec": 9428,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 51150,
+        "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13664702",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "월드컵 전까지 새봄님이랑 듀오 달리기٩(●'▿'●)۶",
+      "published_at": "2026-06-12T09:08:37+09:00",
+      "ended_at": "2026-06-12T10:31:53+09:00",
+      "duration_sec": 4996,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 8919,
+        "highlight_count": 19
+      }
+    },
     {
       "kind": "bundle",
       "bundle_id": "20260610_football_13637282_13639978",
@@ -124,66 +180,6 @@
       "stats": {
         "total_chats": 70613,
         "highlight_count": 22
-      }
-    },
-    {
-      "kind": "vod",
-      "video_no": "13637282",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "3시 축구 배우기 w.이글콥 ٩(●'▿'●)۶",
-      "published_at": "2026-06-10T14:55:35+09:00",
-      "ended_at": "2026-06-10T19:22:21+09:00",
-      "duration_sec": 16006,
-      "platform_category": "talk",
-      "stats": {
-        "total_chats": 80901,
-        "highlight_count": 23
-      }
-    },
-    {
-      "kind": "vod",
-      "video_no": "13630912",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "8시 인생게임 삼식태권도팟 드디어 모이다 ٩(●'▿'●)۶",
-      "published_at": "2026-06-09T18:48:59+09:00",
-      "ended_at": "2026-06-10T02:33:15+09:00",
-      "duration_sec": 27856,
-      "platform_category": "더 게임 오브 라이프 포 닌텐도 스위치",
-      "stats": {
-        "total_chats": 48631,
-        "highlight_count": 16
-      }
-    },
-    {
-      "kind": "vod",
-      "video_no": "13600970",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "스타2 자유의 날개 어려움일까 보통일까 ٩(●'▿'●)۶",
-      "published_at": "2026-06-07T16:36:17+09:00",
-      "ended_at": "2026-06-08T02:02:38+09:00",
-      "duration_sec": 33981,
-      "platform_category": "스타크래프트 II : 자유의 날개",
-      "stats": {
-        "total_chats": 93813,
-        "highlight_count": 26
-      }
-    },
-    {
-      "kind": "vod",
-      "video_no": "13582509",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "이게 무슨 협동게임인가여 ٩(●'▿'●)۶",
-      "published_at": "2026-06-06T16:43:04+09:00",
-      "ended_at": "2026-06-07T01:03:33+09:00",
-      "duration_sec": 30029,
-      "platform_category": "종합 게임",
-      "stats": {
-        "total_chats": 81746,
-        "highlight_count": 24
       }
     }
   ]

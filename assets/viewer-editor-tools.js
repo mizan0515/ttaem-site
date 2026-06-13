@@ -547,9 +547,10 @@ function initViewerEditorTools() {
       const end = Number(row.end_sec || start + 30);
       const left = Math.max(0, Math.min(100, (start / duration) * 100));
       const width = Math.max(0.25, Math.min(100 - left, ((end - start) / duration) * 100));
-      const h = Math.max(3, Math.round((Number(row.count || 0) / maxChat) * 30));
+      const chatCount = Number(row.count || 0);
+      const h = chatCount > 0 ? Math.max(5, Math.round((chatCount / maxChat) * 30)) : 0;
       const hot = Number(row.reaction_count || 0) > 0;
-      return `<button type="button" class="viewer-editor-density-bar ${hot ? 'hot' : ''}" data-sec="${start}" title="${fmt(start)} 채팅 ${Number(row.count || 0)}개" style="left:${left}%;width:${width}%"><span style="--bar-h:${h}px"></span></button>`;
+      return `<button type="button" class="viewer-editor-density-bar ${hot ? 'hot' : ''}" data-sec="${start}" title="${fmt(start)} 채팅 ${chatCount}개" style="left:${left}%;width:${width}%"><span style="--bar-h:${h}px"></span></button>`;
     }).join('');
     const laneRows = lanes.map((lane) => {
       const kind = lane.key;
