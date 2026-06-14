@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-13T09:00:30+00:00",
-  "built_at": "2026-06-13T09:00:30+00:00",
-  "latest_processed_at": "2026-06-13T13:35:18.394867+09:00",
+  "generated_at": "2026-06-14T02:37:35+00:00",
+  "built_at": "2026-06-14T02:37:35+00:00",
+  "latest_processed_at": "2026-06-14T08:37:36.489590+09:00",
   "total_streamers": 4,
-  "total_vods": 70,
+  "total_vods": 71,
   "total_bundles": 4,
   "streamers": [
     {
@@ -11,9 +11,9 @@
       "streamer_name": "탬탬버린",
       "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
       "platform": "chzzk",
-      "vod_count": 66,
-      "last_vod_at": "2026-06-12T16:56:41+09:00",
-      "last_vod_ended_at": "2026-06-12T23:25:58+09:00"
+      "vod_count": 67,
+      "last_vod_at": "2026-06-13T18:40:51+09:00",
+      "last_vod_ended_at": "2026-06-14T01:32:42+09:00"
     },
     {
       "streamer_id": "channel-0dad8baf12a436f722faa8e5001c5011",
@@ -44,6 +44,15 @@
     }
   ],
   "recent_vods": [
+    {
+      "video_no": "13693734",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "빅헤두치킹쿵٩(●'▿'●)۶",
+      "published_at": "2026-06-13T18:40:51+09:00",
+      "ended_at": "2026-06-14T01:32:42+09:00",
+      "duration_sec": 24711
+    },
     {
       "video_no": "13673447",
       "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
@@ -88,18 +97,24 @@
       "published_at": "2026-06-10T14:55:35+09:00",
       "ended_at": "2026-06-10T19:22:21+09:00",
       "duration_sec": 16006
-    },
-    {
-      "video_no": "13630912",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "8시 인생게임 삼식태권도팟 드디어 모이다 ٩(●'▿'●)۶",
-      "published_at": "2026-06-09T18:48:59+09:00",
-      "ended_at": "2026-06-10T02:33:15+09:00",
-      "duration_sec": 27856
     }
   ],
   "recent_updates": [
+    {
+      "kind": "vod",
+      "video_no": "13693734",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "빅헤두치킹쿵٩(●'▿'●)۶",
+      "published_at": "2026-06-13T18:40:51+09:00",
+      "ended_at": "2026-06-14T01:32:42+09:00",
+      "duration_sec": 24711,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 45589,
+        "highlight_count": 23
+      }
+    },
     {
       "kind": "bundle",
       "bundle_id": "20260613_052952",
@@ -166,21 +181,6 @@
       "created_at": "2026-06-11T04:06:33.86385+09:00",
       "vod_count": 2,
       "date_span": "20260610"
-    },
-    {
-      "kind": "vod",
-      "video_no": "13639978",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "02년 이탈리아전 같이보기 축알못의 시선;; ٩(●'▿'●)۶",
-      "published_at": "2026-06-10T19:23:21+09:00",
-      "ended_at": "2026-06-10T22:25:26+09:00",
-      "duration_sec": 10925,
-      "platform_category": null,
-      "stats": {
-        "total_chats": 70613,
-        "highlight_count": 22
-      }
     }
   ]
 }

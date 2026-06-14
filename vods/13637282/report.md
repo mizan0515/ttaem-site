@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 3시 축구 배우기 w.이글콥 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13637282/report](https://auto-caption-generator-site.pages.dev/vods/13637282/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13637282/report](https://ttaem.com/vods/13637282/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13637282](https://chzzk.naver.com/video/13637282)
 
 - **핵심 요약:** #축구입문 #월드컵 #밈드립

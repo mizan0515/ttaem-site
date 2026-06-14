@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 월드컵 전까지 새봄님이랑 듀오 달리기٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13664702/report](https://auto-caption-generator-site.pages.dev/vods/13664702/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13664702/report](https://ttaem.com/vods/13664702/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13664702](https://chzzk.naver.com/video/13664702)
 
 ### 📍 타임라인 상세 요약

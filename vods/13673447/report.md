@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 9시 픽셀 언레일드2 픽셀 내전 [광고]٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13673447/report](https://auto-caption-generator-site.pages.dev/vods/13673447/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13673447/report](https://ttaem.com/vods/13673447/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13673447](https://chzzk.naver.com/video/13673447)
 
 - **핵심 요약:** #티원응원 #언레일드 #합방내전

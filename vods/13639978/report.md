@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 02년 이탈리아전 같이보기 축알못의 시선;; ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13639978/report](https://auto-caption-generator-site.pages.dev/vods/13639978/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13639978/report](https://ttaem.com/vods/13639978/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13639978](https://chzzk.naver.com/video/13639978)
 
 - **핵심 요약:** #월드컵 #축알못 #밈드립
