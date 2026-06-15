@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 모셔컵... 해볼게요....... ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13263165/report](https://auto-caption-generator-site.pages.dev/vods/13263165/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13263165/report](https://ttaem.com/vods/13263165/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13263165](https://chzzk.naver.com/video/13263165)
 
 - **핵심 요약:** #모셔컵 #밈드립 #추억소환

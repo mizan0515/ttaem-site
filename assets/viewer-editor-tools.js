@@ -214,9 +214,11 @@ function initViewerEditorTools() {
   const zoomInBtn = document.getElementById('viewerEditorZoomInBtn');
   const zoomResetBtn = document.getElementById('viewerEditorZoomResetBtn');
   const baseTimelineWidth = Math.max(760, Math.min(1600, Math.round(duration / 22)));
+  const timelineLabelColumnWidth = 144;
   let timelineZoom = 1;
   let axisRendered = false;
   let selectedEventId = '';
+  let densityScrollFrame = 0;
 
   function esc(value) {
     return String(value == null ? '' : value)
@@ -517,17 +519,17 @@ function initViewerEditorTools() {
     const canvas = axisEl.querySelector('.viewer-editor-axis-canvas');
     if (!canvas) return;
     const rect = axisEl.getBoundingClientRect();
-    const labelColumnWidth = 112;
     const oldWidth = Math.max(96, Math.round(baseTimelineWidth * timelineZoom));
     const anchorX = Number.isFinite(anchorClientX) ? anchorClientX : rect.left + rect.width / 2;
-    const cursorX = Math.max(0, axisEl.scrollLeft + anchorX - rect.left - labelColumnWidth);
+    const cursorX = Math.max(0, axisEl.scrollLeft + anchorX - rect.left - timelineLabelColumnWidth);
     const timeRatio = oldWidth ? Math.max(0, Math.min(1, cursorX / oldWidth)) : 0;
     timelineZoom = clampZoom(nextZoom);
     const nextWidth = Math.max(96, Math.round(baseTimelineWidth * timelineZoom));
     canvas.style.setProperty('--viewer-editor-w', `${nextWidth}px`);
-    axisEl.scrollLeft = Math.max(0, timeRatio * nextWidth + labelColumnWidth - (anchorX - rect.left));
+    axisEl.scrollLeft = Math.max(0, timeRatio * nextWidth + timelineLabelColumnWidth - (anchorX - rect.left));
     if (zoomRange) zoomRange.value = String(Math.round(timelineZoom * 100));
     if (zoomValue) zoomValue.textContent = `${timelineZoom.toFixed(2)}x`;
+    renderAxis({ preserveScroll: true });
   }
   function renderFilter() {
     if (!filterEl) return;
@@ -557,19 +559,71 @@ function initViewerEditorTools() {
     }).join('');
     return `<div class="viewer-editor-waveform-row" data-waveform-row="true"><div class="viewer-editor-waveform-label"><strong>소리 파형</strong><span>진폭 샘플 · ${waveformSamples.length}개</span></div><div class="viewer-editor-waveform" aria-label="실제 오디오 샘플 기반 소리 파형"><svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><line class="viewer-editor-waveform-midline" x1="0" y1="20" x2="100" y2="20"></line>${bars}</svg></div></div>`;
   }
-  function renderAxis() {
+  function chatBucketCount(row) {
+    if (!row || row.count == null || row.count === '') return { count: 0, missing: true };
+    const value = Number(row.count);
+    if (!Number.isFinite(value)) return { count: 0, missing: true };
+    return { count: Math.max(0, value), missing: false };
+  }
+  function bucketOverlapsRange(row, range) {
+    const start = Math.max(0, Number(row.start_sec || 0));
+    const end = Math.max(start, Number(row.end_sec || start + 30));
+    return end >= range.startSec && start <= range.endSec;
+  }
+  function currentVisibleTimeRange(timelineWidth) {
+    const viewportWidth = axisEl ? axisEl.clientWidth : timelineWidth;
+    const startPx = Math.max(0, (axisEl ? axisEl.scrollLeft : 0) - timelineLabelColumnWidth);
+    const endPx = Math.min(timelineWidth, startPx + Math.max(1, viewportWidth - timelineLabelColumnWidth));
+    if (endPx <= startPx || viewportWidth >= timelineWidth + timelineLabelColumnWidth) {
+      return { startSec: 0, endSec: duration };
+    }
+    return {
+      startSec: Math.max(0, Math.min(duration, (startPx / timelineWidth) * duration)),
+      endSec: Math.max(0, Math.min(duration, (endPx / timelineWidth) * duration)),
+    };
+  }
+  function maxChatCount(rows) {
+    return Math.max(1, ...rows.map((row) => chatBucketCount(row).count));
+  }
+  function densityBucketClass(chatCount, missing, visibleMaxChat, hot) {
+    if (missing) return 'missing';
+    if (chatCount <= 0) return 'zero';
+    const low = chatCount < Math.max(2, visibleMaxChat * 0.12);
+    return `${hot ? 'hot' : ''}${low ? ' low' : ''}`.trim();
+  }
+  function scheduleDensityScaleRefresh() {
+    if (densityScrollFrame) return;
+    densityScrollFrame = window.requestAnimationFrame(() => {
+      densityScrollFrame = 0;
+      renderAxis({ preserveScroll: true });
+    });
+  }
+  function renderAxis(options = {}) {
     const filter = filterEl ? filterEl.value : '';
     const visibleEvents = filter ? events.filter((event) => event.kind === filter) : events;
-    const maxChat = Math.max(1, ...buckets.map((row) => Number(row.count || 0)));
+    const preservedScrollLeft = options.preserveScroll ? axisEl.scrollLeft : null;
+    const timelineWidth = Math.max(96, Math.round(baseTimelineWidth * timelineZoom));
+    const visibleRange = currentVisibleTimeRange(timelineWidth);
+    const visibleBuckets = buckets.filter((row) => bucketOverlapsRange(row, visibleRange));
+    const globalMaxChat = maxChatCount(buckets);
+    const visibleMaxChat = maxChatCount(visibleBuckets.length ? visibleBuckets : buckets);
+    const densityScaleLabel = buckets.length
+      ? `현재 화면 최대 ${visibleMaxChat}개 / 전체 방송 최대 ${globalMaxChat}개 · ${buckets.length}개`
+      : '채팅 데이터 없음';
     const densityBars = buckets.map((row) => {
       const start = Number(row.start_sec || 0);
       const end = Number(row.end_sec || start + 30);
       const left = Math.max(0, Math.min(100, (start / duration) * 100));
       const width = Math.max(0.25, Math.min(100 - left, ((end - start) / duration) * 100));
-      const chatCount = Number(row.count || 0);
-      const h = chatCount > 0 ? Math.max(5, Math.round((chatCount / maxChat) * 30)) : 0;
+      const countInfo = chatBucketCount(row);
+      const chatCount = countInfo.count;
+      const h = chatCount > 0 ? Math.max(5, Math.round((chatCount / visibleMaxChat) * 30)) : 0;
+      const globalH = chatCount > 0 ? Math.max(1, Math.round((chatCount / globalMaxChat) * 30)) : 0;
       const hot = Number(row.reaction_count || 0) > 0;
-      return `<button type="button" class="viewer-editor-density-bar ${hot ? 'hot' : ''}" data-sec="${start}" title="${fmt(start)} 채팅 ${chatCount}개" style="left:${left}%;width:${width}%"><span style="--bar-h:${h}px"></span></button>`;
+      const stateClass = densityBucketClass(chatCount, countInfo.missing, visibleMaxChat, hot);
+      const stateText = countInfo.missing ? '채팅 수 미확인' : chatCount > 0 ? `채팅 ${chatCount}개` : '채팅 0개';
+      const scaleText = `현재 화면 기준 최대 ${visibleMaxChat}개, 전체 방송 기준 최대 ${globalMaxChat}개`;
+      return `<button type="button" class="viewer-editor-density-bar ${stateClass}" data-sec="${start}" aria-label="${esc(`${fmt(start)} ${stateText}. ${scaleText}`)}" title="${esc(`${fmt(start)} ${stateText} · ${scaleText}`)}" style="left:${left}%;width:${width}%"><span style="--bar-h:${h}px;--global-h:${globalH}px"></span></button>`;
     }).join('');
     const laneRows = lanes.map((lane) => {
       const kind = lane.key;
@@ -590,12 +644,15 @@ function initViewerEditorTools() {
     axisEl.innerHTML = `<div class="viewer-editor-axis-canvas">
       <div class="viewer-editor-scale-row"><div class="viewer-editor-scale-label"><strong>전체 흐름</strong><span>${fmt(duration)}</span></div><div class="viewer-editor-scale">${renderScale()}</div></div>
       ${renderWaveformRow()}
-      <div class="viewer-editor-density-row"><div class="viewer-editor-density-label"><strong>전체 채팅량</strong><span>채팅이 많이 몰린 구간 · ${buckets.length}개</span></div><div class="viewer-editor-density">${densityBars || '<div class="viewer-editor-empty">채팅 데이터 없음</div>'}</div></div>
+      <div class="viewer-editor-density-row"><div class="viewer-editor-density-label"><strong>전체 채팅량</strong><span>${densityScaleLabel}</span></div><div class="viewer-editor-density">${densityBars || '<div class="viewer-editor-empty">채팅 데이터 없음</div>'}</div></div>
       ${laneRows || '<div class="viewer-editor-empty">표시할 장면 데이터가 없습니다.</div>'}
     </div>`;
     if (countEl) countEl.textContent = `표시 중인 장면 후보 ${visibleEvents.length}개 · 메모용 컷 후보 ${Number(preview.clip_count || 0)}개`;
     const canvas = axisEl.querySelector('.viewer-editor-axis-canvas');
-    if (canvas) canvas.style.setProperty('--viewer-editor-w', `${Math.max(96, Math.round(baseTimelineWidth * timelineZoom))}px`);
+    if (canvas) canvas.style.setProperty('--viewer-editor-w', `${timelineWidth}px`);
+    if (preservedScrollLeft != null) axisEl.scrollLeft = preservedScrollLeft;
+    axisEl.removeEventListener('scroll', scheduleDensityScaleRefresh);
+    axisEl.addEventListener('scroll', scheduleDensityScaleRefresh, { passive: true });
     axisEl.querySelectorAll('[data-event-id]').forEach((marker) => {
       marker.classList.toggle('selected', marker.dataset.eventId === selectedEventId);
       marker.addEventListener('click', () => {
@@ -613,6 +670,12 @@ function initViewerEditorTools() {
     });
   }
   function renderEvidence(event) {
+    if (!event || typeof event !== 'object') {
+      const introEl = document.getElementById('viewerEditorEvidenceIntro');
+      if (introEl) introEl.hidden = false;
+      evidenceEl.innerHTML = '<div class="viewer-editor-empty">장면 찾기에서 시각을 선택하면 근거가 여기에 표시됩니다.</div>';
+      return;
+    }
     const sec = Number(event && event.start_sec);
     if (!Number.isFinite(sec)) {
       const introEl = document.getElementById('viewerEditorEvidenceIntro');

@@ -1,4 +1,4 @@
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12568235/report](https://auto-caption-generator-site.pages.dev/vods/12568235/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12568235/report](https://ttaem.com/vods/12568235/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12568235](https://chzzk.naver.com/video/12568235)
 
 했다 나르는"이라는 위로가 쏟아졌다. T1 바텀이 정글까지 셋이서 CS를 나눠 먹는 구조를 탬탬버린이 "3인 식구" 비유로 꼬집으며 채팅도 "3유충"으로 받아쳤다.

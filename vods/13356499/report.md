@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 6시 모라하지마 2일차 서버 잡범은 바로 나..٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13356499/report](https://auto-caption-generator-site.pages.dev/vods/13356499/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13356499/report](https://ttaem.com/vods/13356499/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13356499](https://chzzk.naver.com/video/13356499)
 
 - **핵심 요약:** #모라시티 #고해성사 #주식전쟁 #흰둥이검둥이 #복수극

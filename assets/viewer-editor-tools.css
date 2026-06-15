@@ -316,6 +316,19 @@
     height: var(--bar-h, 3px); min-height: 3px; border-radius: 3px 3px 0 0;
     background: rgba(247,118,142,0.52);
   }
+  .viewer-editor-density-bar span::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0;
+    height: var(--global-h, 0px); min-height: 0; border-radius: 3px 3px 0 0;
+    background: rgba(255,255,255,0.20);
+  }
+  .viewer-editor-density-bar.low span { min-height: 5px; }
+  .viewer-editor-density-bar.zero span {
+    height: 2px; min-height: 2px; background: rgba(154,165,190,0.26);
+  }
+  .viewer-editor-density-bar.missing span {
+    height: 2px; min-height: 2px;
+    background: repeating-linear-gradient(90deg, rgba(154,165,190,0.32) 0 3px, transparent 3px 6px);
+  }
   .viewer-editor-density-bar.hot span { background: rgba(247,118,142,0.82); }
   .viewer-editor-waveform {
     position: relative; height: 46px; min-width: var(--viewer-editor-w, 960px);

@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 내전 참여 합니다 내일은 진짜 쉰다 진짜야
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12818087/report](https://auto-caption-generator-site.pages.dev/vods/12818087/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12818087/report](https://ttaem.com/vods/12818087/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12818087](https://chzzk.naver.com/video/12818087)
 
 - **핵심 요약:** #쉰다더니풀방 #던포터강림 #이집필의복수
