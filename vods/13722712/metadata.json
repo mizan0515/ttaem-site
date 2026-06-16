@@ -1,0 +1,2050 @@
+{
+  "video_no": "13722712",
+  "title": "스타2 캠페인 자유의 날개 탬스크 아니고 탬레이너 입니다.. ٩(●'▿'●)۶",
+  "channel": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_id": "",
+  "platform": "chzzk",
+  "duration": 1194,
+  "publish_date": "2026-06-15 23:14:04",
+  "category": "스타크래프트 II : 자유의 날개",
+  "thumbnail_url": null,
+  "total_chats": 4413,
+  "highlight_count": 5,
+  "highlights": [
+    {
+      "sec": 810,
+      "composite": 1.0,
+      "count": 127,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_92870bdf03aa",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 810
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 1180,
+      "composite": 0.8879,
+      "count": 98,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_0b2e9ece7793",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1180
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 142,
+      "composite": 0.8399,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_71503f3e1839",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 142
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 142,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 240,
+      "composite": 0.8155,
+      "count": 81,
+      "source_signals": [
+        "chat",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_a450cf8809ab",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 240
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 30,
+      "composite": 0.8136,
+      "count": 88,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_01b609ad5a21",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 30
+        }
+      ],
+      "risk_flags": []
+    }
+  ],
+  "segment_ledger_schema_version": 1,
+  "segment_ledger": [
+    {
+      "segment_id": "seg_summary_6581d7e84e31",
+      "kind": "summary",
+      "section": "summary",
+      "index": 1,
+      "timecode": "",
+      "start_sec": null,
+      "end_sec": null,
+      "title": "스타2 캠페인 자유의 날개 탬스크 아니고 탬레이너 입니다.. ٩(●'▿'●)۶",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "summary",
+          "fields": [
+            "title",
+            "hashtags",
+            "pull_quote"
+          ]
+        }
+      ],
+      "risk_flags": [],
+      "hashtags": [
+        "스타크래프트",
+        "탬레이너",
+        "밈드립"
+      ],
+      "pull_quote": "녹화 파일 비상으로 시작해서 정성 야마토, 3분 클리어 자화자찬, 대장님 태세전환까지 짧고 굵게 터진 탬레이너 캠페인."
+    },
+    {
+      "segment_id": "seg_timeline_9f62e88cd188",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 1,
+      "timecode": "00:01:58",
+      "start_sec": 118,
+      "end_sec": null,
+      "title": "녹화 파일 날아갔다는 말에 채팅 비상 걸려버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:01:58"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"진짜에요?\" \"비ㅣㅣ상ㅇㅇㅇ\" \"이거는 진짜 비상인데요?\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 142.5,
+          "delta_sec": 24,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "앞서 녹화한 분량이 날아갔을 수 있다는 이야기가 나오자 시청자들이 다시보기와 복구 가능성을 바로 걱정했다. 짧은 VOD 초반부터 게임보다 녹화 파일 생존 여부가 먼저 긴장감을 만들었다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_88c2d3296fb1",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 2,
+      "timecode": "00:03:52",
+      "start_sec": 232,
+      "end_sec": null,
+      "title": "한땀 한땀 야마토로 티배깅 밈·드립 터져버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:03:52"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"하나씩쏘는거 보소 ㅋㅋ\" \"티배깅 ㅋㅋㅋ\" \"정성 야마토 뭐임 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "야마토를 빠르게 몰아치는 대신 하나씩 정성껏 쏘는 듯한 조작이 나오며 채팅이 바로 웃음으로 반응했다. 클리어 직전 장면이 실력보다 정성 야마토 밈·드립으로 먼저 소비됐다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_474348596c31",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 3,
+      "timecode": "00:04:03",
+      "start_sec": 243,
+      "end_sec": null,
+      "title": "3분 클리어하고 바로 수천재 자화자찬 들어가버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:04:03"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"이겼다!\" \"ㄴㅇㅅ\" \"우승 ㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅㅅ\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "“겨우깨꾼! 3분만에 클리어!”라며 미션 클리어를 선언하고, 스스로를 수천재처럼 치켜세우는 흐름으로 이어졌다. 채팅도 승리 반응을 붙이며 짧은 성공 장면을 확실히 받아줬다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_9c58f9c25ff8",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 4,
+      "timecode": "00:04:50",
+      "start_sec": 290,
+      "end_sec": null,
+      "title": "자식을 믿는다는 대사 하나로 스토리 감상 모드 열려버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:04:50"
+        }
+      ],
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "“자식을 믿는다고?”, “지금이야말로 믿어줘야지” 같은 캠페인 대사가 이어지며 분위기가 게임 조작에서 스토리 감상으로 넘어갔다. 미션 클리어 직후라 더 선명한 전환점이 됐다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_c8e0f363b659",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 5,
+      "timecode": "00:05:05",
+      "start_sec": 305,
+      "end_sec": null,
+      "title": "믿을 건 자기 자신뿐이라는 매운 대사 박혀버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:05:05"
+        }
+      ],
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "“약해빠진 겁쟁이”, “이 세상에 믿을거라 자기 자신뿐”이라는 대사가 나오며 인물 간 불신이 노골적으로 드러났다. 방금 전의 자화자찬 흐름과 대비되면서 캠페인 특유의 냉소적인 분위기가 강해졌다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_061e957b22e1",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 6,
+      "timecode": "00:05:31",
+      "start_sec": 331,
+      "end_sec": null,
+      "title": "도망치는 버릇 폭로에 로스트 분위기 가버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:05:31"
+        }
+      ],
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "문제가 생기면 잽싸게 빠진다는 비난과 여자친구 언급까지 이어지며 대사가 더 날카로워졌다. 단순 스토리 설명이 아니라 캐릭터를 몰아붙이는 로스트처럼 들리는 구간이었다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_2248d503e0d8",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 7,
+      "timecode": "00:07:29",
+      "start_sec": 449,
+      "end_sec": null,
+      "title": "대장님 태세전환에 믿어도 되냐는 웃음 터져버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:07:29"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"태새전환보소\" \"이걸 믿어?\" \"ㅋㅋㅋㅋㅋㅋㅋㅋ\""
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 454,
+          "role": "proximity_signal",
+          "clip_uid": "tVAC5tZNRA",
+          "title": "옆에서 조잘거리는 탬탬버린 >>>>>> 레이너",
+          "like_count": 3,
+          "play_count": 513
+        }
+      ],
+      "risk_flags": [],
+      "summary": "캐릭터가 갑자기 입장을 바꾸거나 말을 뒤집은 듯한 장면에 채팅이 즉시 반응했다. 시청자 클립 anchor와도 맞물리는 구간이라, 짧은 장면 안에서 “대장님” 밈·드립이 잘 살아난다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_84e19b5ffd32",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 1,
+      "timecode": "00:03:52~00:04:03",
+      "start_sec": 232,
+      "end_sec": 243,
+      "title": "한땀 한땀 야마토에서 3분 클리어까지",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "00:03:52~00:04:03"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "조작 장면의 웃음 포인트와 즉시 클리어 선언이 붙어 있어 숏클립으로 자르기 좋은 성공형 밈·드립 구간이다."
+        }
+      ],
+      "risk_flags": [],
+      "reason": "조작 장면의 웃음 포인트와 즉시 클리어 선언이 붙어 있어 숏클립으로 자르기 좋은 성공형 밈·드립 구간이다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_0bd5b8101614",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 2,
+      "timecode": "00:04:50~00:05:31",
+      "start_sec": 290,
+      "end_sec": 331,
+      "title": "믿음에서 불신으로 바로 매워지는 캠페인 대사전",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "00:04:50~00:05:31"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "“자식을 믿는다고?”에서 자기 자신뿐이라는 냉소, 도망치는 버릇 폭로까지 감정선이 빠르게 변해 스토리 하이라이트로 쓰기 좋다."
+        }
+      ],
+      "risk_flags": [],
+      "reason": "“자식을 믿는다고?”에서 자기 자신뿐이라는 냉소, 도망치는 버릇 폭로까지 감정선이 빠르게 변해 스토리 하이라이트로 쓰기 좋다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_fcef30a426f5",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 3,
+      "timecode": "00:07:29~00:07:29",
+      "start_sec": 449,
+      "end_sec": 449,
+      "title": "대장님 태세전환에 채팅이 바로 터진 순간",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "00:07:29~00:07:29"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "짧은 반전성 리액션과 채팅 웃음 반응이 한 번에 모여 있어 클립용 펀치가 분명하다."
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 454,
+          "role": "proximity_signal",
+          "clip_uid": "tVAC5tZNRA",
+          "title": "옆에서 조잘거리는 탬탬버린 >>>>>> 레이너",
+          "like_count": 3,
+          "play_count": 513
+        }
+      ],
+      "risk_flags": [],
+      "reason": "짧은 반전성 리액션과 채팅 웃음 반응이 한 번에 모여 있어 클립용 펀치가 분명하다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_chapter_efd94dcde80c",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 1,
+      "timecode": "00:01:58",
+      "start_sec": 118,
+      "end_sec": null,
+      "title": "녹화 파일 비상 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:01:58"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 142.5,
+          "delta_sec": 24,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_b9760e9ccff5",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 2,
+      "timecode": "00:03:52~00:04:03",
+      "start_sec": 232,
+      "end_sec": 243,
+      "title": "정성 야마토 클리어",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:03:52~00:04:03"
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "segment_id": "seg_chapter_6240f910bb11",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 3,
+      "timecode": "00:04:50~00:05:31",
+      "start_sec": 290,
+      "end_sec": 331,
+      "title": "캠페인 대사전 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:04:50~00:05:31"
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "segment_id": "seg_chapter_cba50a4b80b5",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 4,
+      "timecode": "00:07:29",
+      "start_sec": 449,
+      "end_sec": null,
+      "title": "대장님 태세전환",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:07:29"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 454,
+          "role": "proximity_signal",
+          "clip_uid": "tVAC5tZNRA",
+          "title": "옆에서 조잘거리는 탬탬버린 >>>>>> 레이너",
+          "like_count": 3,
+          "play_count": 513
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_highlight_candidate_92870bdf03aa",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 1,
+      "timecode": "00:13:30",
+      "start_sec": 810,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 810
+        }
+      ],
+      "risk_flags": [],
+      "sec": 810,
+      "composite": 1.0,
+      "count": 127
+    },
+    {
+      "segment_id": "seg_highlight_candidate_0b2e9ece7793",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 2,
+      "timecode": "00:19:40",
+      "start_sec": 1180,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1180
+        }
+      ],
+      "risk_flags": [],
+      "sec": 1180,
+      "composite": 0.8879,
+      "count": 98
+    },
+    {
+      "segment_id": "seg_highlight_candidate_71503f3e1839",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 3,
+      "timecode": "00:02:22",
+      "start_sec": 142,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 142
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 142,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 142,
+      "composite": 0.8399,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_a450cf8809ab",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 4,
+      "timecode": "00:04:00",
+      "start_sec": 240,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 240
+        }
+      ],
+      "risk_flags": [],
+      "sec": 240,
+      "composite": 0.8155,
+      "count": 81
+    },
+    {
+      "segment_id": "seg_highlight_candidate_01b609ad5a21",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 5,
+      "timecode": "00:00:30",
+      "start_sec": 30,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 30
+        }
+      ],
+      "risk_flags": [],
+      "sec": 30,
+      "composite": 0.8136,
+      "count": 88
+    }
+  ],
+  "processed_at": "2026-06-16T18:01:01.123214+09:00",
+  "evidence_verifier": {
+    "schema_version": "evidence_verifier.v1",
+    "status": "fail",
+    "summary": {
+      "checked_segments": 14,
+      "failure_count": 1,
+      "warning_count": 0
+    },
+    "findings": [
+      {
+        "code": "CHAPTER_READINESS_FAIL",
+        "severity": "error",
+        "message": "chapter readiness validator reported fail",
+        "source_fields": [
+          "chapter_readiness"
+        ],
+        "detail": {
+          "status": "fail",
+          "failure_reasons": []
+        }
+      }
+    ]
+  },
+  "summary_input_readiness": {
+    "schema_version": "summary_input_readiness.v1",
+    "status": "ready_with_gaps",
+    "quality_claim": "not_evaluated",
+    "items": [
+      {
+        "key": "srt",
+        "name": "자막 SRT",
+        "required": true,
+        "status": "present",
+        "reason": "요약 청크 입력으로 사용할 SRT가 있습니다.",
+        "retry_condition": "transcribe 단계가 SRT를 생성한 뒤 다시 요약합니다.",
+        "detail": {
+          "filename": "13722712_스타2 캠페인 자유의 날개 탬스크 아니고 탬레이너 입니다.. ٩(●'▿'●)۶_144p.srt",
+          "size_bytes": 1320
+        }
+      },
+      {
+        "key": "chat",
+        "name": "채팅",
+        "required": false,
+        "status": "present",
+        "reason": "채팅 신호가 요약 후보에 반영됩니다.",
+        "retry_condition": "채팅 수집이 VOD 끝까지 성공한 뒤 다시 요약합니다.",
+        "detail": {
+          "message_count": 4413,
+          "first_message_sec": 0.0,
+          "latest_message_sec": 1188.833,
+          "latest_message_hms": "00:19:48",
+          "expected_duration_sec": 1194.0,
+          "expected_duration_hms": "00:19:54",
+          "coverage_ratio": 0.9957,
+          "coverage_gap_sec": 5.167
+        }
+      },
+      {
+        "key": "community",
+        "name": "커뮤니티",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "커뮤니티 반응 후보가 없습니다.",
+        "retry_condition": "커뮤니티 수집 또는 수동 입력 뒤 다시 요약합니다.",
+        "detail": {
+          "post_count": 0
+        }
+      },
+      {
+        "key": "context_doc",
+        "name": "VOD 배경 맥락",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "관리자 배경 맥락 없이 요약합니다.",
+        "retry_condition": "work/<video_no>/<video_no>_context.md 작성 뒤 다시 요약합니다.",
+        "detail": {
+          "char_count": 0
+        }
+      },
+      {
+        "key": "timeline_comments",
+        "name": "시청자 시간표 댓글",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "자동 수집 가능한 시청자 시간표 댓글 없이 요약합니다.",
+        "retry_condition": "요약 직전 자동 댓글 수집을 다시 실행합니다. 브라우저 로그인/프로필 잠금 문제일 때만 work/<video_no>/<video_no>_timeline_comments.md 수동 fallback 을 사용합니다.",
+        "detail": {
+          "char_count": 0,
+          "timed_line_count": 0
+        }
+      },
+      {
+        "key": "streamer_vocab",
+        "name": "스트리머 어휘/lexicon",
+        "required": false,
+        "status": "present",
+        "reason": "고유명사/별명 보정 후보가 있습니다.",
+        "retry_condition": "streamer_vocab 저장 또는 lexicon 빌드 뒤 다시 요약합니다.",
+        "detail": {
+          "term_count": 30
+        }
+      },
+      {
+        "key": "manager_edit_lessons",
+        "name": "관리자 수정 사례",
+        "required": false,
+        "status": "present",
+        "reason": "이전 관리자 수정 사례가 프롬프트에 반영됩니다.",
+        "retry_condition": "관리자 저장 이력이 쌓인 뒤 다시 요약합니다.",
+        "detail": {
+          "lesson_count": 3
+        }
+      },
+      {
+        "key": "manager_fewshot_examples",
+        "name": "관리자 수정 few-shot",
+        "required": false,
+        "status": "present",
+        "reason": "검증된 관리자 수정 전/후 예시가 프롬프트에 반영됩니다.",
+        "retry_condition": "fewshot_injection_enabled=true 설정과 highlight_learning weak_positive 후보가 있는 상태에서 다시 요약합니다.",
+        "detail": {
+          "example_count": 3,
+          "fingerprint": "d32fb83cfd4e"
+        }
+      },
+      {
+        "key": "streamer_recent_context",
+        "name": "최근 공개 맥락",
+        "required": false,
+        "status": "present",
+        "reason": "최근 공개 맥락 후보가 요약 보조 입력으로 반영됩니다.",
+        "retry_condition": "streamer_recent_context_enabled=true 후 공개 소스 수집을 다시 실행합니다. 실패해도 요약은 계속 진행됩니다.",
+        "detail": {
+          "item_count": 1,
+          "source_count": 2,
+          "sources": [
+            "fmkorea",
+            "chzzk_public"
+          ],
+          "diagnostic_status_counts": {
+            "no_candidates": 1,
+            "ok": 2
+          }
+        }
+      },
+      {
+        "key": "user_clips",
+        "name": "시청자 클립",
+        "required": false,
+        "status": "present",
+        "reason": "시청자 클립 anchor 후보가 있습니다.",
+        "retry_condition": "viewer clip 수집/anchor 회수 뒤 다시 요약합니다.",
+        "detail": {
+          "total": 1,
+          "with_offset": 1,
+          "with_engagement": 1,
+          "status": "ok"
+        }
+      },
+      {
+        "key": "audio_peaks",
+        "name": "오디오 반응 피크",
+        "required": false,
+        "status": "present",
+        "reason": "오디오 반응 분석 결과가 있습니다.",
+        "retry_condition": "audio reaction 분석이 성공한 뒤 다시 요약합니다.",
+        "detail": {
+          "peak_count": 2,
+          "status": "available"
+        }
+      },
+      {
+        "key": "source_manifest",
+        "name": "요약 입력 manifest",
+        "required": true,
+        "status": "present",
+        "reason": "요약 입력 manifest가 계산되어 cache/재현성 기준이 있습니다.",
+        "retry_condition": "요약 cache manifest 계산 후 다시 확인합니다.",
+        "detail": {
+          "schema_version": 9,
+          "manifest_key_count": 22,
+          "has_summary_hash": false
+        }
+      },
+      {
+        "key": "segment_ledger",
+        "name": "segment/evidence ledger",
+        "required": false,
+        "status": "present",
+        "reason": "렌더링된 리포트의 segment ledger가 있습니다.",
+        "retry_condition": "summary Markdown parser/metadata generation을 확인한 뒤 다시 렌더링합니다.",
+        "detail": {
+          "segment_count": 20,
+          "kind_counts": {
+            "chapter": 4,
+            "highlight": 3,
+            "highlight_candidate": 5,
+            "summary": 1,
+            "timeline": 7
+          }
+        }
+      }
+    ]
+  },
+  "audio_reaction_peaks": [
+    {
+      "start_sec": 140.0,
+      "end_sec": 145.0,
+      "center_sec": 142.5,
+      "loudness_db": -13.16,
+      "peak_db": -0.555,
+      "percentile": 0.9795,
+      "z_score": 1.2635,
+      "normalized": 0.7106,
+      "score": 0.7906,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 185.0,
+      "end_sec": 190.0,
+      "center_sec": 187.5,
+      "loudness_db": -14.091,
+      "peak_db": -0.547,
+      "percentile": 0.9658,
+      "z_score": 1.0793,
+      "normalized": 0.6799,
+      "score": 0.7599,
+      "labels": [
+        "audio_energy_peak",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    }
+  ],
+  "audio_loudness_per_min": [
+    -17.572,
+    -17.354,
+    -16.095,
+    -18.769,
+    -25.787,
+    -21.992,
+    -16.192,
+    -19.548,
+    -19.548,
+    -19.548,
+    -19.548,
+    -19.548,
+    -19.548,
+    -19.548,
+    -19.548,
+    -19.548,
+    -19.548,
+    -19.548,
+    -19.548,
+    -19.548
+  ],
+  "audio_feature_source": {
+    "kind": "relative_loudness_main_pipeline",
+    "enabled_by_default": true,
+    "window_sec": 5,
+    "min_percentile": 0.95,
+    "min_gap_sec": 30,
+    "chat_overlap_sec": 60,
+    "max_peaks": 20,
+    "waveform_max_points": 720,
+    "normalization": "per_vod_relative_percentile_and_z_score",
+    "decision_rule": "audio is supporting evidence; audio-only peaks do not prove highlight importance",
+    "sample_count": 365,
+    "include_lufs": false,
+    "source_kind": "ffmpeg_media_astats",
+    "sample_extraction": "ffmpeg_astats"
+  },
+  "audio_waveform": {
+    "schema_version": "audio_waveform.v1",
+    "source": "audio_loudness_windows",
+    "sample_count": 73,
+    "max_points": 720,
+    "duration_sec": 1194.0,
+    "channels": "mono_mixed",
+    "unit": "relative_loudness_normalized_0_1",
+    "privacy_class": "public_safe",
+    "decision_rule": "waveform is timeline context only; it does not prove highlight importance",
+    "samples": [
+      {
+        "start_sec": 0.0,
+        "end_sec": 5.0,
+        "value": 0.6103
+      },
+      {
+        "start_sec": 5.0,
+        "end_sec": 10.0,
+        "value": 0.6362
+      },
+      {
+        "start_sec": 10.0,
+        "end_sec": 15.0,
+        "value": 0.6245
+      },
+      {
+        "start_sec": 15.0,
+        "end_sec": 20.0,
+        "value": 0.6755
+      },
+      {
+        "start_sec": 20.0,
+        "end_sec": 25.0,
+        "value": 0.5601
+      },
+      {
+        "start_sec": 25.0,
+        "end_sec": 30.0,
+        "value": 0.5507
+      },
+      {
+        "start_sec": 30.0,
+        "end_sec": 35.0,
+        "value": 0.5605
+      },
+      {
+        "start_sec": 35.0,
+        "end_sec": 40.0,
+        "value": 0.5211
+      },
+      {
+        "start_sec": 40.0,
+        "end_sec": 45.0,
+        "value": 0.4939
+      },
+      {
+        "start_sec": 45.0,
+        "end_sec": 50.0,
+        "value": 0.5659
+      },
+      {
+        "start_sec": 50.0,
+        "end_sec": 55.0,
+        "value": 0.3865
+      },
+      {
+        "start_sec": 55.0,
+        "end_sec": 60.0,
+        "value": 0.5968
+      },
+      {
+        "start_sec": 60.0,
+        "end_sec": 65.0,
+        "value": 0.6362
+      },
+      {
+        "start_sec": 65.0,
+        "end_sec": 70.0,
+        "value": 0.6471
+      },
+      {
+        "start_sec": 70.0,
+        "end_sec": 75.0,
+        "value": 0.6073
+      },
+      {
+        "start_sec": 75.0,
+        "end_sec": 80.0,
+        "value": 0.5611
+      },
+      {
+        "start_sec": 80.0,
+        "end_sec": 85.0,
+        "value": 0.5623
+      },
+      {
+        "start_sec": 85.0,
+        "end_sec": 90.0,
+        "value": 0.5871
+      },
+      {
+        "start_sec": 90.0,
+        "end_sec": 95.0,
+        "value": 0.5762
+      },
+      {
+        "start_sec": 95.0,
+        "end_sec": 100.0,
+        "value": 0.4982
+      },
+      {
+        "start_sec": 100.0,
+        "end_sec": 105.0,
+        "value": 0.4966
+      },
+      {
+        "start_sec": 105.0,
+        "end_sec": 110.0,
+        "value": 0.649
+      },
+      {
+        "start_sec": 110.0,
+        "end_sec": 115.0,
+        "value": 0.4751
+      },
+      {
+        "start_sec": 115.0,
+        "end_sec": 120.0,
+        "value": 0.5718
+      },
+      {
+        "start_sec": 120.0,
+        "end_sec": 125.0,
+        "value": 0.5784
+      },
+      {
+        "start_sec": 125.0,
+        "end_sec": 130.0,
+        "value": 0.4547
+      },
+      {
+        "start_sec": 130.0,
+        "end_sec": 135.0,
+        "value": 0.6638
+      },
+      {
+        "start_sec": 135.0,
+        "end_sec": 140.0,
+        "value": 0.6261
+      },
+      {
+        "start_sec": 140.0,
+        "end_sec": 145.0,
+        "value": 0.7106
+      },
+      {
+        "start_sec": 145.0,
+        "end_sec": 150.0,
+        "value": 0.6599
+      },
+      {
+        "start_sec": 150.0,
+        "end_sec": 155.0,
+        "value": 0.7182
+      },
+      {
+        "start_sec": 155.0,
+        "end_sec": 160.0,
+        "value": 0.6355
+      },
+      {
+        "start_sec": 160.0,
+        "end_sec": 165.0,
+        "value": 0.6037
+      },
+      {
+        "start_sec": 165.0,
+        "end_sec": 170.0,
+        "value": 0.4619
+      },
+      {
+        "start_sec": 170.0,
+        "end_sec": 175.0,
+        "value": 0.5734
+      },
+      {
+        "start_sec": 175.0,
+        "end_sec": 180.0,
+        "value": 0.6797
+      },
+      {
+        "start_sec": 180.0,
+        "end_sec": 185.0,
+        "value": 0.6706
+      },
+      {
+        "start_sec": 185.0,
+        "end_sec": 190.0,
+        "value": 0.6799
+      },
+      {
+        "start_sec": 190.0,
+        "end_sec": 195.0,
+        "value": 0.5969
+      },
+      {
+        "start_sec": 195.0,
+        "end_sec": 200.0,
+        "value": 0.1921
+      },
+      {
+        "start_sec": 200.0,
+        "end_sec": 205.0,
+        "value": 0.4081
+      },
+      {
+        "start_sec": 205.0,
+        "end_sec": 210.0,
+        "value": 0.5817
+      },
+      {
+        "start_sec": 210.0,
+        "end_sec": 215.0,
+        "value": 0.6012
+      },
+      {
+        "start_sec": 215.0,
+        "end_sec": 220.0,
+        "value": 0.4726
+      },
+      {
+        "start_sec": 220.0,
+        "end_sec": 225.0,
+        "value": 0.612
+      },
+      {
+        "start_sec": 225.0,
+        "end_sec": 230.0,
+        "value": 0.5586
+      },
+      {
+        "start_sec": 230.0,
+        "end_sec": 235.0,
+        "value": 0.5066
+      },
+      {
+        "start_sec": 235.0,
+        "end_sec": 240.0,
+        "value": 0.4277
+      },
+      {
+        "start_sec": 240.0,
+        "end_sec": 245.0,
+        "value": 0.3282
+      },
+      {
+        "start_sec": 245.0,
+        "end_sec": 250.0,
+        "value": 0.4074
+      },
+      {
+        "start_sec": 250.0,
+        "end_sec": 255.0,
+        "value": 0.2311
+      },
+      {
+        "start_sec": 255.0,
+        "end_sec": 260.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 260.0,
+        "end_sec": 265.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 265.0,
+        "end_sec": 270.0,
+        "value": 0.0914
+      },
+      {
+        "start_sec": 270.0,
+        "end_sec": 275.0,
+        "value": 0.2575
+      },
+      {
+        "start_sec": 275.0,
+        "end_sec": 280.0,
+        "value": 0.5909
+      },
+      {
+        "start_sec": 280.0,
+        "end_sec": 285.0,
+        "value": 0.4691
+      },
+      {
+        "start_sec": 285.0,
+        "end_sec": 290.0,
+        "value": 0.3249
+      },
+      {
+        "start_sec": 290.0,
+        "end_sec": 295.0,
+        "value": 0.5257
+      },
+      {
+        "start_sec": 295.0,
+        "end_sec": 300.0,
+        "value": 0.4787
+      },
+      {
+        "start_sec": 300.0,
+        "end_sec": 305.0,
+        "value": 0.3536
+      },
+      {
+        "start_sec": 305.0,
+        "end_sec": 310.0,
+        "value": 0.552
+      },
+      {
+        "start_sec": 310.0,
+        "end_sec": 315.0,
+        "value": 0.3332
+      },
+      {
+        "start_sec": 315.0,
+        "end_sec": 320.0,
+        "value": 0.365
+      },
+      {
+        "start_sec": 320.0,
+        "end_sec": 325.0,
+        "value": 0.4845
+      },
+      {
+        "start_sec": 325.0,
+        "end_sec": 330.0,
+        "value": 0.4512
+      },
+      {
+        "start_sec": 330.0,
+        "end_sec": 335.0,
+        "value": 0.1573
+      },
+      {
+        "start_sec": 335.0,
+        "end_sec": 340.0,
+        "value": 0.2491
+      },
+      {
+        "start_sec": 340.0,
+        "end_sec": 345.0,
+        "value": 0.4771
+      },
+      {
+        "start_sec": 345.0,
+        "end_sec": 350.0,
+        "value": 0.4073
+      },
+      {
+        "start_sec": 350.0,
+        "end_sec": 355.0,
+        "value": 0.5739
+      },
+      {
+        "start_sec": 355.0,
+        "end_sec": 360.0,
+        "value": 0.6293
+      },
+      {
+        "start_sec": 360.0,
+        "end_sec": 365.0,
+        "value": 0.6106
+      }
+    ]
+  },
+  "audio_loudness_windows": [
+    {
+      "start_sec": 0.0,
+      "end_sec": 5.0,
+      "loudness_db": -16.203,
+      "peak_db": -0.527,
+      "z_score": 0.6617,
+      "normalized": 0.6103,
+      "percentile": 0.7466
+    },
+    {
+      "start_sec": 5.0,
+      "end_sec": 10.0,
+      "loudness_db": -15.416,
+      "peak_db": -0.32,
+      "z_score": 0.8173,
+      "normalized": 0.6362,
+      "percentile": 0.8562
+    },
+    {
+      "start_sec": 10.0,
+      "end_sec": 15.0,
+      "loudness_db": -15.771,
+      "peak_db": 0.0,
+      "z_score": 0.7471,
+      "normalized": 0.6245,
+      "percentile": 0.7877
+    },
+    {
+      "start_sec": 15.0,
+      "end_sec": 20.0,
+      "loudness_db": -14.225,
+      "peak_db": 0.0,
+      "z_score": 1.0529,
+      "normalized": 0.6755,
+      "percentile": 0.9384
+    },
+    {
+      "start_sec": 20.0,
+      "end_sec": 25.0,
+      "loudness_db": -17.725,
+      "peak_db": -0.04,
+      "z_score": 0.3606,
+      "normalized": 0.5601,
+      "percentile": 0.5
+    },
+    {
+      "start_sec": 25.0,
+      "end_sec": 30.0,
+      "loudness_db": -18.011,
+      "peak_db": -0.32,
+      "z_score": 0.304,
+      "normalized": 0.5507,
+      "percentile": 0.4589
+    },
+    {
+      "start_sec": 30.0,
+      "end_sec": 35.0,
+      "loudness_db": -17.713,
+      "peak_db": -0.792,
+      "z_score": 0.3629,
+      "normalized": 0.5605,
+      "percentile": 0.5137
+    },
+    {
+      "start_sec": 35.0,
+      "end_sec": 40.0,
+      "loudness_db": -18.909,
+      "peak_db": -0.305,
+      "z_score": 0.1264,
+      "normalized": 0.5211,
+      "percentile": 0.4315
+    },
+    {
+      "start_sec": 40.0,
+      "end_sec": 45.0,
+      "loudness_db": -19.733,
+      "peak_db": 0.0,
+      "z_score": -0.0366,
+      "normalized": 0.4939,
+      "percentile": 0.3767
+    },
+    {
+      "start_sec": 45.0,
+      "end_sec": 50.0,
+      "loudness_db": -17.548,
+      "peak_db": 0.0,
+      "z_score": 0.3956,
+      "normalized": 0.5659,
+      "percentile": 0.5548
+    },
+    {
+      "start_sec": 50.0,
+      "end_sec": 55.0,
+      "loudness_db": -22.992,
+      "peak_db": -0.427,
+      "z_score": -0.6811,
+      "normalized": 0.3865,
+      "percentile": 0.1849
+    },
+    {
+      "start_sec": 55.0,
+      "end_sec": 60.0,
+      "loudness_db": -16.612,
+      "peak_db": -0.462,
+      "z_score": 0.5808,
+      "normalized": 0.5968,
+      "percentile": 0.6781
+    },
+    {
+      "start_sec": 60.0,
+      "end_sec": 65.0,
+      "loudness_db": -15.416,
+      "peak_db": -1.682,
+      "z_score": 0.8172,
+      "normalized": 0.6362,
+      "percentile": 0.8425
+    },
+    {
+      "start_sec": 65.0,
+      "end_sec": 70.0,
+      "loudness_db": -15.086,
+      "peak_db": 0.0,
+      "z_score": 0.8826,
+      "normalized": 0.6471,
+      "percentile": 0.8699
+    },
+    {
+      "start_sec": 70.0,
+      "end_sec": 75.0,
+      "loudness_db": -16.292,
+      "peak_db": 0.0,
+      "z_score": 0.6439,
+      "normalized": 0.6073,
+      "percentile": 0.7329
+    },
+    {
+      "start_sec": 75.0,
+      "end_sec": 80.0,
+      "loudness_db": -17.695,
+      "peak_db": -1.513,
+      "z_score": 0.3665,
+      "normalized": 0.5611,
+      "percentile": 0.5274
+    },
+    {
+      "start_sec": 80.0,
+      "end_sec": 85.0,
+      "loudness_db": -17.658,
+      "peak_db": 0.0,
+      "z_score": 0.3738,
+      "normalized": 0.5623,
+      "percentile": 0.5411
+    },
+    {
+      "start_sec": 85.0,
+      "end_sec": 90.0,
+      "loudness_db": -16.906,
+      "peak_db": -0.791,
+      "z_score": 0.5225,
+      "normalized": 0.5871,
+      "percentile": 0.6507
+    },
+    {
+      "start_sec": 90.0,
+      "end_sec": 95.0,
+      "loudness_db": -17.236,
+      "peak_db": -0.731,
+      "z_score": 0.4574,
+      "normalized": 0.5762,
+      "percentile": 0.6096
+    },
+    {
+      "start_sec": 95.0,
+      "end_sec": 100.0,
+      "loudness_db": -19.602,
+      "peak_db": -0.822,
+      "z_score": -0.0106,
+      "normalized": 0.4982,
+      "percentile": 0.4041
+    },
+    {
+      "start_sec": 100.0,
+      "end_sec": 105.0,
+      "loudness_db": -19.651,
+      "peak_db": -3.49,
+      "z_score": -0.0204,
+      "normalized": 0.4966,
+      "percentile": 0.3904
+    },
+    {
+      "start_sec": 105.0,
+      "end_sec": 110.0,
+      "loudness_db": -15.028,
+      "peak_db": 0.0,
+      "z_score": 0.894,
+      "normalized": 0.649,
+      "percentile": 0.8836
+    },
+    {
+      "start_sec": 110.0,
+      "end_sec": 115.0,
+      "loudness_db": -20.304,
+      "peak_db": -0.393,
+      "z_score": -0.1495,
+      "normalized": 0.4751,
+      "percentile": 0.3219
+    },
+    {
+      "start_sec": 115.0,
+      "end_sec": 120.0,
+      "loudness_db": -17.369,
+      "peak_db": -0.608,
+      "z_score": 0.431,
+      "normalized": 0.5718,
+      "percentile": 0.5685
+    },
+    {
+      "start_sec": 120.0,
+      "end_sec": 125.0,
+      "loudness_db": -17.168,
+      "peak_db": 0.0,
+      "z_score": 0.4707,
+      "normalized": 0.5784,
+      "percentile": 0.6233
+    },
+    {
+      "start_sec": 125.0,
+      "end_sec": 130.0,
+      "loudness_db": -20.922,
+      "peak_db": -1.248,
+      "z_score": -0.2717,
+      "normalized": 0.4547,
+      "percentile": 0.2671
+    },
+    {
+      "start_sec": 130.0,
+      "end_sec": 135.0,
+      "loudness_db": -14.578,
+      "peak_db": 0.0,
+      "z_score": 0.983,
+      "normalized": 0.6638,
+      "percentile": 0.911
+    },
+    {
+      "start_sec": 135.0,
+      "end_sec": 140.0,
+      "loudness_db": -15.724,
+      "peak_db": 0.0,
+      "z_score": 0.7565,
+      "normalized": 0.6261,
+      "percentile": 0.8014
+    },
+    {
+      "start_sec": 140.0,
+      "end_sec": 145.0,
+      "loudness_db": -13.16,
+      "peak_db": -0.555,
+      "z_score": 1.2635,
+      "normalized": 0.7106,
+      "percentile": 0.9795
+    },
+    {
+      "start_sec": 145.0,
+      "end_sec": 150.0,
+      "loudness_db": -14.697,
+      "peak_db": 0.0,
+      "z_score": 0.9596,
+      "normalized": 0.6599,
+      "percentile": 0.8973
+    },
+    {
+      "start_sec": 150.0,
+      "end_sec": 155.0,
+      "loudness_db": -12.929,
+      "peak_db": 0.0,
+      "z_score": 1.3092,
+      "normalized": 0.7182,
+      "percentile": 0.9932
+    },
+    {
+      "start_sec": 155.0,
+      "end_sec": 160.0,
+      "loudness_db": -15.437,
+      "peak_db": 0.0,
+      "z_score": 0.8132,
+      "normalized": 0.6355,
+      "percentile": 0.8288
+    },
+    {
+      "start_sec": 160.0,
+      "end_sec": 165.0,
+      "loudness_db": -16.404,
+      "peak_db": -0.973,
+      "z_score": 0.6219,
+      "normalized": 0.6037,
+      "percentile": 0.7192
+    },
+    {
+      "start_sec": 165.0,
+      "end_sec": 170.0,
+      "loudness_db": -20.704,
+      "peak_db": -4.737,
+      "z_score": -0.2286,
+      "normalized": 0.4619,
+      "percentile": 0.2808
+    },
+    {
+      "start_sec": 170.0,
+      "end_sec": 175.0,
+      "loudness_db": -17.321,
+      "peak_db": -2.267,
+      "z_score": 0.4405,
+      "normalized": 0.5734,
+      "percentile": 0.5822
+    },
+    {
+      "start_sec": 175.0,
+      "end_sec": 180.0,
+      "loudness_db": -14.097,
+      "peak_db": 0.0,
+      "z_score": 1.0781,
+      "normalized": 0.6797,
+      "percentile": 0.9521
+    },
+    {
+      "start_sec": 180.0,
+      "end_sec": 185.0,
+      "loudness_db": -14.374,
+      "peak_db": -0.537,
+      "z_score": 1.0234,
+      "normalized": 0.6706,
+      "percentile": 0.9247
+    },
+    {
+      "start_sec": 185.0,
+      "end_sec": 190.0,
+      "loudness_db": -14.091,
+      "peak_db": -0.547,
+      "z_score": 1.0793,
+      "normalized": 0.6799,
+      "percentile": 0.9658
+    },
+    {
+      "start_sec": 190.0,
+      "end_sec": 195.0,
+      "loudness_db": -16.609,
+      "peak_db": -0.31,
+      "z_score": 0.5813,
+      "normalized": 0.5969,
+      "percentile": 0.6918
+    },
+    {
+      "start_sec": 195.0,
+      "end_sec": 200.0,
+      "loudness_db": -28.887,
+      "peak_db": -12.394,
+      "z_score": -1.8471,
+      "normalized": 0.1921,
+      "percentile": 0.0616
+    },
+    {
+      "start_sec": 200.0,
+      "end_sec": 205.0,
+      "loudness_db": -22.335,
+      "peak_db": -5.351,
+      "z_score": -0.5512,
+      "normalized": 0.4081,
+      "percentile": 0.226
+    },
+    {
+      "start_sec": 205.0,
+      "end_sec": 210.0,
+      "loudness_db": -17.068,
+      "peak_db": -3.306,
+      "z_score": 0.4905,
+      "normalized": 0.5817,
+      "percentile": 0.637
+    },
+    {
+      "start_sec": 210.0,
+      "end_sec": 215.0,
+      "loudness_db": -16.479,
+      "peak_db": -2.612,
+      "z_score": 0.6072,
+      "normalized": 0.6012,
+      "percentile": 0.7055
+    },
+    {
+      "start_sec": 215.0,
+      "end_sec": 220.0,
+      "loudness_db": -20.38,
+      "peak_db": -4.207,
+      "z_score": -0.1645,
+      "normalized": 0.4726,
+      "percentile": 0.3082
+    },
+    {
+      "start_sec": 220.0,
+      "end_sec": 225.0,
+      "loudness_db": -16.15,
+      "peak_db": -0.603,
+      "z_score": 0.6721,
+      "normalized": 0.612,
+      "percentile": 0.774
+    },
+    {
+      "start_sec": 225.0,
+      "end_sec": 230.0,
+      "loudness_db": -17.771,
+      "peak_db": -0.083,
+      "z_score": 0.3515,
+      "normalized": 0.5586,
+      "percentile": 0.4863
+    },
+    {
+      "start_sec": 230.0,
+      "end_sec": 235.0,
+      "loudness_db": -19.347,
+      "peak_db": -0.377,
+      "z_score": 0.0397,
+      "normalized": 0.5066,
+      "percentile": 0.4178
+    },
+    {
+      "start_sec": 235.0,
+      "end_sec": 240.0,
+      "loudness_db": -21.742,
+      "peak_db": -2.932,
+      "z_score": -0.4339,
+      "normalized": 0.4277,
+      "percentile": 0.2397
+    },
+    {
+      "start_sec": 240.0,
+      "end_sec": 245.0,
+      "loudness_db": -24.759,
+      "peak_db": -2.056,
+      "z_score": -1.0306,
+      "normalized": 0.3282,
+      "percentile": 0.1301
+    },
+    {
+      "start_sec": 245.0,
+      "end_sec": 250.0,
+      "loudness_db": -22.356,
+      "peak_db": -1.195,
+      "z_score": -0.5554,
+      "normalized": 0.4074,
+      "percentile": 0.2123
+    },
+    {
+      "start_sec": 250.0,
+      "end_sec": 255.0,
+      "loudness_db": -27.704,
+      "peak_db": -4.697,
+      "z_score": -1.6132,
+      "normalized": 0.2311,
+      "percentile": 0.0753
+    },
+    {
+      "start_sec": 255.0,
+      "end_sec": 260.0,
+      "loudness_db": -36.472,
+      "peak_db": -8.37,
+      "z_score": -3.3473,
+      "normalized": 0.0,
+      "percentile": 0.0205
+    },
+    {
+      "start_sec": 260.0,
+      "end_sec": 265.0,
+      "loudness_db": -38.207,
+      "peak_db": -15.557,
+      "z_score": -3.6906,
+      "normalized": 0.0,
+      "percentile": 0.0068
+    },
+    {
+      "start_sec": 265.0,
+      "end_sec": 270.0,
+      "loudness_db": -31.942,
+      "peak_db": -11.515,
+      "z_score": -2.4514,
+      "normalized": 0.0914,
+      "percentile": 0.0342
+    },
+    {
+      "start_sec": 270.0,
+      "end_sec": 275.0,
+      "loudness_db": -26.905,
+      "peak_db": -4.645,
+      "z_score": -1.4552,
+      "normalized": 0.2575,
+      "percentile": 0.1027
+    },
+    {
+      "start_sec": 275.0,
+      "end_sec": 280.0,
+      "loudness_db": -16.79,
+      "peak_db": 0.0,
+      "z_score": 0.5455,
+      "normalized": 0.5909,
+      "percentile": 0.6644
+    },
+    {
+      "start_sec": 280.0,
+      "end_sec": 285.0,
+      "loudness_db": -20.485,
+      "peak_db": 0.0,
+      "z_score": -0.1853,
+      "normalized": 0.4691,
+      "percentile": 0.2945
+    },
+    {
+      "start_sec": 285.0,
+      "end_sec": 290.0,
+      "loudness_db": -24.861,
+      "peak_db": -2.924,
+      "z_score": -1.0509,
+      "normalized": 0.3249,
+      "percentile": 0.1164
+    },
+    {
+      "start_sec": 290.0,
+      "end_sec": 295.0,
+      "loudness_db": -18.77,
+      "peak_db": 0.0,
+      "z_score": 0.154,
+      "normalized": 0.5257,
+      "percentile": 0.4452
+    },
+    {
+      "start_sec": 295.0,
+      "end_sec": 300.0,
+      "loudness_db": -20.195,
+      "peak_db": -1.578,
+      "z_score": -0.128,
+      "normalized": 0.4787,
+      "percentile": 0.3493
+    },
+    {
+      "start_sec": 300.0,
+      "end_sec": 305.0,
+      "loudness_db": -23.99,
+      "peak_db": -1.599,
+      "z_score": -0.8786,
+      "normalized": 0.3536,
+      "percentile": 0.1575
+    },
+    {
+      "start_sec": 305.0,
+      "end_sec": 310.0,
+      "loudness_db": -17.97,
+      "peak_db": -0.885,
+      "z_score": 0.3121,
+      "normalized": 0.552,
+      "percentile": 0.4726
+    },
+    {
+      "start_sec": 310.0,
+      "end_sec": 315.0,
+      "loudness_db": -24.61,
+      "peak_db": -6.47,
+      "z_score": -1.0011,
+      "normalized": 0.3332,
+      "percentile": 0.1438
+    },
+    {
+      "start_sec": 315.0,
+      "end_sec": 320.0,
+      "loudness_db": -23.644,
+      "peak_db": -5.756,
+      "z_score": -0.8101,
+      "normalized": 0.365,
+      "percentile": 0.1712
+    },
+    {
+      "start_sec": 320.0,
+      "end_sec": 325.0,
+      "loudness_db": -20.02,
+      "peak_db": -1.488,
+      "z_score": -0.0933,
+      "normalized": 0.4845,
+      "percentile": 0.363
+    },
+    {
+      "start_sec": 325.0,
+      "end_sec": 330.0,
+      "loudness_db": -21.029,
+      "peak_db": -2.105,
+      "z_score": -0.2929,
+      "normalized": 0.4512,
+      "percentile": 0.2534
+    },
+    {
+      "start_sec": 330.0,
+      "end_sec": 335.0,
+      "loudness_db": -29.943,
+      "peak_db": -10.564,
+      "z_score": -2.0559,
+      "normalized": 0.1573,
+      "percentile": 0.0479
+    },
+    {
+      "start_sec": 335.0,
+      "end_sec": 340.0,
+      "loudness_db": -27.16,
+      "peak_db": -2.021,
+      "z_score": -1.5056,
+      "normalized": 0.2491,
+      "percentile": 0.089
+    },
+    {
+      "start_sec": 340.0,
+      "end_sec": 345.0,
+      "loudness_db": -20.242,
+      "peak_db": -1.241,
+      "z_score": -0.1373,
+      "normalized": 0.4771,
+      "percentile": 0.3356
+    },
+    {
+      "start_sec": 345.0,
+      "end_sec": 350.0,
+      "loudness_db": -22.36,
+      "peak_db": -5.778,
+      "z_score": -0.5561,
+      "normalized": 0.4073,
+      "percentile": 0.1986
+    },
+    {
+      "start_sec": 350.0,
+      "end_sec": 355.0,
+      "loudness_db": -17.306,
+      "peak_db": -1.575,
+      "z_score": 0.4435,
+      "normalized": 0.5739,
+      "percentile": 0.5959
+    },
+    {
+      "start_sec": 355.0,
+      "end_sec": 360.0,
+      "loudness_db": -15.627,
+      "peak_db": -2.776,
+      "z_score": 0.7755,
+      "normalized": 0.6293,
+      "percentile": 0.8151
+    },
+    {
+      "start_sec": 360.0,
+      "end_sec": 365.0,
+      "loudness_db": -16.192,
+      "peak_db": -2.682,
+      "z_score": 0.6638,
+      "normalized": 0.6106,
+      "percentile": 0.7603
+    }
+  ],
+  "summary_run_ledger": {
+    "schema_version": "summary_run_ledger.v1",
+    "run_id": "13722712_20260615_스타2 캠페인 자유의 날개 탬스크 아니고 탬레이너 입니다.. ٩(●'▿'●)۶",
+    "path": "output\\summary_run_ledger.jsonl"
+  }
+}

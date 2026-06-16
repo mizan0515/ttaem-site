@@ -26,6 +26,15 @@
     display: inline-flex !important; align-items: center; gap: 8px; flex-wrap: wrap;
     margin-top: 14px; padding: 0; border: 0; border-radius: 0; background: transparent;
   }
+  .report-editor-entry .editor-entry-status {
+    display: inline-flex; align-items: center; min-height: 16px;
+    color: var(--muted); font-size: 12px; line-height: 1.45;
+  }
+  .report-editor-entry[data-editor-entry-state="installed"] .editor-entry-status { color: var(--accent); }
+  .report-editor-entry[data-editor-entry-state="missing"] .editor-entry-status,
+  .report-editor-entry[data-editor-entry-state="fallback"] .editor-entry-status { color: #a9b1d6; }
+  .report-editor-entry[data-editor-entry-state="loading"] .editor-entry-status { color: var(--accent-warm); }
+  .report-editor-entry[data-editor-entry-state="error"] .editor-entry-status { color: #f7768e; }
   .report-editor-entry .editor-jump-link {
     display: inline-flex !important; align-items: center; justify-content: center;
     width: 38px; min-width: 38px; min-height: 38px; padding: 0 !important;

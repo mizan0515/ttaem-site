@@ -1,0 +1,7164 @@
+{
+  "video_no": "13722141",
+  "title": "스타2 캠페인 자유의 날개 탬스크 아니고 탬레이너 입니다.. ٩(●'▿'●)۶",
+  "channel": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+  "platform": "chzzk",
+  "duration": 23058,
+  "publish_date": "2026-06-15 16:46:47",
+  "category": "스타크래프트 II : 자유의 날개",
+  "thumbnail_url": null,
+  "total_chats": 43003,
+  "highlight_count": 25,
+  "highlights": [
+    {
+      "sec": 11050,
+      "composite": 1.0,
+      "count": 119,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_2a0b89fd0393",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 11050
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 11050,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 11640,
+      "composite": 1.0,
+      "count": 127,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_4d73fbf566d5",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 11640
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 11640,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 13040,
+      "composite": 1.0,
+      "count": 114,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_a5c76cd93d6c",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 13040
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 13040,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 22170,
+      "composite": 1.0,
+      "count": 115,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_6b8869cc4d41",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 22170
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 22170,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 4560,
+      "composite": 1.0,
+      "count": 97,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_405d56709427",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4560
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4560,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 3180,
+      "composite": 1.0,
+      "count": 90,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_801b16816bef",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 3180
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 3180,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 8320,
+      "composite": 1.0,
+      "count": 119,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_0ac4483494b1",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 8320
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 6098,
+      "composite": 0.9489,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_06b077560293",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6098
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 6098,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 16060,
+      "composite": 0.9439,
+      "count": 97,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_da35745e7005",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 16060
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 5532,
+      "composite": 0.9266,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_40d8848afd48",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5532
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5532,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 19870,
+      "composite": 0.9173,
+      "count": 101,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_4e73d1816858",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 19870
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 5878,
+      "composite": 0.8918,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_8b4daba56701",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5878
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5878,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 17020,
+      "composite": 0.8747,
+      "count": 91,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_be49b95673dd",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 17020
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 11530,
+      "composite": 0.872,
+      "count": 96,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_e49bf028256a",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 11530
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 23020,
+      "composite": 0.871,
+      "count": 90,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_f7bbe4cc9303",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 23020
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 9068,
+      "composite": 0.8585,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_2b13875ba06f",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 9068
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 9068,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 9508,
+      "composite": 0.809,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_cde78c14dd4d",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 9508
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 9508,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 19168,
+      "composite": 0.8088,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_d3fa10b4b2a8",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 19168
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 19168,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 21212,
+      "composite": 0.8087,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_63c209483618",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 21212
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 21212,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 15140,
+      "composite": 0.8086,
+      "count": 89,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_6df56bfe3a7c",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 15140
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 3962,
+      "composite": 0.8039,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_bf0e4eb6f1fd",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 3962
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 3962,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 18652,
+      "composite": 0.8001,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_ef3c17def326",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 18652
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 18652,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 6348,
+      "composite": 0.7997,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_e652ea1eacb8",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6348
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 6348,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 21412,
+      "composite": 0.7956,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_23e7fead0320",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 21412
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 21412,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 5192,
+      "composite": 0.7952,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_447888fc6a1b",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5192
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5192,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    }
+  ],
+  "segment_ledger_schema_version": 1,
+  "segment_ledger": [
+    {
+      "segment_id": "seg_summary_fc0e2956960a",
+      "kind": "summary",
+      "section": "summary",
+      "index": 1,
+      "timecode": "",
+      "start_sec": null,
+      "end_sec": null,
+      "title": "스타2 캠페인 자유의 날개 탬스크 아니고 탬레이너 입니다.. ٩(●'▿'●)۶",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "summary",
+          "fields": [
+            "title",
+            "hashtags",
+            "pull_quote"
+          ]
+        }
+      ],
+      "risk_flags": [],
+      "hashtags": [
+        "탬스크",
+        "스타크래프트",
+        "밈드립"
+      ],
+      "pull_quote": "레이너로 시작했는데, 의료선 유기와 북벌 실패와 오딘 폭주를 거치며 결국 방송 전체가 탬스크 서사가 돼버렸다."
+    },
+    {
+      "segment_id": "seg_timeline_301d5baa0b49",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 1,
+      "timecode": "00:09:06",
+      "start_sec": 546,
+      "end_sec": null,
+      "title": "본체급 소환수 아쉬움이 초반 잡담을 장악해버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:09:06"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"패치해라 우우\" \"소환수 개성이 하나도 없음 너무 평범함\" \"진짜 소환수 외형만 바뀌면 한다\""
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 546,
+          "role": "proximity_signal",
+          "clip_uid": "KZqAqae2HH",
+          "title": "하품 ㄱㅇㅇ",
+          "like_count": 7,
+          "play_count": 878
+        }
+      ],
+      "risk_flags": [],
+      "summary": "방송 초반에는 게임 소환수 외형 이야기가 길게 이어졌다. 탬탬버린은 “소환수를 본체급으로 설정한 거면 더 열심히 좀 만들지.”라며 외형과 연출이 아쉽다고 정리했고, 보스 포획형 소환수였으면 훨씬 매력적이었을 거라는 상상까지 붙었다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_5884b43fdf69",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 2,
+      "timecode": "00:31:06",
+      "start_sec": 1866,
+      "end_sec": null,
+      "title": "스타2 전에 첩자 드립 해명 타임으로 분위기 진지해짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:31:06"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"탬첩\" \"아 기억난다\" \"롤판 어렵네..\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "스타2 캠페인에 들어가기 전, 전날 롤 같이보기에서 나온 “첩자” 표현을 한 번은 짚고 가야 한다며 해명 타임이 열렸다. 평소 방송식 밈·드립으로 쓴 말이었지만, 특정 팀 팬에게는 비하처럼 보일 수 있다는 점을 인정하며 “서로 그냥 분노만 남을 뿐이야. 증오의 연쇄가 되는 거잖아.”라고 정리했다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_eac91a0a270b",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 3,
+      "timecode": "00:53:35",
+      "start_sec": 3215,
+      "end_sec": null,
+      "title": "보상도 없는데 다시 깬 사람, 스타2 사랑청년으로 들켜버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:53:35"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"탬스크황제에게 충성을\" \"아 0시는 없어요\" \"에이제국을 얼마나 사랑하신겁니까?\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 3217.5,
+          "delta_sec": 2,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "휴방 때 돈을 벌려고 다시 깬 미션이 사실 추가 보상이 없었다는 사실이 드러났다. “레이너가 이렇게 바보일 리가 없으니, 당신은 텐스크입니다.”라는 자조까지 나오며 방송 제목의 탬스크/탬레이너 밈·드립이 본격적으로 살아났다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_4837b110d133",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 4,
+      "timecode": "01:02:21",
+      "start_sec": 3741,
+      "end_sec": null,
+      "title": "의료선 얌생이 발견하자마자 수송 조작에서 무너져버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:02:21"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"느~긋\" \"의료선에 태워잇!!!!!!!!!!!!!!!!!!!!!!!!\" \"설명 제대로 안들어썽\""
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 3741,
+          "role": "proximity_signal",
+          "clip_uid": "jgUCnTsMRX",
+          "title": "의료선ㅋㅋㅋ",
+          "like_count": 7,
+          "play_count": 1118
+        }
+      ],
+      "risk_flags": [],
+      "summary": "의료선으로 병력을 옮겨 데이터 저장소를 치는 방식이 핵심임을 깨닫고 “이렇게 얌생이 하는 거구나!”라고 반응했다. 그러나 곧 “태우는 거 아니에요? 그럼 어떻게 많이 태워요?”로 막히면서 의료선 탑승과 병력 운용이 한꺼번에 웃음 포인트가 됐다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_a0511ddccfa4",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 5,
+      "timecode": "01:15:40",
+      "start_sec": 4540,
+      "end_sec": null,
+      "title": "최악의 사령관 탬스크 재앙이 탄생해버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:15:40"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"탬 스 크\" \"인간의 재앙 탬스크\" \"최악의 사령관\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 4537.5,
+          "delta_sec": 2,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "의료선 운용과 목표 판단이 꼬이면서 병력이 위험해지자 채팅이 탬스크와 탬재앙 밈·드립으로 폭발했다. 탬탬버린은 “나 알았다! 나 이거 알았어!”라고 외쳤지만 곧 “아니 이거 미션이 어렵네”로 현실을 받아들였다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_0280e9960f31",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 6,
+      "timecode": "01:32:14",
+      "start_sec": 5534,
+      "end_sec": null,
+      "title": "캐리건 버려진 장면이 탬스크 서사와 찰떡이 돼버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:32:14"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"탬스크 이 나뿌자식 그러지 마!\" \"암만봐도 탬스크다\" \"역시 탬스크!\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 5532.5,
+          "delta_sec": 2,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "시네마틱에서 캐리건이 등장하자 “아, 캐리건!” 하고 반응했고, 곧 “그 장면이구나! 버린 거!”라며 핵심 배신 장면을 짚었다. 직전 미션에서 유기와 수송 사고가 이어졌던 탓에, 레이너보다 탬스크가 더 어울린다는 방송식 해석이 자연스럽게 붙었다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_033ec267f053",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 7,
+      "timecode": "02:30:50",
+      "start_sec": 9050,
+      "end_sec": null,
+      "title": "빈손 돌입이 마음의 선물 밈·드립으로 터져버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "02:30:50"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"마음의 선물이야\" \"마음의 선물이야~\" \"섬광탄이다!\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 9067.5,
+          "delta_sec": 18,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "보호막이 꺼진 기함에 접근하라는 지시와 함께 “사령관님, 이건 바보같은 행동입니다”라는 대사가 나오자, 탬탬버린은 “지금 저희 뭐 없는데?”라며 불안해했다. 채팅은 사실상 빈손으로 들어가는 상황을 “마음의 선물”로 받아치며 컷신 긴장감을 개그로 바꿨다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_88a0ca0b6911",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 8,
+      "timecode": "03:03:45",
+      "start_sec": 11025,
+      "end_sec": null,
+      "title": "고속열차 하나 놓치고 북벌 실패론까지 가버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "03:03:45"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"아 열차 개빠른거 보소 ㅋㅋㅋㅋ\" \"고속열차 ㅋㅋ\" \"북벌하러 갔다가 이게 망했네\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "열차강도 미션에서는 자원과 코브라 운용이 꼬였고, 열차가 빨라지자 따라잡기도 어려워졌다. 무리하게 위로 진출한 선택은 “북벌”로 불리며, “북벌은 곧 자살이다”라는 교훈성 밈·드립까지 굳어졌다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_0105a061247b",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 9,
+      "timecode": "03:36:45",
+      "start_sec": 13005,
+      "end_sec": null,
+      "title": "UNN 논평이 갑자기 맞는 말 해서 탬스크 논쟁 터짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "03:36:45"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"왜 바른말함?\" \"왠일로 맞는말을\" \"탬스크와 템레이너는 종이 한장차이\""
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 13005,
+          "role": "proximity_signal",
+          "clip_uid": "TSKKrPMSrs",
+          "title": "당신에겐 양심도없습니까?",
+          "like_count": 12,
+          "play_count": 1206
+        }
+      ],
+      "risk_flags": [],
+      "summary": "열차 미션 뒤 UNN 논평이 맹스크 황제와 짐 레이너를 비교하며 의외로 중립적인 듯한 말을 하자 채팅이 술렁였다. “왜 바른말함?” 반응에 이어 “양심도 없습니까?” 흐름까지 붙으면서, 방송 제목의 탬스크·탬레이너 구도가 다시 큰 웃음 포인트가 됐다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_f2918758aa64",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 10,
+      "timecode": "04:09:39",
+      "start_sec": 14979,
+      "end_sec": null,
+      "title": "타소니스 증거 공개로 맹스크 뻔뻔함이 폭로돼버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "04:09:39"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"연기 보소\" \"저렇게 뻔뻔해야 황제 해먹는구나\" \"와 탬스크\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "해독한 부관 기록에서 캐리건의 목소리와 타소니스 당시 녹음이 나오며, 맹스크가 저그를 불러들인 정황이 드러났다. 탬탬버린은 “이거 완전 대박 증거물 아니?”라고 받아들였고, 이어 뉴스에서 맹스크가 인류를 위한 일이었다고 포장하자 채팅은 뻔뻔함을 조롱했다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_e84cf1f20694",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 11,
+      "timecode": "04:16:55",
+      "start_sec": 15415,
+      "end_sec": null,
+      "title": "안 멈추는 오딘 때문에 금쪽이 케어 미션 돼버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "04:16:55"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"scv 8마리 제발\" \"벙커의 중요성\" \"망했죠 뭐\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "오딘이 등장하자 “오, 뭐야 이게 오딘이야?”라며 압도감을 느꼈지만, 타이커스가 멋대로 앞으로 나가며 상황이 급변했다. 탬탬버린은 “금쪽이 어떡하지?”라며 수리와 방어를 동시에 챙겨야 했고, 채팅은 재시작과 벙커 드립으로 실패 위기를 놀렸다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_af754a06ad84",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 12,
+      "timecode": "04:49:44",
+      "start_sec": 17384,
+      "end_sec": null,
+      "title": "훔친 오딘으로 UNN 방송국 장악 작전 시작됨",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "04:49:44"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"오딘 캐 큰거 봐 ㅋㅋ\" \"오딘 졸라쎄\" \"와 오딘이 다 밀어버리네\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "오딘을 손에 넣은 뒤 코랄의 UNN 방송국을 장악해 맹스크의 전쟁 범죄를 폭로하는 미션으로 넘어갔다. 전송탑을 지키는 다방면 방어, 오딘의 압도적인 화력, F2 조작의 편함과 저주가 한꺼번에 몰리며 후반부 전투가 크게 바빠졌다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_64d17dd2c7e2",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 13,
+      "timecode": "05:22:53",
+      "start_sec": 19373,
+      "end_sec": null,
+      "title": "모든 전송 완료되며 맹스크 언론전이 뒤집혀버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "05:22:53"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"첫번째 방송 전송 완료!\" \"레이너의 머리를 가져, 알았나?\" \"모든 전송이 완료됐습니다.\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "방송탑 전송이 모두 끝나자 “시민들이 이제 어떻게 생각하나 보자고.”라는 대사와 함께 폭로 작전이 성공했다. 탬탬버린은 “이제 다 알아버렸구나! 다 내가 송출했구나!”라고 반응했고, 맹스크가 쓰던 언론이라는 무기가 레이너 쪽으로 되돌아왔다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_31aedcfd3e5c",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 14,
+      "timecode": "05:31:43",
+      "start_sec": 19903,
+      "end_sec": null,
+      "title": "마지막 유물 미션이 전투순양함과 섬맵 수송 문제로 꼬여버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "05:31:43"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"왔다 배틀크루져\" \"배틀이다\" \"전 투 순 양 함\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "젤나가 함선의 분열장 생성기를 파괴해야 하는 임무가 열리며 전투순양함과 야마토포가 등장했다. 하지만 섬맵 구조, 자원 수급, 배틀 용어 혼란이 겹치면서 “배틀을 뽑으라고? 배털이 뭔데?” 같은 후반부 특유의 허둥지둥 운영이 이어졌다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_38563c9bdfbd",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 15,
+      "timecode": "06:09:10",
+      "start_sec": 22150,
+      "end_sec": null,
+      "title": "공허 무시 돌진하다가 시공으로 쏘옥 빨려 들어감",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "06:09:10"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"공허 무시하고 간다구?\" \"어어 거기는\" \"시공속으로~\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 22167.5,
+          "delta_sec": 18,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "후반 최종 구간에서는 공허와 모선 기믹, 가스 부족, 전투순양함 유지가 한꺼번에 겹쳤다. 병력이 사라지자 죽은 줄 알았지만 차원 이동 기믹임을 뒤늦게 알고, 마지막에는 병력이 빨려 들어가는 장면에 채팅이 “시공” 드립으로 폭발했다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_f202b3b52c77",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 1,
+      "timecode": "01:02:21~01:15:40",
+      "start_sec": 3741,
+      "end_sec": 4540,
+      "title": "의료선 얌생이 발견에서 탬스크 재앙 탄생까지",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "01:02:21~01:15:40"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "시청자 클립 anchor와 채팅 웃음 반응이 모두 붙은 구간이고, 조작 이해 → 자신감 → 유기 사고 → 탬스크 밈·드립 폭발까지 짧은 서사가 완성된다."
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 3741,
+          "role": "proximity_signal",
+          "clip_uid": "jgUCnTsMRX",
+          "title": "의료선ㅋㅋㅋ",
+          "like_count": 7,
+          "play_count": 1118
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 3962.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "시청자 클립 anchor와 채팅 웃음 반응이 모두 붙은 구간이고, 조작 이해 → 자신감 → 유기 사고 → 탬스크 밈·드립 폭발까지 짧은 서사가 완성된다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_5ac226decd2d",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 2,
+      "timecode": "03:03:45~03:36:45",
+      "start_sec": 11025,
+      "end_sec": 13005,
+      "title": "고속열차 북벌 실패와 UNN 바른말 논평",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "03:03:45~03:36:45"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "열차 미션의 반복 실패가 “북벌”이라는 말로 정리된 뒤, UNN 논평이 갑자기 맞는 말처럼 들리는 반전까지 이어져 방송 제목의 탬스크/탬레이너 구도와 잘 맞는다."
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 13005,
+          "role": "proximity_signal",
+          "clip_uid": "TSKKrPMSrs",
+          "title": "당신에겐 양심도없습니까?",
+          "like_count": 12,
+          "play_count": 1206
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 11647.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "열차 미션의 반복 실패가 “북벌”이라는 말로 정리된 뒤, UNN 논평이 갑자기 맞는 말처럼 들리는 반전까지 이어져 방송 제목의 탬스크/탬레이너 구도와 잘 맞는다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_d1053fe34c13",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 3,
+      "timecode": "04:16:55~04:43:47",
+      "start_sec": 15415,
+      "end_sec": 17027,
+      "title": "안 멈추는 오딘 금쪽이 케어",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "04:16:55~04:43:47"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "오딘의 압도적인 첫인상과 타이커스의 제멋대로 돌진, 수리 압박, 핵 폭죽, “지가 죽였어 내가 한 게 아니고”식 책임 회피가 클립 단위로 잘 끊긴다."
+        }
+      ],
+      "risk_flags": [],
+      "reason": "오딘의 압도적인 첫인상과 타이커스의 제멋대로 돌진, 수리 압박, 핵 폭죽, “지가 죽였어 내가 한 게 아니고”식 책임 회피가 클립 단위로 잘 끊긴다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_ef9692a39402",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 4,
+      "timecode": "04:49:44~05:25:04",
+      "start_sec": 17384,
+      "end_sec": 19504,
+      "title": "훔친 오딘으로 맹스크 방송국 털어버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "04:49:44~05:25:04"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "전송탑 방어와 오딘 쇼케이스, F2 조작 스트레스, 모든 전송 완료까지 후반부 메인 스토리 성과가 가장 선명하게 드러난다."
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 18652.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "전송탑 방어와 오딘 쇼케이스, F2 조작 스트레스, 모든 전송 완료까지 후반부 메인 스토리 성과가 가장 선명하게 드러난다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_7230ceb2abd9",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 5,
+      "timecode": "06:09:10~06:23:20",
+      "start_sec": 22150,
+      "end_sec": 23000,
+      "title": "공허 무시 돌진에서 시공으로 쏘옥",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "06:09:10~06:23:20"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "후반 조용한 정리가 아니라 모선 기믹과 가스난, 병력 실종 착각, “시공속으로~” 채팅 반응까지 살아 있는 엔딩형 하이라이트다."
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 22167.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "후반 조용한 정리가 아니라 모선 기믹과 가스난, 병력 실종 착각, “시공속으로~” 채팅 반응까지 살아 있는 엔딩형 하이라이트다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_83b09b1760f6",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 6,
+      "timecode": "00:09:06~00:09:06",
+      "start_sec": 546,
+      "end_sec": 546,
+      "title": "하품 ㄱㅇㅇ",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "00:09:06~00:09:06"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "시청자가 직접 클립으로 잘라낸 호평 신호 시점."
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "section": "highlights",
+          "label": "[INJECTED · 시청자 클립 7/878]",
+          "role": "deterministic_injection"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 546,
+          "role": "proximity_signal",
+          "clip_uid": "KZqAqae2HH",
+          "title": "하품 ㄱㅇㅇ",
+          "like_count": 7,
+          "play_count": 878
+        }
+      ],
+      "risk_flags": [
+        "injected_viewer_clip_anchor"
+      ],
+      "reason": "시청자가 직접 클립으로 잘라낸 호평 신호 시점.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_chapter_ebb9fc653721",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 1,
+      "timecode": "00:09:06",
+      "start_sec": 546,
+      "end_sec": null,
+      "title": "소환수 외형 잡담 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:09:06"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 546,
+          "role": "proximity_signal",
+          "clip_uid": "KZqAqae2HH",
+          "title": "하품 ㄱㅇㅇ",
+          "like_count": 7,
+          "play_count": 878
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_ea11960087e6",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 2,
+      "timecode": "00:31:06",
+      "start_sec": 1866,
+      "end_sec": null,
+      "title": "첩자 드립 해명 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:31:06"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_4e81e5eb7eec",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 3,
+      "timecode": "00:53:35",
+      "start_sec": 3215,
+      "end_sec": null,
+      "title": "스타2 캠페인 재개",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:53:35"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 3217.5,
+          "delta_sec": 2,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_e4f582f00d36",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 4,
+      "timecode": "01:02:21~01:15:40",
+      "start_sec": 3741,
+      "end_sec": 4540,
+      "title": "의료선 수송 미션 도전",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:02:21~01:15:40"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 3741,
+          "role": "proximity_signal",
+          "clip_uid": "jgUCnTsMRX",
+          "title": "의료선ㅋㅋㅋ",
+          "like_count": 7,
+          "play_count": 1118
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 3962.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_6f761584a7ec",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 5,
+      "timecode": "01:32:14",
+      "start_sec": 5534,
+      "end_sec": null,
+      "title": "캐리건 배신 장면 보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:32:14"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 5532.5,
+          "delta_sec": 2,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_d1a8ad06c440",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 6,
+      "timecode": "02:30:50",
+      "start_sec": 9050,
+      "end_sec": null,
+      "title": "기함 빈손 돌입 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "02:30:50"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 9067.5,
+          "delta_sec": 18,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_c1a282ea0e4c",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 7,
+      "timecode": "03:03:45~03:36:45",
+      "start_sec": 11025,
+      "end_sec": 13005,
+      "title": "열차강도 북벌 도전",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "03:03:45~03:36:45"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 13005,
+          "role": "proximity_signal",
+          "clip_uid": "TSKKrPMSrs",
+          "title": "당신에겐 양심도없습니까?",
+          "like_count": 12,
+          "play_count": 1206
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 11647.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_1af12bb3fd55",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 8,
+      "timecode": "03:36:45",
+      "start_sec": 13005,
+      "end_sec": null,
+      "title": "UNN 논평 보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "03:36:45"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 13005,
+          "role": "proximity_signal",
+          "clip_uid": "TSKKrPMSrs",
+          "title": "당신에겐 양심도없습니까?",
+          "like_count": 12,
+          "play_count": 1206
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_b616abf5ad63",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 9,
+      "timecode": "04:09:39",
+      "start_sec": 14979,
+      "end_sec": null,
+      "title": "타소니스 증거 공개",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "04:09:39"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_90f61a9f7f40",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 10,
+      "timecode": "04:16:55~04:43:47",
+      "start_sec": 15415,
+      "end_sec": 17027,
+      "title": "오딘 케어 미션 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "04:16:55~04:43:47"
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "segment_id": "seg_chapter_fe545fc26c24",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 11,
+      "timecode": "04:49:44~05:25:04",
+      "start_sec": 17384,
+      "end_sec": 19504,
+      "title": "UNN 방송국 장악 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "04:49:44~05:25:04"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 18652.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_acc35870fc3b",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 12,
+      "timecode": "05:22:53",
+      "start_sec": 19373,
+      "end_sec": null,
+      "title": "방송 전송 완료",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "05:22:53"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_e69381a4c57e",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 13,
+      "timecode": "05:31:43",
+      "start_sec": 19903,
+      "end_sec": null,
+      "title": "마지막 유물 미션 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "05:31:43"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_a62ebb1d8777",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 14,
+      "timecode": "06:09:10~06:23:20",
+      "start_sec": 22150,
+      "end_sec": 23000,
+      "title": "공허 시공 구간 도전",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "06:09:10~06:23:20"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 22167.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_highlight_candidate_2a0b89fd0393",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 1,
+      "timecode": "03:04:10",
+      "start_sec": 11050,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 11050
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 11050,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 11050,
+      "composite": 1.0,
+      "count": 119
+    },
+    {
+      "segment_id": "seg_highlight_candidate_4d73fbf566d5",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 2,
+      "timecode": "03:14:00",
+      "start_sec": 11640,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 11640
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 11640,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 11640,
+      "composite": 1.0,
+      "count": 127
+    },
+    {
+      "segment_id": "seg_highlight_candidate_a5c76cd93d6c",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 3,
+      "timecode": "03:37:20",
+      "start_sec": 13040,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 13040
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 13040,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 13040,
+      "composite": 1.0,
+      "count": 114
+    },
+    {
+      "segment_id": "seg_highlight_candidate_6b8869cc4d41",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 4,
+      "timecode": "06:09:30",
+      "start_sec": 22170,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 22170
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 22170,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 22170,
+      "composite": 1.0,
+      "count": 115
+    },
+    {
+      "segment_id": "seg_highlight_candidate_405d56709427",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 5,
+      "timecode": "01:16:00",
+      "start_sec": 4560,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4560
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4560,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 4560,
+      "composite": 1.0,
+      "count": 97
+    },
+    {
+      "segment_id": "seg_highlight_candidate_801b16816bef",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 6,
+      "timecode": "00:53:00",
+      "start_sec": 3180,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 3180
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 3180,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 3180,
+      "composite": 1.0,
+      "count": 90
+    },
+    {
+      "segment_id": "seg_highlight_candidate_0ac4483494b1",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 7,
+      "timecode": "02:18:40",
+      "start_sec": 8320,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 8320
+        }
+      ],
+      "risk_flags": [],
+      "sec": 8320,
+      "composite": 1.0,
+      "count": 119
+    },
+    {
+      "segment_id": "seg_highlight_candidate_06b077560293",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 8,
+      "timecode": "01:41:38",
+      "start_sec": 6098,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6098
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 6098,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 6098,
+      "composite": 0.9489,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_da35745e7005",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 9,
+      "timecode": "04:27:40",
+      "start_sec": 16060,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 16060
+        }
+      ],
+      "risk_flags": [],
+      "sec": 16060,
+      "composite": 0.9439,
+      "count": 97
+    },
+    {
+      "segment_id": "seg_highlight_candidate_40d8848afd48",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 10,
+      "timecode": "01:32:12",
+      "start_sec": 5532,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5532
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5532,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 5532,
+      "composite": 0.9266,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_4e73d1816858",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 11,
+      "timecode": "05:31:10",
+      "start_sec": 19870,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 19870
+        }
+      ],
+      "risk_flags": [],
+      "sec": 19870,
+      "composite": 0.9173,
+      "count": 101
+    },
+    {
+      "segment_id": "seg_highlight_candidate_8b4daba56701",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 12,
+      "timecode": "01:37:58",
+      "start_sec": 5878,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5878
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5878,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 5878,
+      "composite": 0.8918,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_be49b95673dd",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 13,
+      "timecode": "04:43:40",
+      "start_sec": 17020,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 17020
+        }
+      ],
+      "risk_flags": [],
+      "sec": 17020,
+      "composite": 0.8747,
+      "count": 91
+    },
+    {
+      "segment_id": "seg_highlight_candidate_e49bf028256a",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 14,
+      "timecode": "03:12:10",
+      "start_sec": 11530,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 11530
+        }
+      ],
+      "risk_flags": [],
+      "sec": 11530,
+      "composite": 0.872,
+      "count": 96
+    },
+    {
+      "segment_id": "seg_highlight_candidate_f7bbe4cc9303",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 15,
+      "timecode": "06:23:40",
+      "start_sec": 23020,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 23020
+        }
+      ],
+      "risk_flags": [],
+      "sec": 23020,
+      "composite": 0.871,
+      "count": 90
+    },
+    {
+      "segment_id": "seg_highlight_candidate_2b13875ba06f",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 16,
+      "timecode": "02:31:08",
+      "start_sec": 9068,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 9068
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 9068,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 9068,
+      "composite": 0.8585,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_cde78c14dd4d",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 17,
+      "timecode": "02:38:28",
+      "start_sec": 9508,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 9508
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 9508,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 9508,
+      "composite": 0.809,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_d3fa10b4b2a8",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 18,
+      "timecode": "05:19:28",
+      "start_sec": 19168,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 19168
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 19168,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 19168,
+      "composite": 0.8088,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_63c209483618",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 19,
+      "timecode": "05:53:32",
+      "start_sec": 21212,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 21212
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 21212,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 21212,
+      "composite": 0.8087,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_6df56bfe3a7c",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 20,
+      "timecode": "04:12:20",
+      "start_sec": 15140,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 15140
+        }
+      ],
+      "risk_flags": [],
+      "sec": 15140,
+      "composite": 0.8086,
+      "count": 89
+    },
+    {
+      "segment_id": "seg_highlight_candidate_bf0e4eb6f1fd",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 21,
+      "timecode": "01:06:02",
+      "start_sec": 3962,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 3962
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 3962,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 3962,
+      "composite": 0.8039,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_ef3c17def326",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 22,
+      "timecode": "05:10:52",
+      "start_sec": 18652,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 18652
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 18652,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 18652,
+      "composite": 0.8001,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_e652ea1eacb8",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 23,
+      "timecode": "01:45:48",
+      "start_sec": 6348,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6348
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 6348,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 6348,
+      "composite": 0.7997,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_23e7fead0320",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 24,
+      "timecode": "05:56:52",
+      "start_sec": 21412,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 21412
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 21412,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 21412,
+      "composite": 0.7956,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_447888fc6a1b",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 25,
+      "timecode": "01:26:32",
+      "start_sec": 5192,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5192
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5192,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 5192,
+      "composite": 0.7952,
+      "count": 0
+    }
+  ],
+  "processed_at": "2026-06-16T16:58:54.984072+09:00",
+  "evidence_verifier": {
+    "schema_version": "evidence_verifier.v1",
+    "status": "fail",
+    "summary": {
+      "checked_segments": 35,
+      "failure_count": 1,
+      "warning_count": 0
+    },
+    "findings": [
+      {
+        "code": "CHAPTER_READINESS_FAIL",
+        "severity": "error",
+        "message": "chapter readiness validator reported fail",
+        "source_fields": [
+          "chapter_readiness"
+        ],
+        "detail": {
+          "status": "fail",
+          "failure_reasons": []
+        }
+      }
+    ]
+  },
+  "summary_input_readiness": {
+    "schema_version": "summary_input_readiness.v1",
+    "status": "ready_with_gaps",
+    "quality_claim": "not_evaluated",
+    "items": [
+      {
+        "key": "srt",
+        "name": "자막 SRT",
+        "required": true,
+        "status": "present",
+        "reason": "요약 청크 입력으로 사용할 SRT가 있습니다.",
+        "retry_condition": "transcribe 단계가 SRT를 생성한 뒤 다시 요약합니다.",
+        "detail": {
+          "filename": "13722141_스타2 캠페인 자유의 날개 탬스크 아니고 탬레이너 입니다.. ٩(●'▿'●)۶_144p.srt",
+          "size_bytes": 219353
+        }
+      },
+      {
+        "key": "chat",
+        "name": "채팅",
+        "required": false,
+        "status": "present",
+        "reason": "채팅 신호가 요약 후보에 반영됩니다.",
+        "retry_condition": "채팅 수집이 VOD 끝까지 성공한 뒤 다시 요약합니다.",
+        "detail": {
+          "message_count": 43003,
+          "first_message_sec": 0.0,
+          "latest_message_sec": 23049.731,
+          "latest_message_hms": "06:24:09",
+          "expected_duration_sec": 23058.0,
+          "expected_duration_hms": "06:24:18",
+          "coverage_ratio": 0.9996,
+          "coverage_gap_sec": 8.269
+        }
+      },
+      {
+        "key": "community",
+        "name": "커뮤니티",
+        "required": false,
+        "status": "present",
+        "reason": "방송 외부 반응 후보가 있습니다.",
+        "retry_condition": "커뮤니티 수집 또는 수동 입력 뒤 다시 요약합니다.",
+        "detail": {
+          "post_count": 17
+        }
+      },
+      {
+        "key": "context_doc",
+        "name": "VOD 배경 맥락",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "관리자 배경 맥락 없이 요약합니다.",
+        "retry_condition": "work/<video_no>/<video_no>_context.md 작성 뒤 다시 요약합니다.",
+        "detail": {
+          "char_count": 0
+        }
+      },
+      {
+        "key": "timeline_comments",
+        "name": "시청자 시간표 댓글",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "자동 수집 가능한 시청자 시간표 댓글 없이 요약합니다.",
+        "retry_condition": "요약 직전 자동 댓글 수집을 다시 실행합니다. 브라우저 로그인/프로필 잠금 문제일 때만 work/<video_no>/<video_no>_timeline_comments.md 수동 fallback 을 사용합니다.",
+        "detail": {
+          "char_count": 0,
+          "timed_line_count": 0
+        }
+      },
+      {
+        "key": "streamer_vocab",
+        "name": "스트리머 어휘/lexicon",
+        "required": false,
+        "status": "present",
+        "reason": "고유명사/별명 보정 후보가 있습니다.",
+        "retry_condition": "streamer_vocab 저장 또는 lexicon 빌드 뒤 다시 요약합니다.",
+        "detail": {
+          "term_count": 30
+        }
+      },
+      {
+        "key": "manager_edit_lessons",
+        "name": "관리자 수정 사례",
+        "required": false,
+        "status": "present",
+        "reason": "이전 관리자 수정 사례가 프롬프트에 반영됩니다.",
+        "retry_condition": "관리자 저장 이력이 쌓인 뒤 다시 요약합니다.",
+        "detail": {
+          "lesson_count": 3
+        }
+      },
+      {
+        "key": "manager_fewshot_examples",
+        "name": "관리자 수정 few-shot",
+        "required": false,
+        "status": "present",
+        "reason": "검증된 관리자 수정 전/후 예시가 프롬프트에 반영됩니다.",
+        "retry_condition": "fewshot_injection_enabled=true 설정과 highlight_learning weak_positive 후보가 있는 상태에서 다시 요약합니다.",
+        "detail": {
+          "example_count": 3,
+          "fingerprint": "d32fb83cfd4e"
+        }
+      },
+      {
+        "key": "streamer_recent_context",
+        "name": "최근 공개 맥락",
+        "required": false,
+        "status": "partial",
+        "reason": "일부 공개 맥락 후보가 요약 보조 입력으로 반영됩니다.",
+        "retry_condition": "streamer_recent_context_enabled=true 후 공개 소스 수집을 다시 실행합니다. 실패해도 요약은 계속 진행됩니다.",
+        "detail": {
+          "item_count": 7,
+          "source_count": 2,
+          "sources": [
+            "fmkorea",
+            "chzzk_public"
+          ],
+          "diagnostic_status_counts": {
+            "failed_open": 1,
+            "ok": 2
+          }
+        }
+      },
+      {
+        "key": "user_clips",
+        "name": "시청자 클립",
+        "required": false,
+        "status": "present",
+        "reason": "시청자 클립 anchor 후보가 있습니다.",
+        "retry_condition": "viewer clip 수집/anchor 회수 뒤 다시 요약합니다.",
+        "detail": {
+          "total": 5,
+          "with_offset": 5,
+          "with_engagement": 5,
+          "status": "ok"
+        }
+      },
+      {
+        "key": "audio_peaks",
+        "name": "오디오 반응 피크",
+        "required": false,
+        "status": "present",
+        "reason": "오디오 반응 분석 결과가 있습니다.",
+        "retry_condition": "audio reaction 분석이 성공한 뒤 다시 요약합니다.",
+        "detail": {
+          "peak_count": 20,
+          "status": "available"
+        }
+      },
+      {
+        "key": "source_manifest",
+        "name": "요약 입력 manifest",
+        "required": true,
+        "status": "present",
+        "reason": "요약 입력 manifest가 계산되어 cache/재현성 기준이 있습니다.",
+        "retry_condition": "요약 cache manifest 계산 후 다시 확인합니다.",
+        "detail": {
+          "schema_version": 9,
+          "manifest_key_count": 22,
+          "has_summary_hash": false
+        }
+      },
+      {
+        "key": "segment_ledger",
+        "name": "segment/evidence ledger",
+        "required": false,
+        "status": "present",
+        "reason": "렌더링된 리포트의 segment ledger가 있습니다.",
+        "retry_condition": "summary Markdown parser/metadata generation을 확인한 뒤 다시 렌더링합니다.",
+        "detail": {
+          "segment_count": 61,
+          "kind_counts": {
+            "chapter": 14,
+            "highlight": 6,
+            "highlight_candidate": 25,
+            "summary": 1,
+            "timeline": 15
+          }
+        }
+      }
+    ]
+  },
+  "audio_waveform": {
+    "schema_version": "audio_waveform.v1",
+    "source": "audio_loudness_windows",
+    "sample_count": 720,
+    "max_points": 720,
+    "duration_sec": 23058.0,
+    "channels": "mono_mixed",
+    "unit": "relative_loudness_normalized_0_1",
+    "privacy_class": "public_safe",
+    "decision_rule": "waveform is timeline context only; it does not prove highlight importance",
+    "samples": [
+      {
+        "start_sec": 0.0,
+        "end_sec": 30.0,
+        "value": 0.2278
+      },
+      {
+        "start_sec": 30.0,
+        "end_sec": 60.0,
+        "value": 0.2031
+      },
+      {
+        "start_sec": 60.0,
+        "end_sec": 95.0,
+        "value": 0.2426
+      },
+      {
+        "start_sec": 95.0,
+        "end_sec": 125.0,
+        "value": 0.2762
+      },
+      {
+        "start_sec": 125.0,
+        "end_sec": 160.0,
+        "value": 0.2916
+      },
+      {
+        "start_sec": 160.0,
+        "end_sec": 190.0,
+        "value": 0.296
+      },
+      {
+        "start_sec": 190.0,
+        "end_sec": 220.0,
+        "value": 0.3075
+      },
+      {
+        "start_sec": 220.0,
+        "end_sec": 255.0,
+        "value": 0.3124
+      },
+      {
+        "start_sec": 255.0,
+        "end_sec": 285.0,
+        "value": 0.5649
+      },
+      {
+        "start_sec": 285.0,
+        "end_sec": 320.0,
+        "value": 0.4753
+      },
+      {
+        "start_sec": 320.0,
+        "end_sec": 350.0,
+        "value": 0.4376
+      },
+      {
+        "start_sec": 350.0,
+        "end_sec": 380.0,
+        "value": 0.4932
+      },
+      {
+        "start_sec": 380.0,
+        "end_sec": 415.0,
+        "value": 0.5999
+      },
+      {
+        "start_sec": 415.0,
+        "end_sec": 445.0,
+        "value": 0.6132
+      },
+      {
+        "start_sec": 445.0,
+        "end_sec": 480.0,
+        "value": 0.6771
+      },
+      {
+        "start_sec": 480.0,
+        "end_sec": 510.0,
+        "value": 0.7105
+      },
+      {
+        "start_sec": 510.0,
+        "end_sec": 540.0,
+        "value": 0.5887
+      },
+      {
+        "start_sec": 540.0,
+        "end_sec": 575.0,
+        "value": 0.6725
+      },
+      {
+        "start_sec": 575.0,
+        "end_sec": 605.0,
+        "value": 0.6261
+      },
+      {
+        "start_sec": 605.0,
+        "end_sec": 640.0,
+        "value": 0.494
+      },
+      {
+        "start_sec": 640.0,
+        "end_sec": 670.0,
+        "value": 0.6141
+      },
+      {
+        "start_sec": 670.0,
+        "end_sec": 700.0,
+        "value": 0.6046
+      },
+      {
+        "start_sec": 700.0,
+        "end_sec": 735.0,
+        "value": 0.6816
+      },
+      {
+        "start_sec": 735.0,
+        "end_sec": 765.0,
+        "value": 0.689
+      },
+      {
+        "start_sec": 765.0,
+        "end_sec": 800.0,
+        "value": 0.713
+      },
+      {
+        "start_sec": 800.0,
+        "end_sec": 830.0,
+        "value": 0.678
+      },
+      {
+        "start_sec": 830.0,
+        "end_sec": 860.0,
+        "value": 0.6517
+      },
+      {
+        "start_sec": 860.0,
+        "end_sec": 895.0,
+        "value": 0.6516
+      },
+      {
+        "start_sec": 895.0,
+        "end_sec": 925.0,
+        "value": 0.4853
+      },
+      {
+        "start_sec": 925.0,
+        "end_sec": 960.0,
+        "value": 0.6646
+      },
+      {
+        "start_sec": 960.0,
+        "end_sec": 990.0,
+        "value": 0.4915
+      },
+      {
+        "start_sec": 990.0,
+        "end_sec": 1020.0,
+        "value": 0.6522
+      },
+      {
+        "start_sec": 1020.0,
+        "end_sec": 1055.0,
+        "value": 0.4398
+      },
+      {
+        "start_sec": 1055.0,
+        "end_sec": 1085.0,
+        "value": 0.6076
+      },
+      {
+        "start_sec": 1085.0,
+        "end_sec": 1120.0,
+        "value": 0.5538
+      },
+      {
+        "start_sec": 1120.0,
+        "end_sec": 1150.0,
+        "value": 0.5442
+      },
+      {
+        "start_sec": 1150.0,
+        "end_sec": 1185.0,
+        "value": 0.3593
+      },
+      {
+        "start_sec": 1185.0,
+        "end_sec": 1215.0,
+        "value": 0.473
+      },
+      {
+        "start_sec": 1215.0,
+        "end_sec": 1245.0,
+        "value": 0.6581
+      },
+      {
+        "start_sec": 1245.0,
+        "end_sec": 1280.0,
+        "value": 0.6978
+      },
+      {
+        "start_sec": 1280.0,
+        "end_sec": 1310.0,
+        "value": 0.6825
+      },
+      {
+        "start_sec": 1310.0,
+        "end_sec": 1345.0,
+        "value": 0.7139
+      },
+      {
+        "start_sec": 1345.0,
+        "end_sec": 1375.0,
+        "value": 0.6522
+      },
+      {
+        "start_sec": 1375.0,
+        "end_sec": 1405.0,
+        "value": 0.6369
+      },
+      {
+        "start_sec": 1405.0,
+        "end_sec": 1440.0,
+        "value": 0.7307
+      },
+      {
+        "start_sec": 1440.0,
+        "end_sec": 1470.0,
+        "value": 0.7318
+      },
+      {
+        "start_sec": 1470.0,
+        "end_sec": 1505.0,
+        "value": 0.6921
+      },
+      {
+        "start_sec": 1505.0,
+        "end_sec": 1535.0,
+        "value": 0.7094
+      },
+      {
+        "start_sec": 1535.0,
+        "end_sec": 1565.0,
+        "value": 0.6192
+      },
+      {
+        "start_sec": 1565.0,
+        "end_sec": 1600.0,
+        "value": 0.6905
+      },
+      {
+        "start_sec": 1600.0,
+        "end_sec": 1630.0,
+        "value": 0.6924
+      },
+      {
+        "start_sec": 1630.0,
+        "end_sec": 1665.0,
+        "value": 0.7214
+      },
+      {
+        "start_sec": 1665.0,
+        "end_sec": 1695.0,
+        "value": 0.7718
+      },
+      {
+        "start_sec": 1695.0,
+        "end_sec": 1725.0,
+        "value": 0.6943
+      },
+      {
+        "start_sec": 1725.0,
+        "end_sec": 1760.0,
+        "value": 0.7224
+      },
+      {
+        "start_sec": 1760.0,
+        "end_sec": 1790.0,
+        "value": 0.6159
+      },
+      {
+        "start_sec": 1790.0,
+        "end_sec": 1825.0,
+        "value": 0.6859
+      },
+      {
+        "start_sec": 1825.0,
+        "end_sec": 1855.0,
+        "value": 0.6904
+      },
+      {
+        "start_sec": 1855.0,
+        "end_sec": 1885.0,
+        "value": 0.6979
+      },
+      {
+        "start_sec": 1885.0,
+        "end_sec": 1920.0,
+        "value": 0.6875
+      },
+      {
+        "start_sec": 1920.0,
+        "end_sec": 1950.0,
+        "value": 0.702
+      },
+      {
+        "start_sec": 1950.0,
+        "end_sec": 1985.0,
+        "value": 0.6933
+      },
+      {
+        "start_sec": 1985.0,
+        "end_sec": 2015.0,
+        "value": 0.7049
+      },
+      {
+        "start_sec": 2015.0,
+        "end_sec": 2045.0,
+        "value": 0.7211
+      },
+      {
+        "start_sec": 2045.0,
+        "end_sec": 2080.0,
+        "value": 0.7316
+      },
+      {
+        "start_sec": 2080.0,
+        "end_sec": 2110.0,
+        "value": 0.6737
+      },
+      {
+        "start_sec": 2110.0,
+        "end_sec": 2145.0,
+        "value": 0.7314
+      },
+      {
+        "start_sec": 2145.0,
+        "end_sec": 2175.0,
+        "value": 0.6999
+      },
+      {
+        "start_sec": 2175.0,
+        "end_sec": 2205.0,
+        "value": 0.6811
+      },
+      {
+        "start_sec": 2205.0,
+        "end_sec": 2240.0,
+        "value": 0.6623
+      },
+      {
+        "start_sec": 2240.0,
+        "end_sec": 2270.0,
+        "value": 0.6875
+      },
+      {
+        "start_sec": 2270.0,
+        "end_sec": 2305.0,
+        "value": 0.6365
+      },
+      {
+        "start_sec": 2305.0,
+        "end_sec": 2335.0,
+        "value": 0.6904
+      },
+      {
+        "start_sec": 2335.0,
+        "end_sec": 2370.0,
+        "value": 0.6978
+      },
+      {
+        "start_sec": 2370.0,
+        "end_sec": 2400.0,
+        "value": 0.7043
+      },
+      {
+        "start_sec": 2400.0,
+        "end_sec": 2430.0,
+        "value": 0.6951
+      },
+      {
+        "start_sec": 2430.0,
+        "end_sec": 2465.0,
+        "value": 0.6322
+      },
+      {
+        "start_sec": 2465.0,
+        "end_sec": 2495.0,
+        "value": 0.673
+      },
+      {
+        "start_sec": 2495.0,
+        "end_sec": 2530.0,
+        "value": 0.634
+      },
+      {
+        "start_sec": 2530.0,
+        "end_sec": 2560.0,
+        "value": 0.6643
+      },
+      {
+        "start_sec": 2560.0,
+        "end_sec": 2590.0,
+        "value": 0.694
+      },
+      {
+        "start_sec": 2590.0,
+        "end_sec": 2625.0,
+        "value": 0.6225
+      },
+      {
+        "start_sec": 2625.0,
+        "end_sec": 2655.0,
+        "value": 0.7202
+      },
+      {
+        "start_sec": 2655.0,
+        "end_sec": 2690.0,
+        "value": 0.692
+      },
+      {
+        "start_sec": 2690.0,
+        "end_sec": 2720.0,
+        "value": 0.6702
+      },
+      {
+        "start_sec": 2720.0,
+        "end_sec": 2750.0,
+        "value": 0.7127
+      },
+      {
+        "start_sec": 2750.0,
+        "end_sec": 2785.0,
+        "value": 0.712
+      },
+      {
+        "start_sec": 2785.0,
+        "end_sec": 2815.0,
+        "value": 0.7487
+      },
+      {
+        "start_sec": 2815.0,
+        "end_sec": 2850.0,
+        "value": 0.6921
+      },
+      {
+        "start_sec": 2850.0,
+        "end_sec": 2880.0,
+        "value": 0.6991
+      },
+      {
+        "start_sec": 2880.0,
+        "end_sec": 2910.0,
+        "value": 0.6959
+      },
+      {
+        "start_sec": 2910.0,
+        "end_sec": 2945.0,
+        "value": 0.7456
+      },
+      {
+        "start_sec": 2945.0,
+        "end_sec": 2975.0,
+        "value": 0.7355
+      },
+      {
+        "start_sec": 2975.0,
+        "end_sec": 3010.0,
+        "value": 0.7138
+      },
+      {
+        "start_sec": 3010.0,
+        "end_sec": 3040.0,
+        "value": 0.6616
+      },
+      {
+        "start_sec": 3040.0,
+        "end_sec": 3070.0,
+        "value": 0.66
+      },
+      {
+        "start_sec": 3070.0,
+        "end_sec": 3105.0,
+        "value": 0.6502
+      },
+      {
+        "start_sec": 3105.0,
+        "end_sec": 3135.0,
+        "value": 0.602
+      },
+      {
+        "start_sec": 3135.0,
+        "end_sec": 3170.0,
+        "value": 0.5707
+      },
+      {
+        "start_sec": 3170.0,
+        "end_sec": 3200.0,
+        "value": 0.542
+      },
+      {
+        "start_sec": 3200.0,
+        "end_sec": 3230.0,
+        "value": 0.7622
+      },
+      {
+        "start_sec": 3230.0,
+        "end_sec": 3265.0,
+        "value": 0.7116
+      },
+      {
+        "start_sec": 3265.0,
+        "end_sec": 3295.0,
+        "value": 0.6264
+      },
+      {
+        "start_sec": 3295.0,
+        "end_sec": 3330.0,
+        "value": 0.6521
+      },
+      {
+        "start_sec": 3330.0,
+        "end_sec": 3360.0,
+        "value": 0.7636
+      },
+      {
+        "start_sec": 3360.0,
+        "end_sec": 3390.0,
+        "value": 0.6016
+      },
+      {
+        "start_sec": 3390.0,
+        "end_sec": 3425.0,
+        "value": 0.5656
+      },
+      {
+        "start_sec": 3425.0,
+        "end_sec": 3455.0,
+        "value": 0.5867
+      },
+      {
+        "start_sec": 3455.0,
+        "end_sec": 3490.0,
+        "value": 0.7721
+      },
+      {
+        "start_sec": 3490.0,
+        "end_sec": 3520.0,
+        "value": 0.7989
+      },
+      {
+        "start_sec": 3520.0,
+        "end_sec": 3555.0,
+        "value": 0.634
+      },
+      {
+        "start_sec": 3555.0,
+        "end_sec": 3585.0,
+        "value": 0.6359
+      },
+      {
+        "start_sec": 3585.0,
+        "end_sec": 3615.0,
+        "value": 0.7723
+      },
+      {
+        "start_sec": 3615.0,
+        "end_sec": 3650.0,
+        "value": 0.6265
+      },
+      {
+        "start_sec": 3650.0,
+        "end_sec": 3680.0,
+        "value": 0.7596
+      },
+      {
+        "start_sec": 3680.0,
+        "end_sec": 3715.0,
+        "value": 0.6633
+      },
+      {
+        "start_sec": 3715.0,
+        "end_sec": 3745.0,
+        "value": 0.6061
+      },
+      {
+        "start_sec": 3745.0,
+        "end_sec": 3775.0,
+        "value": 0.6684
+      },
+      {
+        "start_sec": 3775.0,
+        "end_sec": 3810.0,
+        "value": 0.742
+      },
+      {
+        "start_sec": 3810.0,
+        "end_sec": 3840.0,
+        "value": 0.7438
+      },
+      {
+        "start_sec": 3840.0,
+        "end_sec": 3875.0,
+        "value": 0.7375
+      },
+      {
+        "start_sec": 3875.0,
+        "end_sec": 3905.0,
+        "value": 0.7896
+      },
+      {
+        "start_sec": 3905.0,
+        "end_sec": 3935.0,
+        "value": 0.7965
+      },
+      {
+        "start_sec": 3935.0,
+        "end_sec": 3970.0,
+        "value": 0.8132
+      },
+      {
+        "start_sec": 3970.0,
+        "end_sec": 4000.0,
+        "value": 0.6792
+      },
+      {
+        "start_sec": 4000.0,
+        "end_sec": 4035.0,
+        "value": 0.7238
+      },
+      {
+        "start_sec": 4035.0,
+        "end_sec": 4065.0,
+        "value": 0.6196
+      },
+      {
+        "start_sec": 4065.0,
+        "end_sec": 4095.0,
+        "value": 0.7481
+      },
+      {
+        "start_sec": 4095.0,
+        "end_sec": 4130.0,
+        "value": 0.6218
+      },
+      {
+        "start_sec": 4130.0,
+        "end_sec": 4160.0,
+        "value": 0.6378
+      },
+      {
+        "start_sec": 4160.0,
+        "end_sec": 4195.0,
+        "value": 0.6477
+      },
+      {
+        "start_sec": 4195.0,
+        "end_sec": 4225.0,
+        "value": 0.5811
+      },
+      {
+        "start_sec": 4225.0,
+        "end_sec": 4255.0,
+        "value": 0.6582
+      },
+      {
+        "start_sec": 4255.0,
+        "end_sec": 4290.0,
+        "value": 0.7406
+      },
+      {
+        "start_sec": 4290.0,
+        "end_sec": 4320.0,
+        "value": 0.7003
+      },
+      {
+        "start_sec": 4320.0,
+        "end_sec": 4355.0,
+        "value": 0.6691
+      },
+      {
+        "start_sec": 4355.0,
+        "end_sec": 4385.0,
+        "value": 0.7572
+      },
+      {
+        "start_sec": 4385.0,
+        "end_sec": 4415.0,
+        "value": 0.7595
+      },
+      {
+        "start_sec": 4415.0,
+        "end_sec": 4450.0,
+        "value": 0.5529
+      },
+      {
+        "start_sec": 4450.0,
+        "end_sec": 4480.0,
+        "value": 0.6242
+      },
+      {
+        "start_sec": 4480.0,
+        "end_sec": 4515.0,
+        "value": 0.7548
+      },
+      {
+        "start_sec": 4515.0,
+        "end_sec": 4545.0,
+        "value": 0.8826
+      },
+      {
+        "start_sec": 4545.0,
+        "end_sec": 4575.0,
+        "value": 0.6917
+      },
+      {
+        "start_sec": 4575.0,
+        "end_sec": 4610.0,
+        "value": 0.7138
+      },
+      {
+        "start_sec": 4610.0,
+        "end_sec": 4640.0,
+        "value": 0.6908
+      },
+      {
+        "start_sec": 4640.0,
+        "end_sec": 4675.0,
+        "value": 0.6635
+      },
+      {
+        "start_sec": 4675.0,
+        "end_sec": 4705.0,
+        "value": 0.6578
+      },
+      {
+        "start_sec": 4705.0,
+        "end_sec": 4740.0,
+        "value": 0.6804
+      },
+      {
+        "start_sec": 4740.0,
+        "end_sec": 4770.0,
+        "value": 0.656
+      },
+      {
+        "start_sec": 4770.0,
+        "end_sec": 4800.0,
+        "value": 0.6377
+      },
+      {
+        "start_sec": 4800.0,
+        "end_sec": 4835.0,
+        "value": 0.6633
+      },
+      {
+        "start_sec": 4835.0,
+        "end_sec": 4865.0,
+        "value": 0.6663
+      },
+      {
+        "start_sec": 4865.0,
+        "end_sec": 4900.0,
+        "value": 0.6604
+      },
+      {
+        "start_sec": 4900.0,
+        "end_sec": 4930.0,
+        "value": 0.611
+      },
+      {
+        "start_sec": 4930.0,
+        "end_sec": 4960.0,
+        "value": 0.71
+      },
+      {
+        "start_sec": 4960.0,
+        "end_sec": 4995.0,
+        "value": 0.7386
+      },
+      {
+        "start_sec": 4995.0,
+        "end_sec": 5025.0,
+        "value": 0.7379
+      },
+      {
+        "start_sec": 5025.0,
+        "end_sec": 5060.0,
+        "value": 0.7068
+      },
+      {
+        "start_sec": 5060.0,
+        "end_sec": 5090.0,
+        "value": 0.7663
+      },
+      {
+        "start_sec": 5090.0,
+        "end_sec": 5120.0,
+        "value": 0.7039
+      },
+      {
+        "start_sec": 5120.0,
+        "end_sec": 5155.0,
+        "value": 0.8029
+      },
+      {
+        "start_sec": 5155.0,
+        "end_sec": 5185.0,
+        "value": 0.7438
+      },
+      {
+        "start_sec": 5185.0,
+        "end_sec": 5220.0,
+        "value": 0.8035
+      },
+      {
+        "start_sec": 5220.0,
+        "end_sec": 5250.0,
+        "value": 0.6043
+      },
+      {
+        "start_sec": 5250.0,
+        "end_sec": 5280.0,
+        "value": 0.7885
+      },
+      {
+        "start_sec": 5280.0,
+        "end_sec": 5315.0,
+        "value": 0.6224
+      },
+      {
+        "start_sec": 5315.0,
+        "end_sec": 5345.0,
+        "value": 0.624
+      },
+      {
+        "start_sec": 5345.0,
+        "end_sec": 5380.0,
+        "value": 0.6844
+      },
+      {
+        "start_sec": 5380.0,
+        "end_sec": 5410.0,
+        "value": 0.7182
+      },
+      {
+        "start_sec": 5410.0,
+        "end_sec": 5440.0,
+        "value": 0.5716
+      },
+      {
+        "start_sec": 5440.0,
+        "end_sec": 5475.0,
+        "value": 0.7816
+      },
+      {
+        "start_sec": 5475.0,
+        "end_sec": 5505.0,
+        "value": 0.6884
+      },
+      {
+        "start_sec": 5505.0,
+        "end_sec": 5540.0,
+        "value": 0.8135
+      },
+      {
+        "start_sec": 5540.0,
+        "end_sec": 5570.0,
+        "value": 0.7932
+      },
+      {
+        "start_sec": 5570.0,
+        "end_sec": 5600.0,
+        "value": 0.8066
+      },
+      {
+        "start_sec": 5600.0,
+        "end_sec": 5635.0,
+        "value": 0.6753
+      },
+      {
+        "start_sec": 5635.0,
+        "end_sec": 5665.0,
+        "value": 0.8022
+      },
+      {
+        "start_sec": 5665.0,
+        "end_sec": 5700.0,
+        "value": 0.5916
+      },
+      {
+        "start_sec": 5700.0,
+        "end_sec": 5730.0,
+        "value": 0.5248
+      },
+      {
+        "start_sec": 5730.0,
+        "end_sec": 5765.0,
+        "value": 0.6536
+      },
+      {
+        "start_sec": 5765.0,
+        "end_sec": 5795.0,
+        "value": 0.7154
+      },
+      {
+        "start_sec": 5795.0,
+        "end_sec": 5825.0,
+        "value": 0.7314
+      },
+      {
+        "start_sec": 5825.0,
+        "end_sec": 5860.0,
+        "value": 0.7482
+      },
+      {
+        "start_sec": 5860.0,
+        "end_sec": 5890.0,
+        "value": 0.9109
+      },
+      {
+        "start_sec": 5890.0,
+        "end_sec": 5925.0,
+        "value": 0.742
+      },
+      {
+        "start_sec": 5925.0,
+        "end_sec": 5955.0,
+        "value": 0.6249
+      },
+      {
+        "start_sec": 5955.0,
+        "end_sec": 5985.0,
+        "value": 0.6387
+      },
+      {
+        "start_sec": 5985.0,
+        "end_sec": 6020.0,
+        "value": 0.63
+      },
+      {
+        "start_sec": 6020.0,
+        "end_sec": 6050.0,
+        "value": 0.6424
+      },
+      {
+        "start_sec": 6050.0,
+        "end_sec": 6085.0,
+        "value": 0.8033
+      },
+      {
+        "start_sec": 6085.0,
+        "end_sec": 6115.0,
+        "value": 0.827
+      },
+      {
+        "start_sec": 6115.0,
+        "end_sec": 6145.0,
+        "value": 0.8289
+      },
+      {
+        "start_sec": 6145.0,
+        "end_sec": 6180.0,
+        "value": 0.7611
+      },
+      {
+        "start_sec": 6180.0,
+        "end_sec": 6210.0,
+        "value": 0.6246
+      },
+      {
+        "start_sec": 6210.0,
+        "end_sec": 6245.0,
+        "value": 0.6531
+      },
+      {
+        "start_sec": 6245.0,
+        "end_sec": 6275.0,
+        "value": 0.646
+      },
+      {
+        "start_sec": 6275.0,
+        "end_sec": 6305.0,
+        "value": 0.689
+      },
+      {
+        "start_sec": 6305.0,
+        "end_sec": 6340.0,
+        "value": 0.6402
+      },
+      {
+        "start_sec": 6340.0,
+        "end_sec": 6370.0,
+        "value": 0.8086
+      },
+      {
+        "start_sec": 6370.0,
+        "end_sec": 6405.0,
+        "value": 0.6077
+      },
+      {
+        "start_sec": 6405.0,
+        "end_sec": 6435.0,
+        "value": 0.6214
+      },
+      {
+        "start_sec": 6435.0,
+        "end_sec": 6465.0,
+        "value": 0.5618
+      },
+      {
+        "start_sec": 6465.0,
+        "end_sec": 6500.0,
+        "value": 0.5528
+      },
+      {
+        "start_sec": 6500.0,
+        "end_sec": 6530.0,
+        "value": 0.6424
+      },
+      {
+        "start_sec": 6530.0,
+        "end_sec": 6565.0,
+        "value": 0.5033
+      },
+      {
+        "start_sec": 6565.0,
+        "end_sec": 6595.0,
+        "value": 0.5768
+      },
+      {
+        "start_sec": 6595.0,
+        "end_sec": 6625.0,
+        "value": 0.643
+      },
+      {
+        "start_sec": 6625.0,
+        "end_sec": 6660.0,
+        "value": 0.6024
+      },
+      {
+        "start_sec": 6660.0,
+        "end_sec": 6690.0,
+        "value": 0.56
+      },
+      {
+        "start_sec": 6690.0,
+        "end_sec": 6725.0,
+        "value": 0.664
+      },
+      {
+        "start_sec": 6725.0,
+        "end_sec": 6755.0,
+        "value": 0.6951
+      },
+      {
+        "start_sec": 6755.0,
+        "end_sec": 6785.0,
+        "value": 0.6506
+      },
+      {
+        "start_sec": 6785.0,
+        "end_sec": 6820.0,
+        "value": 0.6761
+      },
+      {
+        "start_sec": 6820.0,
+        "end_sec": 6850.0,
+        "value": 0.5992
+      },
+      {
+        "start_sec": 6850.0,
+        "end_sec": 6885.0,
+        "value": 0.6366
+      },
+      {
+        "start_sec": 6885.0,
+        "end_sec": 6915.0,
+        "value": 0.5781
+      },
+      {
+        "start_sec": 6915.0,
+        "end_sec": 6950.0,
+        "value": 0.6425
+      },
+      {
+        "start_sec": 6950.0,
+        "end_sec": 6980.0,
+        "value": 0.61
+      },
+      {
+        "start_sec": 6980.0,
+        "end_sec": 7010.0,
+        "value": 0.6818
+      },
+      {
+        "start_sec": 7010.0,
+        "end_sec": 7045.0,
+        "value": 0.6772
+      },
+      {
+        "start_sec": 7045.0,
+        "end_sec": 7075.0,
+        "value": 0.7434
+      },
+      {
+        "start_sec": 7075.0,
+        "end_sec": 7110.0,
+        "value": 0.568
+      },
+      {
+        "start_sec": 7110.0,
+        "end_sec": 7140.0,
+        "value": 0.6023
+      },
+      {
+        "start_sec": 7140.0,
+        "end_sec": 7170.0,
+        "value": 0.6506
+      },
+      {
+        "start_sec": 7170.0,
+        "end_sec": 7205.0,
+        "value": 0.6287
+      },
+      {
+        "start_sec": 7205.0,
+        "end_sec": 7235.0,
+        "value": 0.613
+      },
+      {
+        "start_sec": 7235.0,
+        "end_sec": 7270.0,
+        "value": 0.7115
+      },
+      {
+        "start_sec": 7270.0,
+        "end_sec": 7300.0,
+        "value": 0.788
+      },
+      {
+        "start_sec": 7300.0,
+        "end_sec": 7330.0,
+        "value": 0.7068
+      },
+      {
+        "start_sec": 7330.0,
+        "end_sec": 7365.0,
+        "value": 0.7258
+      },
+      {
+        "start_sec": 7365.0,
+        "end_sec": 7395.0,
+        "value": 0.6501
+      },
+      {
+        "start_sec": 7395.0,
+        "end_sec": 7430.0,
+        "value": 0.5579
+      },
+      {
+        "start_sec": 7430.0,
+        "end_sec": 7460.0,
+        "value": 0.6812
+      },
+      {
+        "start_sec": 7460.0,
+        "end_sec": 7490.0,
+        "value": 0.439
+      },
+      {
+        "start_sec": 7490.0,
+        "end_sec": 7525.0,
+        "value": 0.604
+      },
+      {
+        "start_sec": 7525.0,
+        "end_sec": 7555.0,
+        "value": 0.6079
+      },
+      {
+        "start_sec": 7555.0,
+        "end_sec": 7590.0,
+        "value": 0.6074
+      },
+      {
+        "start_sec": 7590.0,
+        "end_sec": 7620.0,
+        "value": 0.47
+      },
+      {
+        "start_sec": 7620.0,
+        "end_sec": 7650.0,
+        "value": 0.7004
+      },
+      {
+        "start_sec": 7650.0,
+        "end_sec": 7685.0,
+        "value": 0.5776
+      },
+      {
+        "start_sec": 7685.0,
+        "end_sec": 7715.0,
+        "value": 0.5745
+      },
+      {
+        "start_sec": 7715.0,
+        "end_sec": 7750.0,
+        "value": 0.6574
+      },
+      {
+        "start_sec": 7750.0,
+        "end_sec": 7780.0,
+        "value": 0.6747
+      },
+      {
+        "start_sec": 7780.0,
+        "end_sec": 7810.0,
+        "value": 0.7177
+      },
+      {
+        "start_sec": 7810.0,
+        "end_sec": 7845.0,
+        "value": 0.6023
+      },
+      {
+        "start_sec": 7845.0,
+        "end_sec": 7875.0,
+        "value": 0.5985
+      },
+      {
+        "start_sec": 7875.0,
+        "end_sec": 7910.0,
+        "value": 0.504
+      },
+      {
+        "start_sec": 7910.0,
+        "end_sec": 7940.0,
+        "value": 0.4545
+      },
+      {
+        "start_sec": 7940.0,
+        "end_sec": 7970.0,
+        "value": 0.7015
+      },
+      {
+        "start_sec": 7970.0,
+        "end_sec": 8005.0,
+        "value": 0.6564
+      },
+      {
+        "start_sec": 8005.0,
+        "end_sec": 8035.0,
+        "value": 0.5905
+      },
+      {
+        "start_sec": 8035.0,
+        "end_sec": 8070.0,
+        "value": 0.6121
+      },
+      {
+        "start_sec": 8070.0,
+        "end_sec": 8100.0,
+        "value": 0.6937
+      },
+      {
+        "start_sec": 8100.0,
+        "end_sec": 8135.0,
+        "value": 0.648
+      },
+      {
+        "start_sec": 8135.0,
+        "end_sec": 8165.0,
+        "value": 0.6471
+      },
+      {
+        "start_sec": 8165.0,
+        "end_sec": 8195.0,
+        "value": 0.5554
+      },
+      {
+        "start_sec": 8195.0,
+        "end_sec": 8230.0,
+        "value": 0.6221
+      },
+      {
+        "start_sec": 8230.0,
+        "end_sec": 8260.0,
+        "value": 0.5974
+      },
+      {
+        "start_sec": 8260.0,
+        "end_sec": 8295.0,
+        "value": 0.6414
+      },
+      {
+        "start_sec": 8295.0,
+        "end_sec": 8325.0,
+        "value": 0.586
+      },
+      {
+        "start_sec": 8325.0,
+        "end_sec": 8355.0,
+        "value": 0.6354
+      },
+      {
+        "start_sec": 8355.0,
+        "end_sec": 8390.0,
+        "value": 0.634
+      },
+      {
+        "start_sec": 8390.0,
+        "end_sec": 8420.0,
+        "value": 0.6919
+      },
+      {
+        "start_sec": 8420.0,
+        "end_sec": 8455.0,
+        "value": 0.645
+      },
+      {
+        "start_sec": 8455.0,
+        "end_sec": 8485.0,
+        "value": 0.6042
+      },
+      {
+        "start_sec": 8485.0,
+        "end_sec": 8515.0,
+        "value": 0.6681
+      },
+      {
+        "start_sec": 8515.0,
+        "end_sec": 8550.0,
+        "value": 0.6421
+      },
+      {
+        "start_sec": 8550.0,
+        "end_sec": 8580.0,
+        "value": 0.6621
+      },
+      {
+        "start_sec": 8580.0,
+        "end_sec": 8615.0,
+        "value": 0.5563
+      },
+      {
+        "start_sec": 8615.0,
+        "end_sec": 8645.0,
+        "value": 0.5067
+      },
+      {
+        "start_sec": 8645.0,
+        "end_sec": 8675.0,
+        "value": 0.5483
+      },
+      {
+        "start_sec": 8675.0,
+        "end_sec": 8710.0,
+        "value": 0.6452
+      },
+      {
+        "start_sec": 8710.0,
+        "end_sec": 8740.0,
+        "value": 0.6251
+      },
+      {
+        "start_sec": 8740.0,
+        "end_sec": 8775.0,
+        "value": 0.6546
+      },
+      {
+        "start_sec": 8775.0,
+        "end_sec": 8805.0,
+        "value": 0.6788
+      },
+      {
+        "start_sec": 8805.0,
+        "end_sec": 8835.0,
+        "value": 0.5658
+      },
+      {
+        "start_sec": 8835.0,
+        "end_sec": 8870.0,
+        "value": 0.6967
+      },
+      {
+        "start_sec": 8870.0,
+        "end_sec": 8900.0,
+        "value": 0.6866
+      },
+      {
+        "start_sec": 8900.0,
+        "end_sec": 8935.0,
+        "value": 0.7593
+      },
+      {
+        "start_sec": 8935.0,
+        "end_sec": 8965.0,
+        "value": 0.7381
+      },
+      {
+        "start_sec": 8965.0,
+        "end_sec": 8995.0,
+        "value": 0.726
+      },
+      {
+        "start_sec": 8995.0,
+        "end_sec": 9030.0,
+        "value": 0.6781
+      },
+      {
+        "start_sec": 9030.0,
+        "end_sec": 9060.0,
+        "value": 0.7915
+      },
+      {
+        "start_sec": 9060.0,
+        "end_sec": 9095.0,
+        "value": 0.8739
+      },
+      {
+        "start_sec": 9095.0,
+        "end_sec": 9125.0,
+        "value": 0.6351
+      },
+      {
+        "start_sec": 9125.0,
+        "end_sec": 9155.0,
+        "value": 0.6852
+      },
+      {
+        "start_sec": 9155.0,
+        "end_sec": 9190.0,
+        "value": 0.6034
+      },
+      {
+        "start_sec": 9190.0,
+        "end_sec": 9220.0,
+        "value": 0.5315
+      },
+      {
+        "start_sec": 9220.0,
+        "end_sec": 9255.0,
+        "value": 0.6531
+      },
+      {
+        "start_sec": 9255.0,
+        "end_sec": 9285.0,
+        "value": 0.7505
+      },
+      {
+        "start_sec": 9285.0,
+        "end_sec": 9320.0,
+        "value": 0.7368
+      },
+      {
+        "start_sec": 9320.0,
+        "end_sec": 9350.0,
+        "value": 0.7479
+      },
+      {
+        "start_sec": 9350.0,
+        "end_sec": 9380.0,
+        "value": 0.5916
+      },
+      {
+        "start_sec": 9380.0,
+        "end_sec": 9415.0,
+        "value": 0.7213
+      },
+      {
+        "start_sec": 9415.0,
+        "end_sec": 9445.0,
+        "value": 0.7311
+      },
+      {
+        "start_sec": 9445.0,
+        "end_sec": 9480.0,
+        "value": 0.699
+      },
+      {
+        "start_sec": 9480.0,
+        "end_sec": 9510.0,
+        "value": 0.8189
+      },
+      {
+        "start_sec": 9510.0,
+        "end_sec": 9540.0,
+        "value": 0.7546
+      },
+      {
+        "start_sec": 9540.0,
+        "end_sec": 9575.0,
+        "value": 0.7432
+      },
+      {
+        "start_sec": 9575.0,
+        "end_sec": 9605.0,
+        "value": 0.7013
+      },
+      {
+        "start_sec": 9605.0,
+        "end_sec": 9640.0,
+        "value": 0.7084
+      },
+      {
+        "start_sec": 9640.0,
+        "end_sec": 9670.0,
+        "value": 0.4724
+      },
+      {
+        "start_sec": 9670.0,
+        "end_sec": 9700.0,
+        "value": 0.4807
+      },
+      {
+        "start_sec": 9700.0,
+        "end_sec": 9735.0,
+        "value": 0.7389
+      },
+      {
+        "start_sec": 9735.0,
+        "end_sec": 9765.0,
+        "value": 0.5047
+      },
+      {
+        "start_sec": 9765.0,
+        "end_sec": 9800.0,
+        "value": 0.4165
+      },
+      {
+        "start_sec": 9800.0,
+        "end_sec": 9830.0,
+        "value": 0.4734
+      },
+      {
+        "start_sec": 9830.0,
+        "end_sec": 9860.0,
+        "value": 0.672
+      },
+      {
+        "start_sec": 9860.0,
+        "end_sec": 9895.0,
+        "value": 0.6907
+      },
+      {
+        "start_sec": 9895.0,
+        "end_sec": 9925.0,
+        "value": 0.553
+      },
+      {
+        "start_sec": 9925.0,
+        "end_sec": 9960.0,
+        "value": 0.5817
+      },
+      {
+        "start_sec": 9960.0,
+        "end_sec": 9990.0,
+        "value": 0.5164
+      },
+      {
+        "start_sec": 9990.0,
+        "end_sec": 10020.0,
+        "value": 0.733
+      },
+      {
+        "start_sec": 10020.0,
+        "end_sec": 10055.0,
+        "value": 0.721
+      },
+      {
+        "start_sec": 10055.0,
+        "end_sec": 10085.0,
+        "value": 0.4391
+      },
+      {
+        "start_sec": 10085.0,
+        "end_sec": 10120.0,
+        "value": 0.5872
+      },
+      {
+        "start_sec": 10120.0,
+        "end_sec": 10150.0,
+        "value": 0.5487
+      },
+      {
+        "start_sec": 10150.0,
+        "end_sec": 10180.0,
+        "value": 0.5473
+      },
+      {
+        "start_sec": 10180.0,
+        "end_sec": 10215.0,
+        "value": 0.5172
+      },
+      {
+        "start_sec": 10215.0,
+        "end_sec": 10245.0,
+        "value": 0.5128
+      },
+      {
+        "start_sec": 10245.0,
+        "end_sec": 10280.0,
+        "value": 0.5111
+      },
+      {
+        "start_sec": 10280.0,
+        "end_sec": 10310.0,
+        "value": 0.4799
+      },
+      {
+        "start_sec": 10310.0,
+        "end_sec": 10340.0,
+        "value": 0.6263
+      },
+      {
+        "start_sec": 10340.0,
+        "end_sec": 10375.0,
+        "value": 0.6051
+      },
+      {
+        "start_sec": 10375.0,
+        "end_sec": 10405.0,
+        "value": 0.5305
+      },
+      {
+        "start_sec": 10405.0,
+        "end_sec": 10440.0,
+        "value": 0.5372
+      },
+      {
+        "start_sec": 10440.0,
+        "end_sec": 10470.0,
+        "value": 0.7192
+      },
+      {
+        "start_sec": 10470.0,
+        "end_sec": 10505.0,
+        "value": 0.6676
+      },
+      {
+        "start_sec": 10505.0,
+        "end_sec": 10535.0,
+        "value": 0.6442
+      },
+      {
+        "start_sec": 10535.0,
+        "end_sec": 10565.0,
+        "value": 0.5503
+      },
+      {
+        "start_sec": 10565.0,
+        "end_sec": 10600.0,
+        "value": 0.4428
+      },
+      {
+        "start_sec": 10600.0,
+        "end_sec": 10630.0,
+        "value": 0.4715
+      },
+      {
+        "start_sec": 10630.0,
+        "end_sec": 10665.0,
+        "value": 0.5684
+      },
+      {
+        "start_sec": 10665.0,
+        "end_sec": 10695.0,
+        "value": 0.7437
+      },
+      {
+        "start_sec": 10695.0,
+        "end_sec": 10725.0,
+        "value": 0.6985
+      },
+      {
+        "start_sec": 10725.0,
+        "end_sec": 10760.0,
+        "value": 0.7085
+      },
+      {
+        "start_sec": 10760.0,
+        "end_sec": 10790.0,
+        "value": 0.8321
+      },
+      {
+        "start_sec": 10790.0,
+        "end_sec": 10825.0,
+        "value": 0.5999
+      },
+      {
+        "start_sec": 10825.0,
+        "end_sec": 10855.0,
+        "value": 0.5301
+      },
+      {
+        "start_sec": 10855.0,
+        "end_sec": 10885.0,
+        "value": 0.4957
+      },
+      {
+        "start_sec": 10885.0,
+        "end_sec": 10920.0,
+        "value": 0.6657
+      },
+      {
+        "start_sec": 10920.0,
+        "end_sec": 10950.0,
+        "value": 0.6867
+      },
+      {
+        "start_sec": 10950.0,
+        "end_sec": 10985.0,
+        "value": 0.6505
+      },
+      {
+        "start_sec": 10985.0,
+        "end_sec": 11015.0,
+        "value": 0.7669
+      },
+      {
+        "start_sec": 11015.0,
+        "end_sec": 11045.0,
+        "value": 0.6034
+      },
+      {
+        "start_sec": 11045.0,
+        "end_sec": 11080.0,
+        "value": 0.6665
+      },
+      {
+        "start_sec": 11080.0,
+        "end_sec": 11110.0,
+        "value": 0.484
+      },
+      {
+        "start_sec": 11110.0,
+        "end_sec": 11145.0,
+        "value": 0.8008
+      },
+      {
+        "start_sec": 11145.0,
+        "end_sec": 11175.0,
+        "value": 0.6025
+      },
+      {
+        "start_sec": 11175.0,
+        "end_sec": 11205.0,
+        "value": 0.6795
+      },
+      {
+        "start_sec": 11205.0,
+        "end_sec": 11240.0,
+        "value": 0.5742
+      },
+      {
+        "start_sec": 11240.0,
+        "end_sec": 11270.0,
+        "value": 0.7614
+      },
+      {
+        "start_sec": 11270.0,
+        "end_sec": 11305.0,
+        "value": 0.7469
+      },
+      {
+        "start_sec": 11305.0,
+        "end_sec": 11335.0,
+        "value": 0.665
+      },
+      {
+        "start_sec": 11335.0,
+        "end_sec": 11365.0,
+        "value": 0.6342
+      },
+      {
+        "start_sec": 11365.0,
+        "end_sec": 11400.0,
+        "value": 0.7735
+      },
+      {
+        "start_sec": 11400.0,
+        "end_sec": 11430.0,
+        "value": 0.5465
+      },
+      {
+        "start_sec": 11430.0,
+        "end_sec": 11465.0,
+        "value": 0.5531
+      },
+      {
+        "start_sec": 11465.0,
+        "end_sec": 11495.0,
+        "value": 0.6746
+      },
+      {
+        "start_sec": 11495.0,
+        "end_sec": 11530.0,
+        "value": 0.5561
+      },
+      {
+        "start_sec": 11530.0,
+        "end_sec": 11560.0,
+        "value": 0.6827
+      },
+      {
+        "start_sec": 11560.0,
+        "end_sec": 11590.0,
+        "value": 0.6457
+      },
+      {
+        "start_sec": 11590.0,
+        "end_sec": 11625.0,
+        "value": 0.7017
+      },
+      {
+        "start_sec": 11625.0,
+        "end_sec": 11655.0,
+        "value": 0.7496
+      },
+      {
+        "start_sec": 11655.0,
+        "end_sec": 11690.0,
+        "value": 0.5483
+      },
+      {
+        "start_sec": 11690.0,
+        "end_sec": 11720.0,
+        "value": 0.5638
+      },
+      {
+        "start_sec": 11720.0,
+        "end_sec": 11750.0,
+        "value": 0.7091
+      },
+      {
+        "start_sec": 11750.0,
+        "end_sec": 11785.0,
+        "value": 0.541
+      },
+      {
+        "start_sec": 11785.0,
+        "end_sec": 11815.0,
+        "value": 0.6567
+      },
+      {
+        "start_sec": 11815.0,
+        "end_sec": 11850.0,
+        "value": 0.6219
+      },
+      {
+        "start_sec": 11850.0,
+        "end_sec": 11880.0,
+        "value": 0.4792
+      },
+      {
+        "start_sec": 11880.0,
+        "end_sec": 11910.0,
+        "value": 0.6056
+      },
+      {
+        "start_sec": 11910.0,
+        "end_sec": 11945.0,
+        "value": 0.5043
+      },
+      {
+        "start_sec": 11945.0,
+        "end_sec": 11975.0,
+        "value": 0.6296
+      },
+      {
+        "start_sec": 11975.0,
+        "end_sec": 12010.0,
+        "value": 0.7225
+      },
+      {
+        "start_sec": 12010.0,
+        "end_sec": 12040.0,
+        "value": 0.6154
+      },
+      {
+        "start_sec": 12040.0,
+        "end_sec": 12070.0,
+        "value": 0.4557
+      },
+      {
+        "start_sec": 12070.0,
+        "end_sec": 12105.0,
+        "value": 0.7154
+      },
+      {
+        "start_sec": 12105.0,
+        "end_sec": 12135.0,
+        "value": 0.5349
+      },
+      {
+        "start_sec": 12135.0,
+        "end_sec": 12170.0,
+        "value": 0.4623
+      },
+      {
+        "start_sec": 12170.0,
+        "end_sec": 12200.0,
+        "value": 0.5385
+      },
+      {
+        "start_sec": 12200.0,
+        "end_sec": 12230.0,
+        "value": 0.6579
+      },
+      {
+        "start_sec": 12230.0,
+        "end_sec": 12265.0,
+        "value": 0.5818
+      },
+      {
+        "start_sec": 12265.0,
+        "end_sec": 12295.0,
+        "value": 0.4869
+      },
+      {
+        "start_sec": 12295.0,
+        "end_sec": 12330.0,
+        "value": 0.5952
+      },
+      {
+        "start_sec": 12330.0,
+        "end_sec": 12360.0,
+        "value": 0.633
+      },
+      {
+        "start_sec": 12360.0,
+        "end_sec": 12390.0,
+        "value": 0.6726
+      },
+      {
+        "start_sec": 12390.0,
+        "end_sec": 12425.0,
+        "value": 0.625
+      },
+      {
+        "start_sec": 12425.0,
+        "end_sec": 12455.0,
+        "value": 0.6334
+      },
+      {
+        "start_sec": 12455.0,
+        "end_sec": 12490.0,
+        "value": 0.5201
+      },
+      {
+        "start_sec": 12490.0,
+        "end_sec": 12520.0,
+        "value": 0.7665
+      },
+      {
+        "start_sec": 12520.0,
+        "end_sec": 12550.0,
+        "value": 0.4925
+      },
+      {
+        "start_sec": 12550.0,
+        "end_sec": 12585.0,
+        "value": 0.4975
+      },
+      {
+        "start_sec": 12585.0,
+        "end_sec": 12615.0,
+        "value": 0.716
+      },
+      {
+        "start_sec": 12615.0,
+        "end_sec": 12650.0,
+        "value": 0.5732
+      },
+      {
+        "start_sec": 12650.0,
+        "end_sec": 12680.0,
+        "value": 0.5074
+      },
+      {
+        "start_sec": 12680.0,
+        "end_sec": 12715.0,
+        "value": 0.7077
+      },
+      {
+        "start_sec": 12715.0,
+        "end_sec": 12745.0,
+        "value": 0.7733
+      },
+      {
+        "start_sec": 12745.0,
+        "end_sec": 12775.0,
+        "value": 0.5067
+      },
+      {
+        "start_sec": 12775.0,
+        "end_sec": 12810.0,
+        "value": 0.5286
+      },
+      {
+        "start_sec": 12810.0,
+        "end_sec": 12840.0,
+        "value": 0.5144
+      },
+      {
+        "start_sec": 12840.0,
+        "end_sec": 12875.0,
+        "value": 0.5194
+      },
+      {
+        "start_sec": 12875.0,
+        "end_sec": 12905.0,
+        "value": 0.6858
+      },
+      {
+        "start_sec": 12905.0,
+        "end_sec": 12935.0,
+        "value": 0.7134
+      },
+      {
+        "start_sec": 12935.0,
+        "end_sec": 12970.0,
+        "value": 0.4773
+      },
+      {
+        "start_sec": 12970.0,
+        "end_sec": 13000.0,
+        "value": 0.5885
+      },
+      {
+        "start_sec": 13000.0,
+        "end_sec": 13035.0,
+        "value": 0.6581
+      },
+      {
+        "start_sec": 13035.0,
+        "end_sec": 13065.0,
+        "value": 0.7477
+      },
+      {
+        "start_sec": 13065.0,
+        "end_sec": 13095.0,
+        "value": 0.6754
+      },
+      {
+        "start_sec": 13095.0,
+        "end_sec": 13130.0,
+        "value": 0.3438
+      },
+      {
+        "start_sec": 13130.0,
+        "end_sec": 13160.0,
+        "value": 0.3226
+      },
+      {
+        "start_sec": 13160.0,
+        "end_sec": 13195.0,
+        "value": 0.6347
+      },
+      {
+        "start_sec": 13195.0,
+        "end_sec": 13225.0,
+        "value": 0.5827
+      },
+      {
+        "start_sec": 13225.0,
+        "end_sec": 13255.0,
+        "value": 0.7138
+      },
+      {
+        "start_sec": 13255.0,
+        "end_sec": 13290.0,
+        "value": 0.3988
+      },
+      {
+        "start_sec": 13290.0,
+        "end_sec": 13320.0,
+        "value": 0.4264
+      },
+      {
+        "start_sec": 13320.0,
+        "end_sec": 13355.0,
+        "value": 0.557
+      },
+      {
+        "start_sec": 13355.0,
+        "end_sec": 13385.0,
+        "value": 0.6004
+      },
+      {
+        "start_sec": 13385.0,
+        "end_sec": 13415.0,
+        "value": 0.519
+      },
+      {
+        "start_sec": 13415.0,
+        "end_sec": 13450.0,
+        "value": 0.6757
+      },
+      {
+        "start_sec": 13450.0,
+        "end_sec": 13480.0,
+        "value": 0.6291
+      },
+      {
+        "start_sec": 13480.0,
+        "end_sec": 13515.0,
+        "value": 0.6019
+      },
+      {
+        "start_sec": 13515.0,
+        "end_sec": 13545.0,
+        "value": 0.5206
+      },
+      {
+        "start_sec": 13545.0,
+        "end_sec": 13575.0,
+        "value": 0.6225
+      },
+      {
+        "start_sec": 13575.0,
+        "end_sec": 13610.0,
+        "value": 0.6717
+      },
+      {
+        "start_sec": 13610.0,
+        "end_sec": 13640.0,
+        "value": 0.6062
+      },
+      {
+        "start_sec": 13640.0,
+        "end_sec": 13675.0,
+        "value": 0.6193
+      },
+      {
+        "start_sec": 13675.0,
+        "end_sec": 13705.0,
+        "value": 0.5898
+      },
+      {
+        "start_sec": 13705.0,
+        "end_sec": 13735.0,
+        "value": 0.7293
+      },
+      {
+        "start_sec": 13735.0,
+        "end_sec": 13770.0,
+        "value": 0.6968
+      },
+      {
+        "start_sec": 13770.0,
+        "end_sec": 13800.0,
+        "value": 0.6864
+      },
+      {
+        "start_sec": 13800.0,
+        "end_sec": 13835.0,
+        "value": 0.6648
+      },
+      {
+        "start_sec": 13835.0,
+        "end_sec": 13865.0,
+        "value": 0.6629
+      },
+      {
+        "start_sec": 13865.0,
+        "end_sec": 13900.0,
+        "value": 0.7457
+      },
+      {
+        "start_sec": 13900.0,
+        "end_sec": 13930.0,
+        "value": 0.5954
+      },
+      {
+        "start_sec": 13930.0,
+        "end_sec": 13960.0,
+        "value": 0.7333
+      },
+      {
+        "start_sec": 13960.0,
+        "end_sec": 13995.0,
+        "value": 0.5817
+      },
+      {
+        "start_sec": 13995.0,
+        "end_sec": 14025.0,
+        "value": 0.5109
+      },
+      {
+        "start_sec": 14025.0,
+        "end_sec": 14060.0,
+        "value": 0.5294
+      },
+      {
+        "start_sec": 14060.0,
+        "end_sec": 14090.0,
+        "value": 0.6329
+      },
+      {
+        "start_sec": 14090.0,
+        "end_sec": 14120.0,
+        "value": 0.6555
+      },
+      {
+        "start_sec": 14120.0,
+        "end_sec": 14155.0,
+        "value": 0.6754
+      },
+      {
+        "start_sec": 14155.0,
+        "end_sec": 14185.0,
+        "value": 0.7511
+      },
+      {
+        "start_sec": 14185.0,
+        "end_sec": 14220.0,
+        "value": 0.6018
+      },
+      {
+        "start_sec": 14220.0,
+        "end_sec": 14250.0,
+        "value": 0.7262
+      },
+      {
+        "start_sec": 14250.0,
+        "end_sec": 14280.0,
+        "value": 0.7081
+      },
+      {
+        "start_sec": 14280.0,
+        "end_sec": 14315.0,
+        "value": 0.7161
+      },
+      {
+        "start_sec": 14315.0,
+        "end_sec": 14345.0,
+        "value": 0.7032
+      },
+      {
+        "start_sec": 14345.0,
+        "end_sec": 14380.0,
+        "value": 0.5635
+      },
+      {
+        "start_sec": 14380.0,
+        "end_sec": 14410.0,
+        "value": 0.7059
+      },
+      {
+        "start_sec": 14410.0,
+        "end_sec": 14440.0,
+        "value": 0.7005
+      },
+      {
+        "start_sec": 14440.0,
+        "end_sec": 14475.0,
+        "value": 0.714
+      },
+      {
+        "start_sec": 14475.0,
+        "end_sec": 14505.0,
+        "value": 0.7
+      },
+      {
+        "start_sec": 14505.0,
+        "end_sec": 14540.0,
+        "value": 0.4131
+      },
+      {
+        "start_sec": 14540.0,
+        "end_sec": 14570.0,
+        "value": 0.5305
+      },
+      {
+        "start_sec": 14570.0,
+        "end_sec": 14600.0,
+        "value": 0.505
+      },
+      {
+        "start_sec": 14600.0,
+        "end_sec": 14635.0,
+        "value": 0.4569
+      },
+      {
+        "start_sec": 14635.0,
+        "end_sec": 14665.0,
+        "value": 0.6689
+      },
+      {
+        "start_sec": 14665.0,
+        "end_sec": 14700.0,
+        "value": 0.7723
+      },
+      {
+        "start_sec": 14700.0,
+        "end_sec": 14730.0,
+        "value": 0.7476
+      },
+      {
+        "start_sec": 14730.0,
+        "end_sec": 14760.0,
+        "value": 0.7367
+      },
+      {
+        "start_sec": 14760.0,
+        "end_sec": 14795.0,
+        "value": 0.7116
+      },
+      {
+        "start_sec": 14795.0,
+        "end_sec": 14825.0,
+        "value": 0.4536
+      },
+      {
+        "start_sec": 14825.0,
+        "end_sec": 14860.0,
+        "value": 0.4859
+      },
+      {
+        "start_sec": 14860.0,
+        "end_sec": 14890.0,
+        "value": 0.7219
+      },
+      {
+        "start_sec": 14890.0,
+        "end_sec": 14920.0,
+        "value": 0.7687
+      },
+      {
+        "start_sec": 14920.0,
+        "end_sec": 14955.0,
+        "value": 0.6916
+      },
+      {
+        "start_sec": 14955.0,
+        "end_sec": 14985.0,
+        "value": 0.4819
+      },
+      {
+        "start_sec": 14985.0,
+        "end_sec": 15020.0,
+        "value": 0.6598
+      },
+      {
+        "start_sec": 15020.0,
+        "end_sec": 15050.0,
+        "value": 0.6562
+      },
+      {
+        "start_sec": 15050.0,
+        "end_sec": 15085.0,
+        "value": 0.7319
+      },
+      {
+        "start_sec": 15085.0,
+        "end_sec": 15115.0,
+        "value": 0.5784
+      },
+      {
+        "start_sec": 15115.0,
+        "end_sec": 15145.0,
+        "value": 0.6323
+      },
+      {
+        "start_sec": 15145.0,
+        "end_sec": 15180.0,
+        "value": 0.6975
+      },
+      {
+        "start_sec": 15180.0,
+        "end_sec": 15210.0,
+        "value": 0.6527
+      },
+      {
+        "start_sec": 15210.0,
+        "end_sec": 15245.0,
+        "value": 0.5301
+      },
+      {
+        "start_sec": 15245.0,
+        "end_sec": 15275.0,
+        "value": 0.3726
+      },
+      {
+        "start_sec": 15275.0,
+        "end_sec": 15305.0,
+        "value": 0.5257
+      },
+      {
+        "start_sec": 15305.0,
+        "end_sec": 15340.0,
+        "value": 0.4327
+      },
+      {
+        "start_sec": 15340.0,
+        "end_sec": 15370.0,
+        "value": 0.4532
+      },
+      {
+        "start_sec": 15370.0,
+        "end_sec": 15405.0,
+        "value": 0.559
+      },
+      {
+        "start_sec": 15405.0,
+        "end_sec": 15435.0,
+        "value": 0.5289
+      },
+      {
+        "start_sec": 15435.0,
+        "end_sec": 15465.0,
+        "value": 0.565
+      },
+      {
+        "start_sec": 15465.0,
+        "end_sec": 15500.0,
+        "value": 0.6314
+      },
+      {
+        "start_sec": 15500.0,
+        "end_sec": 15530.0,
+        "value": 0.6711
+      },
+      {
+        "start_sec": 15530.0,
+        "end_sec": 15565.0,
+        "value": 0.5103
+      },
+      {
+        "start_sec": 15565.0,
+        "end_sec": 15595.0,
+        "value": 0.5852
+      },
+      {
+        "start_sec": 15595.0,
+        "end_sec": 15625.0,
+        "value": 0.5351
+      },
+      {
+        "start_sec": 15625.0,
+        "end_sec": 15660.0,
+        "value": 0.7031
+      },
+      {
+        "start_sec": 15660.0,
+        "end_sec": 15690.0,
+        "value": 0.6963
+      },
+      {
+        "start_sec": 15690.0,
+        "end_sec": 15725.0,
+        "value": 0.7195
+      },
+      {
+        "start_sec": 15725.0,
+        "end_sec": 15755.0,
+        "value": 0.5315
+      },
+      {
+        "start_sec": 15755.0,
+        "end_sec": 15785.0,
+        "value": 0.5025
+      },
+      {
+        "start_sec": 15785.0,
+        "end_sec": 15820.0,
+        "value": 0.6526
+      },
+      {
+        "start_sec": 15820.0,
+        "end_sec": 15850.0,
+        "value": 0.7252
+      },
+      {
+        "start_sec": 15850.0,
+        "end_sec": 15885.0,
+        "value": 0.6731
+      },
+      {
+        "start_sec": 15885.0,
+        "end_sec": 15915.0,
+        "value": 0.7644
+      },
+      {
+        "start_sec": 15915.0,
+        "end_sec": 15945.0,
+        "value": 0.67
+      },
+      {
+        "start_sec": 15945.0,
+        "end_sec": 15980.0,
+        "value": 0.5617
+      },
+      {
+        "start_sec": 15980.0,
+        "end_sec": 16010.0,
+        "value": 0.7143
+      },
+      {
+        "start_sec": 16010.0,
+        "end_sec": 16045.0,
+        "value": 0.6968
+      },
+      {
+        "start_sec": 16045.0,
+        "end_sec": 16075.0,
+        "value": 0.6372
+      },
+      {
+        "start_sec": 16075.0,
+        "end_sec": 16105.0,
+        "value": 0.4815
+      },
+      {
+        "start_sec": 16105.0,
+        "end_sec": 16140.0,
+        "value": 0.5449
+      },
+      {
+        "start_sec": 16140.0,
+        "end_sec": 16170.0,
+        "value": 0.6338
+      },
+      {
+        "start_sec": 16170.0,
+        "end_sec": 16205.0,
+        "value": 0.5736
+      },
+      {
+        "start_sec": 16205.0,
+        "end_sec": 16235.0,
+        "value": 0.6214
+      },
+      {
+        "start_sec": 16235.0,
+        "end_sec": 16270.0,
+        "value": 0.5105
+      },
+      {
+        "start_sec": 16270.0,
+        "end_sec": 16300.0,
+        "value": 0.7206
+      },
+      {
+        "start_sec": 16300.0,
+        "end_sec": 16330.0,
+        "value": 0.5445
+      },
+      {
+        "start_sec": 16330.0,
+        "end_sec": 16365.0,
+        "value": 0.4762
+      },
+      {
+        "start_sec": 16365.0,
+        "end_sec": 16395.0,
+        "value": 0.6202
+      },
+      {
+        "start_sec": 16395.0,
+        "end_sec": 16430.0,
+        "value": 0.5306
+      },
+      {
+        "start_sec": 16430.0,
+        "end_sec": 16460.0,
+        "value": 0.7308
+      },
+      {
+        "start_sec": 16460.0,
+        "end_sec": 16490.0,
+        "value": 0.7027
+      },
+      {
+        "start_sec": 16490.0,
+        "end_sec": 16525.0,
+        "value": 0.7203
+      },
+      {
+        "start_sec": 16525.0,
+        "end_sec": 16555.0,
+        "value": 0.6924
+      },
+      {
+        "start_sec": 16555.0,
+        "end_sec": 16590.0,
+        "value": 0.6018
+      },
+      {
+        "start_sec": 16590.0,
+        "end_sec": 16620.0,
+        "value": 0.7009
+      },
+      {
+        "start_sec": 16620.0,
+        "end_sec": 16650.0,
+        "value": 0.4876
+      },
+      {
+        "start_sec": 16650.0,
+        "end_sec": 16685.0,
+        "value": 0.6304
+      },
+      {
+        "start_sec": 16685.0,
+        "end_sec": 16715.0,
+        "value": 0.5769
+      },
+      {
+        "start_sec": 16715.0,
+        "end_sec": 16750.0,
+        "value": 0.5656
+      },
+      {
+        "start_sec": 16750.0,
+        "end_sec": 16780.0,
+        "value": 0.6553
+      },
+      {
+        "start_sec": 16780.0,
+        "end_sec": 16810.0,
+        "value": 0.6938
+      },
+      {
+        "start_sec": 16810.0,
+        "end_sec": 16845.0,
+        "value": 0.6834
+      },
+      {
+        "start_sec": 16845.0,
+        "end_sec": 16875.0,
+        "value": 0.7889
+      },
+      {
+        "start_sec": 16875.0,
+        "end_sec": 16910.0,
+        "value": 0.6783
+      },
+      {
+        "start_sec": 16910.0,
+        "end_sec": 16940.0,
+        "value": 0.6611
+      },
+      {
+        "start_sec": 16940.0,
+        "end_sec": 16970.0,
+        "value": 0.5977
+      },
+      {
+        "start_sec": 16970.0,
+        "end_sec": 17005.0,
+        "value": 0.5914
+      },
+      {
+        "start_sec": 17005.0,
+        "end_sec": 17035.0,
+        "value": 0.6392
+      },
+      {
+        "start_sec": 17035.0,
+        "end_sec": 17070.0,
+        "value": 0.6722
+      },
+      {
+        "start_sec": 17070.0,
+        "end_sec": 17100.0,
+        "value": 0.4834
+      },
+      {
+        "start_sec": 17100.0,
+        "end_sec": 17130.0,
+        "value": 0.5909
+      },
+      {
+        "start_sec": 17130.0,
+        "end_sec": 17165.0,
+        "value": 0.6809
+      },
+      {
+        "start_sec": 17165.0,
+        "end_sec": 17195.0,
+        "value": 0.7019
+      },
+      {
+        "start_sec": 17195.0,
+        "end_sec": 17230.0,
+        "value": 0.6678
+      },
+      {
+        "start_sec": 17230.0,
+        "end_sec": 17260.0,
+        "value": 0.6759
+      },
+      {
+        "start_sec": 17260.0,
+        "end_sec": 17295.0,
+        "value": 0.4371
+      },
+      {
+        "start_sec": 17295.0,
+        "end_sec": 17325.0,
+        "value": 0.6803
+      },
+      {
+        "start_sec": 17325.0,
+        "end_sec": 17355.0,
+        "value": 0.6718
+      },
+      {
+        "start_sec": 17355.0,
+        "end_sec": 17390.0,
+        "value": 0.6054
+      },
+      {
+        "start_sec": 17390.0,
+        "end_sec": 17420.0,
+        "value": 0.5444
+      },
+      {
+        "start_sec": 17420.0,
+        "end_sec": 17455.0,
+        "value": 0.7117
+      },
+      {
+        "start_sec": 17455.0,
+        "end_sec": 17485.0,
+        "value": 0.457
+      },
+      {
+        "start_sec": 17485.0,
+        "end_sec": 17515.0,
+        "value": 0.4432
+      },
+      {
+        "start_sec": 17515.0,
+        "end_sec": 17550.0,
+        "value": 0.6293
+      },
+      {
+        "start_sec": 17550.0,
+        "end_sec": 17580.0,
+        "value": 0.682
+      },
+      {
+        "start_sec": 17580.0,
+        "end_sec": 17615.0,
+        "value": 0.7172
+      },
+      {
+        "start_sec": 17615.0,
+        "end_sec": 17645.0,
+        "value": 0.7101
+      },
+      {
+        "start_sec": 17645.0,
+        "end_sec": 17675.0,
+        "value": 0.6916
+      },
+      {
+        "start_sec": 17675.0,
+        "end_sec": 17710.0,
+        "value": 0.7076
+      },
+      {
+        "start_sec": 17710.0,
+        "end_sec": 17740.0,
+        "value": 0.773
+      },
+      {
+        "start_sec": 17740.0,
+        "end_sec": 17775.0,
+        "value": 0.7606
+      },
+      {
+        "start_sec": 17775.0,
+        "end_sec": 17805.0,
+        "value": 0.7457
+      },
+      {
+        "start_sec": 17805.0,
+        "end_sec": 17835.0,
+        "value": 0.6689
+      },
+      {
+        "start_sec": 17835.0,
+        "end_sec": 17870.0,
+        "value": 0.6647
+      },
+      {
+        "start_sec": 17870.0,
+        "end_sec": 17900.0,
+        "value": 0.7806
+      },
+      {
+        "start_sec": 17900.0,
+        "end_sec": 17935.0,
+        "value": 0.7494
+      },
+      {
+        "start_sec": 17935.0,
+        "end_sec": 17965.0,
+        "value": 0.6071
+      },
+      {
+        "start_sec": 17965.0,
+        "end_sec": 17995.0,
+        "value": 0.6779
+      },
+      {
+        "start_sec": 17995.0,
+        "end_sec": 18030.0,
+        "value": 0.5618
+      },
+      {
+        "start_sec": 18030.0,
+        "end_sec": 18060.0,
+        "value": 0.4844
+      },
+      {
+        "start_sec": 18060.0,
+        "end_sec": 18095.0,
+        "value": 0.5278
+      },
+      {
+        "start_sec": 18095.0,
+        "end_sec": 18125.0,
+        "value": 0.515
+      },
+      {
+        "start_sec": 18125.0,
+        "end_sec": 18155.0,
+        "value": 0.5618
+      },
+      {
+        "start_sec": 18155.0,
+        "end_sec": 18190.0,
+        "value": 0.6384
+      },
+      {
+        "start_sec": 18190.0,
+        "end_sec": 18220.0,
+        "value": 0.5824
+      },
+      {
+        "start_sec": 18220.0,
+        "end_sec": 18255.0,
+        "value": 0.5309
+      },
+      {
+        "start_sec": 18255.0,
+        "end_sec": 18285.0,
+        "value": 0.481
+      },
+      {
+        "start_sec": 18285.0,
+        "end_sec": 18315.0,
+        "value": 0.4814
+      },
+      {
+        "start_sec": 18315.0,
+        "end_sec": 18350.0,
+        "value": 0.726
+      },
+      {
+        "start_sec": 18350.0,
+        "end_sec": 18380.0,
+        "value": 0.543
+      },
+      {
+        "start_sec": 18380.0,
+        "end_sec": 18415.0,
+        "value": 0.648
+      },
+      {
+        "start_sec": 18415.0,
+        "end_sec": 18445.0,
+        "value": 0.536
+      },
+      {
+        "start_sec": 18445.0,
+        "end_sec": 18480.0,
+        "value": 0.762
+      },
+      {
+        "start_sec": 18480.0,
+        "end_sec": 18510.0,
+        "value": 0.4868
+      },
+      {
+        "start_sec": 18510.0,
+        "end_sec": 18540.0,
+        "value": 0.6073
+      },
+      {
+        "start_sec": 18540.0,
+        "end_sec": 18575.0,
+        "value": 0.7558
+      },
+      {
+        "start_sec": 18575.0,
+        "end_sec": 18605.0,
+        "value": 0.6318
+      },
+      {
+        "start_sec": 18605.0,
+        "end_sec": 18640.0,
+        "value": 0.7559
+      },
+      {
+        "start_sec": 18640.0,
+        "end_sec": 18670.0,
+        "value": 0.809
+      },
+      {
+        "start_sec": 18670.0,
+        "end_sec": 18700.0,
+        "value": 0.7394
+      },
+      {
+        "start_sec": 18700.0,
+        "end_sec": 18735.0,
+        "value": 0.5068
+      },
+      {
+        "start_sec": 18735.0,
+        "end_sec": 18765.0,
+        "value": 0.6239
+      },
+      {
+        "start_sec": 18765.0,
+        "end_sec": 18800.0,
+        "value": 0.7591
+      },
+      {
+        "start_sec": 18800.0,
+        "end_sec": 18830.0,
+        "value": 0.6225
+      },
+      {
+        "start_sec": 18830.0,
+        "end_sec": 18860.0,
+        "value": 0.4908
+      },
+      {
+        "start_sec": 18860.0,
+        "end_sec": 18895.0,
+        "value": 0.504
+      },
+      {
+        "start_sec": 18895.0,
+        "end_sec": 18925.0,
+        "value": 0.6867
+      },
+      {
+        "start_sec": 18925.0,
+        "end_sec": 18960.0,
+        "value": 0.5179
+      },
+      {
+        "start_sec": 18960.0,
+        "end_sec": 18990.0,
+        "value": 0.4535
+      },
+      {
+        "start_sec": 18990.0,
+        "end_sec": 19020.0,
+        "value": 0.6704
+      },
+      {
+        "start_sec": 19020.0,
+        "end_sec": 19055.0,
+        "value": 0.5876
+      },
+      {
+        "start_sec": 19055.0,
+        "end_sec": 19085.0,
+        "value": 0.5434
+      },
+      {
+        "start_sec": 19085.0,
+        "end_sec": 19120.0,
+        "value": 0.6628
+      },
+      {
+        "start_sec": 19120.0,
+        "end_sec": 19150.0,
+        "value": 0.5349
+      },
+      {
+        "start_sec": 19150.0,
+        "end_sec": 19180.0,
+        "value": 0.8187
+      },
+      {
+        "start_sec": 19180.0,
+        "end_sec": 19215.0,
+        "value": 0.6369
+      },
+      {
+        "start_sec": 19215.0,
+        "end_sec": 19245.0,
+        "value": 0.7364
+      },
+      {
+        "start_sec": 19245.0,
+        "end_sec": 19280.0,
+        "value": 0.6774
+      },
+      {
+        "start_sec": 19280.0,
+        "end_sec": 19310.0,
+        "value": 0.5517
+      },
+      {
+        "start_sec": 19310.0,
+        "end_sec": 19340.0,
+        "value": 0.7875
+      },
+      {
+        "start_sec": 19340.0,
+        "end_sec": 19375.0,
+        "value": 0.7271
+      },
+      {
+        "start_sec": 19375.0,
+        "end_sec": 19405.0,
+        "value": 0.6033
+      },
+      {
+        "start_sec": 19405.0,
+        "end_sec": 19440.0,
+        "value": 0.4364
+      },
+      {
+        "start_sec": 19440.0,
+        "end_sec": 19470.0,
+        "value": 0.6111
+      },
+      {
+        "start_sec": 19470.0,
+        "end_sec": 19500.0,
+        "value": 0.7332
+      },
+      {
+        "start_sec": 19500.0,
+        "end_sec": 19535.0,
+        "value": 0.3419
+      },
+      {
+        "start_sec": 19535.0,
+        "end_sec": 19565.0,
+        "value": 0.6071
+      },
+      {
+        "start_sec": 19565.0,
+        "end_sec": 19600.0,
+        "value": 0.7356
+      },
+      {
+        "start_sec": 19600.0,
+        "end_sec": 19630.0,
+        "value": 0.6971
+      },
+      {
+        "start_sec": 19630.0,
+        "end_sec": 19665.0,
+        "value": 0.7416
+      },
+      {
+        "start_sec": 19665.0,
+        "end_sec": 19695.0,
+        "value": 0.5642
+      },
+      {
+        "start_sec": 19695.0,
+        "end_sec": 19725.0,
+        "value": 0.4161
+      },
+      {
+        "start_sec": 19725.0,
+        "end_sec": 19760.0,
+        "value": 0.5453
+      },
+      {
+        "start_sec": 19760.0,
+        "end_sec": 19790.0,
+        "value": 0.567
+      },
+      {
+        "start_sec": 19790.0,
+        "end_sec": 19825.0,
+        "value": 0.4427
+      },
+      {
+        "start_sec": 19825.0,
+        "end_sec": 19855.0,
+        "value": 0.5215
+      },
+      {
+        "start_sec": 19855.0,
+        "end_sec": 19885.0,
+        "value": 0.6491
+      },
+      {
+        "start_sec": 19885.0,
+        "end_sec": 19920.0,
+        "value": 0.5552
+      },
+      {
+        "start_sec": 19920.0,
+        "end_sec": 19950.0,
+        "value": 0.583
+      },
+      {
+        "start_sec": 19950.0,
+        "end_sec": 19985.0,
+        "value": 0.5564
+      },
+      {
+        "start_sec": 19985.0,
+        "end_sec": 20015.0,
+        "value": 0.5194
+      },
+      {
+        "start_sec": 20015.0,
+        "end_sec": 20045.0,
+        "value": 0.7523
+      },
+      {
+        "start_sec": 20045.0,
+        "end_sec": 20080.0,
+        "value": 0.6315
+      },
+      {
+        "start_sec": 20080.0,
+        "end_sec": 20110.0,
+        "value": 0.5819
+      },
+      {
+        "start_sec": 20110.0,
+        "end_sec": 20145.0,
+        "value": 0.5735
+      },
+      {
+        "start_sec": 20145.0,
+        "end_sec": 20175.0,
+        "value": 0.5485
+      },
+      {
+        "start_sec": 20175.0,
+        "end_sec": 20205.0,
+        "value": 0.5842
+      },
+      {
+        "start_sec": 20205.0,
+        "end_sec": 20240.0,
+        "value": 0.6842
+      },
+      {
+        "start_sec": 20240.0,
+        "end_sec": 20270.0,
+        "value": 0.646
+      },
+      {
+        "start_sec": 20270.0,
+        "end_sec": 20305.0,
+        "value": 0.6013
+      },
+      {
+        "start_sec": 20305.0,
+        "end_sec": 20335.0,
+        "value": 0.7138
+      },
+      {
+        "start_sec": 20335.0,
+        "end_sec": 20365.0,
+        "value": 0.7024
+      },
+      {
+        "start_sec": 20365.0,
+        "end_sec": 20400.0,
+        "value": 0.6237
+      },
+      {
+        "start_sec": 20400.0,
+        "end_sec": 20430.0,
+        "value": 0.5236
+      },
+      {
+        "start_sec": 20430.0,
+        "end_sec": 20465.0,
+        "value": 0.5824
+      },
+      {
+        "start_sec": 20465.0,
+        "end_sec": 20495.0,
+        "value": 0.5407
+      },
+      {
+        "start_sec": 20495.0,
+        "end_sec": 20525.0,
+        "value": 0.7505
+      },
+      {
+        "start_sec": 20525.0,
+        "end_sec": 20560.0,
+        "value": 0.7484
+      },
+      {
+        "start_sec": 20560.0,
+        "end_sec": 20590.0,
+        "value": 0.6974
+      },
+      {
+        "start_sec": 20590.0,
+        "end_sec": 20625.0,
+        "value": 0.7882
+      },
+      {
+        "start_sec": 20625.0,
+        "end_sec": 20655.0,
+        "value": 0.6251
+      },
+      {
+        "start_sec": 20655.0,
+        "end_sec": 20685.0,
+        "value": 0.5724
+      },
+      {
+        "start_sec": 20685.0,
+        "end_sec": 20720.0,
+        "value": 0.7308
+      },
+      {
+        "start_sec": 20720.0,
+        "end_sec": 20750.0,
+        "value": 0.762
+      },
+      {
+        "start_sec": 20750.0,
+        "end_sec": 20785.0,
+        "value": 0.6369
+      },
+      {
+        "start_sec": 20785.0,
+        "end_sec": 20815.0,
+        "value": 0.5994
+      },
+      {
+        "start_sec": 20815.0,
+        "end_sec": 20850.0,
+        "value": 0.6048
+      },
+      {
+        "start_sec": 20850.0,
+        "end_sec": 20880.0,
+        "value": 0.6629
+      },
+      {
+        "start_sec": 20880.0,
+        "end_sec": 20910.0,
+        "value": 0.5624
+      },
+      {
+        "start_sec": 20910.0,
+        "end_sec": 20945.0,
+        "value": 0.6952
+      },
+      {
+        "start_sec": 20945.0,
+        "end_sec": 20975.0,
+        "value": 0.522
+      },
+      {
+        "start_sec": 20975.0,
+        "end_sec": 21010.0,
+        "value": 0.5865
+      },
+      {
+        "start_sec": 21010.0,
+        "end_sec": 21040.0,
+        "value": 0.5889
+      },
+      {
+        "start_sec": 21040.0,
+        "end_sec": 21070.0,
+        "value": 0.6744
+      },
+      {
+        "start_sec": 21070.0,
+        "end_sec": 21105.0,
+        "value": 0.6616
+      },
+      {
+        "start_sec": 21105.0,
+        "end_sec": 21135.0,
+        "value": 0.5398
+      },
+      {
+        "start_sec": 21135.0,
+        "end_sec": 21170.0,
+        "value": 0.6906
+      },
+      {
+        "start_sec": 21170.0,
+        "end_sec": 21200.0,
+        "value": 0.7048
+      },
+      {
+        "start_sec": 21200.0,
+        "end_sec": 21230.0,
+        "value": 0.8186
+      },
+      {
+        "start_sec": 21230.0,
+        "end_sec": 21265.0,
+        "value": 0.6486
+      },
+      {
+        "start_sec": 21265.0,
+        "end_sec": 21295.0,
+        "value": 0.5922
+      },
+      {
+        "start_sec": 21295.0,
+        "end_sec": 21330.0,
+        "value": 0.7479
+      },
+      {
+        "start_sec": 21330.0,
+        "end_sec": 21360.0,
+        "value": 0.7262
+      },
+      {
+        "start_sec": 21360.0,
+        "end_sec": 21390.0,
+        "value": 0.6817
+      },
+      {
+        "start_sec": 21390.0,
+        "end_sec": 21425.0,
+        "value": 0.804
+      },
+      {
+        "start_sec": 21425.0,
+        "end_sec": 21455.0,
+        "value": 0.65
+      },
+      {
+        "start_sec": 21455.0,
+        "end_sec": 21490.0,
+        "value": 0.7675
+      },
+      {
+        "start_sec": 21490.0,
+        "end_sec": 21520.0,
+        "value": 0.6071
+      },
+      {
+        "start_sec": 21520.0,
+        "end_sec": 21550.0,
+        "value": 0.7205
+      },
+      {
+        "start_sec": 21550.0,
+        "end_sec": 21585.0,
+        "value": 0.7557
+      },
+      {
+        "start_sec": 21585.0,
+        "end_sec": 21615.0,
+        "value": 0.6899
+      },
+      {
+        "start_sec": 21615.0,
+        "end_sec": 21650.0,
+        "value": 0.5965
+      },
+      {
+        "start_sec": 21650.0,
+        "end_sec": 21680.0,
+        "value": 0.5671
+      },
+      {
+        "start_sec": 21680.0,
+        "end_sec": 21710.0,
+        "value": 0.606
+      },
+      {
+        "start_sec": 21710.0,
+        "end_sec": 21745.0,
+        "value": 0.6547
+      },
+      {
+        "start_sec": 21745.0,
+        "end_sec": 21775.0,
+        "value": 0.4916
+      },
+      {
+        "start_sec": 21775.0,
+        "end_sec": 21810.0,
+        "value": 0.6077
+      },
+      {
+        "start_sec": 21810.0,
+        "end_sec": 21840.0,
+        "value": 0.4844
+      },
+      {
+        "start_sec": 21840.0,
+        "end_sec": 21870.0,
+        "value": 0.5032
+      },
+      {
+        "start_sec": 21870.0,
+        "end_sec": 21905.0,
+        "value": 0.5547
+      },
+      {
+        "start_sec": 21905.0,
+        "end_sec": 21935.0,
+        "value": 0.5819
+      },
+      {
+        "start_sec": 21935.0,
+        "end_sec": 21970.0,
+        "value": 0.7582
+      },
+      {
+        "start_sec": 21970.0,
+        "end_sec": 22000.0,
+        "value": 0.6408
+      },
+      {
+        "start_sec": 22000.0,
+        "end_sec": 22035.0,
+        "value": 0.629
+      },
+      {
+        "start_sec": 22035.0,
+        "end_sec": 22065.0,
+        "value": 0.6033
+      },
+      {
+        "start_sec": 22065.0,
+        "end_sec": 22095.0,
+        "value": 0.6469
+      },
+      {
+        "start_sec": 22095.0,
+        "end_sec": 22130.0,
+        "value": 0.6155
+      },
+      {
+        "start_sec": 22130.0,
+        "end_sec": 22160.0,
+        "value": 0.7069
+      },
+      {
+        "start_sec": 22160.0,
+        "end_sec": 22195.0,
+        "value": 0.7906
+      },
+      {
+        "start_sec": 22195.0,
+        "end_sec": 22225.0,
+        "value": 0.6175
+      },
+      {
+        "start_sec": 22225.0,
+        "end_sec": 22255.0,
+        "value": 0.7408
+      },
+      {
+        "start_sec": 22255.0,
+        "end_sec": 22290.0,
+        "value": 0.6452
+      },
+      {
+        "start_sec": 22290.0,
+        "end_sec": 22320.0,
+        "value": 0.5667
+      },
+      {
+        "start_sec": 22320.0,
+        "end_sec": 22355.0,
+        "value": 0.6364
+      },
+      {
+        "start_sec": 22355.0,
+        "end_sec": 22385.0,
+        "value": 0.5779
+      },
+      {
+        "start_sec": 22385.0,
+        "end_sec": 22415.0,
+        "value": 0.7454
+      },
+      {
+        "start_sec": 22415.0,
+        "end_sec": 22450.0,
+        "value": 0.7361
+      },
+      {
+        "start_sec": 22450.0,
+        "end_sec": 22480.0,
+        "value": 0.7675
+      },
+      {
+        "start_sec": 22480.0,
+        "end_sec": 22515.0,
+        "value": 0.737
+      },
+      {
+        "start_sec": 22515.0,
+        "end_sec": 22545.0,
+        "value": 0.7337
+      },
+      {
+        "start_sec": 22545.0,
+        "end_sec": 22575.0,
+        "value": 0.5912
+      },
+      {
+        "start_sec": 22575.0,
+        "end_sec": 22610.0,
+        "value": 0.7441
+      },
+      {
+        "start_sec": 22610.0,
+        "end_sec": 22640.0,
+        "value": 0.7459
+      },
+      {
+        "start_sec": 22640.0,
+        "end_sec": 22675.0,
+        "value": 0.7664
+      },
+      {
+        "start_sec": 22675.0,
+        "end_sec": 22705.0,
+        "value": 0.7855
+      },
+      {
+        "start_sec": 22705.0,
+        "end_sec": 22735.0,
+        "value": 0.6151
+      },
+      {
+        "start_sec": 22735.0,
+        "end_sec": 22770.0,
+        "value": 0.5911
+      },
+      {
+        "start_sec": 22770.0,
+        "end_sec": 22800.0,
+        "value": 0.5518
+      },
+      {
+        "start_sec": 22800.0,
+        "end_sec": 22835.0,
+        "value": 0.578
+      },
+      {
+        "start_sec": 22835.0,
+        "end_sec": 22865.0,
+        "value": 0.7574
+      },
+      {
+        "start_sec": 22865.0,
+        "end_sec": 22895.0,
+        "value": 0.6271
+      },
+      {
+        "start_sec": 22895.0,
+        "end_sec": 22930.0,
+        "value": 0.6698
+      },
+      {
+        "start_sec": 22930.0,
+        "end_sec": 22960.0,
+        "value": 0.7624
+      },
+      {
+        "start_sec": 22960.0,
+        "end_sec": 22995.0,
+        "value": 0.7178
+      },
+      {
+        "start_sec": 22995.0,
+        "end_sec": 23025.0,
+        "value": 0.7085
+      },
+      {
+        "start_sec": 23025.0,
+        "end_sec": 23058.0,
+        "value": 0.7654
+      }
+    ]
+  },
+  "audio_feature_source": {
+    "kind": "relative_loudness_main_pipeline",
+    "enabled_by_default": true,
+    "window_sec": 5,
+    "min_percentile": 0.95,
+    "min_gap_sec": 30,
+    "chat_overlap_sec": 60,
+    "max_peaks": 20,
+    "waveform_max_points": 720,
+    "normalization": "per_vod_relative_percentile_and_z_score",
+    "decision_rule": "audio is supporting evidence; audio-only peaks do not prove highlight importance",
+    "sample_count": 23059,
+    "source_kind": "whisper_wav_cache",
+    "sample_extraction": "wav_pcm_python",
+    "source_count": 7,
+    "include_lufs": false,
+    "reused_from_cache": true
+  },
+  "audio_reaction_peaks": [
+    {
+      "start_sec": 3215.0,
+      "end_sec": 3220.0,
+      "center_sec": 3217.5,
+      "loudness_db": -16.228,
+      "peak_db": -1.153,
+      "percentile": 0.9858,
+      "z_score": 1.5734,
+      "normalized": 0.7622,
+      "score": 0.9222,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 3960.0,
+      "end_sec": 3965.0,
+      "center_sec": 3962.5,
+      "loudness_db": -14.627,
+      "peak_db": 0.0,
+      "percentile": 0.9973,
+      "z_score": 1.8792,
+      "normalized": 0.8132,
+      "score": 0.8932,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4535.0,
+      "end_sec": 4540.0,
+      "center_sec": 4537.5,
+      "loudness_db": -12.446,
+      "peak_db": 0.0,
+      "percentile": 0.9997,
+      "z_score": 2.2957,
+      "normalized": 0.8826,
+      "score": 1.0,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5190.0,
+      "end_sec": 5195.0,
+      "center_sec": 5192.5,
+      "loudness_db": -14.931,
+      "peak_db": -0.857,
+      "percentile": 0.996,
+      "z_score": 1.821,
+      "normalized": 0.8035,
+      "score": 0.8835,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5530.0,
+      "end_sec": 5535.0,
+      "center_sec": 5532.5,
+      "loudness_db": -14.616,
+      "peak_db": -0.368,
+      "percentile": 0.9975,
+      "z_score": 1.8813,
+      "normalized": 0.8135,
+      "score": 0.8935,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5570.0,
+      "end_sec": 5575.0,
+      "center_sec": 5572.5,
+      "loudness_db": -14.835,
+      "peak_db": 0.0,
+      "percentile": 0.9966,
+      "z_score": 1.8393,
+      "normalized": 0.8066,
+      "score": 0.8866,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5875.0,
+      "end_sec": 5880.0,
+      "center_sec": 5877.5,
+      "loudness_db": -11.558,
+      "peak_db": 0.0,
+      "percentile": 0.9999,
+      "z_score": 2.4652,
+      "normalized": 0.9109,
+      "score": 0.9909,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 6095.0,
+      "end_sec": 6100.0,
+      "center_sec": 6097.5,
+      "loudness_db": -14.192,
+      "peak_db": -1.03,
+      "percentile": 0.9984,
+      "z_score": 1.9621,
+      "normalized": 0.827,
+      "score": 0.907,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 6130.0,
+      "end_sec": 6135.0,
+      "center_sec": 6132.5,
+      "loudness_db": -14.133,
+      "peak_db": 0.0,
+      "percentile": 0.9988,
+      "z_score": 1.9735,
+      "normalized": 0.8289,
+      "score": 0.9089,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 6345.0,
+      "end_sec": 6350.0,
+      "center_sec": 6347.5,
+      "loudness_db": -14.77,
+      "peak_db": 0.0,
+      "percentile": 0.9969,
+      "z_score": 1.8519,
+      "normalized": 0.8086,
+      "score": 0.8886,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 9065.0,
+      "end_sec": 9070.0,
+      "center_sec": 9067.5,
+      "loudness_db": -12.721,
+      "peak_db": 0.0,
+      "percentile": 0.9995,
+      "z_score": 2.2432,
+      "normalized": 0.8739,
+      "score": 0.9539,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 9505.0,
+      "end_sec": 9510.0,
+      "center_sec": 9507.5,
+      "loudness_db": -14.446,
+      "peak_db": -1.071,
+      "percentile": 0.9982,
+      "z_score": 1.9136,
+      "normalized": 0.8189,
+      "score": 0.8989,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 10990.0,
+      "end_sec": 10995.0,
+      "center_sec": 10992.5,
+      "loudness_db": -16.082,
+      "peak_db": -0.591,
+      "percentile": 0.9882,
+      "z_score": 1.6012,
+      "normalized": 0.7669,
+      "score": 0.9269,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 11645.0,
+      "end_sec": 11650.0,
+      "center_sec": 11647.5,
+      "loudness_db": -16.626,
+      "peak_db": 0.0,
+      "percentile": 0.9793,
+      "z_score": 1.4974,
+      "normalized": 0.7496,
+      "score": 0.9096,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 13055.0,
+      "end_sec": 13060.0,
+      "center_sec": 13057.5,
+      "loudness_db": -16.685,
+      "peak_db": -0.635,
+      "percentile": 0.9773,
+      "z_score": 1.486,
+      "normalized": 0.7477,
+      "score": 0.9077,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 18650.0,
+      "end_sec": 18655.0,
+      "center_sec": 18652.5,
+      "loudness_db": -14.759,
+      "peak_db": 0.0,
+      "percentile": 0.9971,
+      "z_score": 1.8538,
+      "normalized": 0.809,
+      "score": 0.889,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 19165.0,
+      "end_sec": 19170.0,
+      "center_sec": 19167.5,
+      "loudness_db": -14.454,
+      "peak_db": -0.022,
+      "percentile": 0.9979,
+      "z_score": 1.9121,
+      "normalized": 0.8187,
+      "score": 0.8987,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 21210.0,
+      "end_sec": 21215.0,
+      "center_sec": 21212.5,
+      "loudness_db": -14.457,
+      "peak_db": 0.0,
+      "percentile": 0.9977,
+      "z_score": 1.9116,
+      "normalized": 0.8186,
+      "score": 0.8986,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 21410.0,
+      "end_sec": 21415.0,
+      "center_sec": 21412.5,
+      "loudness_db": -14.915,
+      "peak_db": -0.117,
+      "percentile": 0.9962,
+      "z_score": 1.824,
+      "normalized": 0.804,
+      "score": 0.884,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 22165.0,
+      "end_sec": 22170.0,
+      "center_sec": 22167.5,
+      "loudness_db": -15.336,
+      "peak_db": -3.014,
+      "percentile": 0.9936,
+      "z_score": 1.7438,
+      "normalized": 0.7906,
+      "score": 0.9506,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    }
+  ],
+  "audio_loudness_per_min": [
+    -44.079,
+    -33.006,
+    -31.637,
+    -32.035,
+    -29.978,
+    -29.783,
+    -27.533,
+    -23.309,
+    -23.453,
+    -27.961,
+    -30.662,
+    -24.73,
+    -23.068,
+    -24.873,
+    -27.786,
+    -32.322,
+    -27.662,
+    -30.554,
+    -30.606,
+    -29.613,
+    -26.206,
+    -21.841,
+    -27.465,
+    -21.431,
+    -19.608,
+    -24.264,
+    -25.114,
+    -21.878,
+    -22.037,
+    -25.787,
+    -23.174,
+    -21.336,
+    -19.543,
+    -19.454,
+    -19.349,
+    -20.232,
+    -20.034,
+    -21.585,
+    -22.228,
+    -20.003,
+    -21.136,
+    -32.074,
+    -26.346,
+    -23.872,
+    -21.854,
+    -21.033,
+    -20.173,
+    -26.51,
+    -21.489,
+    -20.229,
+    -24.7,
+    -27.111,
+    -26.829,
+    -22.861,
+    -23.673,
+    -19.814,
+    -24.727,
+    -27.444,
+    -20.831,
+    -21.467,
+    -23.648,
+    -23.777,
+    -22.758,
+    -19.996,
+    -20.511,
+    -20.712,
+    -21.371,
+    -23.986,
+    -21.686,
+    -23.303,
+    -25.227,
+    -20.95,
+    -22.182,
+    -21.671,
+    -22.024,
+    -19.296,
+    -24.153,
+    -22.556,
+    -22.009,
+    -22.544,
+    -22.866,
+    -22.057,
+    -22.262,
+    -20.917,
+    -18.988,
+    -20.462,
+    -20.931,
+    -20.789,
+    -23.479,
+    -20.791,
+    -21.451,
+    -23.032,
+    -19.566,
+    -23.311,
+    -23.579,
+    -25.873,
+    -24.774,
+    -18.446,
+    -25.118,
+    -24.539,
+    -23.21,
+    -24.735,
+    -24.3,
+    -23.843,
+    -23.597,
+    -21.576,
+    -28.76,
+    -26.068,
+    -25.934,
+    -25.866,
+    -25.059,
+    -23.674,
+    -23.906,
+    -23.608,
+    -25.443,
+    -25.377,
+    -23.234,
+    -23.307,
+    -25.072,
+    -24.511,
+    -25.123,
+    -22.968,
+    -22.828,
+    -25.252,
+    -27.247,
+    -26.875,
+    -27.693,
+    -24.478,
+    -24.582,
+    -24.513,
+    -22.327,
+    -26.825,
+    -24.887,
+    -24.229,
+    -22.432,
+    -24.432,
+    -26.721,
+    -24.47,
+    -24.802,
+    -27.451,
+    -22.523,
+    -23.239,
+    -25.597,
+    -27.549,
+    -24.518,
+    -23.148,
+    -27.894,
+    -23.68,
+    -20.74,
+    -26.072,
+    -21.475,
+    -21.081,
+    -24.034,
+    -27.256,
+    -21.962,
+    -19.299,
+    -21.308,
+    -20.042,
+    -18.977,
+    -24.742,
+    -24.514,
+    -28.472,
+    -26.351,
+    -27.292,
+    -25.656,
+    -25.793,
+    -26.962,
+    -25.198,
+    -27.27,
+    -25.521,
+    -30.944,
+    -26.067,
+    -25.606,
+    -26.276,
+    -25.094,
+    -24.037,
+    -29.375,
+    -26.327,
+    -23.717,
+    -21.919,
+    -26.946,
+    -24.645,
+    -23.361,
+    -22.76,
+    -24.262,
+    -23.61,
+    -26.087,
+    -22.191,
+    -22.576,
+    -23.074,
+    -27.242,
+    -27.271,
+    -24.859,
+    -24.1,
+    -26.754,
+    -27.478,
+    -26.616,
+    -27.429,
+    -27.299,
+    -24.457,
+    -26.356,
+    -26.335,
+    -28.912,
+    -26.722,
+    -26.532,
+    -27.239,
+    -22.873,
+    -25.733,
+    -25.235,
+    -27.02,
+    -24.966,
+    -25.779,
+    -26.717,
+    -28.414,
+    -26.26,
+    -26.787,
+    -25.306,
+    -19.991,
+    -31.163,
+    -27.881,
+    -26.08,
+    -28.704,
+    -26.247,
+    -24.319,
+    -25.189,
+    -25.545,
+    -24.115,
+    -23.157,
+    -24.139,
+    -22.475,
+    -23.416,
+    -23.762,
+    -24.733,
+    -26.976,
+    -24.461,
+    -23.379,
+    -23.736,
+    -21.827,
+    -21.385,
+    -25.176,
+    -21.664,
+    -25.957,
+    -26.904,
+    -28.555,
+    -22.443,
+    -22.403,
+    -23.834,
+    -28.725,
+    -20.11,
+    -30.758,
+    -21.725,
+    -25.191,
+    -23.902,
+    -27.609,
+    -29.471,
+    -27.494,
+    -26.334,
+    -26.311,
+    -23.028,
+    -26.626,
+    -24.231,
+    -22.721,
+    -27.574,
+    -23.52,
+    -21.614,
+    -25.305,
+    -22.729,
+    -24.667,
+    -25.26,
+    -24.11,
+    -25.445,
+    -23.403,
+    -26.471,
+    -25.861,
+    -23.279,
+    -25.476,
+    -22.723,
+    -26.836,
+    -25.676,
+    -27.013,
+    -22.505,
+    -25.449,
+    -24.477,
+    -24.685,
+    -29.049,
+    -25.007,
+    -23.057,
+    -25.226,
+    -25.008,
+    -28.203,
+    -25.722,
+    -27.363,
+    -23.825,
+    -20.504,
+    -23.983,
+    -20.301,
+    -23.117,
+    -23.241,
+    -21.536,
+    -23.362,
+    -26.023,
+    -24.888,
+    -25.564,
+    -29.599,
+    -28.968,
+    -25.793,
+    -26.283,
+    -24.982,
+    -25.899,
+    -25.065,
+    -21.339,
+    -22.507,
+    -25.545,
+    -22.699,
+    -25.877,
+    -27.389,
+    -26.819,
+    -24.601,
+    -22.713,
+    -22.035,
+    -22.064,
+    -28.064,
+    -23.039,
+    -32.77,
+    -26.298,
+    -30.881,
+    -22.158,
+    -22.879,
+    -26.777,
+    -30.764,
+    -29.108,
+    -26.495,
+    -26.528,
+    -21.909,
+    -23.761,
+    -25.138,
+    -25.99,
+    -23.439,
+    -23.371,
+    -23.201,
+    -25.885,
+    -22.214,
+    -20.238,
+    -20.959,
+    -26.664,
+    -20.639,
+    -24.036,
+    -24.203,
+    -23.897,
+    -24.993,
+    -24.177,
+    -25.704,
+    -23.679,
+    -20.801,
+    -24.372,
+    -20.179,
+    -20.353,
+    -20.728,
+    -21.659,
+    -20.614,
+    -25.524,
+    -24.062,
+    -23.898,
+    -26.596,
+    -24.971,
+    -21.438,
+    -24.32,
+    -24.313,
+    -23.516,
+    -22.787,
+    -21.311,
+    -25.053,
+    -23.809,
+    -21.053,
+    -19.401,
+    -20.312,
+    -20.436,
+    -19.253,
+    -23.928,
+    -23.768,
+    -23.188,
+    -22.861,
+    -21.563,
+    -19.871,
+    -18.226
+  ],
+  "summary_run_ledger": {
+    "schema_version": "summary_run_ledger.v1",
+    "run_id": "13722141_20260615_스타2 캠페인 자유의 날개 탬스크 아니고 탬레이너 입니다.. ٩(●'▿'●)۶",
+    "path": "output\\summary_run_ledger.jsonl"
+  }
+}

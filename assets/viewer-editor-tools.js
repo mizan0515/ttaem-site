@@ -137,7 +137,7 @@ function initEditorEntryState() {
   window.setTimeout(() => {
     if (entry.getAttribute('data-editor-entry-state') !== 'loading') return;
     if (target) {
-      setState('fallback', '사용 가능');
+      setState('fallback', '확장 없어도 열 수 있음');
     } else {
       setState('error', '워크스페이스 없음');
     }
@@ -158,7 +158,7 @@ function initEditorEntryState() {
     setState('installed', '확장 감지됨');
   });
   window.addEventListener('chzzk-editor-extension-missing', () => {
-    setState('missing', '사용 가능');
+    setState('missing', '확장 없어도 열 수 있음');
   });
   window.addEventListener('chzzk-editor-extension-error', () => {
     setState('error', '확인 필요');
