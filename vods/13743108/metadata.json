@@ -1,0 +1,7031 @@
+{
+  "video_no": "13743108",
+  "title": "4시 월드컵 대기방 ٩(●'▿'●)۶",
+  "channel": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+  "platform": "chzzk",
+  "duration": 8330,
+  "publish_date": "2026-06-17 01:34:12",
+  "category": "talk",
+  "thumbnail_url": "https://video-phinf.pstatic.net/20260617_107/17816361252530z7E5_JPEG/uAO9bt172V_04.jpg",
+  "total_chats": 37013,
+  "highlight_count": 20,
+  "highlights": [
+    {
+      "sec": 5790,
+      "composite": 1.0,
+      "count": 198,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_d031183354e6",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5790
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5790,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 4580,
+      "composite": 1.0,
+      "count": 147,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_bab497e9e7b2",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4580
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4580,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 4930,
+      "composite": 1.0,
+      "count": 132,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_927cbc674531",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4930
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4930,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 7340,
+      "composite": 0.9388,
+      "count": 137,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_21e326e0adca",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 7340
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 7340,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 4428,
+      "composite": 0.8599,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_e234a3308e27",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4428
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4428,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 5550,
+      "composite": 0.8518,
+      "count": 157,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_5e765fba7c37",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5550
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 7930,
+      "composite": 0.7833,
+      "count": 126,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_e5655ad209e8",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 7930
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 4782,
+      "composite": 0.744,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_9f90ebf2e330",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4782
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4782,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 1098,
+      "composite": 0.7409,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_da3139fb9746",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1098
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1098,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 4312,
+      "composite": 0.7375,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_7bab8fa63ae6",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4312
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4312,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 5718,
+      "composite": 0.7372,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_80ef5c0c4070",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5718
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5718,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 1282,
+      "composite": 0.7343,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_76ba2f4814be",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1282
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1282,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 3848,
+      "composite": 0.7342,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_78c1f3ed4c61",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 3848
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 3848,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 4152,
+      "composite": 0.7306,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_2fdfcf1b7649",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4152
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4152,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 5922,
+      "composite": 0.7294,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_d6c68e4bfd61",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5922
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5922,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 3392,
+      "composite": 0.7284,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_42fa8f0699e2",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 3392
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 3392,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 4222,
+      "composite": 0.7272,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_a9c57e0f6d3b",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4222
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4222,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 2238,
+      "composite": 0.7255,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_06ff77ab2c99",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 2238
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 2238,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 1650,
+      "composite": 0.7077,
+      "count": 150,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "chat_surprise",
+        "keyword_score",
+        "laughter_burst",
+        "question_cluster"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_be8a79052bca",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1650
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 6810,
+      "composite": 0.6605,
+      "count": 140,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "question_cluster"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_a7197afd779b",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6810
+        }
+      ],
+      "risk_flags": []
+    }
+  ],
+  "segment_ledger_schema_version": 1,
+  "segment_ledger": [
+    {
+      "segment_id": "seg_summary_1e58190e7066",
+      "kind": "summary",
+      "section": "summary",
+      "index": 1,
+      "timecode": "",
+      "start_sec": null,
+      "end_sec": null,
+      "title": "4시 월드컵 대기방 ٩(●'▿'●)۶",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "summary",
+          "fields": [
+            "title",
+            "hashtags",
+            "pull_quote"
+          ]
+        }
+      ],
+      "risk_flags": [],
+      "hashtags": [
+        "월드컵대기방",
+        "메시호날두",
+        "축구밈드립"
+      ],
+      "pull_quote": "월드컵 얘기하다가 메시·호날두 서사에 완전히 빨려 들어가고, 결말은 아르헨티나 결승전 리액션으로 터져버린 축구 대기방."
+    },
+    {
+      "segment_id": "seg_timeline_241f4c73a5be",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 1,
+      "timecode": "00:07:03",
+      "start_sec": 423,
+      "end_sec": null,
+      "title": "방송 켜자마자 파일 정리부터 하는 대기방 모드로 들어감",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:07:03"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"반갑습니다.\" \"지워야겠는데, 파일이 너무...\" \"나스 정리 좀 할게요.\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "탬탬버린이 인사한 뒤 바로 나스 정리와 파일 삭제를 하며 방송을 연다. 본격적인 월드컵 얘기 전, 잔잔한 준비 구간으로 시작된다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_ec00a9c2d87a",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 2,
+      "timecode": "00:13:21",
+      "start_sec": 801,
+      "end_sec": null,
+      "title": "안토니 팽이 드립이 방송 초반부터 터져버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:13:21"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"천억이나 하는데 주사위에요?\" \"왜, 왜 팽이야?\" \"비싼 팽이긴 하네\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "축구 선수 안토니의 회전 플레이를 보며 “천억이나 하는데 주사위에요? 왜, 왜 팽이야?”라고 받아치고, 비싼 팽이 비유를 반복하며 웃음을 만든다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_b7a5f5b7e436",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 3,
+      "timecode": "00:17:17",
+      "start_sec": 1037,
+      "end_sec": null,
+      "title": "잘했다 못했다 반복하는 유형이 제일 사람 미치게 한다고 정리됨",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:17:17"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"저 잘했다가 못했다가 잘 했다가 못 했다가가 진짜기는 해.\" \"진짜 사람을 미치게 하는 건\" \"우리 팀일 때는 똥나오게 못하다가\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "못하는 선수보다 더 미치는 유형으로 “잘했다가 못했다가 잘 했다가 못 했다가”를 꼽으며 스포츠 팬 심리를 길게 풀어낸다. 팀에서 방출된 선수가 다른 팀에서 잘하는 사례까지 롤 비유로 설명한다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_f189e92391ee",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 4,
+      "timecode": "00:23:57",
+      "start_sec": 1437,
+      "end_sec": null,
+      "title": "골키퍼 MVP 얘기에 경기 내용을 역으로 궁금해해버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:23:57"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"아, 골키퍼예요?\" \"얼마나 잘 막았길래 골키퍼가 MVP야?\" \"지렸네\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "골키퍼가 MVP를 받았다는 얘기에 “얼마나 잘 막았길래 골키퍼가 MVP야?”라며 크게 놀란다. 직접 경기를 보진 않았지만 결과만으로도 강하게 끌려가는 순간이다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_284aabe2a5cb",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 5,
+      "timecode": "00:27:19",
+      "start_sec": 1639,
+      "end_sec": null,
+      "title": "추천 경기 달라 했더니 채팅이 전부 다 보라고 몰아침",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:27:19"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"전부 ㄱㄱ\" \"노르웨이 세네갈\" \"이정도면 그냥 매일 보는걸로 하죠\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "탬탬이 재밌는 경기 추천을 받자 채팅은 나라 이름을 우르르 던지며 사실상 다 보라고 몰아간다. “다 말한다고 해서 내가 다 보러 오는 게 아니야”라고 받아치며 웃긴 실랑이가 만들어진다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_eaaaaad99e95",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 6,
+      "timecode": "00:34:38",
+      "start_sec": 2078,
+      "end_sec": null,
+      "title": "축구 보다가 메이플 닉 먹기 동선까지 계산해버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:34:38"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"10시에 잠깐 메이플 켜서 아이디 생성하고\" \"완벽한 메이플 동선이긴 한데?\" \"아이디 생성하고\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "새벽 경기와 10시 메이플 오픈 사이 시간을 계산하며, 잠깐 접속해 아이디를 만드는 ‘완벽한 메이플 동선’을 짠다. 대기방이 갑자기 닉네임 선점 작전 회의로 바뀐다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_5e379ad90cd4",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 7,
+      "timecode": "00:37:12",
+      "start_sec": 2232,
+      "end_sec": null,
+      "title": "닉네임 만들지 마소 긴급 취소 선언이 나와버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:37:12"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"취소, 취소!\" \"그거 만들지 마소!\" \"닉은 월드야\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 2237.5,
+          "delta_sec": 6,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "닉이 월드 공용이라는 설명을 듣자 “취소, 취소! 미안합니다, 그거 만들지 마소!”라고 급히 철회한다. 이미 늦었을지도 모른다는 불안까지 겹치며 닉 선점 압박이 커진다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_5fabdcddefc3",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 8,
+      "timecode": "00:41:57",
+      "start_sec": 2517,
+      "end_sec": null,
+      "title": "메시·호날두 글 읽방이 시작되며 분위기가 서사 쪽으로 바뀜",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:41:57"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"월드컵 예열용으로 보면 좋은 글\" \"메시, 호날두\" \"읽어봅니다\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "시청자가 보낸 “월드컵 예열용으로 보면 좋은 글”을 읽기 시작하며, 2026년 월드컵을 보기 전 메시와 호날두 서사를 훑어보는 모드로 전환된다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_1f6f96eda0af",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 9,
+      "timecode": "00:47:47",
+      "start_sec": 2867,
+      "end_sec": null,
+      "title": "2007년부터 메시·호날두 시동 걸린 거 보고 진짜 서사 시작을 체감함",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:47:47"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"그 새끼들의 이름이 보이기 시작했다\" \"2007년부터 슬슬 시동을 걸고 있었구나\" \"시동\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "2007년 발롱도르 순위를 보며 메시와 호날두 이름이 올라오기 시작한 시점을 확인하고, “슬슬 시동을 걸고 있었구나”라며 시대의 출발점을 체감한다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_b8aec4dc92b0",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 10,
+      "timecode": "00:49:06",
+      "start_sec": 2946,
+      "end_sec": null,
+      "title": "어케했노;;",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:49:06"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"시청자 클립 anchor\""
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "section": "timeline",
+          "label": "[INJECTED · 시청자 클립 6/1305]",
+          "role": "deterministic_injection"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 2946,
+          "role": "proximity_signal",
+          "clip_uid": "MPY4dbF4ao",
+          "title": "어케했노;;",
+          "like_count": 6,
+          "play_count": 1305
+        }
+      ],
+      "risk_flags": [
+        "injected_viewer_clip_anchor"
+      ],
+      "summary": "시청자가 클립으로 잘라낸 시점. 본문 evidence 는 같은 시각의 자막/채팅을 참조.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_76e0262877fc",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 11,
+      "timecode": "00:55:32",
+      "start_sec": 3332,
+      "end_sec": null,
+      "title": "호날두 42골에 기준이 무너지고 메시 6관왕에서 방송이 폭발함",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:55:32"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"42골이요?\" \"왜? 42골이요?\" \"땡! 6관왕!\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "호날두의 42골 기록에 놀라던 흐름이 곧바로 메시의 0809시즌 6관왕으로 이어지며 감탄과 웃음이 한꺼번에 터진다. 숫자가 비현실적으로 겹치면서 전설 서사가 본격적으로 살아난다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_34e94dfdfaf5",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 12,
+      "timecode": "01:01:43",
+      "start_sec": 3703,
+      "end_sec": null,
+      "title": "메시랑 호날두가 같은 리그에서 맞붙는 운명론이 열림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:01:43"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"이제부터 둘이 같은 리그에서 뛰는 거야?\" \"미틴, 이 무슨 운명의 장난인가.\" \"같은 리그에서 둘이 맞붙게 된 거야?\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "호날두가 레알로 가고 메시는 바르셀로나에 남아 같은 리그에서 계속 맞붙는 구조를 이해하자 “무슨 운명의 장난인가”라며 과몰입한다. 라이벌 구도가 서사의 핵심으로 굳어진다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_7ce7192f5a30",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 13,
+      "timecode": "01:03:31",
+      "start_sec": 3811,
+      "end_sec": null,
+      "title": "53골 23도움 숫자에 너무 폭력적이라 말문 막혀버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:03:31"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"55격이 53골 23도 시즌\" \"이건 너무 폭력적이다\" \"공격수가 왜 23 도움을 했냐고 !!!\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "메시의 시즌 기록이 55경기 53골 23도움으로 소개되자 탬탬이 “이건 너무 폭력적이다”라고 연달아 반응한다. 인간 같지 않은 수치가 연속으로 쏟아지며 충격이 극대화된다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_59a0833a1204",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 14,
+      "timecode": "01:05:16",
+      "start_sec": 3916,
+      "end_sec": null,
+      "title": "메시의 1골 = 부진",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:05:16"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"시청자 클립 anchor\""
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "section": "timeline",
+          "label": "[INJECTED · 시청자 클립 8/1702]",
+          "role": "deterministic_injection"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 3916,
+          "role": "proximity_signal",
+          "clip_uid": "bmZ2t5Pv43",
+          "title": "메시의 1골 = 부진",
+          "like_count": 8,
+          "play_count": 1702
+        }
+      ],
+      "risk_flags": [
+        "injected_viewer_clip_anchor"
+      ],
+      "summary": "시청자가 클립으로 잘라낸 시점. 본문 evidence 는 같은 시각의 자막/채팅을 참조.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_0000b347633f",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 15,
+      "timecode": "01:11:45",
+      "start_sec": 4305,
+      "end_sec": null,
+      "title": "기록 깨는 법을 호날두 회귀로 비틀어버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:11:45"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"호날두가 회귀하는 거임\" \"회귀해도 안될거 같은데?\" \"ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 4312.5,
+          "delta_sec": 8,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "발롱도르 8회와 4연속 수상을 보고 탬탬은 기록을 깨는 유일한 방법으로 “호날두가 회귀하는 거임”이라는 황당한 가정을 꺼낸다. 곧바로 회귀해도 안 될 것 같다고 스스로 부정해 웃음을 만든다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_d646432d41b3",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 16,
+      "timecode": "01:16:41",
+      "start_sec": 4601,
+      "end_sec": null,
+      "title": "긁혀도 안 꺾이는 호날두 멘탈이 월클이라고 인정받음",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:16:41"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"자존감 이미 박살났을 거야\" \"이런 말을 뱉는 배짱. 이게 월클이다\" \"자신이 최고라고 믿지 않는다면 최고가 될 수 없다\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 4602.5,
+          "delta_sec": 2,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "몇 년 동안 메시에게 밀리고도 자존감을 잃지 않고 자신이 최고라고 말하는 호날두의 태도를 탬탬이 “이게 월클이다”라며 높이 평가한다. 실력뿐 아니라 멘탈 자체를 슈퍼스타의 조건으로 본다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_d2f8c9728855",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 17,
+      "timecode": "01:18:08",
+      "start_sec": 4688,
+      "end_sec": null,
+      "title": "메시를 드디어 제친 발롱도르 순간이 서사 반전으로 꽂힘",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:18:08"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"메시를 제치고 두 번째 발롱도르를 수상\" \"그래도 꺾이지 않고!\" \"온다 레알마드리드의 시대가!!!!!\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "13시즌에 호날두가 마침내 메시를 제치고 발롱도르를 수상하자, 길게 눌려 있던 2인자 서사가 한 번 뒤집힌다. 탬탬은 “그래도 꺾이지 않고”라며 반전의 보상을 받아들인다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_f331343dab4d",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 18,
+      "timecode": "01:19:20",
+      "start_sec": 4760,
+      "end_sec": null,
+      "title": "골든볼 받고도 웃지 못한 메시 쪽 씁쓸함이 남음",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:19:20"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"월드컵 최고의 선수에게 주는 골든볼을 받았음에도 메시는 전혀 웃지 않았다\" \"준우승했는데 부진 ㅋㅋㅋㅋ\" \"메시도 가엽서...\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 4782.5,
+          "delta_sec": 22,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "월드컵 최고의 선수에게 주는 골든볼을 받았음에도 메시는 전혀 웃지 않았다는 대목에서, 개인상이 우승의 공허함을 메우지 못하는 결말이 강조된다. 준우승과 부진 취급까지 이어져 감정이 묵직해진다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_90e1c285b7fd",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 19,
+      "timecode": "01:30:43",
+      "start_sec": 5443,
+      "end_sec": null,
+      "title": "제대로 작별도 못 한 메시 이별 서사가 너무 비극적으로 정리됨",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:30:43"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"이 유니폼을 위해 첫날부터 마지막 날까지 나의 모든 것을 바쳤습니다.\" \"떠날 준비 고작 3일.\" \"제대로 작별 인사\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "메시가 “이 클럽에 남기 위해 모든 걸 했다”, “팬들의 마지막 함성을 가까이서 들으며 제대로 작별 인사를 건네고 싶었다”고 말하자 분위기가 깊게 가라앉는다. 21년을 바친 선수에게 준비 시간이 고작 3일이었다는 점이 비극으로 남는다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_da4bb1d273d1",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 20,
+      "timecode": "01:33:47",
+      "start_sec": 5627,
+      "end_sec": null,
+      "title": "아르헨티나 대 프랑스 결승전이 영화처럼 열려버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:33:47"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"와 씨 영화냐?\" \"2022년 12월 8일 경기 시작.\" \"세계 최고의 공격수인 음바페\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "탬탬이 월드컵 결승 흐름을 보며 “와 씨 영화냐?”라고 반응하고, 메시의 결승 서사가 본격적으로 깔린다. 결승이라는 무대 자체가 이미 긴장감을 끌어올린다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_e5d87ff3ee9f",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 21,
+      "timecode": "01:34:34",
+      "start_sec": 5674,
+      "end_sec": null,
+      "title": "음바페 97초 멀티골 충격으로 결승이 순식간에 뒤집힘",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:34:34"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"97초만에 두 골을 넣었다고요?\" \"미친 음바페...\" \"동점골\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "2대0으로 굳어가던 결승이 후반 80분부터 뒤집히며, 탬탬이 “97초만에 두 골을 넣었다고요?”라며 믿기 힘들어한다. 음바페의 추격골과 동점골이 이 구간의 첫 폭발 포인트다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_2bcfe00517fe",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 22,
+      "timecode": "01:36:23",
+      "start_sec": 5783,
+      "end_sec": null,
+      "title": "광고랑 개 짖는 소리가 몰입을 완전히 깨버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:36:23"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"광고가.\" \"갑자기 개 짖는 소리가...\" \"아아, 몰입\""
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 5738,
+          "role": "proximity_signal",
+          "clip_uid": "Gzy9NM9sbc",
+          "title": "메흐흑",
+          "like_count": 6,
+          "play_count": 1669
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 5782.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "가장 중요한 타이밍에 광고와 개 짖는 소리가 겹치며 탬탬이 “몰입”을 외치다 허탈해한다. 초집중 구간이 어이없는 외부 변수로 끊기며 웃음 포인트가 된다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_4f8e9c11fd0c",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 23,
+      "timecode": "01:37:43",
+      "start_sec": 5863,
+      "end_sec": null,
+      "title": "핸드볼 판정 뒤 음바페 해트트릭까지 나오며 결승이 역사를 써버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:37:43"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"핸드볼... 오 쉣...\" \"하나 성공시켰습니다.\" \"역사상 두 번째로 월드컵 결승전에서 해트트릭\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "프랑스의 슈팅이 핸드볼 판정으로 이어지고, 음바페가 이를 성공시키며 결승전 해트트릭을 완성한다. 탬탬은 “갑자기 여기서 역사를 쓰시면 어떡해요”라며 경악한다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_1e8514eaac9e",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 24,
+      "timecode": "01:39:02",
+      "start_sec": 5942,
+      "end_sec": null,
+      "title": "결승이 3대3으로 끝나면서 미친 경기라는 말이 절로 나옴",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:39:02"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"경기 종료! 프랑스 3 대 3 아르헨티나!\" \"혹시 서서 그냥 기승전결이 완벽하냐?\" \"미친 결승\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 5922.5,
+          "delta_sec": 20,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "정규 시간 끝까지 3대3으로 마무리되며 탬탬은 이 경기가 얼마나 비현실적인지 연달아 감탄한다. 단순 우승전이 아니라 완성된 서사로 받아들이는 분위기다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_884b1f68223f",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 25,
+      "timecode": "01:45:09",
+      "start_sec": 6309,
+      "end_sec": null,
+      "title": "메시 눈물이 났다는 말에 방송도 진짜 여운으로 잠김",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:45:09"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"와 근데 글을 너무 잘 썼다.\" \"와 근데 진짜 메시 눈물이 났다. 진짜로.\" \"그냥 끝이었으면 너무 슬펐을 것 같애\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "영상 서사와 마무리를 곱씹던 탬탬이 “메시 눈물이 났다. 진짜로”라고 말하며 여운을 드러낸다. 월드컵 우승 서사가 감상 포인트를 넘어 감정적으로 꽂힌 순간이다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_a75aa06fc63a",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 26,
+      "timecode": "02:02:37",
+      "start_sec": 7357,
+      "end_sec": null,
+      "title": "일본 대진표 보고 웃음 터지고, 모로코 팀플에 감탄해버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "02:02:37"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"일본은 뭔 모르코 브라질 프랑스냐 ㅋㅋㅋㅋㅋㅋ\" \"너무 웃어서 머리 아파\" \"팀플레이를 엄청 잘하던데?\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 7362.5,
+          "delta_sec": 6,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "일본이 어렵게 올라가도 모로코, 브라질, 프랑스를 만나는 대진을 보자 탬탬이 “너무 웃어서 머리 아파”라고 할 정도로 반응한다. 이어 모로코는 팀플레이가 강한 팀이라며 조직력을 높게 본다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_0c3d0d926f1d",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 27,
+      "timecode": "02:07:49",
+      "start_sec": 7669,
+      "end_sec": null,
+      "title": "메시 인터뷰의 “아직도 즐겁니?”가 남는 질문으로 꽂힘",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "02:07:49"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"아직도 즐겁니?\" \"divertirte y jugar al fútbol\" \"잘 썼다\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "스페인어 인터뷰 중 “아직도 즐겁니?”라는 질문 대목이 나오자 탬탬이 멈춰 듣듯 반응한다. 축구를 잘하는 비결을 넘어, 어린 시절의 즐거움을 아직 갖고 있느냐는 메시의 본질을 건드리는 순간으로 받아들여진다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_aa26a22d81a0",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 28,
+      "timecode": "02:14:15",
+      "start_sec": 8055,
+      "end_sec": null,
+      "title": "1",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "02:14:15"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"시청자 클립 anchor\""
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "section": "timeline",
+          "label": "[INJECTED · 시청자 클립 7/7579]",
+          "role": "deterministic_injection"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 8055,
+          "role": "proximity_signal",
+          "clip_uid": "hyK1vJqAD1",
+          "title": "1",
+          "like_count": 7,
+          "play_count": 7579
+        }
+      ],
+      "risk_flags": [
+        "injected_viewer_clip_anchor"
+      ],
+      "summary": "시청자가 클립으로 잘라낸 시점. 본문 evidence 는 같은 시각의 자막/채팅을 참조.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_57efa1bcdb76",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 29,
+      "timecode": "02:16:13",
+      "start_sec": 8173,
+      "end_sec": null,
+      "title": "2",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "02:16:13"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"시청자 클립 anchor\""
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "section": "timeline",
+          "label": "[INJECTED · 시청자 클립 5/5648]",
+          "role": "deterministic_injection"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 8173,
+          "role": "proximity_signal",
+          "clip_uid": "wYX66m10As",
+          "title": "2",
+          "like_count": 5,
+          "play_count": 5648
+        }
+      ],
+      "risk_flags": [
+        "injected_viewer_clip_anchor"
+      ],
+      "summary": "시청자가 클립으로 잘라낸 시점. 본문 evidence 는 같은 시각의 자막/채팅을 참조.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_e8e32182ad00",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 1,
+      "timecode": "00:47:47~00:55:32",
+      "start_sec": 2867,
+      "end_sec": 3332,
+      "title": "메시·호날두 서사가 본격적으로 터져버린 구간",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "00:47:47~00:55:32"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "전설의 시작점과 호날두 42골, 메시 6관왕이 연속으로 나오며 방송 분위기가 완전히 축구 서사 쪽으로 넘어간다."
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 2946,
+          "role": "proximity_signal",
+          "clip_uid": "MPY4dbF4ao",
+          "title": "어케했노;;",
+          "like_count": 6,
+          "play_count": 1305
+        }
+      ],
+      "risk_flags": [],
+      "reason": "전설의 시작점과 호날두 42골, 메시 6관왕이 연속으로 나오며 방송 분위기가 완전히 축구 서사 쪽으로 넘어간다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_481c9ed95261",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 2,
+      "timecode": "01:03:31~01:18:08",
+      "start_sec": 3811,
+      "end_sec": 4688,
+      "title": "숫자만 봐도 말문 막히는 메시·호날두 기록 전쟁",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "01:03:31~01:18:08"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "53골 23도움, 91골, 발롱도르 추격 반전까지 이어져 리액션과 감탄이 가장 밀도 높게 터진다."
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 3916,
+          "role": "proximity_signal",
+          "clip_uid": "bmZ2t5Pv43",
+          "title": "메시의 1골 = 부진",
+          "like_count": 8,
+          "play_count": 1702
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 3847.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "53골 23도움, 91골, 발롱도르 추격 반전까지 이어져 리액션과 감탄이 가장 밀도 높게 터진다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_d0ef323bc81d",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 3,
+      "timecode": "01:33:47~01:39:02",
+      "start_sec": 5627,
+      "end_sec": 5942,
+      "title": "월드컵 결승이 영화처럼 뒤집혀버린 구간",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "01:33:47~01:39:02"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "음바페의 멀티골, 핸드볼 판정, 해트트릭, 3대3 종료가 연속으로 이어져 숏클립 가치가 압도적이다."
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 5738,
+          "role": "proximity_signal",
+          "clip_uid": "Gzy9NM9sbc",
+          "title": "메흐흑",
+          "like_count": 6,
+          "play_count": 1669
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 5717.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "음바페의 멀티골, 핸드볼 판정, 해트트릭, 3대3 종료가 연속으로 이어져 숏클립 가치가 압도적이다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_4a9b263a8618",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 4,
+      "timecode": "01:30:43~01:45:09",
+      "start_sec": 5443,
+      "end_sec": 6309,
+      "title": "메시 이별과 우승 서사가 한 번에 몰아친 구간",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "01:30:43~01:45:09"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "바르셀로나 이별의 비극과 월드컵 결승 감정선이 이어져 방송 전체의 감정적 클라이맥스를 만든다."
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 5738,
+          "role": "proximity_signal",
+          "clip_uid": "Gzy9NM9sbc",
+          "title": "메흐흑",
+          "like_count": 6,
+          "play_count": 1669
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 5717.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "바르셀로나 이별의 비극과 월드컵 결승 감정선이 이어져 방송 전체의 감정적 클라이맥스를 만든다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_abd6600a1b2d",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 5,
+      "timecode": "02:02:37~02:07:49",
+      "start_sec": 7357,
+      "end_sec": 7669,
+      "title": "대진표·모로코·메시 인터뷰로 이어지는 후반 정리 구간",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "02:02:37~02:07:49"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "후반부까지 대표하는 흐름으로, 웃음과 감탄, 여운이 함께 남아 방송 마무리 톤을 잘 보여준다."
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 7362.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "후반부까지 대표하는 흐름으로, 웃음과 감탄, 여운이 함께 남아 방송 마무리 톤을 잘 보여준다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_6249939a1366",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 6,
+      "timecode": "02:14:15~02:14:15",
+      "start_sec": 8055,
+      "end_sec": 8055,
+      "title": "1",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "02:14:15~02:14:15"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "시청자가 직접 클립으로 잘라낸 호평 신호 시점."
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "section": "highlights",
+          "label": "[INJECTED · 시청자 클립 7/7579]",
+          "role": "deterministic_injection"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 8055,
+          "role": "proximity_signal",
+          "clip_uid": "hyK1vJqAD1",
+          "title": "1",
+          "like_count": 7,
+          "play_count": 7579
+        }
+      ],
+      "risk_flags": [
+        "injected_viewer_clip_anchor"
+      ],
+      "reason": "시청자가 직접 클립으로 잘라낸 호평 신호 시점.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_633b982d1a33",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 7,
+      "timecode": "02:16:13~02:16:13",
+      "start_sec": 8173,
+      "end_sec": 8173,
+      "title": "2",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "02:16:13~02:16:13"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "시청자가 직접 클립으로 잘라낸 호평 신호 시점."
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "section": "highlights",
+          "label": "[INJECTED · 시청자 클립 5/5648]",
+          "role": "deterministic_injection"
+        },
+        {
+          "source_type": "viewer_clip_anchor",
+          "offset_sec": 8173,
+          "role": "proximity_signal",
+          "clip_uid": "wYX66m10As",
+          "title": "2",
+          "like_count": 5,
+          "play_count": 5648
+        }
+      ],
+      "risk_flags": [
+        "injected_viewer_clip_anchor"
+      ],
+      "reason": "시청자가 직접 클립으로 잘라낸 호평 신호 시점.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_chapter_22129c44a440",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 1,
+      "timecode": "00:07:03",
+      "start_sec": 423,
+      "end_sec": null,
+      "title": "대기방 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:07:03"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_eff1501646d4",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 2,
+      "timecode": "00:41:57",
+      "start_sec": 2517,
+      "end_sec": null,
+      "title": "메시·호날두 글 읽기 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:41:57"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_8de918642d06",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 3,
+      "timecode": "01:18:08",
+      "start_sec": 4688,
+      "end_sec": null,
+      "title": "호날두 발롱도르 반전",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:18:08"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_9853072a499e",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 4,
+      "timecode": "01:30:43",
+      "start_sec": 5443,
+      "end_sec": null,
+      "title": "메시 이별 서사 알아보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:30:43"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_4716876fbad7",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 5,
+      "timecode": "01:33:47",
+      "start_sec": 5627,
+      "end_sec": null,
+      "title": "아르헨티나 결승전 보기 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:33:47"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_7eb93c21c3c0",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 6,
+      "timecode": "01:39:02",
+      "start_sec": 5942,
+      "end_sec": null,
+      "title": "결승전 3대3 종료",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "01:39:02"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 5922.5,
+          "delta_sec": 20,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_ce02336a2830",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 7,
+      "timecode": "02:07:49",
+      "start_sec": 7669,
+      "end_sec": null,
+      "title": "메시 인터뷰 알아보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "02:07:49"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_highlight_candidate_d031183354e6",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 1,
+      "timecode": "01:36:30",
+      "start_sec": 5790,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5790
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5790,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 5790,
+      "composite": 1.0,
+      "count": 198
+    },
+    {
+      "segment_id": "seg_highlight_candidate_bab497e9e7b2",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 2,
+      "timecode": "01:16:20",
+      "start_sec": 4580,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4580
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4580,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 4580,
+      "composite": 1.0,
+      "count": 147
+    },
+    {
+      "segment_id": "seg_highlight_candidate_927cbc674531",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 3,
+      "timecode": "01:22:10",
+      "start_sec": 4930,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4930
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4930,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 4930,
+      "composite": 1.0,
+      "count": 132
+    },
+    {
+      "segment_id": "seg_highlight_candidate_21e326e0adca",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 4,
+      "timecode": "02:02:20",
+      "start_sec": 7340,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 7340
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 7340,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 7340,
+      "composite": 0.9388,
+      "count": 137
+    },
+    {
+      "segment_id": "seg_highlight_candidate_e234a3308e27",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 5,
+      "timecode": "01:13:48",
+      "start_sec": 4428,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4428
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4428,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 4428,
+      "composite": 0.8599,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_5e765fba7c37",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 6,
+      "timecode": "01:32:30",
+      "start_sec": 5550,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5550
+        }
+      ],
+      "risk_flags": [],
+      "sec": 5550,
+      "composite": 0.8518,
+      "count": 157
+    },
+    {
+      "segment_id": "seg_highlight_candidate_e5655ad209e8",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 7,
+      "timecode": "02:12:10",
+      "start_sec": 7930,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 7930
+        }
+      ],
+      "risk_flags": [],
+      "sec": 7930,
+      "composite": 0.7833,
+      "count": 126
+    },
+    {
+      "segment_id": "seg_highlight_candidate_9f90ebf2e330",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 8,
+      "timecode": "01:19:42",
+      "start_sec": 4782,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4782
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4782,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 4782,
+      "composite": 0.744,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_da3139fb9746",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 9,
+      "timecode": "00:18:18",
+      "start_sec": 1098,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1098
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1098,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 1098,
+      "composite": 0.7409,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_7bab8fa63ae6",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 10,
+      "timecode": "01:11:52",
+      "start_sec": 4312,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4312
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4312,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 4312,
+      "composite": 0.7375,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_80ef5c0c4070",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 11,
+      "timecode": "01:35:18",
+      "start_sec": 5718,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5718
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5718,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 5718,
+      "composite": 0.7372,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_76ba2f4814be",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 12,
+      "timecode": "00:21:22",
+      "start_sec": 1282,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1282
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1282,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 1282,
+      "composite": 0.7343,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_78c1f3ed4c61",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 13,
+      "timecode": "01:04:08",
+      "start_sec": 3848,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 3848
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 3848,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 3848,
+      "composite": 0.7342,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_2fdfcf1b7649",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 14,
+      "timecode": "01:09:12",
+      "start_sec": 4152,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4152
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4152,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 4152,
+      "composite": 0.7306,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_d6c68e4bfd61",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 15,
+      "timecode": "01:38:42",
+      "start_sec": 5922,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 5922
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 5922,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 5922,
+      "composite": 0.7294,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_42fa8f0699e2",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 16,
+      "timecode": "00:56:32",
+      "start_sec": 3392,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 3392
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 3392,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 3392,
+      "composite": 0.7284,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_a9c57e0f6d3b",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 17,
+      "timecode": "01:10:22",
+      "start_sec": 4222,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 4222
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 4222,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 4222,
+      "composite": 0.7272,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_06ff77ab2c99",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 18,
+      "timecode": "00:37:18",
+      "start_sec": 2238,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 2238
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 2238,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 2238,
+      "composite": 0.7255,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_be8a79052bca",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 19,
+      "timecode": "00:27:30",
+      "start_sec": 1650,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1650
+        }
+      ],
+      "risk_flags": [],
+      "sec": 1650,
+      "composite": 0.7077,
+      "count": 150
+    },
+    {
+      "segment_id": "seg_highlight_candidate_a7197afd779b",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 20,
+      "timecode": "01:53:30",
+      "start_sec": 6810,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 6810
+        }
+      ],
+      "risk_flags": [],
+      "sec": 6810,
+      "composite": 0.6605,
+      "count": 140
+    }
+  ],
+  "processed_at": "2026-06-17T19:05:54.898130+09:00",
+  "evidence_verifier": {
+    "schema_version": "evidence_verifier.v1",
+    "status": "fail",
+    "summary": {
+      "checked_segments": 43,
+      "failure_count": 1,
+      "warning_count": 0
+    },
+    "findings": [
+      {
+        "code": "CHAPTER_READINESS_FAIL",
+        "severity": "error",
+        "message": "chapter readiness validator reported fail",
+        "source_fields": [
+          "chapter_readiness"
+        ],
+        "detail": {
+          "status": "fail",
+          "failure_reasons": []
+        }
+      }
+    ]
+  },
+  "summary_input_readiness": {
+    "schema_version": "summary_input_readiness.v1",
+    "status": "ready_with_gaps",
+    "quality_claim": "not_evaluated",
+    "items": [
+      {
+        "key": "srt",
+        "name": "자막 SRT",
+        "required": true,
+        "status": "present",
+        "reason": "요약 청크 입력으로 사용할 SRT가 있습니다.",
+        "retry_condition": "transcribe 단계가 SRT를 생성한 뒤 다시 요약합니다.",
+        "detail": {
+          "filename": "13743108_4시 월드컵 대기방 ٩(●'▿'●)۶_144p.srt",
+          "size_bytes": 108533
+        }
+      },
+      {
+        "key": "chat",
+        "name": "채팅",
+        "required": false,
+        "status": "present",
+        "reason": "채팅 신호가 요약 후보에 반영됩니다.",
+        "retry_condition": "채팅 수집이 VOD 끝까지 성공한 뒤 다시 요약합니다.",
+        "detail": {
+          "message_count": 37013,
+          "first_message_sec": 0.0,
+          "latest_message_sec": 8324.326,
+          "latest_message_hms": "02:18:44",
+          "expected_duration_sec": 8330.0,
+          "expected_duration_hms": "02:18:50",
+          "coverage_ratio": 0.9993,
+          "coverage_gap_sec": 5.674
+        }
+      },
+      {
+        "key": "community",
+        "name": "커뮤니티",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "커뮤니티 반응 후보가 없습니다.",
+        "retry_condition": "커뮤니티 수집 또는 수동 입력 뒤 다시 요약합니다.",
+        "detail": {
+          "post_count": 0
+        }
+      },
+      {
+        "key": "context_doc",
+        "name": "VOD 배경 맥락",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "관리자 배경 맥락 없이 요약합니다.",
+        "retry_condition": "work/<video_no>/<video_no>_context.md 작성 뒤 다시 요약합니다.",
+        "detail": {
+          "char_count": 0
+        }
+      },
+      {
+        "key": "timeline_comments",
+        "name": "시청자 시간표 댓글",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "자동 수집 가능한 시청자 시간표 댓글 없이 요약합니다.",
+        "retry_condition": "요약 직전 자동 댓글 수집을 다시 실행합니다. 브라우저 로그인/프로필 잠금 문제일 때만 work/<video_no>/<video_no>_timeline_comments.md 수동 fallback 을 사용합니다.",
+        "detail": {
+          "char_count": 0,
+          "timed_line_count": 0
+        }
+      },
+      {
+        "key": "streamer_vocab",
+        "name": "스트리머 어휘/lexicon",
+        "required": false,
+        "status": "present",
+        "reason": "고유명사/별명 보정 후보가 있습니다.",
+        "retry_condition": "streamer_vocab 저장 또는 lexicon 빌드 뒤 다시 요약합니다.",
+        "detail": {
+          "term_count": 30
+        }
+      },
+      {
+        "key": "manager_edit_lessons",
+        "name": "관리자 수정 사례",
+        "required": false,
+        "status": "present",
+        "reason": "이전 관리자 수정 사례가 프롬프트에 반영됩니다.",
+        "retry_condition": "관리자 저장 이력이 쌓인 뒤 다시 요약합니다.",
+        "detail": {
+          "lesson_count": 3
+        }
+      },
+      {
+        "key": "manager_fewshot_examples",
+        "name": "관리자 수정 few-shot",
+        "required": false,
+        "status": "present",
+        "reason": "검증된 관리자 수정 전/후 예시가 프롬프트에 반영됩니다.",
+        "retry_condition": "fewshot_injection_enabled=true 설정과 highlight_learning weak_positive 후보가 있는 상태에서 다시 요약합니다.",
+        "detail": {
+          "example_count": 3,
+          "fingerprint": "d32fb83cfd4e"
+        }
+      },
+      {
+        "key": "streamer_recent_context",
+        "name": "최근 공개 맥락",
+        "required": false,
+        "status": "present",
+        "reason": "최근 공개 맥락 후보가 요약 보조 입력으로 반영됩니다.",
+        "retry_condition": "streamer_recent_context_enabled=true 후 공개 소스 수집을 다시 실행합니다. 실패해도 요약은 계속 진행됩니다.",
+        "detail": {
+          "item_count": 1,
+          "source_count": 2,
+          "sources": [
+            "fmkorea",
+            "chzzk_public"
+          ],
+          "diagnostic_status_counts": {
+            "no_candidates": 1,
+            "ok": 2
+          }
+        }
+      },
+      {
+        "key": "user_clips",
+        "name": "시청자 클립",
+        "required": false,
+        "status": "present",
+        "reason": "시청자 클립 anchor 후보가 있습니다.",
+        "retry_condition": "viewer clip 수집/anchor 회수 뒤 다시 요약합니다.",
+        "detail": {
+          "total": 12,
+          "with_offset": 12,
+          "with_engagement": 12,
+          "status": "ok"
+        }
+      },
+      {
+        "key": "audio_peaks",
+        "name": "오디오 반응 피크",
+        "required": false,
+        "status": "present",
+        "reason": "오디오 반응 분석 결과가 있습니다.",
+        "retry_condition": "audio reaction 분석이 성공한 뒤 다시 요약합니다.",
+        "detail": {
+          "peak_count": 20,
+          "status": "available"
+        }
+      },
+      {
+        "key": "source_manifest",
+        "name": "요약 입력 manifest",
+        "required": true,
+        "status": "present",
+        "reason": "요약 입력 manifest가 계산되어 cache/재현성 기준이 있습니다.",
+        "retry_condition": "요약 cache manifest 계산 후 다시 확인합니다.",
+        "detail": {
+          "schema_version": 9,
+          "manifest_key_count": 22,
+          "has_summary_hash": false
+        }
+      },
+      {
+        "key": "segment_ledger",
+        "name": "segment/evidence ledger",
+        "required": false,
+        "status": "present",
+        "reason": "렌더링된 리포트의 segment ledger가 있습니다.",
+        "retry_condition": "summary Markdown parser/metadata generation을 확인한 뒤 다시 렌더링합니다.",
+        "detail": {
+          "segment_count": 64,
+          "kind_counts": {
+            "chapter": 7,
+            "highlight": 7,
+            "highlight_candidate": 20,
+            "summary": 1,
+            "timeline": 29
+          }
+        }
+      }
+    ]
+  },
+  "audio_reaction_peaks": [
+    {
+      "start_sec": 1095.0,
+      "end_sec": 1100.0,
+      "center_sec": 1097.5,
+      "loudness_db": -15.313,
+      "peak_db": -1.108,
+      "percentile": 0.9985,
+      "z_score": 1.4594,
+      "normalized": 0.7432,
+      "score": 0.8232,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 1280.0,
+      "end_sec": 1285.0,
+      "center_sec": 1282.5,
+      "loudness_db": -15.66,
+      "peak_db": -1.346,
+      "percentile": 0.9925,
+      "z_score": 1.4151,
+      "normalized": 0.7359,
+      "score": 0.8159,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 2235.0,
+      "end_sec": 2240.0,
+      "center_sec": 2237.5,
+      "loudness_db": -16.119,
+      "peak_db": -1.436,
+      "percentile": 0.9859,
+      "z_score": 1.3565,
+      "normalized": 0.7261,
+      "score": 0.8061,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 3390.0,
+      "end_sec": 3395.0,
+      "center_sec": 3392.5,
+      "loudness_db": -15.97,
+      "peak_db": -1.529,
+      "percentile": 0.9883,
+      "z_score": 1.3756,
+      "normalized": 0.7293,
+      "score": 0.8093,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 3845.0,
+      "end_sec": 3850.0,
+      "center_sec": 3847.5,
+      "loudness_db": -15.664,
+      "peak_db": -1.317,
+      "percentile": 0.9919,
+      "z_score": 1.4147,
+      "normalized": 0.7358,
+      "score": 0.8158,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4150.0,
+      "end_sec": 4155.0,
+      "center_sec": 4152.5,
+      "loudness_db": -15.85,
+      "peak_db": -1.315,
+      "percentile": 0.9901,
+      "z_score": 1.3909,
+      "normalized": 0.7318,
+      "score": 0.8118,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4220.0,
+      "end_sec": 4225.0,
+      "center_sec": 4222.5,
+      "loudness_db": -16.027,
+      "peak_db": -1.315,
+      "percentile": 0.9877,
+      "z_score": 1.3683,
+      "normalized": 0.728,
+      "score": 0.808,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4310.0,
+      "end_sec": 4315.0,
+      "center_sec": 4312.5,
+      "loudness_db": -15.495,
+      "peak_db": -1.154,
+      "percentile": 0.9955,
+      "z_score": 1.4362,
+      "normalized": 0.7394,
+      "score": 0.8194,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4425.0,
+      "end_sec": 4430.0,
+      "center_sec": 4427.5,
+      "loudness_db": -16.057,
+      "peak_db": -1.274,
+      "percentile": 0.9865,
+      "z_score": 1.3645,
+      "normalized": 0.7274,
+      "score": 0.8074,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4465.0,
+      "end_sec": 4470.0,
+      "center_sec": 4467.5,
+      "loudness_db": -15.469,
+      "peak_db": -1.463,
+      "percentile": 0.9961,
+      "z_score": 1.4396,
+      "normalized": 0.7399,
+      "score": 0.8199,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4525.0,
+      "end_sec": 4530.0,
+      "center_sec": 4527.5,
+      "loudness_db": -15.17,
+      "peak_db": -1.129,
+      "percentile": 0.9991,
+      "z_score": 1.4777,
+      "normalized": 0.7463,
+      "score": 0.9063,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4565.0,
+      "end_sec": 4570.0,
+      "center_sec": 4567.5,
+      "loudness_db": -15.39,
+      "peak_db": -1.132,
+      "percentile": 0.9979,
+      "z_score": 1.4497,
+      "normalized": 0.7416,
+      "score": 0.9016,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4600.0,
+      "end_sec": 4605.0,
+      "center_sec": 4602.5,
+      "loudness_db": -17.226,
+      "peak_db": -1.414,
+      "percentile": 0.9673,
+      "z_score": 1.2152,
+      "normalized": 0.7025,
+      "score": 0.8625,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4780.0,
+      "end_sec": 4785.0,
+      "center_sec": 4782.5,
+      "loudness_db": -15.152,
+      "peak_db": -1.622,
+      "percentile": 0.9997,
+      "z_score": 1.48,
+      "normalized": 0.7467,
+      "score": 0.8267,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4885.0,
+      "end_sec": 4890.0,
+      "center_sec": 4887.5,
+      "loudness_db": -17.678,
+      "peak_db": -1.308,
+      "percentile": 0.9511,
+      "z_score": 1.1575,
+      "normalized": 0.6929,
+      "score": 0.8529,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4930.0,
+      "end_sec": 4935.0,
+      "center_sec": 4932.5,
+      "loudness_db": -15.503,
+      "peak_db": -1.307,
+      "percentile": 0.9949,
+      "z_score": 1.4352,
+      "normalized": 0.7392,
+      "score": 0.8992,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5715.0,
+      "end_sec": 5720.0,
+      "center_sec": 5717.5,
+      "loudness_db": -15.507,
+      "peak_db": -0.888,
+      "percentile": 0.9943,
+      "z_score": 1.4347,
+      "normalized": 0.7391,
+      "score": 0.8191,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5780.0,
+      "end_sec": 5785.0,
+      "center_sec": 5782.5,
+      "loudness_db": -15.518,
+      "peak_db": -0.622,
+      "percentile": 0.9931,
+      "z_score": 1.4332,
+      "normalized": 0.7389,
+      "score": 0.8989,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5920.0,
+      "end_sec": 5925.0,
+      "center_sec": 5922.5,
+      "loudness_db": -15.918,
+      "peak_db": -1.076,
+      "percentile": 0.9889,
+      "z_score": 1.3822,
+      "normalized": 0.7304,
+      "score": 0.8104,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 7360.0,
+      "end_sec": 7365.0,
+      "center_sec": 7362.5,
+      "loudness_db": -17.401,
+      "peak_db": -1.515,
+      "percentile": 0.9601,
+      "z_score": 1.1928,
+      "normalized": 0.6988,
+      "score": 0.8588,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    }
+  ],
+  "audio_loudness_per_min": [
+    -34.545,
+    -31.781,
+    -31.532,
+    -31.254,
+    -30.248,
+    -33.761,
+    -31.416,
+    -29.792,
+    -22.335,
+    -22.662,
+    -23.509,
+    -24.61,
+    -22.971,
+    -25.15,
+    -23.57,
+    -20.717,
+    -23.576,
+    -23.964,
+    -19.616,
+    -22.224,
+    -22.448,
+    -20.882,
+    -23.781,
+    -22.956,
+    -21.561,
+    -28.612,
+    -34.536,
+    -26.764,
+    -28.553,
+    -32.127,
+    -29.963,
+    -30.864,
+    -29.374,
+    -35.652,
+    -31.186,
+    -25.975,
+    -26.826,
+    -25.546,
+    -26.02,
+    -25.671,
+    -31.252,
+    -33.24,
+    -26.436,
+    -24.76,
+    -25.181,
+    -23.845,
+    -23.791,
+    -22.774,
+    -23.75,
+    -21.564,
+    -26.496,
+    -26.167,
+    -25.866,
+    -23.713,
+    -25.015,
+    -21.402,
+    -22.722,
+    -25.127,
+    -25.604,
+    -21.498,
+    -25.69,
+    -24.996,
+    -25.507,
+    -25.103,
+    -20.665,
+    -23.736,
+    -25.361,
+    -25.517,
+    -21.757,
+    -22.71,
+    -24.943,
+    -24.024,
+    -20.494,
+    -26.078,
+    -21.303,
+    -19.55,
+    -18.495,
+    -20.721,
+    -21.94,
+    -20.78,
+    -21.828,
+    -24.201,
+    -24.823,
+    -25.584,
+    -26.26,
+    -26.748,
+    -27.346,
+    -37.724,
+    -26.469,
+    -26.726,
+    -27.947,
+    -24.939,
+    -28.01,
+    -25.363,
+    -23.881,
+    -22.896,
+    -25.029,
+    -26.368,
+    -21.572,
+    -21.817,
+    -24.944,
+    -25.998,
+    -25.785,
+    -23.847,
+    -28.632,
+    -26.293,
+    -28.677,
+    -29.594,
+    -28.101,
+    -27.762,
+    -40.111,
+    -40.721,
+    -36.58,
+    -39.83,
+    -35.712,
+    -41.732,
+    -27.808,
+    -27.787,
+    -28.344,
+    -29.404,
+    -25.552,
+    -29.59,
+    -24.292,
+    -25.435,
+    -28.317,
+    -23.955,
+    -31.147,
+    -29.823,
+    -25.56,
+    -29.329,
+    -26.454,
+    -30.641,
+    -26.519,
+    -28.011,
+    -23.424,
+    -25.82,
+    -25.741,
+    -31.767,
+    -56.873
+  ],
+  "audio_feature_source": {
+    "kind": "relative_loudness_main_pipeline",
+    "enabled_by_default": true,
+    "window_sec": 5,
+    "min_percentile": 0.95,
+    "min_gap_sec": 30,
+    "chat_overlap_sec": 60,
+    "max_peaks": 20,
+    "waveform_max_points": 720,
+    "normalization": "per_vod_relative_percentile_and_z_score",
+    "decision_rule": "audio is supporting evidence; audio-only peaks do not prove highlight importance",
+    "sample_count": 8331,
+    "source_kind": "whisper_wav_cache",
+    "sample_extraction": "wav_pcm_python",
+    "source_count": 3,
+    "include_lufs": false
+  },
+  "audio_waveform": {
+    "schema_version": "audio_waveform.v1",
+    "source": "audio_loudness_windows",
+    "sample_count": 720,
+    "max_points": 720,
+    "duration_sec": 8330.0,
+    "channels": "mono_mixed",
+    "unit": "relative_loudness_normalized_0_1",
+    "privacy_class": "public_safe",
+    "decision_rule": "waveform is timeline context only; it does not prove highlight importance",
+    "samples": [
+      {
+        "start_sec": 0.0,
+        "end_sec": 10.0,
+        "value": 0.1806
+      },
+      {
+        "start_sec": 10.0,
+        "end_sec": 20.0,
+        "value": 0.3663
+      },
+      {
+        "start_sec": 20.0,
+        "end_sec": 30.0,
+        "value": 0.3618
+      },
+      {
+        "start_sec": 30.0,
+        "end_sec": 45.0,
+        "value": 0.3773
+      },
+      {
+        "start_sec": 45.0,
+        "end_sec": 55.0,
+        "value": 0.387
+      },
+      {
+        "start_sec": 55.0,
+        "end_sec": 65.0,
+        "value": 0.3882
+      },
+      {
+        "start_sec": 65.0,
+        "end_sec": 80.0,
+        "value": 0.3989
+      },
+      {
+        "start_sec": 80.0,
+        "end_sec": 90.0,
+        "value": 0.3806
+      },
+      {
+        "start_sec": 90.0,
+        "end_sec": 100.0,
+        "value": 0.4025
+      },
+      {
+        "start_sec": 100.0,
+        "end_sec": 115.0,
+        "value": 0.4136
+      },
+      {
+        "start_sec": 115.0,
+        "end_sec": 125.0,
+        "value": 0.4007
+      },
+      {
+        "start_sec": 125.0,
+        "end_sec": 135.0,
+        "value": 0.4046
+      },
+      {
+        "start_sec": 135.0,
+        "end_sec": 150.0,
+        "value": 0.4172
+      },
+      {
+        "start_sec": 150.0,
+        "end_sec": 160.0,
+        "value": 0.3975
+      },
+      {
+        "start_sec": 160.0,
+        "end_sec": 170.0,
+        "value": 0.4155
+      },
+      {
+        "start_sec": 170.0,
+        "end_sec": 185.0,
+        "value": 0.4289
+      },
+      {
+        "start_sec": 185.0,
+        "end_sec": 195.0,
+        "value": 0.3917
+      },
+      {
+        "start_sec": 195.0,
+        "end_sec": 205.0,
+        "value": 0.397
+      },
+      {
+        "start_sec": 205.0,
+        "end_sec": 215.0,
+        "value": 0.4226
+      },
+      {
+        "start_sec": 215.0,
+        "end_sec": 230.0,
+        "value": 0.4182
+      },
+      {
+        "start_sec": 230.0,
+        "end_sec": 240.0,
+        "value": 0.4212
+      },
+      {
+        "start_sec": 240.0,
+        "end_sec": 250.0,
+        "value": 0.4333
+      },
+      {
+        "start_sec": 250.0,
+        "end_sec": 265.0,
+        "value": 0.4194
+      },
+      {
+        "start_sec": 265.0,
+        "end_sec": 275.0,
+        "value": 0.4218
+      },
+      {
+        "start_sec": 275.0,
+        "end_sec": 285.0,
+        "value": 0.4429
+      },
+      {
+        "start_sec": 285.0,
+        "end_sec": 300.0,
+        "value": 0.4518
+      },
+      {
+        "start_sec": 300.0,
+        "end_sec": 310.0,
+        "value": 0.4706
+      },
+      {
+        "start_sec": 310.0,
+        "end_sec": 320.0,
+        "value": 0.4384
+      },
+      {
+        "start_sec": 320.0,
+        "end_sec": 335.0,
+        "value": 0.4526
+      },
+      {
+        "start_sec": 335.0,
+        "end_sec": 345.0,
+        "value": 0.2668
+      },
+      {
+        "start_sec": 345.0,
+        "end_sec": 355.0,
+        "value": 0.2872
+      },
+      {
+        "start_sec": 355.0,
+        "end_sec": 370.0,
+        "value": 0.342
+      },
+      {
+        "start_sec": 370.0,
+        "end_sec": 380.0,
+        "value": 0.3886
+      },
+      {
+        "start_sec": 380.0,
+        "end_sec": 390.0,
+        "value": 0.4284
+      },
+      {
+        "start_sec": 390.0,
+        "end_sec": 400.0,
+        "value": 0.4523
+      },
+      {
+        "start_sec": 400.0,
+        "end_sec": 415.0,
+        "value": 0.4023
+      },
+      {
+        "start_sec": 415.0,
+        "end_sec": 425.0,
+        "value": 0.6185
+      },
+      {
+        "start_sec": 425.0,
+        "end_sec": 435.0,
+        "value": 0.5255
+      },
+      {
+        "start_sec": 435.0,
+        "end_sec": 450.0,
+        "value": 0.4638
+      },
+      {
+        "start_sec": 450.0,
+        "end_sec": 460.0,
+        "value": 0.3511
+      },
+      {
+        "start_sec": 460.0,
+        "end_sec": 470.0,
+        "value": 0.4284
+      },
+      {
+        "start_sec": 470.0,
+        "end_sec": 485.0,
+        "value": 0.4697
+      },
+      {
+        "start_sec": 485.0,
+        "end_sec": 495.0,
+        "value": 0.678
+      },
+      {
+        "start_sec": 495.0,
+        "end_sec": 505.0,
+        "value": 0.6111
+      },
+      {
+        "start_sec": 505.0,
+        "end_sec": 520.0,
+        "value": 0.6164
+      },
+      {
+        "start_sec": 520.0,
+        "end_sec": 530.0,
+        "value": 0.6503
+      },
+      {
+        "start_sec": 530.0,
+        "end_sec": 540.0,
+        "value": 0.6821
+      },
+      {
+        "start_sec": 540.0,
+        "end_sec": 555.0,
+        "value": 0.6274
+      },
+      {
+        "start_sec": 555.0,
+        "end_sec": 565.0,
+        "value": 0.6562
+      },
+      {
+        "start_sec": 565.0,
+        "end_sec": 575.0,
+        "value": 0.6744
+      },
+      {
+        "start_sec": 575.0,
+        "end_sec": 590.0,
+        "value": 0.6588
+      },
+      {
+        "start_sec": 590.0,
+        "end_sec": 600.0,
+        "value": 0.6522
+      },
+      {
+        "start_sec": 600.0,
+        "end_sec": 610.0,
+        "value": 0.6471
+      },
+      {
+        "start_sec": 610.0,
+        "end_sec": 620.0,
+        "value": 0.603
+      },
+      {
+        "start_sec": 620.0,
+        "end_sec": 635.0,
+        "value": 0.6637
+      },
+      {
+        "start_sec": 635.0,
+        "end_sec": 645.0,
+        "value": 0.4996
+      },
+      {
+        "start_sec": 645.0,
+        "end_sec": 655.0,
+        "value": 0.6501
+      },
+      {
+        "start_sec": 655.0,
+        "end_sec": 670.0,
+        "value": 0.606
+      },
+      {
+        "start_sec": 670.0,
+        "end_sec": 680.0,
+        "value": 0.6346
+      },
+      {
+        "start_sec": 680.0,
+        "end_sec": 690.0,
+        "value": 0.6684
+      },
+      {
+        "start_sec": 690.0,
+        "end_sec": 705.0,
+        "value": 0.6581
+      },
+      {
+        "start_sec": 705.0,
+        "end_sec": 715.0,
+        "value": 0.672
+      },
+      {
+        "start_sec": 715.0,
+        "end_sec": 725.0,
+        "value": 0.4911
+      },
+      {
+        "start_sec": 725.0,
+        "end_sec": 740.0,
+        "value": 0.6411
+      },
+      {
+        "start_sec": 740.0,
+        "end_sec": 750.0,
+        "value": 0.6604
+      },
+      {
+        "start_sec": 750.0,
+        "end_sec": 760.0,
+        "value": 0.6838
+      },
+      {
+        "start_sec": 760.0,
+        "end_sec": 775.0,
+        "value": 0.6996
+      },
+      {
+        "start_sec": 775.0,
+        "end_sec": 785.0,
+        "value": 0.5477
+      },
+      {
+        "start_sec": 785.0,
+        "end_sec": 795.0,
+        "value": 0.6688
+      },
+      {
+        "start_sec": 795.0,
+        "end_sec": 805.0,
+        "value": 0.6496
+      },
+      {
+        "start_sec": 805.0,
+        "end_sec": 820.0,
+        "value": 0.5797
+      },
+      {
+        "start_sec": 820.0,
+        "end_sec": 830.0,
+        "value": 0.5979
+      },
+      {
+        "start_sec": 830.0,
+        "end_sec": 840.0,
+        "value": 0.5698
+      },
+      {
+        "start_sec": 840.0,
+        "end_sec": 855.0,
+        "value": 0.6436
+      },
+      {
+        "start_sec": 855.0,
+        "end_sec": 865.0,
+        "value": 0.6385
+      },
+      {
+        "start_sec": 865.0,
+        "end_sec": 875.0,
+        "value": 0.4932
+      },
+      {
+        "start_sec": 875.0,
+        "end_sec": 890.0,
+        "value": 0.7067
+      },
+      {
+        "start_sec": 890.0,
+        "end_sec": 900.0,
+        "value": 0.7157
+      },
+      {
+        "start_sec": 900.0,
+        "end_sec": 910.0,
+        "value": 0.7109
+      },
+      {
+        "start_sec": 910.0,
+        "end_sec": 925.0,
+        "value": 0.711
+      },
+      {
+        "start_sec": 925.0,
+        "end_sec": 935.0,
+        "value": 0.6386
+      },
+      {
+        "start_sec": 935.0,
+        "end_sec": 945.0,
+        "value": 0.7238
+      },
+      {
+        "start_sec": 945.0,
+        "end_sec": 960.0,
+        "value": 0.7037
+      },
+      {
+        "start_sec": 960.0,
+        "end_sec": 970.0,
+        "value": 0.6033
+      },
+      {
+        "start_sec": 970.0,
+        "end_sec": 980.0,
+        "value": 0.6263
+      },
+      {
+        "start_sec": 980.0,
+        "end_sec": 990.0,
+        "value": 0.6214
+      },
+      {
+        "start_sec": 990.0,
+        "end_sec": 1005.0,
+        "value": 0.5926
+      },
+      {
+        "start_sec": 1005.0,
+        "end_sec": 1015.0,
+        "value": 0.702
+      },
+      {
+        "start_sec": 1015.0,
+        "end_sec": 1025.0,
+        "value": 0.6109
+      },
+      {
+        "start_sec": 1025.0,
+        "end_sec": 1040.0,
+        "value": 0.6283
+      },
+      {
+        "start_sec": 1040.0,
+        "end_sec": 1050.0,
+        "value": 0.6391
+      },
+      {
+        "start_sec": 1050.0,
+        "end_sec": 1060.0,
+        "value": 0.6987
+      },
+      {
+        "start_sec": 1060.0,
+        "end_sec": 1075.0,
+        "value": 0.6617
+      },
+      {
+        "start_sec": 1075.0,
+        "end_sec": 1085.0,
+        "value": 0.6888
+      },
+      {
+        "start_sec": 1085.0,
+        "end_sec": 1095.0,
+        "value": 0.7322
+      },
+      {
+        "start_sec": 1095.0,
+        "end_sec": 1110.0,
+        "value": 0.7432
+      },
+      {
+        "start_sec": 1110.0,
+        "end_sec": 1120.0,
+        "value": 0.6654
+      },
+      {
+        "start_sec": 1120.0,
+        "end_sec": 1130.0,
+        "value": 0.6589
+      },
+      {
+        "start_sec": 1130.0,
+        "end_sec": 1145.0,
+        "value": 0.6584
+      },
+      {
+        "start_sec": 1145.0,
+        "end_sec": 1155.0,
+        "value": 0.6898
+      },
+      {
+        "start_sec": 1155.0,
+        "end_sec": 1165.0,
+        "value": 0.537
+      },
+      {
+        "start_sec": 1165.0,
+        "end_sec": 1180.0,
+        "value": 0.6776
+      },
+      {
+        "start_sec": 1180.0,
+        "end_sec": 1190.0,
+        "value": 0.6658
+      },
+      {
+        "start_sec": 1190.0,
+        "end_sec": 1200.0,
+        "value": 0.68
+      },
+      {
+        "start_sec": 1200.0,
+        "end_sec": 1210.0,
+        "value": 0.6922
+      },
+      {
+        "start_sec": 1210.0,
+        "end_sec": 1225.0,
+        "value": 0.605
+      },
+      {
+        "start_sec": 1225.0,
+        "end_sec": 1235.0,
+        "value": 0.6567
+      },
+      {
+        "start_sec": 1235.0,
+        "end_sec": 1245.0,
+        "value": 0.5276
+      },
+      {
+        "start_sec": 1245.0,
+        "end_sec": 1260.0,
+        "value": 0.6937
+      },
+      {
+        "start_sec": 1260.0,
+        "end_sec": 1270.0,
+        "value": 0.6195
+      },
+      {
+        "start_sec": 1270.0,
+        "end_sec": 1280.0,
+        "value": 0.592
+      },
+      {
+        "start_sec": 1280.0,
+        "end_sec": 1295.0,
+        "value": 0.7359
+      },
+      {
+        "start_sec": 1295.0,
+        "end_sec": 1305.0,
+        "value": 0.6671
+      },
+      {
+        "start_sec": 1305.0,
+        "end_sec": 1315.0,
+        "value": 0.6868
+      },
+      {
+        "start_sec": 1315.0,
+        "end_sec": 1330.0,
+        "value": 0.603
+      },
+      {
+        "start_sec": 1330.0,
+        "end_sec": 1340.0,
+        "value": 0.6478
+      },
+      {
+        "start_sec": 1340.0,
+        "end_sec": 1350.0,
+        "value": 0.5673
+      },
+      {
+        "start_sec": 1350.0,
+        "end_sec": 1365.0,
+        "value": 0.6397
+      },
+      {
+        "start_sec": 1365.0,
+        "end_sec": 1375.0,
+        "value": 0.6014
+      },
+      {
+        "start_sec": 1375.0,
+        "end_sec": 1385.0,
+        "value": 0.6439
+      },
+      {
+        "start_sec": 1385.0,
+        "end_sec": 1395.0,
+        "value": 0.674
+      },
+      {
+        "start_sec": 1395.0,
+        "end_sec": 1410.0,
+        "value": 0.6351
+      },
+      {
+        "start_sec": 1410.0,
+        "end_sec": 1420.0,
+        "value": 0.7158
+      },
+      {
+        "start_sec": 1420.0,
+        "end_sec": 1430.0,
+        "value": 0.5769
+      },
+      {
+        "start_sec": 1430.0,
+        "end_sec": 1445.0,
+        "value": 0.6419
+      },
+      {
+        "start_sec": 1445.0,
+        "end_sec": 1455.0,
+        "value": 0.7006
+      },
+      {
+        "start_sec": 1455.0,
+        "end_sec": 1465.0,
+        "value": 0.7099
+      },
+      {
+        "start_sec": 1465.0,
+        "end_sec": 1480.0,
+        "value": 0.6883
+      },
+      {
+        "start_sec": 1480.0,
+        "end_sec": 1490.0,
+        "value": 0.6428
+      },
+      {
+        "start_sec": 1490.0,
+        "end_sec": 1500.0,
+        "value": 0.5653
+      },
+      {
+        "start_sec": 1500.0,
+        "end_sec": 1515.0,
+        "value": 0.3025
+      },
+      {
+        "start_sec": 1515.0,
+        "end_sec": 1525.0,
+        "value": 0.4904
+      },
+      {
+        "start_sec": 1525.0,
+        "end_sec": 1535.0,
+        "value": 0.5485
+      },
+      {
+        "start_sec": 1535.0,
+        "end_sec": 1550.0,
+        "value": 0.6046
+      },
+      {
+        "start_sec": 1550.0,
+        "end_sec": 1560.0,
+        "value": 0.5259
+      },
+      {
+        "start_sec": 1560.0,
+        "end_sec": 1570.0,
+        "value": 0.371
+      },
+      {
+        "start_sec": 1570.0,
+        "end_sec": 1585.0,
+        "value": 0.3867
+      },
+      {
+        "start_sec": 1585.0,
+        "end_sec": 1595.0,
+        "value": 0.4752
+      },
+      {
+        "start_sec": 1595.0,
+        "end_sec": 1605.0,
+        "value": 0.3478
+      },
+      {
+        "start_sec": 1605.0,
+        "end_sec": 1615.0,
+        "value": 0.4662
+      },
+      {
+        "start_sec": 1615.0,
+        "end_sec": 1630.0,
+        "value": 0.6085
+      },
+      {
+        "start_sec": 1630.0,
+        "end_sec": 1640.0,
+        "value": 0.6609
+      },
+      {
+        "start_sec": 1640.0,
+        "end_sec": 1650.0,
+        "value": 0.5139
+      },
+      {
+        "start_sec": 1650.0,
+        "end_sec": 1665.0,
+        "value": 0.4785
+      },
+      {
+        "start_sec": 1665.0,
+        "end_sec": 1675.0,
+        "value": 0.4937
+      },
+      {
+        "start_sec": 1675.0,
+        "end_sec": 1685.0,
+        "value": 0.4804
+      },
+      {
+        "start_sec": 1685.0,
+        "end_sec": 1700.0,
+        "value": 0.5922
+      },
+      {
+        "start_sec": 1700.0,
+        "end_sec": 1710.0,
+        "value": 0.5821
+      },
+      {
+        "start_sec": 1710.0,
+        "end_sec": 1720.0,
+        "value": 0.6775
+      },
+      {
+        "start_sec": 1720.0,
+        "end_sec": 1735.0,
+        "value": 0.4
+      },
+      {
+        "start_sec": 1735.0,
+        "end_sec": 1745.0,
+        "value": 0.3054
+      },
+      {
+        "start_sec": 1745.0,
+        "end_sec": 1755.0,
+        "value": 0.4437
+      },
+      {
+        "start_sec": 1755.0,
+        "end_sec": 1770.0,
+        "value": 0.6143
+      },
+      {
+        "start_sec": 1770.0,
+        "end_sec": 1780.0,
+        "value": 0.5086
+      },
+      {
+        "start_sec": 1780.0,
+        "end_sec": 1790.0,
+        "value": 0.286
+      },
+      {
+        "start_sec": 1790.0,
+        "end_sec": 1800.0,
+        "value": 0.3645
+      },
+      {
+        "start_sec": 1800.0,
+        "end_sec": 1815.0,
+        "value": 0.6755
+      },
+      {
+        "start_sec": 1815.0,
+        "end_sec": 1825.0,
+        "value": 0.5932
+      },
+      {
+        "start_sec": 1825.0,
+        "end_sec": 1835.0,
+        "value": 0.4735
+      },
+      {
+        "start_sec": 1835.0,
+        "end_sec": 1850.0,
+        "value": 0.5313
+      },
+      {
+        "start_sec": 1850.0,
+        "end_sec": 1860.0,
+        "value": 0.303
+      },
+      {
+        "start_sec": 1860.0,
+        "end_sec": 1870.0,
+        "value": 0.4167
+      },
+      {
+        "start_sec": 1870.0,
+        "end_sec": 1885.0,
+        "value": 0.4099
+      },
+      {
+        "start_sec": 1885.0,
+        "end_sec": 1895.0,
+        "value": 0.3735
+      },
+      {
+        "start_sec": 1895.0,
+        "end_sec": 1905.0,
+        "value": 0.6413
+      },
+      {
+        "start_sec": 1905.0,
+        "end_sec": 1920.0,
+        "value": 0.5601
+      },
+      {
+        "start_sec": 1920.0,
+        "end_sec": 1930.0,
+        "value": 0.4182
+      },
+      {
+        "start_sec": 1930.0,
+        "end_sec": 1940.0,
+        "value": 0.5309
+      },
+      {
+        "start_sec": 1940.0,
+        "end_sec": 1955.0,
+        "value": 0.4979
+      },
+      {
+        "start_sec": 1955.0,
+        "end_sec": 1965.0,
+        "value": 0.4325
+      },
+      {
+        "start_sec": 1965.0,
+        "end_sec": 1975.0,
+        "value": 0.4198
+      },
+      {
+        "start_sec": 1975.0,
+        "end_sec": 1985.0,
+        "value": 0.5238
+      },
+      {
+        "start_sec": 1985.0,
+        "end_sec": 2000.0,
+        "value": 0.3792
+      },
+      {
+        "start_sec": 2000.0,
+        "end_sec": 2010.0,
+        "value": 0.2268
+      },
+      {
+        "start_sec": 2010.0,
+        "end_sec": 2020.0,
+        "value": 0.5928
+      },
+      {
+        "start_sec": 2020.0,
+        "end_sec": 2035.0,
+        "value": 0.6369
+      },
+      {
+        "start_sec": 2035.0,
+        "end_sec": 2045.0,
+        "value": 0.4735
+      },
+      {
+        "start_sec": 2045.0,
+        "end_sec": 2055.0,
+        "value": 0.2781
+      },
+      {
+        "start_sec": 2055.0,
+        "end_sec": 2070.0,
+        "value": 0.2897
+      },
+      {
+        "start_sec": 2070.0,
+        "end_sec": 2080.0,
+        "value": 0.6103
+      },
+      {
+        "start_sec": 2080.0,
+        "end_sec": 2090.0,
+        "value": 0.6117
+      },
+      {
+        "start_sec": 2090.0,
+        "end_sec": 2105.0,
+        "value": 0.5985
+      },
+      {
+        "start_sec": 2105.0,
+        "end_sec": 2115.0,
+        "value": 0.633
+      },
+      {
+        "start_sec": 2115.0,
+        "end_sec": 2125.0,
+        "value": 0.7236
+      },
+      {
+        "start_sec": 2125.0,
+        "end_sec": 2140.0,
+        "value": 0.5681
+      },
+      {
+        "start_sec": 2140.0,
+        "end_sec": 2150.0,
+        "value": 0.4968
+      },
+      {
+        "start_sec": 2150.0,
+        "end_sec": 2160.0,
+        "value": 0.6401
+      },
+      {
+        "start_sec": 2160.0,
+        "end_sec": 2175.0,
+        "value": 0.4873
+      },
+      {
+        "start_sec": 2175.0,
+        "end_sec": 2185.0,
+        "value": 0.526
+      },
+      {
+        "start_sec": 2185.0,
+        "end_sec": 2195.0,
+        "value": 0.6404
+      },
+      {
+        "start_sec": 2195.0,
+        "end_sec": 2205.0,
+        "value": 0.687
+      },
+      {
+        "start_sec": 2205.0,
+        "end_sec": 2220.0,
+        "value": 0.4442
+      },
+      {
+        "start_sec": 2220.0,
+        "end_sec": 2230.0,
+        "value": 0.5091
+      },
+      {
+        "start_sec": 2230.0,
+        "end_sec": 2240.0,
+        "value": 0.7261
+      },
+      {
+        "start_sec": 2240.0,
+        "end_sec": 2255.0,
+        "value": 0.6262
+      },
+      {
+        "start_sec": 2255.0,
+        "end_sec": 2265.0,
+        "value": 0.6825
+      },
+      {
+        "start_sec": 2265.0,
+        "end_sec": 2275.0,
+        "value": 0.5998
+      },
+      {
+        "start_sec": 2275.0,
+        "end_sec": 2290.0,
+        "value": 0.5039
+      },
+      {
+        "start_sec": 2290.0,
+        "end_sec": 2300.0,
+        "value": 0.6876
+      },
+      {
+        "start_sec": 2300.0,
+        "end_sec": 2310.0,
+        "value": 0.6394
+      },
+      {
+        "start_sec": 2310.0,
+        "end_sec": 2325.0,
+        "value": 0.581
+      },
+      {
+        "start_sec": 2325.0,
+        "end_sec": 2335.0,
+        "value": 0.482
+      },
+      {
+        "start_sec": 2335.0,
+        "end_sec": 2345.0,
+        "value": 0.6077
+      },
+      {
+        "start_sec": 2345.0,
+        "end_sec": 2360.0,
+        "value": 0.5917
+      },
+      {
+        "start_sec": 2360.0,
+        "end_sec": 2370.0,
+        "value": 0.6251
+      },
+      {
+        "start_sec": 2370.0,
+        "end_sec": 2380.0,
+        "value": 0.5773
+      },
+      {
+        "start_sec": 2380.0,
+        "end_sec": 2390.0,
+        "value": 0.5786
+      },
+      {
+        "start_sec": 2390.0,
+        "end_sec": 2405.0,
+        "value": 0.6406
+      },
+      {
+        "start_sec": 2405.0,
+        "end_sec": 2415.0,
+        "value": 0.4253
+      },
+      {
+        "start_sec": 2415.0,
+        "end_sec": 2425.0,
+        "value": 0.5643
+      },
+      {
+        "start_sec": 2425.0,
+        "end_sec": 2440.0,
+        "value": 0.5527
+      },
+      {
+        "start_sec": 2440.0,
+        "end_sec": 2450.0,
+        "value": 0.2912
+      },
+      {
+        "start_sec": 2450.0,
+        "end_sec": 2460.0,
+        "value": 0.4
+      },
+      {
+        "start_sec": 2460.0,
+        "end_sec": 2475.0,
+        "value": 0.504
+      },
+      {
+        "start_sec": 2475.0,
+        "end_sec": 2485.0,
+        "value": 0.5023
+      },
+      {
+        "start_sec": 2485.0,
+        "end_sec": 2495.0,
+        "value": 0.2567
+      },
+      {
+        "start_sec": 2495.0,
+        "end_sec": 2510.0,
+        "value": 0.4295
+      },
+      {
+        "start_sec": 2510.0,
+        "end_sec": 2520.0,
+        "value": 0.4458
+      },
+      {
+        "start_sec": 2520.0,
+        "end_sec": 2530.0,
+        "value": 0.4127
+      },
+      {
+        "start_sec": 2530.0,
+        "end_sec": 2545.0,
+        "value": 0.5787
+      },
+      {
+        "start_sec": 2545.0,
+        "end_sec": 2555.0,
+        "value": 0.6509
+      },
+      {
+        "start_sec": 2555.0,
+        "end_sec": 2565.0,
+        "value": 0.5808
+      },
+      {
+        "start_sec": 2565.0,
+        "end_sec": 2575.0,
+        "value": 0.5632
+      },
+      {
+        "start_sec": 2575.0,
+        "end_sec": 2590.0,
+        "value": 0.6504
+      },
+      {
+        "start_sec": 2590.0,
+        "end_sec": 2600.0,
+        "value": 0.5987
+      },
+      {
+        "start_sec": 2600.0,
+        "end_sec": 2610.0,
+        "value": 0.6162
+      },
+      {
+        "start_sec": 2610.0,
+        "end_sec": 2625.0,
+        "value": 0.6252
+      },
+      {
+        "start_sec": 2625.0,
+        "end_sec": 2635.0,
+        "value": 0.4855
+      },
+      {
+        "start_sec": 2635.0,
+        "end_sec": 2645.0,
+        "value": 0.5685
+      },
+      {
+        "start_sec": 2645.0,
+        "end_sec": 2660.0,
+        "value": 0.6414
+      },
+      {
+        "start_sec": 2660.0,
+        "end_sec": 2670.0,
+        "value": 0.6389
+      },
+      {
+        "start_sec": 2670.0,
+        "end_sec": 2680.0,
+        "value": 0.5971
+      },
+      {
+        "start_sec": 2680.0,
+        "end_sec": 2695.0,
+        "value": 0.5854
+      },
+      {
+        "start_sec": 2695.0,
+        "end_sec": 2705.0,
+        "value": 0.5884
+      },
+      {
+        "start_sec": 2705.0,
+        "end_sec": 2715.0,
+        "value": 0.6348
+      },
+      {
+        "start_sec": 2715.0,
+        "end_sec": 2730.0,
+        "value": 0.6124
+      },
+      {
+        "start_sec": 2730.0,
+        "end_sec": 2740.0,
+        "value": 0.6746
+      },
+      {
+        "start_sec": 2740.0,
+        "end_sec": 2750.0,
+        "value": 0.6542
+      },
+      {
+        "start_sec": 2750.0,
+        "end_sec": 2765.0,
+        "value": 0.6423
+      },
+      {
+        "start_sec": 2765.0,
+        "end_sec": 2775.0,
+        "value": 0.3393
+      },
+      {
+        "start_sec": 2775.0,
+        "end_sec": 2785.0,
+        "value": 0.6672
+      },
+      {
+        "start_sec": 2785.0,
+        "end_sec": 2795.0,
+        "value": 0.6863
+      },
+      {
+        "start_sec": 2795.0,
+        "end_sec": 2810.0,
+        "value": 0.5825
+      },
+      {
+        "start_sec": 2810.0,
+        "end_sec": 2820.0,
+        "value": 0.671
+      },
+      {
+        "start_sec": 2820.0,
+        "end_sec": 2830.0,
+        "value": 0.653
+      },
+      {
+        "start_sec": 2830.0,
+        "end_sec": 2845.0,
+        "value": 0.6465
+      },
+      {
+        "start_sec": 2845.0,
+        "end_sec": 2855.0,
+        "value": 0.5072
+      },
+      {
+        "start_sec": 2855.0,
+        "end_sec": 2865.0,
+        "value": 0.5858
+      },
+      {
+        "start_sec": 2865.0,
+        "end_sec": 2880.0,
+        "value": 0.6549
+      },
+      {
+        "start_sec": 2880.0,
+        "end_sec": 2890.0,
+        "value": 0.6493
+      },
+      {
+        "start_sec": 2890.0,
+        "end_sec": 2900.0,
+        "value": 0.683
+      },
+      {
+        "start_sec": 2900.0,
+        "end_sec": 2915.0,
+        "value": 0.496
+      },
+      {
+        "start_sec": 2915.0,
+        "end_sec": 2925.0,
+        "value": 0.6112
+      },
+      {
+        "start_sec": 2925.0,
+        "end_sec": 2935.0,
+        "value": 0.6336
+      },
+      {
+        "start_sec": 2935.0,
+        "end_sec": 2950.0,
+        "value": 0.6566
+      },
+      {
+        "start_sec": 2950.0,
+        "end_sec": 2960.0,
+        "value": 0.6298
+      },
+      {
+        "start_sec": 2960.0,
+        "end_sec": 2970.0,
+        "value": 0.6993
+      },
+      {
+        "start_sec": 2970.0,
+        "end_sec": 2980.0,
+        "value": 0.6742
+      },
+      {
+        "start_sec": 2980.0,
+        "end_sec": 2995.0,
+        "value": 0.6458
+      },
+      {
+        "start_sec": 2995.0,
+        "end_sec": 3005.0,
+        "value": 0.5897
+      },
+      {
+        "start_sec": 3005.0,
+        "end_sec": 3015.0,
+        "value": 0.4927
+      },
+      {
+        "start_sec": 3015.0,
+        "end_sec": 3030.0,
+        "value": 0.6234
+      },
+      {
+        "start_sec": 3030.0,
+        "end_sec": 3040.0,
+        "value": 0.6197
+      },
+      {
+        "start_sec": 3040.0,
+        "end_sec": 3050.0,
+        "value": 0.437
+      },
+      {
+        "start_sec": 3050.0,
+        "end_sec": 3065.0,
+        "value": 0.5559
+      },
+      {
+        "start_sec": 3065.0,
+        "end_sec": 3075.0,
+        "value": 0.592
+      },
+      {
+        "start_sec": 3075.0,
+        "end_sec": 3085.0,
+        "value": 0.6976
+      },
+      {
+        "start_sec": 3085.0,
+        "end_sec": 3100.0,
+        "value": 0.5364
+      },
+      {
+        "start_sec": 3100.0,
+        "end_sec": 3110.0,
+        "value": 0.5238
+      },
+      {
+        "start_sec": 3110.0,
+        "end_sec": 3120.0,
+        "value": 0.6171
+      },
+      {
+        "start_sec": 3120.0,
+        "end_sec": 3135.0,
+        "value": 0.4917
+      },
+      {
+        "start_sec": 3135.0,
+        "end_sec": 3145.0,
+        "value": 0.6457
+      },
+      {
+        "start_sec": 3145.0,
+        "end_sec": 3155.0,
+        "value": 0.577
+      },
+      {
+        "start_sec": 3155.0,
+        "end_sec": 3170.0,
+        "value": 0.5958
+      },
+      {
+        "start_sec": 3170.0,
+        "end_sec": 3180.0,
+        "value": 0.6246
+      },
+      {
+        "start_sec": 3180.0,
+        "end_sec": 3190.0,
+        "value": 0.5525
+      },
+      {
+        "start_sec": 3190.0,
+        "end_sec": 3200.0,
+        "value": 0.5734
+      },
+      {
+        "start_sec": 3200.0,
+        "end_sec": 3215.0,
+        "value": 0.645
+      },
+      {
+        "start_sec": 3215.0,
+        "end_sec": 3225.0,
+        "value": 0.6469
+      },
+      {
+        "start_sec": 3225.0,
+        "end_sec": 3235.0,
+        "value": 0.6899
+      },
+      {
+        "start_sec": 3235.0,
+        "end_sec": 3250.0,
+        "value": 0.6474
+      },
+      {
+        "start_sec": 3250.0,
+        "end_sec": 3260.0,
+        "value": 0.6859
+      },
+      {
+        "start_sec": 3260.0,
+        "end_sec": 3270.0,
+        "value": 0.6594
+      },
+      {
+        "start_sec": 3270.0,
+        "end_sec": 3285.0,
+        "value": 0.5903
+      },
+      {
+        "start_sec": 3285.0,
+        "end_sec": 3295.0,
+        "value": 0.6496
+      },
+      {
+        "start_sec": 3295.0,
+        "end_sec": 3305.0,
+        "value": 0.6905
+      },
+      {
+        "start_sec": 3305.0,
+        "end_sec": 3320.0,
+        "value": 0.5203
+      },
+      {
+        "start_sec": 3320.0,
+        "end_sec": 3330.0,
+        "value": 0.6338
+      },
+      {
+        "start_sec": 3330.0,
+        "end_sec": 3340.0,
+        "value": 0.6269
+      },
+      {
+        "start_sec": 3340.0,
+        "end_sec": 3355.0,
+        "value": 0.6916
+      },
+      {
+        "start_sec": 3355.0,
+        "end_sec": 3365.0,
+        "value": 0.6913
+      },
+      {
+        "start_sec": 3365.0,
+        "end_sec": 3375.0,
+        "value": 0.653
+      },
+      {
+        "start_sec": 3375.0,
+        "end_sec": 3385.0,
+        "value": 0.6406
+      },
+      {
+        "start_sec": 3385.0,
+        "end_sec": 3400.0,
+        "value": 0.7293
+      },
+      {
+        "start_sec": 3400.0,
+        "end_sec": 3410.0,
+        "value": 0.6299
+      },
+      {
+        "start_sec": 3410.0,
+        "end_sec": 3420.0,
+        "value": 0.5065
+      },
+      {
+        "start_sec": 3420.0,
+        "end_sec": 3435.0,
+        "value": 0.6238
+      },
+      {
+        "start_sec": 3435.0,
+        "end_sec": 3445.0,
+        "value": 0.6313
+      },
+      {
+        "start_sec": 3445.0,
+        "end_sec": 3455.0,
+        "value": 0.4496
+      },
+      {
+        "start_sec": 3455.0,
+        "end_sec": 3470.0,
+        "value": 0.6414
+      },
+      {
+        "start_sec": 3470.0,
+        "end_sec": 3480.0,
+        "value": 0.6577
+      },
+      {
+        "start_sec": 3480.0,
+        "end_sec": 3490.0,
+        "value": 0.5404
+      },
+      {
+        "start_sec": 3490.0,
+        "end_sec": 3505.0,
+        "value": 0.6622
+      },
+      {
+        "start_sec": 3505.0,
+        "end_sec": 3515.0,
+        "value": 0.6636
+      },
+      {
+        "start_sec": 3515.0,
+        "end_sec": 3525.0,
+        "value": 0.6203
+      },
+      {
+        "start_sec": 3525.0,
+        "end_sec": 3540.0,
+        "value": 0.5238
+      },
+      {
+        "start_sec": 3540.0,
+        "end_sec": 3550.0,
+        "value": 0.685
+      },
+      {
+        "start_sec": 3550.0,
+        "end_sec": 3560.0,
+        "value": 0.7046
+      },
+      {
+        "start_sec": 3560.0,
+        "end_sec": 3570.0,
+        "value": 0.6891
+      },
+      {
+        "start_sec": 3570.0,
+        "end_sec": 3585.0,
+        "value": 0.5938
+      },
+      {
+        "start_sec": 3585.0,
+        "end_sec": 3595.0,
+        "value": 0.6419
+      },
+      {
+        "start_sec": 3595.0,
+        "end_sec": 3605.0,
+        "value": 0.6574
+      },
+      {
+        "start_sec": 3605.0,
+        "end_sec": 3620.0,
+        "value": 0.5545
+      },
+      {
+        "start_sec": 3620.0,
+        "end_sec": 3630.0,
+        "value": 0.6235
+      },
+      {
+        "start_sec": 3630.0,
+        "end_sec": 3640.0,
+        "value": 0.5269
+      },
+      {
+        "start_sec": 3640.0,
+        "end_sec": 3655.0,
+        "value": 0.6966
+      },
+      {
+        "start_sec": 3655.0,
+        "end_sec": 3665.0,
+        "value": 0.6025
+      },
+      {
+        "start_sec": 3665.0,
+        "end_sec": 3675.0,
+        "value": 0.6691
+      },
+      {
+        "start_sec": 3675.0,
+        "end_sec": 3690.0,
+        "value": 0.6274
+      },
+      {
+        "start_sec": 3690.0,
+        "end_sec": 3700.0,
+        "value": 0.6482
+      },
+      {
+        "start_sec": 3700.0,
+        "end_sec": 3710.0,
+        "value": 0.5184
+      },
+      {
+        "start_sec": 3710.0,
+        "end_sec": 3725.0,
+        "value": 0.5464
+      },
+      {
+        "start_sec": 3725.0,
+        "end_sec": 3735.0,
+        "value": 0.6377
+      },
+      {
+        "start_sec": 3735.0,
+        "end_sec": 3745.0,
+        "value": 0.4386
+      },
+      {
+        "start_sec": 3745.0,
+        "end_sec": 3760.0,
+        "value": 0.6308
+      },
+      {
+        "start_sec": 3760.0,
+        "end_sec": 3770.0,
+        "value": 0.5646
+      },
+      {
+        "start_sec": 3770.0,
+        "end_sec": 3780.0,
+        "value": 0.6208
+      },
+      {
+        "start_sec": 3780.0,
+        "end_sec": 3790.0,
+        "value": 0.431
+      },
+      {
+        "start_sec": 3790.0,
+        "end_sec": 3805.0,
+        "value": 0.64
+      },
+      {
+        "start_sec": 3805.0,
+        "end_sec": 3815.0,
+        "value": 0.6503
+      },
+      {
+        "start_sec": 3815.0,
+        "end_sec": 3825.0,
+        "value": 0.6671
+      },
+      {
+        "start_sec": 3825.0,
+        "end_sec": 3840.0,
+        "value": 0.5327
+      },
+      {
+        "start_sec": 3840.0,
+        "end_sec": 3850.0,
+        "value": 0.7358
+      },
+      {
+        "start_sec": 3850.0,
+        "end_sec": 3860.0,
+        "value": 0.7089
+      },
+      {
+        "start_sec": 3860.0,
+        "end_sec": 3875.0,
+        "value": 0.6853
+      },
+      {
+        "start_sec": 3875.0,
+        "end_sec": 3885.0,
+        "value": 0.7015
+      },
+      {
+        "start_sec": 3885.0,
+        "end_sec": 3895.0,
+        "value": 0.7026
+      },
+      {
+        "start_sec": 3895.0,
+        "end_sec": 3910.0,
+        "value": 0.4287
+      },
+      {
+        "start_sec": 3910.0,
+        "end_sec": 3920.0,
+        "value": 0.6221
+      },
+      {
+        "start_sec": 3920.0,
+        "end_sec": 3930.0,
+        "value": 0.5786
+      },
+      {
+        "start_sec": 3930.0,
+        "end_sec": 3945.0,
+        "value": 0.6498
+      },
+      {
+        "start_sec": 3945.0,
+        "end_sec": 3955.0,
+        "value": 0.7146
+      },
+      {
+        "start_sec": 3955.0,
+        "end_sec": 3965.0,
+        "value": 0.6635
+      },
+      {
+        "start_sec": 3965.0,
+        "end_sec": 3975.0,
+        "value": 0.7141
+      },
+      {
+        "start_sec": 3975.0,
+        "end_sec": 3990.0,
+        "value": 0.6297
+      },
+      {
+        "start_sec": 3990.0,
+        "end_sec": 4000.0,
+        "value": 0.5007
+      },
+      {
+        "start_sec": 4000.0,
+        "end_sec": 4010.0,
+        "value": 0.3271
+      },
+      {
+        "start_sec": 4010.0,
+        "end_sec": 4025.0,
+        "value": 0.6368
+      },
+      {
+        "start_sec": 4025.0,
+        "end_sec": 4035.0,
+        "value": 0.6431
+      },
+      {
+        "start_sec": 4035.0,
+        "end_sec": 4045.0,
+        "value": 0.5857
+      },
+      {
+        "start_sec": 4045.0,
+        "end_sec": 4060.0,
+        "value": 0.451
+      },
+      {
+        "start_sec": 4060.0,
+        "end_sec": 4070.0,
+        "value": 0.6526
+      },
+      {
+        "start_sec": 4070.0,
+        "end_sec": 4080.0,
+        "value": 0.7108
+      },
+      {
+        "start_sec": 4080.0,
+        "end_sec": 4095.0,
+        "value": 0.691
+      },
+      {
+        "start_sec": 4095.0,
+        "end_sec": 4105.0,
+        "value": 0.6993
+      },
+      {
+        "start_sec": 4105.0,
+        "end_sec": 4115.0,
+        "value": 0.5434
+      },
+      {
+        "start_sec": 4115.0,
+        "end_sec": 4130.0,
+        "value": 0.6641
+      },
+      {
+        "start_sec": 4130.0,
+        "end_sec": 4140.0,
+        "value": 0.6808
+      },
+      {
+        "start_sec": 4140.0,
+        "end_sec": 4150.0,
+        "value": 0.5367
+      },
+      {
+        "start_sec": 4150.0,
+        "end_sec": 4165.0,
+        "value": 0.7318
+      },
+      {
+        "start_sec": 4165.0,
+        "end_sec": 4175.0,
+        "value": 0.6837
+      },
+      {
+        "start_sec": 4175.0,
+        "end_sec": 4185.0,
+        "value": 0.4666
+      },
+      {
+        "start_sec": 4185.0,
+        "end_sec": 4195.0,
+        "value": 0.6549
+      },
+      {
+        "start_sec": 4195.0,
+        "end_sec": 4210.0,
+        "value": 0.6721
+      },
+      {
+        "start_sec": 4210.0,
+        "end_sec": 4220.0,
+        "value": 0.6615
+      },
+      {
+        "start_sec": 4220.0,
+        "end_sec": 4230.0,
+        "value": 0.728
+      },
+      {
+        "start_sec": 4230.0,
+        "end_sec": 4245.0,
+        "value": 0.6907
+      },
+      {
+        "start_sec": 4245.0,
+        "end_sec": 4255.0,
+        "value": 0.4099
+      },
+      {
+        "start_sec": 4255.0,
+        "end_sec": 4265.0,
+        "value": 0.4858
+      },
+      {
+        "start_sec": 4265.0,
+        "end_sec": 4280.0,
+        "value": 0.6713
+      },
+      {
+        "start_sec": 4280.0,
+        "end_sec": 4290.0,
+        "value": 0.483
+      },
+      {
+        "start_sec": 4290.0,
+        "end_sec": 4300.0,
+        "value": 0.6181
+      },
+      {
+        "start_sec": 4300.0,
+        "end_sec": 4315.0,
+        "value": 0.7394
+      },
+      {
+        "start_sec": 4315.0,
+        "end_sec": 4325.0,
+        "value": 0.6763
+      },
+      {
+        "start_sec": 4325.0,
+        "end_sec": 4335.0,
+        "value": 0.6879
+      },
+      {
+        "start_sec": 4335.0,
+        "end_sec": 4350.0,
+        "value": 0.6961
+      },
+      {
+        "start_sec": 4350.0,
+        "end_sec": 4360.0,
+        "value": 0.7221
+      },
+      {
+        "start_sec": 4360.0,
+        "end_sec": 4370.0,
+        "value": 0.7123
+      },
+      {
+        "start_sec": 4370.0,
+        "end_sec": 4380.0,
+        "value": 0.5362
+      },
+      {
+        "start_sec": 4380.0,
+        "end_sec": 4395.0,
+        "value": 0.6129
+      },
+      {
+        "start_sec": 4395.0,
+        "end_sec": 4405.0,
+        "value": 0.3901
+      },
+      {
+        "start_sec": 4405.0,
+        "end_sec": 4415.0,
+        "value": 0.5876
+      },
+      {
+        "start_sec": 4415.0,
+        "end_sec": 4430.0,
+        "value": 0.7274
+      },
+      {
+        "start_sec": 4430.0,
+        "end_sec": 4440.0,
+        "value": 0.5762
+      },
+      {
+        "start_sec": 4440.0,
+        "end_sec": 4450.0,
+        "value": 0.6248
+      },
+      {
+        "start_sec": 4450.0,
+        "end_sec": 4465.0,
+        "value": 0.7317
+      },
+      {
+        "start_sec": 4465.0,
+        "end_sec": 4475.0,
+        "value": 0.7399
+      },
+      {
+        "start_sec": 4475.0,
+        "end_sec": 4485.0,
+        "value": 0.699
+      },
+      {
+        "start_sec": 4485.0,
+        "end_sec": 4500.0,
+        "value": 0.7213
+      },
+      {
+        "start_sec": 4500.0,
+        "end_sec": 4510.0,
+        "value": 0.739
+      },
+      {
+        "start_sec": 4510.0,
+        "end_sec": 4520.0,
+        "value": 0.7276
+      },
+      {
+        "start_sec": 4520.0,
+        "end_sec": 4535.0,
+        "value": 0.7463
+      },
+      {
+        "start_sec": 4535.0,
+        "end_sec": 4545.0,
+        "value": 0.65
+      },
+      {
+        "start_sec": 4545.0,
+        "end_sec": 4555.0,
+        "value": 0.6791
+      },
+      {
+        "start_sec": 4555.0,
+        "end_sec": 4565.0,
+        "value": 0.6688
+      },
+      {
+        "start_sec": 4565.0,
+        "end_sec": 4580.0,
+        "value": 0.7416
+      },
+      {
+        "start_sec": 4580.0,
+        "end_sec": 4590.0,
+        "value": 0.7092
+      },
+      {
+        "start_sec": 4590.0,
+        "end_sec": 4600.0,
+        "value": 0.6382
+      },
+      {
+        "start_sec": 4600.0,
+        "end_sec": 4615.0,
+        "value": 0.7025
+      },
+      {
+        "start_sec": 4615.0,
+        "end_sec": 4625.0,
+        "value": 0.6957
+      },
+      {
+        "start_sec": 4625.0,
+        "end_sec": 4635.0,
+        "value": 0.6456
+      },
+      {
+        "start_sec": 4635.0,
+        "end_sec": 4650.0,
+        "value": 0.6673
+      },
+      {
+        "start_sec": 4650.0,
+        "end_sec": 4660.0,
+        "value": 0.6746
+      },
+      {
+        "start_sec": 4660.0,
+        "end_sec": 4670.0,
+        "value": 0.6598
+      },
+      {
+        "start_sec": 4670.0,
+        "end_sec": 4685.0,
+        "value": 0.7049
+      },
+      {
+        "start_sec": 4685.0,
+        "end_sec": 4695.0,
+        "value": 0.6591
+      },
+      {
+        "start_sec": 4695.0,
+        "end_sec": 4705.0,
+        "value": 0.5614
+      },
+      {
+        "start_sec": 4705.0,
+        "end_sec": 4720.0,
+        "value": 0.608
+      },
+      {
+        "start_sec": 4720.0,
+        "end_sec": 4730.0,
+        "value": 0.5822
+      },
+      {
+        "start_sec": 4730.0,
+        "end_sec": 4740.0,
+        "value": 0.7079
+      },
+      {
+        "start_sec": 4740.0,
+        "end_sec": 4755.0,
+        "value": 0.6984
+      },
+      {
+        "start_sec": 4755.0,
+        "end_sec": 4765.0,
+        "value": 0.5455
+      },
+      {
+        "start_sec": 4765.0,
+        "end_sec": 4775.0,
+        "value": 0.6988
+      },
+      {
+        "start_sec": 4775.0,
+        "end_sec": 4785.0,
+        "value": 0.7467
+      },
+      {
+        "start_sec": 4785.0,
+        "end_sec": 4800.0,
+        "value": 0.6244
+      },
+      {
+        "start_sec": 4800.0,
+        "end_sec": 4810.0,
+        "value": 0.6127
+      },
+      {
+        "start_sec": 4810.0,
+        "end_sec": 4820.0,
+        "value": 0.5597
+      },
+      {
+        "start_sec": 4820.0,
+        "end_sec": 4835.0,
+        "value": 0.6957
+      },
+      {
+        "start_sec": 4835.0,
+        "end_sec": 4845.0,
+        "value": 0.6456
+      },
+      {
+        "start_sec": 4845.0,
+        "end_sec": 4855.0,
+        "value": 0.7248
+      },
+      {
+        "start_sec": 4855.0,
+        "end_sec": 4870.0,
+        "value": 0.6567
+      },
+      {
+        "start_sec": 4870.0,
+        "end_sec": 4880.0,
+        "value": 0.6263
+      },
+      {
+        "start_sec": 4880.0,
+        "end_sec": 4890.0,
+        "value": 0.6929
+      },
+      {
+        "start_sec": 4890.0,
+        "end_sec": 4905.0,
+        "value": 0.6821
+      },
+      {
+        "start_sec": 4905.0,
+        "end_sec": 4915.0,
+        "value": 0.6909
+      },
+      {
+        "start_sec": 4915.0,
+        "end_sec": 4925.0,
+        "value": 0.6402
+      },
+      {
+        "start_sec": 4925.0,
+        "end_sec": 4940.0,
+        "value": 0.7392
+      },
+      {
+        "start_sec": 4940.0,
+        "end_sec": 4950.0,
+        "value": 0.6246
+      },
+      {
+        "start_sec": 4950.0,
+        "end_sec": 4960.0,
+        "value": 0.6986
+      },
+      {
+        "start_sec": 4960.0,
+        "end_sec": 4970.0,
+        "value": 0.5362
+      },
+      {
+        "start_sec": 4970.0,
+        "end_sec": 4985.0,
+        "value": 0.4047
+      },
+      {
+        "start_sec": 4985.0,
+        "end_sec": 4995.0,
+        "value": 0.5071
+      },
+      {
+        "start_sec": 4995.0,
+        "end_sec": 5005.0,
+        "value": 0.6469
+      },
+      {
+        "start_sec": 5005.0,
+        "end_sec": 5020.0,
+        "value": 0.6332
+      },
+      {
+        "start_sec": 5020.0,
+        "end_sec": 5030.0,
+        "value": 0.5814
+      },
+      {
+        "start_sec": 5030.0,
+        "end_sec": 5040.0,
+        "value": 0.547
+      },
+      {
+        "start_sec": 5040.0,
+        "end_sec": 5055.0,
+        "value": 0.5254
+      },
+      {
+        "start_sec": 5055.0,
+        "end_sec": 5065.0,
+        "value": 0.5999
+      },
+      {
+        "start_sec": 5065.0,
+        "end_sec": 5075.0,
+        "value": 0.5704
+      },
+      {
+        "start_sec": 5075.0,
+        "end_sec": 5090.0,
+        "value": 0.6167
+      },
+      {
+        "start_sec": 5090.0,
+        "end_sec": 5100.0,
+        "value": 0.5763
+      },
+      {
+        "start_sec": 5100.0,
+        "end_sec": 5110.0,
+        "value": 0.5562
+      },
+      {
+        "start_sec": 5110.0,
+        "end_sec": 5125.0,
+        "value": 0.6331
+      },
+      {
+        "start_sec": 5125.0,
+        "end_sec": 5135.0,
+        "value": 0.5916
+      },
+      {
+        "start_sec": 5135.0,
+        "end_sec": 5145.0,
+        "value": 0.5273
+      },
+      {
+        "start_sec": 5145.0,
+        "end_sec": 5155.0,
+        "value": 0.4663
+      },
+      {
+        "start_sec": 5155.0,
+        "end_sec": 5170.0,
+        "value": 0.4633
+      },
+      {
+        "start_sec": 5170.0,
+        "end_sec": 5180.0,
+        "value": 0.5489
+      },
+      {
+        "start_sec": 5180.0,
+        "end_sec": 5190.0,
+        "value": 0.5892
+      },
+      {
+        "start_sec": 5190.0,
+        "end_sec": 5205.0,
+        "value": 0.6155
+      },
+      {
+        "start_sec": 5205.0,
+        "end_sec": 5215.0,
+        "value": 0.4378
+      },
+      {
+        "start_sec": 5215.0,
+        "end_sec": 5225.0,
+        "value": 0.6508
+      },
+      {
+        "start_sec": 5225.0,
+        "end_sec": 5240.0,
+        "value": 0.51
+      },
+      {
+        "start_sec": 5240.0,
+        "end_sec": 5250.0,
+        "value": 0.2284
+      },
+      {
+        "start_sec": 5250.0,
+        "end_sec": 5260.0,
+        "value": 0.1855
+      },
+      {
+        "start_sec": 5260.0,
+        "end_sec": 5275.0,
+        "value": 0.2657
+      },
+      {
+        "start_sec": 5275.0,
+        "end_sec": 5285.0,
+        "value": 0.7081
+      },
+      {
+        "start_sec": 5285.0,
+        "end_sec": 5295.0,
+        "value": 0.4298
+      },
+      {
+        "start_sec": 5295.0,
+        "end_sec": 5310.0,
+        "value": 0.5781
+      },
+      {
+        "start_sec": 5310.0,
+        "end_sec": 5320.0,
+        "value": 0.5515
+      },
+      {
+        "start_sec": 5320.0,
+        "end_sec": 5330.0,
+        "value": 0.5563
+      },
+      {
+        "start_sec": 5330.0,
+        "end_sec": 5345.0,
+        "value": 0.6337
+      },
+      {
+        "start_sec": 5345.0,
+        "end_sec": 5355.0,
+        "value": 0.5439
+      },
+      {
+        "start_sec": 5355.0,
+        "end_sec": 5365.0,
+        "value": 0.5876
+      },
+      {
+        "start_sec": 5365.0,
+        "end_sec": 5375.0,
+        "value": 0.5682
+      },
+      {
+        "start_sec": 5375.0,
+        "end_sec": 5390.0,
+        "value": 0.5729
+      },
+      {
+        "start_sec": 5390.0,
+        "end_sec": 5400.0,
+        "value": 0.6229
+      },
+      {
+        "start_sec": 5400.0,
+        "end_sec": 5410.0,
+        "value": 0.5076
+      },
+      {
+        "start_sec": 5410.0,
+        "end_sec": 5425.0,
+        "value": 0.5937
+      },
+      {
+        "start_sec": 5425.0,
+        "end_sec": 5435.0,
+        "value": 0.5999
+      },
+      {
+        "start_sec": 5435.0,
+        "end_sec": 5445.0,
+        "value": 0.4781
+      },
+      {
+        "start_sec": 5445.0,
+        "end_sec": 5460.0,
+        "value": 0.5926
+      },
+      {
+        "start_sec": 5460.0,
+        "end_sec": 5470.0,
+        "value": 0.5671
+      },
+      {
+        "start_sec": 5470.0,
+        "end_sec": 5480.0,
+        "value": 0.6174
+      },
+      {
+        "start_sec": 5480.0,
+        "end_sec": 5495.0,
+        "value": 0.635
+      },
+      {
+        "start_sec": 5495.0,
+        "end_sec": 5505.0,
+        "value": 0.6577
+      },
+      {
+        "start_sec": 5505.0,
+        "end_sec": 5515.0,
+        "value": 0.6424
+      },
+      {
+        "start_sec": 5515.0,
+        "end_sec": 5530.0,
+        "value": 0.4544
+      },
+      {
+        "start_sec": 5530.0,
+        "end_sec": 5540.0,
+        "value": 0.4926
+      },
+      {
+        "start_sec": 5540.0,
+        "end_sec": 5550.0,
+        "value": 0.4333
+      },
+      {
+        "start_sec": 5550.0,
+        "end_sec": 5560.0,
+        "value": 0.4612
+      },
+      {
+        "start_sec": 5560.0,
+        "end_sec": 5575.0,
+        "value": 0.6743
+      },
+      {
+        "start_sec": 5575.0,
+        "end_sec": 5585.0,
+        "value": 0.5938
+      },
+      {
+        "start_sec": 5585.0,
+        "end_sec": 5595.0,
+        "value": 0.5489
+      },
+      {
+        "start_sec": 5595.0,
+        "end_sec": 5610.0,
+        "value": 0.5098
+      },
+      {
+        "start_sec": 5610.0,
+        "end_sec": 5620.0,
+        "value": 0.6113
+      },
+      {
+        "start_sec": 5620.0,
+        "end_sec": 5630.0,
+        "value": 0.5849
+      },
+      {
+        "start_sec": 5630.0,
+        "end_sec": 5645.0,
+        "value": 0.6001
+      },
+      {
+        "start_sec": 5645.0,
+        "end_sec": 5655.0,
+        "value": 0.6167
+      },
+      {
+        "start_sec": 5655.0,
+        "end_sec": 5665.0,
+        "value": 0.5347
+      },
+      {
+        "start_sec": 5665.0,
+        "end_sec": 5680.0,
+        "value": 0.6358
+      },
+      {
+        "start_sec": 5680.0,
+        "end_sec": 5690.0,
+        "value": 0.599
+      },
+      {
+        "start_sec": 5690.0,
+        "end_sec": 5700.0,
+        "value": 0.6651
+      },
+      {
+        "start_sec": 5700.0,
+        "end_sec": 5715.0,
+        "value": 0.706
+      },
+      {
+        "start_sec": 5715.0,
+        "end_sec": 5725.0,
+        "value": 0.7391
+      },
+      {
+        "start_sec": 5725.0,
+        "end_sec": 5735.0,
+        "value": 0.58
+      },
+      {
+        "start_sec": 5735.0,
+        "end_sec": 5750.0,
+        "value": 0.5579
+      },
+      {
+        "start_sec": 5750.0,
+        "end_sec": 5760.0,
+        "value": 0.5848
+      },
+      {
+        "start_sec": 5760.0,
+        "end_sec": 5770.0,
+        "value": 0.6178
+      },
+      {
+        "start_sec": 5770.0,
+        "end_sec": 5780.0,
+        "value": 0.6213
+      },
+      {
+        "start_sec": 5780.0,
+        "end_sec": 5795.0,
+        "value": 0.7389
+      },
+      {
+        "start_sec": 5795.0,
+        "end_sec": 5805.0,
+        "value": 0.6338
+      },
+      {
+        "start_sec": 5805.0,
+        "end_sec": 5815.0,
+        "value": 0.5991
+      },
+      {
+        "start_sec": 5815.0,
+        "end_sec": 5830.0,
+        "value": 0.558
+      },
+      {
+        "start_sec": 5830.0,
+        "end_sec": 5840.0,
+        "value": 0.4702
+      },
+      {
+        "start_sec": 5840.0,
+        "end_sec": 5850.0,
+        "value": 0.6279
+      },
+      {
+        "start_sec": 5850.0,
+        "end_sec": 5865.0,
+        "value": 0.6442
+      },
+      {
+        "start_sec": 5865.0,
+        "end_sec": 5875.0,
+        "value": 0.5092
+      },
+      {
+        "start_sec": 5875.0,
+        "end_sec": 5885.0,
+        "value": 0.614
+      },
+      {
+        "start_sec": 5885.0,
+        "end_sec": 5900.0,
+        "value": 0.6077
+      },
+      {
+        "start_sec": 5900.0,
+        "end_sec": 5910.0,
+        "value": 0.6236
+      },
+      {
+        "start_sec": 5910.0,
+        "end_sec": 5920.0,
+        "value": 0.6789
+      },
+      {
+        "start_sec": 5920.0,
+        "end_sec": 5935.0,
+        "value": 0.7304
+      },
+      {
+        "start_sec": 5935.0,
+        "end_sec": 5945.0,
+        "value": 0.5487
+      },
+      {
+        "start_sec": 5945.0,
+        "end_sec": 5955.0,
+        "value": 0.7117
+      },
+      {
+        "start_sec": 5955.0,
+        "end_sec": 5965.0,
+        "value": 0.6922
+      },
+      {
+        "start_sec": 5965.0,
+        "end_sec": 5980.0,
+        "value": 0.6889
+      },
+      {
+        "start_sec": 5980.0,
+        "end_sec": 5990.0,
+        "value": 0.6139
+      },
+      {
+        "start_sec": 5990.0,
+        "end_sec": 6000.0,
+        "value": 0.6563
+      },
+      {
+        "start_sec": 6000.0,
+        "end_sec": 6015.0,
+        "value": 0.5489
+      },
+      {
+        "start_sec": 6015.0,
+        "end_sec": 6025.0,
+        "value": 0.6736
+      },
+      {
+        "start_sec": 6025.0,
+        "end_sec": 6035.0,
+        "value": 0.6742
+      },
+      {
+        "start_sec": 6035.0,
+        "end_sec": 6050.0,
+        "value": 0.6523
+      },
+      {
+        "start_sec": 6050.0,
+        "end_sec": 6060.0,
+        "value": 0.4373
+      },
+      {
+        "start_sec": 6060.0,
+        "end_sec": 6070.0,
+        "value": 0.3379
+      },
+      {
+        "start_sec": 6070.0,
+        "end_sec": 6085.0,
+        "value": 0.685
+      },
+      {
+        "start_sec": 6085.0,
+        "end_sec": 6095.0,
+        "value": 0.6493
+      },
+      {
+        "start_sec": 6095.0,
+        "end_sec": 6105.0,
+        "value": 0.6785
+      },
+      {
+        "start_sec": 6105.0,
+        "end_sec": 6120.0,
+        "value": 0.6383
+      },
+      {
+        "start_sec": 6120.0,
+        "end_sec": 6130.0,
+        "value": 0.5169
+      },
+      {
+        "start_sec": 6130.0,
+        "end_sec": 6140.0,
+        "value": 0.5492
+      },
+      {
+        "start_sec": 6140.0,
+        "end_sec": 6150.0,
+        "value": 0.673
+      },
+      {
+        "start_sec": 6150.0,
+        "end_sec": 6165.0,
+        "value": 0.6148
+      },
+      {
+        "start_sec": 6165.0,
+        "end_sec": 6175.0,
+        "value": 0.5449
+      },
+      {
+        "start_sec": 6175.0,
+        "end_sec": 6185.0,
+        "value": 0.594
+      },
+      {
+        "start_sec": 6185.0,
+        "end_sec": 6200.0,
+        "value": 0.5153
+      },
+      {
+        "start_sec": 6200.0,
+        "end_sec": 6210.0,
+        "value": 0.6991
+      },
+      {
+        "start_sec": 6210.0,
+        "end_sec": 6220.0,
+        "value": 0.6948
+      },
+      {
+        "start_sec": 6220.0,
+        "end_sec": 6235.0,
+        "value": 0.5973
+      },
+      {
+        "start_sec": 6235.0,
+        "end_sec": 6245.0,
+        "value": 0.6118
+      },
+      {
+        "start_sec": 6245.0,
+        "end_sec": 6255.0,
+        "value": 0.5299
+      },
+      {
+        "start_sec": 6255.0,
+        "end_sec": 6270.0,
+        "value": 0.4838
+      },
+      {
+        "start_sec": 6270.0,
+        "end_sec": 6280.0,
+        "value": 0.4736
+      },
+      {
+        "start_sec": 6280.0,
+        "end_sec": 6290.0,
+        "value": 0.6296
+      },
+      {
+        "start_sec": 6290.0,
+        "end_sec": 6305.0,
+        "value": 0.4617
+      },
+      {
+        "start_sec": 6305.0,
+        "end_sec": 6315.0,
+        "value": 0.6128
+      },
+      {
+        "start_sec": 6315.0,
+        "end_sec": 6325.0,
+        "value": 0.6452
+      },
+      {
+        "start_sec": 6325.0,
+        "end_sec": 6340.0,
+        "value": 0.5862
+      },
+      {
+        "start_sec": 6340.0,
+        "end_sec": 6350.0,
+        "value": 0.6221
+      },
+      {
+        "start_sec": 6350.0,
+        "end_sec": 6360.0,
+        "value": 0.493
+      },
+      {
+        "start_sec": 6360.0,
+        "end_sec": 6370.0,
+        "value": 0.4238
+      },
+      {
+        "start_sec": 6370.0,
+        "end_sec": 6385.0,
+        "value": 0.5185
+      },
+      {
+        "start_sec": 6385.0,
+        "end_sec": 6395.0,
+        "value": 0.6166
+      },
+      {
+        "start_sec": 6395.0,
+        "end_sec": 6405.0,
+        "value": 0.5691
+      },
+      {
+        "start_sec": 6405.0,
+        "end_sec": 6420.0,
+        "value": 0.5695
+      },
+      {
+        "start_sec": 6420.0,
+        "end_sec": 6430.0,
+        "value": 0.6916
+      },
+      {
+        "start_sec": 6430.0,
+        "end_sec": 6440.0,
+        "value": 0.4652
+      },
+      {
+        "start_sec": 6440.0,
+        "end_sec": 6455.0,
+        "value": 0.6566
+      },
+      {
+        "start_sec": 6455.0,
+        "end_sec": 6465.0,
+        "value": 0.6383
+      },
+      {
+        "start_sec": 6465.0,
+        "end_sec": 6475.0,
+        "value": 0.6068
+      },
+      {
+        "start_sec": 6475.0,
+        "end_sec": 6490.0,
+        "value": 0.5424
+      },
+      {
+        "start_sec": 6490.0,
+        "end_sec": 6500.0,
+        "value": 0.569
+      },
+      {
+        "start_sec": 6500.0,
+        "end_sec": 6510.0,
+        "value": 0.5805
+      },
+      {
+        "start_sec": 6510.0,
+        "end_sec": 6525.0,
+        "value": 0.6377
+      },
+      {
+        "start_sec": 6525.0,
+        "end_sec": 6535.0,
+        "value": 0.6099
+      },
+      {
+        "start_sec": 6535.0,
+        "end_sec": 6545.0,
+        "value": 0.5211
+      },
+      {
+        "start_sec": 6545.0,
+        "end_sec": 6555.0,
+        "value": 0.5709
+      },
+      {
+        "start_sec": 6555.0,
+        "end_sec": 6570.0,
+        "value": 0.66
+      },
+      {
+        "start_sec": 6570.0,
+        "end_sec": 6580.0,
+        "value": 0.6384
+      },
+      {
+        "start_sec": 6580.0,
+        "end_sec": 6590.0,
+        "value": 0.4679
+      },
+      {
+        "start_sec": 6590.0,
+        "end_sec": 6605.0,
+        "value": 0.4305
+      },
+      {
+        "start_sec": 6605.0,
+        "end_sec": 6615.0,
+        "value": 0.3618
+      },
+      {
+        "start_sec": 6615.0,
+        "end_sec": 6625.0,
+        "value": 0.3808
+      },
+      {
+        "start_sec": 6625.0,
+        "end_sec": 6640.0,
+        "value": 0.3049
+      },
+      {
+        "start_sec": 6640.0,
+        "end_sec": 6650.0,
+        "value": 0.3203
+      },
+      {
+        "start_sec": 6650.0,
+        "end_sec": 6660.0,
+        "value": 0.3462
+      },
+      {
+        "start_sec": 6660.0,
+        "end_sec": 6675.0,
+        "value": 0.5538
+      },
+      {
+        "start_sec": 6675.0,
+        "end_sec": 6685.0,
+        "value": 0.3943
+      },
+      {
+        "start_sec": 6685.0,
+        "end_sec": 6695.0,
+        "value": 0.0857
+      },
+      {
+        "start_sec": 6695.0,
+        "end_sec": 6710.0,
+        "value": 0.4111
+      },
+      {
+        "start_sec": 6710.0,
+        "end_sec": 6720.0,
+        "value": 0.4621
+      },
+      {
+        "start_sec": 6720.0,
+        "end_sec": 6730.0,
+        "value": 0.5445
+      },
+      {
+        "start_sec": 6730.0,
+        "end_sec": 6740.0,
+        "value": 0.1631
+      },
+      {
+        "start_sec": 6740.0,
+        "end_sec": 6755.0,
+        "value": 0.6498
+      },
+      {
+        "start_sec": 6755.0,
+        "end_sec": 6765.0,
+        "value": 0.3586
+      },
+      {
+        "start_sec": 6765.0,
+        "end_sec": 6775.0,
+        "value": 0.4104
+      },
+      {
+        "start_sec": 6775.0,
+        "end_sec": 6790.0,
+        "value": 0.5393
+      },
+      {
+        "start_sec": 6790.0,
+        "end_sec": 6800.0,
+        "value": 0.604
+      },
+      {
+        "start_sec": 6800.0,
+        "end_sec": 6810.0,
+        "value": 0.3717
+      },
+      {
+        "start_sec": 6810.0,
+        "end_sec": 6825.0,
+        "value": 0.5623
+      },
+      {
+        "start_sec": 6825.0,
+        "end_sec": 6835.0,
+        "value": 0.6029
+      },
+      {
+        "start_sec": 6835.0,
+        "end_sec": 6845.0,
+        "value": 0.4987
+      },
+      {
+        "start_sec": 6845.0,
+        "end_sec": 6860.0,
+        "value": 0.4831
+      },
+      {
+        "start_sec": 6860.0,
+        "end_sec": 6870.0,
+        "value": 0.1997
+      },
+      {
+        "start_sec": 6870.0,
+        "end_sec": 6880.0,
+        "value": 0.5189
+      },
+      {
+        "start_sec": 6880.0,
+        "end_sec": 6895.0,
+        "value": 0.6493
+      },
+      {
+        "start_sec": 6895.0,
+        "end_sec": 6905.0,
+        "value": 0.4874
+      },
+      {
+        "start_sec": 6905.0,
+        "end_sec": 6915.0,
+        "value": 0.4492
+      },
+      {
+        "start_sec": 6915.0,
+        "end_sec": 6930.0,
+        "value": 0.0284
+      },
+      {
+        "start_sec": 6930.0,
+        "end_sec": 6940.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 6940.0,
+        "end_sec": 6950.0,
+        "value": 0.6581
+      },
+      {
+        "start_sec": 6950.0,
+        "end_sec": 6960.0,
+        "value": 0.5058
+      },
+      {
+        "start_sec": 6960.0,
+        "end_sec": 6975.0,
+        "value": 0.6563
+      },
+      {
+        "start_sec": 6975.0,
+        "end_sec": 6985.0,
+        "value": 0.3608
+      },
+      {
+        "start_sec": 6985.0,
+        "end_sec": 6995.0,
+        "value": 0.5992
+      },
+      {
+        "start_sec": 6995.0,
+        "end_sec": 7010.0,
+        "value": 0.6753
+      },
+      {
+        "start_sec": 7010.0,
+        "end_sec": 7020.0,
+        "value": 0.5164
+      },
+      {
+        "start_sec": 7020.0,
+        "end_sec": 7030.0,
+        "value": 0.5737
+      },
+      {
+        "start_sec": 7030.0,
+        "end_sec": 7045.0,
+        "value": 0.6339
+      },
+      {
+        "start_sec": 7045.0,
+        "end_sec": 7055.0,
+        "value": 0.4093
+      },
+      {
+        "start_sec": 7055.0,
+        "end_sec": 7065.0,
+        "value": 0.497
+      },
+      {
+        "start_sec": 7065.0,
+        "end_sec": 7080.0,
+        "value": 0.6586
+      },
+      {
+        "start_sec": 7080.0,
+        "end_sec": 7090.0,
+        "value": 0.5825
+      },
+      {
+        "start_sec": 7090.0,
+        "end_sec": 7100.0,
+        "value": 0.4704
+      },
+      {
+        "start_sec": 7100.0,
+        "end_sec": 7115.0,
+        "value": 0.4666
+      },
+      {
+        "start_sec": 7115.0,
+        "end_sec": 7125.0,
+        "value": 0.6269
+      },
+      {
+        "start_sec": 7125.0,
+        "end_sec": 7135.0,
+        "value": 0.4756
+      },
+      {
+        "start_sec": 7135.0,
+        "end_sec": 7145.0,
+        "value": 0.5088
+      },
+      {
+        "start_sec": 7145.0,
+        "end_sec": 7160.0,
+        "value": 0.5925
+      },
+      {
+        "start_sec": 7160.0,
+        "end_sec": 7170.0,
+        "value": 0.5486
+      },
+      {
+        "start_sec": 7170.0,
+        "end_sec": 7180.0,
+        "value": 0.5192
+      },
+      {
+        "start_sec": 7180.0,
+        "end_sec": 7195.0,
+        "value": 0.4389
+      },
+      {
+        "start_sec": 7195.0,
+        "end_sec": 7205.0,
+        "value": 0.6272
+      },
+      {
+        "start_sec": 7205.0,
+        "end_sec": 7215.0,
+        "value": 0.6796
+      },
+      {
+        "start_sec": 7215.0,
+        "end_sec": 7230.0,
+        "value": 0.4893
+      },
+      {
+        "start_sec": 7230.0,
+        "end_sec": 7240.0,
+        "value": 0.6344
+      },
+      {
+        "start_sec": 7240.0,
+        "end_sec": 7250.0,
+        "value": 0.5702
+      },
+      {
+        "start_sec": 7250.0,
+        "end_sec": 7265.0,
+        "value": 0.6218
+      },
+      {
+        "start_sec": 7265.0,
+        "end_sec": 7275.0,
+        "value": 0.6539
+      },
+      {
+        "start_sec": 7275.0,
+        "end_sec": 7285.0,
+        "value": 0.4383
+      },
+      {
+        "start_sec": 7285.0,
+        "end_sec": 7300.0,
+        "value": 0.5371
+      },
+      {
+        "start_sec": 7300.0,
+        "end_sec": 7310.0,
+        "value": 0.4319
+      },
+      {
+        "start_sec": 7310.0,
+        "end_sec": 7320.0,
+        "value": 0.6127
+      },
+      {
+        "start_sec": 7320.0,
+        "end_sec": 7335.0,
+        "value": 0.5863
+      },
+      {
+        "start_sec": 7335.0,
+        "end_sec": 7345.0,
+        "value": 0.6978
+      },
+      {
+        "start_sec": 7345.0,
+        "end_sec": 7355.0,
+        "value": 0.6862
+      },
+      {
+        "start_sec": 7355.0,
+        "end_sec": 7365.0,
+        "value": 0.6988
+      },
+      {
+        "start_sec": 7365.0,
+        "end_sec": 7380.0,
+        "value": 0.6342
+      },
+      {
+        "start_sec": 7380.0,
+        "end_sec": 7390.0,
+        "value": 0.586
+      },
+      {
+        "start_sec": 7390.0,
+        "end_sec": 7400.0,
+        "value": 0.6311
+      },
+      {
+        "start_sec": 7400.0,
+        "end_sec": 7415.0,
+        "value": 0.6292
+      },
+      {
+        "start_sec": 7415.0,
+        "end_sec": 7425.0,
+        "value": 0.4835
+      },
+      {
+        "start_sec": 7425.0,
+        "end_sec": 7435.0,
+        "value": 0.6235
+      },
+      {
+        "start_sec": 7435.0,
+        "end_sec": 7450.0,
+        "value": 0.6024
+      },
+      {
+        "start_sec": 7450.0,
+        "end_sec": 7460.0,
+        "value": 0.6653
+      },
+      {
+        "start_sec": 7460.0,
+        "end_sec": 7470.0,
+        "value": 0.4622
+      },
+      {
+        "start_sec": 7470.0,
+        "end_sec": 7485.0,
+        "value": 0.4097
+      },
+      {
+        "start_sec": 7485.0,
+        "end_sec": 7495.0,
+        "value": 0.6464
+      },
+      {
+        "start_sec": 7495.0,
+        "end_sec": 7505.0,
+        "value": 0.6082
+      },
+      {
+        "start_sec": 7505.0,
+        "end_sec": 7520.0,
+        "value": 0.5745
+      },
+      {
+        "start_sec": 7520.0,
+        "end_sec": 7530.0,
+        "value": 0.5941
+      },
+      {
+        "start_sec": 7530.0,
+        "end_sec": 7540.0,
+        "value": 0.6502
+      },
+      {
+        "start_sec": 7540.0,
+        "end_sec": 7550.0,
+        "value": 0.5819
+      },
+      {
+        "start_sec": 7550.0,
+        "end_sec": 7565.0,
+        "value": 0.646
+      },
+      {
+        "start_sec": 7565.0,
+        "end_sec": 7575.0,
+        "value": 0.534
+      },
+      {
+        "start_sec": 7575.0,
+        "end_sec": 7585.0,
+        "value": 0.445
+      },
+      {
+        "start_sec": 7585.0,
+        "end_sec": 7600.0,
+        "value": 0.4759
+      },
+      {
+        "start_sec": 7600.0,
+        "end_sec": 7610.0,
+        "value": 0.4747
+      },
+      {
+        "start_sec": 7610.0,
+        "end_sec": 7620.0,
+        "value": 0.3957
+      },
+      {
+        "start_sec": 7620.0,
+        "end_sec": 7635.0,
+        "value": 0.4492
+      },
+      {
+        "start_sec": 7635.0,
+        "end_sec": 7645.0,
+        "value": 0.4681
+      },
+      {
+        "start_sec": 7645.0,
+        "end_sec": 7655.0,
+        "value": 0.5069
+      },
+      {
+        "start_sec": 7655.0,
+        "end_sec": 7670.0,
+        "value": 0.4957
+      },
+      {
+        "start_sec": 7670.0,
+        "end_sec": 7680.0,
+        "value": 0.4706
+      },
+      {
+        "start_sec": 7680.0,
+        "end_sec": 7690.0,
+        "value": 0.4727
+      },
+      {
+        "start_sec": 7690.0,
+        "end_sec": 7705.0,
+        "value": 0.6625
+      },
+      {
+        "start_sec": 7705.0,
+        "end_sec": 7715.0,
+        "value": 0.5276
+      },
+      {
+        "start_sec": 7715.0,
+        "end_sec": 7725.0,
+        "value": 0.5247
+      },
+      {
+        "start_sec": 7725.0,
+        "end_sec": 7735.0,
+        "value": 0.6077
+      },
+      {
+        "start_sec": 7735.0,
+        "end_sec": 7750.0,
+        "value": 0.6141
+      },
+      {
+        "start_sec": 7750.0,
+        "end_sec": 7760.0,
+        "value": 0.4876
+      },
+      {
+        "start_sec": 7760.0,
+        "end_sec": 7770.0,
+        "value": 0.6174
+      },
+      {
+        "start_sec": 7770.0,
+        "end_sec": 7785.0,
+        "value": 0.6045
+      },
+      {
+        "start_sec": 7785.0,
+        "end_sec": 7795.0,
+        "value": 0.5975
+      },
+      {
+        "start_sec": 7795.0,
+        "end_sec": 7805.0,
+        "value": 0.4585
+      },
+      {
+        "start_sec": 7805.0,
+        "end_sec": 7820.0,
+        "value": 0.5682
+      },
+      {
+        "start_sec": 7820.0,
+        "end_sec": 7830.0,
+        "value": 0.5952
+      },
+      {
+        "start_sec": 7830.0,
+        "end_sec": 7840.0,
+        "value": 0.679
+      },
+      {
+        "start_sec": 7840.0,
+        "end_sec": 7855.0,
+        "value": 0.7169
+      },
+      {
+        "start_sec": 7855.0,
+        "end_sec": 7865.0,
+        "value": 0.6704
+      },
+      {
+        "start_sec": 7865.0,
+        "end_sec": 7875.0,
+        "value": 0.3786
+      },
+      {
+        "start_sec": 7875.0,
+        "end_sec": 7890.0,
+        "value": 0.5643
+      },
+      {
+        "start_sec": 7890.0,
+        "end_sec": 7900.0,
+        "value": 0.5557
+      },
+      {
+        "start_sec": 7900.0,
+        "end_sec": 7910.0,
+        "value": 0.6393
+      },
+      {
+        "start_sec": 7910.0,
+        "end_sec": 7925.0,
+        "value": 0.5707
+      },
+      {
+        "start_sec": 7925.0,
+        "end_sec": 7935.0,
+        "value": 0.5029
+      },
+      {
+        "start_sec": 7935.0,
+        "end_sec": 7945.0,
+        "value": 0.6312
+      },
+      {
+        "start_sec": 7945.0,
+        "end_sec": 7955.0,
+        "value": 0.5512
+      },
+      {
+        "start_sec": 7955.0,
+        "end_sec": 7970.0,
+        "value": 0.6171
+      },
+      {
+        "start_sec": 7970.0,
+        "end_sec": 7980.0,
+        "value": 0.3288
+      },
+      {
+        "start_sec": 7980.0,
+        "end_sec": 7990.0,
+        "value": 0.5483
+      },
+      {
+        "start_sec": 7990.0,
+        "end_sec": 8005.0,
+        "value": 0.5427
+      },
+      {
+        "start_sec": 8005.0,
+        "end_sec": 8015.0,
+        "value": 0.6247
+      },
+      {
+        "start_sec": 8015.0,
+        "end_sec": 8025.0,
+        "value": 0.6534
+      },
+      {
+        "start_sec": 8025.0,
+        "end_sec": 8040.0,
+        "value": 0.5709
+      },
+      {
+        "start_sec": 8040.0,
+        "end_sec": 8050.0,
+        "value": 0.5579
+      },
+      {
+        "start_sec": 8050.0,
+        "end_sec": 8060.0,
+        "value": 0.6749
+      },
+      {
+        "start_sec": 8060.0,
+        "end_sec": 8075.0,
+        "value": 0.6954
+      },
+      {
+        "start_sec": 8075.0,
+        "end_sec": 8085.0,
+        "value": 0.7181
+      },
+      {
+        "start_sec": 8085.0,
+        "end_sec": 8095.0,
+        "value": 0.6422
+      },
+      {
+        "start_sec": 8095.0,
+        "end_sec": 8110.0,
+        "value": 0.6354
+      },
+      {
+        "start_sec": 8110.0,
+        "end_sec": 8120.0,
+        "value": 0.6586
+      },
+      {
+        "start_sec": 8120.0,
+        "end_sec": 8130.0,
+        "value": 0.6675
+      },
+      {
+        "start_sec": 8130.0,
+        "end_sec": 8140.0,
+        "value": 0.692
+      },
+      {
+        "start_sec": 8140.0,
+        "end_sec": 8155.0,
+        "value": 0.6467
+      },
+      {
+        "start_sec": 8155.0,
+        "end_sec": 8165.0,
+        "value": 0.6253
+      },
+      {
+        "start_sec": 8165.0,
+        "end_sec": 8175.0,
+        "value": 0.6655
+      },
+      {
+        "start_sec": 8175.0,
+        "end_sec": 8190.0,
+        "value": 0.6102
+      },
+      {
+        "start_sec": 8190.0,
+        "end_sec": 8200.0,
+        "value": 0.6714
+      },
+      {
+        "start_sec": 8200.0,
+        "end_sec": 8210.0,
+        "value": 0.6613
+      },
+      {
+        "start_sec": 8210.0,
+        "end_sec": 8225.0,
+        "value": 0.6801
+      },
+      {
+        "start_sec": 8225.0,
+        "end_sec": 8235.0,
+        "value": 0.4214
+      },
+      {
+        "start_sec": 8235.0,
+        "end_sec": 8245.0,
+        "value": 0.3274
+      },
+      {
+        "start_sec": 8245.0,
+        "end_sec": 8260.0,
+        "value": 0.4465
+      },
+      {
+        "start_sec": 8260.0,
+        "end_sec": 8270.0,
+        "value": 0.6876
+      },
+      {
+        "start_sec": 8270.0,
+        "end_sec": 8280.0,
+        "value": 0.6524
+      },
+      {
+        "start_sec": 8280.0,
+        "end_sec": 8295.0,
+        "value": 0.4223
+      },
+      {
+        "start_sec": 8295.0,
+        "end_sec": 8305.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 8305.0,
+        "end_sec": 8315.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 8315.0,
+        "end_sec": 8330.0,
+        "value": 0.0
+      }
+    ]
+  },
+  "summary_run_ledger": {
+    "schema_version": "summary_run_ledger.v1",
+    "run_id": "13743108_20260617_4시 월드컵 대기방 ٩(●'▿'●)۶",
+    "path": "output\\summary_run_ledger.jsonl"
+  }
+}
