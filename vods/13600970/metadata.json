@@ -7344,6 +7344,7 @@
   ],
   "summary_run_ledger": {
     "schema_version": "summary_run_ledger.v1",
-    "run_id": "13600970_20260607_스타2 자유의 날개 어려움일까 보통일까 ٩(●'▿'●)۶"
+    "run_id": "13600970_20260607_스타2 자유의 날개 어려움일까 보통일까 ٩(●'▿'●)۶",
+    "path": "output:summary_run_ledger.jsonl"
   }
 }

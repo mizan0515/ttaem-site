@@ -13,7 +13,10 @@ function initEditorSplitMode() {
   function setEntryState(state, message) {
     entry.setAttribute('data-editor-entry-state', state);
     const status = entry.querySelector('[data-editor-entry-status]');
-    if (status) status.textContent = message;
+    if (status) {
+      status.textContent = message || '';
+      status.hidden = !message;
+    }
   }
 
   function editorModeUrlOff() {
@@ -38,7 +41,7 @@ function initEditorSplitMode() {
     shell = null;
     placeholder = null;
     document.body.classList.remove('editor-split-active');
-    setEntryState('fallback', '닫힘');
+    setEntryState('fallback', '');
     updateNavToggleVisibility();
     history.replaceState(null, '', editorModeUrlOff());
   }
@@ -77,7 +80,7 @@ function initEditorSplitMode() {
     shell.querySelector('[data-editor-split-close]').addEventListener('click', closeSplitEditorMode);
     document.body.appendChild(shell);
     document.body.classList.add('editor-split-active');
-    setEntryState('fallback', '열림');
+    setEntryState('fallback', '');
     updateNavToggleVisibility();
     history.replaceState(null, '', editorModeUrlOn());
   }
@@ -130,24 +133,27 @@ function initEditorEntryState() {
   const primaryBtn = entry.querySelector('[data-editor-entry-primary]');
   const setState = (state, message) => {
     entry.setAttribute('data-editor-entry-state', state);
-    if (statusEl) statusEl.textContent = message;
+    if (statusEl) {
+      statusEl.textContent = message || '';
+      statusEl.hidden = !message;
+    }
   };
   const target = document.getElementById('youtube-editor-tools');
-  setState('loading', '준비 중');
+  setState('loading', '');
   window.setTimeout(() => {
     if (entry.getAttribute('data-editor-entry-state') !== 'loading') return;
     if (target) {
-      setState('fallback', '확장 없어도 열 수 있음');
+      setState('fallback', '');
     } else {
       setState('error', '워크스페이스 없음');
     }
   }, 0);
   if (primaryBtn) {
     primaryBtn.addEventListener('click', () => {
-      setState('loading', '여는 중');
+      setState('loading', '');
       window.setTimeout(() => {
         if (target) {
-          setState('fallback', '열림');
+          setState('fallback', '');
         } else {
           setState('error', '열기 실패');
         }
@@ -155,10 +161,10 @@ function initEditorEntryState() {
     });
   }
   window.addEventListener('chzzk-editor-extension-ready', () => {
-    setState('installed', '확장 감지됨');
+    setState('installed', '');
   });
   window.addEventListener('chzzk-editor-extension-missing', () => {
-    setState('missing', '확장 없어도 열 수 있음');
+    setState('missing', '');
   });
   window.addEventListener('chzzk-editor-extension-error', () => {
     setState('error', '확인 필요');
@@ -305,6 +311,83 @@ function initViewerEditorTools() {
     if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
     return NaN;
   }
+  function originStartSec(event) {
+    const value = event && event.anchor_origin_start_sec != null ? Number(event.anchor_origin_start_sec) : Number(event && event.start_sec);
+    return Number.isFinite(value) ? value : NaN;
+  }
+  function originSeekSec(event) {
+    const value = event && event.anchor_origin_seek_sec != null ? Number(event.anchor_origin_seek_sec) : Number(event && event.seek_sec);
+    return Number.isFinite(value) ? value : NaN;
+  }
+  function sourceTimeTarget(localOrGlobalSec, event) {
+    const sec = Number(localOrGlobalSec);
+    if (!Number.isFinite(sec)) return null;
+    const rootStart = originStartSec(event);
+    const rootSeek = originSeekSec(event);
+    const hasSourceLocal = event && event.vod_label && Number.isFinite(rootStart) && Number.isFinite(rootSeek);
+    const startSec = hasSourceLocal ? rootStart + (sec - rootSeek) : sec;
+    const row = {
+      ...(event || {}),
+      start_sec: startSec,
+      sec: startSec,
+      timecode: hasSourceLocal ? (event && event.timecode) : fmt(startSec),
+      anchor_origin_start_sec: Number.isFinite(rootStart) ? rootStart : startSec,
+      anchor_origin_seek_sec: Number.isFinite(rootSeek) ? rootSeek : (event && event.seek_sec),
+    };
+    if (hasSourceLocal) row.seek_sec = sec;
+    return row;
+  }
+  function explicitEvidenceTarget(item, event) {
+    const explicit = item && item.start_sec != null ? Number(item.start_sec) : item && item.sec != null ? Number(item.sec) : NaN;
+    if (!Number.isFinite(explicit)) return null;
+    const row = {
+      ...(event || {}),
+      ...(item || {}),
+      start_sec: explicit,
+      sec: explicit,
+      timecode: item && item.timecode ? item.timecode : fmt(explicit),
+      anchor_origin_start_sec: originStartSec(event),
+      anchor_origin_seek_sec: originSeekSec(event),
+    };
+    return row;
+  }
+  function pushEvidenceTarget(targets, row, label) {
+    if (!row) return;
+    const sec = Number(row.start_sec != null ? row.start_sec : row.sec);
+    if (!Number.isFinite(sec)) return;
+    const videoNo = String(row.video_no || row.source_video_no || '').trim();
+    const key = `${videoNo}|${Math.round(sec * 10) / 10}`;
+    if (targets.some((target) => target.key === key)) return;
+    targets.push({ key, label: label || '근거 시각', row });
+  }
+  function evidenceTargetsForEvent(event, selectedSec) {
+    const targets = [];
+    const cardRow = explicitEvidenceTarget({ start_sec: Number(selectedSec) }, event) || sourceTimeTarget(selectedSec, event);
+    pushEvidenceTarget(targets, cardRow, '카드 시각');
+    const rows = []
+      .concat(Array.isArray(event && event.evidence) ? event.evidence : [])
+      .concat(Array.isArray(event && event.guidance) ? event.guidance : []);
+    rows.forEach((item) => {
+      const label = friendlyEvidenceLabel(item && (item.label || item.title || item.type) || '근거');
+      pushEvidenceTarget(targets, explicitEvidenceTarget(item, event), label);
+      const text = `${item && item.timecode || ''} ${item && item.text || ''}`;
+      const re = /\b(\d{1,2}:\d{2}(?::\d{2})?)\b/g;
+      for (const match of text.matchAll(re)) {
+        const sec = timecodeToSec(match[1]);
+        pushEvidenceTarget(targets, sourceTimeTarget(sec, event), `${label} ${match[1]}`);
+      }
+    });
+    return targets.slice(0, 8);
+  }
+  function renderEvidenceTargetPicker(targets, activeSec) {
+    if (!Array.isArray(targets) || targets.length <= 1) return '';
+    const buttons = targets.map((target, index) => {
+      const sec = Number(target.row && target.row.start_sec);
+      const active = Number.isFinite(sec) && Math.abs(sec - Number(activeSec || 0)) < 0.5;
+      return `<button type="button" class="viewer-editor-chip ${active ? 'selected' : ''}" data-evidence-target-index="${index}">${esc(target.label)} · ${esc(displayTime(target.row, sec))}</button>`;
+    }).join('');
+    return `<div class="viewer-editor-target-picker" aria-label="근거 시각 선택"><strong>근거 시각 선택</strong><div class="viewer-editor-target-buttons">${buttons}</div></div>`;
+  }
   function linkTimecodesText(text, row) {
     const raw = String(text || '');
     const re = /\b(\d{1,2}:\d{2}(?::\d{2})?)\b/g;
@@ -327,8 +410,12 @@ function initViewerEditorTools() {
       const text = rawText && !looksLikeUid ? `${esc(rawText)} · 치지직 클립 열기` : '치지직 클립 열기';
       return `<div class="viewer-editor-row"><strong>${label}</strong><br><a class="viewer-editor-evidence-link" href="${esc(row.clipUrl)}" target="_blank" rel="noopener">${text}</a></div>`;
     }
-    const label = row.sec != null ? `${esc(row.label || '근거')} · ${timeLink(row.sec, row)}` : linkTimecodesText(row.label || '근거', row);
-    return `<div class="viewer-editor-row"><strong>${label}</strong><br>${linkTimecodesText(row.text || '', row)}</div>`;
+    const rawLabel = row.label || '근거';
+    const labelText = friendlyEvidenceLabel(rawLabel);
+    const bodyText = friendlyEvidenceText(rawLabel, row.text || '');
+    const labelSec = row.sec != null ? row.sec : row.start_sec;
+    const label = labelSec != null ? `${esc(labelText)} · ${timeLink(labelSec, row)}` : linkTimecodesText(labelText, row);
+    return `<div class="viewer-editor-row"><strong>${label}</strong><br>${linkTimecodesText(bodyText, row)}</div>`;
   }
   function viewerClipLinkInfo(eventList, selectedEvent) {
     const selectedStart = Number(selectedEvent && selectedEvent.start_sec);
@@ -379,11 +466,15 @@ function initViewerEditorTools() {
     const raw = String(label || '').trim();
     const lowered = raw.toLowerCase();
     if (!raw) return '근거';
+    if (lowered.includes('chat_or_text_evidence')) return '채팅/자막 근거';
     if (lowered.includes('asr segment') || lowered.includes('subtitle') || raw.includes('자막')) return '자막 근거';
     if (lowered.includes('chat_bucket') || raw.includes('채팅')) return raw.includes('대표') ? '대표 채팅 반응' : '채팅 반응';
     if (lowered.includes('viewer_clip') || raw.includes('클립')) return '시청자 클립';
     if (lowered.includes('audio') || raw.includes('오디오')) return '오디오 반응';
     if (lowered.includes('highlight_candidate')) return '자동 반응 후보';
+    if (lowered.includes('summary_markdown')) return '요약에 적힌 장면';
+    if (lowered.includes('subtitle_chunk') || lowered.includes('timed_evidence')) return '자막 근거';
+    if (lowered.includes('semantic_vector') || lowered.includes('timestamp_overlap')) return '가까운 방송 근거';
     if (lowered.includes('chat_density_peak')) return '채팅 반응';
     if (lowered.includes('supporting_signal')) return '보조 신호';
     if (lowered.includes('proximity_signal')) return '가까운 관련 신호';
@@ -404,7 +495,12 @@ function initViewerEditorTools() {
     if (joined.includes('chat_density_peak')) return '채팅이 몰린 시각입니다.';
     if (joined.includes('supporting_signal_only')) return '보조 신호입니다. 장면 판단은 자막이나 기존 요약과 함께 보세요.';
     if (joined.includes('deterministic_injection')) return '시청자 클립 기준으로 보강된 후보입니다.';
-    if (/^[{].*[}]$/.test(raw) || raw.includes("'source_type'") || raw.includes('"source_type"')) return '구조화된 참고 신호입니다. 장면 내용은 주변 자막과 요약으로 확인하세요.';
+    if (
+      /^[{].*[}]$/.test(raw)
+      || raw.includes("'source_type'")
+      || raw.includes('"source_type"')
+      || /summary_markdown|semantic_vector|subtitle_chunk|timed_evidence|timestamp_overlap|match_reason|evidence_id/i.test(joined)
+    ) return '장면 내용은 주변 자막과 요약으로 확인하세요.';
     return raw;
   }
   function fallbackGuidance(kind) {
@@ -546,7 +642,9 @@ function initViewerEditorTools() {
     return ticks.join('');
   }
   function renderWaveformRow() {
-    if (!waveformSamples.length) return '';
+    if (!waveformSamples.length) {
+      return `<div class="viewer-editor-waveform-row" data-waveform-row="true"><div class="viewer-editor-waveform-label"><strong>소리 파형</strong><span>파형 데이터 없음</span></div><div class="viewer-editor-waveform"><div class="viewer-editor-empty">소리 파형 데이터 없음</div></div></div>`;
+    }
     const bars = waveformSamples.map((row) => {
       const start = Math.max(0, Number(row.start_sec || 0));
       const end = Math.max(start, Number(row.end_sec || start));
@@ -629,6 +727,7 @@ function initViewerEditorTools() {
       const kind = lane.key;
       if (filter && filter !== kind) return '';
       const laneEvents = visibleEvents.filter((event) => event.kind === kind);
+      const emptyText = lane.empty_reason || lane.reason || lane.message || '표시할 장면 없음';
       const markers = laneEvents.map((event) => {
         const start = Math.max(0, Number(event.start_sec || 0));
         const end = event.end_sec != null ? Number(event.end_sec) : NaN;
@@ -639,7 +738,7 @@ function initViewerEditorTools() {
         const style = hasRange ? `left:${left}%;width:${width}%;${colorStyle}` : `left:${left}%;${colorStyle}`;
         return `<button type="button" class="viewer-editor-marker ${hasRange ? 'range' : ''}" data-kind="${esc(kind)}" data-event-id="${esc(event.id)}" title="${esc(`${fmt(start)} ${friendlyEventTitle(event) || ''}`)}" style="${style}"></button>`;
       }).join('');
-      return `<div class="viewer-editor-lane-row" data-kind-row="${esc(kind)}"><div class="viewer-editor-lane-label"><strong>${esc(optionLabel(kind))}</strong><span>${esc(lanePurpose(kind))} · ${laneEvents.length}개</span></div><div class="viewer-editor-track">${markers || '<div class="viewer-editor-empty">표시할 장면 없음</div>'}</div></div>`;
+      return `<div class="viewer-editor-lane-row" data-kind-row="${esc(kind)}" data-lane-status="${esc(lane.status || '')}"><div class="viewer-editor-lane-label"><strong>${esc(optionLabel(kind))}</strong><span>${esc(lanePurpose(kind))} · ${laneEvents.length}개</span></div><div class="viewer-editor-track">${markers || `<div class="viewer-editor-empty">${esc(emptyText)}</div>`}</div></div>`;
     }).join('');
     axisEl.innerHTML = `<div class="viewer-editor-axis-canvas">
       <div class="viewer-editor-scale-row"><div class="viewer-editor-scale-label"><strong>전체 흐름</strong><span>${fmt(duration)}</span></div><div class="viewer-editor-scale">${renderScale()}</div></div>
@@ -693,6 +792,7 @@ function initViewerEditorTools() {
     const nearbySubtitles = subtitles.filter((row) => near(row, sec, 45)).slice(0, 6);
     const selectedTitleText = selectedTitle(event, sec);
     const selectedClipLink = event.kind === 'viewer_clip' ? viewerClipLinkInfo([event].concat(nearbyEvents), event) : { uid: '', url: '', title: '' };
+    const evidenceTargets = evidenceTargetsForEvent(event, sec);
     const evidenceRows = []
       .concat((event.evidence || []).map((item) => {
         const rawLabel = String(item.label || '').trim();
@@ -706,7 +806,11 @@ function initViewerEditorTools() {
         if (url && (!text || text.includes('시청자 클립에서 잡힌 위치') || text.includes('구조화된 참고 신호'))) {
           text = selectedClipLink.title || selectedTitleText || '시청자 클립 열기';
         }
-        return { label, text, clipUid: rawLabel || selectedClipLink.uid, clipUrl: url };
+        const row = { label, text, clipUid: rawLabel || selectedClipLink.uid, clipUrl: url };
+        ['start_sec', 'sec', 'seek_sec', 'end_sec', 'end_seek_sec', 'video_no', 'source_video_no', 'vod_label', 'timecode'].forEach((key) => {
+          if (item && item[key] != null && item[key] !== '') row[key] = item[key];
+        });
+        return row;
       }))
       .concat(nearbyEvents.filter((row) => row.id !== event.id).map((row) => ({
         label: row.vod_label ? `${row.vod_label} · ${optionLabel(row.kind)}` : optionLabel(row.kind),
@@ -745,10 +849,19 @@ function initViewerEditorTools() {
         ${chipRows.join('')}
       </div>
     </div>
+    ${renderEvidenceTargetPicker(evidenceTargets, sec)}
     ${renderContextSummary(nearbySubtitles, nearbyBuckets)}
     ${guidanceHtml}
     ${seekUrl(sec, event) ? `<div class="viewer-editor-row"><strong>원본 확인</strong><br><a href="${esc(seekUrl(sec, event))}" target="_blank" rel="noopener" style="color:var(--tc)">치지직에서 이 시각 열기</a></div>` : ''}
     <div class="viewer-editor-list">${evidenceRows.map(renderEvidenceRow).join('') || '<div class="viewer-editor-empty">근처 근거가 없습니다.</div>'}</div>`;
+    evidenceEl.querySelectorAll('[data-evidence-target-index]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const index = Number(button.getAttribute('data-evidence-target-index'));
+        const target = evidenceTargets[index];
+        if (!target || !target.row) return;
+        renderEvidence(target.row);
+      });
+    });
   }
   function renderCuts() {
     const clips = Array.isArray(preview.clips) ? preview.clips : [];

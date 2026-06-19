@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-17T18:05:55+00:00",
-  "built_at": "2026-06-17T18:05:55+00:00",
-  "latest_processed_at": "2026-06-17T19:58:52.430520+09:00",
+  "generated_at": "2026-06-19T16:25:38+00:00",
+  "built_at": "2026-06-19T16:25:38+00:00",
+  "latest_processed_at": "2026-06-19T23:54:00.285930+09:00",
   "total_streamers": 4,
-  "total_vods": 78,
+  "total_vods": 82,
   "total_bundles": 6,
   "streamers": [
     {
@@ -11,9 +11,9 @@
       "streamer_name": "탬탬버린",
       "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
       "platform": "chzzk",
-      "vod_count": 74,
-      "last_vod_at": "2026-06-17T06:35:17+09:00",
-      "last_vod_ended_at": "2026-06-17T09:04:24+09:00"
+      "vod_count": 78,
+      "last_vod_at": "2026-06-19T12:04:29+09:00",
+      "last_vod_ended_at": "2026-06-19T18:07:04+09:00"
     },
     {
       "streamer_id": "channel-0dad8baf12a436f722faa8e5001c5011",
@@ -45,6 +45,42 @@
   ],
   "recent_vods": [
     {
+      "video_no": "13782662",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "명조 1장 1막 먹어보는중 ٩(●'▿'●)۶",
+      "published_at": "2026-06-19T12:04:29+09:00",
+      "ended_at": "2026-06-19T18:07:04+09:00",
+      "duration_sec": 21755
+    },
+    {
+      "video_no": "13779188",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 대한민국 VS 멕시코 울나라 화이팅!!!!!!!!!!!!!!!!!!! ٩(●'▿'●)۶",
+      "published_at": "2026-06-19T09:35:25+09:00",
+      "ended_at": "2026-06-19T12:02:38+09:00",
+      "duration_sec": 8833
+    },
+    {
+      "video_no": "13765586",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "레테 진짜 개구리다네요 패치 했는데도 개 망했다 믿힌 ㅋㅋ 하면 바보인듯요 ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ다들 도망쳐 ٩(●'▿'●)۶",
+      "published_at": "2026-06-18T09:44:36+09:00",
+      "ended_at": "2026-06-18T19:33:21+09:00",
+      "duration_sec": 35325
+    },
+    {
+      "video_no": "13754949",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "지누 탬탬 미드 대결 ㄱㄱㄱㄱ ٩(●'▿'●)۶",
+      "published_at": "2026-06-17T18:34:41+09:00",
+      "ended_at": "2026-06-18T00:14:09+09:00",
+      "duration_sec": 20368
+    },
+    {
       "video_no": "13744819",
       "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
       "streamer_name": "탬탬버린",
@@ -61,45 +97,54 @@
       "published_at": "2026-06-17T06:08:25+09:00",
       "ended_at": "2026-06-17T06:31:16+09:00",
       "duration_sec": 1371
-    },
-    {
-      "video_no": "13744125",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "북중미 월드컵 프랑스 VS  세네갈 ٩(●'▿'●)۶",
-      "published_at": "2026-06-17T03:53:10+09:00",
-      "ended_at": "2026-06-17T06:08:17+09:00",
-      "duration_sec": 8107
-    },
-    {
-      "video_no": "13743108",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "4시 월드컵 대기방 ٩(●'▿'●)۶",
-      "published_at": "2026-06-17T01:34:12+09:00",
-      "ended_at": "2026-06-17T03:53:02+09:00",
-      "duration_sec": 8330
-    },
-    {
-      "video_no": "13722712",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "스타2 캠페인 자유의 날개 탬스크 아니고 탬레이너 입니다.. ٩(●'▿'●)۶",
-      "published_at": "2026-06-15T23:14:04+09:00",
-      "ended_at": "2026-06-15T23:33:58+09:00",
-      "duration_sec": 1194
-    },
-    {
-      "video_no": "13722141",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "스타2 캠페인 자유의 날개 탬스크 아니고 탬레이너 입니다.. ٩(●'▿'●)۶",
-      "published_at": "2026-06-15T16:46:47+09:00",
-      "ended_at": "2026-06-15T23:11:05+09:00",
-      "duration_sec": 23058
     }
   ],
   "recent_updates": [
+    {
+      "kind": "vod",
+      "video_no": "13782662",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "명조 1장 1막 먹어보는중 ٩(●'▿'●)۶",
+      "published_at": "2026-06-19T12:04:29+09:00",
+      "ended_at": "2026-06-19T18:07:04+09:00",
+      "duration_sec": 21755,
+      "platform_category": "명조:워더링 웨이브",
+      "stats": {
+        "total_chats": 50076,
+        "highlight_count": 17
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13779188",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 대한민국 VS 멕시코 울나라 화이팅!!!!!!!!!!!!!!!!!!! ٩(●'▿'●)۶",
+      "published_at": "2026-06-19T09:35:25+09:00",
+      "ended_at": "2026-06-19T12:02:38+09:00",
+      "duration_sec": 8833,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 24529,
+        "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13765586",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "레테 진짜 개구리다네요 패치 했는데도 개 망했다 믿힌 ㅋㅋ 하면 바보인듯요 ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ다들 도망쳐 ٩(●'▿'●)۶",
+      "published_at": "2026-06-18T09:44:36+09:00",
+      "ended_at": "2026-06-18T19:33:21+09:00",
+      "duration_sec": 35325,
+      "platform_category": "메이플스토리",
+      "stats": {
+        "total_chats": 67229,
+        "highlight_count": 23
+      }
+    },
     {
       "kind": "bundle",
       "bundle_id": "20260617_184356",
@@ -110,6 +155,21 @@
       "created_at": "2026-06-17T19:58:55.099263",
       "vod_count": 4,
       "date_span": "20260617"
+    },
+    {
+      "kind": "vod",
+      "video_no": "13754949",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "지누 탬탬 미드 대결 ㄱㄱㄱㄱ ٩(●'▿'●)۶",
+      "published_at": "2026-06-17T18:34:41+09:00",
+      "ended_at": "2026-06-18T00:14:09+09:00",
+      "duration_sec": 20368,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 48103,
+        "highlight_count": 17
+      }
     },
     {
       "kind": "vod",
@@ -125,62 +185,6 @@
         "total_chats": 18961,
         "highlight_count": 18
       }
-    },
-    {
-      "kind": "vod",
-      "video_no": "13744260",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "북중미 월드컵 프랑스 VS  세네갈 ٩(●'▿'●)۶",
-      "published_at": "2026-06-17T06:08:25+09:00",
-      "ended_at": "2026-06-17T06:31:16+09:00",
-      "duration_sec": 1371,
-      "platform_category": null,
-      "stats": {
-        "total_chats": 4238,
-        "highlight_count": 9
-      }
-    },
-    {
-      "kind": "vod",
-      "video_no": "13744125",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "북중미 월드컵 프랑스 VS  세네갈 ٩(●'▿'●)۶",
-      "published_at": "2026-06-17T03:53:10+09:00",
-      "ended_at": "2026-06-17T06:08:17+09:00",
-      "duration_sec": 8107,
-      "platform_category": "2026 FIFA 북중미 월드컵",
-      "stats": {
-        "total_chats": 20990,
-        "highlight_count": 19
-      }
-    },
-    {
-      "kind": "vod",
-      "video_no": "13743108",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "4시 월드컵 대기방 ٩(●'▿'●)۶",
-      "published_at": "2026-06-17T01:34:12+09:00",
-      "ended_at": "2026-06-17T03:53:02+09:00",
-      "duration_sec": 8330,
-      "platform_category": "talk",
-      "stats": {
-        "total_chats": 37013,
-        "highlight_count": 20
-      }
-    },
-    {
-      "kind": "bundle",
-      "bundle_id": "20260616_145355",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "📦 6월 15일분 전체 방송 분석 리포트 — 스타2 캠페인 자유의 날개 탬스크 아니고 탬레이너 입니…",
-      "published_at": "2026-06-16T14:53:55.622299+09:00",
-      "created_at": "2026-06-16T14:53:55.622299+09:00",
-      "vod_count": 2,
-      "date_span": "20260615"
     }
   ]
 }

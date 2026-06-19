@@ -4,9 +4,69 @@
     "streamer_name": "탬탬버린",
     "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
     "platform": "chzzk",
-    "vod_count": 74
+    "vod_count": 78
   },
   "vods": [
+    {
+      "kind": "vod",
+      "video_no": "13782662",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "명조 1장 1막 먹어보는중 ٩(●'▿'●)۶",
+      "published_at": "2026-06-19T12:04:29+09:00",
+      "ended_at": "2026-06-19T18:07:04+09:00",
+      "duration_sec": 21755,
+      "platform_category": "명조:워더링 웨이브",
+      "stats": {
+        "total_chats": 50076,
+        "highlight_count": 17
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13779188",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 대한민국 VS 멕시코 울나라 화이팅!!!!!!!!!!!!!!!!!!! ٩(●'▿'●)۶",
+      "published_at": "2026-06-19T09:35:25+09:00",
+      "ended_at": "2026-06-19T12:02:38+09:00",
+      "duration_sec": 8833,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 24529,
+        "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13765586",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "레테 진짜 개구리다네요 패치 했는데도 개 망했다 믿힌 ㅋㅋ 하면 바보인듯요 ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ다들 도망쳐 ٩(●'▿'●)۶",
+      "published_at": "2026-06-18T09:44:36+09:00",
+      "ended_at": "2026-06-18T19:33:21+09:00",
+      "duration_sec": 35325,
+      "platform_category": "메이플스토리",
+      "stats": {
+        "total_chats": 67229,
+        "highlight_count": 23
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13754949",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "지누 탬탬 미드 대결 ㄱㄱㄱㄱ ٩(●'▿'●)۶",
+      "published_at": "2026-06-17T18:34:41+09:00",
+      "ended_at": "2026-06-18T00:14:09+09:00",
+      "duration_sec": 20368,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 48103,
+        "highlight_count": 17
+      }
+    },
     {
       "kind": "vod",
       "video_no": "13744819",
@@ -1188,6 +1248,51 @@
   ],
   "reports": [
     {
+      "kind": "vod",
+      "video_no": "13782662",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "명조 1장 1막 먹어보는중 ٩(●'▿'●)۶",
+      "published_at": "2026-06-19T12:04:29+09:00",
+      "ended_at": "2026-06-19T18:07:04+09:00",
+      "duration_sec": 21755,
+      "platform_category": "명조:워더링 웨이브",
+      "stats": {
+        "total_chats": 50076,
+        "highlight_count": 17
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13779188",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 대한민국 VS 멕시코 울나라 화이팅!!!!!!!!!!!!!!!!!!! ٩(●'▿'●)۶",
+      "published_at": "2026-06-19T09:35:25+09:00",
+      "ended_at": "2026-06-19T12:02:38+09:00",
+      "duration_sec": 8833,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 24529,
+        "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13765586",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "레테 진짜 개구리다네요 패치 했는데도 개 망했다 믿힌 ㅋㅋ 하면 바보인듯요 ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ다들 도망쳐 ٩(●'▿'●)۶",
+      "published_at": "2026-06-18T09:44:36+09:00",
+      "ended_at": "2026-06-18T19:33:21+09:00",
+      "duration_sec": 35325,
+      "platform_category": "메이플스토리",
+      "stats": {
+        "total_chats": 67229,
+        "highlight_count": 23
+      }
+    },
+    {
       "kind": "bundle",
       "bundle_id": "20260617_184356",
       "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
@@ -1197,6 +1302,21 @@
       "created_at": "2026-06-17T19:58:55.099263",
       "vod_count": 4,
       "date_span": "20260617"
+    },
+    {
+      "kind": "vod",
+      "video_no": "13754949",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "지누 탬탬 미드 대결 ㄱㄱㄱㄱ ٩(●'▿'●)۶",
+      "published_at": "2026-06-17T18:34:41+09:00",
+      "ended_at": "2026-06-18T00:14:09+09:00",
+      "duration_sec": 20368,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 48103,
+        "highlight_count": 17
+      }
     },
     {
       "kind": "vod",
