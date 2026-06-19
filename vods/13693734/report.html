@@ -2308,6 +2308,171 @@ function initEditorEntryState() {
 </script>
 
 <script src="../../assets/viewer-editor-tools.js?v=aa045f02910f"></script>
+<script id="summaryEvidenceQuoteCitationsData" type="application/json">{"schema_version":"public_quote_citations.v1","render_target":"report_html_script#summaryEvidenceQuoteCitationsData","raw_transcript_content_included":false,"public_quote_text_included":true,"video_no":"13693734","subtitle_cue_count":3290,"items":[{"segment_id":"seg_timeline_74c38249b691","start_sec":485,"citations":[{"quote":"점례움 벗어","match_status":"unmatched"},{"quote":"벗어 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ","match_status":"unmatched"},{"quote":"굿바이 점례움","match_status":"unmatched"}]},{"segment_id":"seg_timeline_c53d9e153b31","start_sec":1043,"citations":[{"quote":"시청자 클립 anchor","match_status":"unmatched"}]},{"segment_id":"seg_timeline_ab04bfd0fab3","start_sec":1169,"citations":[{"quote":"시청자 클립 anchor","match_status":"unmatched"}]},{"segment_id":"seg_timeline_6e57e99551bd","start_sec":3368,"citations":[{"quote":"야누스 30 ㄷㄷ 캬","start_sec":3368,"timecode":"00:56:08","match_status":"subtitle_match"},{"quote":"30렙 야누스 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ","match_status":"unmatched"},{"quote":"챌린저스월드 123이랑 4랑 다 통합해준다고?","start_sec":3404,"timecode":"00:56:44","match_status":"subtitle_text_position"}]},{"segment_id":"seg_timeline_b60f876e0cff","start_sec":7579,"citations":[{"quote":"목소리 진짜 치트키임 ㅋㅋ","match_status":"unmatched"},{"quote":"분내 on","match_status":"unmatched"},{"quote":"오 차이나~","match_status":"unmatched"}]},{"segment_id":"seg_timeline_86e939e65549","start_sec":8255,"citations":[{"quote":"와 긴장감 보소","match_status":"unmatched"},{"quote":"제발제발","match_status":"unmatched"},{"quote":"긴장감ㅁ ㅊ","match_status":"unmatched"}]},{"segment_id":"seg_timeline_f0598c978680","start_sec":11544,"citations":[{"quote":"쓰레기야ㅋㅋㅋㅋㅋ","match_status":"unmatched"},{"quote":"개너무해","start_sec":11635,"timecode":"03:13:55","match_status":"subtitle_match"},{"quote":"포로살해ㄷㄷㄷㄷㄷㄷㄷ","match_status":"unmatched"}]},{"segment_id":"seg_timeline_9fdd2ea75ac7","start_sec":12610,"citations":[{"quote":"쎄이 누 ~ 나","start_sec":12331,"timecode":"03:25:31","match_status":"subtitle_match"},{"quote":"두유노 흥ㅂ민쏜","match_status":"unmatched"},{"quote":"두유노우~~ 페이커?","match_status":"unmatched"}]},{"segment_id":"seg_timeline_e6a6f053b0e5","start_sec":14706,"citations":[{"quote":"국민코드","match_status":"unmatched"},{"quote":"국민번호","start_sec":14777,"timecode":"04:06:17","match_status":"subtitle_text_position"},{"quote":"내친구 점례 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ","match_status":"unmatched"}]},{"segment_id":"seg_timeline_dec3b5c39bc2","start_sec":15785,"citations":[{"quote":"찌찌가 보인다고","match_status":"unmatched"},{"quote":"찌찌파티 믿힌","match_status":"unmatched"},{"quote":"김막귀: 찌찌 ㄷㄷ","match_status":"unmatched"}]},{"segment_id":"seg_timeline_988c1af2fdaa","start_sec":18568,"citations":[{"quote":"돈까스개많네","start_sec":18580,"timecode":"05:09:40","match_status":"subtitle_match"},{"quote":"시내 핫플","match_status":"unmatched"},{"quote":"원주홍보대사야?","match_status":"unmatched"}]},{"segment_id":"seg_timeline_c2ea389651a1","start_sec":21286,"citations":[{"quote":"트리마제?","start_sec":21440,"timecode":"05:57:20","match_status":"subtitle_match"},{"quote":"개비싸","start_sec":21218,"timecode":"05:53:38","match_status":"subtitle_text_position"},{"quote":"한강뷰","start_sec":21418,"timecode":"05:56:58","match_status":"subtitle_match"}]},{"segment_id":"seg_timeline_fa0b14efecce","start_sec":24674,"citations":[{"quote":"탬바","match_status":"unmatched"},{"quote":"ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ","match_status":"unmatched"},{"quote":"주무시지요","match_status":"unmatched"}]}]}</script>
+
+<style id="summaryEvidenceControlsStyle">
+  .summary-evidence-quote-citations {
+    display: flex; flex-wrap: wrap; gap: 6px 10px;
+  }
+  .summary-evidence-quote-citation {
+    display: inline-flex; align-items: baseline; gap: 3px;
+    color: var(--muted); line-height: 1.55;
+  }
+  .summary-evidence-quote-citation a {
+    color: var(--tc); font-weight: 700; text-decoration: none;
+  }
+  .summary-evidence-quote-citation a:hover {
+    color: var(--text-strong); text-decoration: underline; text-underline-offset: 3px;
+  }
+  .summary-evidence-quote-citation q {
+    color: var(--text); quotes: none;
+  }
+</style>
+<script id="summaryEvidenceControlsScript">
+(function () {
+  const dataEl = document.getElementById('summaryEvidencePackData');
+  const quoteDataEl = document.getElementById('summaryEvidenceQuoteCitationsData');
+  if (!dataEl && !quoteDataEl) return;
+
+  let payload = {};
+  if (dataEl) {
+    try {
+      payload = JSON.parse(dataEl.textContent || '{}');
+    } catch (_err) {
+      payload = {};
+    }
+  }
+  let quotePayload = {};
+  if (quoteDataEl) {
+    try {
+      quotePayload = JSON.parse(quoteDataEl.textContent || '{}');
+    } catch (_err) {
+      quotePayload = {};
+    }
+  }
+
+  const formatTime = (sec) => {
+    const value = Number(sec);
+    if (!Number.isFinite(value) || value < 0) return '';
+    const total = Math.floor(value);
+    const h = Math.floor(total / 3600);
+    const m = Math.floor((total % 3600) / 60);
+    const s = total % 60;
+    return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  };
+  const chzzkUrlAt = (sec) => {
+    const videoNo = String(quotePayload?.video_no || '').trim();
+    const value = Number(sec);
+    if (!videoNo || !Number.isFinite(value) || value < 0) return '';
+    return `https://chzzk.naver.com/video/${encodeURIComponent(videoNo)}?currentTime=${Math.floor(value)}`;
+  };
+  const quoteBySegment = new Map();
+  if (
+    quotePayload &&
+    quotePayload.raw_transcript_content_included !== true &&
+    Array.isArray(quotePayload.items)
+  ) {
+    quotePayload.items.forEach((item) => {
+      if (!item || !item.segment_id || !Array.isArray(item.citations) || !item.citations.length) return;
+      quoteBySegment.set(String(item.segment_id), item.citations.filter((row) =>
+        row && typeof row.quote === 'string' && row.quote.trim()
+      ).slice(0, 8));
+    });
+  }
+  const temporalDistanceSec = (item, ref) => {
+    const segStart = Number(item.start_sec);
+    const segEndRaw = item.end_sec;
+    const refStart = Number(ref.start_sec);
+    const refEnd = Number(ref.end_sec ?? ref.start_sec);
+    if (!Number.isFinite(segStart) || !Number.isFinite(refStart) || !Number.isFinite(refEnd)) return null;
+    const segEnd = Number.isFinite(Number(segEndRaw)) ? Number(segEndRaw) : segStart;
+    const left = Math.min(segStart, segEnd);
+    const right = Math.max(segStart, segEnd);
+    const evLeft = Math.min(refStart, refEnd);
+    const evRight = Math.max(refStart, refEnd);
+    if (left === right && evLeft <= left && left <= evRight) return 0;
+    if (Math.min(right, evRight) > Math.max(left, evLeft)) return 0;
+    if (evRight < left) return left - evRight;
+    return evLeft - right;
+  };
+  const temporalGateSec = () => {
+    const value = Number(payload?.summary?.window_sec);
+    return Number.isFinite(value) && value >= 0 ? Math.max(value, 90) : 90;
+  };
+  const bySegment = new Map();
+  if (payload && payload.raw_content_included !== true && Array.isArray(payload.items)) {
+    payload.items.forEach((item) => {
+      if (!item || !item.segment_id || !Array.isArray(item.evidence_refs)) return;
+      const gate = temporalGateSec();
+      const refs = item.evidence_refs.filter((ref) =>
+        ref && ref.raw_content_included !== true && ref.public_safe === true
+      ).filter((ref) => {
+        const distance = temporalDistanceSec(item, ref);
+        return distance !== null && distance <= gate;
+      });
+      if (!refs.length) return;
+      bySegment.set(String(item.segment_id), { item, refs: refs.slice(0, 3) });
+    });
+  }
+  if (!bySegment.size && !quoteBySegment.size) return;
+
+  const formatRange = (ref) => {
+    const start = formatTime(ref.start_sec);
+    const end = formatTime(ref.end_sec);
+    if (start && end && start !== end) return `${start}-${end}`;
+    return start || end || '시각 없음';
+  };
+  const displayEvidenceTime = (item, ref) => {
+    const segmentTime = formatTime(item.start_sec);
+    const distance = temporalDistanceSec(item, ref);
+    const refStart = Number(ref.start_sec);
+    const refEnd = Number(ref.end_sec ?? ref.start_sec);
+    const refSpan = Number.isFinite(refStart) && Number.isFinite(refEnd) ? Math.abs(refEnd - refStart) : 0;
+    if (distance === 0 && segmentTime && refSpan > 300) return segmentTime;
+    return formatRange(ref);
+  };
+  const mountQuoteCitations = (card, citations) => {
+    const evidence = card.querySelector('.t-evidence');
+    if (!evidence || !Array.isArray(citations) || !citations.length) return false;
+    const wrap = document.createElement('div');
+    wrap.className = 'summary-evidence-quote-citations';
+    wrap.setAttribute('data-summary-evidence-quote-citations-mounted', '1');
+    citations.forEach((row) => {
+      const quote = String(row.quote || '').trim();
+      if (!quote) return;
+      const chip = document.createElement('span');
+      chip.className = 'summary-evidence-quote-citation';
+      const time = row.timecode || formatTime(row.start_sec);
+      const url = chzzkUrlAt(row.start_sec);
+      if (time && url) {
+        const link = document.createElement('a');
+        link.href = url;
+        link.target = '_blank';
+        link.rel = 'noopener';
+        link.textContent = `[${time}]`;
+        link.title = '치지직 다시보기에서 이 근거 시점부터 재생';
+        chip.append(link);
+      } else if (time) {
+        const span = document.createElement('span');
+        span.textContent = `[${time}]`;
+        chip.append(span);
+      }
+      const q = document.createElement('q');
+      q.textContent = `"${quote}"`;
+      chip.append(q);
+      wrap.append(chip);
+    });
+    if (!wrap.childElementCount) return false;
+    evidence.replaceChildren(wrap);
+    return true;
+  };
+
+  document.querySelectorAll('[data-segment-id]').forEach((card) => {
+    const segmentId = card.getAttribute('data-segment-id') || '';
+    mountQuoteCitations(card, quoteBySegment.get(segmentId));
+  });
+}());
+</script>
 <div class="public-report-toast" data-copy-report-toast role="status" aria-live="polite"></div>
 <script id="publicReportNavScript">
 (() => {

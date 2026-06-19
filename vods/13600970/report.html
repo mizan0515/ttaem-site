@@ -4269,6 +4269,171 @@ function initEditorEntryState() {
 </script>
 
 <script src="../../assets/viewer-editor-tools.js?v=aa045f02910f"></script>
+<script id="summaryEvidenceQuoteCitationsData" type="application/json">{"schema_version":"public_quote_citations.v1","render_target":"report_html_script#summaryEvidenceQuoteCitationsData","raw_transcript_content_included":false,"public_quote_text_included":true,"video_no":"13600970","subtitle_cue_count":3762,"items":[{"segment_id":"seg_timeline_edfde00ed3e3","start_sec":6868,"citations":[{"quote":"T1식 장로 운영","match_status":"unmatched"}]},{"segment_id":"seg_timeline_e75c72469503","start_sec":10183,"citations":[{"quote":"커즈 캐넬링, 내가 먹을게","start_sec":10387,"timecode":"02:53:07","match_status":"subtitle_text_position"},{"quote":"줴줴이야","match_status":"unmatched"}]},{"segment_id":"seg_timeline_66cd45991b17","start_sec":18281,"citations":[{"quote":"장어게인","match_status":"unmatched"},{"quote":"역대급 장로컵","match_status":"unmatched"}]},{"segment_id":"seg_timeline_fe294f8589e0","start_sec":22699,"citations":[{"quote":"어디가","start_sec":22399,"timecode":"06:13:19","match_status":"subtitle_match"},{"quote":"엘리당한다","match_status":"unmatched"}]},{"segment_id":"seg_timeline_92004bd610ff","start_sec":23674,"citations":[{"quote":"쉽노","match_status":"unmatched"},{"quote":"님 집 불타요","match_status":"unmatched"}]},{"segment_id":"seg_timeline_f98f7fff62ca","start_sec":28290,"citations":[{"quote":"호너맘","start_sec":28577,"timecode":"07:56:17","match_status":"subtitle_match"},{"quote":"호동생","start_sec":28609,"timecode":"07:56:49","match_status":"subtitle_text_position"}]}]}</script>
+
+<style id="summaryEvidenceControlsStyle">
+  .summary-evidence-quote-citations {
+    display: flex; flex-wrap: wrap; gap: 6px 10px;
+  }
+  .summary-evidence-quote-citation {
+    display: inline-flex; align-items: baseline; gap: 3px;
+    color: var(--muted); line-height: 1.55;
+  }
+  .summary-evidence-quote-citation a {
+    color: var(--tc); font-weight: 700; text-decoration: none;
+  }
+  .summary-evidence-quote-citation a:hover {
+    color: var(--text-strong); text-decoration: underline; text-underline-offset: 3px;
+  }
+  .summary-evidence-quote-citation q {
+    color: var(--text); quotes: none;
+  }
+</style>
+<script id="summaryEvidenceControlsScript">
+(function () {
+  const dataEl = document.getElementById('summaryEvidencePackData');
+  const quoteDataEl = document.getElementById('summaryEvidenceQuoteCitationsData');
+  if (!dataEl && !quoteDataEl) return;
+
+  let payload = {};
+  if (dataEl) {
+    try {
+      payload = JSON.parse(dataEl.textContent || '{}');
+    } catch (_err) {
+      payload = {};
+    }
+  }
+  let quotePayload = {};
+  if (quoteDataEl) {
+    try {
+      quotePayload = JSON.parse(quoteDataEl.textContent || '{}');
+    } catch (_err) {
+      quotePayload = {};
+    }
+  }
+
+  const formatTime = (sec) => {
+    const value = Number(sec);
+    if (!Number.isFinite(value) || value < 0) return '';
+    const total = Math.floor(value);
+    const h = Math.floor(total / 3600);
+    const m = Math.floor((total % 3600) / 60);
+    const s = total % 60;
+    return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  };
+  const chzzkUrlAt = (sec) => {
+    const videoNo = String(quotePayload?.video_no || '').trim();
+    const value = Number(sec);
+    if (!videoNo || !Number.isFinite(value) || value < 0) return '';
+    return `https://chzzk.naver.com/video/${encodeURIComponent(videoNo)}?currentTime=${Math.floor(value)}`;
+  };
+  const quoteBySegment = new Map();
+  if (
+    quotePayload &&
+    quotePayload.raw_transcript_content_included !== true &&
+    Array.isArray(quotePayload.items)
+  ) {
+    quotePayload.items.forEach((item) => {
+      if (!item || !item.segment_id || !Array.isArray(item.citations) || !item.citations.length) return;
+      quoteBySegment.set(String(item.segment_id), item.citations.filter((row) =>
+        row && typeof row.quote === 'string' && row.quote.trim()
+      ).slice(0, 8));
+    });
+  }
+  const temporalDistanceSec = (item, ref) => {
+    const segStart = Number(item.start_sec);
+    const segEndRaw = item.end_sec;
+    const refStart = Number(ref.start_sec);
+    const refEnd = Number(ref.end_sec ?? ref.start_sec);
+    if (!Number.isFinite(segStart) || !Number.isFinite(refStart) || !Number.isFinite(refEnd)) return null;
+    const segEnd = Number.isFinite(Number(segEndRaw)) ? Number(segEndRaw) : segStart;
+    const left = Math.min(segStart, segEnd);
+    const right = Math.max(segStart, segEnd);
+    const evLeft = Math.min(refStart, refEnd);
+    const evRight = Math.max(refStart, refEnd);
+    if (left === right && evLeft <= left && left <= evRight) return 0;
+    if (Math.min(right, evRight) > Math.max(left, evLeft)) return 0;
+    if (evRight < left) return left - evRight;
+    return evLeft - right;
+  };
+  const temporalGateSec = () => {
+    const value = Number(payload?.summary?.window_sec);
+    return Number.isFinite(value) && value >= 0 ? Math.max(value, 90) : 90;
+  };
+  const bySegment = new Map();
+  if (payload && payload.raw_content_included !== true && Array.isArray(payload.items)) {
+    payload.items.forEach((item) => {
+      if (!item || !item.segment_id || !Array.isArray(item.evidence_refs)) return;
+      const gate = temporalGateSec();
+      const refs = item.evidence_refs.filter((ref) =>
+        ref && ref.raw_content_included !== true && ref.public_safe === true
+      ).filter((ref) => {
+        const distance = temporalDistanceSec(item, ref);
+        return distance !== null && distance <= gate;
+      });
+      if (!refs.length) return;
+      bySegment.set(String(item.segment_id), { item, refs: refs.slice(0, 3) });
+    });
+  }
+  if (!bySegment.size && !quoteBySegment.size) return;
+
+  const formatRange = (ref) => {
+    const start = formatTime(ref.start_sec);
+    const end = formatTime(ref.end_sec);
+    if (start && end && start !== end) return `${start}-${end}`;
+    return start || end || '시각 없음';
+  };
+  const displayEvidenceTime = (item, ref) => {
+    const segmentTime = formatTime(item.start_sec);
+    const distance = temporalDistanceSec(item, ref);
+    const refStart = Number(ref.start_sec);
+    const refEnd = Number(ref.end_sec ?? ref.start_sec);
+    const refSpan = Number.isFinite(refStart) && Number.isFinite(refEnd) ? Math.abs(refEnd - refStart) : 0;
+    if (distance === 0 && segmentTime && refSpan > 300) return segmentTime;
+    return formatRange(ref);
+  };
+  const mountQuoteCitations = (card, citations) => {
+    const evidence = card.querySelector('.t-evidence');
+    if (!evidence || !Array.isArray(citations) || !citations.length) return false;
+    const wrap = document.createElement('div');
+    wrap.className = 'summary-evidence-quote-citations';
+    wrap.setAttribute('data-summary-evidence-quote-citations-mounted', '1');
+    citations.forEach((row) => {
+      const quote = String(row.quote || '').trim();
+      if (!quote) return;
+      const chip = document.createElement('span');
+      chip.className = 'summary-evidence-quote-citation';
+      const time = row.timecode || formatTime(row.start_sec);
+      const url = chzzkUrlAt(row.start_sec);
+      if (time && url) {
+        const link = document.createElement('a');
+        link.href = url;
+        link.target = '_blank';
+        link.rel = 'noopener';
+        link.textContent = `[${time}]`;
+        link.title = '치지직 다시보기에서 이 근거 시점부터 재생';
+        chip.append(link);
+      } else if (time) {
+        const span = document.createElement('span');
+        span.textContent = `[${time}]`;
+        chip.append(span);
+      }
+      const q = document.createElement('q');
+      q.textContent = `"${quote}"`;
+      chip.append(q);
+      wrap.append(chip);
+    });
+    if (!wrap.childElementCount) return false;
+    evidence.replaceChildren(wrap);
+    return true;
+  };
+
+  document.querySelectorAll('[data-segment-id]').forEach((card) => {
+    const segmentId = card.getAttribute('data-segment-id') || '';
+    mountQuoteCitations(card, quoteBySegment.get(segmentId));
+  });
+}());
+</script>
 <div class="public-report-toast" data-copy-report-toast role="status" aria-live="polite"></div>
 <script id="publicReportNavScript">
 (() => {

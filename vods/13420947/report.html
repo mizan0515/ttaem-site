@@ -2116,5 +2116,170 @@ async function copyChzzkCommentText(btn) {
 })();
 </script>
 <script src="../../assets/viewer-editor-tools.js?v=aa045f02910f"></script>
+<script id="summaryEvidenceQuoteCitationsData" type="application/json">{"schema_version":"public_quote_citations.v1","render_target":"report_html_script#summaryEvidenceQuoteCitationsData","raw_transcript_content_included":false,"public_quote_text_included":true,"video_no":"13420947","subtitle_cue_count":0,"items":[{"segment_id":"seg_timeline_c9f6425cde62","start_sec":380,"citations":[{"quote":"밥이 왔습니다","match_status":"unmatched"},{"quote":"밥 좀 먹겠습니다","match_status":"unmatched"},{"quote":"오늘 빅게임","match_status":"unmatched"}]},{"segment_id":"seg_timeline_19b7a24a6ddb","start_sec":2733,"citations":[{"quote":"훈수 VS 호구","match_status":"unmatched"},{"quote":"얘는 좀 훈수받아야지 ㅋㅋ","match_status":"unmatched"},{"quote":"도네하고 훈수해라","match_status":"unmatched"}]},{"segment_id":"seg_timeline_5b6815fb58af","start_sec":3002,"citations":[{"quote":"젠지와 하나생명","match_status":"unmatched"},{"quote":"기인과 제우스의 라인전 구도","match_status":"unmatched"},{"quote":"꿀잼경기 나왔으면 좋겠어","match_status":"unmatched"}]},{"segment_id":"seg_timeline_4a0610308493","start_sec":4770,"citations":[{"quote":"젠지 진짜 피말리기 운영 지린다","match_status":"unmatched"},{"quote":"한화 무너진다","match_status":"unmatched"},{"quote":"젠지 그냥 스근하게 누르네","match_status":"unmatched"}]},{"segment_id":"seg_timeline_cd9d7038fa65","start_sec":5982,"citations":[{"quote":"탬탬의 저주~~~~","match_status":"unmatched"},{"quote":"탬탬 또 틀림ㅋㅋㅋ","match_status":"unmatched"},{"quote":"부두술 ON","match_status":"unmatched"}]},{"segment_id":"seg_timeline_12c521813465","start_sec":8179,"citations":[{"quote":"기인 미쳤냐","match_status":"unmatched"},{"quote":"존나잘하네","match_status":"unmatched"},{"quote":"이거 산다","match_status":"unmatched"}]},{"segment_id":"seg_timeline_2ccbfd4d2812","start_sec":9430,"citations":[{"quote":"와 쵸비","match_status":"unmatched"},{"quote":"대황비 ㄷㄷㄷㄷㄷㄷㄷㄷ","match_status":"unmatched"},{"quote":"쵸비 미쳤나","match_status":"unmatched"}]},{"segment_id":"seg_timeline_64036e93795b","start_sec":11739,"citations":[{"quote":"첫 장업을 킬, 베인이 만들어냈습니다!","match_status":"unmatched"},{"quote":"베인 파트 킬!","match_status":"unmatched"},{"quote":"한방에 일망타진을 했네요","match_status":"unmatched"}]},{"segment_id":"seg_timeline_3eb2f69558e1","start_sec":12579,"citations":[{"quote":"젠지가 2대1로 승리하며","match_status":"unmatched"},{"quote":"단독 2위로 올라섭니다","match_status":"unmatched"},{"quote":"이 게임 다음 세트 완벽하게 끝장을 내버리네요","match_status":"unmatched"}]},{"segment_id":"seg_timeline_e795b42640d6","start_sec":14060,"citations":[{"quote":"치지직모드 ㄱ?","match_status":"unmatched"},{"quote":"탬탬버린의 톰 마타 체험기","match_status":"unmatched"},{"quote":"호종컵 ㅋㅋㅋㅋㅋ","match_status":"unmatched"}]},{"segment_id":"seg_timeline_74db7a271dec","start_sec":15013,"citations":[{"quote":"T1 구단의 감독 부임 환영!","match_status":"unmatched"},{"quote":"T1으로 시작할게요.","match_status":"unmatched"},{"quote":"더 이상 참을 수 없다","match_status":"unmatched"}]},{"segment_id":"seg_timeline_5cc3bf855072","start_sec":18313,"citations":[{"quote":"안녕하세요. 분석 데스크의 캡틴잭입니다.","match_status":"unmatched"},{"quote":"퉁퉁버린 감독의 뱀픽이 조금 어렵지 않았나","match_status":"unmatched"},{"quote":"탬재앙 out","match_status":"unmatched"}]},{"segment_id":"seg_timeline_9ee4eb918a10","start_sec":20138,"citations":[{"quote":"와 페이즈 ㅋㅋㅋㅋㅋㅋㅋ","match_status":"unmatched"},{"quote":"유령 4천골차","match_status":"unmatched"},{"quote":"이걸 이기네 ㅋㅋㅋㅋ","match_status":"unmatched"}]},{"segment_id":"seg_timeline_1c083c1621cf","start_sec":20345,"citations":[{"quote":"시청자 클립 anchor","match_status":"unmatched"}]},{"segment_id":"seg_timeline_8e2971c6c91f","start_sec":20415,"citations":[{"quote":"질 뻔! 너네 넥서스 피 1나는 거 알지?","match_status":"unmatched"},{"quote":"이건 사실상 진게임이야, 진짜.","match_status":"unmatched"},{"quote":"감독 차이. 감독차이.","match_status":"unmatched"}]}]}</script>
+
+<style id="summaryEvidenceControlsStyle">
+  .summary-evidence-quote-citations {
+    display: flex; flex-wrap: wrap; gap: 6px 10px;
+  }
+  .summary-evidence-quote-citation {
+    display: inline-flex; align-items: baseline; gap: 3px;
+    color: var(--muted); line-height: 1.55;
+  }
+  .summary-evidence-quote-citation a {
+    color: var(--tc); font-weight: 700; text-decoration: none;
+  }
+  .summary-evidence-quote-citation a:hover {
+    color: var(--text-strong); text-decoration: underline; text-underline-offset: 3px;
+  }
+  .summary-evidence-quote-citation q {
+    color: var(--text); quotes: none;
+  }
+</style>
+<script id="summaryEvidenceControlsScript">
+(function () {
+  const dataEl = document.getElementById('summaryEvidencePackData');
+  const quoteDataEl = document.getElementById('summaryEvidenceQuoteCitationsData');
+  if (!dataEl && !quoteDataEl) return;
+
+  let payload = {};
+  if (dataEl) {
+    try {
+      payload = JSON.parse(dataEl.textContent || '{}');
+    } catch (_err) {
+      payload = {};
+    }
+  }
+  let quotePayload = {};
+  if (quoteDataEl) {
+    try {
+      quotePayload = JSON.parse(quoteDataEl.textContent || '{}');
+    } catch (_err) {
+      quotePayload = {};
+    }
+  }
+
+  const formatTime = (sec) => {
+    const value = Number(sec);
+    if (!Number.isFinite(value) || value < 0) return '';
+    const total = Math.floor(value);
+    const h = Math.floor(total / 3600);
+    const m = Math.floor((total % 3600) / 60);
+    const s = total % 60;
+    return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  };
+  const chzzkUrlAt = (sec) => {
+    const videoNo = String(quotePayload?.video_no || '').trim();
+    const value = Number(sec);
+    if (!videoNo || !Number.isFinite(value) || value < 0) return '';
+    return `https://chzzk.naver.com/video/${encodeURIComponent(videoNo)}?currentTime=${Math.floor(value)}`;
+  };
+  const quoteBySegment = new Map();
+  if (
+    quotePayload &&
+    quotePayload.raw_transcript_content_included !== true &&
+    Array.isArray(quotePayload.items)
+  ) {
+    quotePayload.items.forEach((item) => {
+      if (!item || !item.segment_id || !Array.isArray(item.citations) || !item.citations.length) return;
+      quoteBySegment.set(String(item.segment_id), item.citations.filter((row) =>
+        row && typeof row.quote === 'string' && row.quote.trim()
+      ).slice(0, 8));
+    });
+  }
+  const temporalDistanceSec = (item, ref) => {
+    const segStart = Number(item.start_sec);
+    const segEndRaw = item.end_sec;
+    const refStart = Number(ref.start_sec);
+    const refEnd = Number(ref.end_sec ?? ref.start_sec);
+    if (!Number.isFinite(segStart) || !Number.isFinite(refStart) || !Number.isFinite(refEnd)) return null;
+    const segEnd = Number.isFinite(Number(segEndRaw)) ? Number(segEndRaw) : segStart;
+    const left = Math.min(segStart, segEnd);
+    const right = Math.max(segStart, segEnd);
+    const evLeft = Math.min(refStart, refEnd);
+    const evRight = Math.max(refStart, refEnd);
+    if (left === right && evLeft <= left && left <= evRight) return 0;
+    if (Math.min(right, evRight) > Math.max(left, evLeft)) return 0;
+    if (evRight < left) return left - evRight;
+    return evLeft - right;
+  };
+  const temporalGateSec = () => {
+    const value = Number(payload?.summary?.window_sec);
+    return Number.isFinite(value) && value >= 0 ? Math.max(value, 90) : 90;
+  };
+  const bySegment = new Map();
+  if (payload && payload.raw_content_included !== true && Array.isArray(payload.items)) {
+    payload.items.forEach((item) => {
+      if (!item || !item.segment_id || !Array.isArray(item.evidence_refs)) return;
+      const gate = temporalGateSec();
+      const refs = item.evidence_refs.filter((ref) =>
+        ref && ref.raw_content_included !== true && ref.public_safe === true
+      ).filter((ref) => {
+        const distance = temporalDistanceSec(item, ref);
+        return distance !== null && distance <= gate;
+      });
+      if (!refs.length) return;
+      bySegment.set(String(item.segment_id), { item, refs: refs.slice(0, 3) });
+    });
+  }
+  if (!bySegment.size && !quoteBySegment.size) return;
+
+  const formatRange = (ref) => {
+    const start = formatTime(ref.start_sec);
+    const end = formatTime(ref.end_sec);
+    if (start && end && start !== end) return `${start}-${end}`;
+    return start || end || '시각 없음';
+  };
+  const displayEvidenceTime = (item, ref) => {
+    const segmentTime = formatTime(item.start_sec);
+    const distance = temporalDistanceSec(item, ref);
+    const refStart = Number(ref.start_sec);
+    const refEnd = Number(ref.end_sec ?? ref.start_sec);
+    const refSpan = Number.isFinite(refStart) && Number.isFinite(refEnd) ? Math.abs(refEnd - refStart) : 0;
+    if (distance === 0 && segmentTime && refSpan > 300) return segmentTime;
+    return formatRange(ref);
+  };
+  const mountQuoteCitations = (card, citations) => {
+    const evidence = card.querySelector('.t-evidence');
+    if (!evidence || !Array.isArray(citations) || !citations.length) return false;
+    const wrap = document.createElement('div');
+    wrap.className = 'summary-evidence-quote-citations';
+    wrap.setAttribute('data-summary-evidence-quote-citations-mounted', '1');
+    citations.forEach((row) => {
+      const quote = String(row.quote || '').trim();
+      if (!quote) return;
+      const chip = document.createElement('span');
+      chip.className = 'summary-evidence-quote-citation';
+      const time = row.timecode || formatTime(row.start_sec);
+      const url = chzzkUrlAt(row.start_sec);
+      if (time && url) {
+        const link = document.createElement('a');
+        link.href = url;
+        link.target = '_blank';
+        link.rel = 'noopener';
+        link.textContent = `[${time}]`;
+        link.title = '치지직 다시보기에서 이 근거 시점부터 재생';
+        chip.append(link);
+      } else if (time) {
+        const span = document.createElement('span');
+        span.textContent = `[${time}]`;
+        chip.append(span);
+      }
+      const q = document.createElement('q');
+      q.textContent = `"${quote}"`;
+      chip.append(q);
+      wrap.append(chip);
+    });
+    if (!wrap.childElementCount) return false;
+    evidence.replaceChildren(wrap);
+    return true;
+  };
+
+  document.querySelectorAll('[data-segment-id]').forEach((card) => {
+    const segmentId = card.getAttribute('data-segment-id') || '';
+    mountQuoteCitations(card, quoteBySegment.get(segmentId));
+  });
+}());
+</script>
 </body>
 </html>

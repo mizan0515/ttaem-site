@@ -1738,6 +1738,171 @@ function initEditorEntryState() {
 </script>
 
 <script src="../../assets/viewer-editor-tools.js?v=aa045f02910f"></script>
+<script id="summaryEvidenceQuoteCitationsData" type="application/json">{"schema_version":"public_quote_citations.v1","render_target":"report_html_script#summaryEvidenceQuoteCitationsData","raw_transcript_content_included":false,"public_quote_text_included":true,"video_no":"13722141","subtitle_cue_count":3783,"items":[{"segment_id":"seg_timeline_301d5baa0b49","start_sec":546,"citations":[{"quote":"패치해라 우우","match_status":"unmatched"},{"quote":"소환수 개성이 하나도 없음 너무 평범함","match_status":"unmatched"},{"quote":"진짜 소환수 외형만 바뀌면 한다","match_status":"unmatched"}]},{"segment_id":"seg_timeline_5884b43fdf69","start_sec":1866,"citations":[{"quote":"탬첩","match_status":"unmatched"},{"quote":"아 기억난다","match_status":"unmatched"},{"quote":"롤판 어렵네..","match_status":"unmatched"}]},{"segment_id":"seg_timeline_eac91a0a270b","start_sec":3215,"citations":[{"quote":"탬스크황제에게 충성을","match_status":"unmatched"},{"quote":"아 0시는 없어요","match_status":"unmatched"},{"quote":"에이제국을 얼마나 사랑하신겁니까?","start_sec":3296,"timecode":"00:54:56","match_status":"subtitle_text_position"}]},{"segment_id":"seg_timeline_4837b110d133","start_sec":3741,"citations":[{"quote":"느~긋","match_status":"unmatched"},{"quote":"의료선에 태워잇!!!!!!!!!!!!!!!!!!!!!!!!","start_sec":3727,"timecode":"01:02:07","match_status":"subtitle_match"},{"quote":"설명 제대로 안들어썽","match_status":"unmatched"}]},{"segment_id":"seg_timeline_a0511ddccfa4","start_sec":4540,"citations":[{"quote":"탬 스 크","start_sec":4317,"timecode":"01:11:57","match_status":"subtitle_match"},{"quote":"인간의 재앙 탬스크","match_status":"unmatched"},{"quote":"최악의 사령관","start_sec":4607,"timecode":"01:16:47","match_status":"subtitle_match"}]},{"segment_id":"seg_timeline_0280e9960f31","start_sec":5534,"citations":[{"quote":"탬스크 이 나뿌자식 그러지 마!","match_status":"unmatched"},{"quote":"암만봐도 탬스크다","match_status":"unmatched"},{"quote":"역시 탬스크!","match_status":"unmatched"}]},{"segment_id":"seg_timeline_033ec267f053","start_sec":9050,"citations":[{"quote":"마음의 선물이야","match_status":"unmatched"},{"quote":"마음의 선물이야~","match_status":"unmatched"},{"quote":"섬광탄이다!","match_status":"unmatched"}]},{"segment_id":"seg_timeline_88a0ca0b6911","start_sec":11025,"citations":[{"quote":"아 열차 개빠른거 보소 ㅋㅋㅋㅋ","match_status":"unmatched"},{"quote":"고속열차 ㅋㅋ","match_status":"unmatched"},{"quote":"북벌하러 갔다가 이게 망했네","start_sec":11069,"timecode":"03:04:29","match_status":"subtitle_text_position"}]},{"segment_id":"seg_timeline_0105a061247b","start_sec":13005,"citations":[{"quote":"왜 바른말함?","match_status":"unmatched"},{"quote":"왠일로 맞는말을","match_status":"unmatched"},{"quote":"탬스크와 템레이너는 종이 한장차이","match_status":"unmatched"}]},{"segment_id":"seg_timeline_f2918758aa64","start_sec":14979,"citations":[{"quote":"연기 보소","match_status":"unmatched"},{"quote":"저렇게 뻔뻔해야 황제 해먹는구나","match_status":"unmatched"},{"quote":"와 탬스크","match_status":"unmatched"}]},{"segment_id":"seg_timeline_e84cf1f20694","start_sec":15415,"citations":[{"quote":"scv 8마리 제발","match_status":"unmatched"},{"quote":"벙커의 중요성","match_status":"unmatched"},{"quote":"망했죠 뭐","match_status":"unmatched"}]},{"segment_id":"seg_timeline_af754a06ad84","start_sec":17384,"citations":[{"quote":"오딘 캐 큰거 봐 ㅋㅋ","match_status":"unmatched"},{"quote":"오딘 졸라쎄","match_status":"unmatched"},{"quote":"와 오딘이 다 밀어버리네","match_status":"unmatched"}]},{"segment_id":"seg_timeline_64d17dd2c7e2","start_sec":19373,"citations":[{"quote":"첫번째 방송 전송 완료!","match_status":"unmatched"},{"quote":"레이너의 머리를 가져, 알았나?","match_status":"unmatched"},{"quote":"모든 전송이 완료됐습니다.","start_sec":19387,"timecode":"05:23:07","match_status":"subtitle_exact"}]},{"segment_id":"seg_timeline_31aedcfd3e5c","start_sec":19903,"citations":[{"quote":"왔다 배틀크루져","match_status":"unmatched"},{"quote":"배틀이다","start_sec":20213,"timecode":"05:36:53","match_status":"subtitle_match"},{"quote":"전 투 순 양 함","start_sec":20010,"timecode":"05:33:30","match_status":"subtitle_text_position"}]},{"segment_id":"seg_timeline_38563c9bdfbd","start_sec":22150,"citations":[{"quote":"공허 무시하고 간다구?","match_status":"unmatched"},{"quote":"어어 거기는","match_status":"unmatched"},{"quote":"시공속으로~","start_sec":22138,"timecode":"06:08:58","match_status":"subtitle_match"}]}]}</script>
+
+<style id="summaryEvidenceControlsStyle">
+  .summary-evidence-quote-citations {
+    display: flex; flex-wrap: wrap; gap: 6px 10px;
+  }
+  .summary-evidence-quote-citation {
+    display: inline-flex; align-items: baseline; gap: 3px;
+    color: var(--muted); line-height: 1.55;
+  }
+  .summary-evidence-quote-citation a {
+    color: var(--tc); font-weight: 700; text-decoration: none;
+  }
+  .summary-evidence-quote-citation a:hover {
+    color: var(--text-strong); text-decoration: underline; text-underline-offset: 3px;
+  }
+  .summary-evidence-quote-citation q {
+    color: var(--text); quotes: none;
+  }
+</style>
+<script id="summaryEvidenceControlsScript">
+(function () {
+  const dataEl = document.getElementById('summaryEvidencePackData');
+  const quoteDataEl = document.getElementById('summaryEvidenceQuoteCitationsData');
+  if (!dataEl && !quoteDataEl) return;
+
+  let payload = {};
+  if (dataEl) {
+    try {
+      payload = JSON.parse(dataEl.textContent || '{}');
+    } catch (_err) {
+      payload = {};
+    }
+  }
+  let quotePayload = {};
+  if (quoteDataEl) {
+    try {
+      quotePayload = JSON.parse(quoteDataEl.textContent || '{}');
+    } catch (_err) {
+      quotePayload = {};
+    }
+  }
+
+  const formatTime = (sec) => {
+    const value = Number(sec);
+    if (!Number.isFinite(value) || value < 0) return '';
+    const total = Math.floor(value);
+    const h = Math.floor(total / 3600);
+    const m = Math.floor((total % 3600) / 60);
+    const s = total % 60;
+    return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  };
+  const chzzkUrlAt = (sec) => {
+    const videoNo = String(quotePayload?.video_no || '').trim();
+    const value = Number(sec);
+    if (!videoNo || !Number.isFinite(value) || value < 0) return '';
+    return `https://chzzk.naver.com/video/${encodeURIComponent(videoNo)}?currentTime=${Math.floor(value)}`;
+  };
+  const quoteBySegment = new Map();
+  if (
+    quotePayload &&
+    quotePayload.raw_transcript_content_included !== true &&
+    Array.isArray(quotePayload.items)
+  ) {
+    quotePayload.items.forEach((item) => {
+      if (!item || !item.segment_id || !Array.isArray(item.citations) || !item.citations.length) return;
+      quoteBySegment.set(String(item.segment_id), item.citations.filter((row) =>
+        row && typeof row.quote === 'string' && row.quote.trim()
+      ).slice(0, 8));
+    });
+  }
+  const temporalDistanceSec = (item, ref) => {
+    const segStart = Number(item.start_sec);
+    const segEndRaw = item.end_sec;
+    const refStart = Number(ref.start_sec);
+    const refEnd = Number(ref.end_sec ?? ref.start_sec);
+    if (!Number.isFinite(segStart) || !Number.isFinite(refStart) || !Number.isFinite(refEnd)) return null;
+    const segEnd = Number.isFinite(Number(segEndRaw)) ? Number(segEndRaw) : segStart;
+    const left = Math.min(segStart, segEnd);
+    const right = Math.max(segStart, segEnd);
+    const evLeft = Math.min(refStart, refEnd);
+    const evRight = Math.max(refStart, refEnd);
+    if (left === right && evLeft <= left && left <= evRight) return 0;
+    if (Math.min(right, evRight) > Math.max(left, evLeft)) return 0;
+    if (evRight < left) return left - evRight;
+    return evLeft - right;
+  };
+  const temporalGateSec = () => {
+    const value = Number(payload?.summary?.window_sec);
+    return Number.isFinite(value) && value >= 0 ? Math.max(value, 90) : 90;
+  };
+  const bySegment = new Map();
+  if (payload && payload.raw_content_included !== true && Array.isArray(payload.items)) {
+    payload.items.forEach((item) => {
+      if (!item || !item.segment_id || !Array.isArray(item.evidence_refs)) return;
+      const gate = temporalGateSec();
+      const refs = item.evidence_refs.filter((ref) =>
+        ref && ref.raw_content_included !== true && ref.public_safe === true
+      ).filter((ref) => {
+        const distance = temporalDistanceSec(item, ref);
+        return distance !== null && distance <= gate;
+      });
+      if (!refs.length) return;
+      bySegment.set(String(item.segment_id), { item, refs: refs.slice(0, 3) });
+    });
+  }
+  if (!bySegment.size && !quoteBySegment.size) return;
+
+  const formatRange = (ref) => {
+    const start = formatTime(ref.start_sec);
+    const end = formatTime(ref.end_sec);
+    if (start && end && start !== end) return `${start}-${end}`;
+    return start || end || '시각 없음';
+  };
+  const displayEvidenceTime = (item, ref) => {
+    const segmentTime = formatTime(item.start_sec);
+    const distance = temporalDistanceSec(item, ref);
+    const refStart = Number(ref.start_sec);
+    const refEnd = Number(ref.end_sec ?? ref.start_sec);
+    const refSpan = Number.isFinite(refStart) && Number.isFinite(refEnd) ? Math.abs(refEnd - refStart) : 0;
+    if (distance === 0 && segmentTime && refSpan > 300) return segmentTime;
+    return formatRange(ref);
+  };
+  const mountQuoteCitations = (card, citations) => {
+    const evidence = card.querySelector('.t-evidence');
+    if (!evidence || !Array.isArray(citations) || !citations.length) return false;
+    const wrap = document.createElement('div');
+    wrap.className = 'summary-evidence-quote-citations';
+    wrap.setAttribute('data-summary-evidence-quote-citations-mounted', '1');
+    citations.forEach((row) => {
+      const quote = String(row.quote || '').trim();
+      if (!quote) return;
+      const chip = document.createElement('span');
+      chip.className = 'summary-evidence-quote-citation';
+      const time = row.timecode || formatTime(row.start_sec);
+      const url = chzzkUrlAt(row.start_sec);
+      if (time && url) {
+        const link = document.createElement('a');
+        link.href = url;
+        link.target = '_blank';
+        link.rel = 'noopener';
+        link.textContent = `[${time}]`;
+        link.title = '치지직 다시보기에서 이 근거 시점부터 재생';
+        chip.append(link);
+      } else if (time) {
+        const span = document.createElement('span');
+        span.textContent = `[${time}]`;
+        chip.append(span);
+      }
+      const q = document.createElement('q');
+      q.textContent = `"${quote}"`;
+      chip.append(q);
+      wrap.append(chip);
+    });
+    if (!wrap.childElementCount) return false;
+    evidence.replaceChildren(wrap);
+    return true;
+  };
+
+  document.querySelectorAll('[data-segment-id]').forEach((card) => {
+    const segmentId = card.getAttribute('data-segment-id') || '';
+    mountQuoteCitations(card, quoteBySegment.get(segmentId));
+  });
+}());
+</script>
 <div class="public-report-toast" data-copy-report-toast role="status" aria-live="polite"></div>
 <script id="publicReportNavScript">
 (() => {
