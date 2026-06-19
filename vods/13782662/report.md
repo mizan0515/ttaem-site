@@ -9,42 +9,55 @@
 
 ### 📍 타임라인 상세 요약
 
-
-- **[00:00:21](https://chzzk.naver.com/video/13782662?currentTime=21) 방송 템포 다시 잡고 명조 시작 준비해버림** (분위기: 💬)
-    - 방송 초반 아쉬움을 짚고 바로 태세를 정비하면서 명조 진행 모드로 들어간다. 광고와 일정 흐름을 정리하며 오늘 플레이의 출발점을 맞춘다.
-    - 근거: "아쉽네. 아쉬워, 아쉬워." "제재재정비. 오케이. 됐어, 됐어."
-- **[00:20:37](https://chzzk.naver.com/video/13782662?currentTime=1237) 튜토리얼 첫 반응으로 시스템 감 잡기 시작됨** (분위기: 🎮)
-    - 초반 시스템을 확인하며 스킬과 크로노스텝 같은 요소를 보자 본격적으로 이해가 붙기 시작한다. “조각까지 나있다!”, “시간의 힘을 가지고 있다고?” 같은 반응으로 탐색 감각이 열렸다.
-    - 근거: "조각까지 나있다!" "시간의 힘을 가지고 있다고?" "크로노스텝"
 - **[00:36:19](https://chzzk.naver.com/video/13782662?currentTime=2179) 회피가 무적이라는 전투 감각 깨달아버림** (분위기: 🎮)
     - 회피 타이밍의 중요성을 체득하면서 액션 판정 이해도가 확 올라간다. 이후 전투를 몸으로 익히는 흐름이 본격화된다.
     - 근거: "피하는 것이 무적이다!" "상하좌우 다 된다, 오케이?" "절대 앞으로, 무지성 앞으로만 누르지 말기."
 - **[01:32:02](https://chzzk.naver.com/video/13782662?currentTime=5522) 연속 사망에 멘탈 흔들리고 리셋 압박까지 옴** (분위기: 😬)
-    - 반복된 실패로 크게 지치며 “뒤지겄어 아주 그냥 뒤지겨서!” 같은 탄식이 나온다. 이어 조건이 리셋된다는 말까지 붙어 부담감이 커진다.
+    - 반복된 실패로 크게 지치며 “뒤지겄어 아주 그냥 뒤지겄서!” 같은 탄식이 나온다. 이어 조건이 리셋된다는 말까지 붙어 부담감이 커진다.
     - 근거: "뒤지겄어 아주 그냥 뒤지겨서!" "지금 이거 표 올라왔을 때 깨야 되는데 나중에 하면 다시 리셋인데?" "공략 안보고하니까 굉장히 보는맛이 있구만"
 - **[01:36:59](https://chzzk.naver.com/video/13782662?currentTime=5819) 아는패턴 그만쳐맞읍시다 땜떔버린님~~~ [INJECTED · 시청자 클립 4/417]** (분위기: 💬)
     - 내용: 시청자가 클립으로 잘라낸 시점. 본문 evidence 는 같은 시각의 자막/채팅을 참조.
     - 근거: "시청자 클립 anchor"
+- **[01:56:18](https://chzzk.naver.com/video/13782662?currentTime=6978) 명조 광고 방송 시작(분위기: 💬)
+    - 내용: 명조 광고 방송 시작
+    - 근거: ""
+- **[02:00:16](https://chzzk.naver.com/video/13782662?currentTime=7216) 표정 연출 소개(분위기: 💬)
+    - 내용: 표정 연출 소개
+    - 근거: ""
+- **[02:01:50](https://chzzk.naver.com/video/13782662?currentTime=7310) 모델링 소개(분위기: 💬)
+    - 내용: 모델링 소개
+    - 근거: ""
 
 - **[02:03:00](https://chzzk.naver.com/video/13782662?currentTime=7380) 인게임 그래픽이 더 예쁘다며 감탄 터뜨려버림** (분위기: 🔥)
     - PV보다 실제 인게임 모델링이 더 예쁘다고 강하게 호평한다. “장난! 아니 이게 진짜 디테일이 말이 안 돼요” 식의 감탄이 연달아 나오며 소개 파트의 설득력이 세진다.
     - 근거: "워? 근데 인게임 똑같은데?" "인 게임이 진짜 더 예뻐요" "장난! 아니 이게 진짜 디테일이 말이 안 돼요."
-- **[02:12:00](https://chzzk.naver.com/video/13782662?currentTime=7920) 2D 전환과 3D 연출 조합이 확 터져버림** (분위기: 🎬)
+- **[02:04:20](https://chzzk.naver.com/video/13782662?currentTime=7460) BGM 소개(분위기: 💬)
+    - 내용: BGM 소개
+    - 근거: ""
+- **[02:08:14](https://chzzk.naver.com/video/13782662?currentTime=7694) 맵 소개(분위기: 💬)
+    - 내용: 맵 소개
+    - 근거: ""
+- **[02:12:00](https://chzzk.naver.com/video/13782662?currentTime=7920) 2D 전환과 3D 연출 조합 소개** (분위기: 🎬)
     - 스토리 연출의 핵심 장면을 보여주며 2D 전환, 3D 조화가 자연스럽게 맞물리는 흐름을 짚는다. 시청 포인트를 숨기면서도 기대감을 크게 올린 구간이다.
     - 근거: "가장 중요시 여긴다는 스토리 연출입니다" "여기까지만 보셔야돼요" "3D와 2D가 완벽한 조화를 이루면서"
-- **[02:16:03](https://chzzk.naver.com/video/13782662?currentTime=8163) 전투 구조 설명이 본게임처럼 펼쳐짐** (분위기: 🎮)
+- **[02:15:48](https://chzzk.naver.com/video/13782662?currentTime=8148) 전투 구조 설명 및 소개** (분위기: 🎮)
     - 회피, 패링, 교대, 공명해방까지 명조 전투 구조를 본격적으로 풀어낸다. “세 명을 계속 교체해 주면서 싸우면” 식의 설명으로 시스템 이해가 완성된다.
     - 근거: "바로 전투가 있습니다" "명조는 한 파티가 총 3명의 공명자로 이루어져 있는데요" "세 명을 계속 교체해 주면서 싸우면"
+- **[02:22:37](https://chzzk.naver.com/video/13782662?currentTime=8557) 나은과 남봉의 명조 한마디** (분위기: 💖)
+    - 나은과 남봉이 느끼는 명조의 장점.
+    - 근거: ""
 - **[02:25:24](https://chzzk.naver.com/video/13782662?currentTime=8724) 스토리는 끊임없이 우상향한다며 강하게 영업해버림** (분위기: 💖)
     - 버전마다 새 이야기가 계속 나온다고 말하며 명조의 장점을 스토리 쪽에서 정리한다. 이후 “사랑”으로 읽고 싶다는 식의 드립으로 분위기가 풀린다.
     - 근거: "스토리는 끊임없이 우상향을 그리고요" "명조를 쓰고 사랑이라고 읽고 싶다" "백분토론"
-- **[03:01:56](https://chzzk.naver.com/video/13782662?currentTime=10916) 명조 세계관 핵심 용어를 길게 정리해버림** (분위기: 🎮)
+
+
+- **[03:01:22](https://chzzk.naver.com/video/13782662?currentTime=10882) 명조 세계관 핵심 용어를 길게 정리** (분위기: 🎮)
     - 이름의 의미부터 잔향, 데이터 스테이션, 에코까지 세계관과 시스템을 한 번에 설명한다. 게임 소개 방송의 설명 파트가 가장 밀도 있게 정리된 구간이다.
     - 근거: "명조잖아, 이름 자체가" "잔향이고? 데이터 스테이션을 회수할 수 있다" "에코로 바뀌어 전투에서 쓸 수 있어요"
-- **[03:54:12](https://chzzk.naver.com/video/13782662?currentTime=14052) 지갑 여는 가챠 준비로 분위기 바뀌어버림** (분위기: 😂)
+- **[03:54:12](https://chzzk.naver.com/video/13782662?currentTime=14052) 지갑 여는 가챠 준비로 분위기 바뀜** (분위기: 😂)
     - 디코 화면을 끄고 충전하며 장바구니와 패키지 구성을 살피는 등 본격적인 뽑기 준비로 넘어간다. 소개 방송에서 실전 가챠 방송으로 톤이 전환된다.
     - 근거: "디코 화면을 끄고" "충전한 뒤" "장바구니와 패키지"
-- **[04:00:35](https://chzzk.naver.com/video/13782662?currentTime=14435) 첫 10연차부터 긴장감 폭발하고 뽑기판 열림** (분위기: 😬)
+- **[04:01:02](https://chzzk.naver.com/video/13782662?currentTime=14462) 첫 10연차부터 긴장감 폭발하고 뽑기판** (분위기: 😬)
     - 시작부터 10번 만에 뜨면 어떡하냐는 불안이 커지고, 화면 공유로 함께 보며 뽑기를 본격적으로 돌리기 시작한다. 기대와 압박이 동시에 올라오는 구간이다.
     - 근거: "10번만에 뜨면 어떡하나" "화면 공유로 봐야되나요?" "10회 뽑기 한 번씩 누르시면 돼요"
 - **[04:19:16](https://chzzk.naver.com/video/13782662?currentTime=15556) 예상 밖 결과가 연달아 터지면서 멘붕 와버림** (분위기: 😂)
@@ -53,14 +66,14 @@
 - **[04:30:23](https://chzzk.naver.com/video/13782662?currentTime=16223) 돌파 화면 디테일 감상하며 캐릭터 취향 토크로 넘어감** (분위기: 💖)
     - 돌파 화면마다 이미지와 소품이 다르다고 설명하며 캐릭터 디테일을 감상한다. 이어 외형 취향, 스킨 이야기까지 붙으며 캐릭터 호평 파트가 길게 이어진다.
     - 근거: "돌파 화면 있죠? 하면은 이미지가 달라져요" "이 니트가" "넥타이 살짝 사이에"
-- **[04:34:42](https://chzzk.naver.com/video/13782662?currentTime=16482) ??: 탬탬님 취향은 고아여 잖아요 [INJECTED · 시청자 클립 2/341]** (분위기: 💬)
+- **[04:34:42](https://chzzk.naver.com/video/13782662?currentTime=16482) ??: 탬탬님 취향은 고아 잖아요 [INJECTED · 시청자 클립 2/341]** (분위기: 💬)
     - 내용: 시청자가 클립으로 잘라낸 시점. 본문 evidence 는 같은 시각의 자막/채팅을 참조.
     - 근거: "시청자 클립 anchor"
 
-- **[04:41:44](https://chzzk.naver.com/video/13782662?currentTime=16904) 광고 끝내고 스토리 진입 선언해버림** (분위기: 💬)
+- **[04:41:44](https://chzzk.naver.com/video/13782662?currentTime=16904) 광고 끝내고 스토리 진입 ** (분위기: 💬)
     - 앞선 가챠와 캐릭터 토크를 정리하고 “광고는 여기까지”라며 본격적으로 스토리를 보러 간다. 방송이 탐험·서사 확인 모드로 넘어가는 전환점이다.
     - 근거: "광고는 여기까지. 저희 할 거 다 했잖아요, 그죠?" "오늘도 즐기러 가볼게요." "고유 명사들 이제 지식들을 좀 때려박아넣는데"
-- **[05:21:45](https://chzzk.naver.com/video/13782662?currentTime=19305) 세계 기록급 퍼즐 클리어가 웃음 터뜨려버림** (분위기: 😂)
+- **[05:21:45](https://chzzk.naver.com/video/13782662?currentTime=19305) 세계 기록급 퍼즐 클리어 라는 반응이 웃음 터뜨려버림** (분위기: 😂)
     - 퍼즐이나 진행을 한 번에 끝낸 듯한 흐름에서 “세계 기록”, “세계 1등” 같은 말이 나온다. 시청자도 같이 웃고 놀라는 성취감 큰 구간이다.
     - 근거: "세계 기록인데요." "세계 1등, 수고야. 너 세계 일등이야." "명 쌀먹, 성공."
 - **[06:00:24](https://chzzk.naver.com/video/13782662?currentTime=21624) 방송 종료 선언하고 오늘 일정 마무리됨** (분위기: 💬)
@@ -99,9 +112,6 @@
 5. **[05:21:45~05:25:06](https://chzzk.naver.com/video/13782662?currentTime=19305) 세계 기록 퍼즐 클리어와 이후 진행 전환**
     - 추천 이유: 즉시성이 강한 성취 장면이라 짧게 잘라도 맥락이 살아나고, 웃음 포인트도 분명하다.
 
-6. **[01:36:59~01:36:59](https://chzzk.naver.com/video/13782662?currentTime=5819)** 아는패턴 그만쳐맞읍시다 땜떔버린님~~~ [INJECTED · 시청자 클립 4/417]
-    - 추천 이유: 시청자가 직접 클립으로 잘라낸 호평 신호 시점.
-
 
 ### 📝 에디터의 방송 후기
 
@@ -111,19 +121,26 @@
 
 ### 치지직 댓글 타임라인
 
-- [00:00:21](https://chzzk.naver.com/video/13782662?currentTime=21) 명조 시작 준비
-- [00:20:37](https://chzzk.naver.com/video/13782662?currentTime=1237) 튜토리얼 시스템 알아보기
-- [00:36:19](https://chzzk.naver.com/video/13782662?currentTime=2179) 회피 감각 익히기
-- [01:32:02](https://chzzk.naver.com/video/13782662?currentTime=5522) 연속 사망 구간
-- [02:03:00](https://chzzk.naver.com/video/13782662?currentTime=7380) 인게임 그래픽 감탄
-- [02:12:00](https://chzzk.naver.com/video/13782662?currentTime=7920) 2D·3D 연출 보기
-- [02:16:03](https://chzzk.naver.com/video/13782662?currentTime=8163) 전투 구조 알아보기
-- [02:25:24](https://chzzk.naver.com/video/13782662?currentTime=8724) 스토리 우상향 영업
-- [03:01:56](https://chzzk.naver.com/video/13782662?currentTime=10916) 세계관 용어 정리
-- [03:54:12](https://chzzk.naver.com/video/13782662?currentTime=14052) 가챠 준비
-- [04:00:35](https://chzzk.naver.com/video/13782662?currentTime=14435) 첫 10연차 시작
-- [04:19:16](https://chzzk.naver.com/video/13782662?currentTime=15556) 뽑기 결과 멘붕
-- [04:30:23](https://chzzk.naver.com/video/13782662?currentTime=16223) 돌파 화면 감상
-- [04:41:44](https://chzzk.naver.com/video/13782662?currentTime=16904) 스토리 진입
-- [05:21:45](https://chzzk.naver.com/video/13782662?currentTime=19305) 세계 기록 퍼즐 클리어
-- [06:00:24](https://chzzk.naver.com/video/13782662?currentTime=21624) 방송 종료
+- [00:36:19](https://chzzk.naver.com/video/13782662?currentTime=2179) 회피가 무적이라는 전투 감각 깨달아버림
+- [01:32:02](https://chzzk.naver.com/video/13782662?currentTime=5522) 연속 사망에 멘탈 흔들리고 리셋 압박까지 옴
+- [01:36:59](https://chzzk.naver.com/video/13782662?currentTime=5819) 아는패턴 그만쳐맞읍시다 땜떔버린님~~~
+- [01:56:18](https://chzzk.naver.com/video/13782662?currentTime=6978) 명조 광고 방송 시작
+- [02:00:16](https://chzzk.naver.com/video/13782662?currentTime=7216) 표정 연출 소개
+- [02:01:50](https://chzzk.naver.com/video/13782662?currentTime=7310) 모델링 소개
+- [02:03:00](https://chzzk.naver.com/video/13782662?currentTime=7380) 인게임 그래픽이 더 예쁘다며 감탄 터뜨려버림
+- [02:04:20](https://chzzk.naver.com/video/13782662?currentTime=7460) BGM 소개
+- [02:08:14](https://chzzk.naver.com/video/13782662?currentTime=7694) 맵 소개
+- [02:12:00](https://chzzk.naver.com/video/13782662?currentTime=7920) 2D 전환과 3D 연출 조합 소개
+- [02:15:48](https://chzzk.naver.com/video/13782662?currentTime=8148) 전투 구조 설명 및 소개
+- [02:22:37](https://chzzk.naver.com/video/13782662?currentTime=8557) 나은과 남봉의 명조 한마디
+- [02:25:24](https://chzzk.naver.com/video/13782662?currentTime=8724) 스토리는 끊임없이 우상향한다며 강하게 영업해버림
+- [03:01:22](https://chzzk.naver.com/video/13782662?currentTime=10882) 명조 세계관 핵심 용어를 길게 정리
+- [03:54:12](https://chzzk.naver.com/video/13782662?currentTime=14052) 지갑 여는 가챠 준비로 분위기 바뀜
+- [04:01:02](https://chzzk.naver.com/video/13782662?currentTime=14462) 첫 10연차부터 긴장감 폭발하고 뽑기판
+- [04:19:16](https://chzzk.naver.com/video/13782662?currentTime=15556) 예상 밖 결과가 연달아 터지면서 멘붕 와버림
+- [04:30:23](https://chzzk.naver.com/video/13782662?currentTime=16223) 돌파 화면 디테일 감상하며 캐릭터 취향 토크로 넘어감
+- [04:34:42](https://chzzk.naver.com/video/13782662?currentTime=16482) ??: 탬탬님 취향은 고아 잖아요
+- [04:41:44](https://chzzk.naver.com/video/13782662?currentTime=16904) 광고 끝내고 스토리 진입
+- [05:21:45](https://chzzk.naver.com/video/13782662?currentTime=19305) 세계 기록급 퍼즐 클리어 라는 반응이 웃음 터뜨려버림
+- [06:00:24](https://chzzk.naver.com/video/13782662?currentTime=21624) 방송 종료 선언하고 오늘 일정 마무리됨
+
