@@ -205,9 +205,26 @@ function initViewerEditorTools() {
   const viewerLabelsMap = data.viewer_labels || {};
   const colorsMap = data.colors || {};
   const purposesMap = data.purposes || {};
+  const overviewOnlyLaneKinds = new Set(['audio_waveform', 'chat_volume']);
+  const eventCountsByKind = events.reduce((map, event) => {
+    const kind = String(event && event.kind || '');
+    if (kind) map.set(kind, (map.get(kind) || 0) + 1);
+    return map;
+  }, new Map());
+  function laneActualEventCount(kind) {
+    return eventCountsByKind.get(String(kind || '')) || 0;
+  }
+  function isRenderableSceneLane(lane) {
+    const key = String(lane && lane.key || '');
+    if (!key) return false;
+    const role = String(lane && lane.display_role || '').toLowerCase();
+    if (role === 'overview' || overviewOnlyLaneKinds.has(key)) return false;
+    if (laneActualEventCount(key) > 0) return true;
+    return false;
+  }
   const lanes = Array.isArray(data.lanes) && data.lanes.length
-    ? data.lanes.filter((lane) => lane && lane.key)
-    : Array.from(new Set(events.map((event) => event.kind).filter(Boolean))).map((kind) => ({ key: kind, label: labelsMap[kind] || kind, event_count: events.filter((event) => event.kind === kind).length }));
+    ? data.lanes.filter(isRenderableSceneLane)
+    : Array.from(new Set(events.map((event) => event.kind).filter(Boolean))).map((kind) => ({ key: kind, label: labelsMap[kind] || kind, event_count: laneActualEventCount(kind), display_role: 'scene' })).filter(isRenderableSceneLane);
   const kinds = lanes.map((lane) => lane.key);
   const filterEl = document.getElementById('viewerEditorFilter');
   const countEl = document.getElementById('viewerEditorCount');
