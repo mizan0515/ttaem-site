@@ -94,5 +94,22 @@
 
 ### 치지직 댓글 타임라인
 
+- [00:05:29](https://chzzk.naver.com/video/13754949?currentTime=329) 방송 재시작 후 잡담으로 분위기 먼저 풀어버림
+- [00:19:47](https://chzzk.naver.com/video/13754949?currentTime=1187) 숨바꼭질 합방 예고가 바로 게임판을 열어버림
+- [00:31:31](https://chzzk.naver.com/video/13754949?currentTime=1891) 서버 참가 방법 설명하느라 입장 절차를 다 알려줌
+- [00:38:02](https://chzzk.naver.com/video/13754949?currentTime=2282) 숨기기와 색칠 규칙 설명이 본게임 판을 깔아버림
+- [00:39:31](https://chzzk.naver.com/video/13754949?currentTime=2371) 몸이 너무 티 나서 은신이 바로 들킬 위기였음
+- [00:50:00](https://chzzk.naver.com/video/13754949?currentTime=3000) 고수 플레이에 감탄이 쏟아지며 분위기 터짐
+- [00:51:11](https://chzzk.naver.com/video/13754949?currentTime=3071) 극악의 은신을 결국 찾아내면서 채팅이 터져버림
+- [00:54:33](https://chzzk.naver.com/video/13754949?currentTime=3273) 숨바꼭질 자체가 신박하고 재밌다는 결론으로 정리됨
+- [01:07:04](https://chzzk.naver.com/video/13754949?currentTime=4024) 막판 칠하기가 아슬아슬하게 성공해버림
 - [01:19:17](https://chzzk.naver.com/video/13754949?currentTime=4757) 뚱이판 진행
-- [02:13:12](https://chzzk.naver.com/video/13754949?currentTime=7992) 옵티머스프라임 진행
+- [02:15:48](https://chzzk.naver.com/video/13754949?currentTime=8148) 옵티머스 프라임 밈·드립이 폭발해버린 구간
+- [02:31:29](https://chzzk.naver.com/video/13754949?currentTime=9089) 레일랜드 맵 소개와 술래 장난이 다음 판 텐션을 올림
+- [03:19:30](https://chzzk.naver.com/video/13754949?currentTime=11970) 지누·탬탬 미드 확정으로 대결 구도가 제대로 잡힘
+- [03:33:50](https://chzzk.naver.com/video/13754949?currentTime=12830) 제라스 픽으로 포킹 조합이 완성되어버림
+- [03:45:09](https://chzzk.naver.com/video/13754949?currentTime=13509) 럼블 운영 힌트가 나온 시청자 클립급 교전 구간
+- [04:18:13](https://chzzk.naver.com/video/13754949?currentTime=15493) 미니언에 죽는 허무한 실수가 터져버림
+- [04:43:18](https://chzzk.naver.com/video/13754949?currentTime=16998) 물소 뚜띠
+- [05:34:22](https://chzzk.naver.com/video/13754949?currentTime=20062) 진우 칭찬과 함께 엔딩 인사가 훈훈하게 정리됨
+
