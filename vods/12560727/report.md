@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 따없탬왕 가보자 슬더스 3대3 ㄱㄱㄱㄱ링
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12560727/report](https://ttaem.com/vods/12560727/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12560727/report](https://auto-caption-generator-site.pages.dev/vods/12560727/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12560727](https://chzzk.naver.com/video/12560727)
 
 - **핵심 요약:** #슬더스3대3 #탬황탄생 #삼혐사태

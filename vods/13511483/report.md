@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 오늘의 아침밥 라볶이 묵땨 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13511483/report](https://ttaem.com/vods/13511483/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13511483/report](https://auto-caption-generator-site.pages.dev/vods/13511483/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13511483](https://chzzk.naver.com/video/13511483)
 
 - **핵심 요약:** #탬탬버린 #축구토크 #밈드립

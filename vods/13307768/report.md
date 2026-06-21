@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 생일엔 공포게임을 해야한다는 이야기가 있다 난 이 이야기가 싫다... ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13307768/report](https://ttaem.com/vods/13307768/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13307768/report](https://auto-caption-generator-site.pages.dev/vods/13307768/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13307768](https://chzzk.naver.com/video/13307768)
 
 - **핵심 요약:** #생일방송 #공포게임 #탬뽀뽀

@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 대놓고 T1 응원방 KT vs T1 #LCKWatchParty ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13433412/report](https://ttaem.com/vods/13433412/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13433412/report](https://auto-caption-generator-site.pages.dev/vods/13433412/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13433412](https://chzzk.naver.com/video/13433412)
 
 - **핵심 요약:** #T1 #KT #탬탬버린

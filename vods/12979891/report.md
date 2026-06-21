@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 뮤지컬 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12979891/report](https://ttaem.com/vods/12979891/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12979891/report](https://auto-caption-generator-site.pages.dev/vods/12979891/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12979891](https://chzzk.naver.com/video/12979891)
 
 - **핵심 요약:** #호종컵뮤지컬 #강쏘의서사 #이환광고

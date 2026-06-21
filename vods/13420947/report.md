@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 참을만큼 참았다 톰톰버린 out  ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13420947/report](https://ttaem.com/vods/13420947/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13420947/report](https://auto-caption-generator-site.pages.dev/vods/13420947/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13420947](https://chzzk.naver.com/video/13420947)
 
 - **핵심 요약:** #LCK중계 #팀파이트매니저2 #탬탬버린

@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: [호종컵] 고수달을 변기에 내려 내리지마 내려 내리지마 내려 내리지마 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12890507/report](https://ttaem.com/vods/12890507/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12890507/report](https://auto-caption-generator-site.pages.dev/vods/12890507/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12890507](https://chzzk.naver.com/video/12890507)
 
 - **핵심 요약:** #탬리츠 #살기감지 #탬칸

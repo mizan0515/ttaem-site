@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 대놓고 T1 응원방~!~! DK vs HLE - T1 vs GEN #LCKWatchParty٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12632301/report](https://ttaem.com/vods/12632301/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12632301/report](https://auto-caption-generator-site.pages.dev/vods/12632301/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12632301](https://chzzk.naver.com/video/12632301)
 
 - **핵심 요약:** #LCKWatchParty #T1응원 #젠지완승 #쵸비악마 #밴픽논쟁
