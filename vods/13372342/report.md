@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 모라하지마 서버 마지막날 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13372342/report](https://auto-caption-generator-site.pages.dev/vods/13372342/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13372342/report](https://ttaem.com/vods/13372342/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13372342](https://chzzk.naver.com/video/13372342)
 
 - **핵심 요약:** #마인크래프트 #모라하지마서버 #서버마지막날 #밈드립

@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: [호종컵] 케리아 내 몸으로 잠깐 출장 부탁해요 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12925400/report](https://auto-caption-generator-site.pages.dev/vods/12925400/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12925400/report](https://ttaem.com/vods/12925400/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12925400](https://chzzk.naver.com/video/12925400)
 
 - **핵심 요약:** #케리아MVP #약긴바텀각성 #대회전날

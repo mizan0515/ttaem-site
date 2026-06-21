@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 내전 구경하다가 필요하면 출동함 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12801656/report](https://auto-caption-generator-site.pages.dev/vods/12801656/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12801656/report](https://ttaem.com/vods/12801656/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12801656](https://chzzk.naver.com/video/12801656)
 
 - **핵심 요약:** #LCK관전 #내전출동 #이론가탬탬

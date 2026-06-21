@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 9시 픽셀 YB VS OB 라는데요??? ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13450780/report](https://auto-caption-generator-site.pages.dev/vods/13450780/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13450780/report](https://ttaem.com/vods/13450780/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13450780](https://chzzk.naver.com/video/13450780)
 
 - **핵심 요약:** #마인크래프트 #YB #OB

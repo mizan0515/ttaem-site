@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: [치즈쇼 1화🧀] 치지직 분기 결산 퀴즈쇼 - 따효니,소우릎,탬탬버린
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13460979/report](https://auto-caption-generator-site.pages.dev/vods/13460979/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13460979/report](https://ttaem.com/vods/13460979/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13460979](https://chzzk.naver.com/video/13460979)
 
 - **핵심 요약:** #치즈쇼 #분기결산 #밈드립

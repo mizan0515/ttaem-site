@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 대놓고 T1 응원방 BFX vs T1 - HLE vs DK #RoadtoEWC
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13176446/report](https://auto-caption-generator-site.pages.dev/vods/13176446/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13176446/report](https://ttaem.com/vods/13176446/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13176446](https://chzzk.naver.com/video/13176446)
 
 - **핵심 요약:** #T1완승 #일라오이무쌍 #DKvsHLE명승부

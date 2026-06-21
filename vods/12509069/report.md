@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 탬문철 티비 함께 해주세요 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12509069/report](https://auto-caption-generator-site.pages.dev/vods/12509069/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12509069/report](https://ttaem.com/vods/12509069/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12509069](https://chzzk.naver.com/video/12509069)
 
 - **핵심 요약:** #탬문철TV #말레이곰각오 #창모드혁명 #울프처방

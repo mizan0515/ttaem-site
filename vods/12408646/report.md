@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 다섯시 인생게임 인생견 등장 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12408646/report](https://auto-caption-generator-site.pages.dev/vods/12408646/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12408646/report](https://ttaem.com/vods/12408646/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12408646](https://chzzk.naver.com/video/12408646)
 
 - **핵심 요약:** #인생게임 #대통령결혼실패 #훈수경찰

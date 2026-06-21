@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 티원경기 보고...내저낳ㄹ수도잇음........ ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12808425/report](https://auto-caption-generator-site.pages.dev/vods/12808425/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12808425/report](https://ttaem.com/vods/12808425/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12808425](https://chzzk.naver.com/video/12808425)
 
 - **핵심 요약:** #탬탬버린 #T1경기 #내전낳을수있음

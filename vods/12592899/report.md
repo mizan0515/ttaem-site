@@ -1,4 +1,4 @@
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12592899/report](https://auto-caption-generator-site.pages.dev/vods/12592899/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12592899/report](https://ttaem.com/vods/12592899/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12592899](https://chzzk.naver.com/video/12592899)
 
 # 세시내전 출동٩(●'▿'●)۶  — 자동 요약 (통합 실패)
