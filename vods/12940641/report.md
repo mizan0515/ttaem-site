@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 호종컵 DAY1 (치지직 제작지원)
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12940641/report](https://auto-caption-generator-site.pages.dev/vods/12940641/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12940641/report](https://ttaem.com/vods/12940641/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12940641](https://chzzk.naver.com/video/12940641)
 
 - **핵심 요약:** #호종컵 #대회의추냥 #삼라만상따효니

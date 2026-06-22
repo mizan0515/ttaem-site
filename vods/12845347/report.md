@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 여덟시에 내전 할지도?? ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12845347/report](https://auto-caption-generator-site.pages.dev/vods/12845347/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12845347/report](https://ttaem.com/vods/12845347/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12845347](https://chzzk.naver.com/video/12845347)
 
 - **핵심 요약:** #탬리츠탄생 #집가라모 #방패사변 #골드달성 #멋사애증

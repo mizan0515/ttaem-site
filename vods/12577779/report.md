@@ -1,4 +1,4 @@
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12577779/report](https://auto-caption-generator-site.pages.dev/vods/12577779/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12577779/report](https://ttaem.com/vods/12577779/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12577779](https://chzzk.naver.com/video/12577779)
 
 # 픽셀 신입 환영회 싱크룸 (w. 핑맨,모라라,김뿡,너불) ٩(●'▿'●)۶  — 자동 요약 (통합 실패)

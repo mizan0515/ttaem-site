@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 메이푸르 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13197829/report](https://auto-caption-generator-site.pages.dev/vods/13197829/report)
+- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13197829/report](https://ttaem.com/vods/13197829/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13197829](https://chzzk.naver.com/video/13197829)
 
 - **핵심 요약:** #메이플스토리 #페이트헤븐즈필 #알아저씨
