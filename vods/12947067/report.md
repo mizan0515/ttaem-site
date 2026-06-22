@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: [호종컵] 지옥에서 기어올라온 고변내 우승 노려볼게요
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12947067/report](https://ttaem.com/vods/12947067/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12947067/report](https://auto-caption-generator-site.pages.dev/vods/12947067/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12947067](https://chzzk.naver.com/video/12947067)
 
 - **핵심 요약:** #자기암시 #결전준비 #팀내비밀

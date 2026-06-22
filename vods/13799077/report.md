@@ -11,7 +11,7 @@
 
 
 
-- **[00:20:01](https://chzzk.naver.com/video/13799077?currentTime=1201) 경기 일정이랑 합방일정 브리핑림** (분위기: 💬)
+- **[00:20:01](https://chzzk.naver.com/video/13799077?currentTime=1201) 경기 일정이랑 합방일정 브리핑** (분위기: 💬)
     - 대한민국 경기와 여러 축구 경기를 챙겨보겠다고 하며 방송 일정과 재획 시간을 빡빡하게 계산한다. 토요일 합방까지 엮이면서 스케줄 정리 대화가 이어진다.
     - 근거: "대한민국 경기가 있기 때문에 보러 와야 되죠?" "토요일에 합방이 있을 거라서" "와 개바쁘네?"
 - **[00:27:03](https://chzzk.naver.com/video/13799077?currentTime=1623) 카이 잡겠다고 선언하고 보스 세팅 들어감** (분위기: 🎮)
@@ -133,7 +133,7 @@
 
 ### 치지직 댓글 타임라인
 
-- [00:20:01](https://chzzk.naver.com/video/13799077?currentTime=1201) 경기 일정이랑 합방일정 브리핑림
+- [00:20:01](https://chzzk.naver.com/video/13799077?currentTime=1201) 경기 일정이랑 합방일정 브리핑
 - [00:27:03](https://chzzk.naver.com/video/13799077?currentTime=1623) 카이 잡겠다고 선언하고 보스 세팅 들어감
 - [00:40:41](https://chzzk.naver.com/video/13799077?currentTime=2441) 헥사 강화 결과 보고 물음표
 - [00:41:50](https://chzzk.naver.com/video/13799077?currentTime=2510) 조각 대량 구매하면서 큰손 모드 터짐

@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 그마의 시선으로 경기해설 HLE vs BRO - T1 vs KT #LCKWatchParty
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12520016/report](https://ttaem.com/vods/12520016/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12520016/report](https://auto-caption-generator-site.pages.dev/vods/12520016/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12520016](https://chzzk.naver.com/video/12520016)
 
 - **핵심 요약:** #LCKWatchParty #만우절T1완봉 #없는통나무

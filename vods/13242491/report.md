@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 제발 오늘 이기게 해주세요 T1 GEN vs T1 - BFX vs NS #LCKWatchParty٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13242491/report](https://ttaem.com/vods/13242491/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13242491/report](https://auto-caption-generator-site.pages.dev/vods/13242491/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13242491](https://chzzk.naver.com/video/13242491)
 
 - **핵심 요약:** #LCKWatchParty #한타폭발 #태윤캐리

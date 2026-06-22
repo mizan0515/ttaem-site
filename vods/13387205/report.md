@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: ㅁ맘ㅁ맘ㅁ ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13387205/report](https://ttaem.com/vods/13387205/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13387205/report](https://auto-caption-generator-site.pages.dev/vods/13387205/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13387205](https://chzzk.naver.com/video/13387205)
 
 - **핵심 요약:** #T1 #밴픽 #한타

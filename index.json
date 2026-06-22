@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-21T18:59:58+00:00",
-  "built_at": "2026-06-21T18:59:58+00:00",
-  "latest_processed_at": "2026-06-20T21:50:12.166832+09:00",
+  "generated_at": "2026-06-22T14:05:50+00:00",
+  "built_at": "2026-06-22T14:05:50+00:00",
+  "latest_processed_at": "2026-06-22T20:23:52.566948+09:00",
   "total_streamers": 4,
-  "total_vods": 83,
+  "total_vods": 85,
   "total_bundles": 6,
   "streamers": [
     {
@@ -11,9 +11,9 @@
       "streamer_name": "탬탬버린",
       "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
       "platform": "chzzk",
-      "vod_count": 79,
-      "last_vod_at": "2026-06-20T12:17:00+09:00",
-      "last_vod_ended_at": "2026-06-20T17:14:28+09:00"
+      "vod_count": 81,
+      "last_vod_at": "2026-06-21T02:05:40+09:00",
+      "last_vod_ended_at": "2026-06-21T04:03:27+09:00"
     },
     {
       "streamer_id": "channel-0dad8baf12a436f722faa8e5001c5011",
@@ -44,6 +44,24 @@
     }
   ],
   "recent_vods": [
+    {
+      "video_no": "13810815",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 네덜란드 vs 스웨덴 ٩(●'▿'●)۶",
+      "published_at": "2026-06-21T02:05:40+09:00",
+      "ended_at": "2026-06-21T04:03:27+09:00",
+      "duration_sec": 7067
+    },
+    {
+      "video_no": "13808702",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "스타크래프트2 자유의 날개 탬레이너 출동 ٩(●'▿'●)۶",
+      "published_at": "2026-06-20T23:03:09+09:00",
+      "ended_at": "2026-06-21T02:05:32+09:00",
+      "duration_sec": 10943
+    },
     {
       "video_no": "13799077",
       "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
@@ -79,27 +97,39 @@
       "published_at": "2026-06-18T09:44:36+09:00",
       "ended_at": "2026-06-18T19:33:21+09:00",
       "duration_sec": 35325
-    },
-    {
-      "video_no": "13754949",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "지누 탬탬 미드 대결 ㄱㄱㄱㄱ ٩(●'▿'●)۶",
-      "published_at": "2026-06-17T18:34:41+09:00",
-      "ended_at": "2026-06-18T00:14:09+09:00",
-      "duration_sec": 20368
-    },
-    {
-      "video_no": "13744819",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "북중미 월드컵 이라크 VS  노르웨이 ٩(●'▿'●)۶",
-      "published_at": "2026-06-17T06:35:17+09:00",
-      "ended_at": "2026-06-17T09:04:24+09:00",
-      "duration_sec": 8947
     }
   ],
   "recent_updates": [
+    {
+      "kind": "vod",
+      "video_no": "13810815",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 네덜란드 vs 스웨덴 ٩(●'▿'●)۶",
+      "published_at": "2026-06-21T02:05:40+09:00",
+      "ended_at": "2026-06-21T04:03:27+09:00",
+      "duration_sec": 7067,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 17273,
+        "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13808702",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "스타크래프트2 자유의 날개 탬레이너 출동 ٩(●'▿'●)۶",
+      "published_at": "2026-06-20T23:03:09+09:00",
+      "ended_at": "2026-06-21T02:05:32+09:00",
+      "duration_sec": 10943,
+      "platform_category": "스타크래프트 II : 자유의 날개",
+      "stats": {
+        "total_chats": 23225,
+        "highlight_count": 22
+      }
+    },
     {
       "kind": "vod",
       "video_no": "13799077",
@@ -158,32 +188,6 @@
       "stats": {
         "total_chats": 67229,
         "highlight_count": 23
-      }
-    },
-    {
-      "kind": "bundle",
-      "bundle_id": "20260617_184356",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "📦 6월 17일분 전체 방송 분석 리포트 — 북중미 월드컵 이라크 VS 노르웨이 ٩(●'▿'●)۶",
-      "published_at": "2026-06-17T19:58:55.099263",
-      "created_at": "2026-06-17T19:58:55.099263",
-      "vod_count": 4,
-      "date_span": "20260617"
-    },
-    {
-      "kind": "vod",
-      "video_no": "13754949",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "지누 탬탬 미드 대결 ㄱㄱㄱㄱ ٩(●'▿'●)۶",
-      "published_at": "2026-06-17T18:34:41+09:00",
-      "ended_at": "2026-06-18T00:14:09+09:00",
-      "duration_sec": 20368,
-      "platform_category": "리그 오브 레전드",
-      "stats": {
-        "total_chats": 48103,
-        "highlight_count": 17
       }
     }
   ]

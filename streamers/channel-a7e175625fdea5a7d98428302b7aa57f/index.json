@@ -4,9 +4,39 @@
     "streamer_name": "탬탬버린",
     "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
     "platform": "chzzk",
-    "vod_count": 79
+    "vod_count": 81
   },
   "vods": [
+    {
+      "kind": "vod",
+      "video_no": "13810815",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 네덜란드 vs 스웨덴 ٩(●'▿'●)۶",
+      "published_at": "2026-06-21T02:05:40+09:00",
+      "ended_at": "2026-06-21T04:03:27+09:00",
+      "duration_sec": 7067,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 17273,
+        "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13808702",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "스타크래프트2 자유의 날개 탬레이너 출동 ٩(●'▿'●)۶",
+      "published_at": "2026-06-20T23:03:09+09:00",
+      "ended_at": "2026-06-21T02:05:32+09:00",
+      "duration_sec": 10943,
+      "platform_category": "스타크래프트 II : 자유의 날개",
+      "stats": {
+        "total_chats": 23225,
+        "highlight_count": 22
+      }
+    },
     {
       "kind": "vod",
       "video_no": "13799077",
@@ -1262,6 +1292,36 @@
     }
   ],
   "reports": [
+    {
+      "kind": "vod",
+      "video_no": "13810815",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 네덜란드 vs 스웨덴 ٩(●'▿'●)۶",
+      "published_at": "2026-06-21T02:05:40+09:00",
+      "ended_at": "2026-06-21T04:03:27+09:00",
+      "duration_sec": 7067,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 17273,
+        "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13808702",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "스타크래프트2 자유의 날개 탬레이너 출동 ٩(●'▿'●)۶",
+      "published_at": "2026-06-20T23:03:09+09:00",
+      "ended_at": "2026-06-21T02:05:32+09:00",
+      "duration_sec": 10943,
+      "platform_category": "스타크래프트 II : 자유의 날개",
+      "stats": {
+        "total_chats": 23225,
+        "highlight_count": 22
+      }
+    },
     {
       "kind": "vod",
       "video_no": "13799077",

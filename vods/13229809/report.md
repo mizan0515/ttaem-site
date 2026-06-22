@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 픽셀 오버오ㅏ찌  ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/13229809/report](https://ttaem.com/vods/13229809/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/13229809/report](https://auto-caption-generator-site.pages.dev/vods/13229809/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/13229809](https://chzzk.naver.com/video/13229809)
 
 - **핵심 요약:** #오버워치 #탬탬버린 #픽셀합방

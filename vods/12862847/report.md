@@ -1,6 +1,6 @@
 ## 📋 방송 분석 리포트: 압도적긍정적 원딜
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/12862847/report](https://ttaem.com/vods/12862847/report)
+- **🔗 요약 웹페이지:** [https://auto-caption-generator-site.pages.dev/vods/12862847/report](https://auto-caption-generator-site.pages.dev/vods/12862847/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/12862847](https://chzzk.naver.com/video/12862847)
 
 - **핵심 요약:** #마작대회꼴찌 #소울룩피드백 #압도적긍정의역설
