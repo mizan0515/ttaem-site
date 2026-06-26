@@ -1232,7 +1232,7 @@
   }
 
 </style>
-<link rel="stylesheet" href="../../assets/viewer-editor-tools.css?v=72c32727c0b7">
+<link rel="stylesheet" href="../../assets/viewer-editor-tools.css?v=c4705f5b0d45">
 </head>
 <body>
 <nav class="public-report-nav" data-report-block="public-report-nav" aria-label="리포트 이동">
@@ -1585,6 +1585,11 @@
         <select id="viewerEditorFilter"></select>
         <span id="viewerEditorCount">7개 자료 · 71개 장면 · 0개 컷 후보</span>
       </div>
+      <div class="viewer-editor-density-control">
+        <label for="viewerEditorDensityRange">알갱이 표시 밀도</label>
+        <input id="viewerEditorDensityRange" type="range" min="0" max="10" step="1" value="6" aria-label="장면 찾기 알갱이 표시 밀도">
+        <span id="viewerEditorDensityValue" class="viewer-editor-density-value">핵심</span>
+      </div>
       <div class="viewer-editor-zoom" aria-label="장면 찾기 확대 축소">
         <button type="button" class="viewer-editor-zoom-btn" id="viewerEditorZoomOutBtn" title="시간축 축소" aria-label="시간축 축소">-</button>
         <button type="button" class="viewer-editor-zoom-btn" id="viewerEditorZoomInBtn" title="시간축 확대" aria-label="시간축 확대">+</button>
@@ -1806,6 +1811,6 @@ async function copyChzzkCommentText(btn) {
   });
 })();
 </script>
-<script src="../../assets/viewer-editor-tools.js?v=e4a0b2e9fd9b"></script>
+<script src="../../assets/viewer-editor-tools.js?v=53469c9f0a8f"></script>
 </body>
 </html>

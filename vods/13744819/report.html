@@ -954,7 +954,7 @@
   }
 
 </style>
-<link rel="stylesheet" href="../../assets/viewer-editor-tools.css?v=72c32727c0b7">
+<link rel="stylesheet" href="../../assets/viewer-editor-tools.css?v=c4705f5b0d45">
 </head>
 <body>
 <nav class="public-report-nav" data-report-block="public-report-nav" aria-label="리포트 이동">
@@ -1252,6 +1252,11 @@
         <label for="viewerEditorFilter">자료 필터</label>
         <select id="viewerEditorFilter"></select>
         <span id="viewerEditorCount">5개 자료 · 69개 장면 · 31개 컷 후보</span>
+      </div>
+      <div class="viewer-editor-density-control">
+        <label for="viewerEditorDensityRange">알갱이 표시 밀도</label>
+        <input id="viewerEditorDensityRange" type="range" min="0" max="10" step="1" value="6" aria-label="장면 찾기 알갱이 표시 밀도">
+        <span id="viewerEditorDensityValue" class="viewer-editor-density-value">핵심</span>
       </div>
       <div class="viewer-editor-zoom" aria-label="장면 찾기 확대 축소">
         <button type="button" class="viewer-editor-zoom-btn" id="viewerEditorZoomOutBtn" title="시간축 축소" aria-label="시간축 축소">-</button>
@@ -1634,7 +1639,7 @@ function initEditorEntryState() {
 }
 </script>
 
-<script src="../../assets/viewer-editor-tools.js?v=e4a0b2e9fd9b"></script>
+<script src="../../assets/viewer-editor-tools.js?v=53469c9f0a8f"></script>
 <script id="summaryEvidenceQuoteCitationsData" type="application/json">{"schema_version":"public_quote_citations.v1","render_target":"report_html_script#summaryEvidenceQuoteCitationsData","raw_transcript_content_included":false,"public_quote_text_included":true,"video_no":"13744819","subtitle_cue_count":2041,"items":[{"segment_id":"seg_timeline_b2c3b544dea7","start_sec":198,"citations":[{"quote":"월드컵이 확실히 재밋긴 해","match_status":"unmatched"},{"quote":"한팀에 몰입하게되지","match_status":"unmatched"},{"quote":"지구촌 최대의 축제","start_sec":234,"timecode":"00:03:54","match_status":"subtitle_text_position"}]},{"segment_id":"seg_timeline_bd4fd34f5316","start_sec":248,"citations":[{"quote":"홀붕이 진짜 축구못하는 애들한테 무자비한데","match_status":"unmatched"},{"quote":"홀란드밖에 모르겠네","start_sec":487,"timecode":"00:08:07","match_status":"subtitle_exact"},{"quote":"홀붕아~~~","match_status":"unmatched"}]},{"segment_id":"seg_timeline_c450c77d59e7","start_sec":450,"citations":[{"quote":"노르웨이가 양학 전문임","start_sec":302,"timecode":"00:05:02","match_status":"subtitle_match"},{"quote":"쟨 진짜 탱크임","match_status":"unmatched"},{"quote":"미남 축구선수","match_status":"unmatched"}]},{"segment_id":"seg_timeline_88e8c3a29f26","start_sec":1167,"citations":[{"quote":"5분 뒤에 내가 다시 걸게, 얘들아.","start_sec":1201,"timecode":"00:20:01","match_status":"subtitle_text_position"},{"quote":"경기가 치러지기 전에 앞서서 먼저 국가 연주가 진행이 되겠습니다.","start_sec":1168,"timecode":"00:19:28","match_status":"subtitle_text_position"}]},{"segment_id":"seg_timeline_ae65b232ff1c","start_sec":1561,"citations":[{"quote":"양팀의 역사상 첫 맞대결 전반전 출발을 알립니다","start_sec":1561,"timecode":"00:26:01","match_status":"subtitle_text_position"},{"quote":"이라크가 경기를 스타트합니다","start_sec":1561,"timecode":"00:26:01","match_status":"subtitle_match"},{"quote":"전방압박 빡시게 하네","match_status":"unmatched"}]},{"segment_id":"seg_timeline_58597c6b4749","start_sec":1827,"citations":[{"quote":"설마 넣었나요? 설마!","start_sec":1827,"timecode":"00:30:27","match_status":"subtitle_text_position"},{"quote":"부딪힙니다, 뒤로!","start_sec":1827,"timecode":"00:30:27","match_status":"subtitle_text_position"},{"quote":"축3?","match_status":"unmatched"}]},{"segment_id":"seg_timeline_08509937f51d","start_sec":2292,"citations":[{"quote":"그냥 개 압박 지리네.","start_sec":2292,"timecode":"00:38:12","match_status":"subtitle_exact"},{"quote":"이라크 생각보다 잘하는데?","match_status":"unmatched"},{"quote":"아시아의 무서움 ㅋㅋ","match_status":"unmatched"}]},{"segment_id":"seg_timeline_86516b21287e","start_sec":3249,"citations":[{"quote":"드디어, 드디어! 가나요!","start_sec":3258,"timecode":"00:54:18","match_status":"subtitle_text_position"},{"quote":"패스 개쩔하다.","start_sec":3319,"timecode":"00:55:19","match_status":"subtitle_text_position"},{"quote":"야, 지렸는데?","start_sec":3308,"timecode":"00:55:08","match_status":"subtitle_text_position"}]},{"segment_id":"seg_timeline_e6df91a80ec1","start_sec":3934,"citations":[{"quote":"노르웨이를 상대로 헤딩으로 골을 넣었네?","start_sec":3934,"timecode":"01:05:34","match_status":"subtitle_exact"},{"quote":"이라크 입장에서는 해답이라는 걸 다시 한번 보여줍니다","start_sec":3932,"timecode":"01:05:32","match_status":"subtitle_text_position"},{"quote":"이게 양학이 아니었단 말인가","start_sec":4015,"timecode":"01:06:55","match_status":"subtitle_text_position"}]},{"segment_id":"seg_timeline_11db093d584a","start_sec":4583,"citations":[{"quote":"저 사람이 진짜 이 악물고 끝까지 물고 넘어져가지고 저거는 막았다.","start_sec":4583,"timecode":"01:16:23","match_status":"subtitle_text_position"},{"quote":"다시한번, 이라크의 코너킥이구요.","start_sec":4586,"timecode":"01:16:26","match_status":"subtitle_match"},{"quote":"ㄲㅂ","match_status":"unmatched"}]},{"segment_id":"seg_timeline_98e97763e3c2","start_sec":5846,"citations":[{"quote":"이라크, 슬슬 동점골 안 넣었나?","start_sec":5850,"timecode":"01:37:30","match_status":"subtitle_text_position"},{"quote":"ㅋㅋㅋㅋㅋㅋ","match_status":"unmatched"},{"quote":"안아줘요","match_status":"unmatched"}]},{"segment_id":"seg_timeline_5c0566264fb4","start_sec":7642,"citations":[{"quote":"골을 잃고 말았습니다.","start_sec":7646,"timecode":"02:07:26","match_status":"subtitle_exact"},{"quote":"한결 더 여유가 생긴 노르웨이.","start_sec":7652,"timecode":"02:07:32","match_status":"subtitle_text_position"},{"quote":"웨드골 터치가 되지 않습니다.","start_sec":7646,"timecode":"02:07:26","match_status":"subtitle_exact"}]},{"segment_id":"seg_timeline_33091becdf9e","start_sec":8731,"citations":[{"quote":"노르웨이가 4대1로 승리를 가져갑니다.","start_sec":8731,"timecode":"02:25:31","match_status":"subtitle_match"},{"quote":"굉장히 재미있는 경기였다.","start_sec":8745,"timecode":"02:25:45","match_status":"subtitle_text_position"},{"quote":"지금 자고 와야 되긴 해요.","start_sec":8891,"timecode":"02:28:11","match_status":"subtitle_text_position"}]}]}</script>
 
 <style id="summaryEvidenceControlsStyle">

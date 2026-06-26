@@ -173,6 +173,543 @@
   .card-body { padding: 24px; }
   .chart-wrap { height: 220px; position: relative; }
 
+  .editor-jump {
+    margin-top: 18px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  .editor-jump-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    min-height: 40px; padding: 9px 14px; border-radius: 8px;
+    border: 1px solid rgba(158,206,106,0.36);
+    background: rgba(158,206,106,0.12); color: var(--text-strong);
+    font-size: 13px; font-weight: 700; text-decoration: none;
+  }
+  .editor-jump-link:hover {
+    background: rgba(158,206,106,0.18); text-decoration: none;
+  }
+  .editor-jump-note { color: var(--muted); font-size: 12px; }
+  .report-editor-inline-button,
+  .report-editor-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 38px; padding: 0 15px; border: 1px solid rgba(158,206,106,0.56);
+    border-radius: 8px; background: rgba(158,206,106,0.16);
+    color: var(--text-strong, #f8fafc) !important;
+    font: 800 13px/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    text-decoration: none; cursor: pointer; box-shadow: none;
+  }
+  .report-editor-inline-button { margin-left: 0; vertical-align: middle; }
+  .report-editor-entry {
+    display: inline-flex !important; align-items: center; gap: 8px; flex-wrap: wrap;
+    margin-top: 14px; padding: 0; border: 0; border-radius: 0; background: transparent;
+  }
+  .report-editor-entry .editor-entry-status {
+    display: inline-flex; align-items: center; min-height: 16px;
+    color: var(--muted); font-size: 12px; line-height: 1.45;
+  }
+  .report-editor-entry[data-editor-entry-state="installed"] .editor-entry-status { color: var(--accent); }
+  .report-editor-entry[data-editor-entry-state="missing"] .editor-entry-status,
+  .report-editor-entry[data-editor-entry-state="fallback"] .editor-entry-status { color: #a9b1d6; }
+  .report-editor-entry[data-editor-entry-state="loading"] .editor-entry-status { color: var(--accent-warm); }
+  .report-editor-entry[data-editor-entry-state="error"] .editor-entry-status { color: #f7768e; }
+  .report-editor-entry .editor-jump-link {
+    display: inline-flex !important; align-items: center; justify-content: center;
+    width: 38px; min-width: 38px; min-height: 38px; padding: 0 !important;
+    border: 1px solid var(--border-soft, rgba(148,163,184,0.22)) !important;
+    border-radius: 8px !important; background: rgba(255,255,255,0.04) !important;
+    color: var(--muted, rgba(226,232,240,0.72)) !important;
+    text-decoration: none !important;
+  }
+  .report-editor-entry .editor-jump-link svg {
+    width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2;
+    stroke-linecap: round; stroke-linejoin: round;
+  }
+  .report-editor-visually-hidden {
+    position: absolute !important; width: 1px !important; height: 1px !important;
+    padding: 0 !important; margin: -1px !important; overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;
+  }
+  .report-editor-inline-button:hover,
+  .report-editor-inline-button:focus-visible,
+  .report-editor-toggle:hover,
+  .report-editor-toggle:focus-visible {
+    background: rgba(158,206,106,0.28);
+    outline: 3px solid rgba(158,206,106,0.26); outline-offset: 2px;
+  }
+  .report-editor-entry .editor-jump-link:hover,
+  .report-editor-entry .editor-jump-link:focus-visible {
+    color: var(--text-strong, #f8fafc) !important;
+    border-color: rgba(158,206,106,0.42) !important;
+    background: rgba(158,206,106,0.10) !important;
+    outline: 3px solid rgba(158,206,106,0.22); outline-offset: 2px;
+  }
+  .report-editor-nav-button {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 31px; padding: 0 10px; border: 1px solid rgba(158,206,106,0.42);
+    border-radius: 8px; background: rgba(158,206,106,0.12);
+    color: var(--text-strong, #e8ebf3) !important;
+    font: 800 12px/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    white-space: nowrap; cursor: pointer;
+  }
+  .report-editor-nav-button:hover,
+  .report-editor-nav-button:focus-visible {
+    border-color: rgba(158,206,106,0.62); background: rgba(158,206,106,0.22);
+    outline: 2px solid rgba(158,206,106,0.24); outline-offset: 2px;
+  }
+  .editor-entry {
+    margin-top: 18px; display: grid; grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px; align-items: center; padding: 10px 12px; border-radius: 8px;
+    border: 1px solid rgba(158,206,106,0.32);
+    background: rgba(36,40,59,0.78);
+  }
+  .editor-entry-copy { min-width: 0; }
+  .editor-entry-title {
+    display: block; color: var(--text-strong); font-size: 14px; font-weight: 760;
+    line-height: 1.35; margin-bottom: 2px;
+  }
+  .editor-entry-status {
+    display: block; min-height: 16px; color: var(--muted); font-size: 12px;
+    line-height: 1.45;
+  }
+  .editor-entry[data-editor-entry-state="installed"] .editor-entry-status { color: var(--accent); }
+  .editor-entry[data-editor-entry-state="missing"] .editor-entry-status,
+  .editor-entry[data-editor-entry-state="fallback"] .editor-entry-status { color: #a9b1d6; }
+  .editor-entry[data-editor-entry-state="loading"] .editor-entry-status { color: var(--accent-warm); }
+  .editor-entry[data-editor-entry-state="error"] .editor-entry-status { color: #f7768e; }
+  .editor-entry-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+  .editor-entry-button {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 36px; padding: 8px 12px; border-radius: 8px; text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.16); color: var(--muted);
+    background: rgba(255,255,255,0.045); font-size: 13px; font-weight: 720;
+  }
+  .editor-entry-button.primary {
+    border-color: rgba(158,206,106,0.46);
+    background: rgba(158,206,106,0.16); color: var(--text-strong);
+  }
+  .editor-entry-button:hover {
+    background: rgba(255,255,255,0.075); color: var(--text-strong); text-decoration: none;
+  }
+  .editor-entry-button.primary:hover { background: rgba(158,206,106,0.23); }
+  .editor-entry-button:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.62); outline-offset: 2px;
+  }
+  .editor-split-shell {
+    position: fixed; inset: 0; z-index: 10000; display: grid;
+    grid-template-columns: minmax(420px, 52vw) minmax(420px, 1fr);
+    background: var(--bg); color: var(--text);
+  }
+  body.editor-split-active { overflow: hidden; }
+  .editor-split-player {
+    min-width: 0; border-right: 1px solid rgba(158,206,106,0.34);
+    background: #05070d; display: grid; grid-template-rows: auto 1fr auto;
+  }
+  .editor-split-toolbar {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    min-height: 48px; padding: 9px 12px; border-bottom: 1px solid rgba(255,255,255,0.10);
+    background: rgba(15,18,30,0.96);
+  }
+  .editor-split-title {
+    min-width: 0; color: var(--text-strong); font-size: 13px; font-weight: 760;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .editor-split-actions { display: flex; gap: 8px; align-items: center; flex-shrink: 0; }
+  .editor-split-action {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 34px; padding: 7px 10px; border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.16); background: rgba(255,255,255,0.055);
+    color: var(--text-strong); font-size: 12px; font-weight: 720; text-decoration: none; cursor: pointer;
+  }
+  .editor-split-action:hover { background: rgba(255,255,255,0.09); text-decoration: none; }
+  .editor-split-frame {
+    width: 100%; height: 100%; border: 0; background: #05070d; display: block;
+  }
+  .editor-split-workspace {
+    min-width: 0; height: 100vh; overflow: auto; background: var(--bg);
+    padding: 16px;
+  }
+  .editor-split-workspace .viewer-editor-tools {
+    margin: 0; min-height: calc(100vh - 32px);
+  }
+  .editor-split-placeholder { display: none; }
+  .editor-split-fallback {
+    padding: 12px; color: var(--muted); font-size: 12px; line-height: 1.55;
+    border-top: 1px solid rgba(255,255,255,0.10); background: rgba(15,18,30,0.96);
+  }
+  .viewer-editor-tools {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-color: rgba(158,206,106,0.34);
+    background: linear-gradient(180deg, rgba(158,206,106,0.055), transparent 170px), var(--surface);
+  }
+  .viewer-editor-head {
+    display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px;
+    align-items: start; padding: 22px 24px; border-bottom: 1px solid var(--border-soft);
+  }
+  .viewer-editor-title {
+    margin: 0 0 6px; color: var(--text-strong);
+    font-size: 21px; line-height: 1.35; letter-spacing: 0;
+  }
+  .viewer-editor-lead {
+    margin: 0; color: var(--muted); font-size: 14px; line-height: 1.65;
+  }
+  .viewer-editor-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+  .viewer-editor-button {
+    appearance: none; border: 1px solid rgba(122,162,247,0.38); cursor: pointer;
+    background: rgba(122,162,247,0.12); color: var(--text-strong);
+    padding: 10px 13px; border-radius: 8px; font-size: 13px; font-weight: 700;
+  }
+  .viewer-editor-button:hover { background: rgba(122,162,247,0.18); }
+  .viewer-editor-button.secondary {
+    border-color: rgba(255,255,255,0.16);
+    background: rgba(255,255,255,0.045); color: var(--muted);
+  }
+  .viewer-editor-button.secondary:hover { background: rgba(255,255,255,0.075); color: var(--text-strong); }
+  .viewer-editor-button:disabled {
+    opacity: 0.46; cursor: not-allowed; background: rgba(255,255,255,0.035);
+  }
+  .viewer-editor-button:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.62); outline-offset: 2px;
+  }
+  .viewer-editor-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 22px;
+    padding: 26px 24px 28px;
+  }
+  .viewer-editor-panel {
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(26,27,38,0.34); padding: 18px; min-width: 0; width: 100%;
+  }
+  .viewer-editor-panel.evidence-panel,
+  .viewer-editor-panel.cut-panel {
+    background: rgba(26,27,38,0.46);
+  }
+  .viewer-editor-panel h3 {
+    margin: 0 0 10px; color: var(--text-strong);
+    font-size: 17px; line-height: 1.4; letter-spacing: 0; font-weight: 750;
+  }
+  .viewer-editor-panel.cut-panel > summary {
+    cursor: pointer; margin: 0; color: var(--text-strong);
+    font-size: 17px; line-height: 1.4; letter-spacing: 0; font-weight: 750;
+    list-style: none;
+  }
+  .viewer-editor-panel.cut-panel > summary::-webkit-details-marker { display: none; }
+  .viewer-editor-panel.cut-panel > summary::before {
+    content: "▸"; display: inline-block; margin-right: 8px;
+    color: var(--muted); transition: transform 160ms ease;
+  }
+  .viewer-editor-panel.cut-panel[open] > summary::before { transform: rotate(90deg); }
+  .viewer-editor-panel.cut-panel > summary:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.62); outline-offset: 3px;
+    border-radius: 6px;
+  }
+  .viewer-editor-panel.cut-panel[open] > summary { margin-bottom: 10px; }
+  .viewer-editor-panel p {
+    margin: 0 0 14px; color: var(--muted); font-size: 14px; line-height: 1.75;
+    max-width: 72ch;
+  }
+  .viewer-editor-filter {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px;
+    color: var(--muted); font-size: 13px;
+  }
+  .viewer-editor-filter select {
+    min-height: 34px; border: 1px solid var(--border); border-radius: 8px;
+    background: var(--surface-2); color: var(--text); padding: 6px 9px; font: inherit;
+  }
+  .viewer-editor-axis {
+    overflow-x: auto; border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.24); padding: 8px;
+    overscroll-behavior: contain;
+    touch-action: pan-x;
+  }
+  .viewer-editor-zoom {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 0 0 10px;
+    color: var(--muted); font-size: 12px;
+  }
+  .viewer-editor-zoom button,
+  .viewer-editor-zoom-btn {
+    appearance: none; -webkit-appearance: none;
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 34px; min-height: 32px; padding: 0 10px;
+    border: 1px solid rgba(122,162,247,0.38);
+    border-radius: 8px; background: rgba(122,162,247,0.12); color: var(--text-strong);
+    cursor: pointer; font: inherit; font-size: 12px; font-weight: 700;
+    line-height: 1;
+  }
+  .viewer-editor-zoom button:hover,
+  .viewer-editor-zoom-btn:hover { background: rgba(122,162,247,0.20); }
+  .viewer-editor-zoom button:focus-visible,
+  .viewer-editor-zoom-btn:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.55); outline-offset: 2px;
+  }
+  .viewer-editor-zoom input[type="range"] { width: min(220px, 100%); }
+  .viewer-editor-zoom-value {
+    min-width: 44px; color: var(--text-strong);
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+  }
+  .viewer-editor-axis-canvas {
+    display: grid; gap: 10px; min-width: calc(var(--viewer-editor-w, 960px) + 144px);
+  }
+  .viewer-editor-scale-row,
+  .viewer-editor-density-row,
+  .viewer-editor-waveform-row,
+  .viewer-editor-lane-row {
+    display: grid; grid-template-columns: 136px var(--viewer-editor-w, 960px);
+    gap: 8px; align-items: center;
+  }
+  .viewer-editor-lane-label,
+  .viewer-editor-scale-label,
+  .viewer-editor-density-label,
+  .viewer-editor-waveform-label {
+    position: sticky; left: 0; z-index: 2;
+    display: flex; flex-direction: column; justify-content: center;
+    min-height: 36px; padding: 6px 8px; border-radius: 6px;
+    background: rgba(26,27,38,0.96); color: var(--muted);
+    font-size: 12px; line-height: 1.32;
+  }
+  .viewer-editor-lane-label strong,
+  .viewer-editor-density-label strong,
+  .viewer-editor-waveform-label strong,
+  .viewer-editor-scale-label strong {
+    color: var(--text-strong); font-size: 12px;
+  }
+  .viewer-editor-lane-label span,
+  .viewer-editor-density-label span,
+  .viewer-editor-waveform-label span,
+  .viewer-editor-scale-label span {
+    color: var(--muted); font-size: 11px;
+  }
+  .viewer-editor-scale {
+    position: relative; height: 24px; min-width: var(--viewer-editor-w, 960px); border-radius: 6px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px) 0 0 / 8.333% 100%;
+  }
+  .viewer-editor-scale span {
+    position: absolute; top: 3px; transform: translateX(-50%);
+    color: var(--muted); font-size: 10px; white-space: nowrap;
+  }
+  .viewer-editor-density {
+    position: relative; height: 42px; min-width: var(--viewer-editor-w, 960px); border: 1px solid var(--border);
+    border-radius: 6px; background: rgba(10,12,22,0.34);
+  }
+  .viewer-editor-density-bar {
+    position: absolute; bottom: 0; min-width: 1px; height: 100%;
+    border: 0; border-radius: 4px; background: transparent; cursor: pointer; padding: 0;
+    box-sizing: border-box;
+  }
+  .viewer-editor-density-bar span {
+    position: absolute; left: 0; right: 0; bottom: 0; display: block;
+    height: var(--bar-h, 3px); min-height: 3px; border-radius: 3px 3px 0 0;
+    background: rgba(247,118,142,0.52);
+  }
+  .viewer-editor-density-bar span::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0;
+    height: var(--global-h, 0px); min-height: 0; border-radius: 3px 3px 0 0;
+    background: rgba(255,255,255,0.20);
+  }
+  .viewer-editor-density-bar.low span { min-height: 5px; }
+  .viewer-editor-density-bar.zero span {
+    height: 2px; min-height: 2px; background: rgba(154,165,190,0.26);
+  }
+  .viewer-editor-density-bar.missing span {
+    height: 2px; min-height: 2px;
+    background: repeating-linear-gradient(90deg, rgba(154,165,190,0.32) 0 3px, transparent 3px 6px);
+  }
+  .viewer-editor-density-bar.hot span { background: rgba(247,118,142,0.82); }
+  .viewer-editor-waveform {
+    position: relative; height: 46px; min-width: var(--viewer-editor-w, 960px);
+    border: 1px solid rgba(224,175,104,0.20); border-radius: 6px;
+    background:
+      linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px) 0 0 / 8.333% 100%,
+      linear-gradient(180deg, rgba(224,175,104,0.05), rgba(10,12,22,0.22));
+    overflow: hidden;
+  }
+  .viewer-editor-waveform svg {
+    position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none;
+  }
+  .viewer-editor-waveform-bar {
+    stroke: rgba(184,194,215,0.58); stroke-width: 1.35;
+    stroke-linecap: round; vector-effect: non-scaling-stroke;
+  }
+  .viewer-editor-waveform-bar.hot {
+    stroke: rgba(224,175,104,0.92); stroke-width: 1.8;
+  }
+  .viewer-editor-waveform-midline {
+    stroke: rgba(224,175,104,0.24); stroke-width: 1; stroke-dasharray: 4 5;
+  }
+  .viewer-editor-track {
+    position: relative; height: 38px; min-width: var(--viewer-editor-w, 960px); border: 1px solid var(--border);
+    border-radius: 6px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.055) 1px, transparent 1px) 0 0 / 8.333% 100%, rgba(10,12,22,0.24);
+  }
+  .viewer-editor-marker {
+    position: absolute; top: 0; bottom: 0; min-width: 16px;
+    border: 0; border-radius: 6px; background: transparent; cursor: pointer;
+    transform: translateX(-50%); padding: 0;
+  }
+  .viewer-editor-marker.range { transform: none; min-width: 14px; }
+  .viewer-editor-marker::before {
+    content: ""; position: absolute; left: 50%; top: 6px;
+    width: 11px; height: 22px; transform: translateX(-50%);
+    border: 1px solid rgba(255,255,255,0.24); border-radius: 999px;
+    background: var(--viewer-marker-color, var(--tc));
+  }
+  .viewer-editor-marker.range::before {
+    left: 0; right: 0; width: auto; transform: none;
+    background: var(--viewer-marker-color, rgba(158,206,106,0.72));
+  }
+  .viewer-editor-marker:hover,
+  .viewer-editor-marker:focus-visible,
+  .viewer-editor-density-bar:hover,
+  .viewer-editor-density-bar:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.38); outline-offset: 2px;
+    background: rgba(122,162,247,0.08);
+  }
+  .viewer-editor-marker.selected { outline: 2px solid var(--accent-warm); outline-offset: 2px; }
+  .viewer-editor-marker[data-kind="highlight"]::before { background: var(--viewer-marker-color, rgba(224,175,104,0.86)); }
+  .viewer-editor-marker[data-kind="highlight_candidate"]::before { background: var(--viewer-marker-color, rgba(247,118,142,0.78)); }
+  .viewer-editor-marker[data-kind="chapter"]::before { background: var(--viewer-marker-color, rgba(187,154,247,0.74)); }
+  .viewer-editor-marker[data-kind="existing_segments"]::before { background: var(--viewer-marker-color, rgba(122,162,247,0.86)); }
+  .viewer-editor-marker[data-kind="chat_laughter"]::before,
+  .viewer-editor-marker[data-kind="chat_surprise"]::before { background: var(--viewer-marker-color, rgba(247,118,142,0.82)); }
+  .viewer-editor-marker[data-kind="comment_replay"]::before { background: var(--viewer-marker-color, rgba(187,154,247,0.74)); }
+  .viewer-editor-marker[data-kind="viewer_clip"]::before { background: var(--viewer-marker-color, rgba(158,206,106,0.82)); }
+  .viewer-editor-marker[data-kind="audio_peak"]::before { background: var(--viewer-marker-color, rgba(224,175,104,0.86)); }
+  .viewer-editor-marker[data-kind="subtitle_density"]::before { background: var(--viewer-marker-color, rgba(125,207,255,0.76)); }
+  .viewer-editor-summary {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-bottom: 12px;
+  }
+  .viewer-editor-stat {
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.20); padding: 10px;
+  }
+  .viewer-editor-stat span { display: block; color: var(--muted); font-size: 11px; }
+  .viewer-editor-stat strong {
+    display: block; color: var(--text-strong); font-size: 14px; line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+  .viewer-editor-selected-card {
+    border: 1px solid var(--border); border-left: 4px solid var(--viewer-marker-color, var(--tc));
+    border-radius: 8px; background: rgba(10,12,22,0.22);
+    padding: 15px 16px 16px 18px; margin-bottom: 14px;
+  }
+  .viewer-editor-selected-kicker {
+    display: block; margin-bottom: 6px;
+    color: var(--muted); font-size: 12.5px; font-weight: 650;
+  }
+  .viewer-editor-selected-title {
+    color: var(--text-strong); font-size: 17px; line-height: 1.5; font-weight: 750;
+    overflow-wrap: anywhere;
+  }
+  .viewer-editor-selected-meta {
+    display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px;
+  }
+  .viewer-editor-chip {
+    display: inline-flex; align-items: center; min-height: 27px;
+    border: 1px solid rgba(122,162,247,0.26); border-radius: 999px;
+    background: rgba(122,162,247,0.09); color: var(--text);
+    padding: 4px 10px; font-size: 12.5px; line-height: 1.45; font-weight: 650;
+  }
+  a.viewer-editor-chip, .viewer-editor-time-link, .viewer-editor-evidence-link {
+    color: var(--tc); text-decoration: none; font-weight: 700;
+  }
+  a.viewer-editor-chip:hover, .viewer-editor-time-link:hover, .viewer-editor-evidence-link:hover {
+    text-decoration: underline;
+  }
+  .viewer-editor-chip.warning {
+    border-color: rgba(224,175,104,0.34);
+    background: rgba(224,175,104,0.10);
+  }
+  button.viewer-editor-chip {
+    cursor: pointer;
+    font: inherit;
+  }
+  .viewer-editor-chip.selected {
+    border-color: rgba(158,206,106,0.48);
+    background: rgba(158,206,106,0.13);
+    color: var(--text-strong);
+  }
+  .viewer-editor-target-picker {
+    border: 1px solid rgba(122,162,247,0.20);
+    border-radius: 8px;
+    background: rgba(122,162,247,0.055);
+    padding: 12px 13px;
+    margin: -4px 0 14px;
+  }
+  .viewer-editor-target-picker strong {
+    display: block; margin-bottom: 8px; color: var(--text-strong); font-size: 13px;
+  }
+  .viewer-editor-target-buttons {
+    display: flex; flex-wrap: wrap; gap: 7px;
+  }
+  .viewer-editor-guide {
+    margin: 0 0 14px; color: var(--muted); font-size: 14px; line-height: 1.7;
+  }
+  .viewer-editor-context {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch; gap: 12px; margin-bottom: 14px;
+  }
+  .viewer-editor-context-card {
+    border: 1px solid rgba(122,162,247,0.22); border-radius: 8px;
+    background: rgba(122,162,247,0.055); padding: 14px 15px; min-height: 124px;
+    color: var(--text); font-size: 14px; line-height: 1.72;
+  }
+  .viewer-editor-context-card strong {
+    display: block; margin-bottom: 8px; color: var(--text-strong); font-size: 14px; font-weight: 750;
+  }
+  .viewer-editor-context-line {
+    display: flex; gap: 10px; align-items: baseline; margin-top: 6px;
+  }
+  .viewer-editor-context-time {
+    flex: 0 0 auto; color: var(--tc);
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+    font-size: 12.5px; font-weight: 700;
+  }
+  .viewer-editor-context-text {
+    min-width: 0; color: var(--text); overflow-wrap: anywhere;
+  }
+  .viewer-editor-context-more {
+    margin-top: 7px; color: var(--muted); font-size: 13px;
+  }
+  .viewer-editor-context-more summary {
+    cursor: pointer; color: var(--tc); font-weight: 700;
+  }
+  .viewer-editor-context-more[open] summary { margin-bottom: 6px; }
+  .viewer-editor-list { display: grid; gap: 10px; }
+  .viewer-editor-row {
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.18); padding: 13px 14px;
+    color: var(--text); font-size: 14px; line-height: 1.72;
+  }
+  .viewer-editor-row strong { color: var(--text-strong); font-weight: 720; }
+  .viewer-editor-row-note {
+    margin-top: 7px; color: var(--muted); font-size: 13px; line-height: 1.6;
+  }
+  .viewer-editor-row.reason {
+    border-color: rgba(224,175,104,0.30);
+    background: rgba(224,175,104,0.08);
+  }
+  .viewer-editor-pre {
+    max-height: 300px; overflow: auto; margin: 10px 0 0;
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.32); padding: 12px;
+    color: var(--text); white-space: pre-wrap; word-break: break-word;
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+    font-size: 13px; line-height: 1.65;
+  }
+  .viewer-editor-status { color: var(--muted); font-size: 13px; min-height: 18px; }
+  .viewer-editor-empty { color: var(--muted); font-size: 14px; line-height: 1.65; padding: 10px 0; }
+  @media (max-width: 900px) {
+    .editor-entry { grid-template-columns: 1fr; align-items: start; }
+    .editor-entry-actions { justify-content: flex-start; }
+    .editor-split-shell { grid-template-columns: 1fr; grid-template-rows: minmax(240px, 42vh) 1fr; }
+    .editor-split-player { border-right: 0; border-bottom: 1px solid rgba(158,206,106,0.34); }
+    .editor-split-workspace { height: auto; min-height: 0; padding: 10px; }
+    .viewer-editor-head { grid-template-columns: 1fr; }
+    .viewer-editor-actions { justify-content: flex-start; }
+    .viewer-editor-grid { padding: 18px; }
+    .viewer-editor-summary { grid-template-columns: 1fr; }
+    .viewer-editor-context { grid-template-columns: 1fr; }
+  }
+
 
   .timeline { display: flex; flex-direction: column; gap: 12px; }
   .t-item {
@@ -344,7 +881,1618 @@
     .stats { grid-template-columns: repeat(2, 1fr); }
   }
 
+  .editor-jump {
+    margin-top: 18px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  .editor-jump-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    min-height: 40px; padding: 9px 14px; border-radius: 8px;
+    border: 1px solid rgba(158,206,106,0.36);
+    background: rgba(158,206,106,0.12); color: var(--text-strong);
+    font-size: 13px; font-weight: 700; text-decoration: none;
+  }
+  .editor-jump-link:hover {
+    background: rgba(158,206,106,0.18); text-decoration: none;
+  }
+  .editor-jump-note { color: var(--muted); font-size: 12px; }
+  .report-editor-inline-button,
+  .report-editor-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 38px; padding: 0 15px; border: 1px solid rgba(158,206,106,0.56);
+    border-radius: 8px; background: rgba(158,206,106,0.16);
+    color: var(--text-strong, #f8fafc) !important;
+    font: 800 13px/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    text-decoration: none; cursor: pointer; box-shadow: none;
+  }
+  .report-editor-inline-button { margin-left: 0; vertical-align: middle; }
+  .report-editor-entry {
+    display: inline-flex !important; align-items: center; gap: 8px; flex-wrap: wrap;
+    margin-top: 14px; padding: 0; border: 0; border-radius: 0; background: transparent;
+  }
+  .report-editor-entry .editor-entry-status {
+    display: inline-flex; align-items: center; min-height: 16px;
+    color: var(--muted); font-size: 12px; line-height: 1.45;
+  }
+  .report-editor-entry[data-editor-entry-state="installed"] .editor-entry-status { color: var(--accent); }
+  .report-editor-entry[data-editor-entry-state="missing"] .editor-entry-status,
+  .report-editor-entry[data-editor-entry-state="fallback"] .editor-entry-status { color: #a9b1d6; }
+  .report-editor-entry[data-editor-entry-state="loading"] .editor-entry-status { color: var(--accent-warm); }
+  .report-editor-entry[data-editor-entry-state="error"] .editor-entry-status { color: #f7768e; }
+  .report-editor-entry .editor-jump-link {
+    display: inline-flex !important; align-items: center; justify-content: center;
+    width: 38px; min-width: 38px; min-height: 38px; padding: 0 !important;
+    border: 1px solid var(--border-soft, rgba(148,163,184,0.22)) !important;
+    border-radius: 8px !important; background: rgba(255,255,255,0.04) !important;
+    color: var(--muted, rgba(226,232,240,0.72)) !important;
+    text-decoration: none !important;
+  }
+  .report-editor-entry .editor-jump-link svg {
+    width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2;
+    stroke-linecap: round; stroke-linejoin: round;
+  }
+  .report-editor-visually-hidden {
+    position: absolute !important; width: 1px !important; height: 1px !important;
+    padding: 0 !important; margin: -1px !important; overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;
+  }
+  .report-editor-inline-button:hover,
+  .report-editor-inline-button:focus-visible,
+  .report-editor-toggle:hover,
+  .report-editor-toggle:focus-visible {
+    background: rgba(158,206,106,0.28);
+    outline: 3px solid rgba(158,206,106,0.26); outline-offset: 2px;
+  }
+  .report-editor-entry .editor-jump-link:hover,
+  .report-editor-entry .editor-jump-link:focus-visible {
+    color: var(--text-strong, #f8fafc) !important;
+    border-color: rgba(158,206,106,0.42) !important;
+    background: rgba(158,206,106,0.10) !important;
+    outline: 3px solid rgba(158,206,106,0.22); outline-offset: 2px;
+  }
+  .report-editor-nav-button {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 31px; padding: 0 10px; border: 1px solid rgba(158,206,106,0.42);
+    border-radius: 8px; background: rgba(158,206,106,0.12);
+    color: var(--text-strong, #e8ebf3) !important;
+    font: 800 12px/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    white-space: nowrap; cursor: pointer;
+  }
+  .report-editor-nav-button:hover,
+  .report-editor-nav-button:focus-visible {
+    border-color: rgba(158,206,106,0.62); background: rgba(158,206,106,0.22);
+    outline: 2px solid rgba(158,206,106,0.24); outline-offset: 2px;
+  }
+  .editor-entry {
+    margin-top: 18px; display: grid; grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px; align-items: center; padding: 10px 12px; border-radius: 8px;
+    border: 1px solid rgba(158,206,106,0.32);
+    background: rgba(36,40,59,0.78);
+  }
+  .editor-entry-copy { min-width: 0; }
+  .editor-entry-title {
+    display: block; color: var(--text-strong); font-size: 14px; font-weight: 760;
+    line-height: 1.35; margin-bottom: 2px;
+  }
+  .editor-entry-status {
+    display: block; min-height: 16px; color: var(--muted); font-size: 12px;
+    line-height: 1.45;
+  }
+  .editor-entry[data-editor-entry-state="installed"] .editor-entry-status { color: var(--accent); }
+  .editor-entry[data-editor-entry-state="missing"] .editor-entry-status,
+  .editor-entry[data-editor-entry-state="fallback"] .editor-entry-status { color: #a9b1d6; }
+  .editor-entry[data-editor-entry-state="loading"] .editor-entry-status { color: var(--accent-warm); }
+  .editor-entry[data-editor-entry-state="error"] .editor-entry-status { color: #f7768e; }
+  .editor-entry-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+  .editor-entry-button {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 36px; padding: 8px 12px; border-radius: 8px; text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.16); color: var(--muted);
+    background: rgba(255,255,255,0.045); font-size: 13px; font-weight: 720;
+  }
+  .editor-entry-button.primary {
+    border-color: rgba(158,206,106,0.46);
+    background: rgba(158,206,106,0.16); color: var(--text-strong);
+  }
+  .editor-entry-button:hover {
+    background: rgba(255,255,255,0.075); color: var(--text-strong); text-decoration: none;
+  }
+  .editor-entry-button.primary:hover { background: rgba(158,206,106,0.23); }
+  .editor-entry-button:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.62); outline-offset: 2px;
+  }
+  .editor-split-shell {
+    position: fixed; inset: 0; z-index: 10000; display: grid;
+    grid-template-columns: minmax(420px, 52vw) minmax(420px, 1fr);
+    background: var(--bg); color: var(--text);
+  }
+  body.editor-split-active { overflow: hidden; }
+  .editor-split-player {
+    min-width: 0; border-right: 1px solid rgba(158,206,106,0.34);
+    background: #05070d; display: grid; grid-template-rows: auto 1fr auto;
+  }
+  .editor-split-toolbar {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    min-height: 48px; padding: 9px 12px; border-bottom: 1px solid rgba(255,255,255,0.10);
+    background: rgba(15,18,30,0.96);
+  }
+  .editor-split-title {
+    min-width: 0; color: var(--text-strong); font-size: 13px; font-weight: 760;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .editor-split-actions { display: flex; gap: 8px; align-items: center; flex-shrink: 0; }
+  .editor-split-action {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 34px; padding: 7px 10px; border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.16); background: rgba(255,255,255,0.055);
+    color: var(--text-strong); font-size: 12px; font-weight: 720; text-decoration: none; cursor: pointer;
+  }
+  .editor-split-action:hover { background: rgba(255,255,255,0.09); text-decoration: none; }
+  .editor-split-frame {
+    width: 100%; height: 100%; border: 0; background: #05070d; display: block;
+  }
+  .editor-split-workspace {
+    min-width: 0; height: 100vh; overflow: auto; background: var(--bg);
+    padding: 16px;
+  }
+  .editor-split-workspace .viewer-editor-tools {
+    margin: 0; min-height: calc(100vh - 32px);
+  }
+  .editor-split-placeholder { display: none; }
+  .editor-split-fallback {
+    padding: 12px; color: var(--muted); font-size: 12px; line-height: 1.55;
+    border-top: 1px solid rgba(255,255,255,0.10); background: rgba(15,18,30,0.96);
+  }
+  .viewer-editor-tools {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-color: rgba(158,206,106,0.34);
+    background: linear-gradient(180deg, rgba(158,206,106,0.055), transparent 170px), var(--surface);
+  }
+  .viewer-editor-head {
+    display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px;
+    align-items: start; padding: 22px 24px; border-bottom: 1px solid var(--border-soft);
+  }
+  .viewer-editor-title {
+    margin: 0 0 6px; color: var(--text-strong);
+    font-size: 21px; line-height: 1.35; letter-spacing: 0;
+  }
+  .viewer-editor-lead {
+    margin: 0; color: var(--muted); font-size: 14px; line-height: 1.65;
+  }
+  .viewer-editor-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+  .viewer-editor-button {
+    appearance: none; border: 1px solid rgba(122,162,247,0.38); cursor: pointer;
+    background: rgba(122,162,247,0.12); color: var(--text-strong);
+    padding: 10px 13px; border-radius: 8px; font-size: 13px; font-weight: 700;
+  }
+  .viewer-editor-button:hover { background: rgba(122,162,247,0.18); }
+  .viewer-editor-button.secondary {
+    border-color: rgba(255,255,255,0.16);
+    background: rgba(255,255,255,0.045); color: var(--muted);
+  }
+  .viewer-editor-button.secondary:hover { background: rgba(255,255,255,0.075); color: var(--text-strong); }
+  .viewer-editor-button:disabled {
+    opacity: 0.46; cursor: not-allowed; background: rgba(255,255,255,0.035);
+  }
+  .viewer-editor-button:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.62); outline-offset: 2px;
+  }
+  .viewer-editor-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 22px;
+    padding: 26px 24px 28px;
+  }
+  .viewer-editor-panel {
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(26,27,38,0.34); padding: 18px; min-width: 0; width: 100%;
+  }
+  .viewer-editor-panel.evidence-panel,
+  .viewer-editor-panel.cut-panel {
+    background: rgba(26,27,38,0.46);
+  }
+  .viewer-editor-panel h3 {
+    margin: 0 0 10px; color: var(--text-strong);
+    font-size: 17px; line-height: 1.4; letter-spacing: 0; font-weight: 750;
+  }
+  .viewer-editor-panel.cut-panel > summary {
+    cursor: pointer; margin: 0; color: var(--text-strong);
+    font-size: 17px; line-height: 1.4; letter-spacing: 0; font-weight: 750;
+    list-style: none;
+  }
+  .viewer-editor-panel.cut-panel > summary::-webkit-details-marker { display: none; }
+  .viewer-editor-panel.cut-panel > summary::before {
+    content: "▸"; display: inline-block; margin-right: 8px;
+    color: var(--muted); transition: transform 160ms ease;
+  }
+  .viewer-editor-panel.cut-panel[open] > summary::before { transform: rotate(90deg); }
+  .viewer-editor-panel.cut-panel > summary:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.62); outline-offset: 3px;
+    border-radius: 6px;
+  }
+  .viewer-editor-panel.cut-panel[open] > summary { margin-bottom: 10px; }
+  .viewer-editor-panel p {
+    margin: 0 0 14px; color: var(--muted); font-size: 14px; line-height: 1.75;
+    max-width: 72ch;
+  }
+  .viewer-editor-filter {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px;
+    color: var(--muted); font-size: 13px;
+  }
+  .viewer-editor-filter select {
+    min-height: 34px; border: 1px solid var(--border); border-radius: 8px;
+    background: var(--surface-2); color: var(--text); padding: 6px 9px; font: inherit;
+  }
+  .viewer-editor-axis {
+    overflow-x: auto; border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.24); padding: 8px;
+    overscroll-behavior: contain;
+    touch-action: pan-x;
+  }
+  .viewer-editor-zoom {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 0 0 10px;
+    color: var(--muted); font-size: 12px;
+  }
+  .viewer-editor-zoom button,
+  .viewer-editor-zoom-btn {
+    appearance: none; -webkit-appearance: none;
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 34px; min-height: 32px; padding: 0 10px;
+    border: 1px solid rgba(122,162,247,0.38);
+    border-radius: 8px; background: rgba(122,162,247,0.12); color: var(--text-strong);
+    cursor: pointer; font: inherit; font-size: 12px; font-weight: 700;
+    line-height: 1;
+  }
+  .viewer-editor-zoom button:hover,
+  .viewer-editor-zoom-btn:hover { background: rgba(122,162,247,0.20); }
+  .viewer-editor-zoom button:focus-visible,
+  .viewer-editor-zoom-btn:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.55); outline-offset: 2px;
+  }
+  .viewer-editor-zoom input[type="range"] { width: min(220px, 100%); }
+  .viewer-editor-zoom-value {
+    min-width: 44px; color: var(--text-strong);
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+  }
+  .viewer-editor-axis-canvas {
+    display: grid; gap: 10px; min-width: calc(var(--viewer-editor-w, 960px) + 144px);
+  }
+  .viewer-editor-scale-row,
+  .viewer-editor-density-row,
+  .viewer-editor-waveform-row,
+  .viewer-editor-lane-row {
+    display: grid; grid-template-columns: 136px var(--viewer-editor-w, 960px);
+    gap: 8px; align-items: center;
+  }
+  .viewer-editor-lane-label,
+  .viewer-editor-scale-label,
+  .viewer-editor-density-label,
+  .viewer-editor-waveform-label {
+    position: sticky; left: 0; z-index: 2;
+    display: flex; flex-direction: column; justify-content: center;
+    min-height: 36px; padding: 6px 8px; border-radius: 6px;
+    background: rgba(26,27,38,0.96); color: var(--muted);
+    font-size: 12px; line-height: 1.32;
+  }
+  .viewer-editor-lane-label strong,
+  .viewer-editor-density-label strong,
+  .viewer-editor-waveform-label strong,
+  .viewer-editor-scale-label strong {
+    color: var(--text-strong); font-size: 12px;
+  }
+  .viewer-editor-lane-label span,
+  .viewer-editor-density-label span,
+  .viewer-editor-waveform-label span,
+  .viewer-editor-scale-label span {
+    color: var(--muted); font-size: 11px;
+  }
+  .viewer-editor-scale {
+    position: relative; height: 24px; min-width: var(--viewer-editor-w, 960px); border-radius: 6px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px) 0 0 / 8.333% 100%;
+  }
+  .viewer-editor-scale span {
+    position: absolute; top: 3px; transform: translateX(-50%);
+    color: var(--muted); font-size: 10px; white-space: nowrap;
+  }
+  .viewer-editor-density {
+    position: relative; height: 42px; min-width: var(--viewer-editor-w, 960px); border: 1px solid var(--border);
+    border-radius: 6px; background: rgba(10,12,22,0.34);
+  }
+  .viewer-editor-density-bar {
+    position: absolute; bottom: 0; min-width: 1px; height: 100%;
+    border: 0; border-radius: 4px; background: transparent; cursor: pointer; padding: 0;
+    box-sizing: border-box;
+  }
+  .viewer-editor-density-bar span {
+    position: absolute; left: 0; right: 0; bottom: 0; display: block;
+    height: var(--bar-h, 3px); min-height: 3px; border-radius: 3px 3px 0 0;
+    background: rgba(247,118,142,0.52);
+  }
+  .viewer-editor-density-bar span::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0;
+    height: var(--global-h, 0px); min-height: 0; border-radius: 3px 3px 0 0;
+    background: rgba(255,255,255,0.20);
+  }
+  .viewer-editor-density-bar.low span { min-height: 5px; }
+  .viewer-editor-density-bar.zero span {
+    height: 2px; min-height: 2px; background: rgba(154,165,190,0.26);
+  }
+  .viewer-editor-density-bar.missing span {
+    height: 2px; min-height: 2px;
+    background: repeating-linear-gradient(90deg, rgba(154,165,190,0.32) 0 3px, transparent 3px 6px);
+  }
+  .viewer-editor-density-bar.hot span { background: rgba(247,118,142,0.82); }
+  .viewer-editor-waveform {
+    position: relative; height: 46px; min-width: var(--viewer-editor-w, 960px);
+    border: 1px solid rgba(224,175,104,0.20); border-radius: 6px;
+    background:
+      linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px) 0 0 / 8.333% 100%,
+      linear-gradient(180deg, rgba(224,175,104,0.05), rgba(10,12,22,0.22));
+    overflow: hidden;
+  }
+  .viewer-editor-waveform svg {
+    position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none;
+  }
+  .viewer-editor-waveform-bar {
+    stroke: rgba(184,194,215,0.58); stroke-width: 1.35;
+    stroke-linecap: round; vector-effect: non-scaling-stroke;
+  }
+  .viewer-editor-waveform-bar.hot {
+    stroke: rgba(224,175,104,0.92); stroke-width: 1.8;
+  }
+  .viewer-editor-waveform-midline {
+    stroke: rgba(224,175,104,0.24); stroke-width: 1; stroke-dasharray: 4 5;
+  }
+  .viewer-editor-track {
+    position: relative; height: 38px; min-width: var(--viewer-editor-w, 960px); border: 1px solid var(--border);
+    border-radius: 6px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.055) 1px, transparent 1px) 0 0 / 8.333% 100%, rgba(10,12,22,0.24);
+  }
+  .viewer-editor-marker {
+    position: absolute; top: 0; bottom: 0; min-width: 16px;
+    border: 0; border-radius: 6px; background: transparent; cursor: pointer;
+    transform: translateX(-50%); padding: 0;
+  }
+  .viewer-editor-marker.range { transform: none; min-width: 14px; }
+  .viewer-editor-marker::before {
+    content: ""; position: absolute; left: 50%; top: 6px;
+    width: 11px; height: 22px; transform: translateX(-50%);
+    border: 1px solid rgba(255,255,255,0.24); border-radius: 999px;
+    background: var(--viewer-marker-color, var(--tc));
+  }
+  .viewer-editor-marker.range::before {
+    left: 0; right: 0; width: auto; transform: none;
+    background: var(--viewer-marker-color, rgba(158,206,106,0.72));
+  }
+  .viewer-editor-marker:hover,
+  .viewer-editor-marker:focus-visible,
+  .viewer-editor-density-bar:hover,
+  .viewer-editor-density-bar:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.38); outline-offset: 2px;
+    background: rgba(122,162,247,0.08);
+  }
+  .viewer-editor-marker.selected { outline: 2px solid var(--accent-warm); outline-offset: 2px; }
+  .viewer-editor-marker[data-kind="highlight"]::before { background: var(--viewer-marker-color, rgba(224,175,104,0.86)); }
+  .viewer-editor-marker[data-kind="highlight_candidate"]::before { background: var(--viewer-marker-color, rgba(247,118,142,0.78)); }
+  .viewer-editor-marker[data-kind="chapter"]::before { background: var(--viewer-marker-color, rgba(187,154,247,0.74)); }
+  .viewer-editor-marker[data-kind="existing_segments"]::before { background: var(--viewer-marker-color, rgba(122,162,247,0.86)); }
+  .viewer-editor-marker[data-kind="chat_laughter"]::before,
+  .viewer-editor-marker[data-kind="chat_surprise"]::before { background: var(--viewer-marker-color, rgba(247,118,142,0.82)); }
+  .viewer-editor-marker[data-kind="comment_replay"]::before { background: var(--viewer-marker-color, rgba(187,154,247,0.74)); }
+  .viewer-editor-marker[data-kind="viewer_clip"]::before { background: var(--viewer-marker-color, rgba(158,206,106,0.82)); }
+  .viewer-editor-marker[data-kind="audio_peak"]::before { background: var(--viewer-marker-color, rgba(224,175,104,0.86)); }
+  .viewer-editor-marker[data-kind="subtitle_density"]::before { background: var(--viewer-marker-color, rgba(125,207,255,0.76)); }
+  .viewer-editor-summary {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-bottom: 12px;
+  }
+  .viewer-editor-stat {
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.20); padding: 10px;
+  }
+  .viewer-editor-stat span { display: block; color: var(--muted); font-size: 11px; }
+  .viewer-editor-stat strong {
+    display: block; color: var(--text-strong); font-size: 14px; line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+  .viewer-editor-selected-card {
+    border: 1px solid var(--border); border-left: 4px solid var(--viewer-marker-color, var(--tc));
+    border-radius: 8px; background: rgba(10,12,22,0.22);
+    padding: 15px 16px 16px 18px; margin-bottom: 14px;
+  }
+  .viewer-editor-selected-kicker {
+    display: block; margin-bottom: 6px;
+    color: var(--muted); font-size: 12.5px; font-weight: 650;
+  }
+  .viewer-editor-selected-title {
+    color: var(--text-strong); font-size: 17px; line-height: 1.5; font-weight: 750;
+    overflow-wrap: anywhere;
+  }
+  .viewer-editor-selected-meta {
+    display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px;
+  }
+  .viewer-editor-chip {
+    display: inline-flex; align-items: center; min-height: 27px;
+    border: 1px solid rgba(122,162,247,0.26); border-radius: 999px;
+    background: rgba(122,162,247,0.09); color: var(--text);
+    padding: 4px 10px; font-size: 12.5px; line-height: 1.45; font-weight: 650;
+  }
+  a.viewer-editor-chip, .viewer-editor-time-link, .viewer-editor-evidence-link {
+    color: var(--tc); text-decoration: none; font-weight: 700;
+  }
+  a.viewer-editor-chip:hover, .viewer-editor-time-link:hover, .viewer-editor-evidence-link:hover {
+    text-decoration: underline;
+  }
+  .viewer-editor-chip.warning {
+    border-color: rgba(224,175,104,0.34);
+    background: rgba(224,175,104,0.10);
+  }
+  button.viewer-editor-chip {
+    cursor: pointer;
+    font: inherit;
+  }
+  .viewer-editor-chip.selected {
+    border-color: rgba(158,206,106,0.48);
+    background: rgba(158,206,106,0.13);
+    color: var(--text-strong);
+  }
+  .viewer-editor-target-picker {
+    border: 1px solid rgba(122,162,247,0.20);
+    border-radius: 8px;
+    background: rgba(122,162,247,0.055);
+    padding: 12px 13px;
+    margin: -4px 0 14px;
+  }
+  .viewer-editor-target-picker strong {
+    display: block; margin-bottom: 8px; color: var(--text-strong); font-size: 13px;
+  }
+  .viewer-editor-target-buttons {
+    display: flex; flex-wrap: wrap; gap: 7px;
+  }
+  .viewer-editor-guide {
+    margin: 0 0 14px; color: var(--muted); font-size: 14px; line-height: 1.7;
+  }
+  .viewer-editor-context {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch; gap: 12px; margin-bottom: 14px;
+  }
+  .viewer-editor-context-card {
+    border: 1px solid rgba(122,162,247,0.22); border-radius: 8px;
+    background: rgba(122,162,247,0.055); padding: 14px 15px; min-height: 124px;
+    color: var(--text); font-size: 14px; line-height: 1.72;
+  }
+  .viewer-editor-context-card strong {
+    display: block; margin-bottom: 8px; color: var(--text-strong); font-size: 14px; font-weight: 750;
+  }
+  .viewer-editor-context-line {
+    display: flex; gap: 10px; align-items: baseline; margin-top: 6px;
+  }
+  .viewer-editor-context-time {
+    flex: 0 0 auto; color: var(--tc);
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+    font-size: 12.5px; font-weight: 700;
+  }
+  .viewer-editor-context-text {
+    min-width: 0; color: var(--text); overflow-wrap: anywhere;
+  }
+  .viewer-editor-context-more {
+    margin-top: 7px; color: var(--muted); font-size: 13px;
+  }
+  .viewer-editor-context-more summary {
+    cursor: pointer; color: var(--tc); font-weight: 700;
+  }
+  .viewer-editor-context-more[open] summary { margin-bottom: 6px; }
+  .viewer-editor-list { display: grid; gap: 10px; }
+  .viewer-editor-row {
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.18); padding: 13px 14px;
+    color: var(--text); font-size: 14px; line-height: 1.72;
+  }
+  .viewer-editor-row strong { color: var(--text-strong); font-weight: 720; }
+  .viewer-editor-row-note {
+    margin-top: 7px; color: var(--muted); font-size: 13px; line-height: 1.6;
+  }
+  .viewer-editor-row.reason {
+    border-color: rgba(224,175,104,0.30);
+    background: rgba(224,175,104,0.08);
+  }
+  .viewer-editor-pre {
+    max-height: 300px; overflow: auto; margin: 10px 0 0;
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.32); padding: 12px;
+    color: var(--text); white-space: pre-wrap; word-break: break-word;
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+    font-size: 13px; line-height: 1.65;
+  }
+  .viewer-editor-status { color: var(--muted); font-size: 13px; min-height: 18px; }
+  .viewer-editor-empty { color: var(--muted); font-size: 14px; line-height: 1.65; padding: 10px 0; }
+  @media (max-width: 900px) {
+    .editor-entry { grid-template-columns: 1fr; align-items: start; }
+    .editor-entry-actions { justify-content: flex-start; }
+    .editor-split-shell { grid-template-columns: 1fr; grid-template-rows: minmax(240px, 42vh) 1fr; }
+    .editor-split-player { border-right: 0; border-bottom: 1px solid rgba(158,206,106,0.34); }
+    .editor-split-workspace { height: auto; min-height: 0; padding: 10px; }
+    .viewer-editor-head { grid-template-columns: 1fr; }
+    .viewer-editor-actions { justify-content: flex-start; }
+    .viewer-editor-grid { padding: 18px; }
+    .viewer-editor-summary { grid-template-columns: 1fr; }
+    .viewer-editor-context { grid-template-columns: 1fr; }
+  }
 
+
+  .editor-jump {
+    margin-top: 18px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  .editor-jump-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    min-height: 40px; padding: 9px 14px; border-radius: 8px;
+    border: 1px solid rgba(158,206,106,0.36);
+    background: rgba(158,206,106,0.12); color: var(--text-strong);
+    font-size: 13px; font-weight: 700; text-decoration: none;
+  }
+  .editor-jump-link:hover {
+    background: rgba(158,206,106,0.18); text-decoration: none;
+  }
+  .editor-jump-note { color: var(--muted); font-size: 12px; }
+  .report-editor-inline-button,
+  .report-editor-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 38px; padding: 0 15px; border: 1px solid rgba(158,206,106,0.56);
+    border-radius: 8px; background: rgba(158,206,106,0.16);
+    color: var(--text-strong, #f8fafc) !important;
+    font: 800 13px/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    text-decoration: none; cursor: pointer; box-shadow: none;
+  }
+  .report-editor-inline-button { margin-left: 0; vertical-align: middle; }
+  .report-editor-entry {
+    display: inline-flex !important; align-items: center; gap: 8px; flex-wrap: wrap;
+    margin-top: 14px; padding: 0; border: 0; border-radius: 0; background: transparent;
+  }
+  .report-editor-entry .editor-entry-status {
+    display: inline-flex; align-items: center; min-height: 16px;
+    color: var(--muted); font-size: 12px; line-height: 1.45;
+  }
+  .report-editor-entry[data-editor-entry-state="installed"] .editor-entry-status { color: var(--accent); }
+  .report-editor-entry[data-editor-entry-state="missing"] .editor-entry-status,
+  .report-editor-entry[data-editor-entry-state="fallback"] .editor-entry-status { color: #a9b1d6; }
+  .report-editor-entry[data-editor-entry-state="loading"] .editor-entry-status { color: var(--accent-warm); }
+  .report-editor-entry[data-editor-entry-state="error"] .editor-entry-status { color: #f7768e; }
+  .report-editor-entry .editor-jump-link {
+    display: inline-flex !important; align-items: center; justify-content: center;
+    width: 38px; min-width: 38px; min-height: 38px; padding: 0 !important;
+    border: 1px solid var(--border-soft, rgba(148,163,184,0.22)) !important;
+    border-radius: 8px !important; background: rgba(255,255,255,0.04) !important;
+    color: var(--muted, rgba(226,232,240,0.72)) !important;
+    text-decoration: none !important;
+  }
+  .report-editor-entry .editor-jump-link svg {
+    width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2;
+    stroke-linecap: round; stroke-linejoin: round;
+  }
+  .report-editor-visually-hidden {
+    position: absolute !important; width: 1px !important; height: 1px !important;
+    padding: 0 !important; margin: -1px !important; overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;
+  }
+  .report-editor-inline-button:hover,
+  .report-editor-inline-button:focus-visible,
+  .report-editor-toggle:hover,
+  .report-editor-toggle:focus-visible {
+    background: rgba(158,206,106,0.28);
+    outline: 3px solid rgba(158,206,106,0.26); outline-offset: 2px;
+  }
+  .report-editor-entry .editor-jump-link:hover,
+  .report-editor-entry .editor-jump-link:focus-visible {
+    color: var(--text-strong, #f8fafc) !important;
+    border-color: rgba(158,206,106,0.42) !important;
+    background: rgba(158,206,106,0.10) !important;
+    outline: 3px solid rgba(158,206,106,0.22); outline-offset: 2px;
+  }
+  .report-editor-nav-button {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 31px; padding: 0 10px; border: 1px solid rgba(158,206,106,0.42);
+    border-radius: 8px; background: rgba(158,206,106,0.12);
+    color: var(--text-strong, #e8ebf3) !important;
+    font: 800 12px/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    white-space: nowrap; cursor: pointer;
+  }
+  .report-editor-nav-button:hover,
+  .report-editor-nav-button:focus-visible {
+    border-color: rgba(158,206,106,0.62); background: rgba(158,206,106,0.22);
+    outline: 2px solid rgba(158,206,106,0.24); outline-offset: 2px;
+  }
+  .editor-entry {
+    margin-top: 18px; display: grid; grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px; align-items: center; padding: 10px 12px; border-radius: 8px;
+    border: 1px solid rgba(158,206,106,0.32);
+    background: rgba(36,40,59,0.78);
+  }
+  .editor-entry-copy { min-width: 0; }
+  .editor-entry-title {
+    display: block; color: var(--text-strong); font-size: 14px; font-weight: 760;
+    line-height: 1.35; margin-bottom: 2px;
+  }
+  .editor-entry-status {
+    display: block; min-height: 16px; color: var(--muted); font-size: 12px;
+    line-height: 1.45;
+  }
+  .editor-entry[data-editor-entry-state="installed"] .editor-entry-status { color: var(--accent); }
+  .editor-entry[data-editor-entry-state="missing"] .editor-entry-status,
+  .editor-entry[data-editor-entry-state="fallback"] .editor-entry-status { color: #a9b1d6; }
+  .editor-entry[data-editor-entry-state="loading"] .editor-entry-status { color: var(--accent-warm); }
+  .editor-entry[data-editor-entry-state="error"] .editor-entry-status { color: #f7768e; }
+  .editor-entry-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+  .editor-entry-button {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 36px; padding: 8px 12px; border-radius: 8px; text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.16); color: var(--muted);
+    background: rgba(255,255,255,0.045); font-size: 13px; font-weight: 720;
+  }
+  .editor-entry-button.primary {
+    border-color: rgba(158,206,106,0.46);
+    background: rgba(158,206,106,0.16); color: var(--text-strong);
+  }
+  .editor-entry-button:hover {
+    background: rgba(255,255,255,0.075); color: var(--text-strong); text-decoration: none;
+  }
+  .editor-entry-button.primary:hover { background: rgba(158,206,106,0.23); }
+  .editor-entry-button:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.62); outline-offset: 2px;
+  }
+  .editor-split-shell {
+    position: fixed; inset: 0; z-index: 10000; display: grid;
+    grid-template-columns: minmax(420px, 52vw) minmax(420px, 1fr);
+    background: var(--bg); color: var(--text);
+  }
+  body.editor-split-active { overflow: hidden; }
+  .editor-split-player {
+    min-width: 0; border-right: 1px solid rgba(158,206,106,0.34);
+    background: #05070d; display: grid; grid-template-rows: auto 1fr auto;
+  }
+  .editor-split-toolbar {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    min-height: 48px; padding: 9px 12px; border-bottom: 1px solid rgba(255,255,255,0.10);
+    background: rgba(15,18,30,0.96);
+  }
+  .editor-split-title {
+    min-width: 0; color: var(--text-strong); font-size: 13px; font-weight: 760;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .editor-split-actions { display: flex; gap: 8px; align-items: center; flex-shrink: 0; }
+  .editor-split-action {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 34px; padding: 7px 10px; border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.16); background: rgba(255,255,255,0.055);
+    color: var(--text-strong); font-size: 12px; font-weight: 720; text-decoration: none; cursor: pointer;
+  }
+  .editor-split-action:hover { background: rgba(255,255,255,0.09); text-decoration: none; }
+  .editor-split-frame {
+    width: 100%; height: 100%; border: 0; background: #05070d; display: block;
+  }
+  .editor-split-workspace {
+    min-width: 0; height: 100vh; overflow: auto; background: var(--bg);
+    padding: 16px;
+  }
+  .editor-split-workspace .viewer-editor-tools {
+    margin: 0; min-height: calc(100vh - 32px);
+  }
+  .editor-split-placeholder { display: none; }
+  .editor-split-fallback {
+    padding: 12px; color: var(--muted); font-size: 12px; line-height: 1.55;
+    border-top: 1px solid rgba(255,255,255,0.10); background: rgba(15,18,30,0.96);
+  }
+  .viewer-editor-tools {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-color: rgba(158,206,106,0.34);
+    background: linear-gradient(180deg, rgba(158,206,106,0.055), transparent 170px), var(--surface);
+  }
+  .viewer-editor-head {
+    display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px;
+    align-items: start; padding: 22px 24px; border-bottom: 1px solid var(--border-soft);
+  }
+  .viewer-editor-title {
+    margin: 0 0 6px; color: var(--text-strong);
+    font-size: 21px; line-height: 1.35; letter-spacing: 0;
+  }
+  .viewer-editor-lead {
+    margin: 0; color: var(--muted); font-size: 14px; line-height: 1.65;
+  }
+  .viewer-editor-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+  .viewer-editor-button {
+    appearance: none; border: 1px solid rgba(122,162,247,0.38); cursor: pointer;
+    background: rgba(122,162,247,0.12); color: var(--text-strong);
+    padding: 10px 13px; border-radius: 8px; font-size: 13px; font-weight: 700;
+  }
+  .viewer-editor-button:hover { background: rgba(122,162,247,0.18); }
+  .viewer-editor-button.secondary {
+    border-color: rgba(255,255,255,0.16);
+    background: rgba(255,255,255,0.045); color: var(--muted);
+  }
+  .viewer-editor-button.secondary:hover { background: rgba(255,255,255,0.075); color: var(--text-strong); }
+  .viewer-editor-button:disabled {
+    opacity: 0.46; cursor: not-allowed; background: rgba(255,255,255,0.035);
+  }
+  .viewer-editor-button:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.62); outline-offset: 2px;
+  }
+  .viewer-editor-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 22px;
+    padding: 26px 24px 28px;
+  }
+  .viewer-editor-panel {
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(26,27,38,0.34); padding: 18px; min-width: 0; width: 100%;
+  }
+  .viewer-editor-panel.evidence-panel,
+  .viewer-editor-panel.cut-panel {
+    background: rgba(26,27,38,0.46);
+  }
+  .viewer-editor-panel h3 {
+    margin: 0 0 10px; color: var(--text-strong);
+    font-size: 17px; line-height: 1.4; letter-spacing: 0; font-weight: 750;
+  }
+  .viewer-editor-panel.cut-panel > summary {
+    cursor: pointer; margin: 0; color: var(--text-strong);
+    font-size: 17px; line-height: 1.4; letter-spacing: 0; font-weight: 750;
+    list-style: none;
+  }
+  .viewer-editor-panel.cut-panel > summary::-webkit-details-marker { display: none; }
+  .viewer-editor-panel.cut-panel > summary::before {
+    content: "▸"; display: inline-block; margin-right: 8px;
+    color: var(--muted); transition: transform 160ms ease;
+  }
+  .viewer-editor-panel.cut-panel[open] > summary::before { transform: rotate(90deg); }
+  .viewer-editor-panel.cut-panel > summary:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.62); outline-offset: 3px;
+    border-radius: 6px;
+  }
+  .viewer-editor-panel.cut-panel[open] > summary { margin-bottom: 10px; }
+  .viewer-editor-panel p {
+    margin: 0 0 14px; color: var(--muted); font-size: 14px; line-height: 1.75;
+    max-width: 72ch;
+  }
+  .viewer-editor-filter {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px;
+    color: var(--muted); font-size: 13px;
+  }
+  .viewer-editor-filter select {
+    min-height: 34px; border: 1px solid var(--border); border-radius: 8px;
+    background: var(--surface-2); color: var(--text); padding: 6px 9px; font: inherit;
+  }
+  .viewer-editor-axis {
+    overflow-x: auto; border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.24); padding: 8px;
+    overscroll-behavior: contain;
+    touch-action: pan-x;
+  }
+  .viewer-editor-zoom {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 0 0 10px;
+    color: var(--muted); font-size: 12px;
+  }
+  .viewer-editor-zoom button,
+  .viewer-editor-zoom-btn {
+    appearance: none; -webkit-appearance: none;
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 34px; min-height: 32px; padding: 0 10px;
+    border: 1px solid rgba(122,162,247,0.38);
+    border-radius: 8px; background: rgba(122,162,247,0.12); color: var(--text-strong);
+    cursor: pointer; font: inherit; font-size: 12px; font-weight: 700;
+    line-height: 1;
+  }
+  .viewer-editor-zoom button:hover,
+  .viewer-editor-zoom-btn:hover { background: rgba(122,162,247,0.20); }
+  .viewer-editor-zoom button:focus-visible,
+  .viewer-editor-zoom-btn:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.55); outline-offset: 2px;
+  }
+  .viewer-editor-zoom input[type="range"] { width: min(220px, 100%); }
+  .viewer-editor-zoom-value {
+    min-width: 44px; color: var(--text-strong);
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+  }
+  .viewer-editor-axis-canvas {
+    display: grid; gap: 10px; min-width: calc(var(--viewer-editor-w, 960px) + 144px);
+  }
+  .viewer-editor-scale-row,
+  .viewer-editor-density-row,
+  .viewer-editor-waveform-row,
+  .viewer-editor-lane-row {
+    display: grid; grid-template-columns: 136px var(--viewer-editor-w, 960px);
+    gap: 8px; align-items: center;
+  }
+  .viewer-editor-lane-label,
+  .viewer-editor-scale-label,
+  .viewer-editor-density-label,
+  .viewer-editor-waveform-label {
+    position: sticky; left: 0; z-index: 2;
+    display: flex; flex-direction: column; justify-content: center;
+    min-height: 36px; padding: 6px 8px; border-radius: 6px;
+    background: rgba(26,27,38,0.96); color: var(--muted);
+    font-size: 12px; line-height: 1.32;
+  }
+  .viewer-editor-lane-label strong,
+  .viewer-editor-density-label strong,
+  .viewer-editor-waveform-label strong,
+  .viewer-editor-scale-label strong {
+    color: var(--text-strong); font-size: 12px;
+  }
+  .viewer-editor-lane-label span,
+  .viewer-editor-density-label span,
+  .viewer-editor-waveform-label span,
+  .viewer-editor-scale-label span {
+    color: var(--muted); font-size: 11px;
+  }
+  .viewer-editor-scale {
+    position: relative; height: 24px; min-width: var(--viewer-editor-w, 960px); border-radius: 6px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px) 0 0 / 8.333% 100%;
+  }
+  .viewer-editor-scale span {
+    position: absolute; top: 3px; transform: translateX(-50%);
+    color: var(--muted); font-size: 10px; white-space: nowrap;
+  }
+  .viewer-editor-density {
+    position: relative; height: 42px; min-width: var(--viewer-editor-w, 960px); border: 1px solid var(--border);
+    border-radius: 6px; background: rgba(10,12,22,0.34);
+  }
+  .viewer-editor-density-bar {
+    position: absolute; bottom: 0; min-width: 1px; height: 100%;
+    border: 0; border-radius: 4px; background: transparent; cursor: pointer; padding: 0;
+    box-sizing: border-box;
+  }
+  .viewer-editor-density-bar span {
+    position: absolute; left: 0; right: 0; bottom: 0; display: block;
+    height: var(--bar-h, 3px); min-height: 3px; border-radius: 3px 3px 0 0;
+    background: rgba(247,118,142,0.52);
+  }
+  .viewer-editor-density-bar span::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0;
+    height: var(--global-h, 0px); min-height: 0; border-radius: 3px 3px 0 0;
+    background: rgba(255,255,255,0.20);
+  }
+  .viewer-editor-density-bar.low span { min-height: 5px; }
+  .viewer-editor-density-bar.zero span {
+    height: 2px; min-height: 2px; background: rgba(154,165,190,0.26);
+  }
+  .viewer-editor-density-bar.missing span {
+    height: 2px; min-height: 2px;
+    background: repeating-linear-gradient(90deg, rgba(154,165,190,0.32) 0 3px, transparent 3px 6px);
+  }
+  .viewer-editor-density-bar.hot span { background: rgba(247,118,142,0.82); }
+  .viewer-editor-waveform {
+    position: relative; height: 46px; min-width: var(--viewer-editor-w, 960px);
+    border: 1px solid rgba(224,175,104,0.20); border-radius: 6px;
+    background:
+      linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px) 0 0 / 8.333% 100%,
+      linear-gradient(180deg, rgba(224,175,104,0.05), rgba(10,12,22,0.22));
+    overflow: hidden;
+  }
+  .viewer-editor-waveform svg {
+    position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none;
+  }
+  .viewer-editor-waveform-bar {
+    stroke: rgba(184,194,215,0.58); stroke-width: 1.35;
+    stroke-linecap: round; vector-effect: non-scaling-stroke;
+  }
+  .viewer-editor-waveform-bar.hot {
+    stroke: rgba(224,175,104,0.92); stroke-width: 1.8;
+  }
+  .viewer-editor-waveform-midline {
+    stroke: rgba(224,175,104,0.24); stroke-width: 1; stroke-dasharray: 4 5;
+  }
+  .viewer-editor-track {
+    position: relative; height: 38px; min-width: var(--viewer-editor-w, 960px); border: 1px solid var(--border);
+    border-radius: 6px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.055) 1px, transparent 1px) 0 0 / 8.333% 100%, rgba(10,12,22,0.24);
+  }
+  .viewer-editor-marker {
+    position: absolute; top: 0; bottom: 0; min-width: 16px;
+    border: 0; border-radius: 6px; background: transparent; cursor: pointer;
+    transform: translateX(-50%); padding: 0;
+  }
+  .viewer-editor-marker.range { transform: none; min-width: 14px; }
+  .viewer-editor-marker::before {
+    content: ""; position: absolute; left: 50%; top: 6px;
+    width: 11px; height: 22px; transform: translateX(-50%);
+    border: 1px solid rgba(255,255,255,0.24); border-radius: 999px;
+    background: var(--viewer-marker-color, var(--tc));
+  }
+  .viewer-editor-marker.range::before {
+    left: 0; right: 0; width: auto; transform: none;
+    background: var(--viewer-marker-color, rgba(158,206,106,0.72));
+  }
+  .viewer-editor-marker:hover,
+  .viewer-editor-marker:focus-visible,
+  .viewer-editor-density-bar:hover,
+  .viewer-editor-density-bar:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.38); outline-offset: 2px;
+    background: rgba(122,162,247,0.08);
+  }
+  .viewer-editor-marker.selected { outline: 2px solid var(--accent-warm); outline-offset: 2px; }
+  .viewer-editor-marker[data-kind="highlight"]::before { background: var(--viewer-marker-color, rgba(224,175,104,0.86)); }
+  .viewer-editor-marker[data-kind="highlight_candidate"]::before { background: var(--viewer-marker-color, rgba(247,118,142,0.78)); }
+  .viewer-editor-marker[data-kind="chapter"]::before { background: var(--viewer-marker-color, rgba(187,154,247,0.74)); }
+  .viewer-editor-marker[data-kind="existing_segments"]::before { background: var(--viewer-marker-color, rgba(122,162,247,0.86)); }
+  .viewer-editor-marker[data-kind="chat_laughter"]::before,
+  .viewer-editor-marker[data-kind="chat_surprise"]::before { background: var(--viewer-marker-color, rgba(247,118,142,0.82)); }
+  .viewer-editor-marker[data-kind="comment_replay"]::before { background: var(--viewer-marker-color, rgba(187,154,247,0.74)); }
+  .viewer-editor-marker[data-kind="viewer_clip"]::before { background: var(--viewer-marker-color, rgba(158,206,106,0.82)); }
+  .viewer-editor-marker[data-kind="audio_peak"]::before { background: var(--viewer-marker-color, rgba(224,175,104,0.86)); }
+  .viewer-editor-marker[data-kind="subtitle_density"]::before { background: var(--viewer-marker-color, rgba(125,207,255,0.76)); }
+  .viewer-editor-summary {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-bottom: 12px;
+  }
+  .viewer-editor-stat {
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.20); padding: 10px;
+  }
+  .viewer-editor-stat span { display: block; color: var(--muted); font-size: 11px; }
+  .viewer-editor-stat strong {
+    display: block; color: var(--text-strong); font-size: 14px; line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+  .viewer-editor-selected-card {
+    border: 1px solid var(--border); border-left: 4px solid var(--viewer-marker-color, var(--tc));
+    border-radius: 8px; background: rgba(10,12,22,0.22);
+    padding: 15px 16px 16px 18px; margin-bottom: 14px;
+  }
+  .viewer-editor-selected-kicker {
+    display: block; margin-bottom: 6px;
+    color: var(--muted); font-size: 12.5px; font-weight: 650;
+  }
+  .viewer-editor-selected-title {
+    color: var(--text-strong); font-size: 17px; line-height: 1.5; font-weight: 750;
+    overflow-wrap: anywhere;
+  }
+  .viewer-editor-selected-meta {
+    display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px;
+  }
+  .viewer-editor-chip {
+    display: inline-flex; align-items: center; min-height: 27px;
+    border: 1px solid rgba(122,162,247,0.26); border-radius: 999px;
+    background: rgba(122,162,247,0.09); color: var(--text);
+    padding: 4px 10px; font-size: 12.5px; line-height: 1.45; font-weight: 650;
+  }
+  a.viewer-editor-chip, .viewer-editor-time-link, .viewer-editor-evidence-link {
+    color: var(--tc); text-decoration: none; font-weight: 700;
+  }
+  a.viewer-editor-chip:hover, .viewer-editor-time-link:hover, .viewer-editor-evidence-link:hover {
+    text-decoration: underline;
+  }
+  .viewer-editor-chip.warning {
+    border-color: rgba(224,175,104,0.34);
+    background: rgba(224,175,104,0.10);
+  }
+  button.viewer-editor-chip {
+    cursor: pointer;
+    font: inherit;
+  }
+  .viewer-editor-chip.selected {
+    border-color: rgba(158,206,106,0.48);
+    background: rgba(158,206,106,0.13);
+    color: var(--text-strong);
+  }
+  .viewer-editor-target-picker {
+    border: 1px solid rgba(122,162,247,0.20);
+    border-radius: 8px;
+    background: rgba(122,162,247,0.055);
+    padding: 12px 13px;
+    margin: -4px 0 14px;
+  }
+  .viewer-editor-target-picker strong {
+    display: block; margin-bottom: 8px; color: var(--text-strong); font-size: 13px;
+  }
+  .viewer-editor-target-buttons {
+    display: flex; flex-wrap: wrap; gap: 7px;
+  }
+  .viewer-editor-guide {
+    margin: 0 0 14px; color: var(--muted); font-size: 14px; line-height: 1.7;
+  }
+  .viewer-editor-context {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch; gap: 12px; margin-bottom: 14px;
+  }
+  .viewer-editor-context-card {
+    border: 1px solid rgba(122,162,247,0.22); border-radius: 8px;
+    background: rgba(122,162,247,0.055); padding: 14px 15px; min-height: 124px;
+    color: var(--text); font-size: 14px; line-height: 1.72;
+  }
+  .viewer-editor-context-card strong {
+    display: block; margin-bottom: 8px; color: var(--text-strong); font-size: 14px; font-weight: 750;
+  }
+  .viewer-editor-context-line {
+    display: flex; gap: 10px; align-items: baseline; margin-top: 6px;
+  }
+  .viewer-editor-context-time {
+    flex: 0 0 auto; color: var(--tc);
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+    font-size: 12.5px; font-weight: 700;
+  }
+  .viewer-editor-context-text {
+    min-width: 0; color: var(--text); overflow-wrap: anywhere;
+  }
+  .viewer-editor-context-more {
+    margin-top: 7px; color: var(--muted); font-size: 13px;
+  }
+  .viewer-editor-context-more summary {
+    cursor: pointer; color: var(--tc); font-weight: 700;
+  }
+  .viewer-editor-context-more[open] summary { margin-bottom: 6px; }
+  .viewer-editor-list { display: grid; gap: 10px; }
+  .viewer-editor-row {
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.18); padding: 13px 14px;
+    color: var(--text); font-size: 14px; line-height: 1.72;
+  }
+  .viewer-editor-row strong { color: var(--text-strong); font-weight: 720; }
+  .viewer-editor-row-note {
+    margin-top: 7px; color: var(--muted); font-size: 13px; line-height: 1.6;
+  }
+  .viewer-editor-row.reason {
+    border-color: rgba(224,175,104,0.30);
+    background: rgba(224,175,104,0.08);
+  }
+  .viewer-editor-pre {
+    max-height: 300px; overflow: auto; margin: 10px 0 0;
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.32); padding: 12px;
+    color: var(--text); white-space: pre-wrap; word-break: break-word;
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+    font-size: 13px; line-height: 1.65;
+  }
+  .viewer-editor-status { color: var(--muted); font-size: 13px; min-height: 18px; }
+  .viewer-editor-empty { color: var(--muted); font-size: 14px; line-height: 1.65; padding: 10px 0; }
+  @media (max-width: 900px) {
+    .editor-entry { grid-template-columns: 1fr; align-items: start; }
+    .editor-entry-actions { justify-content: flex-start; }
+    .editor-split-shell { grid-template-columns: 1fr; grid-template-rows: minmax(240px, 42vh) 1fr; }
+    .editor-split-player { border-right: 0; border-bottom: 1px solid rgba(158,206,106,0.34); }
+    .editor-split-workspace { height: auto; min-height: 0; padding: 10px; }
+    .viewer-editor-head { grid-template-columns: 1fr; }
+    .viewer-editor-actions { justify-content: flex-start; }
+    .viewer-editor-grid { padding: 18px; }
+    .viewer-editor-summary { grid-template-columns: 1fr; }
+    .viewer-editor-context { grid-template-columns: 1fr; }
+  }
+
+
+  .editor-jump {
+    margin-top: 18px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  .editor-jump-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    min-height: 40px; padding: 9px 14px; border-radius: 8px;
+    border: 1px solid rgba(158,206,106,0.36);
+    background: rgba(158,206,106,0.12); color: var(--text-strong);
+    font-size: 13px; font-weight: 700; text-decoration: none;
+  }
+  .editor-jump-link:hover {
+    background: rgba(158,206,106,0.18); text-decoration: none;
+  }
+  .editor-jump-note { color: var(--muted); font-size: 12px; }
+  .report-editor-inline-button,
+  .report-editor-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 38px; padding: 0 15px; border: 1px solid rgba(158,206,106,0.56);
+    border-radius: 8px; background: rgba(158,206,106,0.16);
+    color: var(--text-strong, #f8fafc) !important;
+    font: 800 13px/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    text-decoration: none; cursor: pointer; box-shadow: none;
+  }
+  .report-editor-inline-button { margin-left: 0; vertical-align: middle; }
+  .report-editor-entry {
+    display: inline-flex !important; align-items: center; gap: 8px; flex-wrap: wrap;
+    margin-top: 14px; padding: 0; border: 0; border-radius: 0; background: transparent;
+  }
+  .report-editor-entry .editor-entry-status {
+    display: inline-flex; align-items: center; min-height: 16px;
+    color: var(--muted); font-size: 12px; line-height: 1.45;
+  }
+  .report-editor-entry[data-editor-entry-state="installed"] .editor-entry-status { color: var(--accent); }
+  .report-editor-entry[data-editor-entry-state="missing"] .editor-entry-status,
+  .report-editor-entry[data-editor-entry-state="fallback"] .editor-entry-status { color: #a9b1d6; }
+  .report-editor-entry[data-editor-entry-state="loading"] .editor-entry-status { color: var(--accent-warm); }
+  .report-editor-entry[data-editor-entry-state="error"] .editor-entry-status { color: #f7768e; }
+  .report-editor-entry .editor-jump-link {
+    display: inline-flex !important; align-items: center; justify-content: center;
+    width: 38px; min-width: 38px; min-height: 38px; padding: 0 !important;
+    border: 1px solid var(--border-soft, rgba(148,163,184,0.22)) !important;
+    border-radius: 8px !important; background: rgba(255,255,255,0.04) !important;
+    color: var(--muted, rgba(226,232,240,0.72)) !important;
+    text-decoration: none !important;
+  }
+  .report-editor-entry .editor-jump-link svg {
+    width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2;
+    stroke-linecap: round; stroke-linejoin: round;
+  }
+  .report-editor-visually-hidden {
+    position: absolute !important; width: 1px !important; height: 1px !important;
+    padding: 0 !important; margin: -1px !important; overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;
+  }
+  .report-editor-inline-button:hover,
+  .report-editor-inline-button:focus-visible,
+  .report-editor-toggle:hover,
+  .report-editor-toggle:focus-visible {
+    background: rgba(158,206,106,0.28);
+    outline: 3px solid rgba(158,206,106,0.26); outline-offset: 2px;
+  }
+  .report-editor-entry .editor-jump-link:hover,
+  .report-editor-entry .editor-jump-link:focus-visible {
+    color: var(--text-strong, #f8fafc) !important;
+    border-color: rgba(158,206,106,0.42) !important;
+    background: rgba(158,206,106,0.10) !important;
+    outline: 3px solid rgba(158,206,106,0.22); outline-offset: 2px;
+  }
+  .report-editor-nav-button {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 31px; padding: 0 10px; border: 1px solid rgba(158,206,106,0.42);
+    border-radius: 8px; background: rgba(158,206,106,0.12);
+    color: var(--text-strong, #e8ebf3) !important;
+    font: 800 12px/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    white-space: nowrap; cursor: pointer;
+  }
+  .report-editor-nav-button:hover,
+  .report-editor-nav-button:focus-visible {
+    border-color: rgba(158,206,106,0.62); background: rgba(158,206,106,0.22);
+    outline: 2px solid rgba(158,206,106,0.24); outline-offset: 2px;
+  }
+  .editor-entry {
+    margin-top: 18px; display: grid; grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px; align-items: center; padding: 10px 12px; border-radius: 8px;
+    border: 1px solid rgba(158,206,106,0.32);
+    background: rgba(36,40,59,0.78);
+  }
+  .editor-entry-copy { min-width: 0; }
+  .editor-entry-title {
+    display: block; color: var(--text-strong); font-size: 14px; font-weight: 760;
+    line-height: 1.35; margin-bottom: 2px;
+  }
+  .editor-entry-status {
+    display: block; min-height: 16px; color: var(--muted); font-size: 12px;
+    line-height: 1.45;
+  }
+  .editor-entry[data-editor-entry-state="installed"] .editor-entry-status { color: var(--accent); }
+  .editor-entry[data-editor-entry-state="missing"] .editor-entry-status,
+  .editor-entry[data-editor-entry-state="fallback"] .editor-entry-status { color: #a9b1d6; }
+  .editor-entry[data-editor-entry-state="loading"] .editor-entry-status { color: var(--accent-warm); }
+  .editor-entry[data-editor-entry-state="error"] .editor-entry-status { color: #f7768e; }
+  .editor-entry-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+  .editor-entry-button {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 36px; padding: 8px 12px; border-radius: 8px; text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.16); color: var(--muted);
+    background: rgba(255,255,255,0.045); font-size: 13px; font-weight: 720;
+  }
+  .editor-entry-button.primary {
+    border-color: rgba(158,206,106,0.46);
+    background: rgba(158,206,106,0.16); color: var(--text-strong);
+  }
+  .editor-entry-button:hover {
+    background: rgba(255,255,255,0.075); color: var(--text-strong); text-decoration: none;
+  }
+  .editor-entry-button.primary:hover { background: rgba(158,206,106,0.23); }
+  .editor-entry-button:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.62); outline-offset: 2px;
+  }
+  .editor-split-shell {
+    position: fixed; inset: 0; z-index: 10000; display: grid;
+    grid-template-columns: minmax(420px, 52vw) minmax(420px, 1fr);
+    background: var(--bg); color: var(--text);
+  }
+  body.editor-split-active { overflow: hidden; }
+  .editor-split-player {
+    min-width: 0; border-right: 1px solid rgba(158,206,106,0.34);
+    background: #05070d; display: grid; grid-template-rows: auto 1fr auto;
+  }
+  .editor-split-toolbar {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    min-height: 48px; padding: 9px 12px; border-bottom: 1px solid rgba(255,255,255,0.10);
+    background: rgba(15,18,30,0.96);
+  }
+  .editor-split-title {
+    min-width: 0; color: var(--text-strong); font-size: 13px; font-weight: 760;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .editor-split-actions { display: flex; gap: 8px; align-items: center; flex-shrink: 0; }
+  .editor-split-action {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 34px; padding: 7px 10px; border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.16); background: rgba(255,255,255,0.055);
+    color: var(--text-strong); font-size: 12px; font-weight: 720; text-decoration: none; cursor: pointer;
+  }
+  .editor-split-action:hover { background: rgba(255,255,255,0.09); text-decoration: none; }
+  .editor-split-frame {
+    width: 100%; height: 100%; border: 0; background: #05070d; display: block;
+  }
+  .editor-split-workspace {
+    min-width: 0; height: 100vh; overflow: auto; background: var(--bg);
+    padding: 16px;
+  }
+  .editor-split-workspace .viewer-editor-tools {
+    margin: 0; min-height: calc(100vh - 32px);
+  }
+  .editor-split-placeholder { display: none; }
+  .editor-split-fallback {
+    padding: 12px; color: var(--muted); font-size: 12px; line-height: 1.55;
+    border-top: 1px solid rgba(255,255,255,0.10); background: rgba(15,18,30,0.96);
+  }
+  .viewer-editor-tools {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-color: rgba(158,206,106,0.34);
+    background: linear-gradient(180deg, rgba(158,206,106,0.055), transparent 170px), var(--surface);
+  }
+  .viewer-editor-head {
+    display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px;
+    align-items: start; padding: 22px 24px; border-bottom: 1px solid var(--border-soft);
+  }
+  .viewer-editor-title {
+    margin: 0 0 6px; color: var(--text-strong);
+    font-size: 21px; line-height: 1.35; letter-spacing: 0;
+  }
+  .viewer-editor-lead {
+    margin: 0; color: var(--muted); font-size: 14px; line-height: 1.65;
+  }
+  .viewer-editor-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+  .viewer-editor-button {
+    appearance: none; border: 1px solid rgba(122,162,247,0.38); cursor: pointer;
+    background: rgba(122,162,247,0.12); color: var(--text-strong);
+    padding: 10px 13px; border-radius: 8px; font-size: 13px; font-weight: 700;
+  }
+  .viewer-editor-button:hover { background: rgba(122,162,247,0.18); }
+  .viewer-editor-button.secondary {
+    border-color: rgba(255,255,255,0.16);
+    background: rgba(255,255,255,0.045); color: var(--muted);
+  }
+  .viewer-editor-button.secondary:hover { background: rgba(255,255,255,0.075); color: var(--text-strong); }
+  .viewer-editor-button:disabled {
+    opacity: 0.46; cursor: not-allowed; background: rgba(255,255,255,0.035);
+  }
+  .viewer-editor-button:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.62); outline-offset: 2px;
+  }
+  .viewer-editor-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 22px;
+    padding: 26px 24px 28px;
+  }
+  .viewer-editor-panel {
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(26,27,38,0.34); padding: 18px; min-width: 0; width: 100%;
+  }
+  .viewer-editor-panel.evidence-panel,
+  .viewer-editor-panel.cut-panel {
+    background: rgba(26,27,38,0.46);
+  }
+  .viewer-editor-panel h3 {
+    margin: 0 0 10px; color: var(--text-strong);
+    font-size: 17px; line-height: 1.4; letter-spacing: 0; font-weight: 750;
+  }
+  .viewer-editor-panel.cut-panel > summary {
+    cursor: pointer; margin: 0; color: var(--text-strong);
+    font-size: 17px; line-height: 1.4; letter-spacing: 0; font-weight: 750;
+    list-style: none;
+  }
+  .viewer-editor-panel.cut-panel > summary::-webkit-details-marker { display: none; }
+  .viewer-editor-panel.cut-panel > summary::before {
+    content: "▸"; display: inline-block; margin-right: 8px;
+    color: var(--muted); transition: transform 160ms ease;
+  }
+  .viewer-editor-panel.cut-panel[open] > summary::before { transform: rotate(90deg); }
+  .viewer-editor-panel.cut-panel > summary:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.62); outline-offset: 3px;
+    border-radius: 6px;
+  }
+  .viewer-editor-panel.cut-panel[open] > summary { margin-bottom: 10px; }
+  .viewer-editor-panel p {
+    margin: 0 0 14px; color: var(--muted); font-size: 14px; line-height: 1.75;
+    max-width: 72ch;
+  }
+  .viewer-editor-filter {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px;
+    color: var(--muted); font-size: 13px;
+  }
+  .viewer-editor-filter select {
+    min-height: 34px; border: 1px solid var(--border); border-radius: 8px;
+    background: var(--surface-2); color: var(--text); padding: 6px 9px; font: inherit;
+  }
+  .viewer-editor-axis {
+    overflow-x: auto; border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.24); padding: 8px;
+    overscroll-behavior: contain;
+    touch-action: pan-x;
+  }
+  .viewer-editor-zoom {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 0 0 10px;
+    color: var(--muted); font-size: 12px;
+  }
+  .viewer-editor-zoom button,
+  .viewer-editor-zoom-btn {
+    appearance: none; -webkit-appearance: none;
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 34px; min-height: 32px; padding: 0 10px;
+    border: 1px solid rgba(122,162,247,0.38);
+    border-radius: 8px; background: rgba(122,162,247,0.12); color: var(--text-strong);
+    cursor: pointer; font: inherit; font-size: 12px; font-weight: 700;
+    line-height: 1;
+  }
+  .viewer-editor-zoom button:hover,
+  .viewer-editor-zoom-btn:hover { background: rgba(122,162,247,0.20); }
+  .viewer-editor-zoom button:focus-visible,
+  .viewer-editor-zoom-btn:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.55); outline-offset: 2px;
+  }
+  .viewer-editor-zoom input[type="range"] { width: min(220px, 100%); }
+  .viewer-editor-zoom-value {
+    min-width: 44px; color: var(--text-strong);
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+  }
+  .viewer-editor-axis-canvas {
+    display: grid; gap: 10px; min-width: calc(var(--viewer-editor-w, 960px) + 144px);
+  }
+  .viewer-editor-scale-row,
+  .viewer-editor-density-row,
+  .viewer-editor-waveform-row,
+  .viewer-editor-lane-row {
+    display: grid; grid-template-columns: 136px var(--viewer-editor-w, 960px);
+    gap: 8px; align-items: center;
+  }
+  .viewer-editor-lane-label,
+  .viewer-editor-scale-label,
+  .viewer-editor-density-label,
+  .viewer-editor-waveform-label {
+    position: sticky; left: 0; z-index: 2;
+    display: flex; flex-direction: column; justify-content: center;
+    min-height: 36px; padding: 6px 8px; border-radius: 6px;
+    background: rgba(26,27,38,0.96); color: var(--muted);
+    font-size: 12px; line-height: 1.32;
+  }
+  .viewer-editor-lane-label strong,
+  .viewer-editor-density-label strong,
+  .viewer-editor-waveform-label strong,
+  .viewer-editor-scale-label strong {
+    color: var(--text-strong); font-size: 12px;
+  }
+  .viewer-editor-lane-label span,
+  .viewer-editor-density-label span,
+  .viewer-editor-waveform-label span,
+  .viewer-editor-scale-label span {
+    color: var(--muted); font-size: 11px;
+  }
+  .viewer-editor-scale {
+    position: relative; height: 24px; min-width: var(--viewer-editor-w, 960px); border-radius: 6px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px) 0 0 / 8.333% 100%;
+  }
+  .viewer-editor-scale span {
+    position: absolute; top: 3px; transform: translateX(-50%);
+    color: var(--muted); font-size: 10px; white-space: nowrap;
+  }
+  .viewer-editor-density {
+    position: relative; height: 42px; min-width: var(--viewer-editor-w, 960px); border: 1px solid var(--border);
+    border-radius: 6px; background: rgba(10,12,22,0.34);
+  }
+  .viewer-editor-density-bar {
+    position: absolute; bottom: 0; min-width: 1px; height: 100%;
+    border: 0; border-radius: 4px; background: transparent; cursor: pointer; padding: 0;
+    box-sizing: border-box;
+  }
+  .viewer-editor-density-bar span {
+    position: absolute; left: 0; right: 0; bottom: 0; display: block;
+    height: var(--bar-h, 3px); min-height: 3px; border-radius: 3px 3px 0 0;
+    background: rgba(247,118,142,0.52);
+  }
+  .viewer-editor-density-bar span::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0;
+    height: var(--global-h, 0px); min-height: 0; border-radius: 3px 3px 0 0;
+    background: rgba(255,255,255,0.20);
+  }
+  .viewer-editor-density-bar.low span { min-height: 5px; }
+  .viewer-editor-density-bar.zero span {
+    height: 2px; min-height: 2px; background: rgba(154,165,190,0.26);
+  }
+  .viewer-editor-density-bar.missing span {
+    height: 2px; min-height: 2px;
+    background: repeating-linear-gradient(90deg, rgba(154,165,190,0.32) 0 3px, transparent 3px 6px);
+  }
+  .viewer-editor-density-bar.hot span { background: rgba(247,118,142,0.82); }
+  .viewer-editor-waveform {
+    position: relative; height: 46px; min-width: var(--viewer-editor-w, 960px);
+    border: 1px solid rgba(224,175,104,0.20); border-radius: 6px;
+    background:
+      linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px) 0 0 / 8.333% 100%,
+      linear-gradient(180deg, rgba(224,175,104,0.05), rgba(10,12,22,0.22));
+    overflow: hidden;
+  }
+  .viewer-editor-waveform svg {
+    position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none;
+  }
+  .viewer-editor-waveform-bar {
+    stroke: rgba(184,194,215,0.58); stroke-width: 1.35;
+    stroke-linecap: round; vector-effect: non-scaling-stroke;
+  }
+  .viewer-editor-waveform-bar.hot {
+    stroke: rgba(224,175,104,0.92); stroke-width: 1.8;
+  }
+  .viewer-editor-waveform-midline {
+    stroke: rgba(224,175,104,0.24); stroke-width: 1; stroke-dasharray: 4 5;
+  }
+  .viewer-editor-track {
+    position: relative; height: 38px; min-width: var(--viewer-editor-w, 960px); border: 1px solid var(--border);
+    border-radius: 6px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.055) 1px, transparent 1px) 0 0 / 8.333% 100%, rgba(10,12,22,0.24);
+  }
+  .viewer-editor-marker {
+    position: absolute; top: 0; bottom: 0; min-width: 16px;
+    border: 0; border-radius: 6px; background: transparent; cursor: pointer;
+    transform: translateX(-50%); padding: 0;
+  }
+  .viewer-editor-marker.range { transform: none; min-width: 14px; }
+  .viewer-editor-marker::before {
+    content: ""; position: absolute; left: 50%; top: 6px;
+    width: 11px; height: 22px; transform: translateX(-50%);
+    border: 1px solid rgba(255,255,255,0.24); border-radius: 999px;
+    background: var(--viewer-marker-color, var(--tc));
+  }
+  .viewer-editor-marker.range::before {
+    left: 0; right: 0; width: auto; transform: none;
+    background: var(--viewer-marker-color, rgba(158,206,106,0.72));
+  }
+  .viewer-editor-marker:hover,
+  .viewer-editor-marker:focus-visible,
+  .viewer-editor-density-bar:hover,
+  .viewer-editor-density-bar:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.38); outline-offset: 2px;
+    background: rgba(122,162,247,0.08);
+  }
+  .viewer-editor-marker.selected { outline: 2px solid var(--accent-warm); outline-offset: 2px; }
+  .viewer-editor-marker[data-kind="highlight"]::before { background: var(--viewer-marker-color, rgba(224,175,104,0.86)); }
+  .viewer-editor-marker[data-kind="highlight_candidate"]::before { background: var(--viewer-marker-color, rgba(247,118,142,0.78)); }
+  .viewer-editor-marker[data-kind="chapter"]::before { background: var(--viewer-marker-color, rgba(187,154,247,0.74)); }
+  .viewer-editor-marker[data-kind="existing_segments"]::before { background: var(--viewer-marker-color, rgba(122,162,247,0.86)); }
+  .viewer-editor-marker[data-kind="chat_laughter"]::before,
+  .viewer-editor-marker[data-kind="chat_surprise"]::before { background: var(--viewer-marker-color, rgba(247,118,142,0.82)); }
+  .viewer-editor-marker[data-kind="comment_replay"]::before { background: var(--viewer-marker-color, rgba(187,154,247,0.74)); }
+  .viewer-editor-marker[data-kind="viewer_clip"]::before { background: var(--viewer-marker-color, rgba(158,206,106,0.82)); }
+  .viewer-editor-marker[data-kind="audio_peak"]::before { background: var(--viewer-marker-color, rgba(224,175,104,0.86)); }
+  .viewer-editor-marker[data-kind="subtitle_density"]::before { background: var(--viewer-marker-color, rgba(125,207,255,0.76)); }
+  .viewer-editor-summary {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-bottom: 12px;
+  }
+  .viewer-editor-stat {
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.20); padding: 10px;
+  }
+  .viewer-editor-stat span { display: block; color: var(--muted); font-size: 11px; }
+  .viewer-editor-stat strong {
+    display: block; color: var(--text-strong); font-size: 14px; line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+  .viewer-editor-selected-card {
+    border: 1px solid var(--border); border-left: 4px solid var(--viewer-marker-color, var(--tc));
+    border-radius: 8px; background: rgba(10,12,22,0.22);
+    padding: 15px 16px 16px 18px; margin-bottom: 14px;
+  }
+  .viewer-editor-selected-kicker {
+    display: block; margin-bottom: 6px;
+    color: var(--muted); font-size: 12.5px; font-weight: 650;
+  }
+  .viewer-editor-selected-title {
+    color: var(--text-strong); font-size: 17px; line-height: 1.5; font-weight: 750;
+    overflow-wrap: anywhere;
+  }
+  .viewer-editor-selected-meta {
+    display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px;
+  }
+  .viewer-editor-chip {
+    display: inline-flex; align-items: center; min-height: 27px;
+    border: 1px solid rgba(122,162,247,0.26); border-radius: 999px;
+    background: rgba(122,162,247,0.09); color: var(--text);
+    padding: 4px 10px; font-size: 12.5px; line-height: 1.45; font-weight: 650;
+  }
+  a.viewer-editor-chip, .viewer-editor-time-link, .viewer-editor-evidence-link {
+    color: var(--tc); text-decoration: none; font-weight: 700;
+  }
+  a.viewer-editor-chip:hover, .viewer-editor-time-link:hover, .viewer-editor-evidence-link:hover {
+    text-decoration: underline;
+  }
+  .viewer-editor-chip.warning {
+    border-color: rgba(224,175,104,0.34);
+    background: rgba(224,175,104,0.10);
+  }
+  button.viewer-editor-chip {
+    cursor: pointer;
+    font: inherit;
+  }
+  .viewer-editor-chip.selected {
+    border-color: rgba(158,206,106,0.48);
+    background: rgba(158,206,106,0.13);
+    color: var(--text-strong);
+  }
+  .viewer-editor-target-picker {
+    border: 1px solid rgba(122,162,247,0.20);
+    border-radius: 8px;
+    background: rgba(122,162,247,0.055);
+    padding: 12px 13px;
+    margin: -4px 0 14px;
+  }
+  .viewer-editor-target-picker strong {
+    display: block; margin-bottom: 8px; color: var(--text-strong); font-size: 13px;
+  }
+  .viewer-editor-target-buttons {
+    display: flex; flex-wrap: wrap; gap: 7px;
+  }
+  .viewer-editor-guide {
+    margin: 0 0 14px; color: var(--muted); font-size: 14px; line-height: 1.7;
+  }
+  .viewer-editor-context {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch; gap: 12px; margin-bottom: 14px;
+  }
+  .viewer-editor-context-card {
+    border: 1px solid rgba(122,162,247,0.22); border-radius: 8px;
+    background: rgba(122,162,247,0.055); padding: 14px 15px; min-height: 124px;
+    color: var(--text); font-size: 14px; line-height: 1.72;
+  }
+  .viewer-editor-context-card strong {
+    display: block; margin-bottom: 8px; color: var(--text-strong); font-size: 14px; font-weight: 750;
+  }
+  .viewer-editor-context-line {
+    display: flex; gap: 10px; align-items: baseline; margin-top: 6px;
+  }
+  .viewer-editor-context-time {
+    flex: 0 0 auto; color: var(--tc);
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+    font-size: 12.5px; font-weight: 700;
+  }
+  .viewer-editor-context-text {
+    min-width: 0; color: var(--text); overflow-wrap: anywhere;
+  }
+  .viewer-editor-context-more {
+    margin-top: 7px; color: var(--muted); font-size: 13px;
+  }
+  .viewer-editor-context-more summary {
+    cursor: pointer; color: var(--tc); font-weight: 700;
+  }
+  .viewer-editor-context-more[open] summary { margin-bottom: 6px; }
+  .viewer-editor-list { display: grid; gap: 10px; }
+  .viewer-editor-row {
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.18); padding: 13px 14px;
+    color: var(--text); font-size: 14px; line-height: 1.72;
+  }
+  .viewer-editor-row strong { color: var(--text-strong); font-weight: 720; }
+  .viewer-editor-row-note {
+    margin-top: 7px; color: var(--muted); font-size: 13px; line-height: 1.6;
+  }
+  .viewer-editor-row.reason {
+    border-color: rgba(224,175,104,0.30);
+    background: rgba(224,175,104,0.08);
+  }
+  .viewer-editor-pre {
+    max-height: 300px; overflow: auto; margin: 10px 0 0;
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.32); padding: 12px;
+    color: var(--text); white-space: pre-wrap; word-break: break-word;
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+    font-size: 13px; line-height: 1.65;
+  }
+  .viewer-editor-status { color: var(--muted); font-size: 13px; min-height: 18px; }
+  .viewer-editor-empty { color: var(--muted); font-size: 14px; line-height: 1.65; padding: 10px 0; }
+  @media (max-width: 900px) {
+    .editor-entry { grid-template-columns: 1fr; align-items: start; }
+    .editor-entry-actions { justify-content: flex-start; }
+    .editor-split-shell { grid-template-columns: 1fr; grid-template-rows: minmax(240px, 42vh) 1fr; }
+    .editor-split-player { border-right: 0; border-bottom: 1px solid rgba(158,206,106,0.34); }
+    .editor-split-workspace { height: auto; min-height: 0; padding: 10px; }
+    .viewer-editor-head { grid-template-columns: 1fr; }
+    .viewer-editor-actions { justify-content: flex-start; }
+    .viewer-editor-grid { padding: 18px; }
+    .viewer-editor-summary { grid-template-columns: 1fr; }
+    .viewer-editor-context { grid-template-columns: 1fr; }
+  }
 
 .public-report-nav {
     position: sticky; top: 0; z-index: 1000;
@@ -448,7 +2596,7 @@
   }
 
 </style>
-<link rel="stylesheet" href="../../assets/viewer-editor-tools.css?v=72c32727c0b7">
+<link rel="stylesheet" href="../../assets/viewer-editor-tools.css?v=c4705f5b0d45">
 </head>
 <body>
 <nav class="public-report-nav" data-report-block="public-report-nav" aria-label="리포트 이동">
@@ -863,6 +3011,11 @@
         <select id="viewerEditorFilter"></select>
         <span id="viewerEditorCount">9개 자료 · 161개 장면 · 38개 컷 후보</span>
       </div>
+      <div class="viewer-editor-density-control">
+        <label for="viewerEditorDensityRange">알갱이 표시 밀도</label>
+        <input id="viewerEditorDensityRange" type="range" min="0" max="10" step="1" value="6" aria-label="장면 찾기 알갱이 표시 밀도">
+        <span id="viewerEditorDensityValue" class="viewer-editor-density-value">핵심</span>
+      </div>
       <div class="viewer-editor-zoom" aria-label="장면 찾기 확대 축소">
         <button type="button" class="viewer-editor-zoom-btn" id="viewerEditorZoomOutBtn" title="시간축 축소" aria-label="시간축 축소">-</button>
         <button type="button" class="viewer-editor-zoom-btn" id="viewerEditorZoomInBtn" title="시간축 확대" aria-label="시간축 확대">+</button>
@@ -1126,7 +3279,180 @@ async function copyChzzkCommentText(btn) {
   }
 </script>
 
-<script id="viewerEditorToolsScript"></script>
+<script id="viewerEditorToolsScript">
+function initEditorSplitMode() {
+  const entry = document.querySelector('[data-editor-entry]');
+  const workspace = document.getElementById('youtube-editor-tools');
+  const primaryBtn = document.querySelector('[data-editor-entry-primary]');
+  if (!entry || !workspace || !primaryBtn) return;
+
+  const explicitUrl = entry.getAttribute('data-editor-chzzk-url') || '';
+  const sourceLink = document.querySelector('a[href*="chzzk.naver.com/video/"]');
+  const chzzkUrl = explicitUrl || sourceLink?.href || '';
+  let placeholder = null;
+  let shell = null;
+
+  function setEntryState(state, message) {
+    entry.setAttribute('data-editor-entry-state', state);
+    const status = entry.querySelector('[data-editor-entry-status]');
+    if (status) {
+      status.textContent = message || '';
+      status.hidden = !message;
+    }
+  }
+
+  function editorModeUrlOff() {
+    const url = new URL(location.href);
+    url.searchParams.delete('editor');
+    return `${url.pathname}${url.search}${url.hash}`;
+  }
+
+  function editorModeUrlOn() {
+    const url = new URL(location.href);
+    url.searchParams.set('editor', '1');
+    if (!url.hash) url.hash = 'youtube-editor-tools';
+    return `${url.pathname}${url.search}${url.hash}`;
+  }
+
+  function closeSplitEditorMode() {
+    if (!shell) return;
+    if (placeholder && workspace) {
+      placeholder.replaceWith(workspace);
+    }
+    shell.remove();
+    shell = null;
+    placeholder = null;
+    document.body.classList.remove('editor-split-active');
+    setEntryState('fallback', '');
+    updateNavToggleVisibility();
+    history.replaceState(null, '', editorModeUrlOff());
+  }
+
+  function openSplitEditorMode() {
+    if (!chzzkUrl) {
+      workspace.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setEntryState('error', 'CHZZK 주소 없음');
+      return;
+    }
+    if (shell) return;
+    placeholder = document.createElement('div');
+    placeholder.className = 'editor-split-placeholder';
+    placeholder.setAttribute('data-editor-split-placeholder', '');
+    workspace.replaceWith(placeholder);
+
+    shell = document.createElement('section');
+    shell.className = 'editor-split-shell';
+    shell.setAttribute('data-editor-split-shell', '');
+    shell.setAttribute('aria-label', 'CHZZK 원본과 편집자 워크스페이스 나란히 보기');
+    shell.innerHTML = `
+      <div class="editor-split-player" data-editor-split-player>
+        <div class="editor-split-toolbar">
+          <strong class="editor-split-title">CHZZK 원본 화면</strong>
+          <div class="editor-split-actions">
+            <a class="editor-split-action" href="${chzzkUrl}" target="_blank" rel="noopener">새 탭</a>
+            <button type="button" class="editor-split-action" data-editor-split-close>요약으로 돌아가기</button>
+          </div>
+        </div>
+        <iframe class="editor-split-frame" data-editor-chzzk-frame src="${chzzkUrl}" title="CHZZK 원본 방송 화면" allow="autoplay; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="editor-split-fallback">CHZZK가 iframe 재생을 제한하면 왼쪽의 새 탭 버튼으로 원본을 열고, 오른쪽 워크스페이스에서 컷 후보를 계속 확인합니다.</div>
+      </div>
+      <div class="editor-split-workspace" data-editor-split-workspace></div>
+    `;
+    shell.querySelector('[data-editor-split-workspace]').appendChild(workspace);
+    shell.querySelector('[data-editor-split-close]').addEventListener('click', closeSplitEditorMode);
+    document.body.appendChild(shell);
+    document.body.classList.add('editor-split-active');
+    setEntryState('fallback', '');
+    updateNavToggleVisibility();
+    history.replaceState(null, '', editorModeUrlOn());
+  }
+
+  let navToggleButton = null;
+  function updateNavToggleVisibility() {
+    if (!navToggleButton) return;
+    navToggleButton.hidden = document.body.classList.contains('editor-split-active') || window.scrollY <= 220;
+  }
+
+  function installNavToggleButton() {
+    const links = document.querySelector('.public-report-nav-links');
+    if (!links) return;
+    navToggleButton = links.querySelector('.report-editor-nav-button');
+    if (!navToggleButton) {
+      navToggleButton = document.createElement('button');
+      navToggleButton.type = 'button';
+      navToggleButton.className = 'report-editor-nav-button';
+      navToggleButton.textContent = '편집자 모드로 보기';
+      navToggleButton.hidden = true;
+      links.appendChild(navToggleButton);
+    }
+    if (navToggleButton.dataset.editorNavBound === '1') return;
+    navToggleButton.dataset.editorNavBound = '1';
+    navToggleButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      openSplitEditorMode();
+    });
+    window.addEventListener('scroll', updateNavToggleVisibility, { passive: true });
+    window.addEventListener('resize', updateNavToggleVisibility);
+    updateNavToggleVisibility();
+  }
+
+  primaryBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+    openSplitEditorMode();
+  });
+  installNavToggleButton();
+
+  const params = new URLSearchParams(location.search);
+  if (params.get('editor') === '1') {
+    window.setTimeout(openSplitEditorMode, 0);
+  }
+}
+
+function initEditorEntryState() {
+  const entry = document.querySelector('[data-editor-entry]');
+  if (!entry) return;
+  const statusEl = entry.querySelector('[data-editor-entry-status]');
+  const primaryBtn = entry.querySelector('[data-editor-entry-primary]');
+  const setState = (state, message) => {
+    entry.setAttribute('data-editor-entry-state', state);
+    if (statusEl) {
+      statusEl.textContent = message || '';
+      statusEl.hidden = !message;
+    }
+  };
+  const target = document.getElementById('youtube-editor-tools');
+  setState('loading', '');
+  window.setTimeout(() => {
+    if (entry.getAttribute('data-editor-entry-state') !== 'loading') return;
+    if (target) {
+      setState('fallback', '');
+    } else {
+      setState('error', '워크스페이스 없음');
+    }
+  }, 0);
+  if (primaryBtn) {
+    primaryBtn.addEventListener('click', () => {
+      setState('loading', '');
+      window.setTimeout(() => {
+        if (target) {
+          setState('fallback', '');
+        } else {
+          setState('error', '열기 실패');
+        }
+      }, 180);
+    });
+  }
+  window.addEventListener('chzzk-editor-extension-ready', () => {
+    setState('installed', '');
+  });
+  window.addEventListener('chzzk-editor-extension-missing', () => {
+    setState('missing', '');
+  });
+  window.addEventListener('chzzk-editor-extension-error', () => {
+    setState('error', '확인 필요');
+  });
+}
+</script>
 
 <script id="summaryEvidencePackData" type="application/json">{"schema_version":"rendered_summary_evidence_payload.v1","source_schema_version":"summary_evidence_pack.v1","render_target":"report_html_script#summaryEvidencePackData","raw_content_included":false,"summary":{"segment_count":58,"matched_segment_count":58,"unmatched_segment_count":0,"timed_evidence_count":10,"semantic_index_item_count":0,"semantic_index_vectorized_count":0,"semantic_matched_ref_count":0,"window_sec":90,"top_k":3},"items":[{"segment_id":"seg_timeline_6072374b0a17","kind":"timeline","section":"timeline","start_sec":428,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_1_428_37128688ae44","rank":1,"score":107.633333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":428,"end_sec":3112,"text_hash":"37128688ae4449545dc53af340ccb15a933ccb235299d6f3cabaa687a38aae0d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4394}]},{"segment_id":"seg_timeline_10afa689a90e","kind":"timeline","section":"timeline","start_sec":1201,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_1_428_37128688ae44","rank":1,"score":107.633333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":428,"end_sec":3112,"text_hash":"37128688ae4449545dc53af340ccb15a933ccb235299d6f3cabaa687a38aae0d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4394}]},{"segment_id":"seg_timeline_aa60217447e1","kind":"timeline","section":"timeline","start_sec":1623,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_1_428_37128688ae44","rank":1,"score":107.633333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":428,"end_sec":3112,"text_hash":"37128688ae4449545dc53af340ccb15a933ccb235299d6f3cabaa687a38aae0d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4394}]},{"segment_id":"seg_timeline_acf4ed44afd9","kind":"timeline","section":"timeline","start_sec":2441,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_1_428_37128688ae44","rank":1,"score":107.633333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":428,"end_sec":3112,"text_hash":"37128688ae4449545dc53af340ccb15a933ccb235299d6f3cabaa687a38aae0d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4394}]},{"segment_id":"seg_timeline_f2a2d95ddd3d","kind":"timeline","section":"timeline","start_sec":2510,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_1_428_37128688ae44","rank":1,"score":107.633333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":428,"end_sec":3112,"text_hash":"37128688ae4449545dc53af340ccb15a933ccb235299d6f3cabaa687a38aae0d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4394}]},{"segment_id":"seg_timeline_3f9bd1b0ef4f","kind":"timeline","section":"timeline","start_sec":2579,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_1_428_37128688ae44","rank":1,"score":107.633333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":428,"end_sec":3112,"text_hash":"37128688ae4449545dc53af340ccb15a933ccb235299d6f3cabaa687a38aae0d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4394}]},{"segment_id":"seg_timeline_bee4c8464a6d","kind":"timeline","section":"timeline","start_sec":2918,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_1_428_37128688ae44","rank":1,"score":107.633333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":428,"end_sec":3112,"text_hash":"37128688ae4449545dc53af340ccb15a933ccb235299d6f3cabaa687a38aae0d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4394}]},{"segment_id":"seg_timeline_62902f52cad3","kind":"timeline","section":"timeline","start_sec":3038,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_1_428_37128688ae44","rank":1,"score":107.633333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":428,"end_sec":3112,"text_hash":"37128688ae4449545dc53af340ccb15a933ccb235299d6f3cabaa687a38aae0d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4394}]},{"segment_id":"seg_timeline_ce7f9c240f6b","kind":"timeline","section":"timeline","start_sec":4490,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_2_3086_66ecaba1d6d0","rank":1,"score":114.691667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":3086,"end_sec":4923,"text_hash":"66ecaba1d6d021b88c8fa051f9a10496dba6cd415bd7fdc54bd5934aefe06266","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4272}]},{"segment_id":"seg_timeline_f7fd119ddcee","kind":"timeline","section":"timeline","start_sec":7833,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_4_7833_038771c28b9f","rank":1,"score":119.783333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":7833,"end_sec":9059,"text_hash":"038771c28b9fe594e5a2a996777f9d1ca85476d6d61e06dbcdf670fb45da0afb","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4431},{"evidence_id":"te_13799077_3_4906_e4d59744f3a9","rank":2,"score":105.6,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":4906,"end_sec":7834,"text_hash":"e4d59744f3a9c55ed1f1e10cb9b692898c5754a6a48d4f6d74adea3e3a4ec02c","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4355}]},{"segment_id":"seg_timeline_8e51a96b6345","kind":"timeline","section":"timeline","start_sec":8090,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_4_7833_038771c28b9f","rank":1,"score":119.783333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":7833,"end_sec":9059,"text_hash":"038771c28b9fe594e5a2a996777f9d1ca85476d6d61e06dbcdf670fb45da0afb","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4431}]},{"segment_id":"seg_timeline_02a057893ce7","kind":"timeline","section":"timeline","start_sec":8733,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_4_7833_038771c28b9f","rank":1,"score":119.783333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":7833,"end_sec":9059,"text_hash":"038771c28b9fe594e5a2a996777f9d1ca85476d6d61e06dbcdf670fb45da0afb","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4431}]},{"segment_id":"seg_timeline_2ee97266cfa7","kind":"timeline","section":"timeline","start_sec":9578,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_5_9033_3c5de5c0f45e","rank":1,"score":120.383333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":9033,"end_sec":10187,"text_hash":"3c5de5c0f45e7d6348bb1541755609c701d7d2373a37dcdc8a507f13c61bb4ce","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4515}]},{"segment_id":"seg_timeline_a29163eea19a","kind":"timeline","section":"timeline","start_sec":9853,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_5_9033_3c5de5c0f45e","rank":1,"score":120.383333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":9033,"end_sec":10187,"text_hash":"3c5de5c0f45e7d6348bb1541755609c701d7d2373a37dcdc8a507f13c61bb4ce","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4515}]},{"segment_id":"seg_timeline_3b4ec997c499","kind":"timeline","section":"timeline","start_sec":10376,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_6_10177_e2263a467b02","rank":1,"score":121.416667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":10177,"end_sec":11207,"text_hash":"e2263a467b02444884afd6f7a1f7f74d70d4febda5407b3dd0aefef5aa68e6ff","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4712}]},{"segment_id":"seg_timeline_2b6c7d22d259","kind":"timeline","section":"timeline","start_sec":10555,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_6_10177_e2263a467b02","rank":1,"score":121.416667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":10177,"end_sec":11207,"text_hash":"e2263a467b02444884afd6f7a1f7f74d70d4febda5407b3dd0aefef5aa68e6ff","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4712}]},{"segment_id":"seg_timeline_9ee144dce5e3","kind":"timeline","section":"timeline","start_sec":10795,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_6_10177_e2263a467b02","rank":1,"score":121.416667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":10177,"end_sec":11207,"text_hash":"e2263a467b02444884afd6f7a1f7f74d70d4febda5407b3dd0aefef5aa68e6ff","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4712}]},{"segment_id":"seg_timeline_f11ec4080abf","kind":"timeline","section":"timeline","start_sec":11225,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_7_11168_05b283005c09","rank":1,"score":120.208333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":11168,"end_sec":12343,"text_hash":"05b283005c094c4fae0bf81dc1ef658c483528429271dffba42b236d3f5c192b","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4608}]},{"segment_id":"seg_timeline_829119136ca9","kind":"timeline","section":"timeline","start_sec":11359,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_7_11168_05b283005c09","rank":1,"score":120.208333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":11168,"end_sec":12343,"text_hash":"05b283005c094c4fae0bf81dc1ef658c483528429271dffba42b236d3f5c192b","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4608}]},{"segment_id":"seg_timeline_3f3e401de7ca","kind":"timeline","section":"timeline","start_sec":11723,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_7_11168_05b283005c09","rank":1,"score":120.208333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":11168,"end_sec":12343,"text_hash":"05b283005c094c4fae0bf81dc1ef658c483528429271dffba42b236d3f5c192b","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4608}]},{"segment_id":"seg_timeline_c9400f0b0429","kind":"timeline","section":"timeline","start_sec":12229,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_7_11168_05b283005c09","rank":1,"score":120.208333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":11168,"end_sec":12343,"text_hash":"05b283005c094c4fae0bf81dc1ef658c483528429271dffba42b236d3f5c192b","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4608}]},{"segment_id":"seg_timeline_214741b68991","kind":"timeline","section":"timeline","start_sec":13205,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_8_12364_02f18ad5d9c7","rank":1,"score":114.183333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":12364,"end_sec":14262,"text_hash":"02f18ad5d9c79c4398a8e11519f06ee26c8b87c97ecae5c00217667d489fdc9c","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4555}]},{"segment_id":"seg_timeline_1e715f60fa12","kind":"timeline","section":"timeline","start_sec":14026,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_8_12364_02f18ad5d9c7","rank":1,"score":114.183333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":12364,"end_sec":14262,"text_hash":"02f18ad5d9c79c4398a8e11519f06ee26c8b87c97ecae5c00217667d489fdc9c","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4555}]},{"segment_id":"seg_timeline_c365791cad3f","kind":"timeline","section":"timeline","start_sec":17372,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_10_16659_3cdff6f513ce","rank":1,"score":120.208333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":16659,"end_sec":17834,"text_hash":"3cdff6f513ce09cf477bf785ec4e5441f843e746be920e72928fd912630b9150","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":1244}]},{"segment_id":"seg_highlight_4c4b2d12c393","kind":"highlight","section":"highlights","start_sec":7833,"end_sec":8629,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_4_7833_038771c28b9f","rank":1,"score":132.463295,"semantic_score":null,"match_reason":"timestamp_overlap","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":7833,"end_sec":9059,"text_hash":"038771c28b9fe594e5a2a996777f9d1ca85476d6d61e06dbcdf670fb45da0afb","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4431},{"evidence_id":"te_13799077_3_4906_e4d59744f3a9","rank":2,"score":100.017077,"semantic_score":null,"match_reason":"timestamp_overlap","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":4906,"end_sec":7834,"text_hash":"e4d59744f3a9c55ed1f1e10cb9b692898c5754a6a48d4f6d74adea3e3a4ec02c","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4355}]},{"segment_id":"seg_highlight_82b5b2ee67ca","kind":"highlight","section":"highlights","start_sec":10376,"end_sec":10795,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_6_10177_e2263a467b02","rank":1,"score":120.339806,"semantic_score":null,"match_reason":"timestamp_overlap","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":10177,"end_sec":11207,"text_hash":"e2263a467b02444884afd6f7a1f7f74d70d4febda5407b3dd0aefef5aa68e6ff","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4712}]},{"segment_id":"seg_highlight_02359a7d2243","kind":"highlight","section":"highlights","start_sec":11225,"end_sec":11359,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_7_11168_05b283005c09","rank":1,"score":105.702128,"semantic_score":null,"match_reason":"timestamp_overlap","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":11168,"end_sec":12343,"text_hash":"05b283005c094c4fae0bf81dc1ef658c483528429271dffba42b236d3f5c192b","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4608}]},{"segment_id":"seg_highlight_a7a07188e4ee","kind":"highlight","section":"highlights","start_sec":13178,"end_sec":13205,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_8_12364_02f18ad5d9c7","rank":1,"score":100.711275,"semantic_score":null,"match_reason":"timestamp_overlap","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":12364,"end_sec":14262,"text_hash":"02f18ad5d9c79c4398a8e11519f06ee26c8b87c97ecae5c00217667d489fdc9c","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4555}]},{"segment_id":"seg_highlight_068a24d7ec49","kind":"highlight","section":"highlights","start_sec":17372,"end_sec":17494,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_10_16659_3cdff6f513ce","rank":1,"score":105.191489,"semantic_score":null,"match_reason":"timestamp_overlap","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":16659,"end_sec":17834,"text_hash":"3cdff6f513ce09cf477bf785ec4e5441f843e746be920e72928fd912630b9150","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":1244}]},{"segment_id":"seg_highlight_f662ed45834d","kind":"highlight","section":"highlights","start_sec":2579,"end_sec":2579,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_1_428_37128688ae44","rank":1,"score":107.633333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":428,"end_sec":3112,"text_hash":"37128688ae4449545dc53af340ccb15a933ccb235299d6f3cabaa687a38aae0d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4394}]},{"segment_id":"seg_chapter_403e46a88ab1","kind":"chapter","section":"chzzk_comment_timeline","start_sec":1623,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_1_428_37128688ae44","rank":1,"score":107.633333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":428,"end_sec":3112,"text_hash":"37128688ae4449545dc53af340ccb15a933ccb235299d6f3cabaa687a38aae0d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4394}]},{"segment_id":"seg_chapter_6a1e6e65008e","kind":"chapter","section":"chzzk_comment_timeline","start_sec":2918,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_1_428_37128688ae44","rank":1,"score":107.633333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":428,"end_sec":3112,"text_hash":"37128688ae4449545dc53af340ccb15a933ccb235299d6f3cabaa687a38aae0d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4394}]},{"segment_id":"seg_chapter_79d1642c32f1","kind":"chapter","section":"chzzk_comment_timeline","start_sec":7833,"end_sec":8629,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_4_7833_038771c28b9f","rank":1,"score":132.463295,"semantic_score":null,"match_reason":"timestamp_overlap","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":7833,"end_sec":9059,"text_hash":"038771c28b9fe594e5a2a996777f9d1ca85476d6d61e06dbcdf670fb45da0afb","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4431},{"evidence_id":"te_13799077_3_4906_e4d59744f3a9","rank":2,"score":100.017077,"semantic_score":null,"match_reason":"timestamp_overlap","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":4906,"end_sec":7834,"text_hash":"e4d59744f3a9c55ed1f1e10cb9b692898c5754a6a48d4f6d74adea3e3a4ec02c","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4355}]},{"segment_id":"seg_chapter_6960062759f4","kind":"chapter","section":"chzzk_comment_timeline","start_sec":8733,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_4_7833_038771c28b9f","rank":1,"score":119.783333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":7833,"end_sec":9059,"text_hash":"038771c28b9fe594e5a2a996777f9d1ca85476d6d61e06dbcdf670fb45da0afb","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4431}]},{"segment_id":"seg_chapter_1e97f2774cfd","kind":"chapter","section":"chzzk_comment_timeline","start_sec":9853,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_5_9033_3c5de5c0f45e","rank":1,"score":120.383333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":9033,"end_sec":10187,"text_hash":"3c5de5c0f45e7d6348bb1541755609c701d7d2373a37dcdc8a507f13c61bb4ce","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4515}]},{"segment_id":"seg_chapter_ad622804c39e","kind":"chapter","section":"chzzk_comment_timeline","start_sec":10376,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_6_10177_e2263a467b02","rank":1,"score":121.416667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":10177,"end_sec":11207,"text_hash":"e2263a467b02444884afd6f7a1f7f74d70d4febda5407b3dd0aefef5aa68e6ff","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4712}]},{"segment_id":"seg_chapter_7b196cb09d5f","kind":"chapter","section":"chzzk_comment_timeline","start_sec":11225,"end_sec":11359,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_7_11168_05b283005c09","rank":1,"score":105.702128,"semantic_score":null,"match_reason":"timestamp_overlap","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":11168,"end_sec":12343,"text_hash":"05b283005c094c4fae0bf81dc1ef658c483528429271dffba42b236d3f5c192b","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4608}]},{"segment_id":"seg_chapter_e8d6be09203e","kind":"chapter","section":"chzzk_comment_timeline","start_sec":14026,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_8_12364_02f18ad5d9c7","rank":1,"score":114.183333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":12364,"end_sec":14262,"text_hash":"02f18ad5d9c79c4398a8e11519f06ee26c8b87c97ecae5c00217667d489fdc9c","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4555}]},{"segment_id":"seg_chapter_708a3434f3ee","kind":"chapter","section":"chzzk_comment_timeline","start_sec":17372,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_10_16659_3cdff6f513ce","rank":1,"score":120.208333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":16659,"end_sec":17834,"text_hash":"3cdff6f513ce09cf477bf785ec4e5441f843e746be920e72928fd912630b9150","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":1244}]},{"segment_id":"seg_highlight_candidate_a6d4399c51b0","kind":"highlight_candidate","section":"metadata.highlights","start_sec":9590,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_5_9033_3c5de5c0f45e","rank":1,"score":120.383333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":9033,"end_sec":10187,"text_hash":"3c5de5c0f45e7d6348bb1541755609c701d7d2373a37dcdc8a507f13c61bb4ce","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4515}]},{"segment_id":"seg_highlight_candidate_9119c8647a09","kind":"highlight_candidate","section":"metadata.highlights","start_sec":13210,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_8_12364_02f18ad5d9c7","rank":1,"score":114.183333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":12364,"end_sec":14262,"text_hash":"02f18ad5d9c79c4398a8e11519f06ee26c8b87c97ecae5c00217667d489fdc9c","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4555}]},{"segment_id":"seg_highlight_candidate_a03c0395e042","kind":"highlight_candidate","section":"metadata.highlights","start_sec":8640,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_4_7833_038771c28b9f","rank":1,"score":119.783333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":7833,"end_sec":9059,"text_hash":"038771c28b9fe594e5a2a996777f9d1ca85476d6d61e06dbcdf670fb45da0afb","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4431}]},{"segment_id":"seg_highlight_candidate_c1223b6080dc","kind":"highlight_candidate","section":"metadata.highlights","start_sec":2930,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_1_428_37128688ae44","rank":1,"score":107.633333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":428,"end_sec":3112,"text_hash":"37128688ae4449545dc53af340ccb15a933ccb235299d6f3cabaa687a38aae0d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4394}]},{"segment_id":"seg_highlight_candidate_f30c8b498d32","kind":"highlight_candidate","section":"metadata.highlights","start_sec":11290,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_7_11168_05b283005c09","rank":1,"score":120.208333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":11168,"end_sec":12343,"text_hash":"05b283005c094c4fae0bf81dc1ef658c483528429271dffba42b236d3f5c192b","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4608}]},{"segment_id":"seg_highlight_candidate_d6f7e4f79c69","kind":"highlight_candidate","section":"metadata.highlights","start_sec":14230,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_8_12364_02f18ad5d9c7","rank":1,"score":114.183333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":12364,"end_sec":14262,"text_hash":"02f18ad5d9c79c4398a8e11519f06ee26c8b87c97ecae5c00217667d489fdc9c","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4555}]},{"segment_id":"seg_highlight_candidate_05af6c54d4de","kind":"highlight_candidate","section":"metadata.highlights","start_sec":4490,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_2_3086_66ecaba1d6d0","rank":1,"score":114.691667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":3086,"end_sec":4923,"text_hash":"66ecaba1d6d021b88c8fa051f9a10496dba6cd415bd7fdc54bd5934aefe06266","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4272}]},{"segment_id":"seg_highlight_candidate_bc1fb76f0d13","kind":"highlight_candidate","section":"metadata.highlights","start_sec":8300,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_4_7833_038771c28b9f","rank":1,"score":119.783333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":7833,"end_sec":9059,"text_hash":"038771c28b9fe594e5a2a996777f9d1ca85476d6d61e06dbcdf670fb45da0afb","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4431}]},{"segment_id":"seg_highlight_candidate_073a63e05d57","kind":"highlight_candidate","section":"metadata.highlights","start_sec":11480,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_7_11168_05b283005c09","rank":1,"score":120.208333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":11168,"end_sec":12343,"text_hash":"05b283005c094c4fae0bf81dc1ef658c483528429271dffba42b236d3f5c192b","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4608}]},{"segment_id":"seg_highlight_candidate_38525cc617c6","kind":"highlight_candidate","section":"metadata.highlights","start_sec":3648,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_2_3086_66ecaba1d6d0","rank":1,"score":114.691667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":3086,"end_sec":4923,"text_hash":"66ecaba1d6d021b88c8fa051f9a10496dba6cd415bd7fdc54bd5934aefe06266","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4272}]},{"segment_id":"seg_highlight_candidate_d4e7667db057","kind":"highlight_candidate","section":"metadata.highlights","start_sec":4268,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_2_3086_66ecaba1d6d0","rank":1,"score":114.691667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":3086,"end_sec":4923,"text_hash":"66ecaba1d6d021b88c8fa051f9a10496dba6cd415bd7fdc54bd5934aefe06266","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4272}]},{"segment_id":"seg_highlight_candidate_1566085770ff","kind":"highlight_candidate","section":"metadata.highlights","start_sec":6562,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_3_4906_e4d59744f3a9","rank":1,"score":105.6,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":4906,"end_sec":7834,"text_hash":"e4d59744f3a9c55ed1f1e10cb9b692898c5754a6a48d4f6d74adea3e3a4ec02c","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4355}]},{"segment_id":"seg_highlight_candidate_9da9db911d9e","kind":"highlight_candidate","section":"metadata.highlights","start_sec":15982,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_9_14244_c5a7347f9cb0","rank":1,"score":109.625,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":14244,"end_sec":16689,"text_hash":"c5a7347f9cb0766bab4075b16065ba8845bf99b3e859cb344792b97af7eb2297","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4260}]},{"segment_id":"seg_highlight_candidate_439b36d45607","kind":"highlight_candidate","section":"metadata.highlights","start_sec":11718,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_7_11168_05b283005c09","rank":1,"score":120.208333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":11168,"end_sec":12343,"text_hash":"05b283005c094c4fae0bf81dc1ef658c483528429271dffba42b236d3f5c192b","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4608}]},{"segment_id":"seg_highlight_candidate_5838d3473b42","kind":"highlight_candidate","section":"metadata.highlights","start_sec":3898,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_2_3086_66ecaba1d6d0","rank":1,"score":114.691667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":3086,"end_sec":4923,"text_hash":"66ecaba1d6d021b88c8fa051f9a10496dba6cd415bd7fdc54bd5934aefe06266","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4272}]},{"segment_id":"seg_highlight_candidate_ede66231dc70","kind":"highlight_candidate","section":"metadata.highlights","start_sec":10562,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_6_10177_e2263a467b02","rank":1,"score":121.416667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":10177,"end_sec":11207,"text_hash":"e2263a467b02444884afd6f7a1f7f74d70d4febda5407b3dd0aefef5aa68e6ff","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4712}]},{"segment_id":"seg_highlight_candidate_23f3035aee3e","kind":"highlight_candidate","section":"metadata.highlights","start_sec":3742,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_2_3086_66ecaba1d6d0","rank":1,"score":114.691667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":3086,"end_sec":4923,"text_hash":"66ecaba1d6d021b88c8fa051f9a10496dba6cd415bd7fdc54bd5934aefe06266","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4272}]},{"segment_id":"seg_highlight_candidate_fc07658d68ed","kind":"highlight_candidate","section":"metadata.highlights","start_sec":9242,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_5_9033_3c5de5c0f45e","rank":1,"score":120.383333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":9033,"end_sec":10187,"text_hash":"3c5de5c0f45e7d6348bb1541755609c701d7d2373a37dcdc8a507f13c61bb4ce","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4515}]},{"segment_id":"seg_highlight_candidate_e7f32998b6cc","kind":"highlight_candidate","section":"metadata.highlights","start_sec":2480,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_13799077_1_428_37128688ae44","rank":1,"score":107.633333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":428,"end_sec":3112,"text_hash":"37128688ae4449545dc53af340ccb15a933ccb235299d6f3cabaa687a38aae0d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:13799077/13799077_레테공주로 하드데미안 하드루시드 잡기 ٩(●'▿'●)۶_144p.srt","token_count":4394}]}]}</script>
 
@@ -1294,7 +3620,7 @@ async function copyChzzkCommentText(btn) {
   });
 }());
 </script>
-<script src="../../assets/viewer-editor-tools.js?v=e4a0b2e9fd9b"></script>
+<script src="../../assets/viewer-editor-tools.js?v=53469c9f0a8f"></script>
 <div class="public-report-toast" data-copy-report-toast role="status" aria-live="polite"></div>
 <script id="publicReportNavScript">
 (() => {

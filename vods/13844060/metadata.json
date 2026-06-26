@@ -1,0 +1,6098 @@
+{
+  "video_no": "13844060",
+  "title": "북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶",
+  "channel": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+  "platform": "chzzk",
+  "duration": 1994,
+  "publish_date": "2026-06-23 08:14:54",
+  "category": "",
+  "thumbnail_url": "https://video-phinf.pstatic.net/20260623_4/1782172125031X5UQN_JPEG/WXc1RJaVqV_03.jpg",
+  "total_chats": 3526,
+  "highlight_count": 8,
+  "highlights": [
+    {
+      "sec": 1210,
+      "composite": 1.0,
+      "count": 88,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_9a06f64830cb",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1210
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1210,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 1280,
+      "composite": 1.0,
+      "count": 75,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst",
+        "reaction_question",
+        "reaction_surprise"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_2fa0ee65c5bd",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1280
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1280,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 1460,
+      "composite": 1.0,
+      "count": 72,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst",
+        "reaction_question",
+        "reaction_surprise"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_58bf2443c3f9",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1460
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1460,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 1870,
+      "composite": 1.0,
+      "count": 78,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst",
+        "reaction_question"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_07754eb6326b",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1870
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1870,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 1740,
+      "composite": 1.0,
+      "count": 26,
+      "source_signals": [
+        "audio",
+        "chat",
+        "laughter_burst",
+        "reaction_question",
+        "reaction_surprise"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_b6b16d54a2de",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1740
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1740,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 790,
+      "composite": 0.9863,
+      "count": 59,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst",
+        "reaction_question"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_f8c6445729c1",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 790
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 790,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 890,
+      "composite": 0.392,
+      "count": 30,
+      "source_signals": [
+        "chat",
+        "laughter_burst",
+        "reaction_surprise"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_88fa5de595a1",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 890
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 140,
+      "composite": 0.3492,
+      "count": 26,
+      "source_signals": [
+        "chat",
+        "laughter_burst",
+        "reaction_question"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_21ade845202c",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 140
+        }
+      ],
+      "risk_flags": []
+    }
+  ],
+  "segment_ledger_schema_version": 1,
+  "segment_ledger": [
+    {
+      "segment_id": "seg_summary_7ee83dfb22c6",
+      "kind": "summary",
+      "section": "summary",
+      "index": 1,
+      "timecode": "",
+      "start_sec": null,
+      "end_sec": null,
+      "title": "북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "summary",
+          "fields": [
+            "title",
+            "hashtags",
+            "pull_quote"
+          ]
+        }
+      ],
+      "risk_flags": [],
+      "hashtags": [
+        "월드컵",
+        "메시",
+        "밈드립"
+      ],
+      "pull_quote": "축구를 보다가 이야기와 드립이 겹치고, 메시 서사와 물기 가득한 경기 장면이 한 번에 터져버린 방송."
+    },
+    {
+      "segment_id": "seg_timeline_7b7ac4aa10f9",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 1,
+      "timecode": "00:02:16",
+      "start_sec": 136,
+      "end_sec": null,
+      "title": "축구 게시판 이름부터 장난으로 터져버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:02:16"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"이제 축구갤이다\" \"싸카??\" \"메시 게시판\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "탬탬이 월드컵용 게시판을 만들며 \"싸카루\", \"풋볼\", \"축구장\" 같은 이름을 두고 계속 굴렸다. 평범한 이름은 딱딱하다며 장난스럽게 붙였다 떼는 흐름이 초반 웃음 포인트였다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_6df5fe0de75f",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 2,
+      "timecode": "00:08:52",
+      "start_sec": 532,
+      "end_sec": null,
+      "title": "말머리를 ‘유머 정보 숭배’로 확정해버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:08:52"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"유머, 정보, 숭배\" \"숭배! 숭배.\" \"조롱 말머리는 따로 있으면 좀 그래\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "게시판 말머리를 \"유머, 정보, 감동\"에서 결국 \"유머, 정보, 숭배\"로 정리했다. 조롱 말머리를 따로 두기 애매하다는 설명까지 붙으며 운영 톤이 잡혔다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_19d178ad510b",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 3,
+      "timecode": "00:10:59",
+      "start_sec": 659,
+      "end_sec": null,
+      "title": "호날두 점프력 글 보자마자 밈·드립이 붙어버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:10:59"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"와, 벌써 올라오네?\" \"우리 형의 전성기 때 점프력을 알아보자.\" \"10년만 젊었어도...\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "올라온 글을 읽으며 호날두 전성기 점프력 이야기에 바로 반응했고, \"10년만 젊었어도\" 같은 문구가 웃음으로 이어졌다. 게시판 만들자마자 글이 쏟아지는 흐름도 같이 흘렀다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_119a55ea77f1",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 4,
+      "timecode": "00:13:04",
+      "start_sec": 784,
+      "end_sec": null,
+      "title": "‘슈우우우’ 호날두 밈이 폭발해버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:13:04"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"슈우우우!\" \"이거 진짜인 내가 라이브를 봤어\" \"SIUUUUUUUUUUU 이거 진짜임\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 812.5,
+          "delta_sec": 28,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "거의 날아다니는 호날두 장면에 탬탬이 \"슈우우우!\"를 외쳤고, \"이거 진짜인 내가 라이브를 봤어\"라고 감탄했다. 과장된 편집과 실제 장면이 겹치며 채팅도 같이 터졌다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_2dd0c579db7f",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 5,
+      "timecode": "00:14:45",
+      "start_sec": 885,
+      "end_sec": null,
+      "title": "선수 이름 헷갈림이 정답 맞히기 밈·드립으로 번져버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:14:45"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"5번은 누군지 모르겠어요. 펠릭스?\" \"시난데즈인가?\" \"해저드?\" \"엔조\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "이적료 TOP10을 보며 탬탬이 펠릭스, 엔소 페르난데스, 아자르를 헷갈렸다. 얼굴과 이름이 안 맞자 채팅이 정답 맞히기 모드로 붙었다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_0b263b458fcf",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 6,
+      "timecode": "00:16:12",
+      "start_sec": 972,
+      "end_sec": null,
+      "title": "바르샤 망하게 한 주범 드립이 매운맛으로 가버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:16:12"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"당시 바르샤를 망하게 한 주범\" \"그래서 덴벨레한테 화난 사람들이 많았구나\" \"바르샤가 진짜\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "덴벨레와 쿠티뉴 같은 고액 이적을 보며 탬탬이 \"당시 바르샤를 망하게 한 주범\"이라고 직설적으로 읽었다. 팀 재정 이야기와 선수 평가가 섞이며 분위기가 매워졌다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_ab361ee6f072",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 7,
+      "timecode": "00:19:03",
+      "start_sec": 1143,
+      "end_sec": null,
+      "title": "아자르를 버거킹으로 로스트해버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:19:03"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"프리미어리그에서 킹을 먹고 갔지만\" \"가서는 그냥 버거킹\" \"아자르는 비행기 타고 가던길에 납치되서 다른사람이 내림\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1162.5,
+          "delta_sec": 20,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "아자르의 이적료를 보며 프리미어리그의 왕이 레알에서는 \"버거킹\"이 됐다는 식으로 강하게 드립쳤다. 먹튀 이미지와 말장난이 겹치며 큰 웃음이 났다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_83210b3d3df7",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 8,
+      "timecode": "00:20:11",
+      "start_sec": 1211,
+      "end_sec": null,
+      "title": "네이마르 국적부터 헷갈리며 웃음이 터져버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:20:11"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"네이마르는 어디사람이에요?\" \"아, 브라질이었다고? 엥?\" \"브라질\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "탬탬이 \"네이마르는 어디사람이에요?\"라고 물었다가 브라질이라는 답을 듣고도 잠깐 얼었다. 익숙한 선수인데도 순간 혼선이 생겨 채팅이 바로 반응했다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_e25c6157a440",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 9,
+      "timecode": "00:20:51",
+      "start_sec": 1251,
+      "end_sec": null,
+      "title": "물에 잠긴 경기장 영상이 수영장급 수중전이 돼버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:20:51"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"와, 공이 멈추네?\" \"공이 멈춰.\" \"수영장이냐고\" \"물축구\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1267.5,
+          "delta_sec": 16,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "미국-이라크 경기장 배수 영상을 보며 공이 물에 멈추고 물이 튀는 장면에 연달아 감탄했다. 축구라기보다 수영장에 가까운 장면이 웃음 포인트가 됐다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_9a90e815f171",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 10,
+      "timecode": "00:21:40",
+      "start_sec": 1300,
+      "end_sec": null,
+      "title": "메시 세레머니 이유가 공개되며 분위기가 확 바뀜",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:21:40"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"하늘에 계신 할머니께 드리는 세레머니입니다.\" \"와 진짜?\" \"어우\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "메시가 골을 넣고 하늘을 가리키는 세레머니가 하늘에 계신 할머니를 향한 것이라는 설명이 나왔다. 탬탬은 \"와 진짜?\"라며 놀랐고, 메시 서사가 감동적으로 붙었다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_eb558bb4ac85",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 11,
+      "timecode": "00:22:21",
+      "start_sec": 1341,
+      "end_sec": null,
+      "title": "할머니가 메시를 축구로 데려온 이야기로 이어짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:22:21"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"메시의 할머니는 키 작은 메시가 구단들에게 거절당하자 직접 코치들을 설득하며 메시를 입문시켰다.\" \"우리 손자 진짜 잘한단 말이에요?\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "할머니가 키 작은 메시를 위해 코치들을 설득하고 부모님까지 움직였다는 일화가 이어졌다. \"우리 손자 진짜 잘한단 말이에요?\" 같은 상상이 붙으며 메시의 시작점이 강조됐다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_fec772f8dc5c",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 12,
+      "timecode": "00:23:21",
+      "start_sec": 1401,
+      "end_sec": null,
+      "title": "열한 살과 세레머니가 연결되며 서사가 깊어짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:23:21"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"메시는 할머니가 돌아가신 열한 살 때부터\" \"하늘을 가리키는 겸 열한 살인 것까지 생각하는 건가?\" \"둘 다 일 수 있잖아!\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "메시는 할머니를 11살에 떠나보냈다는 설명이 나오자, 탬탬이 하늘을 가리키는 동작에 그 나이의 의미가 담겼을 수도 있다고 조심스럽게 짚었다. 짧은 잡담이 감정선으로 바뀌었다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_745ad2ff6d7b",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 13,
+      "timecode": "00:24:21",
+      "start_sec": 1461,
+      "end_sec": null,
+      "title": "갑툭튀 화면에 경악하며 난리가 남",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:24:21"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"아, 뭐야 이게!\" \"장난하나?\" \"너무 징그럽잖아\" \"???\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1467.5,
+          "delta_sec": 6,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "왼쪽에서 갑자기 튀어나온 화면을 보고 탬탬이 \"아, 뭐야 이게!\"라며 놀랐다. 이어 \"너무 징그럽잖아\"라고 반응하면서 채팅도 물음표와 웃음으로 번졌다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_99ff6e2a1c63",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 14,
+      "timecode": "00:25:16",
+      "start_sec": 1516,
+      "end_sec": null,
+      "title": "숨은 메시 찾기 실패가 허탈 웃음으로 끝남",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:25:16"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"저 사람 아니라고?\" \"빨간 옷에 메시가 있다고?\" \"아이씨 여기 메시가 있었네\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "관중석이나 이미지 속에서 메시를 찾는 장면에서 \"저 사람 아니라고?\" \"빨간 옷에 메시가 있다고?\" 하며 헤맸다. 결국 정답이 드러나자 \"아이씨 여기 메시가 있었네\"라며 웃었다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_611787f920c1",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 15,
+      "timecode": "00:26:18",
+      "start_sec": 1578,
+      "end_sec": null,
+      "title": "튀르키예 탈락 분노 영상이 매운 해설로 이어짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:26:18"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"탈락 확정 후 분노하는 튀르키예 방송인.\" \"화가 잔뜩 나신 것 같아.\" \"이게 확실히 많이 화가 나신 거 같기는 해요.\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "월드컵 탈락 뒤 분노하는 튀르키예 방송인을 보며, 탬탬은 말은 다 못 알아들어도 화가 잔뜩 난 분위기라고 읽었다. 기대가 컸던 현지 반응이 강하게 전달됐다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_c0e58c471b14",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 16,
+      "timecode": "00:28:35",
+      "start_sec": 1715,
+      "end_sec": null,
+      "title": "골키퍼 시점 돌진이 트럭급 공포로 바뀜",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:28:35"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"온다!\" \"피파잖아\" \"트럭이다\" \"탱크가 달려와 ㅋ\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1737.5,
+          "delta_sec": 22,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "이라크 골키퍼 시점 화면에서 거대한 선수가 정면으로 달려오자 탬탬이 \"온다!\"라며 긴장했다. 시청자들은 트럭이 들이박는 것 같다고 웃었다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_fe6116d046fa",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 17,
+      "timecode": "00:29:10",
+      "start_sec": 1750,
+      "end_sec": null,
+      "title": "유니폼 패치 덕질이 다이어리 꾸미기처럼 번짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:29:10"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"유니폼 패치의 의미\" \"메시 거의 덕지덕지네?\" \"거의 다이어리 꾸미기, 다꾸급.\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1737.5,
+          "delta_sec": 12,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "월드컵 패치의 의미를 하나씩 보며 레거시 패치, 골든볼 패치, 챔피언 패치를 정리했다. 메시 유니폼이 패치로 가득해지자 \"거의 다꾸급\"이라는 말이 나왔다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_14bfd9d5490d",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 18,
+      "timecode": "00:30:49",
+      "start_sec": 1849,
+      "end_sec": null,
+      "title": "무릎 슬라이딩 대참사가 AI 의심까지 가버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:30:49"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"어우, 개아프겄다.\" \"이거 AI 아니야?\" \"카트라이더인가요, 이거.\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1872.5,
+          "delta_sec": 24,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "세레머니 무릎 슬라이딩을 보던 탬탬이 \"어우, 개아프겄다\"며 질색했다. 너무 비현실적인 미끄러짐에 \"이거 AI 아니야?\" \"카트라이더인가요, 이거\"까지 이어졌다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_a9b014eb1618",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 19,
+      "timecode": "00:31:28",
+      "start_sec": 1888,
+      "end_sec": null,
+      "title": "음바페 언어별 온도차 이야기가 흘러나옴",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:31:28"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"영어 쓸 때랑 프랑스 쓸 때랑 사람이 너무 달라서\" \"언어마다 톤 진짜 많이 바뀌던데, 사람들?\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1872.5,
+          "delta_sec": 16,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "영어 인터뷰와 프랑스어 인터뷰를 비교하며 사람이 너무 다르다고 느꼈다. 모국어와 외국어를 쓸 때 톤이 달라진다는 잡담으로 이어졌다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_01bb418b8afa",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 20,
+      "timecode": "00:32:27",
+      "start_sec": 1947,
+      "end_sec": null,
+      "title": "외국어 톤 잡담으로 마무리 재정비해버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:32:27"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"외국 사람들 우리나라말 할 때는\" \"모국어 쓰면 갑자기 톤 좀 내려가더라고\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1917.5,
+          "delta_sec": 30,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "외국인 아이돌이 한국어를 할 때 더 귀여워 보인다는 이야기까지 이어졌다. 경기 시작 직전의 가벼운 정리 구간으로 마무리된다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_889e4d796d3d",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 1,
+      "timecode": "00:13:04~00:16:12",
+      "start_sec": 784,
+      "end_sec": 972,
+      "title": "호날두 밈·드립이 터지고 선수 이적 얘기로 이어짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "00:13:04~00:16:12"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "호날두 점프 장면의 웃음이 바로 선수 이름 헷갈림까지 이어져 초반 하이라이트로 가장 밀도가 높다."
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 812.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "호날두 점프 장면의 웃음이 바로 선수 이름 헷갈림까지 이어져 초반 하이라이트로 가장 밀도가 높다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_b0d9a8cb5085",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 2,
+      "timecode": "00:19:03~00:20:51",
+      "start_sec": 1143,
+      "end_sec": 1251,
+      "title": "아자르 로스트와 네이마르 국적 헷갈림이 연속으로 터짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "00:19:03~00:20:51"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "드립과 말실수가 연달아 붙어서 짧은 클립으로도 반응 포인트가 명확하다."
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1162.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "드립과 말실수가 연달아 붙어서 짧은 클립으로도 반응 포인트가 명확하다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_85447c5ca2f4",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 3,
+      "timecode": "00:21:40~00:23:21",
+      "start_sec": 1300,
+      "end_sec": 1401,
+      "title": "메시 할머니 서사가 공개되며 분위기가 감동으로 바뀜",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "00:21:40~00:23:21"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "감동 설명이 이어지고 탬탬의 반응도 진해져, 전환점이 분명한 구간이다."
+        }
+      ],
+      "risk_flags": [],
+      "reason": "감동 설명이 이어지고 탬탬의 반응도 진해져, 전환점이 분명한 구간이다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_fd5425ce150d",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 4,
+      "timecode": "00:24:21~00:25:16",
+      "start_sec": 1461,
+      "end_sec": 1516,
+      "title": "갑툭튀 화면에 놀라고 숨은 메시 찾기에 실패함",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "00:24:21~00:25:16"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "리액션과 탐색 실패가 연속으로 붙어 있어 짧게 잘라 보여주기 좋다."
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1467.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "리액션과 탐색 실패가 연속으로 붙어 있어 짧게 잘라 보여주기 좋다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_30f36008d775",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 5,
+      "timecode": "00:28:35~00:30:49",
+      "start_sec": 1715,
+      "end_sec": 1849,
+      "title": "골키퍼 돌진 공포부터 무릎 슬라이딩 대참사까지 터짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "00:28:35~00:30:49"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "공포·웃음·비현실적 장면이 한 덩어리로 이어져 후반부 대표 클립으로 강하다."
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1737.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "공포·웃음·비현실적 장면이 한 덩어리로 이어져 후반부 대표 클립으로 강하다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_chapter_da3c928463f7",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 1,
+      "timecode": "00:02:16",
+      "start_sec": 136,
+      "end_sec": null,
+      "title": "축구 게시판 이름 정하기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:02:16"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_90264adb9ec9",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 2,
+      "timecode": "00:08:52",
+      "start_sec": 532,
+      "end_sec": null,
+      "title": "말머리 설정 공개",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:08:52"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_426a39d1281e",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 3,
+      "timecode": "00:10:59",
+      "start_sec": 659,
+      "end_sec": null,
+      "title": "호날두 점프력 글 보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:10:59"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_2f3a10b22ca0",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 4,
+      "timecode": "00:13:04",
+      "start_sec": 784,
+      "end_sec": null,
+      "title": "호날두 밈 터짐",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:13:04"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 812.5,
+          "delta_sec": 28,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_b7d16148ee4d",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 5,
+      "timecode": "00:14:45",
+      "start_sec": 885,
+      "end_sec": null,
+      "title": "이적료 TOP10 보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:14:45"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_55346705d3a4",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 6,
+      "timecode": "00:16:12",
+      "start_sec": 972,
+      "end_sec": null,
+      "title": "바르샤 이적사건 보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:16:12"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_b8e855cca99d",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 7,
+      "timecode": "00:19:03",
+      "start_sec": 1143,
+      "end_sec": null,
+      "title": "아자르 로스트",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:19:03"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1162.5,
+          "delta_sec": 20,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_92068bc286de",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 8,
+      "timecode": "00:20:11",
+      "start_sec": 1211,
+      "end_sec": null,
+      "title": "네이마르 국적 알아보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:20:11"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_2e45f8bb9437",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 9,
+      "timecode": "00:20:51",
+      "start_sec": 1251,
+      "end_sec": null,
+      "title": "물에 잠긴 경기장 보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:20:51"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1267.5,
+          "delta_sec": 16,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_2336985a3248",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 10,
+      "timecode": "00:21:40",
+      "start_sec": 1300,
+      "end_sec": null,
+      "title": "메시 세레머니 이유 공개",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:21:40"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_cb27b89ce1dc",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 11,
+      "timecode": "00:22:21",
+      "start_sec": 1341,
+      "end_sec": null,
+      "title": "메시 할머니 이야기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:22:21"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_0c2c5981da37",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 12,
+      "timecode": "00:23:21",
+      "start_sec": 1401,
+      "end_sec": null,
+      "title": "열한 살 의미 알아보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:23:21"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_154da13ffd58",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 13,
+      "timecode": "00:24:21",
+      "start_sec": 1461,
+      "end_sec": null,
+      "title": "갑툭튀 화면 반응",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:24:21"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1467.5,
+          "delta_sec": 6,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_07d4cb8f2162",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 14,
+      "timecode": "00:25:16",
+      "start_sec": 1516,
+      "end_sec": null,
+      "title": "숨은 메시 찾기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:25:16"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_39b7bfa902e6",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 15,
+      "timecode": "00:26:18",
+      "start_sec": 1578,
+      "end_sec": null,
+      "title": "튀르키예 탈락 반응 보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:26:18"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_08fa3729a855",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 16,
+      "timecode": "00:28:35",
+      "start_sec": 1715,
+      "end_sec": null,
+      "title": "골키퍼 돌진 공포",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:28:35"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1737.5,
+          "delta_sec": 22,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_da838c4e2b3e",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 17,
+      "timecode": "00:29:10",
+      "start_sec": 1750,
+      "end_sec": null,
+      "title": "유니폼 패치 알아보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:29:10"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1737.5,
+          "delta_sec": 12,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_fff35a1fde8b",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 18,
+      "timecode": "00:30:49",
+      "start_sec": 1849,
+      "end_sec": null,
+      "title": "무릎 슬라이딩 대참사",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:30:49"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1872.5,
+          "delta_sec": 24,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_08a64e392532",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 19,
+      "timecode": "00:31:28",
+      "start_sec": 1888,
+      "end_sec": null,
+      "title": "음바페 언어 차이 이야기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:31:28"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1872.5,
+          "delta_sec": 16,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_ba4ba2d46a38",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 20,
+      "timecode": "00:32:27",
+      "start_sec": 1947,
+      "end_sec": null,
+      "title": "외국어 톤 잡담",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:32:27"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 1917.5,
+          "delta_sec": 30,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_highlight_candidate_9a06f64830cb",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 1,
+      "timecode": "00:20:10",
+      "start_sec": 1210,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1210
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1210,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 1210,
+      "composite": 1.0,
+      "count": 88
+    },
+    {
+      "segment_id": "seg_highlight_candidate_2fa0ee65c5bd",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 2,
+      "timecode": "00:21:20",
+      "start_sec": 1280,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1280
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1280,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 1280,
+      "composite": 1.0,
+      "count": 75
+    },
+    {
+      "segment_id": "seg_highlight_candidate_58bf2443c3f9",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 3,
+      "timecode": "00:24:20",
+      "start_sec": 1460,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1460
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1460,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 1460,
+      "composite": 1.0,
+      "count": 72
+    },
+    {
+      "segment_id": "seg_highlight_candidate_07754eb6326b",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 4,
+      "timecode": "00:31:10",
+      "start_sec": 1870,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1870
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1870,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 1870,
+      "composite": 1.0,
+      "count": 78
+    },
+    {
+      "segment_id": "seg_highlight_candidate_b6b16d54a2de",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 5,
+      "timecode": "00:29:00",
+      "start_sec": 1740,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1740
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1740,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 1740,
+      "composite": 1.0,
+      "count": 26
+    },
+    {
+      "segment_id": "seg_highlight_candidate_f8c6445729c1",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 6,
+      "timecode": "00:13:10",
+      "start_sec": 790,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 790
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 790,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 790,
+      "composite": 0.9863,
+      "count": 59
+    },
+    {
+      "segment_id": "seg_highlight_candidate_88fa5de595a1",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 7,
+      "timecode": "00:14:50",
+      "start_sec": 890,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 890
+        }
+      ],
+      "risk_flags": [],
+      "sec": 890,
+      "composite": 0.392,
+      "count": 30
+    },
+    {
+      "segment_id": "seg_highlight_candidate_21ade845202c",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 8,
+      "timecode": "00:02:20",
+      "start_sec": 140,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 140
+        }
+      ],
+      "risk_flags": [],
+      "sec": 140,
+      "composite": 0.3492,
+      "count": 26
+    }
+  ],
+  "processed_at": "2026-06-24T10:05:07.628385+09:00",
+  "evidence_verifier": {
+    "schema_version": "evidence_verifier.v1",
+    "status": "pass",
+    "summary": {
+      "checked_segments": 45,
+      "failure_count": 0,
+      "warning_count": 1
+    },
+    "findings": [
+      {
+        "code": "CHAPTER_READINESS_FAIL",
+        "severity": "warning",
+        "message": "chapter readiness validator reported export warning",
+        "source_fields": [
+          "chapter_readiness"
+        ],
+        "detail": {
+          "status": "fail",
+          "failure_reasons": [],
+          "failures": [
+            {
+              "code": "first_timestamp_not_zero",
+              "message": "The first chapter must start at 00:00.",
+              "chapter_index": 1,
+              "timestamp": "00:02:16",
+              "title": "축구 게시판 이름 정하기"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "rendered_summary_evidence": {
+    "schema_version": "rendered_summary_evidence_payload.v1",
+    "render_target": "report_html_script#summaryEvidencePackData",
+    "raw_content_included": false,
+    "item_count": 53,
+    "status": "ready"
+  },
+  "timed_evidence_manifest": {
+    "schema_version": "summary_timed_evidence_manifest.v1",
+    "item_schema_version": "timed_evidence_item.v1",
+    "video_id": "13844060",
+    "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+    "source_type": "subtitle",
+    "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+    "route_ref": "chunk_srt.sliding_window",
+    "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+    "raw_content_included": false,
+    "tokenizer": "cl100k_base",
+    "summary": {
+      "item_count": 2,
+      "start_sec": 1,
+      "end_sec": 1994,
+      "public_safe_count": 2
+    },
+    "items": [
+      {
+        "schema_version": "timed_evidence_item.v1",
+        "evidence_id": "te_13844060_1_1_7918edc66124",
+        "video_id": "13844060",
+        "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+        "source_type": "subtitle_chunk",
+        "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+        "route_ref": "chunk_srt.sliding_window",
+        "start_sec": 1,
+        "end_sec": 1365,
+        "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+        "confidence": 1.0,
+        "public_safe": true,
+        "raw_content_included": false,
+        "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+      },
+      {
+        "schema_version": "timed_evidence_item.v1",
+        "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+        "video_id": "13844060",
+        "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+        "source_type": "subtitle_chunk",
+        "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+        "route_ref": "chunk_srt.sliding_window",
+        "start_sec": 1341,
+        "end_sec": 1994,
+        "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+        "confidence": 1.0,
+        "public_safe": true,
+        "raw_content_included": false,
+        "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+      }
+    ]
+  },
+  "summary_evidence_pack": {
+    "schema_version": "summary_evidence_pack.v1",
+    "retrieval_mode": "local_deterministic",
+    "rerank_policy": "timestamp_overlap_rerank.v1",
+    "attention_policy": "timestamp_overlap_plus_local_vector_attention.v1",
+    "semantic_index_status": "local_free_hash_ready",
+    "semantic_index_ref": "summary_local_vector_index.v1",
+    "raw_content_included": false,
+    "summary": {
+      "segment_count": 53,
+      "matched_segment_count": 53,
+      "unmatched_segment_count": 0,
+      "timed_evidence_count": 2,
+      "semantic_index_item_count": 2,
+      "semantic_index_vectorized_count": 2,
+      "semantic_matched_ref_count": 40,
+      "window_sec": 90,
+      "top_k": 3
+    },
+    "items": [
+      {
+        "segment_id": "seg_timeline_7b7ac4aa10f9",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 136,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 121.496008,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.038169
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_6df5fe0de75f",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 532,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 121.492933,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.038128
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_19d178ad510b",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 659,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 122.522308,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.051853
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_119a55ea77f1",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 784,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 125.354158,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.089611
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_2dd0c579db7f",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 885,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 123.597583,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.06619
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_0b263b458fcf",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 972,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 122.174008,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.047209
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_ab361ee6f072",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 1143,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 121.896208,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.043505
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_83210b3d3df7",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 1211,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 120.397108,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.023517
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_e25c6157a440",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 1251,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 123.062983,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.059062
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_9a90e815f171",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 1300,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 121.983658,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.044671
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_eb558bb4ac85",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 1341,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 128.453233,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.051932
+          },
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 2,
+            "score": 124.660033,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.080356
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_fec772f8dc5c",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 1401,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 129.255058,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.062623
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_745ad2ff6d7b",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 1461,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 131.397508,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.091189
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_99ff6e2a1c63",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 1516,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 129.826783,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.070246
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_611787f920c1",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 1578,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 130.945783,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.085166
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_c0e58c471b14",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 1715,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 129.410308,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.064693
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_fe6116d046fa",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 1750,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 133.722733,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.122192
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_14bfd9d5490d",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 1849,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 154.965358,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.405427
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_a9b014eb1618",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 1888,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 129.394333,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.06448
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_01bb418b8afa",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 1947,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 125.269483,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.009482
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_889e4d796d3d",
+        "kind": "highlight",
+        "section": "highlights",
+        "start_sec": 784,
+        "end_sec": 972,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 108.919796,
+            "match_reason": "timestamp_overlap+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.027044
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_b0d9a8cb5085",
+        "kind": "highlight",
+        "section": "highlights",
+        "start_sec": 1143,
+        "end_sec": 1251,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 105.795094,
+            "match_reason": "timestamp_overlap+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.024482
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_85447c5ca2f4",
+        "kind": "highlight",
+        "section": "highlights",
+        "start_sec": 1300,
+        "end_sec": 1401,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 107.057781,
+            "match_reason": "timestamp_overlap+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.032848
+          },
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 2,
+            "score": 104.974848,
+            "match_reason": "timestamp_overlap+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.034562
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_fd5425ce150d",
+        "kind": "highlight",
+        "section": "highlights",
+        "start_sec": 1461,
+        "end_sec": 1516,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 109.166957,
+            "match_reason": "timestamp_overlap+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.066075
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_30f36008d775",
+        "kind": "highlight",
+        "section": "highlights",
+        "start_sec": 1715,
+        "end_sec": 1849,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 111.539237,
+            "match_reason": "timestamp_overlap+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.017052
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_da3c928463f7",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 136,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 119.767408,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.015121
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_90264adb9ec9",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 532,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 118.633333,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_426a39d1281e",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 659,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 121.577683,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.039258
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_2f3a10b22ca0",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 784,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 118.633333,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_b7d16148ee4d",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 885,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 121.577683,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.039258
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_55346705d3a4",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 972,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 121.577683,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.039258
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_b8e855cca99d",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 1143,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 118.633333,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_92068bc286de",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 1211,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 118.633333,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_2e45f8bb9437",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 1251,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 122.683633,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.054004
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_2336985a3248",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 1300,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 119.929408,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.017281
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_cb27b89ce1dc",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 1341,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 126.928633,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.031604
+          },
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 2,
+            "score": 120.884908,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.030021
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_0c2c5981da37",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 1401,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 124.558333,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_154da13ffd58",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 1461,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 127.192033,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.035116
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_07d4cb8f2162",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 1516,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 126.928633,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.031604
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_39b7bfa902e6",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 1578,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 130.224583,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.07555
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_08fa3729a855",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 1715,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 124.558333,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_da838c4e2b3e",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 1750,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 128.772208,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.056185
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_fff35a1fde8b",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 1849,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 126.665308,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.028093
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_08a64e392532",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 1888,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 124.558333,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_ba4ba2d46a38",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 1947,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 124.558333,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_9a06f64830cb",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 1210,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 118.633333,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_2fa0ee65c5bd",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 1280,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 118.633333,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_58bf2443c3f9",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 1460,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 124.558333,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_07754eb6326b",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 1870,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 124.558333,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_b6b16d54a2de",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 1740,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "rank": 1,
+            "score": 124.558333,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_f8c6445729c1",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 790,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 118.633333,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_88fa5de595a1",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 890,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 118.633333,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_21ade845202c",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 140,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "rank": 1,
+            "score": 118.633333,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      }
+    ]
+  },
+  "summary_pre_generation_evidence_pack": {
+    "schema_version": "summary_pre_generation_evidence_pack.v1",
+    "raw_content_included": false,
+    "prompt_contract_available": true,
+    "prompt_contract_injected": true,
+    "prompt_contract_scope": "fresh_chunk_llm_calls; cached chunk results keep their prior prompt provenance",
+    "retrieval_mode": "pre_generation_timed_evidence_refs",
+    "summary": {
+      "chunk_ref_count": 2,
+      "timeline_ref_count": 2,
+      "highlight_ref_count": 2,
+      "coverage_ref_count": 2
+    },
+    "section_packs": [
+      {
+        "key": "timeline_generation",
+        "purpose": "Main timeline must cite/align to these timed evidence refs.",
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "chunk_index": 1,
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          },
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "chunk_index": 2,
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ]
+      },
+      {
+        "key": "highlight_generation",
+        "purpose": "Highlight candidates should prioritize refs around chat/audio/user-clip peaks.",
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "chunk_index": 1,
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          },
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "chunk_index": 2,
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ]
+      },
+      {
+        "key": "chapter_generation",
+        "purpose": "Chapter/tail coverage should keep beginning, middle, and ending refs visible.",
+        "evidence_refs": [
+          {
+            "evidence_id": "te_13844060_1_1_7918edc66124",
+            "chunk_index": 1,
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1,
+            "end_sec": 1365,
+            "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          },
+          {
+            "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+            "chunk_index": 2,
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1341,
+            "end_sec": 1994,
+            "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt"
+          }
+        ]
+      }
+    ]
+  },
+  "summary_local_vector_index": {
+    "schema_version": "summary_local_vector_index.v1",
+    "embedding_model": "local_hashing_word_v1",
+    "retrieval_mode": "local_free_hash_vector_cosine",
+    "dimensions": 256,
+    "max_features_per_item": 32,
+    "metadata_binding": "timed_evidence_item.v1:evidence_id",
+    "raw_content_included": false,
+    "summary": {
+      "item_count": 2,
+      "vectorized_count": 2,
+      "empty_text_count": 0,
+      "metadata_bound_count": 2
+    },
+    "items": [
+      {
+        "evidence_id": "te_13844060_1_1_7918edc66124",
+        "chunk_index": 1,
+        "start_sec": 1,
+        "end_sec": 1365,
+        "text_hash": "7918edc66124a4f080abf089a0948ca48cdc01176afcf8845fca975b30a7c99f",
+        "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+        "route_ref": "chunk_srt.sliding_window",
+        "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+        "vector_norm": 163.670401,
+        "feature_count": 32
+      },
+      {
+        "evidence_id": "te_13844060_2_1341_16043ca71c2c",
+        "chunk_index": 2,
+        "start_sec": 1341,
+        "end_sec": 1994,
+        "text_hash": "16043ca71c2c016d0a4d9de19567fc742a7cf1bcd96188c3d08a50f91f91c2b7",
+        "source_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+        "route_ref": "chunk_srt.sliding_window",
+        "path_ref": "work:13844060/13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+        "vector_norm": 107.633638,
+        "feature_count": 32
+      }
+    ]
+  },
+  "summary_input_readiness": {
+    "schema_version": "summary_input_readiness.v1",
+    "status": "ready_with_gaps",
+    "quality_claim": "not_evaluated",
+    "items": [
+      {
+        "key": "srt",
+        "name": "자막 SRT",
+        "required": true,
+        "status": "present",
+        "reason": "요약 청크 입력으로 사용할 SRT가 있습니다.",
+        "retry_condition": "transcribe 단계가 SRT를 생성한 뒤 다시 요약합니다.",
+        "detail": {
+          "filename": "13844060_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶_144p.srt",
+          "size_bytes": 21521
+        }
+      },
+      {
+        "key": "chat",
+        "name": "채팅",
+        "required": false,
+        "status": "present",
+        "reason": "채팅 신호가 요약 후보에 반영됩니다.",
+        "retry_condition": "채팅 수집이 VOD 끝까지 성공한 뒤 다시 요약합니다.",
+        "detail": {
+          "message_count": 3526,
+          "first_message_sec": 0.0,
+          "latest_message_sec": 1987.108,
+          "latest_message_hms": "00:33:07",
+          "expected_duration_sec": 1994.0,
+          "expected_duration_hms": "00:33:14",
+          "coverage_ratio": 0.9965,
+          "coverage_gap_sec": 6.892
+        }
+      },
+      {
+        "key": "community",
+        "name": "커뮤니티",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "커뮤니티 반응 후보가 없습니다.",
+        "retry_condition": "커뮤니티 수집 또는 수동 입력 뒤 다시 요약합니다.",
+        "detail": {
+          "post_count": 0,
+          "source": "none",
+          "cache_status": "not_applicable"
+        }
+      },
+      {
+        "key": "context_doc",
+        "name": "VOD 배경 맥락",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "관리자 배경 맥락 없이 요약합니다.",
+        "retry_condition": "work/<video_no>/<video_no>_context.md 작성 뒤 다시 요약합니다.",
+        "detail": {
+          "char_count": 0
+        }
+      },
+      {
+        "key": "timeline_comments",
+        "name": "시청자 시간표 댓글",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "자동 수집 가능한 시청자 시간표 댓글 없이 요약합니다.",
+        "retry_condition": "요약 직전 자동 댓글 수집을 다시 실행합니다. 브라우저 로그인/프로필 잠금 문제일 때만 work/<video_no>/<video_no>_timeline_comments.md 수동 fallback 을 사용합니다.",
+        "detail": {
+          "char_count": 0,
+          "timed_line_count": 0
+        }
+      },
+      {
+        "key": "streamer_vocab",
+        "name": "스트리머 어휘/lexicon",
+        "required": false,
+        "status": "present",
+        "reason": "고유명사/별명 보정 후보가 있습니다.",
+        "retry_condition": "streamer_vocab 저장 또는 lexicon 빌드 뒤 다시 요약합니다.",
+        "detail": {
+          "term_count": 30
+        }
+      },
+      {
+        "key": "manager_edit_lessons",
+        "name": "관리자 수정 사례",
+        "required": false,
+        "status": "present",
+        "reason": "이전 관리자 수정 사례가 프롬프트에 반영됩니다.",
+        "retry_condition": "관리자 저장 이력이 쌓인 뒤 다시 요약합니다.",
+        "detail": {
+          "lesson_count": 3
+        }
+      },
+      {
+        "key": "manager_fewshot_examples",
+        "name": "관리자 수정 few-shot",
+        "required": false,
+        "status": "present",
+        "reason": "검증된 관리자 수정 전/후 예시가 프롬프트에 반영됩니다.",
+        "retry_condition": "fewshot_injection_enabled=true 설정과 highlight_learning weak_positive 후보가 있는 상태에서 다시 요약합니다.",
+        "detail": {
+          "example_count": 3,
+          "fingerprint": "72dcb6b2e7d4"
+        }
+      },
+      {
+        "key": "streamer_recent_context",
+        "name": "최근 공개 맥락",
+        "required": false,
+        "status": "present",
+        "reason": "최근 공개 맥락 후보가 요약 보조 입력으로 반영됩니다.",
+        "retry_condition": "streamer_recent_context_enabled=true 후 공개 소스 수집을 다시 실행합니다. 실패해도 요약은 계속 진행됩니다.",
+        "detail": {
+          "item_count": 1,
+          "source_count": 2,
+          "sources": [
+            "fmkorea",
+            "chzzk_public"
+          ],
+          "diagnostic_status_counts": {
+            "no_candidates": 1,
+            "ok": 2
+          }
+        }
+      },
+      {
+        "key": "user_clips",
+        "name": "시청자 클립",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "시청자 클립 anchor 없이 요약합니다.",
+        "retry_condition": "viewer clip 수집/anchor 회수 뒤 다시 요약합니다.",
+        "detail": {
+          "total": 0,
+          "with_offset": 0,
+          "with_engagement": 0,
+          "status": "wrong_vod_only"
+        }
+      },
+      {
+        "key": "audio_peaks",
+        "name": "오디오 반응 피크",
+        "required": false,
+        "status": "present",
+        "reason": "오디오 반응 분석 결과가 있습니다.",
+        "retry_condition": "audio reaction 분석이 성공한 뒤 다시 요약합니다.",
+        "detail": {
+          "peak_count": 8,
+          "status": "available"
+        }
+      },
+      {
+        "key": "source_manifest",
+        "name": "요약 입력 manifest",
+        "required": true,
+        "status": "present",
+        "reason": "요약 입력 manifest가 계산되어 cache/재현성 기준이 있습니다.",
+        "retry_condition": "요약 cache manifest 계산 후 다시 확인합니다.",
+        "detail": {
+          "schema_version": 10,
+          "manifest_key_count": 23,
+          "has_summary_hash": false
+        }
+      },
+      {
+        "key": "segment_ledger",
+        "name": "segment/evidence ledger",
+        "required": false,
+        "status": "present",
+        "reason": "렌더링된 리포트의 segment ledger가 있습니다.",
+        "retry_condition": "summary Markdown parser/metadata generation을 확인한 뒤 다시 렌더링합니다.",
+        "detail": {
+          "segment_count": 54,
+          "kind_counts": {
+            "chapter": 20,
+            "highlight": 5,
+            "highlight_candidate": 8,
+            "summary": 1,
+            "timeline": 20
+          }
+        }
+      }
+    ]
+  },
+  "audio_reaction_peaks": [
+    {
+      "start_sec": 810.0,
+      "end_sec": 815.0,
+      "center_sec": 812.5,
+      "loudness_db": -17.305,
+      "peak_db": -1.181,
+      "percentile": 0.9662,
+      "z_score": 1.4779,
+      "normalized": 0.7463,
+      "score": 0.9063,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 1160.0,
+      "end_sec": 1165.0,
+      "center_sec": 1162.5,
+      "loudness_db": -18.726,
+      "peak_db": -1.665,
+      "percentile": 0.9561,
+      "z_score": 1.3235,
+      "normalized": 0.7206,
+      "score": 0.8806,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 1265.0,
+      "end_sec": 1270.0,
+      "center_sec": 1267.5,
+      "loudness_db": -15.114,
+      "peak_db": -0.108,
+      "percentile": 0.9912,
+      "z_score": 1.7159,
+      "normalized": 0.786,
+      "score": 0.946,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 1465.0,
+      "end_sec": 1470.0,
+      "center_sec": 1467.5,
+      "loudness_db": -18.38,
+      "peak_db": -1.406,
+      "percentile": 0.9612,
+      "z_score": 1.3612,
+      "normalized": 0.7269,
+      "score": 0.8869,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 1680.0,
+      "end_sec": 1685.0,
+      "center_sec": 1682.5,
+      "loudness_db": -15.009,
+      "peak_db": -3.092,
+      "percentile": 0.9937,
+      "z_score": 1.7273,
+      "normalized": 0.7879,
+      "score": 0.9479,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 1735.0,
+      "end_sec": 1740.0,
+      "center_sec": 1737.5,
+      "loudness_db": -18.695,
+      "peak_db": -2.281,
+      "percentile": 0.9586,
+      "z_score": 1.3269,
+      "normalized": 0.7211,
+      "score": 0.8811,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 1870.0,
+      "end_sec": 1875.0,
+      "center_sec": 1872.5,
+      "loudness_db": -16.026,
+      "peak_db": -1.16,
+      "percentile": 0.9862,
+      "z_score": 1.6168,
+      "normalized": 0.7695,
+      "score": 0.9295,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 1915.0,
+      "end_sec": 1920.0,
+      "center_sec": 1917.5,
+      "loudness_db": -14.002,
+      "peak_db": -0.024,
+      "percentile": 0.9962,
+      "z_score": 1.8367,
+      "normalized": 0.8061,
+      "score": 0.9661,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    }
+  ],
+  "audio_loudness_per_min": [
+    -32.534,
+    -35.159,
+    -30.827,
+    -30.872,
+    -35.268,
+    -36.969,
+    -36.202,
+    -35.152,
+    -30.624,
+    -29.078,
+    -32.803,
+    -25.565,
+    -27.232,
+    -26.652,
+    -31.753,
+    -30.946,
+    -27.827,
+    -25.301,
+    -28.165,
+    -24.341,
+    -30.355,
+    -25.838,
+    -28.029,
+    -29.06,
+    -30.403,
+    -45.048,
+    -30.373,
+    -22.797,
+    -25.861,
+    -38.047,
+    -36.779,
+    -19.899,
+    -35.378,
+    -66.499
+  ],
+  "audio_feature_source": {
+    "kind": "relative_loudness_main_pipeline",
+    "enabled_by_default": true,
+    "window_sec": 5,
+    "min_percentile": 0.95,
+    "min_gap_sec": 30,
+    "chat_overlap_sec": 60,
+    "max_peaks": 20,
+    "waveform_max_points": 720,
+    "normalization": "per_vod_relative_percentile_and_z_score",
+    "decision_rule": "audio is supporting evidence; audio-only peaks do not prove highlight importance",
+    "sample_count": 1995,
+    "source_kind": "whisper_wav_cache",
+    "sample_extraction": "wav_pcm_python",
+    "source_count": 1,
+    "include_lufs": false
+  },
+  "audio_waveform": {
+    "schema_version": "audio_waveform.v1",
+    "source": "audio_loudness_windows",
+    "sample_count": 399,
+    "max_points": 720,
+    "duration_sec": 1994.0,
+    "channels": "mono_mixed",
+    "unit": "relative_loudness_normalized_0_1",
+    "privacy_class": "public_safe",
+    "decision_rule": "waveform is timeline context only; it does not prove highlight importance",
+    "samples": [
+      {
+        "start_sec": 0.0,
+        "end_sec": 5.0,
+        "value": 0.655
+      },
+      {
+        "start_sec": 5.0,
+        "end_sec": 10.0,
+        "value": 0.5847
+      },
+      {
+        "start_sec": 10.0,
+        "end_sec": 15.0,
+        "value": 0.4883
+      },
+      {
+        "start_sec": 15.0,
+        "end_sec": 20.0,
+        "value": 0.4437
+      },
+      {
+        "start_sec": 20.0,
+        "end_sec": 25.0,
+        "value": 0.4141
+      },
+      {
+        "start_sec": 25.0,
+        "end_sec": 30.0,
+        "value": 0.4059
+      },
+      {
+        "start_sec": 30.0,
+        "end_sec": 35.0,
+        "value": 0.5804
+      },
+      {
+        "start_sec": 35.0,
+        "end_sec": 40.0,
+        "value": 0.5028
+      },
+      {
+        "start_sec": 40.0,
+        "end_sec": 45.0,
+        "value": 0.3702
+      },
+      {
+        "start_sec": 45.0,
+        "end_sec": 50.0,
+        "value": 0.4036
+      },
+      {
+        "start_sec": 50.0,
+        "end_sec": 55.0,
+        "value": 0.4416
+      },
+      {
+        "start_sec": 55.0,
+        "end_sec": 60.0,
+        "value": 0.357
+      },
+      {
+        "start_sec": 60.0,
+        "end_sec": 65.0,
+        "value": 0.3374
+      },
+      {
+        "start_sec": 65.0,
+        "end_sec": 70.0,
+        "value": 0.4161
+      },
+      {
+        "start_sec": 70.0,
+        "end_sec": 75.0,
+        "value": 0.378
+      },
+      {
+        "start_sec": 75.0,
+        "end_sec": 80.0,
+        "value": 0.5032
+      },
+      {
+        "start_sec": 80.0,
+        "end_sec": 85.0,
+        "value": 0.445
+      },
+      {
+        "start_sec": 85.0,
+        "end_sec": 90.0,
+        "value": 0.3972
+      },
+      {
+        "start_sec": 90.0,
+        "end_sec": 95.0,
+        "value": 0.4072
+      },
+      {
+        "start_sec": 95.0,
+        "end_sec": 100.0,
+        "value": 0.4319
+      },
+      {
+        "start_sec": 100.0,
+        "end_sec": 105.0,
+        "value": 0.4621
+      },
+      {
+        "start_sec": 105.0,
+        "end_sec": 110.0,
+        "value": 0.3905
+      },
+      {
+        "start_sec": 110.0,
+        "end_sec": 115.0,
+        "value": 0.4467
+      },
+      {
+        "start_sec": 115.0,
+        "end_sec": 120.0,
+        "value": 0.4617
+      },
+      {
+        "start_sec": 120.0,
+        "end_sec": 125.0,
+        "value": 0.5463
+      },
+      {
+        "start_sec": 125.0,
+        "end_sec": 130.0,
+        "value": 0.4773
+      },
+      {
+        "start_sec": 130.0,
+        "end_sec": 135.0,
+        "value": 0.4881
+      },
+      {
+        "start_sec": 135.0,
+        "end_sec": 140.0,
+        "value": 0.5412
+      },
+      {
+        "start_sec": 140.0,
+        "end_sec": 145.0,
+        "value": 0.4465
+      },
+      {
+        "start_sec": 145.0,
+        "end_sec": 150.0,
+        "value": 0.4533
+      },
+      {
+        "start_sec": 150.0,
+        "end_sec": 155.0,
+        "value": 0.5393
+      },
+      {
+        "start_sec": 155.0,
+        "end_sec": 160.0,
+        "value": 0.5978
+      },
+      {
+        "start_sec": 160.0,
+        "end_sec": 165.0,
+        "value": 0.5618
+      },
+      {
+        "start_sec": 165.0,
+        "end_sec": 170.0,
+        "value": 0.4871
+      },
+      {
+        "start_sec": 170.0,
+        "end_sec": 175.0,
+        "value": 0.4578
+      },
+      {
+        "start_sec": 175.0,
+        "end_sec": 180.0,
+        "value": 0.4217
+      },
+      {
+        "start_sec": 180.0,
+        "end_sec": 185.0,
+        "value": 0.4647
+      },
+      {
+        "start_sec": 185.0,
+        "end_sec": 190.0,
+        "value": 0.6378
+      },
+      {
+        "start_sec": 190.0,
+        "end_sec": 195.0,
+        "value": 0.5057
+      },
+      {
+        "start_sec": 195.0,
+        "end_sec": 200.0,
+        "value": 0.4253
+      },
+      {
+        "start_sec": 200.0,
+        "end_sec": 205.0,
+        "value": 0.4325
+      },
+      {
+        "start_sec": 205.0,
+        "end_sec": 210.0,
+        "value": 0.5228
+      },
+      {
+        "start_sec": 210.0,
+        "end_sec": 215.0,
+        "value": 0.5483
+      },
+      {
+        "start_sec": 215.0,
+        "end_sec": 220.0,
+        "value": 0.5169
+      },
+      {
+        "start_sec": 220.0,
+        "end_sec": 225.0,
+        "value": 0.4262
+      },
+      {
+        "start_sec": 225.0,
+        "end_sec": 230.0,
+        "value": 0.4391
+      },
+      {
+        "start_sec": 230.0,
+        "end_sec": 235.0,
+        "value": 0.4651
+      },
+      {
+        "start_sec": 235.0,
+        "end_sec": 240.0,
+        "value": 0.6238
+      },
+      {
+        "start_sec": 240.0,
+        "end_sec": 245.0,
+        "value": 0.518
+      },
+      {
+        "start_sec": 245.0,
+        "end_sec": 250.0,
+        "value": 0.4315
+      },
+      {
+        "start_sec": 250.0,
+        "end_sec": 255.0,
+        "value": 0.3754
+      },
+      {
+        "start_sec": 255.0,
+        "end_sec": 260.0,
+        "value": 0.4883
+      },
+      {
+        "start_sec": 260.0,
+        "end_sec": 265.0,
+        "value": 0.5037
+      },
+      {
+        "start_sec": 265.0,
+        "end_sec": 270.0,
+        "value": 0.3606
+      },
+      {
+        "start_sec": 270.0,
+        "end_sec": 275.0,
+        "value": 0.3984
+      },
+      {
+        "start_sec": 275.0,
+        "end_sec": 280.0,
+        "value": 0.4441
+      },
+      {
+        "start_sec": 280.0,
+        "end_sec": 285.0,
+        "value": 0.4358
+      },
+      {
+        "start_sec": 285.0,
+        "end_sec": 290.0,
+        "value": 0.3831
+      },
+      {
+        "start_sec": 290.0,
+        "end_sec": 295.0,
+        "value": 0.3686
+      },
+      {
+        "start_sec": 295.0,
+        "end_sec": 300.0,
+        "value": 0.3457
+      },
+      {
+        "start_sec": 300.0,
+        "end_sec": 305.0,
+        "value": 0.4916
+      },
+      {
+        "start_sec": 305.0,
+        "end_sec": 310.0,
+        "value": 0.3064
+      },
+      {
+        "start_sec": 310.0,
+        "end_sec": 315.0,
+        "value": 0.3581
+      },
+      {
+        "start_sec": 315.0,
+        "end_sec": 320.0,
+        "value": 0.4247
+      },
+      {
+        "start_sec": 320.0,
+        "end_sec": 325.0,
+        "value": 0.3501
+      },
+      {
+        "start_sec": 325.0,
+        "end_sec": 330.0,
+        "value": 0.3166
+      },
+      {
+        "start_sec": 330.0,
+        "end_sec": 335.0,
+        "value": 0.5334
+      },
+      {
+        "start_sec": 335.0,
+        "end_sec": 340.0,
+        "value": 0.4093
+      },
+      {
+        "start_sec": 340.0,
+        "end_sec": 345.0,
+        "value": 0.4356
+      },
+      {
+        "start_sec": 345.0,
+        "end_sec": 350.0,
+        "value": 0.2954
+      },
+      {
+        "start_sec": 350.0,
+        "end_sec": 355.0,
+        "value": 0.3212
+      },
+      {
+        "start_sec": 355.0,
+        "end_sec": 360.0,
+        "value": 0.4414
+      },
+      {
+        "start_sec": 360.0,
+        "end_sec": 365.0,
+        "value": 0.3361
+      },
+      {
+        "start_sec": 365.0,
+        "end_sec": 370.0,
+        "value": 0.378
+      },
+      {
+        "start_sec": 370.0,
+        "end_sec": 375.0,
+        "value": 0.4813
+      },
+      {
+        "start_sec": 375.0,
+        "end_sec": 380.0,
+        "value": 0.357
+      },
+      {
+        "start_sec": 380.0,
+        "end_sec": 385.0,
+        "value": 0.3371
+      },
+      {
+        "start_sec": 385.0,
+        "end_sec": 390.0,
+        "value": 0.5527
+      },
+      {
+        "start_sec": 390.0,
+        "end_sec": 395.0,
+        "value": 0.5341
+      },
+      {
+        "start_sec": 395.0,
+        "end_sec": 400.0,
+        "value": 0.45
+      },
+      {
+        "start_sec": 400.0,
+        "end_sec": 405.0,
+        "value": 0.4133
+      },
+      {
+        "start_sec": 405.0,
+        "end_sec": 410.0,
+        "value": 0.3109
+      },
+      {
+        "start_sec": 410.0,
+        "end_sec": 415.0,
+        "value": 0.3582
+      },
+      {
+        "start_sec": 415.0,
+        "end_sec": 420.0,
+        "value": 0.3417
+      },
+      {
+        "start_sec": 420.0,
+        "end_sec": 425.0,
+        "value": 0.2948
+      },
+      {
+        "start_sec": 425.0,
+        "end_sec": 430.0,
+        "value": 0.332
+      },
+      {
+        "start_sec": 430.0,
+        "end_sec": 435.0,
+        "value": 0.4657
+      },
+      {
+        "start_sec": 435.0,
+        "end_sec": 440.0,
+        "value": 0.3633
+      },
+      {
+        "start_sec": 440.0,
+        "end_sec": 445.0,
+        "value": 0.473
+      },
+      {
+        "start_sec": 445.0,
+        "end_sec": 450.0,
+        "value": 0.3698
+      },
+      {
+        "start_sec": 450.0,
+        "end_sec": 455.0,
+        "value": 0.3358
+      },
+      {
+        "start_sec": 455.0,
+        "end_sec": 460.0,
+        "value": 0.437
+      },
+      {
+        "start_sec": 460.0,
+        "end_sec": 465.0,
+        "value": 0.525
+      },
+      {
+        "start_sec": 465.0,
+        "end_sec": 470.0,
+        "value": 0.4296
+      },
+      {
+        "start_sec": 470.0,
+        "end_sec": 475.0,
+        "value": 0.5551
+      },
+      {
+        "start_sec": 475.0,
+        "end_sec": 480.0,
+        "value": 0.4972
+      },
+      {
+        "start_sec": 480.0,
+        "end_sec": 485.0,
+        "value": 0.5371
+      },
+      {
+        "start_sec": 485.0,
+        "end_sec": 490.0,
+        "value": 0.4303
+      },
+      {
+        "start_sec": 490.0,
+        "end_sec": 495.0,
+        "value": 0.4819
+      },
+      {
+        "start_sec": 495.0,
+        "end_sec": 500.0,
+        "value": 0.4477
+      },
+      {
+        "start_sec": 500.0,
+        "end_sec": 505.0,
+        "value": 0.6646
+      },
+      {
+        "start_sec": 505.0,
+        "end_sec": 510.0,
+        "value": 0.6252
+      },
+      {
+        "start_sec": 510.0,
+        "end_sec": 515.0,
+        "value": 0.5024
+      },
+      {
+        "start_sec": 515.0,
+        "end_sec": 520.0,
+        "value": 0.3652
+      },
+      {
+        "start_sec": 520.0,
+        "end_sec": 525.0,
+        "value": 0.4956
+      },
+      {
+        "start_sec": 525.0,
+        "end_sec": 530.0,
+        "value": 0.4151
+      },
+      {
+        "start_sec": 530.0,
+        "end_sec": 535.0,
+        "value": 0.6543
+      },
+      {
+        "start_sec": 535.0,
+        "end_sec": 540.0,
+        "value": 0.4428
+      },
+      {
+        "start_sec": 540.0,
+        "end_sec": 545.0,
+        "value": 0.6303
+      },
+      {
+        "start_sec": 545.0,
+        "end_sec": 550.0,
+        "value": 0.7077
+      },
+      {
+        "start_sec": 550.0,
+        "end_sec": 555.0,
+        "value": 0.6093
+      },
+      {
+        "start_sec": 555.0,
+        "end_sec": 560.0,
+        "value": 0.6206
+      },
+      {
+        "start_sec": 560.0,
+        "end_sec": 565.0,
+        "value": 0.4359
+      },
+      {
+        "start_sec": 565.0,
+        "end_sec": 570.0,
+        "value": 0.5067
+      },
+      {
+        "start_sec": 570.0,
+        "end_sec": 575.0,
+        "value": 0.5067
+      },
+      {
+        "start_sec": 575.0,
+        "end_sec": 580.0,
+        "value": 0.5362
+      },
+      {
+        "start_sec": 580.0,
+        "end_sec": 585.0,
+        "value": 0.5174
+      },
+      {
+        "start_sec": 585.0,
+        "end_sec": 590.0,
+        "value": 0.3701
+      },
+      {
+        "start_sec": 590.0,
+        "end_sec": 595.0,
+        "value": 0.5149
+      },
+      {
+        "start_sec": 595.0,
+        "end_sec": 600.0,
+        "value": 0.4421
+      },
+      {
+        "start_sec": 600.0,
+        "end_sec": 605.0,
+        "value": 0.6111
+      },
+      {
+        "start_sec": 605.0,
+        "end_sec": 610.0,
+        "value": 0.6517
+      },
+      {
+        "start_sec": 610.0,
+        "end_sec": 615.0,
+        "value": 0.6159
+      },
+      {
+        "start_sec": 615.0,
+        "end_sec": 620.0,
+        "value": 0.3761
+      },
+      {
+        "start_sec": 620.0,
+        "end_sec": 625.0,
+        "value": 0.3758
+      },
+      {
+        "start_sec": 625.0,
+        "end_sec": 630.0,
+        "value": 0.5005
+      },
+      {
+        "start_sec": 630.0,
+        "end_sec": 635.0,
+        "value": 0.3753
+      },
+      {
+        "start_sec": 635.0,
+        "end_sec": 640.0,
+        "value": 0.3593
+      },
+      {
+        "start_sec": 640.0,
+        "end_sec": 645.0,
+        "value": 0.4385
+      },
+      {
+        "start_sec": 645.0,
+        "end_sec": 650.0,
+        "value": 0.3229
+      },
+      {
+        "start_sec": 650.0,
+        "end_sec": 655.0,
+        "value": 0.5469
+      },
+      {
+        "start_sec": 655.0,
+        "end_sec": 660.0,
+        "value": 0.4148
+      },
+      {
+        "start_sec": 660.0,
+        "end_sec": 665.0,
+        "value": 0.6189
+      },
+      {
+        "start_sec": 665.0,
+        "end_sec": 670.0,
+        "value": 0.529
+      },
+      {
+        "start_sec": 670.0,
+        "end_sec": 675.0,
+        "value": 0.3719
+      },
+      {
+        "start_sec": 675.0,
+        "end_sec": 680.0,
+        "value": 0.6642
+      },
+      {
+        "start_sec": 680.0,
+        "end_sec": 685.0,
+        "value": 0.6295
+      },
+      {
+        "start_sec": 685.0,
+        "end_sec": 690.0,
+        "value": 0.6211
+      },
+      {
+        "start_sec": 690.0,
+        "end_sec": 695.0,
+        "value": 0.651
+      },
+      {
+        "start_sec": 695.0,
+        "end_sec": 700.0,
+        "value": 0.6202
+      },
+      {
+        "start_sec": 700.0,
+        "end_sec": 705.0,
+        "value": 0.637
+      },
+      {
+        "start_sec": 705.0,
+        "end_sec": 710.0,
+        "value": 0.5492
+      },
+      {
+        "start_sec": 710.0,
+        "end_sec": 715.0,
+        "value": 0.6774
+      },
+      {
+        "start_sec": 715.0,
+        "end_sec": 720.0,
+        "value": 0.592
+      },
+      {
+        "start_sec": 720.0,
+        "end_sec": 725.0,
+        "value": 0.5374
+      },
+      {
+        "start_sec": 725.0,
+        "end_sec": 730.0,
+        "value": 0.6538
+      },
+      {
+        "start_sec": 730.0,
+        "end_sec": 735.0,
+        "value": 0.6131
+      },
+      {
+        "start_sec": 735.0,
+        "end_sec": 740.0,
+        "value": 0.6783
+      },
+      {
+        "start_sec": 740.0,
+        "end_sec": 745.0,
+        "value": 0.4592
+      },
+      {
+        "start_sec": 745.0,
+        "end_sec": 750.0,
+        "value": 0.3793
+      },
+      {
+        "start_sec": 750.0,
+        "end_sec": 755.0,
+        "value": 0.5681
+      },
+      {
+        "start_sec": 755.0,
+        "end_sec": 760.0,
+        "value": 0.6674
+      },
+      {
+        "start_sec": 760.0,
+        "end_sec": 765.0,
+        "value": 0.5155
+      },
+      {
+        "start_sec": 765.0,
+        "end_sec": 770.0,
+        "value": 0.5072
+      },
+      {
+        "start_sec": 770.0,
+        "end_sec": 775.0,
+        "value": 0.624
+      },
+      {
+        "start_sec": 775.0,
+        "end_sec": 780.0,
+        "value": 0.5957
+      },
+      {
+        "start_sec": 780.0,
+        "end_sec": 785.0,
+        "value": 0.4629
+      },
+      {
+        "start_sec": 785.0,
+        "end_sec": 790.0,
+        "value": 0.5192
+      },
+      {
+        "start_sec": 790.0,
+        "end_sec": 795.0,
+        "value": 0.7131
+      },
+      {
+        "start_sec": 795.0,
+        "end_sec": 800.0,
+        "value": 0.474
+      },
+      {
+        "start_sec": 800.0,
+        "end_sec": 805.0,
+        "value": 0.5259
+      },
+      {
+        "start_sec": 805.0,
+        "end_sec": 810.0,
+        "value": 0.4627
+      },
+      {
+        "start_sec": 810.0,
+        "end_sec": 815.0,
+        "value": 0.7463
+      },
+      {
+        "start_sec": 815.0,
+        "end_sec": 820.0,
+        "value": 0.6289
+      },
+      {
+        "start_sec": 820.0,
+        "end_sec": 825.0,
+        "value": 0.6368
+      },
+      {
+        "start_sec": 825.0,
+        "end_sec": 830.0,
+        "value": 0.6559
+      },
+      {
+        "start_sec": 830.0,
+        "end_sec": 835.0,
+        "value": 0.5331
+      },
+      {
+        "start_sec": 835.0,
+        "end_sec": 840.0,
+        "value": 0.5662
+      },
+      {
+        "start_sec": 840.0,
+        "end_sec": 845.0,
+        "value": 0.7026
+      },
+      {
+        "start_sec": 845.0,
+        "end_sec": 850.0,
+        "value": 0.6248
+      },
+      {
+        "start_sec": 850.0,
+        "end_sec": 855.0,
+        "value": 0.4707
+      },
+      {
+        "start_sec": 855.0,
+        "end_sec": 860.0,
+        "value": 0.5684
+      },
+      {
+        "start_sec": 860.0,
+        "end_sec": 865.0,
+        "value": 0.4666
+      },
+      {
+        "start_sec": 865.0,
+        "end_sec": 870.0,
+        "value": 0.4618
+      },
+      {
+        "start_sec": 870.0,
+        "end_sec": 875.0,
+        "value": 0.4471
+      },
+      {
+        "start_sec": 875.0,
+        "end_sec": 880.0,
+        "value": 0.3678
+      },
+      {
+        "start_sec": 880.0,
+        "end_sec": 885.0,
+        "value": 0.3376
+      },
+      {
+        "start_sec": 885.0,
+        "end_sec": 890.0,
+        "value": 0.5568
+      },
+      {
+        "start_sec": 890.0,
+        "end_sec": 895.0,
+        "value": 0.4161
+      },
+      {
+        "start_sec": 895.0,
+        "end_sec": 900.0,
+        "value": 0.3966
+      },
+      {
+        "start_sec": 900.0,
+        "end_sec": 905.0,
+        "value": 0.644
+      },
+      {
+        "start_sec": 905.0,
+        "end_sec": 910.0,
+        "value": 0.5344
+      },
+      {
+        "start_sec": 910.0,
+        "end_sec": 915.0,
+        "value": 0.4547
+      },
+      {
+        "start_sec": 915.0,
+        "end_sec": 920.0,
+        "value": 0.4571
+      },
+      {
+        "start_sec": 920.0,
+        "end_sec": 925.0,
+        "value": 0.4894
+      },
+      {
+        "start_sec": 925.0,
+        "end_sec": 930.0,
+        "value": 0.4972
+      },
+      {
+        "start_sec": 930.0,
+        "end_sec": 935.0,
+        "value": 0.5164
+      },
+      {
+        "start_sec": 935.0,
+        "end_sec": 940.0,
+        "value": 0.4222
+      },
+      {
+        "start_sec": 940.0,
+        "end_sec": 945.0,
+        "value": 0.5632
+      },
+      {
+        "start_sec": 945.0,
+        "end_sec": 950.0,
+        "value": 0.4408
+      },
+      {
+        "start_sec": 950.0,
+        "end_sec": 955.0,
+        "value": 0.5133
+      },
+      {
+        "start_sec": 955.0,
+        "end_sec": 960.0,
+        "value": 0.4594
+      },
+      {
+        "start_sec": 960.0,
+        "end_sec": 965.0,
+        "value": 0.4696
+      },
+      {
+        "start_sec": 965.0,
+        "end_sec": 970.0,
+        "value": 0.5167
+      },
+      {
+        "start_sec": 970.0,
+        "end_sec": 975.0,
+        "value": 0.5039
+      },
+      {
+        "start_sec": 975.0,
+        "end_sec": 980.0,
+        "value": 0.6591
+      },
+      {
+        "start_sec": 980.0,
+        "end_sec": 985.0,
+        "value": 0.6106
+      },
+      {
+        "start_sec": 985.0,
+        "end_sec": 990.0,
+        "value": 0.5172
+      },
+      {
+        "start_sec": 990.0,
+        "end_sec": 995.0,
+        "value": 0.5732
+      },
+      {
+        "start_sec": 995.0,
+        "end_sec": 1000.0,
+        "value": 0.6449
+      },
+      {
+        "start_sec": 1000.0,
+        "end_sec": 1005.0,
+        "value": 0.7059
+      },
+      {
+        "start_sec": 1005.0,
+        "end_sec": 1010.0,
+        "value": 0.5079
+      },
+      {
+        "start_sec": 1010.0,
+        "end_sec": 1015.0,
+        "value": 0.3816
+      },
+      {
+        "start_sec": 1015.0,
+        "end_sec": 1020.0,
+        "value": 0.5792
+      },
+      {
+        "start_sec": 1020.0,
+        "end_sec": 1025.0,
+        "value": 0.6653
+      },
+      {
+        "start_sec": 1025.0,
+        "end_sec": 1030.0,
+        "value": 0.5875
+      },
+      {
+        "start_sec": 1030.0,
+        "end_sec": 1035.0,
+        "value": 0.7023
+      },
+      {
+        "start_sec": 1035.0,
+        "end_sec": 1040.0,
+        "value": 0.6334
+      },
+      {
+        "start_sec": 1040.0,
+        "end_sec": 1045.0,
+        "value": 0.4313
+      },
+      {
+        "start_sec": 1045.0,
+        "end_sec": 1050.0,
+        "value": 0.657
+      },
+      {
+        "start_sec": 1050.0,
+        "end_sec": 1055.0,
+        "value": 0.4362
+      },
+      {
+        "start_sec": 1055.0,
+        "end_sec": 1060.0,
+        "value": 0.6099
+      },
+      {
+        "start_sec": 1060.0,
+        "end_sec": 1065.0,
+        "value": 0.5817
+      },
+      {
+        "start_sec": 1065.0,
+        "end_sec": 1070.0,
+        "value": 0.6784
+      },
+      {
+        "start_sec": 1070.0,
+        "end_sec": 1075.0,
+        "value": 0.5465
+      },
+      {
+        "start_sec": 1075.0,
+        "end_sec": 1080.0,
+        "value": 0.6893
+      },
+      {
+        "start_sec": 1080.0,
+        "end_sec": 1085.0,
+        "value": 0.3681
+      },
+      {
+        "start_sec": 1085.0,
+        "end_sec": 1090.0,
+        "value": 0.606
+      },
+      {
+        "start_sec": 1090.0,
+        "end_sec": 1095.0,
+        "value": 0.5442
+      },
+      {
+        "start_sec": 1095.0,
+        "end_sec": 1100.0,
+        "value": 0.6077
+      },
+      {
+        "start_sec": 1100.0,
+        "end_sec": 1105.0,
+        "value": 0.705
+      },
+      {
+        "start_sec": 1105.0,
+        "end_sec": 1110.0,
+        "value": 0.5478
+      },
+      {
+        "start_sec": 1110.0,
+        "end_sec": 1115.0,
+        "value": 0.3443
+      },
+      {
+        "start_sec": 1115.0,
+        "end_sec": 1120.0,
+        "value": 0.48
+      },
+      {
+        "start_sec": 1120.0,
+        "end_sec": 1125.0,
+        "value": 0.6556
+      },
+      {
+        "start_sec": 1125.0,
+        "end_sec": 1130.0,
+        "value": 0.6006
+      },
+      {
+        "start_sec": 1130.0,
+        "end_sec": 1135.0,
+        "value": 0.5521
+      },
+      {
+        "start_sec": 1135.0,
+        "end_sec": 1140.0,
+        "value": 0.585
+      },
+      {
+        "start_sec": 1140.0,
+        "end_sec": 1145.0,
+        "value": 0.5519
+      },
+      {
+        "start_sec": 1145.0,
+        "end_sec": 1150.0,
+        "value": 0.6082
+      },
+      {
+        "start_sec": 1150.0,
+        "end_sec": 1155.0,
+        "value": 0.6576
+      },
+      {
+        "start_sec": 1155.0,
+        "end_sec": 1160.0,
+        "value": 0.5321
+      },
+      {
+        "start_sec": 1160.0,
+        "end_sec": 1165.0,
+        "value": 0.7206
+      },
+      {
+        "start_sec": 1165.0,
+        "end_sec": 1170.0,
+        "value": 0.5831
+      },
+      {
+        "start_sec": 1170.0,
+        "end_sec": 1175.0,
+        "value": 0.5772
+      },
+      {
+        "start_sec": 1175.0,
+        "end_sec": 1180.0,
+        "value": 0.6587
+      },
+      {
+        "start_sec": 1180.0,
+        "end_sec": 1185.0,
+        "value": 0.5553
+      },
+      {
+        "start_sec": 1185.0,
+        "end_sec": 1190.0,
+        "value": 0.6675
+      },
+      {
+        "start_sec": 1190.0,
+        "end_sec": 1195.0,
+        "value": 0.6519
+      },
+      {
+        "start_sec": 1195.0,
+        "end_sec": 1200.0,
+        "value": 0.6632
+      },
+      {
+        "start_sec": 1200.0,
+        "end_sec": 1205.0,
+        "value": 0.4551
+      },
+      {
+        "start_sec": 1205.0,
+        "end_sec": 1210.0,
+        "value": 0.416
+      },
+      {
+        "start_sec": 1210.0,
+        "end_sec": 1215.0,
+        "value": 0.6116
+      },
+      {
+        "start_sec": 1215.0,
+        "end_sec": 1220.0,
+        "value": 0.3817
+      },
+      {
+        "start_sec": 1220.0,
+        "end_sec": 1225.0,
+        "value": 0.405
+      },
+      {
+        "start_sec": 1225.0,
+        "end_sec": 1230.0,
+        "value": 0.6077
+      },
+      {
+        "start_sec": 1230.0,
+        "end_sec": 1235.0,
+        "value": 0.682
+      },
+      {
+        "start_sec": 1235.0,
+        "end_sec": 1240.0,
+        "value": 0.4471
+      },
+      {
+        "start_sec": 1240.0,
+        "end_sec": 1245.0,
+        "value": 0.5544
+      },
+      {
+        "start_sec": 1245.0,
+        "end_sec": 1250.0,
+        "value": 0.3566
+      },
+      {
+        "start_sec": 1250.0,
+        "end_sec": 1255.0,
+        "value": 0.5226
+      },
+      {
+        "start_sec": 1255.0,
+        "end_sec": 1260.0,
+        "value": 0.6809
+      },
+      {
+        "start_sec": 1260.0,
+        "end_sec": 1265.0,
+        "value": 0.6857
+      },
+      {
+        "start_sec": 1265.0,
+        "end_sec": 1270.0,
+        "value": 0.786
+      },
+      {
+        "start_sec": 1270.0,
+        "end_sec": 1275.0,
+        "value": 0.7534
+      },
+      {
+        "start_sec": 1275.0,
+        "end_sec": 1280.0,
+        "value": 0.6428
+      },
+      {
+        "start_sec": 1280.0,
+        "end_sec": 1285.0,
+        "value": 0.6046
+      },
+      {
+        "start_sec": 1285.0,
+        "end_sec": 1290.0,
+        "value": 0.5996
+      },
+      {
+        "start_sec": 1290.0,
+        "end_sec": 1295.0,
+        "value": 0.5392
+      },
+      {
+        "start_sec": 1295.0,
+        "end_sec": 1300.0,
+        "value": 0.3326
+      },
+      {
+        "start_sec": 1300.0,
+        "end_sec": 1305.0,
+        "value": 0.5959
+      },
+      {
+        "start_sec": 1305.0,
+        "end_sec": 1310.0,
+        "value": 0.473
+      },
+      {
+        "start_sec": 1310.0,
+        "end_sec": 1315.0,
+        "value": 0.568
+      },
+      {
+        "start_sec": 1315.0,
+        "end_sec": 1320.0,
+        "value": 0.5213
+      },
+      {
+        "start_sec": 1320.0,
+        "end_sec": 1325.0,
+        "value": 0.6444
+      },
+      {
+        "start_sec": 1325.0,
+        "end_sec": 1330.0,
+        "value": 0.4751
+      },
+      {
+        "start_sec": 1330.0,
+        "end_sec": 1335.0,
+        "value": 0.4453
+      },
+      {
+        "start_sec": 1335.0,
+        "end_sec": 1340.0,
+        "value": 0.4764
+      },
+      {
+        "start_sec": 1340.0,
+        "end_sec": 1345.0,
+        "value": 0.617
+      },
+      {
+        "start_sec": 1345.0,
+        "end_sec": 1350.0,
+        "value": 0.6854
+      },
+      {
+        "start_sec": 1350.0,
+        "end_sec": 1355.0,
+        "value": 0.485
+      },
+      {
+        "start_sec": 1355.0,
+        "end_sec": 1360.0,
+        "value": 0.4146
+      },
+      {
+        "start_sec": 1360.0,
+        "end_sec": 1365.0,
+        "value": 0.4036
+      },
+      {
+        "start_sec": 1365.0,
+        "end_sec": 1370.0,
+        "value": 0.6077
+      },
+      {
+        "start_sec": 1370.0,
+        "end_sec": 1375.0,
+        "value": 0.7047
+      },
+      {
+        "start_sec": 1375.0,
+        "end_sec": 1380.0,
+        "value": 0.6667
+      },
+      {
+        "start_sec": 1380.0,
+        "end_sec": 1385.0,
+        "value": 0.6923
+      },
+      {
+        "start_sec": 1385.0,
+        "end_sec": 1390.0,
+        "value": 0.6867
+      },
+      {
+        "start_sec": 1390.0,
+        "end_sec": 1395.0,
+        "value": 0.6858
+      },
+      {
+        "start_sec": 1395.0,
+        "end_sec": 1400.0,
+        "value": 0.1284
+      },
+      {
+        "start_sec": 1400.0,
+        "end_sec": 1405.0,
+        "value": 0.3823
+      },
+      {
+        "start_sec": 1405.0,
+        "end_sec": 1410.0,
+        "value": 0.5956
+      },
+      {
+        "start_sec": 1410.0,
+        "end_sec": 1415.0,
+        "value": 0.563
+      },
+      {
+        "start_sec": 1415.0,
+        "end_sec": 1420.0,
+        "value": 0.5836
+      },
+      {
+        "start_sec": 1420.0,
+        "end_sec": 1425.0,
+        "value": 0.353
+      },
+      {
+        "start_sec": 1425.0,
+        "end_sec": 1430.0,
+        "value": 0.5844
+      },
+      {
+        "start_sec": 1430.0,
+        "end_sec": 1435.0,
+        "value": 0.5953
+      },
+      {
+        "start_sec": 1435.0,
+        "end_sec": 1440.0,
+        "value": 0.5514
+      },
+      {
+        "start_sec": 1440.0,
+        "end_sec": 1445.0,
+        "value": 0.5813
+      },
+      {
+        "start_sec": 1445.0,
+        "end_sec": 1450.0,
+        "value": 0.6641
+      },
+      {
+        "start_sec": 1450.0,
+        "end_sec": 1455.0,
+        "value": 0.5858
+      },
+      {
+        "start_sec": 1455.0,
+        "end_sec": 1460.0,
+        "value": 0.1667
+      },
+      {
+        "start_sec": 1460.0,
+        "end_sec": 1465.0,
+        "value": 0.5309
+      },
+      {
+        "start_sec": 1465.0,
+        "end_sec": 1470.0,
+        "value": 0.7269
+      },
+      {
+        "start_sec": 1470.0,
+        "end_sec": 1475.0,
+        "value": 0.6773
+      },
+      {
+        "start_sec": 1475.0,
+        "end_sec": 1480.0,
+        "value": 0.71
+      },
+      {
+        "start_sec": 1480.0,
+        "end_sec": 1485.0,
+        "value": 0.6715
+      },
+      {
+        "start_sec": 1485.0,
+        "end_sec": 1490.0,
+        "value": 0.4166
+      },
+      {
+        "start_sec": 1490.0,
+        "end_sec": 1495.0,
+        "value": 0.3342
+      },
+      {
+        "start_sec": 1495.0,
+        "end_sec": 1500.0,
+        "value": 0.0449
+      },
+      {
+        "start_sec": 1500.0,
+        "end_sec": 1505.0,
+        "value": 0.0266
+      },
+      {
+        "start_sec": 1505.0,
+        "end_sec": 1510.0,
+        "value": 0.2197
+      },
+      {
+        "start_sec": 1510.0,
+        "end_sec": 1515.0,
+        "value": 0.1804
+      },
+      {
+        "start_sec": 1515.0,
+        "end_sec": 1520.0,
+        "value": 0.4668
+      },
+      {
+        "start_sec": 1520.0,
+        "end_sec": 1525.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 1525.0,
+        "end_sec": 1530.0,
+        "value": 0.0633
+      },
+      {
+        "start_sec": 1530.0,
+        "end_sec": 1535.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 1535.0,
+        "end_sec": 1540.0,
+        "value": 0.3224
+      },
+      {
+        "start_sec": 1540.0,
+        "end_sec": 1545.0,
+        "value": 0.6965
+      },
+      {
+        "start_sec": 1545.0,
+        "end_sec": 1550.0,
+        "value": 0.5561
+      },
+      {
+        "start_sec": 1550.0,
+        "end_sec": 1555.0,
+        "value": 0.2193
+      },
+      {
+        "start_sec": 1555.0,
+        "end_sec": 1560.0,
+        "value": 0.3168
+      },
+      {
+        "start_sec": 1560.0,
+        "end_sec": 1565.0,
+        "value": 0.5488
+      },
+      {
+        "start_sec": 1565.0,
+        "end_sec": 1570.0,
+        "value": 0.0301
+      },
+      {
+        "start_sec": 1570.0,
+        "end_sec": 1575.0,
+        "value": 0.435
+      },
+      {
+        "start_sec": 1575.0,
+        "end_sec": 1580.0,
+        "value": 0.4889
+      },
+      {
+        "start_sec": 1580.0,
+        "end_sec": 1585.0,
+        "value": 0.537
+      },
+      {
+        "start_sec": 1585.0,
+        "end_sec": 1590.0,
+        "value": 0.6422
+      },
+      {
+        "start_sec": 1590.0,
+        "end_sec": 1595.0,
+        "value": 0.641
+      },
+      {
+        "start_sec": 1595.0,
+        "end_sec": 1600.0,
+        "value": 0.665
+      },
+      {
+        "start_sec": 1600.0,
+        "end_sec": 1605.0,
+        "value": 0.4801
+      },
+      {
+        "start_sec": 1605.0,
+        "end_sec": 1610.0,
+        "value": 0.4915
+      },
+      {
+        "start_sec": 1610.0,
+        "end_sec": 1615.0,
+        "value": 0.487
+      },
+      {
+        "start_sec": 1615.0,
+        "end_sec": 1620.0,
+        "value": 0.6701
+      },
+      {
+        "start_sec": 1620.0,
+        "end_sec": 1625.0,
+        "value": 0.6119
+      },
+      {
+        "start_sec": 1625.0,
+        "end_sec": 1630.0,
+        "value": 0.5553
+      },
+      {
+        "start_sec": 1630.0,
+        "end_sec": 1635.0,
+        "value": 0.5716
+      },
+      {
+        "start_sec": 1635.0,
+        "end_sec": 1640.0,
+        "value": 0.5176
+      },
+      {
+        "start_sec": 1640.0,
+        "end_sec": 1645.0,
+        "value": 0.3724
+      },
+      {
+        "start_sec": 1645.0,
+        "end_sec": 1650.0,
+        "value": 0.6744
+      },
+      {
+        "start_sec": 1650.0,
+        "end_sec": 1655.0,
+        "value": 0.6923
+      },
+      {
+        "start_sec": 1655.0,
+        "end_sec": 1660.0,
+        "value": 0.7709
+      },
+      {
+        "start_sec": 1660.0,
+        "end_sec": 1665.0,
+        "value": 0.675
+      },
+      {
+        "start_sec": 1665.0,
+        "end_sec": 1670.0,
+        "value": 0.8136
+      },
+      {
+        "start_sec": 1670.0,
+        "end_sec": 1675.0,
+        "value": 0.7581
+      },
+      {
+        "start_sec": 1675.0,
+        "end_sec": 1680.0,
+        "value": 0.7494
+      },
+      {
+        "start_sec": 1680.0,
+        "end_sec": 1685.0,
+        "value": 0.7879
+      },
+      {
+        "start_sec": 1685.0,
+        "end_sec": 1690.0,
+        "value": 0.754
+      },
+      {
+        "start_sec": 1690.0,
+        "end_sec": 1695.0,
+        "value": 0.6642
+      },
+      {
+        "start_sec": 1695.0,
+        "end_sec": 1700.0,
+        "value": 0.6165
+      },
+      {
+        "start_sec": 1700.0,
+        "end_sec": 1705.0,
+        "value": 0.6492
+      },
+      {
+        "start_sec": 1705.0,
+        "end_sec": 1710.0,
+        "value": 0.2642
+      },
+      {
+        "start_sec": 1710.0,
+        "end_sec": 1715.0,
+        "value": 0.4011
+      },
+      {
+        "start_sec": 1715.0,
+        "end_sec": 1720.0,
+        "value": 0.5087
+      },
+      {
+        "start_sec": 1720.0,
+        "end_sec": 1725.0,
+        "value": 0.6378
+      },
+      {
+        "start_sec": 1725.0,
+        "end_sec": 1730.0,
+        "value": 0.5305
+      },
+      {
+        "start_sec": 1730.0,
+        "end_sec": 1735.0,
+        "value": 0.5616
+      },
+      {
+        "start_sec": 1735.0,
+        "end_sec": 1740.0,
+        "value": 0.7211
+      },
+      {
+        "start_sec": 1740.0,
+        "end_sec": 1745.0,
+        "value": 0.595
+      },
+      {
+        "start_sec": 1745.0,
+        "end_sec": 1750.0,
+        "value": 0.4077
+      },
+      {
+        "start_sec": 1750.0,
+        "end_sec": 1755.0,
+        "value": 0.2289
+      },
+      {
+        "start_sec": 1755.0,
+        "end_sec": 1760.0,
+        "value": 0.2055
+      },
+      {
+        "start_sec": 1760.0,
+        "end_sec": 1765.0,
+        "value": 0.6356
+      },
+      {
+        "start_sec": 1765.0,
+        "end_sec": 1770.0,
+        "value": 0.6692
+      },
+      {
+        "start_sec": 1770.0,
+        "end_sec": 1775.0,
+        "value": 0.5198
+      },
+      {
+        "start_sec": 1775.0,
+        "end_sec": 1780.0,
+        "value": 0.0356
+      },
+      {
+        "start_sec": 1780.0,
+        "end_sec": 1785.0,
+        "value": 0.1106
+      },
+      {
+        "start_sec": 1785.0,
+        "end_sec": 1790.0,
+        "value": 0.4132
+      },
+      {
+        "start_sec": 1790.0,
+        "end_sec": 1795.0,
+        "value": 0.3709
+      },
+      {
+        "start_sec": 1795.0,
+        "end_sec": 1800.0,
+        "value": 0.2574
+      },
+      {
+        "start_sec": 1800.0,
+        "end_sec": 1805.0,
+        "value": 0.3963
+      },
+      {
+        "start_sec": 1805.0,
+        "end_sec": 1810.0,
+        "value": 0.4024
+      },
+      {
+        "start_sec": 1810.0,
+        "end_sec": 1815.0,
+        "value": 0.6217
+      },
+      {
+        "start_sec": 1815.0,
+        "end_sec": 1820.0,
+        "value": 0.4165
+      },
+      {
+        "start_sec": 1820.0,
+        "end_sec": 1825.0,
+        "value": 0.5959
+      },
+      {
+        "start_sec": 1825.0,
+        "end_sec": 1830.0,
+        "value": 0.4008
+      },
+      {
+        "start_sec": 1830.0,
+        "end_sec": 1835.0,
+        "value": 0.4566
+      },
+      {
+        "start_sec": 1835.0,
+        "end_sec": 1840.0,
+        "value": 0.2542
+      },
+      {
+        "start_sec": 1840.0,
+        "end_sec": 1845.0,
+        "value": 0.3273
+      },
+      {
+        "start_sec": 1845.0,
+        "end_sec": 1850.0,
+        "value": 0.0937
+      },
+      {
+        "start_sec": 1850.0,
+        "end_sec": 1855.0,
+        "value": 0.2568
+      },
+      {
+        "start_sec": 1855.0,
+        "end_sec": 1860.0,
+        "value": 0.5029
+      },
+      {
+        "start_sec": 1860.0,
+        "end_sec": 1865.0,
+        "value": 0.7598
+      },
+      {
+        "start_sec": 1865.0,
+        "end_sec": 1870.0,
+        "value": 0.716
+      },
+      {
+        "start_sec": 1870.0,
+        "end_sec": 1875.0,
+        "value": 0.7695
+      },
+      {
+        "start_sec": 1875.0,
+        "end_sec": 1880.0,
+        "value": 0.5873
+      },
+      {
+        "start_sec": 1880.0,
+        "end_sec": 1885.0,
+        "value": 0.647
+      },
+      {
+        "start_sec": 1885.0,
+        "end_sec": 1890.0,
+        "value": 0.5593
+      },
+      {
+        "start_sec": 1890.0,
+        "end_sec": 1895.0,
+        "value": 0.6158
+      },
+      {
+        "start_sec": 1895.0,
+        "end_sec": 1900.0,
+        "value": 0.6605
+      },
+      {
+        "start_sec": 1900.0,
+        "end_sec": 1905.0,
+        "value": 0.7621
+      },
+      {
+        "start_sec": 1905.0,
+        "end_sec": 1910.0,
+        "value": 0.7456
+      },
+      {
+        "start_sec": 1910.0,
+        "end_sec": 1915.0,
+        "value": 0.7632
+      },
+      {
+        "start_sec": 1915.0,
+        "end_sec": 1920.0,
+        "value": 0.8061
+      },
+      {
+        "start_sec": 1920.0,
+        "end_sec": 1925.0,
+        "value": 0.6992
+      },
+      {
+        "start_sec": 1925.0,
+        "end_sec": 1930.0,
+        "value": 0.4825
+      },
+      {
+        "start_sec": 1930.0,
+        "end_sec": 1935.0,
+        "value": 0.6966
+      },
+      {
+        "start_sec": 1935.0,
+        "end_sec": 1940.0,
+        "value": 0.532
+      },
+      {
+        "start_sec": 1940.0,
+        "end_sec": 1945.0,
+        "value": 0.6593
+      },
+      {
+        "start_sec": 1945.0,
+        "end_sec": 1950.0,
+        "value": 0.6355
+      },
+      {
+        "start_sec": 1950.0,
+        "end_sec": 1955.0,
+        "value": 0.6578
+      },
+      {
+        "start_sec": 1955.0,
+        "end_sec": 1960.0,
+        "value": 0.3599
+      },
+      {
+        "start_sec": 1960.0,
+        "end_sec": 1965.0,
+        "value": 0.5765
+      },
+      {
+        "start_sec": 1965.0,
+        "end_sec": 1970.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 1970.0,
+        "end_sec": 1975.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 1975.0,
+        "end_sec": 1980.0,
+        "value": 0.1411
+      },
+      {
+        "start_sec": 1980.0,
+        "end_sec": 1985.0,
+        "value": 0.2106
+      },
+      {
+        "start_sec": 1985.0,
+        "end_sec": 1990.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 1990.0,
+        "end_sec": 1994.0,
+        "value": 0.0
+      }
+    ]
+  },
+  "summary_run_ledger": {
+    "schema_version": "summary_run_ledger.v1",
+    "run_id": "13844060_20260623_북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶",
+    "path_ref": "output:summary_run_ledger.jsonl"
+  }
+}

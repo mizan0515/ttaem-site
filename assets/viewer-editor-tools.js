@@ -195,6 +195,9 @@ function initViewerEditorTools() {
   }
   function startViewerEditorTools(data) {
   const events = Array.isArray(data.events) ? data.events : [];
+  const eventsById = new Map(events.map((event) => [String(event && event.id || ''), event]).filter(([id]) => id));
+  const editPointClusterView = data.edit_point_clusters && typeof data.edit_point_clusters === 'object' ? data.edit_point_clusters : {};
+  const editPointClusters = Array.isArray(editPointClusterView.clusters) ? editPointClusterView.clusters : [];
   const buckets = Array.isArray(data.chat_buckets) ? data.chat_buckets : [];
   const subtitles = Array.isArray(data.subtitles) ? data.subtitles : [];
   const audioWaveform = data.audio_waveform && typeof data.audio_waveform === 'object' ? data.audio_waveform : {};
@@ -236,12 +239,17 @@ function initViewerEditorTools() {
   const zoomOutBtn = document.getElementById('viewerEditorZoomOutBtn');
   const zoomInBtn = document.getElementById('viewerEditorZoomInBtn');
   const zoomResetBtn = document.getElementById('viewerEditorZoomResetBtn');
+  const densityRange = document.getElementById('viewerEditorDensityRange');
+  const densityValue = document.getElementById('viewerEditorDensityValue');
   const baseTimelineWidth = Math.max(760, Math.min(1600, Math.round(duration / 22)));
   const timelineLabelColumnWidth = 144;
   let timelineZoom = 1;
+  let markerDensityLevel = 6;
   let axisRendered = false;
   let selectedEventId = '';
+  let renderedAxisEvents = new Map();
   let densityScrollFrame = 0;
+  let cutlistConfirmed = false;
 
   function esc(value) {
     return String(value == null ? '' : value)
@@ -434,6 +442,56 @@ function initViewerEditorTools() {
     const label = labelSec != null ? `${esc(labelText)} · ${timeLink(labelSec, row)}` : linkTimecodesText(labelText, row);
     return `<div class="viewer-editor-row"><strong>${label}</strong><br>${linkTimecodesText(bodyText, row)}</div>`;
   }
+  function renderClusterMemberRow(row, index, isRest) {
+    const sec = Number(row && row.start_sec);
+    const rank = isRest ? `나머지 ${Math.max(1, index - 2)}` : `대표 ${index + 1}`;
+    const label = row && row.vod_label ? `${row.vod_label} · ${optionLabel(row.kind)}` : optionLabel(row && row.kind);
+    const title = friendlyEventTitle(row) || label || '편집 후보';
+    const link = row && row.kind === 'viewer_clip' ? viewerClipLinkInfo([row], row) : { url: '', title: '' };
+    const body = link.url
+      ? `<a class="viewer-editor-evidence-link" href="${esc(link.url)}" target="_blank" rel="noopener">${esc(link.title || title)} · 치지직 클립 열기</a>`
+      : linkTimecodesText(title, row);
+    return `<div class="viewer-editor-row cluster-member ${isRest ? 'rest' : 'top'}" data-cluster-member-rank="${isRest ? 'rest' : 'top'}" data-cluster-member-kind="${esc(row && row.kind || '')}">
+      <span class="viewer-editor-member-rank">${esc(rank)}</span>
+      <strong>${esc(label)} · ${timeLink(Number.isFinite(sec) ? sec : 0, row)}</strong><br>${body}
+    </div>`;
+  }
+  function renderEditPointClusterEvidence(event, sec) {
+    const cluster = event && event.cluster ? event.cluster : {};
+    const rows = Array.isArray(event && event.cluster_events) ? event.cluster_events : [];
+    const clusterId = editPointClusterId(cluster);
+    selectedEventId = String(event && event.id || `edit_point_cluster_${clusterId}`);
+    axisEl.querySelectorAll('[data-event-id]').forEach((marker) => marker.classList.remove('selected'));
+    axisEl.querySelectorAll('[data-edit-point-cluster-id]').forEach((marker) => {
+      marker.classList.toggle('selected', selectedEventId === `edit_point_cluster_${marker.dataset.editPointClusterId || ''}`);
+    });
+    const introEl = document.getElementById('viewerEditorEvidenceIntro');
+    if (introEl) introEl.hidden = true;
+    const selectedColor = markerColor('edit_point_cluster');
+    const signalCount = Math.max(0, Number(cluster.signal_count || rows.length || 0));
+    const viewerClipCount = Math.max(0, Number(cluster.viewer_clip_count || rows.filter((row) => row.kind === 'viewer_clip').length));
+    const overflowCount = Math.max(0, Number(cluster.overflow_event_count || Math.max(0, rows.length - 3)));
+    const topRows = rows.slice(0, 3);
+    const restRows = rows.slice(3);
+    const memberRows = topRows.map((row, index) => renderClusterMemberRow(row, index, false))
+      .concat(restRows.map((row, index) => renderClusterMemberRow(row, index + 3, true)));
+    const subtitleContext = subtitles.filter((row) => near(row, sec, 45)).slice(0, 6);
+    const bucketContext = buckets.filter((row) => near(row, sec, 45)).slice(0, 5);
+    evidenceEl.innerHTML = `<div class="viewer-editor-selected-card" style="--viewer-marker-color:${esc(selectedColor)}" data-selected-edit-point-cluster="${esc(clusterId)}">
+      <span class="viewer-editor-selected-kicker">먼저 볼 편집 후보 묶음</span>
+      <div class="viewer-editor-selected-title">${esc(fmt(sec))} 주변 신호 ${signalCount}개</div>
+      <div class="viewer-editor-selected-meta">
+        ${timeChip(sec, event)}
+        <span class="viewer-editor-chip">자료 ${Math.max(0, Number(cluster.family_count || 0))}종</span>
+        <span class="viewer-editor-chip">시청자 클립 ${viewerClipCount}개</span>
+        <span class="viewer-editor-chip">신뢰 ${esc(clusterConfidenceLabel(cluster.confidence))}</span>
+        ${overflowCount ? `<span class="viewer-editor-chip warning">나머지 ${overflowCount}개도 펼침</span>` : ''}
+      </div>
+    </div>
+    <div class="viewer-editor-row reason"><strong>왜 먼저 보나요</strong><br>${esc(clusterFamilyText(cluster))}가 같은 시간대에 겹친 편집 후보입니다. 요약 사실이 아니라 사람이 먼저 확인할 탐색 묶음입니다.</div>
+    ${renderContextSummary(subtitleContext, bucketContext)}
+    <div class="viewer-editor-list" data-edit-point-cluster-members="${rows.length}">${memberRows.join('') || '<div class="viewer-editor-empty">묶음 안에 표시할 근거가 없습니다.</div>'}</div>`;
+  }
   function viewerClipLinkInfo(eventList, selectedEvent) {
     const selectedStart = Number(selectedEvent && selectedEvent.start_sec);
     const selectedTitle = friendlyEventTitle(selectedEvent);
@@ -458,6 +516,7 @@ function initViewerEditorTools() {
     return purposesMap[kind] || '편집 후보';
   }
   function markerColor(kind) {
+    if (kind === 'edit_point_cluster') return 'rgba(158,206,106,0.86)';
     return colorsMap[kind] || 'rgba(122,162,247,0.86)';
   }
   function friendlyAudioSignalText(text) {
@@ -567,6 +626,23 @@ function initViewerEditorTools() {
       .split('\n')
       .filter((line) => !line.startsWith('* SEGMENT_ID:'))
       .join('\n');
+  }
+  function currentCutMemoText() {
+    return clipMemoText(Array.isArray(preview.clips) ? preview.clips : []) || publicEdlText();
+  }
+  function currentCutJsonText() {
+    return JSON.stringify(preview.otio || preview || {}, null, 2);
+  }
+  function updateCutCopyButtons() {
+    const memoText = currentCutMemoText();
+    const jsonText = currentCutJsonText();
+    if (copyBtn) copyBtn.disabled = !cutlistConfirmed || !memoText;
+    if (copyJsonBtn) copyJsonBtn.disabled = !cutlistConfirmed || !jsonText || jsonText === '{}';
+    if (copyStatus) {
+      copyStatus.textContent = cutlistConfirmed
+        ? '확인 완료. 복사 버튼을 사용할 수 있습니다.'
+        : (memoText || jsonText !== '{}' ? '컷 후보를 확인하면 복사 버튼이 켜집니다.' : '');
+    }
   }
   function isTimeOnlyTitle(title, sec) {
     const raw = String(title || '').trim();
@@ -713,9 +789,177 @@ function initViewerEditorTools() {
       renderAxis({ preserveScroll: true });
     });
   }
+  function markerDensityLabel() {
+    return ['전체', '거의 전체', '많음', '넓게', '균형+', '균형', '핵심', '핵심+', '정예', '최정예', '최소'][markerDensityLevel] || '핵심';
+  }
+  function markerDensityRatio() {
+    return [1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.22, 0.15, 0.1][markerDensityLevel] || 0.4;
+  }
+  function protectedDensityKind(kind) {
+    return ['timeline', 'existing_segments', 'highlight', 'chapter', 'viewer_clip'].includes(String(kind || ''));
+  }
+  function laneEventsForDensity(kind, laneEvents) {
+    const rows = Array.isArray(laneEvents) ? laneEvents : [];
+    if (markerDensityLevel <= 0 || protectedDensityKind(kind) || rows.length <= 2) return rows;
+    const target = Math.max(1, Math.ceil(rows.length * markerDensityRatio()));
+    if (target >= rows.length) return rows;
+    if (target === 1) return [rows[Math.floor(rows.length / 2)]];
+    const selected = new Set();
+    for (let i = 0; i < target; i += 1) selected.add(Math.round((i * (rows.length - 1)) / (target - 1)));
+    return rows.filter((_row, index) => selected.has(index));
+  }
+  function eventsForDensity(eventList) {
+    const byKind = new Map();
+    (eventList || []).forEach((event) => {
+      const kind = String(event && event.kind || '');
+      if (!byKind.has(kind)) byKind.set(kind, []);
+      byKind.get(kind).push(event);
+    });
+    return Array.from(byKind.entries()).flatMap(([kind, rows]) => laneEventsForDensity(kind, rows));
+  }
+  function viewerClipClusterKey(event) {
+    const sec = Math.round(Number(event && event.start_sec || 0));
+    return `viewer_clip_${sec}`;
+  }
+  function clipClusterEvents(event) {
+    if (event && Array.isArray(event.clip_cluster_events)) return event.clip_cluster_events;
+    return event ? [event] : [];
+  }
+  function clusterLaneEvents(kind, laneEvents) {
+    const rows = Array.isArray(laneEvents) ? laneEvents : [];
+    if (kind !== 'viewer_clip' || rows.length <= 1) return rows;
+    const byStart = new Map();
+    rows.forEach((event) => {
+      const key = viewerClipClusterKey(event);
+      if (!byStart.has(key)) byStart.set(key, []);
+      byStart.get(key).push(event);
+    });
+    return Array.from(byStart.entries()).flatMap(([key, cluster]) => {
+      if (cluster.length <= 1) return cluster;
+      const first = cluster[0];
+      return [Object.assign({}, first, {
+        id: `cluster_${key}`,
+        title: `시청자 클립 ${cluster.length}개`,
+        evidence: [],
+        clip_cluster_count: cluster.length,
+        clip_cluster_events: cluster
+      })];
+    });
+  }
+  function clipRowsForCluster(clusterEvents) {
+    const rows = [];
+    (clusterEvents || []).forEach((clip, index) => {
+      const link = viewerClipLinkInfo([clip], clip);
+      const fallbackTitle = friendlyEventTitle(clip) || `시청자 클립 ${index + 1}`;
+      rows.push({
+        label: `시청자 클립 ${index + 1}`,
+        time: fmt(Number(clip.start_sec || 0)),
+        sec: clip.start_sec,
+        start_sec: clip.start_sec,
+        seek_sec: clip.seek_sec,
+        video_no: clip.video_no,
+        source_video_no: clip.source_video_no,
+        vod_label: clip.vod_label,
+        timecode: clip.timecode,
+        text: link.title || fallbackTitle,
+        clipUrl: link.url
+      });
+    });
+    return rows;
+  }
+  function clusterEventIdSet(clusterEvents) {
+    return new Set((clusterEvents || []).map((clip) => String(clip && clip.id || '')).filter(Boolean));
+  }
+  function editPointClusterId(cluster) {
+    return String(cluster && cluster.cluster_id || '');
+  }
+  function editPointClusterEvents(cluster) {
+    const ids = Array.isArray(cluster && cluster.event_ids) ? cluster.event_ids : [];
+    const representativeRows = (Array.isArray(cluster && cluster.representative_events) ? cluster.representative_events : [])
+      .map((row) => eventsById.get(String(row && (row.event_id || row.id) || '')) || row)
+      .filter((row) => row && typeof row === 'object');
+    const rows = [];
+    const seen = new Set();
+    ids.forEach((id, index) => {
+      const key = String(id || '');
+      const resolved = key ? eventsById.get(key) : null;
+      const fallback = representativeRows[index] || null;
+      const row = resolved || fallback;
+      if (!row) return;
+      const rowKey = String(row.id || row.event_id || key || `${row.kind || 'event'}_${row.start_sec || index}_${index}`);
+      if (seen.has(rowKey)) return;
+      seen.add(rowKey);
+      rows.push(row);
+    });
+    representativeRows.forEach((row, index) => {
+      const rowKey = String(row.id || row.event_id || `${row.kind || 'event'}_${row.start_sec || index}_${index}`);
+      if (seen.has(rowKey)) return;
+      seen.add(rowKey);
+      rows.push(row);
+    });
+    return rows;
+  }
+  function renderableEditPointClusters() {
+    const clusters = editPointClusters
+      .filter((cluster) => editPointClusterId(cluster) && editPointClusterEvents(cluster).length)
+      .sort((a, b) => Number(a.start_sec || 0) - Number(b.start_sec || 0));
+    const withViewerClips = clusters.filter((cluster) => Number(cluster && cluster.viewer_clip_count || 0) > 0);
+    return withViewerClips.length ? withViewerClips : clusters;
+  }
+  function clusterConfidenceLabel(value) {
+    const raw = String(value || '').toLowerCase();
+    if (raw === 'high') return '높음';
+    if (raw === 'medium') return '중간';
+    if (raw === 'low') return '낮음';
+    return '검토용';
+  }
+  function clusterFamilyText(cluster) {
+    const families = Array.isArray(cluster && cluster.signal_families) ? cluster.signal_families : [];
+    return families.map((kind) => optionLabel(kind)).filter(Boolean).slice(0, 4).join(' · ') || '편집 후보';
+  }
+  function editPointClusterEvent(clusterId) {
+    const cluster = renderableEditPointClusters().find((row) => editPointClusterId(row) === clusterId);
+    if (!cluster) return null;
+    const rows = editPointClusterEvents(cluster);
+    const sourceRow = rows.find((row) => row && (row.video_no || row.source_video_no || row.seek_sec != null || row.vod_label)) || rows[0] || {};
+    const start = Math.max(0, Number(cluster.start_sec || (rows[0] && rows[0].start_sec) || 0));
+    const event = {
+      id: `edit_point_cluster_${clusterId}`,
+      kind: 'edit_point_cluster',
+      kind_label: '먼저 볼 묶음',
+      start_sec: start,
+      end_sec: Math.max(start, Number(cluster.end_sec || start)),
+      title: `${fmt(start)} 편집 후보 묶음`,
+      cluster,
+      cluster_events: rows,
+    };
+    ['video_no', 'source_video_no', 'vod_label', 'seek_sec', 'end_seek_sec', 'timecode'].forEach((key) => {
+      if (sourceRow && sourceRow[key] != null) event[key] = sourceRow[key];
+    });
+    return event;
+  }
+  function renderClusterOverviewRow() {
+    const clusters = renderableEditPointClusters();
+    if (!clusters.length) return '';
+    const markers = clusters.map((cluster, index) => {
+      const clusterId = editPointClusterId(cluster);
+      const start = Math.max(0, Number(cluster.start_sec || 0));
+      const left = Math.max(0, Math.min(100, (start / duration) * 100));
+      const confidence = String(cluster.confidence || 'low').toLowerCase();
+      const signalCount = Math.max(0, Number(cluster.signal_count || 0));
+      const viewerClipCount = Math.max(0, Number(cluster.viewer_clip_count || 0));
+      const label = viewerClipCount ? `${viewerClipCount}클립` : `${signalCount}개`;
+      const title = `${fmt(start)} ${signalCount}개 신호 · ${clusterFamilyText(cluster)} · 신뢰 ${clusterConfidenceLabel(confidence)}`;
+      const selected = selectedEventId === `edit_point_cluster_${clusterId}`;
+      return `<button type="button" class="viewer-editor-cluster-marker ${esc(confidence)} ${index % 2 ? 'lane-b' : 'lane-a'}${selected ? ' selected' : ''}" data-edit-point-cluster-id="${esc(clusterId)}" data-cluster-index="${index + 1}" data-cluster-signal-count="${signalCount}" data-cluster-viewer-clip-count="${viewerClipCount}" aria-label="${esc(title)}" title="${esc(title)}" style="left:${left}%">${esc(label)}</button>`;
+    }).join('');
+    return `<div class="viewer-editor-cluster-row" data-edit-point-cluster-row="true"><div class="viewer-editor-cluster-label"><strong>먼저 볼 묶음</strong><span>${clusters.length}묶음 · 클릭하면 근거 펼침</span></div><div class="viewer-editor-cluster-track">${markers}</div></div>`;
+  }
   function renderAxis(options = {}) {
     const filter = filterEl ? filterEl.value : '';
     const visibleEvents = filter ? events.filter((event) => event.kind === filter) : events;
+    const visibleSceneEvents = eventsForDensity(visibleEvents);
+    renderedAxisEvents = new Map();
     const preservedScrollLeft = options.preserveScroll ? axisEl.scrollLeft : null;
     const timelineWidth = Math.max(96, Math.round(baseTimelineWidth * timelineZoom));
     const visibleRange = currentVisibleTimeRange(timelineWidth);
@@ -743,7 +987,9 @@ function initViewerEditorTools() {
     const laneRows = lanes.map((lane) => {
       const kind = lane.key;
       if (filter && filter !== kind) return '';
-      const laneEvents = visibleEvents.filter((event) => event.kind === kind);
+      const laneAllEvents = visibleEvents.filter((event) => event.kind === kind);
+      const densityEvents = laneEventsForDensity(kind, laneAllEvents);
+      const laneEvents = clusterLaneEvents(kind, densityEvents);
       const emptyText = lane.empty_reason || lane.reason || lane.message || '표시할 장면 없음';
       const markers = laneEvents.map((event) => {
         const start = Math.max(0, Number(event.start_sec || 0));
@@ -753,17 +999,26 @@ function initViewerEditorTools() {
         const width = hasRange ? Math.max(0.75, Math.min(100 - left, ((end - start) / duration) * 100)) : 0;
         const colorStyle = `--viewer-marker-color:${markerColor(kind)}`;
         const style = hasRange ? `left:${left}%;width:${width}%;${colorStyle}` : `left:${left}%;${colorStyle}`;
-        return `<button type="button" class="viewer-editor-marker ${hasRange ? 'range' : ''}" data-kind="${esc(kind)}" data-event-id="${esc(event.id)}" title="${esc(`${fmt(start)} ${friendlyEventTitle(event) || ''}`)}" style="${style}"></button>`;
+        const clusterCount = Number(event.clip_cluster_count || 0);
+        const clusterAttrs = clusterCount > 1 ? ` data-cluster-count="${clusterCount}" aria-label="${esc(`${fmt(start)} 시청자 클립 ${clusterCount}개 묶음`)}"` : '';
+        const clusterClass = clusterCount > 1 ? ' clip-cluster' : '';
+        renderedAxisEvents.set(String(event.id || ''), event);
+        return `<button type="button" class="viewer-editor-marker ${hasRange ? 'range' : ''}${clusterClass}" data-kind="${esc(kind)}" data-event-id="${esc(event.id)}"${clusterAttrs} title="${esc(`${fmt(start)} ${friendlyEventTitle(event) || ''}`)}" style="${style}"></button>`;
       }).join('');
-      return `<div class="viewer-editor-lane-row" data-kind-row="${esc(kind)}" data-lane-status="${esc(lane.status || '')}"><div class="viewer-editor-lane-label"><strong>${esc(optionLabel(kind))}</strong><span>${esc(lanePurpose(kind))} · ${laneEvents.length}개</span></div><div class="viewer-editor-track">${markers || `<div class="viewer-editor-empty">${esc(emptyText)}</div>`}</div></div>`;
+      const hiddenCount = Math.max(0, laneAllEvents.length - densityEvents.length);
+      const clusterCount = kind === 'viewer_clip' ? laneEvents.length : 0;
+      const laneCountText = hiddenCount ? `${densityEvents.length}/${laneAllEvents.length}개 표시` : kind === 'viewer_clip' && clusterCount !== laneAllEvents.length ? `${clusterCount}묶음 · ${laneAllEvents.length}개` : `${laneEvents.length}개`;
+      return `<div class="viewer-editor-lane-row" data-kind-row="${esc(kind)}" data-lane-status="${esc(lane.status || '')}"><div class="viewer-editor-lane-label"><strong>${esc(optionLabel(kind))}</strong><span>${esc(lanePurpose(kind))} · ${laneCountText}</span></div><div class="viewer-editor-track">${markers || `<div class="viewer-editor-empty">${esc(emptyText)}</div>`}</div></div>`;
     }).join('');
     axisEl.innerHTML = `<div class="viewer-editor-axis-canvas">
       <div class="viewer-editor-scale-row"><div class="viewer-editor-scale-label"><strong>전체 흐름</strong><span>${fmt(duration)}</span></div><div class="viewer-editor-scale">${renderScale()}</div></div>
       ${renderWaveformRow()}
+      ${renderClusterOverviewRow()}
       <div class="viewer-editor-density-row"><div class="viewer-editor-density-label"><strong>전체 채팅량</strong><span>${densityScaleLabel}</span></div><div class="viewer-editor-density">${densityBars || '<div class="viewer-editor-empty">채팅 데이터 없음</div>'}</div></div>
       ${laneRows || '<div class="viewer-editor-empty">표시할 장면 데이터가 없습니다.</div>'}
     </div>`;
-    if (countEl) countEl.textContent = `표시 중인 장면 후보 ${visibleEvents.length}개 · 메모용 컷 후보 ${Number(preview.clip_count || 0)}개`;
+    if (densityValue) densityValue.textContent = markerDensityLabel();
+    if (countEl) countEl.textContent = `표시 중인 장면 후보 ${visibleSceneEvents.length}/${visibleEvents.length}개 · 메모용 컷 후보 ${Number(preview.clip_count || 0)}개`;
     const canvas = axisEl.querySelector('.viewer-editor-axis-canvas');
     if (canvas) canvas.style.setProperty('--viewer-editor-w', `${timelineWidth}px`);
     if (preservedScrollLeft != null) axisEl.scrollLeft = preservedScrollLeft;
@@ -772,7 +1027,15 @@ function initViewerEditorTools() {
     axisEl.querySelectorAll('[data-event-id]').forEach((marker) => {
       marker.classList.toggle('selected', marker.dataset.eventId === selectedEventId);
       marker.addEventListener('click', () => {
-        const event = events.find((item) => item.id === marker.dataset.eventId);
+        const event = renderedAxisEvents.get(String(marker.dataset.eventId || '')) || events.find((item) => item.id === marker.dataset.eventId);
+        syncSplitEditorSeek(event && event.start_sec, event);
+        renderEvidence(event || null);
+      });
+    });
+    axisEl.querySelectorAll('[data-edit-point-cluster-id]').forEach((marker) => {
+      marker.classList.toggle('selected', selectedEventId === `edit_point_cluster_${marker.dataset.editPointClusterId || ''}`);
+      marker.addEventListener('click', () => {
+        const event = editPointClusterEvent(String(marker.dataset.editPointClusterId || ''));
         syncSplitEditorSeek(event && event.start_sec, event);
         renderEvidence(event || null);
       });
@@ -799,18 +1062,28 @@ function initViewerEditorTools() {
       evidenceEl.innerHTML = '<div class="viewer-editor-empty">장면 찾기에서 시각을 선택하면 근거가 여기에 표시됩니다.</div>';
       return;
     }
+    if (event.kind === 'edit_point_cluster') {
+      renderEditPointClusterEvidence(event, sec);
+      return;
+    }
     const introEl = document.getElementById('viewerEditorEvidenceIntro');
     if (introEl) introEl.hidden = true;
     syncSplitEditorSeek(sec, event);
     selectedEventId = String(event.id || '');
     axisEl.querySelectorAll('[data-event-id]').forEach((marker) => marker.classList.toggle('selected', marker.dataset.eventId === selectedEventId));
-    const nearbyEvents = events.filter((row) => near(row, sec, 45)).slice(0, 8);
+    axisEl.querySelectorAll('[data-edit-point-cluster-id]').forEach((marker) => marker.classList.remove('selected'));
+    const clusterEvents = event.kind === 'viewer_clip' ? clipClusterEvents(event) : [];
+    const clusterEventIds = clusterEventIdSet(clusterEvents);
+    const nearbyEvents = events
+      .filter((row) => near(row, sec, 45) && !clusterEventIds.has(String(row && row.id || '')))
+      .slice(0, 8);
     const nearbyBuckets = buckets.filter((row) => near(row, sec, 45)).slice(0, 5);
     const nearbySubtitles = subtitles.filter((row) => near(row, sec, 45)).slice(0, 6);
     const selectedTitleText = selectedTitle(event, sec);
-    const selectedClipLink = event.kind === 'viewer_clip' ? viewerClipLinkInfo([event].concat(nearbyEvents), event) : { uid: '', url: '', title: '' };
+    const selectedClipLink = event.kind === 'viewer_clip' ? viewerClipLinkInfo(clusterEvents.concat(nearbyEvents), clusterEvents[0] || event) : { uid: '', url: '', title: '' };
     const evidenceTargets = evidenceTargetsForEvent(event, sec);
-    const evidenceRows = []
+    const clusterEvidenceRows = clusterEvents.length > 1 ? clipRowsForCluster(clusterEvents) : [];
+    const extraEvidenceRows = []
       .concat((event.evidence || []).map((item) => {
         const rawLabel = String(item.label || '').trim();
         const label = event.kind === 'audio_peak' ? '소리 변화 근거' : friendlyEvidenceLabel(rawLabel || '근거');
@@ -840,6 +1113,7 @@ function initViewerEditorTools() {
       })))
       .filter((row) => row.text)
       .slice(0, 10);
+    const evidenceRows = clusterEvidenceRows.concat(extraEvidenceRows);
     const summaryStatus = selectedSummaryStatus(event, nearbyEvents);
     const guidanceRows = Array.isArray(event.guidance) && event.guidance.length
       ? event.guidance
@@ -885,6 +1159,7 @@ function initViewerEditorTools() {
     const failures = preview.validation && Array.isArray(preview.validation.failures) ? preview.validation.failures : [];
     const memoText = clipMemoText(clips);
     const edlText = publicEdlText();
+    const copyText = memoText || edlText;
     const rows = clips.slice(0, 12).map((clip, index) => {
       const duration = Math.max(0, Math.floor(Number(clip.end_sec || 0) - Number(clip.start_sec || 0)));
       const start = displayTime(clip, clip.start_sec);
@@ -895,16 +1170,26 @@ function initViewerEditorTools() {
     }).join('');
     const status = failures.length ? '일부 후보는 시각이나 길이를 다시 확인해야 합니다.' : '자동 편집이나 업로드는 하지 않습니다. 사람이 확인할 시간표만 제공합니다.';
     const jsonText = JSON.stringify(preview.otio || preview || {}, null, 2);
-    if (copyBtn) copyBtn.disabled = !memoText;
-    if (copyJsonBtn) copyJsonBtn.disabled = !jsonText || jsonText === '{}';
     cutsEl.innerHTML = `<div class="viewer-editor-summary">
       <div class="viewer-editor-stat"><span>상태</span><strong>${esc(friendlyPreviewStatus(preview.status))}</strong></div>
       <div class="viewer-editor-stat"><span>컷 수</span><strong>${Number(preview.clip_count || clips.length || 0)}</strong></div>
       <div class="viewer-editor-stat"><span>기준</span><strong>${esc(friendlyPreviewSource(preview.source))}</strong></div>
     </div>
     <div class="viewer-editor-row">${esc(status)}</div>
+    <div class="viewer-editor-confirm">
+      <label for="viewerEditorCutConfirm"><input id="viewerEditorCutConfirm" type="checkbox" ${cutlistConfirmed ? 'checked' : ''} ${!copyText && (!jsonText || jsonText === '{}') ? 'disabled' : ''}>컷 후보 시간을 눈으로 확인했습니다</label>
+      <span>이 확인은 복사 버튼만 켭니다. 영상 생성, 업로드, 저장, 공개 배포는 실행하지 않습니다.</span>
+    </div>
     <div class="viewer-editor-list">${rows || '<div class="viewer-editor-empty">표시할 컷이 없습니다.</div>'}</div>
     ${clips.length > 12 ? `<div class="viewer-editor-empty">외 ${clips.length - 12}개 후보도 복사한 메모에 포함됩니다.</div>` : ''}`;
+    const confirmEl = document.getElementById('viewerEditorCutConfirm');
+    if (confirmEl) {
+      confirmEl.addEventListener('change', () => {
+        cutlistConfirmed = Boolean(confirmEl.checked);
+        updateCutCopyButtons();
+      });
+    }
+    updateCutCopyButtons();
   }
   function renderViewerEditorToolsNow() {
     if (axisRendered) return;
@@ -912,7 +1197,14 @@ function initViewerEditorTools() {
     renderFilter();
     renderAxis();
     renderCuts();
-    if (events.length) renderEvidence(events[0]); else renderEvidence(null);
+    if (events.length) {
+      const initialCluster = events[0].kind === 'viewer_clip'
+        ? renderedAxisEvents.get(`cluster_${viewerClipClusterKey(events[0])}`)
+        : null;
+      renderEvidence(initialCluster || events[0]);
+    } else {
+      renderEvidence(null);
+    }
   }
   async function copyFromPre(preId, text, copiedMessage, emptyMessage, manualMessage) {
     if (!text) {
@@ -976,18 +1268,26 @@ function initViewerEditorTools() {
     }
   }
   function copyCuts() {
+    if (!cutlistConfirmed) {
+      if (copyStatus) copyStatus.textContent = '컷 후보 시간을 먼저 확인해 주세요.';
+      return Promise.resolve();
+    }
     return copyFromPre(
       'viewerEditorEdlText',
-      clipMemoText(Array.isArray(preview.clips) ? preview.clips : []) || publicEdlText(),
+      currentCutMemoText(),
       '컷 후보 메모를 복사했습니다.',
       '복사할 컷 후보가 없습니다.',
       '브라우저가 복사를 막았습니다. 선택된 컷 후보 메모를 Ctrl+C로 복사해 주세요.'
     );
   }
   function copyJson() {
+    if (!cutlistConfirmed) {
+      if (copyStatus) copyStatus.textContent = '컷 후보 시간을 먼저 확인해 주세요.';
+      return Promise.resolve();
+    }
     return copyFromPre(
       'viewerEditorJsonText',
-      JSON.stringify(preview.otio || preview || {}, null, 2),
+      currentCutJsonText(),
       '원본 데이터를 복사했습니다.',
       '복사할 원본 데이터가 없습니다.',
       '브라우저가 복사를 막았습니다. 선택된 원본 데이터를 Ctrl+C로 복사해 주세요.'
@@ -1021,6 +1321,10 @@ function initViewerEditorTools() {
     if (sectionEl) sectionEl.addEventListener('wheel', handleZoomWheel, { passive: false });
   }
   if (zoomRange) zoomRange.addEventListener('input', () => applyTimelineZoom(Number(zoomRange.value || 100) / 100));
+  if (densityRange) densityRange.addEventListener('input', () => {
+    markerDensityLevel = Math.max(0, Math.min(10, Number(densityRange.value || 0)));
+    renderAxis({ preserveScroll: true });
+  });
   if (zoomOutBtn) zoomOutBtn.addEventListener('click', () => applyTimelineZoom(timelineZoom / 1.25));
   if (zoomInBtn) zoomInBtn.addEventListener('click', () => applyTimelineZoom(timelineZoom * 1.25));
   if (zoomResetBtn) zoomResetBtn.addEventListener('click', () => applyTimelineZoom(1));

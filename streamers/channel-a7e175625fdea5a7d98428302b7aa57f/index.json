@@ -4,9 +4,204 @@
     "streamer_name": "탬탬버린",
     "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
     "platform": "chzzk",
-    "vod_count": 81
+    "vod_count": 94
   },
   "vods": [
+    {
+      "kind": "vod",
+      "video_no": "13908483",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "명조 1장 6막부터 가보자잇 띵 띵 띵 조 ٩(●'▿'●)۶",
+      "published_at": "2026-06-26T22:29:14+09:00",
+      "ended_at": "2026-06-27T03:55:46+09:00",
+      "duration_sec": 19592,
+      "platform_category": "명조:워더링 웨이브",
+      "stats": {
+        "total_chats": 42650,
+        "highlight_count": 16
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13880653",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "명조 1장 3막 ㄱㄱ링~ 명조야 미안해 같은 명이라 미안해 ٩(●'▿'●)۶",
+      "published_at": "2026-06-25T12:07:06+09:00",
+      "ended_at": "2026-06-25T16:50:41+09:00",
+      "duration_sec": 17015,
+      "platform_category": "명조:워더링 웨이브",
+      "stats": {
+        "total_chats": 35112,
+        "highlight_count": 19
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13878075",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵  대한민국 VS 남아공 대한민국 파이팅!!!!!!!!!!!!!!!! ٩(●'▿'●)۶",
+      "published_at": "2026-06-25T10:24:06+09:00",
+      "ended_at": "2026-06-25T12:06:58+09:00",
+      "duration_sec": 6172,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 36436,
+        "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13876904",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵  대한민국 VS 남아공 대한민국 파이팅!!!!!!!!!!!!!!!! ٩(●'▿'●)۶",
+      "published_at": "2026-06-25T09:32:55+09:00",
+      "ended_at": "2026-06-25T10:23:58+09:00",
+      "duration_sec": 3063,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 5463,
+        "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13869983",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "레테공주님 보스 잡으러 가실 시간입니다... ٩(●'▿'●)۶",
+      "published_at": "2026-06-24T18:14:43+09:00",
+      "ended_at": "2026-06-25T00:15:08+09:00",
+      "duration_sec": 21625,
+      "platform_category": "메이플스토리",
+      "stats": {
+        "total_chats": 56170,
+        "highlight_count": 21
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13858411",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 포르투갈vs우즈베키스탄 우리형 나옴!!!!٩(●'▿'●)۶",
+      "published_at": "2026-06-24T01:42:47+09:00",
+      "ended_at": "2026-06-24T04:04:23+09:00",
+      "duration_sec": 8496,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 32418,
+        "highlight_count": 19
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13856231",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "우리형 대기하면서 웃긴 축구 움짤 월드컵 ٩(●'▿'●)۶",
+      "published_at": "2026-06-23T22:02:15+09:00",
+      "ended_at": "2026-06-24T01:42:38+09:00",
+      "duration_sec": 13223,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 45618,
+        "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13844599",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 노르웨이 VS 세네갈 ٩(●'▿'●)۶",
+      "published_at": "2026-06-23T09:00:47+09:00",
+      "ended_at": "2026-06-23T11:03:28+09:00",
+      "duration_sec": 7361,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 14393,
+        "highlight_count": 19
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13844060",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶",
+      "published_at": "2026-06-23T08:14:54+09:00",
+      "ended_at": "2026-06-23T08:48:08+09:00",
+      "duration_sec": 1994,
+      "platform_category": null,
+      "stats": {
+        "total_chats": 3526,
+        "highlight_count": 8
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13843979",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶",
+      "published_at": "2026-06-23T05:48:54+09:00",
+      "ended_at": "2026-06-23T08:14:45+09:00",
+      "duration_sec": 8751,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 7344,
+        "highlight_count": 19
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13843426",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶",
+      "published_at": "2026-06-23T04:08:47+09:00",
+      "ended_at": "2026-06-23T05:48:44+09:00",
+      "duration_sec": 5997,
+      "platform_category": null,
+      "stats": {
+        "total_chats": 7145,
+        "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13842748",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 아르헨티나 vs 오스트리아  메띠기모띠٩(●'▿'●)۶",
+      "published_at": "2026-06-23T01:49:22+09:00",
+      "ended_at": "2026-06-23T04:08:39+09:00",
+      "duration_sec": 8357,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 23087,
+        "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13840670",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "햄부기 묵고 카페보다가 월드컵 고고륑 ٩(●'▿'●)۶",
+      "published_at": "2026-06-23T01:12:25+09:00",
+      "ended_at": "2026-06-23T01:49:15+09:00",
+      "duration_sec": 2210,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 3034,
+        "highlight_count": 14
+      }
+    },
     {
       "kind": "vod",
       "video_no": "13810815",
@@ -1292,6 +1487,201 @@
     }
   ],
   "reports": [
+    {
+      "kind": "vod",
+      "video_no": "13908483",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "명조 1장 6막부터 가보자잇 띵 띵 띵 조 ٩(●'▿'●)۶",
+      "published_at": "2026-06-26T22:29:14+09:00",
+      "ended_at": "2026-06-27T03:55:46+09:00",
+      "duration_sec": 19592,
+      "platform_category": "명조:워더링 웨이브",
+      "stats": {
+        "total_chats": 42650,
+        "highlight_count": 16
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13880653",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "명조 1장 3막 ㄱㄱ링~ 명조야 미안해 같은 명이라 미안해 ٩(●'▿'●)۶",
+      "published_at": "2026-06-25T12:07:06+09:00",
+      "ended_at": "2026-06-25T16:50:41+09:00",
+      "duration_sec": 17015,
+      "platform_category": "명조:워더링 웨이브",
+      "stats": {
+        "total_chats": 35112,
+        "highlight_count": 19
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13878075",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵  대한민국 VS 남아공 대한민국 파이팅!!!!!!!!!!!!!!!! ٩(●'▿'●)۶",
+      "published_at": "2026-06-25T10:24:06+09:00",
+      "ended_at": "2026-06-25T12:06:58+09:00",
+      "duration_sec": 6172,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 36436,
+        "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13876904",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵  대한민국 VS 남아공 대한민국 파이팅!!!!!!!!!!!!!!!! ٩(●'▿'●)۶",
+      "published_at": "2026-06-25T09:32:55+09:00",
+      "ended_at": "2026-06-25T10:23:58+09:00",
+      "duration_sec": 3063,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 5463,
+        "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13869983",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "레테공주님 보스 잡으러 가실 시간입니다... ٩(●'▿'●)۶",
+      "published_at": "2026-06-24T18:14:43+09:00",
+      "ended_at": "2026-06-25T00:15:08+09:00",
+      "duration_sec": 21625,
+      "platform_category": "메이플스토리",
+      "stats": {
+        "total_chats": 56170,
+        "highlight_count": 21
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13858411",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 포르투갈vs우즈베키스탄 우리형 나옴!!!!٩(●'▿'●)۶",
+      "published_at": "2026-06-24T01:42:47+09:00",
+      "ended_at": "2026-06-24T04:04:23+09:00",
+      "duration_sec": 8496,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 32418,
+        "highlight_count": 19
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13856231",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "우리형 대기하면서 웃긴 축구 움짤 월드컵 ٩(●'▿'●)۶",
+      "published_at": "2026-06-23T22:02:15+09:00",
+      "ended_at": "2026-06-24T01:42:38+09:00",
+      "duration_sec": 13223,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 45618,
+        "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13844599",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 노르웨이 VS 세네갈 ٩(●'▿'●)۶",
+      "published_at": "2026-06-23T09:00:47+09:00",
+      "ended_at": "2026-06-23T11:03:28+09:00",
+      "duration_sec": 7361,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 14393,
+        "highlight_count": 19
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13844060",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶",
+      "published_at": "2026-06-23T08:14:54+09:00",
+      "ended_at": "2026-06-23T08:48:08+09:00",
+      "duration_sec": 1994,
+      "platform_category": null,
+      "stats": {
+        "total_chats": 3526,
+        "highlight_count": 8
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13843979",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶",
+      "published_at": "2026-06-23T05:48:54+09:00",
+      "ended_at": "2026-06-23T08:14:45+09:00",
+      "duration_sec": 8751,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 7344,
+        "highlight_count": 19
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13843426",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 프랑스 vs 이라크 ٩(●'▿'●)۶",
+      "published_at": "2026-06-23T04:08:47+09:00",
+      "ended_at": "2026-06-23T05:48:44+09:00",
+      "duration_sec": 5997,
+      "platform_category": null,
+      "stats": {
+        "total_chats": 7145,
+        "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13842748",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 아르헨티나 vs 오스트리아  메띠기모띠٩(●'▿'●)۶",
+      "published_at": "2026-06-23T01:49:22+09:00",
+      "ended_at": "2026-06-23T04:08:39+09:00",
+      "duration_sec": 8357,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 23087,
+        "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13840670",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "햄부기 묵고 카페보다가 월드컵 고고륑 ٩(●'▿'●)۶",
+      "published_at": "2026-06-23T01:12:25+09:00",
+      "ended_at": "2026-06-23T01:49:15+09:00",
+      "duration_sec": 2210,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 3034,
+        "highlight_count": 14
+      }
+    },
     {
       "kind": "vod",
       "video_no": "13810815",
