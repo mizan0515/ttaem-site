@@ -71,7 +71,7 @@ function initEditorSplitMode() {
             <button type="button" class="editor-split-action" data-editor-split-close>요약으로 돌아가기</button>
           </div>
         </div>
-        <iframe class="editor-split-frame" data-editor-chzzk-frame src="${chzzkUrl}" title="CHZZK 원본 방송 화면" allow="autoplay; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <iframe class="editor-split-frame" data-editor-chzzk-frame src="${chzzkUrl}" title="CHZZK 원본 방송 화면" allow="autoplay; fullscreen; picture-in-picture; encrypted-media" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         <div class="editor-split-fallback">CHZZK가 iframe 재생을 제한하면 왼쪽의 새 탭 버튼으로 원본을 열고, 오른쪽 워크스페이스에서 컷 후보를 계속 확인합니다.</div>
       </div>
       <div class="editor-split-workspace" data-editor-split-workspace></div>
@@ -217,9 +217,13 @@ function initViewerEditorTools() {
   function laneActualEventCount(kind) {
     return eventCountsByKind.get(String(kind || '')) || 0;
   }
+  function shouldHideSceneLane(key) {
+    return key === 'comment_replay' && laneActualEventCount('chapter') > 0;
+  }
   function isRenderableSceneLane(lane) {
     const key = String(lane && lane.key || '');
     if (!key) return false;
+    if (shouldHideSceneLane(key)) return false;
     const role = String(lane && lane.display_role || '').toLowerCase();
     if (role === 'overview' || overviewOnlyLaneKinds.has(key)) return false;
     if (laneActualEventCount(key) > 0) return true;
@@ -798,14 +802,111 @@ function initViewerEditorTools() {
   function protectedDensityKind(kind) {
     return ['timeline', 'existing_segments', 'highlight', 'chapter', 'viewer_clip'].includes(String(kind || ''));
   }
-  function laneEventsForDensity(kind, laneEvents) {
+  function markerPriorityKindFamily(kind) {
+    const raw = String(kind || '').toLowerCase();
+    if (raw === 'timeline' || raw === 'existing_segments' || raw === 'highlight' || raw === 'chapter') return 'summary';
+    if (raw === 'viewer_clip') return 'viewer_clip';
+    if (raw.includes('chat') || raw.includes('comment')) return 'chat';
+    if (raw.includes('audio') || raw.includes('voice')) return 'audio';
+    if (raw.includes('subtitle') || raw.includes('asr')) return 'subtitle';
+    if (raw.includes('visual') || raw.includes('scene')) return 'visual';
+    if (raw.includes('live')) return 'live';
+    return raw || 'other';
+  }
+  function markerPriorityTextFamily(text) {
+    const raw = String(text || '').toLowerCase();
+    if (!raw) return '';
+    if (raw.includes('summary') || raw.includes('timeline') || raw.includes('highlight') || raw.includes('chapter') || raw.includes('요약')) return 'summary';
+    if (raw.includes('viewer_clip') || raw.includes('clip') || raw.includes('클립')) return 'viewer_clip';
+    if (raw.includes('chat') || raw.includes('comment') || raw.includes('채팅') || raw.includes('댓글')) return 'chat';
+    if (raw.includes('audio') || raw.includes('voice') || raw.includes('오디오') || raw.includes('소리')) return 'audio';
+    if (raw.includes('subtitle') || raw.includes('asr') || raw.includes('자막')) return 'subtitle';
+    if (raw.includes('visual') || raw.includes('scene') || raw.includes('화면')) return 'visual';
+    if (raw.includes('live')) return 'live';
+    return '';
+  }
+  function markerPriorityFamilies(event) {
+    const families = new Set([markerPriorityKindFamily(event && event.kind)]);
+    const addText = (value) => {
+      const family = markerPriorityTextFamily(value);
+      if (family) families.add(family);
+    };
+    (event && Array.isArray(event.source_signals) ? event.source_signals : []).forEach(addText);
+    (event && Array.isArray(event.signals) ? event.signals : []).forEach(addText);
+    (event && Array.isArray(event.evidence) ? event.evidence : [])
+      .concat(event && Array.isArray(event.guidance) ? event.guidance : [])
+      .forEach((row) => {
+        addText(row && (row.kind || row.type || row.source_type || row.label || row.title || row.text));
+      });
+    return Array.from(families).filter(Boolean);
+  }
+  function markerPrioritySec(event, fallbackIndex) {
+    const value = event && event.start_sec != null ? Number(event.start_sec) : Number(fallbackIndex || 0);
+    return Number.isFinite(value) ? value : Number(fallbackIndex || 0);
+  }
+  function markerPriorityNearbyFamilies(event, contextEvents, radiusSec = 12) {
+    const sec = markerPrioritySec(event, 0);
+    const families = new Set(markerPriorityFamilies(event));
+    (Array.isArray(contextEvents) ? contextEvents : []).forEach((candidate) => {
+      const otherSec = markerPrioritySec(candidate, NaN);
+      if (!Number.isFinite(otherSec) || Math.abs(otherSec - sec) > radiusSec) return;
+      markerPriorityFamilies(candidate).forEach((family) => families.add(family));
+    });
+    return families;
+  }
+  function markerPriorityNearbyKind(contextEvents, event, kinds, radiusSec = 12) {
+    const sec = markerPrioritySec(event, 0);
+    return (Array.isArray(contextEvents) ? contextEvents : []).some((candidate) => {
+      const kind = String(candidate && candidate.kind || '');
+      if (!kinds.includes(kind)) return false;
+      const otherSec = markerPrioritySec(candidate, NaN);
+      return Number.isFinite(otherSec) && Math.abs(otherSec - sec) <= radiusSec;
+    });
+  }
+  function markerPriorityEngagement(event) {
+    const fields = ['play_count', 'like_count', 'read_count', 'reaction_count', 'chat_count', 'message_count', 'count'];
+    const total = fields.reduce((sum, key) => sum + Math.max(0, Number(event && event[key] || 0)), 0);
+    return total > 0 ? Math.min(14, Math.log10(total + 1) * 4) : 0;
+  }
+  function markerDisplayPriority(kind, event, index, laneEvents, contextEvents) {
+    let score = 0;
+    const familyCount = markerPriorityNearbyFamilies(event, contextEvents).size;
+    const rowFamilies = markerPriorityFamilies(event).length;
+    if (protectedDensityKind(kind)) score += kind === 'viewer_clip' ? 70 : 82;
+    if (markerPriorityNearbyKind(contextEvents, event, ['timeline', 'existing_segments', 'highlight', 'chapter'], 15)) score += 48;
+    if (markerPriorityNearbyKind(contextEvents, event, ['viewer_clip'], 15)) score += 34;
+    if (familyCount >= 4) score += 54;
+    else if (familyCount === 3) score += 40;
+    else if (familyCount === 2) score += 18;
+    if (rowFamilies >= 3) score += 18;
+    else if (rowFamilies === 2) score += 8;
+    const evidenceCount = (Array.isArray(event && event.evidence) ? event.evidence.length : 0)
+      + (Array.isArray(event && event.guidance) ? event.guidance.length : 0);
+    score += Math.min(12, evidenceCount * 3);
+    score += markerPriorityEngagement(event);
+    if (event && (event.video_no || event.source_video_no || event.seek_sec != null || event.vod_label)) score += 4;
+    return {
+      score,
+      startSec: markerPrioritySec(event, index),
+      index,
+      id: String(event && (event.id || event.event_id) || `${kind}_${index}`),
+    };
+  }
+  function laneEventsForDensity(kind, laneEvents, contextEvents) {
     const rows = Array.isArray(laneEvents) ? laneEvents : [];
     if (markerDensityLevel <= 0 || protectedDensityKind(kind) || rows.length <= 2) return rows;
     const target = Math.max(1, Math.ceil(rows.length * markerDensityRatio()));
     if (target >= rows.length) return rows;
-    if (target === 1) return [rows[Math.floor(rows.length / 2)]];
-    const selected = new Set();
-    for (let i = 0; i < target; i += 1) selected.add(Math.round((i * (rows.length - 1)) / (target - 1)));
+    const ranked = rows
+      .map((row, index) => ({ row, priority: markerDisplayPriority(kind, row, index, rows, contextEvents || rows) }))
+      .sort((a, b) => {
+        if (b.priority.score !== a.priority.score) return b.priority.score - a.priority.score;
+        if (a.priority.startSec !== b.priority.startSec) return a.priority.startSec - b.priority.startSec;
+        if (a.priority.index !== b.priority.index) return a.priority.index - b.priority.index;
+        return a.priority.id.localeCompare(b.priority.id);
+      })
+      .slice(0, target);
+    const selected = new Set(ranked.map((item) => item.priority.index));
     return rows.filter((_row, index) => selected.has(index));
   }
   function eventsForDensity(eventList) {
@@ -815,7 +916,7 @@ function initViewerEditorTools() {
       if (!byKind.has(kind)) byKind.set(kind, []);
       byKind.get(kind).push(event);
     });
-    return Array.from(byKind.entries()).flatMap(([kind, rows]) => laneEventsForDensity(kind, rows));
+    return Array.from(byKind.entries()).flatMap(([kind, rows]) => laneEventsForDensity(kind, rows, eventList));
   }
   function viewerClipClusterKey(event) {
     const sec = Math.round(Number(event && event.start_sec || 0));
@@ -988,7 +1089,7 @@ function initViewerEditorTools() {
       const kind = lane.key;
       if (filter && filter !== kind) return '';
       const laneAllEvents = visibleEvents.filter((event) => event.kind === kind);
-      const densityEvents = laneEventsForDensity(kind, laneAllEvents);
+      const densityEvents = laneEventsForDensity(kind, laneAllEvents, visibleEvents);
       const laneEvents = clusterLaneEvents(kind, densityEvents);
       const emptyText = lane.empty_reason || lane.reason || lane.message || '표시할 장면 없음';
       const markers = laneEvents.map((event) => {

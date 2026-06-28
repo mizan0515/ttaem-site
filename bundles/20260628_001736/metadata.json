@@ -1,0 +1,35 @@
+{
+  "bundle_id": "20260628_001736",
+  "bundle_title": "📦 6월 27일분 전체 방송 분석 리포트 — 마크 잼있다 w.핑맨,현찌,모라라 ٩(●'▿'●)۶",
+  "vod_count": 2,
+  "video_nos": [
+    "13918660",
+    "13920219"
+  ],
+  "display_order": [
+    "13918660",
+    "13920219"
+  ],
+  "vods": [
+    {
+      "video_no": "13918660",
+      "title": "9시 마크 공포 콘텐츠 백룸 w.핑맨,현찌,모라라 ٩(●'▿'●)۶",
+      "channel_name": "탬탬버린",
+      "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+      "duration": 8789,
+      "publish_date": "2026-06-27 20:10:56",
+      "category": "마인크래프트"
+    },
+    {
+      "video_no": "13920219",
+      "title": "마크 잼있다 w.핑맨,현찌,모라라 ٩(●'▿'●)۶",
+      "channel_name": "탬탬버린",
+      "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+      "duration": 4098,
+      "publish_date": "2026-06-27 22:42:26",
+      "category": "마인크래프트"
+    }
+  ],
+  "created_at": "2026-06-28T00:37:19.995468",
+  "schema_version": 1
+}

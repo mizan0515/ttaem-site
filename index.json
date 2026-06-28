@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-26T22:08:11+00:00",
-  "built_at": "2026-06-26T22:08:11+00:00",
-  "latest_processed_at": "2026-06-27T05:58:31.029205+09:00",
+  "generated_at": "2026-06-28T17:03:20+00:00",
+  "built_at": "2026-06-28T17:03:20+00:00",
+  "latest_processed_at": "2026-06-28T22:51:35.993369+09:00",
   "total_streamers": 4,
-  "total_vods": 98,
-  "total_bundles": 6,
+  "total_vods": 101,
+  "total_bundles": 7,
   "streamers": [
     {
       "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
       "streamer_name": "탬탬버린",
       "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
       "platform": "chzzk",
-      "vod_count": 94,
-      "last_vod_at": "2026-06-26T22:29:14+09:00",
-      "last_vod_ended_at": "2026-06-27T03:55:46+09:00"
+      "vod_count": 97,
+      "last_vod_at": "2026-06-28T11:31:32+09:00",
+      "last_vod_ended_at": "2026-06-28T19:13:46+09:00"
     },
     {
       "streamer_id": "channel-0dad8baf12a436f722faa8e5001c5011",
@@ -45,6 +45,33 @@
   ],
   "recent_vods": [
     {
+      "video_no": "13932959",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "미 미라클 미 미미미미미라클 데이 ٩(●'▿'●)۶",
+      "published_at": "2026-06-28T11:31:32+09:00",
+      "ended_at": "2026-06-28T19:13:46+09:00",
+      "duration_sec": 27734
+    },
+    {
+      "video_no": "13920219",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "마크 잼있다 w.핑맨,현찌,모라라 ٩(●'▿'●)۶",
+      "published_at": "2026-06-27T22:42:26+09:00",
+      "ended_at": "2026-06-27T23:50:44+09:00",
+      "duration_sec": 4098
+    },
+    {
+      "video_no": "13918660",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "9시 마크 공포 콘텐츠 백룸 w.핑맨,현찌,모라라 ٩(●'▿'●)۶",
+      "published_at": "2026-06-27T20:10:56+09:00",
+      "ended_at": "2026-06-27T22:37:25+09:00",
+      "duration_sec": 8789
+    },
+    {
       "video_no": "13908483",
       "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
       "streamer_name": "탬탬버린",
@@ -70,36 +97,65 @@
       "published_at": "2026-06-25T10:24:06+09:00",
       "ended_at": "2026-06-25T12:06:58+09:00",
       "duration_sec": 6172
-    },
-    {
-      "video_no": "13876904",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "북중미 월드컵  대한민국 VS 남아공 대한민국 파이팅!!!!!!!!!!!!!!!! ٩(●'▿'●)۶",
-      "published_at": "2026-06-25T09:32:55+09:00",
-      "ended_at": "2026-06-25T10:23:58+09:00",
-      "duration_sec": 3063
-    },
-    {
-      "video_no": "13869983",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "레테공주님 보스 잡으러 가실 시간입니다... ٩(●'▿'●)۶",
-      "published_at": "2026-06-24T18:14:43+09:00",
-      "ended_at": "2026-06-25T00:15:08+09:00",
-      "duration_sec": 21625
-    },
-    {
-      "video_no": "13858411",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "북중미 월드컵 포르투갈vs우즈베키스탄 우리형 나옴!!!!٩(●'▿'●)۶",
-      "published_at": "2026-06-24T01:42:47+09:00",
-      "ended_at": "2026-06-24T04:04:23+09:00",
-      "duration_sec": 8496
     }
   ],
   "recent_updates": [
+    {
+      "kind": "vod",
+      "video_no": "13932959",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "미 미라클 미 미미미미미라클 데이 ٩(●'▿'●)۶",
+      "published_at": "2026-06-28T11:31:32+09:00",
+      "ended_at": "2026-06-28T19:13:46+09:00",
+      "duration_sec": 27734,
+      "platform_category": "메이플스토리",
+      "stats": {
+        "total_chats": 93539,
+        "highlight_count": 21
+      }
+    },
+    {
+      "kind": "bundle",
+      "bundle_id": "20260628_001736",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "📦 6월 27일분 전체 방송 분석 리포트 — 마크 잼있다 w.핑맨,현찌,모라라 ٩(●'▿'●)۶",
+      "published_at": "2026-06-28T00:37:19.995468",
+      "created_at": "2026-06-28T00:37:19.995468",
+      "vod_count": 2,
+      "date_span": "20260627"
+    },
+    {
+      "kind": "vod",
+      "video_no": "13920219",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "마크 잼있다 w.핑맨,현찌,모라라 ٩(●'▿'●)۶",
+      "published_at": "2026-06-27T22:42:26+09:00",
+      "ended_at": "2026-06-27T23:50:44+09:00",
+      "duration_sec": 4098,
+      "platform_category": "마인크래프트",
+      "stats": {
+        "total_chats": 12283,
+        "highlight_count": 15
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13918660",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "9시 마크 공포 콘텐츠 백룸 w.핑맨,현찌,모라라 ٩(●'▿'●)۶",
+      "published_at": "2026-06-27T20:10:56+09:00",
+      "ended_at": "2026-06-27T22:37:25+09:00",
+      "duration_sec": 8789,
+      "platform_category": "마인크래프트",
+      "stats": {
+        "total_chats": 16920,
+        "highlight_count": 19
+      }
+    },
     {
       "kind": "vod",
       "video_no": "13908483",
@@ -127,66 +183,6 @@
       "platform_category": "명조:워더링 웨이브",
       "stats": {
         "total_chats": 35112,
-        "highlight_count": 19
-      }
-    },
-    {
-      "kind": "vod",
-      "video_no": "13878075",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "북중미 월드컵  대한민국 VS 남아공 대한민국 파이팅!!!!!!!!!!!!!!!! ٩(●'▿'●)۶",
-      "published_at": "2026-06-25T10:24:06+09:00",
-      "ended_at": "2026-06-25T12:06:58+09:00",
-      "duration_sec": 6172,
-      "platform_category": "2026 FIFA 북중미 월드컵",
-      "stats": {
-        "total_chats": 36436,
-        "highlight_count": 20
-      }
-    },
-    {
-      "kind": "vod",
-      "video_no": "13876904",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "북중미 월드컵  대한민국 VS 남아공 대한민국 파이팅!!!!!!!!!!!!!!!! ٩(●'▿'●)۶",
-      "published_at": "2026-06-25T09:32:55+09:00",
-      "ended_at": "2026-06-25T10:23:58+09:00",
-      "duration_sec": 3063,
-      "platform_category": "2026 FIFA 북중미 월드컵",
-      "stats": {
-        "total_chats": 5463,
-        "highlight_count": 18
-      }
-    },
-    {
-      "kind": "vod",
-      "video_no": "13869983",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "레테공주님 보스 잡으러 가실 시간입니다... ٩(●'▿'●)۶",
-      "published_at": "2026-06-24T18:14:43+09:00",
-      "ended_at": "2026-06-25T00:15:08+09:00",
-      "duration_sec": 21625,
-      "platform_category": "메이플스토리",
-      "stats": {
-        "total_chats": 56170,
-        "highlight_count": 21
-      }
-    },
-    {
-      "kind": "vod",
-      "video_no": "13858411",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "북중미 월드컵 포르투갈vs우즈베키스탄 우리형 나옴!!!!٩(●'▿'●)۶",
-      "published_at": "2026-06-24T01:42:47+09:00",
-      "ended_at": "2026-06-24T04:04:23+09:00",
-      "duration_sec": 8496,
-      "platform_category": "2026 FIFA 북중미 월드컵",
-      "stats": {
-        "total_chats": 32418,
         "highlight_count": 19
       }
     }
