@@ -4,9 +4,174 @@
     "streamer_name": "탬탬버린",
     "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
     "platform": "chzzk",
-    "vod_count": 97
+    "vod_count": 108
   },
   "vods": [
+    {
+      "kind": "vod",
+      "video_no": "14061877",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "레테 공주님 숙제 ㄱㄱ링 ٩(●'▿'●)۶",
+      "published_at": "2026-07-06T14:31:39+09:00",
+      "ended_at": "2026-07-06T20:34:43+09:00",
+      "duration_sec": 21784,
+      "platform_category": "메이플스토리",
+      "stats": {
+        "total_chats": 55567,
+        "highlight_count": 22
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14056697",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 브라질 vs 노르웨이 얼빠 진짜 아닙니다;;٩(●'▿'●)۶",
+      "published_at": "2026-07-06T04:44:12+09:00",
+      "ended_at": "2026-07-06T07:12:43+09:00",
+      "duration_sec": 8911,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 22947,
+        "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14046867",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "메이플 샤타포스 두가자ㅏㅏㅏㅏㅏㅏㅏㅏㅏ ٩(●'▿'●)۶",
+      "published_at": "2026-07-05T12:00:43+09:00",
+      "ended_at": "2026-07-05T20:31:54+09:00",
+      "duration_sec": 30671,
+      "platform_category": "메이플스토리",
+      "stats": {
+        "total_chats": 88007,
+        "highlight_count": 26
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14035603",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "공은.. 둥글다... ٩(●'▿'●)۶",
+      "published_at": "2026-07-04T14:50:21+09:00",
+      "ended_at": "2026-07-05T01:07:40+09:00",
+      "duration_sec": 37039,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 154953,
+        "highlight_count": 26
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14014634",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "해방.. 무기... 돌려볼게요.. ٩(●'▿'●)۶",
+      "published_at": "2026-07-03T11:41:11+09:00",
+      "ended_at": "2026-07-03T22:45:01+09:00",
+      "duration_sec": 39830,
+      "platform_category": "메이플스토리",
+      "stats": {
+        "total_chats": 132628,
+        "highlight_count": 26
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13979612",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "제발 T1 올라가게 해주세요 T1 vs TLAW #MSI2026 ٩(●'▿'●)۶",
+      "published_at": "2026-07-01T16:58:00+09:00",
+      "ended_at": "2026-07-01T20:04:23+09:00",
+      "duration_sec": 11183,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 52590,
+        "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13974349",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 32강 프랑스 VS 스웨덴  ٩(●'▿'●)۶",
+      "published_at": "2026-07-01T05:41:18+09:00",
+      "ended_at": "2026-07-01T07:55:30+09:00",
+      "duration_sec": 8052,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 13567,
+        "highlight_count": 16
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13973794",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "프랑스 대기방 ٩(●'▿'●)۶",
+      "published_at": "2026-07-01T04:02:24+09:00",
+      "ended_at": "2026-07-01T05:41:10+09:00",
+      "duration_sec": 5926,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 24067,
+        "highlight_count": 15
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13973058",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 32강 코트디부아르 vs 노르웨이 가주아 ٩(●'▿'●)۶",
+      "published_at": "2026-07-01T01:50:28+09:00",
+      "ended_at": "2026-07-01T04:02:16+09:00",
+      "duration_sec": 7908,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 14876,
+        "highlight_count": 16
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13971115",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "명조 1장 마무리 가즈아아아앙 승소산  ٩(●'▿'●)۶",
+      "published_at": "2026-06-30T20:15:52+09:00",
+      "ended_at": "2026-07-01T01:50:18+09:00",
+      "duration_sec": 20066,
+      "platform_category": "명조:워더링 웨이브",
+      "stats": {
+        "total_chats": 38130,
+        "highlight_count": 26
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13948679",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "레테 공주님 스펙업 했어염 ㅋㅋ 검멘 도전.٩(●'▿'●)۶",
+      "published_at": "2026-06-29T11:44:01+09:00",
+      "ended_at": "2026-06-29T20:45:09+09:00",
+      "duration_sec": 32468,
+      "platform_category": "메이플스토리",
+      "stats": {
+        "total_chats": 79214,
+        "highlight_count": 20
+      }
+    },
     {
       "kind": "vod",
       "video_no": "13932959",
@@ -1466,6 +1631,17 @@
   "bundles": [
     {
       "kind": "bundle",
+      "bundle_id": "20260701_103531",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "📦 7월 1일분 전체 방송 분석 리포트 — 북중미 월드컵 32강 프랑스 VS 스웨덴 ٩(●'▿'…",
+      "published_at": "2026-07-01T11:48:31.819800",
+      "created_at": "2026-07-01T11:48:31.819800",
+      "vod_count": 2,
+      "date_span": "20260701"
+    },
+    {
+      "kind": "bundle",
       "bundle_id": "20260628_001736",
       "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
       "streamer_name": "탬탬버린",
@@ -1543,6 +1719,182 @@
     }
   ],
   "reports": [
+    {
+      "kind": "vod",
+      "video_no": "14061877",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "레테 공주님 숙제 ㄱㄱ링 ٩(●'▿'●)۶",
+      "published_at": "2026-07-06T14:31:39+09:00",
+      "ended_at": "2026-07-06T20:34:43+09:00",
+      "duration_sec": 21784,
+      "platform_category": "메이플스토리",
+      "stats": {
+        "total_chats": 55567,
+        "highlight_count": 22
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14056697",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 브라질 vs 노르웨이 얼빠 진짜 아닙니다;;٩(●'▿'●)۶",
+      "published_at": "2026-07-06T04:44:12+09:00",
+      "ended_at": "2026-07-06T07:12:43+09:00",
+      "duration_sec": 8911,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 22947,
+        "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14046867",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "메이플 샤타포스 두가자ㅏㅏㅏㅏㅏㅏㅏㅏㅏ ٩(●'▿'●)۶",
+      "published_at": "2026-07-05T12:00:43+09:00",
+      "ended_at": "2026-07-05T20:31:54+09:00",
+      "duration_sec": 30671,
+      "platform_category": "메이플스토리",
+      "stats": {
+        "total_chats": 88007,
+        "highlight_count": 26
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14035603",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "공은.. 둥글다... ٩(●'▿'●)۶",
+      "published_at": "2026-07-04T14:50:21+09:00",
+      "ended_at": "2026-07-05T01:07:40+09:00",
+      "duration_sec": 37039,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 154953,
+        "highlight_count": 26
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14014634",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "해방.. 무기... 돌려볼게요.. ٩(●'▿'●)۶",
+      "published_at": "2026-07-03T11:41:11+09:00",
+      "ended_at": "2026-07-03T22:45:01+09:00",
+      "duration_sec": 39830,
+      "platform_category": "메이플스토리",
+      "stats": {
+        "total_chats": 132628,
+        "highlight_count": 26
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13979612",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "제발 T1 올라가게 해주세요 T1 vs TLAW #MSI2026 ٩(●'▿'●)۶",
+      "published_at": "2026-07-01T16:58:00+09:00",
+      "ended_at": "2026-07-01T20:04:23+09:00",
+      "duration_sec": 11183,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 52590,
+        "highlight_count": 18
+      }
+    },
+    {
+      "kind": "bundle",
+      "bundle_id": "20260701_103531",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "📦 7월 1일분 전체 방송 분석 리포트 — 북중미 월드컵 32강 프랑스 VS 스웨덴 ٩(●'▿'…",
+      "published_at": "2026-07-01T11:48:31.819800",
+      "created_at": "2026-07-01T11:48:31.819800",
+      "vod_count": 2,
+      "date_span": "20260701"
+    },
+    {
+      "kind": "vod",
+      "video_no": "13974349",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 32강 프랑스 VS 스웨덴  ٩(●'▿'●)۶",
+      "published_at": "2026-07-01T05:41:18+09:00",
+      "ended_at": "2026-07-01T07:55:30+09:00",
+      "duration_sec": 8052,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 13567,
+        "highlight_count": 16
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13973794",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "프랑스 대기방 ٩(●'▿'●)۶",
+      "published_at": "2026-07-01T04:02:24+09:00",
+      "ended_at": "2026-07-01T05:41:10+09:00",
+      "duration_sec": 5926,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 24067,
+        "highlight_count": 15
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13973058",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 32강 코트디부아르 vs 노르웨이 가주아 ٩(●'▿'●)۶",
+      "published_at": "2026-07-01T01:50:28+09:00",
+      "ended_at": "2026-07-01T04:02:16+09:00",
+      "duration_sec": 7908,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 14876,
+        "highlight_count": 16
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13971115",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "명조 1장 마무리 가즈아아아앙 승소산  ٩(●'▿'●)۶",
+      "published_at": "2026-06-30T20:15:52+09:00",
+      "ended_at": "2026-07-01T01:50:18+09:00",
+      "duration_sec": 20066,
+      "platform_category": "명조:워더링 웨이브",
+      "stats": {
+        "total_chats": 38130,
+        "highlight_count": 26
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "13948679",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "레테 공주님 스펙업 했어염 ㅋㅋ 검멘 도전.٩(●'▿'●)۶",
+      "published_at": "2026-06-29T11:44:01+09:00",
+      "ended_at": "2026-06-29T20:45:09+09:00",
+      "duration_sec": 32468,
+      "platform_category": "메이플스토리",
+      "stats": {
+        "total_chats": 79214,
+        "highlight_count": 20
+      }
+    },
     {
       "kind": "vod",
       "video_no": "13932959",

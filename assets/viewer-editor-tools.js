@@ -446,7 +446,45 @@ function initViewerEditorTools() {
     const label = labelSec != null ? `${esc(labelText)} · ${timeLink(labelSec, row)}` : linkTimecodesText(labelText, row);
     return `<div class="viewer-editor-row"><strong>${label}</strong><br>${linkTimecodesText(bodyText, row)}</div>`;
   }
-  function renderClusterMemberRow(row, index, isRest) {
+  function normalizeEvidenceIdentityText(value) {
+    return String(value || '').trim().replace(/\s+/g, ' ').toLowerCase();
+  }
+  function clusterMemberIdentityKey(row) {
+    const sec = Number(row && row.start_sec);
+    const roundedSec = Number.isFinite(sec) ? Math.round(sec) : 0;
+    const title = normalizeEvidenceIdentityText(friendlyEventTitle(row) || optionLabel(row && row.kind) || '편집 후보');
+    return `${roundedSec}|${title}|${seekUrl(Number.isFinite(sec) ? sec : 0, row)}`;
+  }
+  function groupedClusterMemberRows(rows) {
+    const groups = [];
+    const byKey = new Map();
+    (rows || []).forEach((row) => {
+      if (!row) return;
+      const key = clusterMemberIdentityKey(row);
+      let group = byKey.get(key);
+      if (!group) {
+        group = { key, primary: row, rows: [], kinds: [] };
+        byKey.set(key, group);
+        groups.push(group);
+      }
+      group.rows.push(row);
+      const kind = String(row.kind || '').trim();
+      if (kind && !group.kinds.includes(kind)) group.kinds.push(kind);
+    });
+    return groups;
+  }
+  function renderClusterMemberSourceBadges(group) {
+    const kinds = Array.isArray(group && group.kinds) ? group.kinds : [];
+    if (!kinds.length) return '';
+    const sourceBadges = kinds.map((kind) => `<span class="viewer-editor-chip" data-cluster-source-kind="${esc(kind)}">${esc(optionLabel(kind))}</span>`).join('');
+    const countBadge = group.rows && group.rows.length > 1
+      ? `<span class="viewer-editor-chip" data-evidence-group-size="${group.rows.length}">근거 출처 ${group.rows.length}개</span>`
+      : '';
+    return `<div class="viewer-editor-source-badges" aria-label="묶인 근거 출처">${countBadge}${sourceBadges}</div>`;
+  }
+  function renderClusterMemberRow(group, index, isRest) {
+    const row = group && group.primary ? group.primary : group;
+    const identity = group && group.key ? group.key : clusterMemberIdentityKey(row);
     const sec = Number(row && row.start_sec);
     const rank = isRest ? `나머지 ${Math.max(1, index - 2)}` : `대표 ${index + 1}`;
     const label = row && row.vod_label ? `${row.vod_label} · ${optionLabel(row.kind)}` : optionLabel(row && row.kind);
@@ -455,9 +493,12 @@ function initViewerEditorTools() {
     const body = link.url
       ? `<a class="viewer-editor-evidence-link" href="${esc(link.url)}" target="_blank" rel="noopener">${esc(link.title || title)} · 치지직 클립 열기</a>`
       : linkTimecodesText(title, row);
-    return `<div class="viewer-editor-row cluster-member ${isRest ? 'rest' : 'top'}" data-cluster-member-rank="${isRest ? 'rest' : 'top'}" data-cluster-member-kind="${esc(row && row.kind || '')}">
+    const kinds = Array.isArray(group && group.kinds) ? group.kinds : [row && row.kind].filter(Boolean);
+    return `<div class="viewer-editor-row cluster-member ${isRest ? 'rest' : 'top'}" data-cluster-member-rank="${isRest ? 'rest' : 'top'}" data-cluster-member-kind="${esc(row && row.kind || '')}" data-cluster-source-kinds="${esc(kinds.join(' '))}" data-evidence-group-size="${group && group.rows ? group.rows.length : 1}" data-evidence-identity="${esc(identity)}">
       <span class="viewer-editor-member-rank">${esc(rank)}</span>
-      <strong>${esc(label)} · ${timeLink(Number.isFinite(sec) ? sec : 0, row)}</strong><br>${body}
+      <strong>${esc(label)} · ${timeLink(Number.isFinite(sec) ? sec : 0, row)}</strong>
+      ${renderClusterMemberSourceBadges(group)}
+      <br>${body}
     </div>`;
   }
   function renderEditPointClusterEvidence(event, sec) {
@@ -473,15 +514,22 @@ function initViewerEditorTools() {
     if (introEl) introEl.hidden = true;
     const selectedColor = markerColor('edit_point_cluster');
     const signalCount = Math.max(0, Number(cluster.signal_count || rows.length || 0));
+    const zoneFamilyKeys = Array.isArray(event && event.heatmap_zone_families) ? event.heatmap_zone_families : [];
+    const familyKeys = Array.from(new Set(clusterFamilyKeys(cluster).concat(zoneFamilyKeys))).filter(Boolean);
+    const familyChipHtml = familyKeys.slice(0, 7)
+      .map((kind) => `<span class="viewer-editor-chip" data-selected-signal-family="${esc(kind)}">${esc(optionLabel(kind))}</span>`)
+      .join('');
     const viewerClipCount = Math.max(0, Number(cluster.viewer_clip_count || rows.filter((row) => row.kind === 'viewer_clip').length));
     const overflowCount = Math.max(0, Number(cluster.overflow_event_count || Math.max(0, rows.length - 3)));
-    const topRows = rows.slice(0, 3);
-    const restRows = rows.slice(3);
+    const zoneRelatedCount = Math.max(0, Number(event && event.heatmap_zone_related_count || 0));
+    const groupedRows = groupedClusterMemberRows(rows);
+    const topRows = groupedRows.slice(0, 3);
+    const restRows = groupedRows.slice(3);
     const memberRows = topRows.map((row, index) => renderClusterMemberRow(row, index, false))
       .concat(restRows.map((row, index) => renderClusterMemberRow(row, index + 3, true)));
     const subtitleContext = subtitles.filter((row) => near(row, sec, 45)).slice(0, 6);
     const bucketContext = buckets.filter((row) => near(row, sec, 45)).slice(0, 5);
-    evidenceEl.innerHTML = `<div class="viewer-editor-selected-card" style="--viewer-marker-color:${esc(selectedColor)}" data-selected-edit-point-cluster="${esc(clusterId)}">
+    evidenceEl.innerHTML = `<div class="viewer-editor-selected-card" style="--viewer-marker-color:${esc(selectedColor)}" data-selected-edit-point-cluster="${esc(clusterId)}" data-selected-signal-families="${esc(familyKeys.join(' '))}">
       <span class="viewer-editor-selected-kicker">먼저 볼 편집 후보 묶음</span>
       <div class="viewer-editor-selected-title">${esc(fmt(sec))} 주변 신호 ${signalCount}개</div>
       <div class="viewer-editor-selected-meta">
@@ -489,12 +537,14 @@ function initViewerEditorTools() {
         <span class="viewer-editor-chip">자료 ${Math.max(0, Number(cluster.family_count || 0))}종</span>
         <span class="viewer-editor-chip">시청자 클립 ${viewerClipCount}개</span>
         <span class="viewer-editor-chip">신뢰 ${esc(clusterConfidenceLabel(cluster.confidence))}</span>
+        ${zoneRelatedCount ? `<span class="viewer-editor-chip">주변 묶음 ${zoneRelatedCount}개</span>` : ''}
+        ${familyChipHtml}
         ${overflowCount ? `<span class="viewer-editor-chip warning">나머지 ${overflowCount}개도 펼침</span>` : ''}
       </div>
     </div>
     <div class="viewer-editor-row reason"><strong>왜 먼저 보나요</strong><br>${esc(clusterFamilyText(cluster))}가 같은 시간대에 겹친 편집 후보입니다. 요약 사실이 아니라 사람이 먼저 확인할 탐색 묶음입니다.</div>
     ${renderContextSummary(subtitleContext, bucketContext)}
-    <div class="viewer-editor-list" data-edit-point-cluster-members="${rows.length}">${memberRows.join('') || '<div class="viewer-editor-empty">묶음 안에 표시할 근거가 없습니다.</div>'}</div>`;
+    <div class="viewer-editor-list" data-edit-point-cluster-members="${groupedRows.length}" data-edit-point-cluster-source-events="${rows.length}">${memberRows.join('') || '<div class="viewer-editor-empty">묶음 안에 표시할 근거가 없습니다.</div>'}</div>`;
   }
   function viewerClipLinkInfo(eventList, selectedEvent) {
     const selectedStart = Number(selectedEvent && selectedEvent.start_sec);
@@ -1004,8 +1054,7 @@ function initViewerEditorTools() {
     const clusters = editPointClusters
       .filter((cluster) => editPointClusterId(cluster) && editPointClusterEvents(cluster).length)
       .sort((a, b) => Number(a.start_sec || 0) - Number(b.start_sec || 0));
-    const withViewerClips = clusters.filter((cluster) => Number(cluster && cluster.viewer_clip_count || 0) > 0);
-    return withViewerClips.length ? withViewerClips : clusters;
+    return clusters;
   }
   function clusterConfidenceLabel(value) {
     const raw = String(value || '').toLowerCase();
@@ -1015,8 +1064,12 @@ function initViewerEditorTools() {
     return '검토용';
   }
   function clusterFamilyText(cluster) {
-    const families = Array.isArray(cluster && cluster.signal_families) ? cluster.signal_families : [];
-    return families.map((kind) => optionLabel(kind)).filter(Boolean).slice(0, 4).join(' · ') || '편집 후보';
+    return clusterFamilyKeys(cluster).map((kind) => optionLabel(kind)).filter(Boolean).slice(0, 4).join(' · ') || '편집 후보';
+  }
+  function clusterFamilyKeys(cluster) {
+    return (Array.isArray(cluster && cluster.signal_families) ? cluster.signal_families : [])
+      .map((kind) => String(kind || '').trim())
+      .filter(Boolean);
   }
   function editPointClusterEvent(clusterId) {
     const cluster = renderableEditPointClusters().find((row) => editPointClusterId(row) === clusterId);
@@ -1027,7 +1080,7 @@ function initViewerEditorTools() {
     const event = {
       id: `edit_point_cluster_${clusterId}`,
       kind: 'edit_point_cluster',
-      kind_label: '먼저 볼 묶음',
+      kind_label: '먼저 볼 구간',
       start_sec: start,
       end_sec: Math.max(start, Number(cluster.end_sec || start)),
       title: `${fmt(start)} 편집 후보 묶음`,
@@ -1039,22 +1092,134 @@ function initViewerEditorTools() {
     });
     return event;
   }
-  function renderClusterOverviewRow() {
+  function clusterHeatScore(cluster) {
+    const signalCount = Math.max(0, Number(cluster && cluster.signal_count || 0));
+    const familyCount = Math.max(0, Number(cluster && cluster.family_count || 0));
+    const viewerClipCount = Math.max(0, Number(cluster && cluster.viewer_clip_count || 0));
+    const confidence = String(cluster && cluster.confidence || 'low').toLowerCase();
+    const confidenceWeight = confidence === 'high' ? 2.2 : confidence === 'medium' ? 1.1 : 0.25;
+    return signalCount + (familyCount * 1.35) + (viewerClipCount * 1.15) + confidenceWeight;
+  }
+  const HEATMAP_PROFILE_SAMPLE_COUNT = 120;
+  const MAX_PROMINENT_HEAT_ZONES = 12;
+  const MIN_PROMINENT_HEAT_ZONES = 5;
+  function clusterHeatClass(cluster, score, maxScore) {
+    const signalCount = Math.max(0, Number(cluster && cluster.signal_count || 0));
+    const familyCount = Math.max(0, Number(cluster && cluster.family_count || 0));
+    if (signalCount <= 1 && familyCount <= 1) return 'low';
+    if (score >= Math.max(3, maxScore * 0.66)) return 'hot';
+    if (score >= Math.max(2, maxScore * 0.34)) return 'medium';
+    return 'low';
+  }
+  function clusterTimeBounds(cluster) {
+    const start = Math.max(0, Number(cluster && cluster.start_sec || 0));
+    const rawEnd = Math.max(start + 18, Number(cluster && cluster.end_sec || start + 45));
+    return { start, end: Math.min(duration, rawEnd), center: Math.min(duration, Math.max(0, (start + rawEnd) / 2)) };
+  }
+  function heatmapProfileSamples(scored) {
+    const sampleCount = HEATMAP_PROFILE_SAMPLE_COUNT;
+    const smoothingSec = Math.max(120, Math.min(420, duration * 0.018));
+    const samples = Array.from({ length: sampleCount }, (_, index) => {
+      const sec = duration * (index / Math.max(1, sampleCount - 1));
+      let value = 0;
+      scored.forEach((row) => {
+        const bounds = row.bounds || clusterTimeBounds(row.cluster);
+        const halfWidth = Math.max(45, (bounds.end - bounds.start) / 2);
+        const radius = smoothingSec + halfWidth;
+        const distance = Math.abs(sec - bounds.center);
+        if (distance > radius) return;
+        const influence = 1 - (distance / radius);
+        value += row.score * influence * influence;
+      });
+      return { sec, value };
+    });
+    const maxValue = Math.max(1, ...samples.map((sample) => sample.value));
+    return samples.map((sample) => ({ sec: sample.sec, value: sample.value, normalized: sample.value / maxValue }));
+  }
+  function heatmapAreaPath(samples) {
+    if (!samples.length) return '';
+    const points = samples.map((sample, index) => {
+      const x = (index / Math.max(1, samples.length - 1)) * 1000;
+      const y = 42 - (Math.max(0, Math.min(1, sample.normalized)) * 34);
+      return `${x.toFixed(1)},${y.toFixed(1)}`;
+    });
+    return `M0,44 L${points.join(' L')} L1000,44 Z`;
+  }
+  function heatmapLinePath(samples) {
+    if (!samples.length) return '';
+    return samples.map((sample, index) => {
+      const x = (index / Math.max(1, samples.length - 1)) * 1000;
+      const y = 42 - (Math.max(0, Math.min(1, sample.normalized)) * 34);
+      return `${index ? 'L' : 'M'}${x.toFixed(1)},${y.toFixed(1)}`;
+    }).join(' ');
+  }
+  function heatmapVisualZones(scored, maxScore) {
+    const baseZoneRadiusSec = Math.max(140, Math.min(420, duration * 0.014));
+    const minDistanceSec = Math.max(180, Math.min(540, duration * 0.018));
+    const selected = [];
+    const candidates = scored
+      .map((row) => ({ ...row, bounds: row.bounds || clusterTimeBounds(row.cluster) }))
+      .sort((a, b) => b.score - a.score);
+    candidates.forEach((candidate) => {
+      if (selected.length >= MAX_PROMINENT_HEAT_ZONES) return;
+      const tooClose = selected.some((zone) => Math.abs(zone.center - candidate.bounds.center) < minDistanceSec);
+      const heatClass = clusterHeatClass(candidate.cluster, candidate.score, maxScore);
+      if (tooClose || (heatClass === 'low' && selected.length >= MIN_PROMINENT_HEAT_ZONES)) return;
+      const strengthRatio = Math.max(0.24, Math.min(1, candidate.score / Math.max(1, maxScore)));
+      const zoneRadiusSec = baseZoneRadiusSec * (0.68 + (strengthRatio * 0.72));
+      const zoneStart = Math.max(0, candidate.bounds.center - zoneRadiusSec);
+      const zoneEnd = Math.min(duration, candidate.bounds.center + zoneRadiusSec);
+      const related = candidates.filter((row) => {
+        const centerDistance = Math.abs(row.bounds.center - candidate.bounds.center);
+        return centerDistance <= zoneRadiusSec || (row.bounds.start <= zoneEnd && row.bounds.end >= zoneStart);
+      });
+      const familyKeys = Array.from(new Set(related.flatMap((row) => clusterFamilyKeys(row.cluster)))).filter(Boolean);
+      const relatedSignalCount = related.reduce((sum, row) => sum + Math.max(0, Number(row.cluster && row.cluster.signal_count || 0)), 0);
+      selected.push({
+        cluster: candidate.cluster,
+        index: candidate.index,
+        score: candidate.score,
+        heatClass,
+        center: candidate.bounds.center,
+        start: zoneStart,
+        end: zoneEnd,
+        familyKeys,
+        relatedCount: related.length,
+        relatedSignalCount,
+      });
+    });
+    return selected.sort((a, b) => a.start - b.start);
+  }
+  function renderHeatmapOverviewRow() {
     const clusters = renderableEditPointClusters();
-    if (!clusters.length) return '';
-    const markers = clusters.map((cluster, index) => {
+    if (!clusters.length) {
+      return `<div class="viewer-editor-density-row" data-real-heatmap-row="true"><div class="viewer-editor-density-label"><strong>먼저 볼 구간</strong><span>겹친 신호 없음</span></div><div class="viewer-editor-density"><div class="viewer-editor-empty">표시할 열 구간이 없습니다.</div></div></div>`;
+    }
+    const scored = clusters.map((cluster, index) => ({ cluster, index, score: clusterHeatScore(cluster), bounds: clusterTimeBounds(cluster) }));
+    const maxScore = Math.max(1, ...scored.map((row) => row.score));
+    const profileSamples = heatmapProfileSamples(scored);
+    const zones = heatmapVisualZones(scored, maxScore);
+    const areaPath = heatmapAreaPath(profileSamples);
+    const linePath = heatmapLinePath(profileSamples);
+    const zoneButtons = zones.map((zone, index) => {
+      const { cluster, score } = zone;
       const clusterId = editPointClusterId(cluster);
-      const start = Math.max(0, Number(cluster.start_sec || 0));
+      const start = Math.max(0, zone.start);
+      const end = Math.min(duration, zone.end);
       const left = Math.max(0, Math.min(100, (start / duration) * 100));
-      const confidence = String(cluster.confidence || 'low').toLowerCase();
+      const width = Math.max(2.2, Math.min(100 - left, ((end - start) / duration) * 100));
       const signalCount = Math.max(0, Number(cluster.signal_count || 0));
+      const familyCount = Math.max(0, Number(cluster.family_count || 0));
       const viewerClipCount = Math.max(0, Number(cluster.viewer_clip_count || 0));
-      const label = viewerClipCount ? `${viewerClipCount}클립` : `${signalCount}개`;
-      const title = `${fmt(start)} ${signalCount}개 신호 · ${clusterFamilyText(cluster)} · 신뢰 ${clusterConfidenceLabel(confidence)}`;
+      const familyKeys = zone.familyKeys.length ? zone.familyKeys : clusterFamilyKeys(cluster);
+      const heatClass = zone.heatClass;
+      const title = `${fmt(zone.center)} ${clusterFamilyText(cluster)} 열 구간 · 묶음 ${zone.relatedCount}개 · 신호 ${zone.relatedSignalCount || signalCount}개 · 자료 ${familyKeys.length || familyCount}종 · 클립 ${viewerClipCount}개`;
       const selected = selectedEventId === `edit_point_cluster_${clusterId}`;
-      return `<button type="button" class="viewer-editor-cluster-marker ${esc(confidence)} ${index % 2 ? 'lane-b' : 'lane-a'}${selected ? ' selected' : ''}" data-edit-point-cluster-id="${esc(clusterId)}" data-cluster-index="${index + 1}" data-cluster-signal-count="${signalCount}" data-cluster-viewer-clip-count="${viewerClipCount}" aria-label="${esc(title)}" title="${esc(title)}" style="left:${left}%">${esc(label)}</button>`;
+      return `<button type="button" class="viewer-editor-heatmap-zone ${heatClass}${selected ? ' selected' : ''}" data-real-heatmap-zone="true" data-heatmap-prominent-zone="true" data-heatmap-zone-visual="hit-target" data-edit-point-cluster-id="${esc(clusterId)}" data-overview-rank="${index + 1}" data-overview-strength="${esc(heatClass)}" data-cluster-signal-count="${signalCount}" data-cluster-family-count="${familyCount}" data-cluster-viewer-clip-count="${viewerClipCount}" data-cluster-signal-families="${esc(familyKeys.join(' '))}" data-heatmap-zone-related-count="${zone.relatedCount}" data-sec="${Math.round(zone.center)}" aria-label="${esc(`${fmt(zone.center)} 먼저 볼 열 구간. ${title}. 클릭하면 근거 펼침`)}" title="${esc(`${title} · 클릭하면 근거 펼침`)}" style="left:${left}%;width:${width}%"></button>`;
     }).join('');
-    return `<div class="viewer-editor-cluster-row" data-edit-point-cluster-row="true"><div class="viewer-editor-cluster-label"><strong>먼저 볼 묶음</strong><span>${clusters.length}묶음 · 클릭하면 근거 펼침</span></div><div class="viewer-editor-cluster-track">${markers}</div></div>`;
+    const surface = `<svg class="viewer-editor-heatmap-surface" viewBox="0 0 1000 44" preserveAspectRatio="none" aria-hidden="true" data-real-heatmap-surface="true" data-heatmap-area="true" data-heatmap-profile-samples="${profileSamples.length}"><defs><linearGradient id="viewerEditorHeatmapGradient" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="rgba(122,162,247,0.10)"/><stop offset="58%" stop-color="rgba(224,175,104,0.36)"/><stop offset="100%" stop-color="rgba(247,118,142,0.70)"/></linearGradient></defs><path class="heatmap-fill" d="${areaPath}"></path><path class="heatmap-line" d="${linePath}"></path></svg>`;
+    const legend = '<span class="low">약함</span><span class="medium">중간</span><span class="hot">강함</span>';
+    return `<div class="viewer-editor-density-row" data-real-heatmap-row="true" data-heatmap-zone-count="${zones.length}" data-heatmap-background-density="true"><div class="viewer-editor-density-label"><strong>먼저 볼 구간</strong><span>겹친 신호는 봉우리로, 약한 신호는 배경 밀도로 표시</span><div class="viewer-editor-heatmap-legend" aria-label="열지도 강도 범례">${legend}</div></div><div class="viewer-editor-density viewer-editor-heatmap-track" aria-label="전체 방송 편집 후보 열지도">${surface}${zoneButtons}</div></div>`;
   }
   function renderAxis(options = {}) {
     const filter = filterEl ? filterEl.value : '';
@@ -1113,8 +1278,8 @@ function initViewerEditorTools() {
     }).join('');
     axisEl.innerHTML = `<div class="viewer-editor-axis-canvas">
       <div class="viewer-editor-scale-row"><div class="viewer-editor-scale-label"><strong>전체 흐름</strong><span>${fmt(duration)}</span></div><div class="viewer-editor-scale">${renderScale()}</div></div>
+      ${renderHeatmapOverviewRow()}
       ${renderWaveformRow()}
-      ${renderClusterOverviewRow()}
       <div class="viewer-editor-density-row"><div class="viewer-editor-density-label"><strong>전체 채팅량</strong><span>${densityScaleLabel}</span></div><div class="viewer-editor-density">${densityBars || '<div class="viewer-editor-empty">채팅 데이터 없음</div>'}</div></div>
       ${laneRows || '<div class="viewer-editor-empty">표시할 장면 데이터가 없습니다.</div>'}
     </div>`;
@@ -1137,11 +1302,16 @@ function initViewerEditorTools() {
       marker.classList.toggle('selected', selectedEventId === `edit_point_cluster_${marker.dataset.editPointClusterId || ''}`);
       marker.addEventListener('click', () => {
         const event = editPointClusterEvent(String(marker.dataset.editPointClusterId || ''));
+        if (event) {
+          event.heatmap_zone_families = String(marker.dataset.clusterSignalFamilies || '').split(/\s+/).filter(Boolean);
+          event.heatmap_zone_related_count = Number(marker.dataset.heatmapZoneRelatedCount || 0);
+        }
         syncSplitEditorSeek(event && event.start_sec, event);
         renderEvidence(event || null);
       });
     });
     axisEl.querySelectorAll('[data-sec]').forEach((bar) => {
+      if (bar.dataset.editPointClusterId) return;
       bar.addEventListener('click', () => {
         const sec = Number(bar.dataset.sec || 0);
         syncSplitEditorSeek(sec);

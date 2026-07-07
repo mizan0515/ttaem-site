@@ -377,6 +377,73 @@
     background: repeating-linear-gradient(90deg, rgba(154,165,190,0.32) 0 3px, transparent 3px 6px);
   }
   .viewer-editor-density-bar.hot span { background: rgba(247,118,142,0.82); }
+  .viewer-editor-heatmap-track {
+    overflow: hidden;
+    background:
+      linear-gradient(90deg, rgba(255,255,255,0.055) 1px, transparent 1px) 0 0 / 8.333% 100%,
+      linear-gradient(180deg, rgba(122,162,247,0.06), rgba(10,12,22,0.34));
+  }
+  .viewer-editor-heatmap-surface {
+    position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none;
+    z-index: 1;
+    filter: drop-shadow(0 0 12px rgba(247,118,142,0.18));
+  }
+  .viewer-editor-heatmap-surface .heatmap-fill {
+    fill: url(#viewerEditorHeatmapGradient); opacity: 0.86;
+  }
+  .viewer-editor-heatmap-surface .heatmap-line {
+    fill: none; stroke: rgba(255,199,119,0.72); stroke-width: 2.4;
+    stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke;
+  }
+  .viewer-editor-heatmap-zone {
+    position: absolute; top: 0; bottom: 0; min-width: 22px;
+    border: 0; border-radius: 0;
+    cursor: pointer; padding: 0; box-sizing: border-box;
+    background: transparent;
+    box-shadow: none;
+    z-index: 2;
+  }
+  .viewer-editor-heatmap-zone.medium {
+    background: transparent;
+    box-shadow: none;
+  }
+  .viewer-editor-heatmap-zone.low {
+    background: transparent;
+    box-shadow: none;
+  }
+  .viewer-editor-heatmap-zone.selected {
+    outline: 2px solid var(--accent-warm); outline-offset: -2px;
+    border-radius: 4px;
+    background: rgba(255,199,119,0.07);
+    box-shadow: inset 0 0 0 1px rgba(255,199,119,0.72), 0 0 18px rgba(255,199,119,0.20);
+  }
+  .viewer-editor-heatmap-zone.selected::after {
+    content: '';
+    position: absolute; top: 4px; bottom: 4px; left: 50%; width: 2px;
+    transform: translateX(-50%);
+    border-radius: 999px;
+    background: rgba(255,235,170,0.95);
+    box-shadow: 0 0 10px rgba(255,199,119,0.46);
+  }
+  .viewer-editor-heatmap-zone:hover,
+  .viewer-editor-heatmap-zone:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.44); outline-offset: -2px;
+  }
+  .viewer-editor-heatmap-legend {
+    display: inline-flex; flex-wrap: wrap; gap: 4px 6px; align-items: center; margin-top: 4px;
+  }
+  .viewer-editor-heatmap-legend span {
+    display: inline-flex; align-items: center; gap: 4px; color: var(--muted); font-size: 10px;
+  }
+  .viewer-editor-heatmap-legend span::before {
+    content: ""; width: 18px; height: 6px; border-radius: 999px; background: rgba(122,162,247,0.46);
+  }
+  .viewer-editor-heatmap-legend .medium::before {
+    background: linear-gradient(90deg, rgba(224,175,104,0.86), rgba(158,206,106,0.58));
+  }
+  .viewer-editor-heatmap-legend .hot::before {
+    background: linear-gradient(90deg, rgba(224,175,104,0.72), rgba(247,118,142,0.92));
+  }
   .viewer-editor-waveform {
     position: relative; height: 46px; min-width: var(--viewer-editor-w, 960px);
     border: 1px solid rgba(224,175,104,0.20); border-radius: 6px;
@@ -584,6 +651,12 @@
     display: inline-flex; margin: 0 0 5px; padding: 2px 7px;
     border-radius: 999px; background: rgba(255,255,255,0.08);
     color: var(--muted); font-size: 11px; font-weight: 750;
+  }
+  .viewer-editor-source-badges {
+    display: flex; flex-wrap: wrap; gap: 5px; margin: 6px 0 2px;
+  }
+  .viewer-editor-source-badges .viewer-editor-chip {
+    font-size: 11px; padding: 2px 7px;
   }
   .viewer-editor-confirm {
     display: grid; gap: 6px; margin: 12px 0;
