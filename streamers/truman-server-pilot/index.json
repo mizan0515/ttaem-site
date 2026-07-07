@@ -1,0 +1,12 @@
+{
+  "streamer": {
+    "streamer_id": "truman-server-pilot",
+    "streamer_name": "비공개 항목",
+    "channel_id": null,
+    "platform": "chzzk",
+    "vod_count": 0
+  },
+  "vods": [],
+  "bundles": [],
+  "reports": []
+}
