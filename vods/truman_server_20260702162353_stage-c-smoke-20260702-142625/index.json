@@ -1,0 +1,23 @@
+{
+  "streamer_id": "truman-server-pilot",
+  "streamer_name": "TRUMAN 서버 파일럿",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "platform": "chzzk",
+  "video_no": "truman_server_20260702162353_stage-c-smoke-20260702-142625",
+  "title": "TRUMAN 서버 격리 수집 후보",
+  "published_at": "2026-07-02T16:23:53+00:00",
+  "published_date_str": "20260702",
+  "duration_sec": 0,
+  "platform_category": "server_role_import",
+  "content_judgement": null,
+  "summary_md_path": "vods/truman_server_20260702162353_stage-c-smoke-20260702-142625/report.md",
+  "summary_html_path": "vods/truman_server_20260702162353_stage-c-smoke-20260702-142625/report.html",
+  "metadata_json_path": "vods/truman_server_20260702162353_stage-c-smoke-20260702-142625/metadata.json",
+  "thumbnail_url": null,
+  "search_text": "TRUMAN 서버 파일럿 | TRUMAN 서버 격리 수집 후보",
+  "stats": {
+    "total_chats": 0,
+    "highlight_count": 0
+  },
+  "processed_at": ""
+}

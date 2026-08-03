@@ -23,7 +23,7 @@
         "chat_surprise",
         "keyword_score",
         "laughter_burst",
-        "question_cluster"
+        "chat_laughter"
       ],
       "laughter_burst": true,
       "segment_id": "seg_highlight_candidate_7a180977f885",
@@ -54,7 +54,7 @@
         "chat_surprise",
         "keyword_score",
         "laughter_burst",
-        "question_cluster"
+        "chat_laughter"
       ],
       "laughter_burst": true,
       "segment_id": "seg_highlight_candidate_dbc65971422e",
@@ -85,7 +85,7 @@
         "chat_surprise",
         "keyword_score",
         "laughter_burst",
-        "question_cluster"
+        "chat_laughter"
       ],
       "laughter_burst": true,
       "segment_id": "seg_highlight_candidate_d693c3705f17",
@@ -116,7 +116,7 @@
         "chat_surprise",
         "keyword_score",
         "laughter_burst",
-        "question_cluster"
+        "chat_laughter"
       ],
       "laughter_burst": true,
       "segment_id": "seg_highlight_candidate_f8e1ac912da3",
@@ -147,7 +147,7 @@
         "chat_surprise",
         "keyword_score",
         "laughter_burst",
-        "question_cluster"
+        "chat_laughter"
       ],
       "laughter_burst": true,
       "segment_id": "seg_highlight_candidate_2bb55627114d",
@@ -178,7 +178,7 @@
         "chat_surprise",
         "keyword_score",
         "laughter_burst",
-        "question_cluster"
+        "chat_laughter"
       ],
       "laughter_burst": true,
       "segment_id": "seg_highlight_candidate_e3dbad884bd5",
@@ -209,7 +209,7 @@
         "chat_surprise",
         "keyword_score",
         "laughter_burst",
-        "question_cluster"
+        "chat_laughter"
       ],
       "laughter_burst": true,
       "segment_id": "seg_highlight_candidate_558cb25402c4",
@@ -240,7 +240,7 @@
         "chat_surprise",
         "keyword_score",
         "laughter_burst",
-        "question_cluster"
+        "chat_laughter"
       ],
       "laughter_burst": true,
       "segment_id": "seg_highlight_candidate_f77c5d17fc97",
@@ -271,7 +271,7 @@
         "chat_surprise",
         "keyword_score",
         "laughter_burst",
-        "question_cluster"
+        "chat_laughter"
       ],
       "laughter_burst": true,
       "segment_id": "seg_highlight_candidate_c7ba95417519",
@@ -299,7 +299,7 @@
         "audio",
         "chat",
         "laughter_burst",
-        "question_cluster"
+        "chat_laughter"
       ],
       "laughter_burst": true,
       "segment_id": "seg_highlight_candidate_540a44603388",
@@ -330,7 +330,7 @@
         "chat_surprise",
         "keyword_score",
         "laughter_burst",
-        "question_cluster"
+        "chat_laughter"
       ],
       "laughter_burst": true,
       "segment_id": "seg_highlight_candidate_813ea79723ff",
@@ -360,7 +360,7 @@
         "chat_surprise",
         "keyword_score",
         "laughter_burst",
-        "question_cluster"
+        "chat_laughter"
       ],
       "laughter_burst": true,
       "segment_id": "seg_highlight_candidate_ef79798054fd",
@@ -483,7 +483,7 @@
         "chat_surprise",
         "keyword_score",
         "laughter_burst",
-        "question_cluster"
+        "chat_laughter"
       ],
       "laughter_burst": true,
       "segment_id": "seg_highlight_candidate_ecbf26639b77",

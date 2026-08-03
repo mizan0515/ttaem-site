@@ -1,0 +1,44 @@
+{
+  "streamer": {
+    "streamer_id": "channel-Cbb9FF242",
+    "streamer_name": "스텔누키 KR",
+    "channel_id": "UCRisJkbQjMb9FQFRmoz242w",
+    "platform": "chzzk",
+    "vod_count": 1
+  },
+  "vods": [
+    {
+      "kind": "vod",
+      "video_no": "8-3t-rqg-NY",
+      "streamer_id": "channel-Cbb9FF242",
+      "streamer_name": "스텔누키 KR",
+      "title": "1등 하면 방종 못하면 공포겜 [아야츠노 유니]",
+      "published_at": "2024-08-30T00:00:00",
+      "ended_at": "2024-08-30T00:01:26",
+      "duration_sec": 86,
+      "platform_category": null,
+      "stats": {
+        "total_chats": 0,
+        "highlight_count": 0
+      }
+    }
+  ],
+  "bundles": [],
+  "reports": [
+    {
+      "kind": "vod",
+      "video_no": "8-3t-rqg-NY",
+      "streamer_id": "channel-Cbb9FF242",
+      "streamer_name": "스텔누키 KR",
+      "title": "1등 하면 방종 못하면 공포겜 [아야츠노 유니]",
+      "published_at": "2024-08-30T00:00:00",
+      "ended_at": "2024-08-30T00:01:26",
+      "duration_sec": 86,
+      "platform_category": null,
+      "stats": {
+        "total_chats": 0,
+        "highlight_count": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,5907 @@
+{
+  "video_no": "14254433",
+  "title": "한시간 동안 마구 떠들기 ٩(●'▿'●)۶",
+  "channel": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+  "platform": "chzzk",
+  "duration": 2491,
+  "publish_date": "2026-07-18 19:09:01",
+  "category": "talk",
+  "thumbnail_url": "https://video-phinf.pstatic.net/20260718_237/1784371892062vF1Iu_JPEG/t5rhnipRoG_02.jpg?type=o500x280_blur",
+  "total_chats": 4663,
+  "highlight_count": 16,
+  "highlights": [
+    {
+      "sec": 880,
+      "composite": 1.0,
+      "count": 60,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst",
+        "reaction_question",
+        "reaction_surprise"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_9117f98202c7",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 880
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 880,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 2220,
+      "composite": 1.0,
+      "count": 66,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst",
+        "reaction_question",
+        "reaction_surprise"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_a78582d3bb5f",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 2220
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 2220,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 660,
+      "composite": 0.9666,
+      "count": 48,
+      "source_signals": [
+        "audio",
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst",
+        "reaction_question",
+        "reaction_surprise"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_8ec6c22c2233",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 660
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 660,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 322,
+      "composite": 0.8425,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_1c9de7825db0",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 322
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 322,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 422,
+      "composite": 0.8372,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_c975d5be203f",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 422
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 422,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 120,
+      "composite": 0.776,
+      "count": 51,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst",
+        "reaction_question",
+        "reaction_surprise"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_7fdb6c533df2",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 120
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 1760,
+      "composite": 0.7565,
+      "count": 46,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "laughter_burst",
+        "reaction_question"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_26e1c5c16aa3",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1760
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 2422,
+      "composite": 0.7421,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_5bae3b3b961f",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 2422
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 2422,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 1660,
+      "composite": 0.7338,
+      "count": 57,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "keyword_score"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_f94c418fa56b",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1660
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 512,
+      "composite": 0.7313,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_8340be5e88ae",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 512
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 512,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 1198,
+      "composite": 0.7181,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_d8c616e77922",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1198
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1198,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 2288,
+      "composite": 0.7133,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_75a932e867f5",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 2288
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 2288,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 752,
+      "composite": 0.7125,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_672af9042b6f",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 752
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 752,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 1002,
+      "composite": 0.6996,
+      "count": 0,
+      "source_signals": [
+        "audio"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_c147f3c585a5",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1002
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1002,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "sec": 1710,
+      "composite": 0.6578,
+      "count": 44,
+      "source_signals": [
+        "chat",
+        "laughter_burst",
+        "reaction_surprise"
+      ],
+      "laughter_burst": true,
+      "segment_id": "seg_highlight_candidate_304db8a2a5f4",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1710
+        }
+      ],
+      "risk_flags": []
+    },
+    {
+      "sec": 1440,
+      "composite": 0.6536,
+      "count": 51,
+      "source_signals": [
+        "chat",
+        "chat_density",
+        "keyword_score",
+        "reaction_question"
+      ],
+      "laughter_burst": false,
+      "segment_id": "seg_highlight_candidate_1202177ed067",
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1440
+        }
+      ],
+      "risk_flags": []
+    }
+  ],
+  "segment_ledger_schema_version": 1,
+  "segment_ledger": [
+    {
+      "segment_id": "seg_summary_4dc8144f27da",
+      "kind": "summary",
+      "section": "summary",
+      "index": 1,
+      "timecode": "",
+      "start_sec": null,
+      "end_sec": null,
+      "title": "한시간 동안 마구 떠들기 ٩(●'▿'●)۶",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "summary",
+          "fields": [
+            "title",
+            "hashtags",
+            "pull_quote"
+          ]
+        }
+      ],
+      "risk_flags": [],
+      "hashtags": [
+        "부부싸움",
+        "가족중재",
+        "효녀탬탬"
+      ],
+      "pull_quote": "부모님 싸움의 판사로 등판해 오래된 가족의 응어리까지 풀고, 삼계탕 한 그릇으로 웃음까지 되찾은 40분짜리 가족 토크."
+    },
+    {
+      "segment_id": "seg_timeline_6700fac193e4",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 1,
+      "timecode": "00:03:39",
+      "start_sec": 219,
+      "end_sec": null,
+      "title": "부모님 싸움에 탬변호사가 등판해버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:03:39"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"부부싸움 해설 탬탬버린\" \"이 탬변호사를 상대해야함 ㅇㅇ\" \"역시 뇌지컬은 탬황\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "방송을 일찍 끝낸 날 부모님의 다툼을 마주한 탬탬버린은 어머니의 서운함부터 듣고 양쪽 입장을 판정하기 시작했다. “제가 이제 솔로몬이 돼서 판사 역할을 했어”라며 집안의 제삼자 중재자를 자처했다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_1ea3740b85f5",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 2,
+      "timecode": "00:05:26",
+      "start_sec": 326,
+      "end_sec": null,
+      "title": "위로가 필요했는데 해결부터 해버린 T",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:05:26"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"너 T야?\" \"공감을 해달라고~\" \"자자 따라하세요\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 322.5,
+          "delta_sec": 4,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "어머니가 원한 것은 공감이었지만 아버지는 상대의 의도를 분석하고 반박해 작은 일을 키웠다고 진단했다. 해결책 대신 “아, 그랬어? 좀 서운했겠다” 한마디면 된다고 직접 따라 말하게 했다. 오디오 반응↑",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_a9eb4bcbdf71",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 3,
+      "timecode": "00:08:50",
+      "start_sec": 530,
+      "end_sec": null,
+      "title": "사과 뒤에도 끝나지 않자 엄마에게 스톱 선언",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:08:50"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"탬 심 판\" \"탬명보죠\" \"EPL 심판 보실 생각없으심?\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 512.5,
+          "delta_sec": 18,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "아버지가 잘못을 인정했는데도 같은 이야기가 반복되자 이번에는 어머니에게 제동을 걸었다. “더하면은 이 챗바퀴가 영원히 끝나지 않는다”며 양쪽에 옐로카드를 주고, 포옹까지 요구해 결국 화해를 이끌었다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_0a9997b10d20",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 4,
+      "timecode": "00:12:27",
+      "start_sec": 747,
+      "end_sec": null,
+      "title": "결혼은 두 사람뿐 아니라 두 가족까지 합치는 일",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:12:27"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"가족이라는 범위라는게 참 어렵더라\" \"수십년 같이 살아도 이십대 커플이랑 똑같은 걸로 ㅋㅋ\" \"아버지 어머니면 ㄹㅇ 20년넘게 같이 생활하신건데...\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 752.5,
+          "delta_sec": 6,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "오랫동안 함께한 사람끼리도 감정을 완전히 이해하기 어렵다며, 결혼은 별개의 인생을 살아온 두 사람과 각자의 가족까지 얽히는 일이라고 짚었다. 배우자와 부모가 충돌했을 때 중간에 선 사람이 어떻게 행동하느냐가 이후 관계를 좌우한다고 조언했다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_410d335aea9c",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 5,
+      "timecode": "00:14:12",
+      "start_sec": 852,
+      "end_sec": null,
+      "title": "할머니 댁 거부했다가 들쳐 메고 끌려가버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:14:12"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"땡깡버린\" \"그럼 문 따고 끌고가셨다고 ㅋㅋㅋ\" \"들배치기 ㅋㅋㅋㅋ\""
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 847.5,
+          "delta_sec": 4,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "summary": "가족 모임을 중시한 아버지에게 맞서 어린 탬탬버린이 방문까지 잠그고 버텼지만, 결국 문이 열리고 그대로 들쳐 메어졌다는 결말이 나왔다. 무거운 가족 이야기 한복판에서 ‘땡깡버린’의 어린 시절이 강한 웃음 포인트가 됐다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_09733f6c9e8a",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 6,
+      "timecode": "00:15:55",
+      "start_sec": 955,
+      "end_sec": null,
+      "title": "명절마다 부모님이 헤어질까 겁먹었던 어린 시절",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:15:55"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"트라우마급이야\" \"ㄹㅇ 차 안에서가 지옥임\" \"매우 공감하는 부분\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "부모님의 언성이 조금만 높아져도 집이 갈라질까 두려웠고, 명절을 오가는 차 안에서는 이번만큼은 덜 싸우기를 바랐다고 털어놨다. 부모님은 끝내 관계를 버텨냈지만, 당시의 불안은 명절 자체를 싫어하게 할 만큼 크게 남았다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_53614359b6dd",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 7,
+      "timecode": "00:22:57",
+      "start_sec": 1377,
+      "end_sec": null,
+      "title": "친가의 간섭을 끊으려 장례비 전부 부담한 이유",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:22:57"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"그 시절에 장남이니깐<<이거 거의 족쇄긴함\" \"그 시절은 가족문화라 약간 당연시 되는 문화라\" \"책임지는 위치라\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "할머니 장례비를 자신의 카드로 모두 부담한 것은 “더 이상 그냥 뭔가 터치도 받기 싫고” 가족이 스트레스받지 않게 하고 싶었기 때문이라고 밝혔다. 장남이라는 이유로 모든 책임을 감당한 아버지와 그 희생을 당연하게 여긴 분위기까지, 오래된 갈등의 뿌리를 설명했다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_928c7162d26e",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 8,
+      "timecode": "00:29:11",
+      "start_sec": 1751,
+      "end_sec": null,
+      "title": "완벽한 아빠의 치명적 단점이 코골이였음",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:29:11"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"단점없는 사람이 어딨어\" \"ㅋㅋㅋㅋㅋㅋㅋㅋ\" \"ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "무거운 가족사를 정리하며 아버지가 다른 면에서는 완벽하다고 추켜세운 뒤, 치명적인 단점은 코 고는 소리가 크다는 것이라고 밝혀 분위기를 단숨에 뒤집었다. 이어 집안에서 가장 부지런하고 어머니의 늦은 공부까지 전폭적으로 지원한 사람이라며 “나는 아빠 좀 리스펙함”이라는 진심을 전했다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_b9b68ec7f8f9",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 9,
+      "timecode": "00:35:56",
+      "start_sec": 2156,
+      "end_sec": null,
+      "title": "가족 이야기 끝에 효녀 탬서스가 왕귀해버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:35:56"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"중재한 효녀 탬탬\" \"탬서스\" \"30년 만기적금형 딸내미 ㅋㅋ\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "가족마다 사정이 달라 섣불리 답을 내릴 수 없다며 “그냥 다들 화이팅입니다”라고 응원한 뒤, 부모님 사이를 중재한 뿌듯함을 전했다. 곧 어린 시절 삼계탕을 억지로 먹고 뱉었던 일과 “대신 지금 효도하잖아”라는 반박이 이어지며 ‘탬서스 왕귀’ 밈·드립으로 분위기가 전환됐다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_f44c2493168c",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 10,
+      "timecode": "00:39:30",
+      "start_sec": 2370,
+      "end_sec": null,
+      "title": "맛있다고 과장하면 그 음식만 계속 나오게 됨",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "00:39:30"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "\"서로 의사전달은 해야지\" \"한번 맛있다고 하면 질리도록 먹어야함\" \"제가 그래서 순두부를 일주일 내내 먹었어요\""
+        }
+      ],
+      "risk_flags": [],
+      "summary": "맛없는 음식에 과하게 감탄하면 어머니가 진심으로 믿고 또 만들어준다며 음식 리액션만큼은 정직해야 한다고 말했다. 평소 반응이 크지 않은 자신이 조금만 싱글벙글해도 그 메뉴가 식탁에 계속 올라온다는 가족 토크로 마무리한 뒤, “얘기하다 보니까 한 시간이 뚝딱 사라져버렸네?”라며 재방송을 예고했다. 오디오 반응↑",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_1e94baee7dfe",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 1,
+      "timecode": "00:03:39~00:08:50",
+      "start_sec": 219,
+      "end_sec": 530,
+      "title": "탬변호사의 부부싸움 중재 풀코스",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "00:03:39~00:08:50"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "공감이 필요한 어머니와 해결부터 하려는 아버지를 판정하고 양쪽 모두에게 제동을 거는 과정이 하나의 완결된 가족 상황극처럼 이어진다."
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 322.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "공감이 필요한 어머니와 해결부터 하려는 아버지를 판정하고 양쪽 모두에게 제동을 거는 과정이 하나의 완결된 가족 상황극처럼 이어진다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_84bee5a28cb0",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 2,
+      "timecode": "00:12:27~00:15:55",
+      "start_sec": 747,
+      "end_sec": 955,
+      "title": "결혼의 현실론에서 들쳐 메인 땡깡버린까지",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "00:12:27~00:15:55"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "두 가족을 중재해야 하는 결혼의 어려움이라는 진지한 화두가 어린 시절 강제 연행 일화로 반전되며 웃음과 공감을 함께 만든다."
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 752.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "두 가족을 중재해야 하는 결혼의 어려움이라는 진지한 화두가 어린 시절 강제 연행 일화로 반전되며 웃음과 공감을 함께 만든다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_1b24a7fbc8f0",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 3,
+      "timecode": "00:22:57~00:29:11",
+      "start_sec": 1377,
+      "end_sec": 1751,
+      "title": "장남의 족쇄와 가족의 응어리를 풀어낸 고백",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "00:22:57~00:29:11"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "장례비를 부담한 이유부터 아버지의 오랜 희생까지 가족 갈등의 핵심이 드러나고, 마지막 코골이 반전으로 무거움을 덜어낸다."
+        }
+      ],
+      "risk_flags": [],
+      "reason": "장례비를 부담한 이유부터 아버지의 오랜 희생까지 가족 갈등의 핵심이 드러나고, 마지막 코골이 반전으로 무거움을 덜어낸다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_fd2cc7d33434",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 4,
+      "timecode": "00:35:56~00:39:30",
+      "start_sec": 2156,
+      "end_sec": 2370,
+      "title": "효녀 탬서스 왕귀와 삼계탕 대소동",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "00:35:56~00:39:30"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "진지한 가족 응원에서 삼계탕을 둘러싼 어린 시절 고백과 ‘지금은 효도한다’는 밈·드립으로 자연스럽게 넘어가는 후반부 최고의 코미디 흐름이다."
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 2237.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "진지한 가족 응원에서 삼계탕을 둘러싼 어린 시절 고백과 ‘지금은 효도한다’는 밈·드립으로 자연스럽게 넘어가는 후반부 최고의 코미디 흐름이다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_chapter_a0caa8d42bc6",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 1,
+      "timecode": "00:03:39",
+      "start_sec": 219,
+      "end_sec": null,
+      "title": "부모님 다툼 중재 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:03:39"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_96b6ba703bd6",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 2,
+      "timecode": "00:12:27",
+      "start_sec": 747,
+      "end_sec": null,
+      "title": "결혼과 가족 관계 알아보기",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:12:27"
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 752.5,
+          "delta_sec": 6,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter",
+        "audio_peak_supporting_signal"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_0c9173e5f9e2",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 3,
+      "timecode": "00:15:55",
+      "start_sec": 955,
+      "end_sec": null,
+      "title": "어린 시절 명절 이야기 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:15:55"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_ca8bda2ff85e",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 4,
+      "timecode": "00:22:57",
+      "start_sec": 1377,
+      "end_sec": null,
+      "title": "친가 갈등의 배경 공개",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:22:57"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_33ab7438ef25",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 5,
+      "timecode": "00:29:11",
+      "start_sec": 1751,
+      "end_sec": null,
+      "title": "아버지를 존경하는 이유 공개",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:29:11"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_1e987db17d96",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 6,
+      "timecode": "00:35:56",
+      "start_sec": 2156,
+      "end_sec": null,
+      "title": "효녀 이야기와 삼계탕 추억 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:35:56"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_chapter_0dd20aafbc93",
+      "kind": "chapter",
+      "section": "chzzk_comment_timeline",
+      "index": 7,
+      "timecode": "00:39:30",
+      "start_sec": 2370,
+      "end_sec": null,
+      "title": "음식 반응 이야기 시작",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "chzzk_comment_timeline",
+          "fields": [
+            "timecode",
+            "title"
+          ],
+          "timecode": "00:39:30"
+        }
+      ],
+      "risk_flags": [
+        "point_chapter"
+      ]
+    },
+    {
+      "segment_id": "seg_highlight_candidate_9117f98202c7",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 1,
+      "timecode": "00:14:40",
+      "start_sec": 880,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 880
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 880,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 880,
+      "composite": 1.0,
+      "count": 60
+    },
+    {
+      "segment_id": "seg_highlight_candidate_a78582d3bb5f",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 2,
+      "timecode": "00:37:00",
+      "start_sec": 2220,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 2220
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 2220,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 2220,
+      "composite": 1.0,
+      "count": 66
+    },
+    {
+      "segment_id": "seg_highlight_candidate_8ec6c22c2233",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 3,
+      "timecode": "00:11:00",
+      "start_sec": 660,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 660
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 660,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 660,
+      "composite": 0.9666,
+      "count": 48
+    },
+    {
+      "segment_id": "seg_highlight_candidate_1c9de7825db0",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 4,
+      "timecode": "00:05:22",
+      "start_sec": 322,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 322
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 322,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 322,
+      "composite": 0.8425,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_c975d5be203f",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 5,
+      "timecode": "00:07:02",
+      "start_sec": 422,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 422
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 422,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 422,
+      "composite": 0.8372,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_7fdb6c533df2",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 6,
+      "timecode": "00:02:00",
+      "start_sec": 120,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 120
+        }
+      ],
+      "risk_flags": [],
+      "sec": 120,
+      "composite": 0.776,
+      "count": 51
+    },
+    {
+      "segment_id": "seg_highlight_candidate_26e1c5c16aa3",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 7,
+      "timecode": "00:29:20",
+      "start_sec": 1760,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1760
+        }
+      ],
+      "risk_flags": [],
+      "sec": 1760,
+      "composite": 0.7565,
+      "count": 46
+    },
+    {
+      "segment_id": "seg_highlight_candidate_5bae3b3b961f",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 8,
+      "timecode": "00:40:22",
+      "start_sec": 2422,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 2422
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 2422,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 2422,
+      "composite": 0.7421,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_f94c418fa56b",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 9,
+      "timecode": "00:27:40",
+      "start_sec": 1660,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1660
+        }
+      ],
+      "risk_flags": [],
+      "sec": 1660,
+      "composite": 0.7338,
+      "count": 57
+    },
+    {
+      "segment_id": "seg_highlight_candidate_8340be5e88ae",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 10,
+      "timecode": "00:08:32",
+      "start_sec": 512,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 512
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 512,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 512,
+      "composite": 0.7313,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_d8c616e77922",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 11,
+      "timecode": "00:19:58",
+      "start_sec": 1198,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1198
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1198,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 1198,
+      "composite": 0.7181,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_75a932e867f5",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 12,
+      "timecode": "00:38:08",
+      "start_sec": 2288,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 2288
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 2288,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 2288,
+      "composite": 0.7133,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_672af9042b6f",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 13,
+      "timecode": "00:12:32",
+      "start_sec": 752,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 752
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 752,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 752,
+      "composite": 0.7125,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_c147f3c585a5",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 14,
+      "timecode": "00:16:42",
+      "start_sec": 1002,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1002
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "sec": 1002,
+          "role": "supporting_signal_only"
+        }
+      ],
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "sec": 1002,
+      "composite": 0.6996,
+      "count": 0
+    },
+    {
+      "segment_id": "seg_highlight_candidate_304db8a2a5f4",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 15,
+      "timecode": "00:28:30",
+      "start_sec": 1710,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1710
+        }
+      ],
+      "risk_flags": [],
+      "sec": 1710,
+      "composite": 0.6578,
+      "count": 44
+    },
+    {
+      "segment_id": "seg_highlight_candidate_1202177ed067",
+      "kind": "highlight_candidate",
+      "section": "metadata.highlights",
+      "index": 16,
+      "timecode": "00:24:00",
+      "start_sec": 1440,
+      "end_sec": null,
+      "sources": [
+        {
+          "source_type": "chat_density_peak",
+          "field": "highlights",
+          "sec": 1440
+        }
+      ],
+      "risk_flags": [],
+      "sec": 1440,
+      "composite": 0.6536,
+      "count": 51
+    }
+  ],
+  "processed_at": "2026-07-23T23:35:56.731338+09:00",
+  "evidence_verifier": {
+    "schema_version": "evidence_verifier.v1",
+    "status": "pass",
+    "summary": {
+      "checked_segments": 21,
+      "failure_count": 0,
+      "warning_count": 1
+    },
+    "findings": [
+      {
+        "code": "CHAPTER_READINESS_FAIL",
+        "severity": "warning",
+        "message": "chapter readiness validator reported export warning",
+        "source_fields": [
+          "chapter_readiness"
+        ],
+        "detail": {
+          "status": "fail",
+          "failure_reasons": [],
+          "failures": [
+            {
+              "code": "first_timestamp_not_zero",
+              "message": "The first chapter must start at 00:00.",
+              "chapter_index": 1,
+              "timestamp": "00:03:39",
+              "title": "부모님 다툼 중재 시작"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "rendered_summary_evidence": {
+    "schema_version": "rendered_summary_evidence_payload.v1",
+    "render_target": "report_html_script#summaryEvidencePackData",
+    "raw_content_included": false,
+    "item_count": 37,
+    "status": "ready"
+  },
+  "candidate_report_alias": "",
+  "timed_evidence_manifest": {
+    "schema_version": "summary_timed_evidence_manifest.v1",
+    "item_schema_version": "timed_evidence_item.v1",
+    "video_id": "14254433",
+    "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+    "source_type": "subtitle",
+    "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+    "route_ref": "chunk_srt.sliding_window",
+    "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+    "raw_content_included": false,
+    "tokenizer": "approx_words",
+    "summary": {
+      "item_count": 4,
+      "start_sec": 5,
+      "end_sec": 2491,
+      "public_safe_count": 4
+    },
+    "items": [
+      {
+        "schema_version": "timed_evidence_item.v1",
+        "evidence_id": "te_14254433_1_5_ec8550454729",
+        "video_id": "14254433",
+        "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+        "source_type": "subtitle_chunk",
+        "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+        "route_ref": "chunk_srt.sliding_window",
+        "start_sec": 5,
+        "end_sec": 725,
+        "text_hash": "ec855045472949d4373970b8f78e3923da4ddb5d6d4905aec481bf06dad8a37e",
+        "confidence": 1.0,
+        "public_safe": true,
+        "raw_content_included": false,
+        "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+      },
+      {
+        "schema_version": "timed_evidence_item.v1",
+        "evidence_id": "te_14254433_2_707_6d6e5e35dfbd",
+        "video_id": "14254433",
+        "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+        "source_type": "subtitle_chunk",
+        "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+        "route_ref": "chunk_srt.sliding_window",
+        "start_sec": 707,
+        "end_sec": 1355,
+        "text_hash": "6d6e5e35dfbda7709d840f1bf1624fcb452143829a40edf569fa4e40cd244b4b",
+        "confidence": 1.0,
+        "public_safe": true,
+        "raw_content_included": false,
+        "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+      },
+      {
+        "schema_version": "timed_evidence_item.v1",
+        "evidence_id": "te_14254433_3_1318_b2e13a205d63",
+        "video_id": "14254433",
+        "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+        "source_type": "subtitle_chunk",
+        "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+        "route_ref": "chunk_srt.sliding_window",
+        "start_sec": 1318,
+        "end_sec": 2042,
+        "text_hash": "b2e13a205d636f3a80a703531c7c5aab97512d28e279d1aef99539d3ddde0f37",
+        "confidence": 1.0,
+        "public_safe": true,
+        "raw_content_included": false,
+        "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+      },
+      {
+        "schema_version": "timed_evidence_item.v1",
+        "evidence_id": "te_14254433_4_2020_399dbf75ea87",
+        "video_id": "14254433",
+        "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+        "source_type": "subtitle_chunk",
+        "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+        "route_ref": "chunk_srt.sliding_window",
+        "start_sec": 2020,
+        "end_sec": 2491,
+        "text_hash": "399dbf75ea87b1a0771892c9c589b810699d2d7b7a3a88a5e416f4ebcfe29c04",
+        "confidence": 1.0,
+        "public_safe": true,
+        "raw_content_included": false,
+        "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+      }
+    ]
+  },
+  "summary_evidence_pack": {
+    "schema_version": "summary_evidence_pack.v1",
+    "retrieval_mode": "local_deterministic",
+    "rerank_policy": "timestamp_overlap_rerank.v1",
+    "attention_policy": "timestamp_overlap_plus_local_vector_attention.v1",
+    "semantic_index_status": "local_free_hash_ready",
+    "semantic_index_ref": "summary_local_vector_index.v1",
+    "raw_content_included": false,
+    "summary": {
+      "segment_count": 37,
+      "matched_segment_count": 37,
+      "unmatched_segment_count": 0,
+      "timed_evidence_count": 4,
+      "semantic_index_item_count": 4,
+      "semantic_index_vectorized_count": 4,
+      "semantic_matched_ref_count": 15,
+      "window_sec": 90,
+      "top_k": 3
+    },
+    "items": [
+      {
+        "segment_id": "seg_timeline_6700fac193e4",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 219,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_1_5_ec8550454729",
+            "rank": 1,
+            "score": 133.411,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 5,
+            "end_sec": 725,
+            "text_hash": "ec855045472949d4373970b8f78e3923da4ddb5d6d4905aec481bf06dad8a37e",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.12548
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_1ea3740b85f5",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 326,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_1_5_ec8550454729",
+            "rank": 1,
+            "score": 124.0,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 5,
+            "end_sec": 725,
+            "text_hash": "ec855045472949d4373970b8f78e3923da4ddb5d6d4905aec481bf06dad8a37e",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_a9eb4bcbdf71",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 530,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_1_5_ec8550454729",
+            "rank": 1,
+            "score": 124.0,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 5,
+            "end_sec": 725,
+            "text_hash": "ec855045472949d4373970b8f78e3923da4ddb5d6d4905aec481bf06dad8a37e",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_0a9997b10d20",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 747,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_2_707_6d6e5e35dfbd",
+            "rank": 1,
+            "score": 128.362525,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 707,
+            "end_sec": 1355,
+            "text_hash": "6d6e5e35dfbda7709d840f1bf1624fcb452143829a40edf569fa4e40cd244b4b",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.050167
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_410d335aea9c",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 852,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_2_707_6d6e5e35dfbd",
+            "rank": 1,
+            "score": 134.619925,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 707,
+            "end_sec": 1355,
+            "text_hash": "6d6e5e35dfbda7709d840f1bf1624fcb452143829a40edf569fa4e40cd244b4b",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.133599
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_09733f6c9e8a",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 955,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_2_707_6d6e5e35dfbd",
+            "rank": 1,
+            "score": 128.08525,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 707,
+            "end_sec": 1355,
+            "text_hash": "6d6e5e35dfbda7709d840f1bf1624fcb452143829a40edf569fa4e40cd244b4b",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.04647
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_53614359b6dd",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 1377,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_3_1318_b2e13a205d63",
+            "rank": 1,
+            "score": 131.121142,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1318,
+            "end_sec": 2042,
+            "text_hash": "b2e13a205d636f3a80a703531c7c5aab97512d28e279d1aef99539d3ddde0f37",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.095393
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_928c7162d26e",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 1751,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_3_1318_b2e13a205d63",
+            "rank": 1,
+            "score": 139.511692,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1318,
+            "end_sec": 2042,
+            "text_hash": "b2e13a205d636f3a80a703531c7c5aab97512d28e279d1aef99539d3ddde0f37",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.207267
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_b9b68ec7f8f9",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 2156,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_4_2020_399dbf75ea87",
+            "rank": 1,
+            "score": 131.222925,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 2020,
+            "end_sec": 2491,
+            "text_hash": "399dbf75ea87b1a0771892c9c589b810699d2d7b7a3a88a5e416f4ebcfe29c04",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.068639
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_f44c2493168c",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 2370,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_4_2020_399dbf75ea87",
+            "rank": 1,
+            "score": 130.952175,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 2020,
+            "end_sec": 2491,
+            "text_hash": "399dbf75ea87b1a0771892c9c589b810699d2d7b7a3a88a5e416f4ebcfe29c04",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.065029
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_1e94baee7dfe",
+        "kind": "highlight",
+        "section": "highlights",
+        "start_sec": 219,
+        "end_sec": 530,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_1_5_ec8550454729",
+            "rank": 1,
+            "score": 121.597222,
+            "match_reason": "timestamp_overlap",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 5,
+            "end_sec": 725,
+            "text_hash": "ec855045472949d4373970b8f78e3923da4ddb5d6d4905aec481bf06dad8a37e",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_84bee5a28cb0",
+        "kind": "highlight",
+        "section": "highlights",
+        "start_sec": 747,
+        "end_sec": 955,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_2_707_6d6e5e35dfbd",
+            "rank": 1,
+            "score": 116.049383,
+            "match_reason": "timestamp_overlap",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 707,
+            "end_sec": 1355,
+            "text_hash": "6d6e5e35dfbda7709d840f1bf1624fcb452143829a40edf569fa4e40cd244b4b",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_1b24a7fbc8f0",
+        "kind": "highlight",
+        "section": "highlights",
+        "start_sec": 1377,
+        "end_sec": 1751,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_3_1318_b2e13a205d63",
+            "rank": 1,
+            "score": 129.110279,
+            "match_reason": "timestamp_overlap+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1318,
+            "end_sec": 2042,
+            "text_hash": "b2e13a205d636f3a80a703531c7c5aab97512d28e279d1aef99539d3ddde0f37",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.043754
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_fd2cc7d33434",
+        "kind": "highlight",
+        "section": "highlights",
+        "start_sec": 2156,
+        "end_sec": 2370,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_4_2020_399dbf75ea87",
+            "rank": 1,
+            "score": 124.639797,
+            "match_reason": "timestamp_overlap+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 2020,
+            "end_sec": 2491,
+            "text_hash": "399dbf75ea87b1a0771892c9c589b810699d2d7b7a3a88a5e416f4ebcfe29c04",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.025629
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_a0caa8d42bc6",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 219,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_1_5_ec8550454729",
+            "rank": 1,
+            "score": 126.829525,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 5,
+            "end_sec": 725,
+            "text_hash": "ec855045472949d4373970b8f78e3923da4ddb5d6d4905aec481bf06dad8a37e",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.037727
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_96b6ba703bd6",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 747,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_2_707_6d6e5e35dfbd",
+            "rank": 1,
+            "score": 130.56925,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 707,
+            "end_sec": 1355,
+            "text_hash": "6d6e5e35dfbda7709d840f1bf1624fcb452143829a40edf569fa4e40cd244b4b",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.07959
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_0c9173e5f9e2",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 955,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_2_707_6d6e5e35dfbd",
+            "rank": 1,
+            "score": 124.6,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 707,
+            "end_sec": 1355,
+            "text_hash": "6d6e5e35dfbda7709d840f1bf1624fcb452143829a40edf569fa4e40cd244b4b",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_ca8bda2ff85e",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 1377,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_3_1318_b2e13a205d63",
+            "rank": 1,
+            "score": 123.966667,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1318,
+            "end_sec": 2042,
+            "text_hash": "b2e13a205d636f3a80a703531c7c5aab97512d28e279d1aef99539d3ddde0f37",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_33ab7438ef25",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 1751,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_3_1318_b2e13a205d63",
+            "rank": 1,
+            "score": 147.494992,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1318,
+            "end_sec": 2042,
+            "text_hash": "b2e13a205d636f3a80a703531c7c5aab97512d28e279d1aef99539d3ddde0f37",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.313711
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_1e987db17d96",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 2156,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_4_2020_399dbf75ea87",
+            "rank": 1,
+            "score": 127.52805,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 2020,
+            "end_sec": 2491,
+            "text_hash": "399dbf75ea87b1a0771892c9c589b810699d2d7b7a3a88a5e416f4ebcfe29c04",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.019374
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_chapter_0dd20aafbc93",
+        "kind": "chapter",
+        "section": "chzzk_comment_timeline",
+        "start_sec": 2370,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_4_2020_399dbf75ea87",
+            "rank": 1,
+            "score": 127.616175,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 2020,
+            "end_sec": 2491,
+            "text_hash": "399dbf75ea87b1a0771892c9c589b810699d2d7b7a3a88a5e416f4ebcfe29c04",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.020549
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_9117f98202c7",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 880,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_2_707_6d6e5e35dfbd",
+            "rank": 1,
+            "score": 124.6,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 707,
+            "end_sec": 1355,
+            "text_hash": "6d6e5e35dfbda7709d840f1bf1624fcb452143829a40edf569fa4e40cd244b4b",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_a78582d3bb5f",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 2220,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_4_2020_399dbf75ea87",
+            "rank": 1,
+            "score": 126.075,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 2020,
+            "end_sec": 2491,
+            "text_hash": "399dbf75ea87b1a0771892c9c589b810699d2d7b7a3a88a5e416f4ebcfe29c04",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_8ec6c22c2233",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 660,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_1_5_ec8550454729",
+            "rank": 1,
+            "score": 124.0,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 5,
+            "end_sec": 725,
+            "text_hash": "ec855045472949d4373970b8f78e3923da4ddb5d6d4905aec481bf06dad8a37e",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_1c9de7825db0",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 322,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_1_5_ec8550454729",
+            "rank": 1,
+            "score": 124.0,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 5,
+            "end_sec": 725,
+            "text_hash": "ec855045472949d4373970b8f78e3923da4ddb5d6d4905aec481bf06dad8a37e",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_c975d5be203f",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 422,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_1_5_ec8550454729",
+            "rank": 1,
+            "score": 124.0,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 5,
+            "end_sec": 725,
+            "text_hash": "ec855045472949d4373970b8f78e3923da4ddb5d6d4905aec481bf06dad8a37e",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_7fdb6c533df2",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 120,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_1_5_ec8550454729",
+            "rank": 1,
+            "score": 124.0,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 5,
+            "end_sec": 725,
+            "text_hash": "ec855045472949d4373970b8f78e3923da4ddb5d6d4905aec481bf06dad8a37e",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_26e1c5c16aa3",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 1760,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_3_1318_b2e13a205d63",
+            "rank": 1,
+            "score": 123.966667,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1318,
+            "end_sec": 2042,
+            "text_hash": "b2e13a205d636f3a80a703531c7c5aab97512d28e279d1aef99539d3ddde0f37",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_5bae3b3b961f",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 2422,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_4_2020_399dbf75ea87",
+            "rank": 1,
+            "score": 126.075,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 2020,
+            "end_sec": 2491,
+            "text_hash": "399dbf75ea87b1a0771892c9c589b810699d2d7b7a3a88a5e416f4ebcfe29c04",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_f94c418fa56b",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 1660,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_3_1318_b2e13a205d63",
+            "rank": 1,
+            "score": 123.966667,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1318,
+            "end_sec": 2042,
+            "text_hash": "b2e13a205d636f3a80a703531c7c5aab97512d28e279d1aef99539d3ddde0f37",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_8340be5e88ae",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 512,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_1_5_ec8550454729",
+            "rank": 1,
+            "score": 124.0,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 5,
+            "end_sec": 725,
+            "text_hash": "ec855045472949d4373970b8f78e3923da4ddb5d6d4905aec481bf06dad8a37e",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_d8c616e77922",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 1198,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_2_707_6d6e5e35dfbd",
+            "rank": 1,
+            "score": 124.6,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 707,
+            "end_sec": 1355,
+            "text_hash": "6d6e5e35dfbda7709d840f1bf1624fcb452143829a40edf569fa4e40cd244b4b",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_75a932e867f5",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 2288,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_4_2020_399dbf75ea87",
+            "rank": 1,
+            "score": 126.075,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 2020,
+            "end_sec": 2491,
+            "text_hash": "399dbf75ea87b1a0771892c9c589b810699d2d7b7a3a88a5e416f4ebcfe29c04",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_672af9042b6f",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 752,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_2_707_6d6e5e35dfbd",
+            "rank": 1,
+            "score": 124.6,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 707,
+            "end_sec": 1355,
+            "text_hash": "6d6e5e35dfbda7709d840f1bf1624fcb452143829a40edf569fa4e40cd244b4b",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_c147f3c585a5",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 1002,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_2_707_6d6e5e35dfbd",
+            "rank": 1,
+            "score": 124.6,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 707,
+            "end_sec": 1355,
+            "text_hash": "6d6e5e35dfbda7709d840f1bf1624fcb452143829a40edf569fa4e40cd244b4b",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_304db8a2a5f4",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 1710,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_3_1318_b2e13a205d63",
+            "rank": 1,
+            "score": 123.966667,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1318,
+            "end_sec": 2042,
+            "text_hash": "b2e13a205d636f3a80a703531c7c5aab97512d28e279d1aef99539d3ddde0f37",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_candidate_1202177ed067",
+        "kind": "highlight_candidate",
+        "section": "metadata.highlights",
+        "start_sec": 1440,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_3_1318_b2e13a205d63",
+            "rank": 1,
+            "score": 123.966667,
+            "match_reason": "timestamp_contains_point",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1318,
+            "end_sec": 2042,
+            "text_hash": "b2e13a205d636f3a80a703531c7c5aab97512d28e279d1aef99539d3ddde0f37",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      }
+    ]
+  },
+  "summary_pre_generation_evidence_pack": {
+    "schema_version": "summary_pre_generation_evidence_pack.v1",
+    "raw_content_included": false,
+    "prompt_contract_available": true,
+    "prompt_contract_injected": true,
+    "prompt_contract_scope": "fresh_chunk_llm_calls; cached chunk results keep their prior prompt provenance",
+    "retrieval_mode": "pre_generation_timed_evidence_refs",
+    "summary": {
+      "chunk_ref_count": 4,
+      "timeline_ref_count": 4,
+      "highlight_ref_count": 4,
+      "coverage_ref_count": 3
+    },
+    "section_packs": [
+      {
+        "key": "timeline_generation",
+        "purpose": "Main timeline must cite/align to these timed evidence refs.",
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_1_5_ec8550454729",
+            "chunk_index": 1,
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 5,
+            "end_sec": 725,
+            "text_hash": "ec855045472949d4373970b8f78e3923da4ddb5d6d4905aec481bf06dad8a37e",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          },
+          {
+            "evidence_id": "te_14254433_2_707_6d6e5e35dfbd",
+            "chunk_index": 2,
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 707,
+            "end_sec": 1355,
+            "text_hash": "6d6e5e35dfbda7709d840f1bf1624fcb452143829a40edf569fa4e40cd244b4b",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          },
+          {
+            "evidence_id": "te_14254433_3_1318_b2e13a205d63",
+            "chunk_index": 3,
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1318,
+            "end_sec": 2042,
+            "text_hash": "b2e13a205d636f3a80a703531c7c5aab97512d28e279d1aef99539d3ddde0f37",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          },
+          {
+            "evidence_id": "te_14254433_4_2020_399dbf75ea87",
+            "chunk_index": 4,
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 2020,
+            "end_sec": 2491,
+            "text_hash": "399dbf75ea87b1a0771892c9c589b810699d2d7b7a3a88a5e416f4ebcfe29c04",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ]
+      },
+      {
+        "key": "highlight_generation",
+        "purpose": "Highlight candidates should prioritize refs around chat/audio/user-clip peaks.",
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_1_5_ec8550454729",
+            "chunk_index": 1,
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 5,
+            "end_sec": 725,
+            "text_hash": "ec855045472949d4373970b8f78e3923da4ddb5d6d4905aec481bf06dad8a37e",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          },
+          {
+            "evidence_id": "te_14254433_2_707_6d6e5e35dfbd",
+            "chunk_index": 2,
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 707,
+            "end_sec": 1355,
+            "text_hash": "6d6e5e35dfbda7709d840f1bf1624fcb452143829a40edf569fa4e40cd244b4b",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          },
+          {
+            "evidence_id": "te_14254433_3_1318_b2e13a205d63",
+            "chunk_index": 3,
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1318,
+            "end_sec": 2042,
+            "text_hash": "b2e13a205d636f3a80a703531c7c5aab97512d28e279d1aef99539d3ddde0f37",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          },
+          {
+            "evidence_id": "te_14254433_4_2020_399dbf75ea87",
+            "chunk_index": 4,
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 2020,
+            "end_sec": 2491,
+            "text_hash": "399dbf75ea87b1a0771892c9c589b810699d2d7b7a3a88a5e416f4ebcfe29c04",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ]
+      },
+      {
+        "key": "chapter_generation",
+        "purpose": "Chapter/tail coverage should keep beginning, middle, and ending refs visible.",
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14254433_1_5_ec8550454729",
+            "chunk_index": 1,
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 5,
+            "end_sec": 725,
+            "text_hash": "ec855045472949d4373970b8f78e3923da4ddb5d6d4905aec481bf06dad8a37e",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          },
+          {
+            "evidence_id": "te_14254433_3_1318_b2e13a205d63",
+            "chunk_index": 3,
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 1318,
+            "end_sec": 2042,
+            "text_hash": "b2e13a205d636f3a80a703531c7c5aab97512d28e279d1aef99539d3ddde0f37",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          },
+          {
+            "evidence_id": "te_14254433_4_2020_399dbf75ea87",
+            "chunk_index": 4,
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 2020,
+            "end_sec": 2491,
+            "text_hash": "399dbf75ea87b1a0771892c9c589b810699d2d7b7a3a88a5e416f4ebcfe29c04",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt"
+          }
+        ]
+      }
+    ]
+  },
+  "summary_local_vector_index": {
+    "schema_version": "summary_local_vector_index.v1",
+    "embedding_model": "local_hashing_word_v1",
+    "retrieval_mode": "local_free_hash_vector_cosine",
+    "dimensions": 256,
+    "max_features_per_item": 32,
+    "metadata_binding": "timed_evidence_item.v1:evidence_id",
+    "raw_content_included": false,
+    "summary": {
+      "item_count": 4,
+      "vectorized_count": 4,
+      "empty_text_count": 0,
+      "metadata_bound_count": 4
+    },
+    "items": [
+      {
+        "evidence_id": "te_14254433_1_5_ec8550454729",
+        "chunk_index": 1,
+        "start_sec": 5,
+        "end_sec": 725,
+        "text_hash": "ec855045472949d4373970b8f78e3923da4ddb5d6d4905aec481bf06dad8a37e",
+        "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+        "route_ref": "chunk_srt.sliding_window",
+        "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+        "vector_norm": 168.686099,
+        "feature_count": 32
+      },
+      {
+        "evidence_id": "te_14254433_2_707_6d6e5e35dfbd",
+        "chunk_index": 2,
+        "start_sec": 707,
+        "end_sec": 1355,
+        "text_hash": "6d6e5e35dfbda7709d840f1bf1624fcb452143829a40edf569fa4e40cd244b4b",
+        "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+        "route_ref": "chunk_srt.sliding_window",
+        "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+        "vector_norm": 159.918729,
+        "feature_count": 32
+      },
+      {
+        "evidence_id": "te_14254433_3_1318_b2e13a205d63",
+        "chunk_index": 3,
+        "start_sec": 1318,
+        "end_sec": 2042,
+        "text_hash": "b2e13a205d636f3a80a703531c7c5aab97512d28e279d1aef99539d3ddde0f37",
+        "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+        "route_ref": "chunk_srt.sliding_window",
+        "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+        "vector_norm": 166.796283,
+        "feature_count": 32
+      },
+      {
+        "evidence_id": "te_14254433_4_2020_399dbf75ea87",
+        "chunk_index": 4,
+        "start_sec": 2020,
+        "end_sec": 2491,
+        "text_hash": "399dbf75ea87b1a0771892c9c589b810699d2d7b7a3a88a5e416f4ebcfe29c04",
+        "source_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+        "route_ref": "chunk_srt.sliding_window",
+        "path_ref": "work:14254433/14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+        "vector_norm": 103.232747,
+        "feature_count": 32
+      }
+    ]
+  },
+  "summary_input_readiness": {
+    "schema_version": "summary_input_readiness.v1",
+    "status": "ready_with_gaps",
+    "quality_claim": "not_evaluated",
+    "items": [
+      {
+        "key": "srt",
+        "name": "자막 SRT",
+        "required": true,
+        "status": "present",
+        "reason": "요약 청크 입력으로 사용할 SRT가 있습니다.",
+        "retry_condition": "transcribe 단계가 SRT를 생성한 뒤 다시 요약합니다.",
+        "detail": {
+          "filename": "14254433_한시간 동안 마구 떠들기 ٩(●'▿'●)۶_144p.srt",
+          "size_bytes": 47936
+        }
+      },
+      {
+        "key": "chat",
+        "name": "채팅",
+        "required": false,
+        "status": "present",
+        "reason": "채팅 신호가 요약 후보에 반영됩니다.",
+        "retry_condition": "채팅 수집이 VOD 끝까지 성공한 뒤 다시 요약합니다.",
+        "detail": {
+          "message_count": 4663,
+          "first_message_sec": 0.0,
+          "latest_message_sec": 2484.242,
+          "latest_message_hms": "00:41:24",
+          "expected_duration_sec": 2491.0,
+          "expected_duration_hms": "00:41:31",
+          "coverage_ratio": 0.9973,
+          "coverage_gap_sec": 6.758
+        }
+      },
+      {
+        "key": "community",
+        "name": "커뮤니티",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "커뮤니티 반응 후보가 없습니다.",
+        "retry_condition": "커뮤니티 수집 또는 수동 입력 뒤 다시 요약합니다.",
+        "detail": {
+          "post_count": 0,
+          "source": "none",
+          "cache_status": "not_applicable"
+        }
+      },
+      {
+        "key": "context_doc",
+        "name": "VOD 배경 맥락",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "관리자 배경 맥락 없이 요약합니다.",
+        "retry_condition": "work/<video_no>/<video_no>_context.md 작성 뒤 다시 요약합니다.",
+        "detail": {
+          "char_count": 0
+        }
+      },
+      {
+        "key": "timeline_comments",
+        "name": "시청자 시간표 댓글",
+        "required": false,
+        "status": "missing_optional",
+        "reason": "자동 수집 가능한 시청자 시간표 댓글 없이 요약합니다.",
+        "retry_condition": "요약 직전 자동 댓글 수집을 다시 실행합니다. 브라우저 로그인/프로필 잠금 문제일 때만 work/<video_no>/<video_no>_timeline_comments.md 수동 fallback 을 사용합니다.",
+        "detail": {
+          "char_count": 0,
+          "timed_line_count": 0
+        }
+      },
+      {
+        "key": "streamer_vocab",
+        "name": "스트리머 어휘/lexicon",
+        "required": false,
+        "status": "present",
+        "reason": "고유명사/별명 보정 후보가 있습니다.",
+        "retry_condition": "streamer_vocab 저장 또는 lexicon 빌드 뒤 다시 요약합니다.",
+        "detail": {
+          "term_count": 30
+        }
+      },
+      {
+        "key": "manager_edit_lessons",
+        "name": "관리자 수정 사례",
+        "required": false,
+        "status": "present",
+        "reason": "이전 관리자 수정 사례가 프롬프트에 반영됩니다.",
+        "retry_condition": "관리자 저장 이력이 쌓인 뒤 다시 요약합니다.",
+        "detail": {
+          "lesson_count": 3
+        }
+      },
+      {
+        "key": "manager_fewshot_examples",
+        "name": "관리자 수정 few-shot",
+        "required": false,
+        "status": "present",
+        "reason": "검증된 관리자 수정 전/후 예시가 프롬프트에 반영됩니다.",
+        "retry_condition": "fewshot_injection_enabled=true 설정과 highlight_learning weak_positive 후보가 있는 상태에서 다시 요약합니다.",
+        "detail": {
+          "example_count": 3,
+          "fingerprint": "ddd9433102e6"
+        }
+      },
+      {
+        "key": "streamer_recent_context",
+        "name": "최근 공개 맥락",
+        "required": false,
+        "status": "present",
+        "reason": "최근 공개 맥락 후보가 요약 보조 입력으로 반영됩니다.",
+        "retry_condition": "streamer_recent_context_enabled=true 후 공개 소스 수집을 다시 실행합니다. 실패해도 요약은 계속 진행됩니다.",
+        "detail": {
+          "item_count": 1,
+          "source_count": 2,
+          "sources": [
+            "fmkorea",
+            "chzzk_public"
+          ],
+          "diagnostic_status_counts": {
+            "no_candidates": 1,
+            "ok": 2
+          }
+        }
+      },
+      {
+        "key": "user_clips",
+        "name": "시청자 클립",
+        "required": false,
+        "status": "present",
+        "reason": "시청자 클립 anchor 후보가 있습니다.",
+        "retry_condition": "viewer clip 수집/anchor 회수 뒤 다시 요약합니다.",
+        "detail": {
+          "total": 12,
+          "with_offset": 0,
+          "with_engagement": 12,
+          "status": "ok"
+        }
+      },
+      {
+        "key": "audio_peaks",
+        "name": "오디오 반응 피크",
+        "required": false,
+        "status": "present",
+        "reason": "오디오 반응 분석 결과가 있습니다.",
+        "retry_condition": "audio reaction 분석이 성공한 뒤 다시 요약합니다.",
+        "detail": {
+          "peak_count": 13,
+          "status": "available"
+        }
+      },
+      {
+        "key": "source_manifest",
+        "name": "요약 입력 manifest",
+        "required": true,
+        "status": "present",
+        "reason": "요약 입력 manifest가 계산되어 cache/재현성 기준이 있습니다.",
+        "retry_condition": "요약 cache manifest 계산 후 다시 확인합니다.",
+        "detail": {
+          "schema_version": 10,
+          "manifest_key_count": 23,
+          "has_summary_hash": false
+        }
+      },
+      {
+        "key": "segment_ledger",
+        "name": "segment/evidence ledger",
+        "required": false,
+        "status": "present",
+        "reason": "렌더링된 리포트의 segment ledger가 있습니다.",
+        "retry_condition": "summary Markdown parser/metadata generation을 확인한 뒤 다시 렌더링합니다.",
+        "detail": {
+          "segment_count": 38,
+          "kind_counts": {
+            "chapter": 7,
+            "highlight": 4,
+            "highlight_candidate": 16,
+            "summary": 1,
+            "timeline": 10
+          }
+        }
+      }
+    ]
+  },
+  "audio_reaction_peaks": [
+    {
+      "start_sec": 320.0,
+      "end_sec": 325.0,
+      "center_sec": 322.5,
+      "loudness_db": -16.647,
+      "peak_db": -0.806,
+      "percentile": 0.9749,
+      "z_score": 1.2556,
+      "normalized": 0.7093,
+      "score": 0.7893,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 350.0,
+      "end_sec": 355.0,
+      "center_sec": 352.5,
+      "loudness_db": -16.327,
+      "peak_db": -1.294,
+      "percentile": 0.989,
+      "z_score": 1.335,
+      "normalized": 0.7225,
+      "score": 0.8025,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 420.0,
+      "end_sec": 425.0,
+      "center_sec": 422.5,
+      "loudness_db": -16.882,
+      "peak_db": -1.086,
+      "percentile": 0.9629,
+      "z_score": 1.1972,
+      "normalized": 0.6995,
+      "score": 0.7795,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 450.0,
+      "end_sec": 455.0,
+      "center_sec": 452.5,
+      "loudness_db": -16.455,
+      "peak_db": -1.289,
+      "percentile": 0.985,
+      "z_score": 1.3032,
+      "normalized": 0.7172,
+      "score": 0.7972,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 510.0,
+      "end_sec": 515.0,
+      "center_sec": 512.5,
+      "loudness_db": -16.084,
+      "peak_db": -1.483,
+      "percentile": 0.997,
+      "z_score": 1.3954,
+      "normalized": 0.7326,
+      "score": 0.8126,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 615.0,
+      "end_sec": 620.0,
+      "center_sec": 617.5,
+      "loudness_db": -16.229,
+      "peak_db": -1.345,
+      "percentile": 0.993,
+      "z_score": 1.3594,
+      "normalized": 0.7266,
+      "score": 0.8866,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 750.0,
+      "end_sec": 755.0,
+      "center_sec": 752.5,
+      "loudness_db": -16.588,
+      "peak_db": -1.078,
+      "percentile": 0.979,
+      "z_score": 1.2703,
+      "normalized": 0.7117,
+      "score": 0.7917,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 845.0,
+      "end_sec": 850.0,
+      "center_sec": 847.5,
+      "loudness_db": -17.061,
+      "peak_db": -1.337,
+      "percentile": 0.9509,
+      "z_score": 1.1528,
+      "normalized": 0.6921,
+      "score": 0.8521,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 1000.0,
+      "end_sec": 1005.0,
+      "center_sec": 1002.5,
+      "loudness_db": -16.936,
+      "peak_db": -1.06,
+      "percentile": 0.9569,
+      "z_score": 1.1838,
+      "normalized": 0.6973,
+      "score": 0.7773,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 1195.0,
+      "end_sec": 1200.0,
+      "center_sec": 1197.5,
+      "loudness_db": -16.438,
+      "peak_db": -0.826,
+      "percentile": 0.987,
+      "z_score": 1.3076,
+      "normalized": 0.7179,
+      "score": 0.7979,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 2235.0,
+      "end_sec": 2240.0,
+      "center_sec": 2237.5,
+      "loudness_db": -16.137,
+      "peak_db": -1.148,
+      "percentile": 0.995,
+      "z_score": 1.3823,
+      "normalized": 0.7304,
+      "score": 0.8904,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 2285.0,
+      "end_sec": 2290.0,
+      "center_sec": 2287.5,
+      "loudness_db": -16.567,
+      "peak_db": -1.204,
+      "percentile": 0.983,
+      "z_score": 1.2756,
+      "normalized": 0.7126,
+      "score": 0.7926,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 2420.0,
+      "end_sec": 2425.0,
+      "center_sec": 2422.5,
+      "loudness_db": -15.792,
+      "peak_db": -1.092,
+      "percentile": 0.999,
+      "z_score": 1.4678,
+      "normalized": 0.7446,
+      "score": 0.8246,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    }
+  ],
+  "audio_loudness_per_min": [
+    -27.667,
+    -23.932,
+    -23.495,
+    -24.24,
+    -19.95,
+    -17.956,
+    -21.198,
+    -17.936,
+    -18.6,
+    -18.585,
+    -20.403,
+    -19.646,
+    -20.555,
+    -19.379,
+    -20.6,
+    -21.346,
+    -19.873,
+    -21.254,
+    -21.543,
+    -20.457,
+    -21.661,
+    -22.134,
+    -21.079,
+    -20.331,
+    -20.912,
+    -19.985,
+    -22.368,
+    -23.99,
+    -26.405,
+    -25.019,
+    -23.621,
+    -24.166,
+    -21.05,
+    -22.944,
+    -19.9,
+    -20.698,
+    -22.366,
+    -20.931,
+    -20.131,
+    -21.134,
+    -24.895,
+    -31.152
+  ],
+  "audio_feature_source": {
+    "kind": "relative_loudness_main_pipeline",
+    "enabled_by_default": true,
+    "window_sec": 5,
+    "min_percentile": 0.95,
+    "min_gap_sec": 30,
+    "chat_overlap_sec": 60,
+    "max_peaks": 20,
+    "waveform_max_points": 720,
+    "normalization": "per_vod_relative_percentile_and_z_score",
+    "decision_rule": "audio is supporting evidence; audio-only peaks do not prove highlight importance",
+    "sample_count": 2492,
+    "source_kind": "whisper_wav_cache",
+    "sample_extraction": "wav_pcm_python",
+    "source_count": 1,
+    "include_lufs": false
+  },
+  "audio_waveform": {
+    "schema_version": "audio_waveform.v1",
+    "source": "audio_loudness_windows",
+    "sample_count": 499,
+    "max_points": 720,
+    "duration_sec": 2491.0,
+    "channels": "mono_mixed",
+    "unit": "relative_loudness_normalized_0_1",
+    "privacy_class": "public_safe",
+    "decision_rule": "waveform is timeline context only; it does not prove highlight importance",
+    "samples": [
+      {
+        "start_sec": 0.0,
+        "end_sec": 5.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 5.0,
+        "end_sec": 10.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 10.0,
+        "end_sec": 15.0,
+        "value": 0.2555
+      },
+      {
+        "start_sec": 15.0,
+        "end_sec": 20.0,
+        "value": 0.0717
+      },
+      {
+        "start_sec": 20.0,
+        "end_sec": 25.0,
+        "value": 0.0272
+      },
+      {
+        "start_sec": 25.0,
+        "end_sec": 30.0,
+        "value": 0.2599
+      },
+      {
+        "start_sec": 30.0,
+        "end_sec": 35.0,
+        "value": 0.4353
+      },
+      {
+        "start_sec": 35.0,
+        "end_sec": 40.0,
+        "value": 0.1999
+      },
+      {
+        "start_sec": 40.0,
+        "end_sec": 45.0,
+        "value": 0.3429
+      },
+      {
+        "start_sec": 45.0,
+        "end_sec": 50.0,
+        "value": 0.4828
+      },
+      {
+        "start_sec": 50.0,
+        "end_sec": 55.0,
+        "value": 0.3797
+      },
+      {
+        "start_sec": 55.0,
+        "end_sec": 60.0,
+        "value": 0.592
+      },
+      {
+        "start_sec": 60.0,
+        "end_sec": 65.0,
+        "value": 0.3118
+      },
+      {
+        "start_sec": 65.0,
+        "end_sec": 70.0,
+        "value": 0.1502
+      },
+      {
+        "start_sec": 70.0,
+        "end_sec": 75.0,
+        "value": 0.5831
+      },
+      {
+        "start_sec": 75.0,
+        "end_sec": 80.0,
+        "value": 0.5165
+      },
+      {
+        "start_sec": 80.0,
+        "end_sec": 85.0,
+        "value": 0.333
+      },
+      {
+        "start_sec": 85.0,
+        "end_sec": 90.0,
+        "value": 0.4348
+      },
+      {
+        "start_sec": 90.0,
+        "end_sec": 95.0,
+        "value": 0.4914
+      },
+      {
+        "start_sec": 95.0,
+        "end_sec": 100.0,
+        "value": 0.4455
+      },
+      {
+        "start_sec": 100.0,
+        "end_sec": 105.0,
+        "value": 0.4533
+      },
+      {
+        "start_sec": 105.0,
+        "end_sec": 110.0,
+        "value": 0.3585
+      },
+      {
+        "start_sec": 110.0,
+        "end_sec": 115.0,
+        "value": 0.2596
+      },
+      {
+        "start_sec": 115.0,
+        "end_sec": 120.0,
+        "value": 0.5555
+      },
+      {
+        "start_sec": 120.0,
+        "end_sec": 125.0,
+        "value": 0.5093
+      },
+      {
+        "start_sec": 125.0,
+        "end_sec": 130.0,
+        "value": 0.2796
+      },
+      {
+        "start_sec": 130.0,
+        "end_sec": 135.0,
+        "value": 0.4198
+      },
+      {
+        "start_sec": 135.0,
+        "end_sec": 140.0,
+        "value": 0.1442
+      },
+      {
+        "start_sec": 140.0,
+        "end_sec": 145.0,
+        "value": 0.408
+      },
+      {
+        "start_sec": 145.0,
+        "end_sec": 150.0,
+        "value": 0.3368
+      },
+      {
+        "start_sec": 150.0,
+        "end_sec": 155.0,
+        "value": 0.5552
+      },
+      {
+        "start_sec": 155.0,
+        "end_sec": 160.0,
+        "value": 0.2522
+      },
+      {
+        "start_sec": 160.0,
+        "end_sec": 165.0,
+        "value": 0.4394
+      },
+      {
+        "start_sec": 165.0,
+        "end_sec": 170.0,
+        "value": 0.6199
+      },
+      {
+        "start_sec": 170.0,
+        "end_sec": 175.0,
+        "value": 0.6452
+      },
+      {
+        "start_sec": 175.0,
+        "end_sec": 180.0,
+        "value": 0.5008
+      },
+      {
+        "start_sec": 180.0,
+        "end_sec": 185.0,
+        "value": 0.5573
+      },
+      {
+        "start_sec": 185.0,
+        "end_sec": 190.0,
+        "value": 0.4677
+      },
+      {
+        "start_sec": 190.0,
+        "end_sec": 195.0,
+        "value": 0.1847
+      },
+      {
+        "start_sec": 195.0,
+        "end_sec": 200.0,
+        "value": 0.5132
+      },
+      {
+        "start_sec": 200.0,
+        "end_sec": 205.0,
+        "value": 0.3664
+      },
+      {
+        "start_sec": 205.0,
+        "end_sec": 210.0,
+        "value": 0.3417
+      },
+      {
+        "start_sec": 210.0,
+        "end_sec": 215.0,
+        "value": 0.4197
+      },
+      {
+        "start_sec": 215.0,
+        "end_sec": 220.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 220.0,
+        "end_sec": 225.0,
+        "value": 0.3679
+      },
+      {
+        "start_sec": 225.0,
+        "end_sec": 230.0,
+        "value": 0.4983
+      },
+      {
+        "start_sec": 230.0,
+        "end_sec": 235.0,
+        "value": 0.4381
+      },
+      {
+        "start_sec": 235.0,
+        "end_sec": 240.0,
+        "value": 0.6144
+      },
+      {
+        "start_sec": 240.0,
+        "end_sec": 245.0,
+        "value": 0.6588
+      },
+      {
+        "start_sec": 245.0,
+        "end_sec": 250.0,
+        "value": 0.5293
+      },
+      {
+        "start_sec": 250.0,
+        "end_sec": 255.0,
+        "value": 0.5096
+      },
+      {
+        "start_sec": 255.0,
+        "end_sec": 260.0,
+        "value": 0.5821
+      },
+      {
+        "start_sec": 260.0,
+        "end_sec": 265.0,
+        "value": 0.3981
+      },
+      {
+        "start_sec": 265.0,
+        "end_sec": 270.0,
+        "value": 0.5445
+      },
+      {
+        "start_sec": 270.0,
+        "end_sec": 275.0,
+        "value": 0.5033
+      },
+      {
+        "start_sec": 275.0,
+        "end_sec": 280.0,
+        "value": 0.6761
+      },
+      {
+        "start_sec": 280.0,
+        "end_sec": 285.0,
+        "value": 0.6396
+      },
+      {
+        "start_sec": 285.0,
+        "end_sec": 290.0,
+        "value": 0.6228
+      },
+      {
+        "start_sec": 290.0,
+        "end_sec": 295.0,
+        "value": 0.6126
+      },
+      {
+        "start_sec": 295.0,
+        "end_sec": 300.0,
+        "value": 0.594
+      },
+      {
+        "start_sec": 300.0,
+        "end_sec": 305.0,
+        "value": 0.6685
+      },
+      {
+        "start_sec": 305.0,
+        "end_sec": 310.0,
+        "value": 0.4582
+      },
+      {
+        "start_sec": 310.0,
+        "end_sec": 315.0,
+        "value": 0.7026
+      },
+      {
+        "start_sec": 315.0,
+        "end_sec": 320.0,
+        "value": 0.6599
+      },
+      {
+        "start_sec": 320.0,
+        "end_sec": 325.0,
+        "value": 0.7093
+      },
+      {
+        "start_sec": 325.0,
+        "end_sec": 330.0,
+        "value": 0.6704
+      },
+      {
+        "start_sec": 330.0,
+        "end_sec": 335.0,
+        "value": 0.7006
+      },
+      {
+        "start_sec": 335.0,
+        "end_sec": 340.0,
+        "value": 0.5616
+      },
+      {
+        "start_sec": 340.0,
+        "end_sec": 345.0,
+        "value": 0.6801
+      },
+      {
+        "start_sec": 345.0,
+        "end_sec": 350.0,
+        "value": 0.7004
+      },
+      {
+        "start_sec": 350.0,
+        "end_sec": 355.0,
+        "value": 0.7225
+      },
+      {
+        "start_sec": 355.0,
+        "end_sec": 360.0,
+        "value": 0.6275
+      },
+      {
+        "start_sec": 360.0,
+        "end_sec": 365.0,
+        "value": 0.6871
+      },
+      {
+        "start_sec": 365.0,
+        "end_sec": 370.0,
+        "value": 0.6728
+      },
+      {
+        "start_sec": 370.0,
+        "end_sec": 375.0,
+        "value": 0.4422
+      },
+      {
+        "start_sec": 375.0,
+        "end_sec": 380.0,
+        "value": 0.4874
+      },
+      {
+        "start_sec": 380.0,
+        "end_sec": 385.0,
+        "value": 0.6391
+      },
+      {
+        "start_sec": 385.0,
+        "end_sec": 390.0,
+        "value": 0.348
+      },
+      {
+        "start_sec": 390.0,
+        "end_sec": 395.0,
+        "value": 0.5539
+      },
+      {
+        "start_sec": 395.0,
+        "end_sec": 400.0,
+        "value": 0.4259
+      },
+      {
+        "start_sec": 400.0,
+        "end_sec": 405.0,
+        "value": 0.5363
+      },
+      {
+        "start_sec": 405.0,
+        "end_sec": 410.0,
+        "value": 0.4104
+      },
+      {
+        "start_sec": 410.0,
+        "end_sec": 415.0,
+        "value": 0.6318
+      },
+      {
+        "start_sec": 415.0,
+        "end_sec": 420.0,
+        "value": 0.4164
+      },
+      {
+        "start_sec": 420.0,
+        "end_sec": 425.0,
+        "value": 0.6995
+      },
+      {
+        "start_sec": 425.0,
+        "end_sec": 430.0,
+        "value": 0.6428
+      },
+      {
+        "start_sec": 430.0,
+        "end_sec": 435.0,
+        "value": 0.6008
+      },
+      {
+        "start_sec": 435.0,
+        "end_sec": 440.0,
+        "value": 0.7119
+      },
+      {
+        "start_sec": 440.0,
+        "end_sec": 445.0,
+        "value": 0.6962
+      },
+      {
+        "start_sec": 445.0,
+        "end_sec": 450.0,
+        "value": 0.671
+      },
+      {
+        "start_sec": 450.0,
+        "end_sec": 455.0,
+        "value": 0.7172
+      },
+      {
+        "start_sec": 455.0,
+        "end_sec": 460.0,
+        "value": 0.5385
+      },
+      {
+        "start_sec": 460.0,
+        "end_sec": 465.0,
+        "value": 0.616
+      },
+      {
+        "start_sec": 465.0,
+        "end_sec": 470.0,
+        "value": 0.6558
+      },
+      {
+        "start_sec": 470.0,
+        "end_sec": 475.0,
+        "value": 0.6928
+      },
+      {
+        "start_sec": 475.0,
+        "end_sec": 480.0,
+        "value": 0.6287
+      },
+      {
+        "start_sec": 480.0,
+        "end_sec": 485.0,
+        "value": 0.6757
+      },
+      {
+        "start_sec": 485.0,
+        "end_sec": 490.0,
+        "value": 0.6378
+      },
+      {
+        "start_sec": 490.0,
+        "end_sec": 495.0,
+        "value": 0.7233
+      },
+      {
+        "start_sec": 495.0,
+        "end_sec": 500.0,
+        "value": 0.5329
+      },
+      {
+        "start_sec": 500.0,
+        "end_sec": 505.0,
+        "value": 0.6661
+      },
+      {
+        "start_sec": 505.0,
+        "end_sec": 510.0,
+        "value": 0.71
+      },
+      {
+        "start_sec": 510.0,
+        "end_sec": 515.0,
+        "value": 0.7326
+      },
+      {
+        "start_sec": 515.0,
+        "end_sec": 520.0,
+        "value": 0.699
+      },
+      {
+        "start_sec": 520.0,
+        "end_sec": 525.0,
+        "value": 0.6614
+      },
+      {
+        "start_sec": 525.0,
+        "end_sec": 530.0,
+        "value": 0.2809
+      },
+      {
+        "start_sec": 530.0,
+        "end_sec": 535.0,
+        "value": 0.602
+      },
+      {
+        "start_sec": 535.0,
+        "end_sec": 540.0,
+        "value": 0.6198
+      },
+      {
+        "start_sec": 540.0,
+        "end_sec": 545.0,
+        "value": 0.6789
+      },
+      {
+        "start_sec": 545.0,
+        "end_sec": 550.0,
+        "value": 0.6116
+      },
+      {
+        "start_sec": 550.0,
+        "end_sec": 555.0,
+        "value": 0.683
+      },
+      {
+        "start_sec": 555.0,
+        "end_sec": 560.0,
+        "value": 0.5929
+      },
+      {
+        "start_sec": 560.0,
+        "end_sec": 565.0,
+        "value": 0.6861
+      },
+      {
+        "start_sec": 565.0,
+        "end_sec": 570.0,
+        "value": 0.5889
+      },
+      {
+        "start_sec": 570.0,
+        "end_sec": 575.0,
+        "value": 0.6179
+      },
+      {
+        "start_sec": 575.0,
+        "end_sec": 580.0,
+        "value": 0.6025
+      },
+      {
+        "start_sec": 580.0,
+        "end_sec": 585.0,
+        "value": 0.55
+      },
+      {
+        "start_sec": 585.0,
+        "end_sec": 590.0,
+        "value": 0.647
+      },
+      {
+        "start_sec": 590.0,
+        "end_sec": 595.0,
+        "value": 0.6469
+      },
+      {
+        "start_sec": 595.0,
+        "end_sec": 600.0,
+        "value": 0.6431
+      },
+      {
+        "start_sec": 600.0,
+        "end_sec": 605.0,
+        "value": 0.5704
+      },
+      {
+        "start_sec": 605.0,
+        "end_sec": 610.0,
+        "value": 0.5916
+      },
+      {
+        "start_sec": 610.0,
+        "end_sec": 615.0,
+        "value": 0.4883
+      },
+      {
+        "start_sec": 615.0,
+        "end_sec": 620.0,
+        "value": 0.7266
+      },
+      {
+        "start_sec": 620.0,
+        "end_sec": 625.0,
+        "value": 0.6767
+      },
+      {
+        "start_sec": 625.0,
+        "end_sec": 630.0,
+        "value": 0.4224
+      },
+      {
+        "start_sec": 630.0,
+        "end_sec": 635.0,
+        "value": 0.2812
+      },
+      {
+        "start_sec": 635.0,
+        "end_sec": 640.0,
+        "value": 0.4164
+      },
+      {
+        "start_sec": 640.0,
+        "end_sec": 645.0,
+        "value": 0.6418
+      },
+      {
+        "start_sec": 645.0,
+        "end_sec": 650.0,
+        "value": 0.5582
+      },
+      {
+        "start_sec": 650.0,
+        "end_sec": 655.0,
+        "value": 0.6349
+      },
+      {
+        "start_sec": 655.0,
+        "end_sec": 660.0,
+        "value": 0.6376
+      },
+      {
+        "start_sec": 660.0,
+        "end_sec": 665.0,
+        "value": 0.4527
+      },
+      {
+        "start_sec": 665.0,
+        "end_sec": 670.0,
+        "value": 0.4778
+      },
+      {
+        "start_sec": 670.0,
+        "end_sec": 675.0,
+        "value": 0.6572
+      },
+      {
+        "start_sec": 675.0,
+        "end_sec": 680.0,
+        "value": 0.6312
+      },
+      {
+        "start_sec": 680.0,
+        "end_sec": 685.0,
+        "value": 0.5667
+      },
+      {
+        "start_sec": 685.0,
+        "end_sec": 690.0,
+        "value": 0.5808
+      },
+      {
+        "start_sec": 690.0,
+        "end_sec": 695.0,
+        "value": 0.6314
+      },
+      {
+        "start_sec": 695.0,
+        "end_sec": 700.0,
+        "value": 0.623
+      },
+      {
+        "start_sec": 700.0,
+        "end_sec": 705.0,
+        "value": 0.6704
+      },
+      {
+        "start_sec": 705.0,
+        "end_sec": 710.0,
+        "value": 0.5717
+      },
+      {
+        "start_sec": 710.0,
+        "end_sec": 715.0,
+        "value": 0.5695
+      },
+      {
+        "start_sec": 715.0,
+        "end_sec": 720.0,
+        "value": 0.5894
+      },
+      {
+        "start_sec": 720.0,
+        "end_sec": 725.0,
+        "value": 0.5847
+      },
+      {
+        "start_sec": 725.0,
+        "end_sec": 730.0,
+        "value": 0.6802
+      },
+      {
+        "start_sec": 730.0,
+        "end_sec": 735.0,
+        "value": 0.3264
+      },
+      {
+        "start_sec": 735.0,
+        "end_sec": 740.0,
+        "value": 0.4397
+      },
+      {
+        "start_sec": 740.0,
+        "end_sec": 745.0,
+        "value": 0.6472
+      },
+      {
+        "start_sec": 745.0,
+        "end_sec": 750.0,
+        "value": 0.4621
+      },
+      {
+        "start_sec": 750.0,
+        "end_sec": 755.0,
+        "value": 0.7117
+      },
+      {
+        "start_sec": 755.0,
+        "end_sec": 760.0,
+        "value": 0.3256
+      },
+      {
+        "start_sec": 760.0,
+        "end_sec": 765.0,
+        "value": 0.5902
+      },
+      {
+        "start_sec": 765.0,
+        "end_sec": 770.0,
+        "value": 0.5922
+      },
+      {
+        "start_sec": 770.0,
+        "end_sec": 775.0,
+        "value": 0.5912
+      },
+      {
+        "start_sec": 775.0,
+        "end_sec": 780.0,
+        "value": 0.6192
+      },
+      {
+        "start_sec": 780.0,
+        "end_sec": 785.0,
+        "value": 0.6645
+      },
+      {
+        "start_sec": 785.0,
+        "end_sec": 790.0,
+        "value": 0.6735
+      },
+      {
+        "start_sec": 790.0,
+        "end_sec": 795.0,
+        "value": 0.6068
+      },
+      {
+        "start_sec": 795.0,
+        "end_sec": 800.0,
+        "value": 0.5141
+      },
+      {
+        "start_sec": 800.0,
+        "end_sec": 805.0,
+        "value": 0.6164
+      },
+      {
+        "start_sec": 805.0,
+        "end_sec": 810.0,
+        "value": 0.6517
+      },
+      {
+        "start_sec": 810.0,
+        "end_sec": 815.0,
+        "value": 0.6732
+      },
+      {
+        "start_sec": 815.0,
+        "end_sec": 820.0,
+        "value": 0.5748
+      },
+      {
+        "start_sec": 820.0,
+        "end_sec": 825.0,
+        "value": 0.4439
+      },
+      {
+        "start_sec": 825.0,
+        "end_sec": 830.0,
+        "value": 0.531
+      },
+      {
+        "start_sec": 830.0,
+        "end_sec": 835.0,
+        "value": 0.5816
+      },
+      {
+        "start_sec": 835.0,
+        "end_sec": 840.0,
+        "value": 0.6228
+      },
+      {
+        "start_sec": 840.0,
+        "end_sec": 845.0,
+        "value": 0.545
+      },
+      {
+        "start_sec": 845.0,
+        "end_sec": 850.0,
+        "value": 0.6921
+      },
+      {
+        "start_sec": 850.0,
+        "end_sec": 855.0,
+        "value": 0.4414
+      },
+      {
+        "start_sec": 855.0,
+        "end_sec": 860.0,
+        "value": 0.5281
+      },
+      {
+        "start_sec": 860.0,
+        "end_sec": 865.0,
+        "value": 0.5903
+      },
+      {
+        "start_sec": 865.0,
+        "end_sec": 870.0,
+        "value": 0.5776
+      },
+      {
+        "start_sec": 870.0,
+        "end_sec": 875.0,
+        "value": 0.605
+      },
+      {
+        "start_sec": 875.0,
+        "end_sec": 880.0,
+        "value": 0.6516
+      },
+      {
+        "start_sec": 880.0,
+        "end_sec": 885.0,
+        "value": 0.5967
+      },
+      {
+        "start_sec": 885.0,
+        "end_sec": 890.0,
+        "value": 0.2685
+      },
+      {
+        "start_sec": 890.0,
+        "end_sec": 895.0,
+        "value": 0.6825
+      },
+      {
+        "start_sec": 895.0,
+        "end_sec": 900.0,
+        "value": 0.3694
+      },
+      {
+        "start_sec": 900.0,
+        "end_sec": 905.0,
+        "value": 0.4367
+      },
+      {
+        "start_sec": 905.0,
+        "end_sec": 910.0,
+        "value": 0.5315
+      },
+      {
+        "start_sec": 910.0,
+        "end_sec": 915.0,
+        "value": 0.6485
+      },
+      {
+        "start_sec": 915.0,
+        "end_sec": 920.0,
+        "value": 0.4724
+      },
+      {
+        "start_sec": 920.0,
+        "end_sec": 925.0,
+        "value": 0.4334
+      },
+      {
+        "start_sec": 925.0,
+        "end_sec": 930.0,
+        "value": 0.5038
+      },
+      {
+        "start_sec": 930.0,
+        "end_sec": 935.0,
+        "value": 0.6131
+      },
+      {
+        "start_sec": 935.0,
+        "end_sec": 940.0,
+        "value": 0.2189
+      },
+      {
+        "start_sec": 940.0,
+        "end_sec": 945.0,
+        "value": 0.5728
+      },
+      {
+        "start_sec": 945.0,
+        "end_sec": 950.0,
+        "value": 0.5858
+      },
+      {
+        "start_sec": 950.0,
+        "end_sec": 955.0,
+        "value": 0.5584
+      },
+      {
+        "start_sec": 955.0,
+        "end_sec": 960.0,
+        "value": 0.6022
+      },
+      {
+        "start_sec": 960.0,
+        "end_sec": 965.0,
+        "value": 0.6012
+      },
+      {
+        "start_sec": 965.0,
+        "end_sec": 970.0,
+        "value": 0.5502
+      },
+      {
+        "start_sec": 970.0,
+        "end_sec": 975.0,
+        "value": 0.5859
+      },
+      {
+        "start_sec": 975.0,
+        "end_sec": 980.0,
+        "value": 0.5456
+      },
+      {
+        "start_sec": 980.0,
+        "end_sec": 985.0,
+        "value": 0.477
+      },
+      {
+        "start_sec": 985.0,
+        "end_sec": 990.0,
+        "value": 0.3654
+      },
+      {
+        "start_sec": 990.0,
+        "end_sec": 995.0,
+        "value": 0.6097
+      },
+      {
+        "start_sec": 995.0,
+        "end_sec": 1000.0,
+        "value": 0.5963
+      },
+      {
+        "start_sec": 1000.0,
+        "end_sec": 1005.0,
+        "value": 0.6973
+      },
+      {
+        "start_sec": 1005.0,
+        "end_sec": 1010.0,
+        "value": 0.6425
+      },
+      {
+        "start_sec": 1010.0,
+        "end_sec": 1015.0,
+        "value": 0.6425
+      },
+      {
+        "start_sec": 1015.0,
+        "end_sec": 1020.0,
+        "value": 0.5954
+      },
+      {
+        "start_sec": 1020.0,
+        "end_sec": 1025.0,
+        "value": 0.6145
+      },
+      {
+        "start_sec": 1025.0,
+        "end_sec": 1030.0,
+        "value": 0.4136
+      },
+      {
+        "start_sec": 1030.0,
+        "end_sec": 1035.0,
+        "value": 0.5373
+      },
+      {
+        "start_sec": 1035.0,
+        "end_sec": 1040.0,
+        "value": 0.3846
+      },
+      {
+        "start_sec": 1040.0,
+        "end_sec": 1045.0,
+        "value": 0.5218
+      },
+      {
+        "start_sec": 1045.0,
+        "end_sec": 1050.0,
+        "value": 0.5131
+      },
+      {
+        "start_sec": 1050.0,
+        "end_sec": 1055.0,
+        "value": 0.3772
+      },
+      {
+        "start_sec": 1055.0,
+        "end_sec": 1060.0,
+        "value": 0.4935
+      },
+      {
+        "start_sec": 1060.0,
+        "end_sec": 1065.0,
+        "value": 0.6673
+      },
+      {
+        "start_sec": 1065.0,
+        "end_sec": 1070.0,
+        "value": 0.5995
+      },
+      {
+        "start_sec": 1070.0,
+        "end_sec": 1075.0,
+        "value": 0.5366
+      },
+      {
+        "start_sec": 1075.0,
+        "end_sec": 1080.0,
+        "value": 0.5643
+      },
+      {
+        "start_sec": 1080.0,
+        "end_sec": 1085.0,
+        "value": 0.5713
+      },
+      {
+        "start_sec": 1085.0,
+        "end_sec": 1090.0,
+        "value": 0.6196
+      },
+      {
+        "start_sec": 1090.0,
+        "end_sec": 1095.0,
+        "value": 0.5148
+      },
+      {
+        "start_sec": 1095.0,
+        "end_sec": 1100.0,
+        "value": 0.4791
+      },
+      {
+        "start_sec": 1100.0,
+        "end_sec": 1105.0,
+        "value": 0.3543
+      },
+      {
+        "start_sec": 1105.0,
+        "end_sec": 1110.0,
+        "value": 0.6785
+      },
+      {
+        "start_sec": 1110.0,
+        "end_sec": 1115.0,
+        "value": 0.4342
+      },
+      {
+        "start_sec": 1115.0,
+        "end_sec": 1120.0,
+        "value": 0.6113
+      },
+      {
+        "start_sec": 1120.0,
+        "end_sec": 1125.0,
+        "value": 0.2081
+      },
+      {
+        "start_sec": 1125.0,
+        "end_sec": 1130.0,
+        "value": 0.5614
+      },
+      {
+        "start_sec": 1130.0,
+        "end_sec": 1135.0,
+        "value": 0.4695
+      },
+      {
+        "start_sec": 1135.0,
+        "end_sec": 1140.0,
+        "value": 0.5775
+      },
+      {
+        "start_sec": 1140.0,
+        "end_sec": 1145.0,
+        "value": 0.5467
+      },
+      {
+        "start_sec": 1145.0,
+        "end_sec": 1150.0,
+        "value": 0.4143
+      },
+      {
+        "start_sec": 1150.0,
+        "end_sec": 1155.0,
+        "value": 0.6317
+      },
+      {
+        "start_sec": 1155.0,
+        "end_sec": 1160.0,
+        "value": 0.5976
+      },
+      {
+        "start_sec": 1160.0,
+        "end_sec": 1165.0,
+        "value": 0.6408
+      },
+      {
+        "start_sec": 1165.0,
+        "end_sec": 1170.0,
+        "value": 0.6262
+      },
+      {
+        "start_sec": 1170.0,
+        "end_sec": 1175.0,
+        "value": 0.6132
+      },
+      {
+        "start_sec": 1175.0,
+        "end_sec": 1180.0,
+        "value": 0.2858
+      },
+      {
+        "start_sec": 1180.0,
+        "end_sec": 1185.0,
+        "value": 0.5372
+      },
+      {
+        "start_sec": 1185.0,
+        "end_sec": 1190.0,
+        "value": 0.628
+      },
+      {
+        "start_sec": 1190.0,
+        "end_sec": 1195.0,
+        "value": 0.3795
+      },
+      {
+        "start_sec": 1195.0,
+        "end_sec": 1200.0,
+        "value": 0.7179
+      },
+      {
+        "start_sec": 1200.0,
+        "end_sec": 1205.0,
+        "value": 0.543
+      },
+      {
+        "start_sec": 1205.0,
+        "end_sec": 1210.0,
+        "value": 0.6607
+      },
+      {
+        "start_sec": 1210.0,
+        "end_sec": 1215.0,
+        "value": 0.5612
+      },
+      {
+        "start_sec": 1215.0,
+        "end_sec": 1220.0,
+        "value": 0.2484
+      },
+      {
+        "start_sec": 1220.0,
+        "end_sec": 1225.0,
+        "value": 0.4225
+      },
+      {
+        "start_sec": 1225.0,
+        "end_sec": 1230.0,
+        "value": 0.0182
+      },
+      {
+        "start_sec": 1230.0,
+        "end_sec": 1235.0,
+        "value": 0.5969
+      },
+      {
+        "start_sec": 1235.0,
+        "end_sec": 1240.0,
+        "value": 0.6385
+      },
+      {
+        "start_sec": 1240.0,
+        "end_sec": 1245.0,
+        "value": 0.6465
+      },
+      {
+        "start_sec": 1245.0,
+        "end_sec": 1250.0,
+        "value": 0.5112
+      },
+      {
+        "start_sec": 1250.0,
+        "end_sec": 1255.0,
+        "value": 0.6463
+      },
+      {
+        "start_sec": 1255.0,
+        "end_sec": 1260.0,
+        "value": 0.5277
+      },
+      {
+        "start_sec": 1260.0,
+        "end_sec": 1265.0,
+        "value": 0.4112
+      },
+      {
+        "start_sec": 1265.0,
+        "end_sec": 1270.0,
+        "value": 0.6449
+      },
+      {
+        "start_sec": 1270.0,
+        "end_sec": 1275.0,
+        "value": 0.5252
+      },
+      {
+        "start_sec": 1275.0,
+        "end_sec": 1280.0,
+        "value": 0.5698
+      },
+      {
+        "start_sec": 1280.0,
+        "end_sec": 1285.0,
+        "value": 0.5881
+      },
+      {
+        "start_sec": 1285.0,
+        "end_sec": 1290.0,
+        "value": 0.3875
+      },
+      {
+        "start_sec": 1290.0,
+        "end_sec": 1295.0,
+        "value": 0.1903
+      },
+      {
+        "start_sec": 1295.0,
+        "end_sec": 1300.0,
+        "value": 0.2887
+      },
+      {
+        "start_sec": 1300.0,
+        "end_sec": 1305.0,
+        "value": 0.618
+      },
+      {
+        "start_sec": 1305.0,
+        "end_sec": 1310.0,
+        "value": 0.5604
+      },
+      {
+        "start_sec": 1310.0,
+        "end_sec": 1315.0,
+        "value": 0.5177
+      },
+      {
+        "start_sec": 1315.0,
+        "end_sec": 1320.0,
+        "value": 0.4845
+      },
+      {
+        "start_sec": 1320.0,
+        "end_sec": 1325.0,
+        "value": 0.3054
+      },
+      {
+        "start_sec": 1325.0,
+        "end_sec": 1330.0,
+        "value": 0.5929
+      },
+      {
+        "start_sec": 1330.0,
+        "end_sec": 1335.0,
+        "value": 0.5865
+      },
+      {
+        "start_sec": 1335.0,
+        "end_sec": 1340.0,
+        "value": 0.3939
+      },
+      {
+        "start_sec": 1340.0,
+        "end_sec": 1345.0,
+        "value": 0.5874
+      },
+      {
+        "start_sec": 1345.0,
+        "end_sec": 1350.0,
+        "value": 0.3925
+      },
+      {
+        "start_sec": 1350.0,
+        "end_sec": 1355.0,
+        "value": 0.5321
+      },
+      {
+        "start_sec": 1355.0,
+        "end_sec": 1360.0,
+        "value": 0.4946
+      },
+      {
+        "start_sec": 1360.0,
+        "end_sec": 1365.0,
+        "value": 0.5998
+      },
+      {
+        "start_sec": 1365.0,
+        "end_sec": 1370.0,
+        "value": 0.6624
+      },
+      {
+        "start_sec": 1370.0,
+        "end_sec": 1375.0,
+        "value": 0.5601
+      },
+      {
+        "start_sec": 1375.0,
+        "end_sec": 1380.0,
+        "value": 0.6027
+      },
+      {
+        "start_sec": 1380.0,
+        "end_sec": 1385.0,
+        "value": 0.6147
+      },
+      {
+        "start_sec": 1385.0,
+        "end_sec": 1390.0,
+        "value": 0.6426
+      },
+      {
+        "start_sec": 1390.0,
+        "end_sec": 1395.0,
+        "value": 0.623
+      },
+      {
+        "start_sec": 1395.0,
+        "end_sec": 1400.0,
+        "value": 0.3584
+      },
+      {
+        "start_sec": 1400.0,
+        "end_sec": 1405.0,
+        "value": 0.3258
+      },
+      {
+        "start_sec": 1405.0,
+        "end_sec": 1410.0,
+        "value": 0.6647
+      },
+      {
+        "start_sec": 1410.0,
+        "end_sec": 1415.0,
+        "value": 0.6083
+      },
+      {
+        "start_sec": 1415.0,
+        "end_sec": 1420.0,
+        "value": 0.5831
+      },
+      {
+        "start_sec": 1420.0,
+        "end_sec": 1425.0,
+        "value": 0.5751
+      },
+      {
+        "start_sec": 1425.0,
+        "end_sec": 1430.0,
+        "value": 0.5863
+      },
+      {
+        "start_sec": 1430.0,
+        "end_sec": 1435.0,
+        "value": 0.6132
+      },
+      {
+        "start_sec": 1435.0,
+        "end_sec": 1440.0,
+        "value": 0.4864
+      },
+      {
+        "start_sec": 1440.0,
+        "end_sec": 1445.0,
+        "value": 0.5766
+      },
+      {
+        "start_sec": 1445.0,
+        "end_sec": 1450.0,
+        "value": 0.4975
+      },
+      {
+        "start_sec": 1450.0,
+        "end_sec": 1455.0,
+        "value": 0.6219
+      },
+      {
+        "start_sec": 1455.0,
+        "end_sec": 1460.0,
+        "value": 0.5745
+      },
+      {
+        "start_sec": 1460.0,
+        "end_sec": 1465.0,
+        "value": 0.5552
+      },
+      {
+        "start_sec": 1465.0,
+        "end_sec": 1470.0,
+        "value": 0.4934
+      },
+      {
+        "start_sec": 1470.0,
+        "end_sec": 1475.0,
+        "value": 0.5607
+      },
+      {
+        "start_sec": 1475.0,
+        "end_sec": 1480.0,
+        "value": 0.4663
+      },
+      {
+        "start_sec": 1480.0,
+        "end_sec": 1485.0,
+        "value": 0.4949
+      },
+      {
+        "start_sec": 1485.0,
+        "end_sec": 1490.0,
+        "value": 0.5662
+      },
+      {
+        "start_sec": 1490.0,
+        "end_sec": 1495.0,
+        "value": 0.4431
+      },
+      {
+        "start_sec": 1495.0,
+        "end_sec": 1500.0,
+        "value": 0.5427
+      },
+      {
+        "start_sec": 1500.0,
+        "end_sec": 1505.0,
+        "value": 0.6231
+      },
+      {
+        "start_sec": 1505.0,
+        "end_sec": 1510.0,
+        "value": 0.6367
+      },
+      {
+        "start_sec": 1510.0,
+        "end_sec": 1515.0,
+        "value": 0.5663
+      },
+      {
+        "start_sec": 1515.0,
+        "end_sec": 1520.0,
+        "value": 0.5687
+      },
+      {
+        "start_sec": 1520.0,
+        "end_sec": 1525.0,
+        "value": 0.6197
+      },
+      {
+        "start_sec": 1525.0,
+        "end_sec": 1530.0,
+        "value": 0.547
+      },
+      {
+        "start_sec": 1530.0,
+        "end_sec": 1535.0,
+        "value": 0.538
+      },
+      {
+        "start_sec": 1535.0,
+        "end_sec": 1540.0,
+        "value": 0.6217
+      },
+      {
+        "start_sec": 1540.0,
+        "end_sec": 1545.0,
+        "value": 0.6424
+      },
+      {
+        "start_sec": 1545.0,
+        "end_sec": 1550.0,
+        "value": 0.6284
+      },
+      {
+        "start_sec": 1550.0,
+        "end_sec": 1555.0,
+        "value": 0.3533
+      },
+      {
+        "start_sec": 1555.0,
+        "end_sec": 1560.0,
+        "value": 0.508
+      },
+      {
+        "start_sec": 1560.0,
+        "end_sec": 1565.0,
+        "value": 0.5523
+      },
+      {
+        "start_sec": 1565.0,
+        "end_sec": 1570.0,
+        "value": 0.6186
+      },
+      {
+        "start_sec": 1570.0,
+        "end_sec": 1575.0,
+        "value": 0.5045
+      },
+      {
+        "start_sec": 1575.0,
+        "end_sec": 1580.0,
+        "value": 0.5066
+      },
+      {
+        "start_sec": 1580.0,
+        "end_sec": 1585.0,
+        "value": 0.3849
+      },
+      {
+        "start_sec": 1585.0,
+        "end_sec": 1590.0,
+        "value": 0.4612
+      },
+      {
+        "start_sec": 1590.0,
+        "end_sec": 1595.0,
+        "value": 0.4365
+      },
+      {
+        "start_sec": 1595.0,
+        "end_sec": 1600.0,
+        "value": 0.5703
+      },
+      {
+        "start_sec": 1600.0,
+        "end_sec": 1605.0,
+        "value": 0.4795
+      },
+      {
+        "start_sec": 1605.0,
+        "end_sec": 1610.0,
+        "value": 0.3735
+      },
+      {
+        "start_sec": 1610.0,
+        "end_sec": 1615.0,
+        "value": 0.5476
+      },
+      {
+        "start_sec": 1615.0,
+        "end_sec": 1620.0,
+        "value": 0.2347
+      },
+      {
+        "start_sec": 1620.0,
+        "end_sec": 1625.0,
+        "value": 0.4026
+      },
+      {
+        "start_sec": 1625.0,
+        "end_sec": 1630.0,
+        "value": 0.5895
+      },
+      {
+        "start_sec": 1630.0,
+        "end_sec": 1635.0,
+        "value": 0.5228
+      },
+      {
+        "start_sec": 1635.0,
+        "end_sec": 1640.0,
+        "value": 0.5814
+      },
+      {
+        "start_sec": 1640.0,
+        "end_sec": 1645.0,
+        "value": 0.3775
+      },
+      {
+        "start_sec": 1645.0,
+        "end_sec": 1650.0,
+        "value": 0.3228
+      },
+      {
+        "start_sec": 1650.0,
+        "end_sec": 1655.0,
+        "value": 0.2774
+      },
+      {
+        "start_sec": 1655.0,
+        "end_sec": 1660.0,
+        "value": 0.2698
+      },
+      {
+        "start_sec": 1660.0,
+        "end_sec": 1665.0,
+        "value": 0.5961
+      },
+      {
+        "start_sec": 1665.0,
+        "end_sec": 1670.0,
+        "value": 0.4793
+      },
+      {
+        "start_sec": 1670.0,
+        "end_sec": 1675.0,
+        "value": 0.2114
+      },
+      {
+        "start_sec": 1675.0,
+        "end_sec": 1680.0,
+        "value": 0.2339
+      },
+      {
+        "start_sec": 1680.0,
+        "end_sec": 1685.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 1685.0,
+        "end_sec": 1690.0,
+        "value": 0.278
+      },
+      {
+        "start_sec": 1690.0,
+        "end_sec": 1695.0,
+        "value": 0.3369
+      },
+      {
+        "start_sec": 1695.0,
+        "end_sec": 1700.0,
+        "value": 0.3662
+      },
+      {
+        "start_sec": 1700.0,
+        "end_sec": 1705.0,
+        "value": 0.5316
+      },
+      {
+        "start_sec": 1705.0,
+        "end_sec": 1710.0,
+        "value": 0.2805
+      },
+      {
+        "start_sec": 1710.0,
+        "end_sec": 1715.0,
+        "value": 0.2473
+      },
+      {
+        "start_sec": 1715.0,
+        "end_sec": 1720.0,
+        "value": 0.4993
+      },
+      {
+        "start_sec": 1720.0,
+        "end_sec": 1725.0,
+        "value": 0.3251
+      },
+      {
+        "start_sec": 1725.0,
+        "end_sec": 1730.0,
+        "value": 0.3483
+      },
+      {
+        "start_sec": 1730.0,
+        "end_sec": 1735.0,
+        "value": 0.3314
+      },
+      {
+        "start_sec": 1735.0,
+        "end_sec": 1740.0,
+        "value": 0.3783
+      },
+      {
+        "start_sec": 1740.0,
+        "end_sec": 1745.0,
+        "value": 0.0401
+      },
+      {
+        "start_sec": 1745.0,
+        "end_sec": 1750.0,
+        "value": 0.1766
+      },
+      {
+        "start_sec": 1750.0,
+        "end_sec": 1755.0,
+        "value": 0.4711
+      },
+      {
+        "start_sec": 1755.0,
+        "end_sec": 1760.0,
+        "value": 0.4835
+      },
+      {
+        "start_sec": 1760.0,
+        "end_sec": 1765.0,
+        "value": 0.5254
+      },
+      {
+        "start_sec": 1765.0,
+        "end_sec": 1770.0,
+        "value": 0.4617
+      },
+      {
+        "start_sec": 1770.0,
+        "end_sec": 1775.0,
+        "value": 0.25
+      },
+      {
+        "start_sec": 1775.0,
+        "end_sec": 1780.0,
+        "value": 0.1606
+      },
+      {
+        "start_sec": 1780.0,
+        "end_sec": 1785.0,
+        "value": 0.5187
+      },
+      {
+        "start_sec": 1785.0,
+        "end_sec": 1790.0,
+        "value": 0.5981
+      },
+      {
+        "start_sec": 1790.0,
+        "end_sec": 1795.0,
+        "value": 0.4314
+      },
+      {
+        "start_sec": 1795.0,
+        "end_sec": 1800.0,
+        "value": 0.2363
+      },
+      {
+        "start_sec": 1800.0,
+        "end_sec": 1805.0,
+        "value": 0.0215
+      },
+      {
+        "start_sec": 1805.0,
+        "end_sec": 1810.0,
+        "value": 0.3805
+      },
+      {
+        "start_sec": 1810.0,
+        "end_sec": 1815.0,
+        "value": 0.3588
+      },
+      {
+        "start_sec": 1815.0,
+        "end_sec": 1820.0,
+        "value": 0.2277
+      },
+      {
+        "start_sec": 1820.0,
+        "end_sec": 1825.0,
+        "value": 0.5882
+      },
+      {
+        "start_sec": 1825.0,
+        "end_sec": 1830.0,
+        "value": 0.6353
+      },
+      {
+        "start_sec": 1830.0,
+        "end_sec": 1835.0,
+        "value": 0.4199
+      },
+      {
+        "start_sec": 1835.0,
+        "end_sec": 1840.0,
+        "value": 0.3898
+      },
+      {
+        "start_sec": 1840.0,
+        "end_sec": 1845.0,
+        "value": 0.3781
+      },
+      {
+        "start_sec": 1845.0,
+        "end_sec": 1850.0,
+        "value": 0.6174
+      },
+      {
+        "start_sec": 1850.0,
+        "end_sec": 1855.0,
+        "value": 0.4033
+      },
+      {
+        "start_sec": 1855.0,
+        "end_sec": 1860.0,
+        "value": 0.6272
+      },
+      {
+        "start_sec": 1860.0,
+        "end_sec": 1865.0,
+        "value": 0.5435
+      },
+      {
+        "start_sec": 1865.0,
+        "end_sec": 1870.0,
+        "value": 0.5664
+      },
+      {
+        "start_sec": 1870.0,
+        "end_sec": 1875.0,
+        "value": 0.3526
+      },
+      {
+        "start_sec": 1875.0,
+        "end_sec": 1880.0,
+        "value": 0.5937
+      },
+      {
+        "start_sec": 1880.0,
+        "end_sec": 1885.0,
+        "value": 0.2441
+      },
+      {
+        "start_sec": 1885.0,
+        "end_sec": 1890.0,
+        "value": 0.0939
+      },
+      {
+        "start_sec": 1890.0,
+        "end_sec": 1895.0,
+        "value": 0.0661
+      },
+      {
+        "start_sec": 1895.0,
+        "end_sec": 1900.0,
+        "value": 0.498
+      },
+      {
+        "start_sec": 1900.0,
+        "end_sec": 1905.0,
+        "value": 0.6022
+      },
+      {
+        "start_sec": 1905.0,
+        "end_sec": 1910.0,
+        "value": 0.3061
+      },
+      {
+        "start_sec": 1910.0,
+        "end_sec": 1915.0,
+        "value": 0.4975
+      },
+      {
+        "start_sec": 1915.0,
+        "end_sec": 1920.0,
+        "value": 0.413
+      },
+      {
+        "start_sec": 1920.0,
+        "end_sec": 1925.0,
+        "value": 0.5674
+      },
+      {
+        "start_sec": 1925.0,
+        "end_sec": 1930.0,
+        "value": 0.5654
+      },
+      {
+        "start_sec": 1930.0,
+        "end_sec": 1935.0,
+        "value": 0.5659
+      },
+      {
+        "start_sec": 1935.0,
+        "end_sec": 1940.0,
+        "value": 0.4396
+      },
+      {
+        "start_sec": 1940.0,
+        "end_sec": 1945.0,
+        "value": 0.424
+      },
+      {
+        "start_sec": 1945.0,
+        "end_sec": 1950.0,
+        "value": 0.4393
+      },
+      {
+        "start_sec": 1950.0,
+        "end_sec": 1955.0,
+        "value": 0.5858
+      },
+      {
+        "start_sec": 1955.0,
+        "end_sec": 1960.0,
+        "value": 0.5762
+      },
+      {
+        "start_sec": 1960.0,
+        "end_sec": 1965.0,
+        "value": 0.5548
+      },
+      {
+        "start_sec": 1965.0,
+        "end_sec": 1970.0,
+        "value": 0.6332
+      },
+      {
+        "start_sec": 1970.0,
+        "end_sec": 1975.0,
+        "value": 0.5724
+      },
+      {
+        "start_sec": 1975.0,
+        "end_sec": 1980.0,
+        "value": 0.4008
+      },
+      {
+        "start_sec": 1980.0,
+        "end_sec": 1985.0,
+        "value": 0.5458
+      },
+      {
+        "start_sec": 1985.0,
+        "end_sec": 1990.0,
+        "value": 0.5065
+      },
+      {
+        "start_sec": 1990.0,
+        "end_sec": 1995.0,
+        "value": 0.3465
+      },
+      {
+        "start_sec": 1995.0,
+        "end_sec": 2000.0,
+        "value": 0.5074
+      },
+      {
+        "start_sec": 2000.0,
+        "end_sec": 2005.0,
+        "value": 0.3936
+      },
+      {
+        "start_sec": 2005.0,
+        "end_sec": 2010.0,
+        "value": 0.212
+      },
+      {
+        "start_sec": 2010.0,
+        "end_sec": 2015.0,
+        "value": 0.6557
+      },
+      {
+        "start_sec": 2015.0,
+        "end_sec": 2020.0,
+        "value": 0.5213
+      },
+      {
+        "start_sec": 2020.0,
+        "end_sec": 2025.0,
+        "value": 0.4152
+      },
+      {
+        "start_sec": 2025.0,
+        "end_sec": 2030.0,
+        "value": 0.3549
+      },
+      {
+        "start_sec": 2030.0,
+        "end_sec": 2035.0,
+        "value": 0.4978
+      },
+      {
+        "start_sec": 2035.0,
+        "end_sec": 2040.0,
+        "value": 0.4272
+      },
+      {
+        "start_sec": 2040.0,
+        "end_sec": 2045.0,
+        "value": 0.5178
+      },
+      {
+        "start_sec": 2045.0,
+        "end_sec": 2050.0,
+        "value": 0.6413
+      },
+      {
+        "start_sec": 2050.0,
+        "end_sec": 2055.0,
+        "value": 0.682
+      },
+      {
+        "start_sec": 2055.0,
+        "end_sec": 2060.0,
+        "value": 0.43
+      },
+      {
+        "start_sec": 2060.0,
+        "end_sec": 2065.0,
+        "value": 0.6665
+      },
+      {
+        "start_sec": 2065.0,
+        "end_sec": 2070.0,
+        "value": 0.4845
+      },
+      {
+        "start_sec": 2070.0,
+        "end_sec": 2075.0,
+        "value": 0.5529
+      },
+      {
+        "start_sec": 2075.0,
+        "end_sec": 2080.0,
+        "value": 0.3389
+      },
+      {
+        "start_sec": 2080.0,
+        "end_sec": 2085.0,
+        "value": 0.6864
+      },
+      {
+        "start_sec": 2085.0,
+        "end_sec": 2090.0,
+        "value": 0.6477
+      },
+      {
+        "start_sec": 2090.0,
+        "end_sec": 2095.0,
+        "value": 0.5867
+      },
+      {
+        "start_sec": 2095.0,
+        "end_sec": 2100.0,
+        "value": 0.6608
+      },
+      {
+        "start_sec": 2100.0,
+        "end_sec": 2105.0,
+        "value": 0.3962
+      },
+      {
+        "start_sec": 2105.0,
+        "end_sec": 2110.0,
+        "value": 0.6597
+      },
+      {
+        "start_sec": 2110.0,
+        "end_sec": 2115.0,
+        "value": 0.6315
+      },
+      {
+        "start_sec": 2115.0,
+        "end_sec": 2120.0,
+        "value": 0.4385
+      },
+      {
+        "start_sec": 2120.0,
+        "end_sec": 2125.0,
+        "value": 0.6332
+      },
+      {
+        "start_sec": 2125.0,
+        "end_sec": 2130.0,
+        "value": 0.6488
+      },
+      {
+        "start_sec": 2130.0,
+        "end_sec": 2135.0,
+        "value": 0.6389
+      },
+      {
+        "start_sec": 2135.0,
+        "end_sec": 2140.0,
+        "value": 0.1727
+      },
+      {
+        "start_sec": 2140.0,
+        "end_sec": 2145.0,
+        "value": 0.6022
+      },
+      {
+        "start_sec": 2145.0,
+        "end_sec": 2150.0,
+        "value": 0.6446
+      },
+      {
+        "start_sec": 2150.0,
+        "end_sec": 2155.0,
+        "value": 0.6207
+      },
+      {
+        "start_sec": 2155.0,
+        "end_sec": 2160.0,
+        "value": 0.4125
+      },
+      {
+        "start_sec": 2160.0,
+        "end_sec": 2165.0,
+        "value": 0.4618
+      },
+      {
+        "start_sec": 2165.0,
+        "end_sec": 2170.0,
+        "value": 0.5514
+      },
+      {
+        "start_sec": 2170.0,
+        "end_sec": 2175.0,
+        "value": 0.6213
+      },
+      {
+        "start_sec": 2175.0,
+        "end_sec": 2180.0,
+        "value": 0.673
+      },
+      {
+        "start_sec": 2180.0,
+        "end_sec": 2185.0,
+        "value": 0.628
+      },
+      {
+        "start_sec": 2185.0,
+        "end_sec": 2190.0,
+        "value": 0.5675
+      },
+      {
+        "start_sec": 2190.0,
+        "end_sec": 2195.0,
+        "value": 0.514
+      },
+      {
+        "start_sec": 2195.0,
+        "end_sec": 2200.0,
+        "value": 0.3012
+      },
+      {
+        "start_sec": 2200.0,
+        "end_sec": 2205.0,
+        "value": 0.1114
+      },
+      {
+        "start_sec": 2205.0,
+        "end_sec": 2210.0,
+        "value": 0.2398
+      },
+      {
+        "start_sec": 2210.0,
+        "end_sec": 2215.0,
+        "value": 0.5548
+      },
+      {
+        "start_sec": 2215.0,
+        "end_sec": 2220.0,
+        "value": 0.4467
+      },
+      {
+        "start_sec": 2220.0,
+        "end_sec": 2225.0,
+        "value": 0.642
+      },
+      {
+        "start_sec": 2225.0,
+        "end_sec": 2230.0,
+        "value": 0.5949
+      },
+      {
+        "start_sec": 2230.0,
+        "end_sec": 2235.0,
+        "value": 0.7088
+      },
+      {
+        "start_sec": 2235.0,
+        "end_sec": 2240.0,
+        "value": 0.7304
+      },
+      {
+        "start_sec": 2240.0,
+        "end_sec": 2245.0,
+        "value": 0.3205
+      },
+      {
+        "start_sec": 2245.0,
+        "end_sec": 2250.0,
+        "value": 0.5917
+      },
+      {
+        "start_sec": 2250.0,
+        "end_sec": 2255.0,
+        "value": 0.5902
+      },
+      {
+        "start_sec": 2255.0,
+        "end_sec": 2260.0,
+        "value": 0.6619
+      },
+      {
+        "start_sec": 2260.0,
+        "end_sec": 2265.0,
+        "value": 0.4548
+      },
+      {
+        "start_sec": 2265.0,
+        "end_sec": 2270.0,
+        "value": 0.2482
+      },
+      {
+        "start_sec": 2270.0,
+        "end_sec": 2275.0,
+        "value": 0.5659
+      },
+      {
+        "start_sec": 2275.0,
+        "end_sec": 2280.0,
+        "value": 0.2745
+      },
+      {
+        "start_sec": 2280.0,
+        "end_sec": 2285.0,
+        "value": 0.5924
+      },
+      {
+        "start_sec": 2285.0,
+        "end_sec": 2290.0,
+        "value": 0.7126
+      },
+      {
+        "start_sec": 2290.0,
+        "end_sec": 2295.0,
+        "value": 0.6988
+      },
+      {
+        "start_sec": 2295.0,
+        "end_sec": 2300.0,
+        "value": 0.6545
+      },
+      {
+        "start_sec": 2300.0,
+        "end_sec": 2305.0,
+        "value": 0.6709
+      },
+      {
+        "start_sec": 2305.0,
+        "end_sec": 2310.0,
+        "value": 0.4656
+      },
+      {
+        "start_sec": 2310.0,
+        "end_sec": 2315.0,
+        "value": 0.1261
+      },
+      {
+        "start_sec": 2315.0,
+        "end_sec": 2320.0,
+        "value": 0.6154
+      },
+      {
+        "start_sec": 2320.0,
+        "end_sec": 2325.0,
+        "value": 0.5689
+      },
+      {
+        "start_sec": 2325.0,
+        "end_sec": 2330.0,
+        "value": 0.6307
+      },
+      {
+        "start_sec": 2330.0,
+        "end_sec": 2335.0,
+        "value": 0.6053
+      },
+      {
+        "start_sec": 2335.0,
+        "end_sec": 2340.0,
+        "value": 0.4397
+      },
+      {
+        "start_sec": 2340.0,
+        "end_sec": 2345.0,
+        "value": 0.0871
+      },
+      {
+        "start_sec": 2345.0,
+        "end_sec": 2350.0,
+        "value": 0.5102
+      },
+      {
+        "start_sec": 2350.0,
+        "end_sec": 2355.0,
+        "value": 0.6502
+      },
+      {
+        "start_sec": 2355.0,
+        "end_sec": 2360.0,
+        "value": 0.5969
+      },
+      {
+        "start_sec": 2360.0,
+        "end_sec": 2365.0,
+        "value": 0.3602
+      },
+      {
+        "start_sec": 2365.0,
+        "end_sec": 2370.0,
+        "value": 0.615
+      },
+      {
+        "start_sec": 2370.0,
+        "end_sec": 2375.0,
+        "value": 0.5389
+      },
+      {
+        "start_sec": 2375.0,
+        "end_sec": 2380.0,
+        "value": 0.5809
+      },
+      {
+        "start_sec": 2380.0,
+        "end_sec": 2385.0,
+        "value": 0.3466
+      },
+      {
+        "start_sec": 2385.0,
+        "end_sec": 2390.0,
+        "value": 0.6507
+      },
+      {
+        "start_sec": 2390.0,
+        "end_sec": 2395.0,
+        "value": 0.6666
+      },
+      {
+        "start_sec": 2395.0,
+        "end_sec": 2400.0,
+        "value": 0.6797
+      },
+      {
+        "start_sec": 2400.0,
+        "end_sec": 2405.0,
+        "value": 0.4376
+      },
+      {
+        "start_sec": 2405.0,
+        "end_sec": 2410.0,
+        "value": 0.1583
+      },
+      {
+        "start_sec": 2410.0,
+        "end_sec": 2415.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 2415.0,
+        "end_sec": 2420.0,
+        "value": 0.1114
+      },
+      {
+        "start_sec": 2420.0,
+        "end_sec": 2425.0,
+        "value": 0.7446
+      },
+      {
+        "start_sec": 2425.0,
+        "end_sec": 2430.0,
+        "value": 0.701
+      },
+      {
+        "start_sec": 2430.0,
+        "end_sec": 2435.0,
+        "value": 0.4325
+      },
+      {
+        "start_sec": 2435.0,
+        "end_sec": 2440.0,
+        "value": 0.5693
+      },
+      {
+        "start_sec": 2440.0,
+        "end_sec": 2445.0,
+        "value": 0.5284
+      },
+      {
+        "start_sec": 2445.0,
+        "end_sec": 2450.0,
+        "value": 0.5402
+      },
+      {
+        "start_sec": 2450.0,
+        "end_sec": 2455.0,
+        "value": 0.2113
+      },
+      {
+        "start_sec": 2455.0,
+        "end_sec": 2460.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 2460.0,
+        "end_sec": 2465.0,
+        "value": 0.0619
+      },
+      {
+        "start_sec": 2465.0,
+        "end_sec": 2470.0,
+        "value": 0.4483
+      },
+      {
+        "start_sec": 2470.0,
+        "end_sec": 2475.0,
+        "value": 0.0612
+      },
+      {
+        "start_sec": 2475.0,
+        "end_sec": 2480.0,
+        "value": 0.3042
+      },
+      {
+        "start_sec": 2480.0,
+        "end_sec": 2485.0,
+        "value": 0.0276
+      },
+      {
+        "start_sec": 2485.0,
+        "end_sec": 2490.0,
+        "value": 0.0
+      },
+      {
+        "start_sec": 2490.0,
+        "end_sec": 2491.0,
+        "value": 0.0
+      }
+    ]
+  },
+  "summary_run_ledger": {
+    "schema_version": "summary_run_ledger.v1",
+    "run_id": "14254433_20260718_한시간 동안 마구 떠들기 ٩(●'▿'●)۶",
+    "path_ref": "output:summary_run_ledger.jsonl"
+  }
+}

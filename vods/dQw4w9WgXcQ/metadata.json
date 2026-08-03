@@ -1,0 +1,64 @@
+{
+  "schema_version": "youtube_report_metadata.v1",
+  "platform": "youtube",
+  "source_platform": "youtube",
+  "source_id": "dQw4w9WgXcQ",
+  "source_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  "video_no": "dQw4w9WgXcQ",
+  "title": "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)",
+  "channel": "Rick Astley",
+  "channel_id": "UCuAXFkgsw1L7xaCfnd5JJOw",
+  "duration": 213,
+  "publish_date": "20091025",
+  "thumbnail_url": "https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
+  "optional_inputs": {
+    "chat": {
+      "status": "not_available_for_source",
+      "items": []
+    },
+    "community": {
+      "status": "not_available_for_source",
+      "items": []
+    },
+    "viewer_clips": {
+      "status": "not_available_for_source",
+      "items": []
+    },
+    "fabricated": false
+  },
+  "youtube_run_proof": {
+    "schema_version": "youtube_run_proof.v1",
+    "requested_id": "dQw4w9WgXcQ",
+    "selected_id": "dQw4w9WgXcQ",
+    "exact_match": true,
+    "selected_caption_route": "yt_dlp_subtitles",
+    "caption_kind": "native",
+    "caption_cue_count": 61,
+    "chunk_count": 1,
+    "gateway_reached": true,
+    "merge_reached": true,
+    "whisper_call_count": 0,
+    "provider_order": [
+      "openai_responses_free"
+    ],
+    "selected_provider": "openai_responses_free",
+    "non_openai_fallback_allowed": false,
+    "transport_attempt_count": 2,
+    "summary_cache_reused": false,
+    "artifact_trio_complete": true,
+    "chzz_links_present": false,
+    "optional_chzz_signals": "not_available_for_source",
+    "yt_dlp_runtime_status": {
+      "schema_version": "youtube_yt_dlp_startup.v1",
+      "status": "WARNING",
+      "code": "YT_DLP_UPDATE_APPROVED_OFFLINE",
+      "channel": "nightly",
+      "metadata_ttl_hours": 24,
+      "refresh_required": true,
+      "continue_with_known_good": true,
+      "network_attempted": false,
+      "update_attempted": false,
+      "automatic_update_enabled": false
+    }
+  }
+}

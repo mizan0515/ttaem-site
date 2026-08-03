@@ -1,0 +1,64 @@
+{
+  "schema_version": "youtube_report_metadata.v1",
+  "platform": "youtube",
+  "source_platform": "youtube",
+  "source_id": "cE9MsdU-sYA",
+  "source_url": "https://www.youtube.com/watch?v=cE9MsdU-sYA",
+  "video_no": "cE9MsdU-sYA",
+  "title": "[ 2026/3/14 ] 겁이 없다는 뜻 아닌가요? 아 [롤 내전 (w. 승우아빠, 텐코 시부키, 멋사, 아야, 달콤레나, 채현찌, 따효니, 탬탬버린, 이춘향)] | 나나 다시보기",
+  "channel": "나나 다시보기",
+  "channel_id": "UCmmzr9DL0_t5ui1TAZjv-nA",
+  "duration": 26550,
+  "publish_date": "20260314",
+  "thumbnail_url": "https://i.ytimg.com/vi/cE9MsdU-sYA/maxresdefault.jpg",
+  "optional_inputs": {
+    "chat": {
+      "status": "not_available_for_source",
+      "items": []
+    },
+    "community": {
+      "status": "not_available_for_source",
+      "items": []
+    },
+    "viewer_clips": {
+      "status": "not_available_for_source",
+      "items": []
+    },
+    "fabricated": false
+  },
+  "youtube_run_proof": {
+    "schema_version": "youtube_run_proof.v1",
+    "requested_id": "cE9MsdU-sYA",
+    "selected_id": "cE9MsdU-sYA",
+    "exact_match": true,
+    "selected_caption_route": "yt_dlp_subtitles",
+    "caption_kind": "auto",
+    "caption_cue_count": 19804,
+    "chunk_count": 8,
+    "gateway_reached": true,
+    "merge_reached": true,
+    "whisper_call_count": 0,
+    "provider_order": [
+      "openai_responses_free"
+    ],
+    "selected_provider": "openai_responses_free",
+    "non_openai_fallback_allowed": false,
+    "transport_attempt_count": 9,
+    "summary_cache_reused": false,
+    "artifact_trio_complete": true,
+    "chzz_links_present": false,
+    "optional_chzz_signals": "not_available_for_source",
+    "yt_dlp_runtime_status": {
+      "schema_version": "youtube_yt_dlp_startup.v1",
+      "status": "WARNING",
+      "code": "YT_DLP_METADATA_UNAVAILABLE_OFFLINE",
+      "channel": "nightly",
+      "metadata_ttl_hours": 24,
+      "refresh_required": true,
+      "continue_with_known_good": true,
+      "network_attempted": false,
+      "update_attempted": false,
+      "automatic_update_enabled": false
+    }
+  }
+}

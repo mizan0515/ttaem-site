@@ -601,7 +601,7 @@ function initViewerEditorTools() {
     if (lowered.includes('chat_bucket') || raw.includes('채팅')) return raw.includes('대표') ? '대표 채팅 반응' : '채팅 반응';
     if (lowered.includes('viewer_clip') || raw.includes('클립')) return '시청자 클립';
     if (lowered.includes('audio') || raw.includes('오디오')) return '오디오 반응';
-    if (lowered.includes('highlight_candidate')) return '자동 반응 후보';
+    if (lowered.includes('highlight_candidate')) return '자동 하이라이트 후보';
     if (lowered.includes('summary_markdown')) return '요약에 적힌 장면';
     if (lowered.includes('subtitle_chunk') || lowered.includes('timed_evidence')) return '자막 근거';
     if (lowered.includes('semantic_vector') || lowered.includes('timestamp_overlap')) return '가까운 방송 근거';
@@ -850,6 +850,9 @@ function initViewerEditorTools() {
     return [1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.22, 0.15, 0.1][markerDensityLevel] || 0.4;
   }
   function protectedDensityKind(kind) {
+    return ['timeline', 'highlight', 'chapter', 'viewer_clip'].includes(String(kind || ''));
+  }
+  function highPriorityDensityKind(kind) {
     return ['timeline', 'existing_segments', 'highlight', 'chapter', 'viewer_clip'].includes(String(kind || ''));
   }
   function markerPriorityKindFamily(kind) {
@@ -922,7 +925,7 @@ function initViewerEditorTools() {
     let score = 0;
     const familyCount = markerPriorityNearbyFamilies(event, contextEvents).size;
     const rowFamilies = markerPriorityFamilies(event).length;
-    if (protectedDensityKind(kind)) score += kind === 'viewer_clip' ? 70 : 82;
+    if (highPriorityDensityKind(kind)) score += kind === 'viewer_clip' ? 70 : 82;
     if (markerPriorityNearbyKind(contextEvents, event, ['timeline', 'existing_segments', 'highlight', 'chapter'], 15)) score += 48;
     if (markerPriorityNearbyKind(contextEvents, event, ['viewer_clip'], 15)) score += 34;
     if (familyCount >= 4) score += 54;

@@ -1513,7 +1513,129 @@ function initEditorEntryState() {
 }
 </script>
 
-<script src="../../assets/viewer-editor-tools.js?v=a3adce4fb6fc"></script>
+<script src="../../assets/viewer-editor-tools.js?v=a0b69624f634"></script>
+<script id="summaryEvidenceQuoteCitationsData" type="application/json">{"schema_version":"public_quote_citations.v2","render_target":"report_html_script#summaryEvidenceQuoteCitationsData","raw_transcript_content_included":false,"public_quote_text_included":true,"video_no":"13664702","subtitle_cue_count":385,"chat_cue_count":0,"items":[{"segment_id":"seg_timeline_5753b4c764d7","start_sec":382,"citations":[],"evidence_state":"not_verified"},{"segment_id":"seg_timeline_6033448de246","start_sec":752,"citations":[],"evidence_state":"not_verified"},{"segment_id":"seg_timeline_cc428c8a59a1","start_sec":925,"citations":[],"evidence_state":"not_verified"},{"segment_id":"seg_timeline_b6946a34d345","start_sec":2444,"citations":[],"evidence_state":"not_verified"},{"segment_id":"seg_timeline_1e77aa6014ab","start_sec":2630,"citations":[],"evidence_state":"not_verified"},{"segment_id":"seg_timeline_24685834e9dc","start_sec":4735,"citations":[],"evidence_state":"not_verified"}]}</script>
+
+<style id="summaryEvidenceControlsStyle">
+  .summary-evidence-quote-citations {
+    display: flex; flex-wrap: wrap; gap: 6px 10px;
+  }
+  .summary-evidence-quote-citation {
+    display: inline-flex; align-items: baseline; gap: 3px;
+    color: var(--muted); line-height: 1.55;
+  }
+  .summary-evidence-quote-citation a {
+    color: var(--tc); font-weight: 700; text-decoration: none;
+  }
+  .summary-evidence-quote-citation a:hover {
+    color: var(--text-strong); text-decoration: underline; text-underline-offset: 3px;
+  }
+  .summary-evidence-quote-citation q {
+    color: var(--text); quotes: none; overflow-wrap: anywhere; word-break: break-word;
+  }
+  .summary-evidence-not-verified {
+    color: var(--muted); font-size: 12px; line-height: 1.5;
+  }
+</style>
+<script id="summaryEvidenceControlsScript">
+(function () {
+  const quoteDataEl = document.getElementById('summaryEvidenceQuoteCitationsData');
+  if (!quoteDataEl) return;
+  let quotePayload = {};
+  if (quoteDataEl) {
+    try {
+      quotePayload = JSON.parse(quoteDataEl.textContent || '{}');
+    } catch (_err) {
+      quotePayload = {};
+    }
+  }
+  const formatTime = (sec) => {
+    const value = Number(sec);
+    if (!Number.isFinite(value) || value < 0) return '';
+    const total = Math.floor(value);
+    const h = Math.floor(total / 3600);
+    const m = Math.floor((total % 3600) / 60);
+    const s = total % 60;
+    return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  };
+  const chzzkUrlAt = (sec) => {
+    const videoNo = String(quotePayload?.video_no || '').trim();
+    const value = Number(sec);
+    if (!videoNo || !Number.isFinite(value) || value < 0) return '';
+    return `https://chzzk.naver.com/video/${encodeURIComponent(videoNo)}?currentTime=${Math.floor(value)}`;
+  };
+  const quoteBySegment = new Map();
+  if (
+    quotePayload &&
+    quotePayload.raw_transcript_content_included !== true &&
+    Array.isArray(quotePayload.items)
+  ) {
+    quotePayload.items.forEach((item) => {
+      if (!item || !item.segment_id || !Array.isArray(item.citations)) return;
+      quoteBySegment.set(String(item.segment_id), item);
+    });
+  }
+  if (!quoteBySegment.size) return;
+
+  const mountQuoteCitations = (card, item) => {
+    if (!item || !Array.isArray(item.citations)) return false;
+    let evidence = card.querySelector('.t-evidence');
+    if (!evidence) {
+      evidence = document.createElement('div');
+      evidence.className = 't-evidence';
+      const body = card.querySelector('.t-body');
+      if (body) body.insertAdjacentElement('afterend', evidence);
+      else card.append(evidence);
+    }
+    const wrap = document.createElement('div');
+    wrap.className = 'summary-evidence-quote-citations';
+    wrap.setAttribute('data-summary-evidence-quote-citations-mounted', '1');
+    item.citations.filter((row) =>
+      row && typeof row.quote === 'string' && row.quote.trim()
+      && Number.isFinite(Number(row.start_sec))
+      && /^\d{2,}:\d{2}:\d{2}$/.test(String(row.timecode || ''))
+      && String(row.match_status || '') !== 'unmatched'
+    ).slice(0, 8).forEach((row) => {
+      const quote = String(row.quote || '').trim();
+      const chip = document.createElement('span');
+      chip.className = 'summary-evidence-quote-citation';
+      const time = row.timecode || formatTime(row.start_sec);
+      const url = chzzkUrlAt(row.start_sec);
+      if (time && url) {
+        const link = document.createElement('a');
+        link.href = url;
+        link.target = '_blank';
+        link.rel = 'noopener';
+        link.textContent = `[${time}]`;
+        link.title = '치지직 다시보기에서 이 근거 시점부터 재생';
+        chip.append(link);
+      } else if (time) {
+        const span = document.createElement('span');
+        span.textContent = `[${time}]`;
+        chip.append(span);
+      }
+      const q = document.createElement('q');
+      q.textContent = quote;
+      chip.append(q);
+      wrap.append(chip);
+    });
+    if (!wrap.childElementCount) {
+      const status = document.createElement('span');
+      status.className = 'summary-evidence-not-verified';
+      status.setAttribute('role', 'note');
+      status.textContent = '확인 가능한 자막·채팅 근거 없음';
+      wrap.append(status);
+    }
+    evidence.replaceChildren(wrap);
+    return true;
+  };
+
+  document.querySelectorAll('.t-item[data-segment-id]').forEach((card) => {
+    const segmentId = card.getAttribute('data-segment-id') || '';
+    mountQuoteCitations(card, quoteBySegment.get(segmentId));
+  });
+}());
+</script>
 <div class="public-report-toast" data-copy-report-toast role="status" aria-live="polite"></div>
 <script id="publicReportNavScript">
 (() => {

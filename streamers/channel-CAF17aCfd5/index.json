@@ -1,0 +1,44 @@
+{
+  "streamer": {
+    "streamer_id": "channel-CAF17aCfd5",
+    "streamer_name": "Rick Astley",
+    "channel_id": "UCuAXFkgsw1L7xaCfnd5JJOw",
+    "platform": "chzzk",
+    "vod_count": 1
+  },
+  "vods": [
+    {
+      "kind": "vod",
+      "video_no": "dQw4w9WgXcQ",
+      "streamer_id": "channel-CAF17aCfd5",
+      "streamer_name": "Rick Astley",
+      "title": "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)",
+      "published_at": "2009-10-25T00:00:00",
+      "ended_at": "2009-10-25T00:03:33",
+      "duration_sec": 213,
+      "platform_category": null,
+      "stats": {
+        "total_chats": 0,
+        "highlight_count": 0
+      }
+    }
+  ],
+  "bundles": [],
+  "reports": [
+    {
+      "kind": "vod",
+      "video_no": "dQw4w9WgXcQ",
+      "streamer_id": "channel-CAF17aCfd5",
+      "streamer_name": "Rick Astley",
+      "title": "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)",
+      "published_at": "2009-10-25T00:00:00",
+      "ended_at": "2009-10-25T00:03:33",
+      "duration_sec": 213,
+      "platform_category": null,
+      "stats": {
+        "total_chats": 0,
+        "highlight_count": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "streamer": {
+    "streamer_id": "channel-C9D051AA",
+    "streamer_name": "나나 다시보기",
+    "channel_id": "UCmmzr9DL0_t5ui1TAZjv-nA",
+    "platform": "chzzk",
+    "vod_count": 1
+  },
+  "vods": [
+    {
+      "kind": "vod",
+      "video_no": "cE9MsdU-sYA",
+      "streamer_id": "channel-C9D051AA",
+      "streamer_name": "나나 다시보기",
+      "title": "[ 2026/3/14 ] 겁이 없다는 뜻 아닌가요? 아 [롤 내전 (w. 승우아빠, 텐코 시부키, 멋사, 아야, 달콤레나, 채현찌, 따효니, 탬탬버린, 이춘향)] | 나나 다시보기",
+      "published_at": "2026-03-14T00:00:00",
+      "ended_at": "2026-03-14T07:22:30",
+      "duration_sec": 26550,
+      "platform_category": null,
+      "stats": {
+        "total_chats": 0,
+        "highlight_count": 0
+      }
+    }
+  ],
+  "bundles": [],
+  "reports": [
+    {
+      "kind": "vod",
+      "video_no": "cE9MsdU-sYA",
+      "streamer_id": "channel-C9D051AA",
+      "streamer_name": "나나 다시보기",
+      "title": "[ 2026/3/14 ] 겁이 없다는 뜻 아닌가요? 아 [롤 내전 (w. 승우아빠, 텐코 시부키, 멋사, 아야, 달콤레나, 채현찌, 따효니, 탬탬버린, 이춘향)] | 나나 다시보기",
+      "published_at": "2026-03-14T00:00:00",
+      "ended_at": "2026-03-14T07:22:30",
+      "duration_sec": 26550,
+      "platform_category": null,
+      "stats": {
+        "total_chats": 0,
+        "highlight_count": 0
+      }
+    }
+  ]
+}

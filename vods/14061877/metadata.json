@@ -2699,7 +2699,7 @@
       "count": 109
     }
   ],
-  "processed_at": "2026-07-06T21:29:22.697900+09:00",
+  "processed_at": "2026-07-08T00:17:47.123741+09:00",
   "evidence_verifier": {
     "schema_version": "evidence_verifier.v1",
     "status": "pass",
@@ -5529,53 +5529,46 @@
         "key": "streamer_vocab",
         "name": "스트리머 어휘/lexicon",
         "required": false,
-        "status": "present",
-        "reason": "고유명사/별명 보정 후보가 있습니다.",
+        "status": "missing_optional",
+        "reason": "어휘 보정 후보가 없습니다.",
         "retry_condition": "streamer_vocab 저장 또는 lexicon 빌드 뒤 다시 요약합니다.",
         "detail": {
-          "term_count": 30
+          "term_count": 0
         }
       },
       {
         "key": "manager_edit_lessons",
         "name": "관리자 수정 사례",
         "required": false,
-        "status": "present",
-        "reason": "이전 관리자 수정 사례가 프롬프트에 반영됩니다.",
+        "status": "missing_optional",
+        "reason": "이전 수정 사례 없이 요약합니다.",
         "retry_condition": "관리자 저장 이력이 쌓인 뒤 다시 요약합니다.",
         "detail": {
-          "lesson_count": 3
+          "lesson_count": 0
         }
       },
       {
         "key": "manager_fewshot_examples",
         "name": "관리자 수정 few-shot",
         "required": false,
-        "status": "present",
-        "reason": "검증된 관리자 수정 전/후 예시가 프롬프트에 반영됩니다.",
+        "status": "not_configured",
+        "reason": "few-shot 주입이 꺼져 있거나 검증된 후보가 없어 반영되지 않았습니다.",
         "retry_condition": "fewshot_injection_enabled=true 설정과 highlight_learning weak_positive 후보가 있는 상태에서 다시 요약합니다.",
         "detail": {
-          "example_count": 3,
-          "fingerprint": "cb54fb56b35f"
+          "example_count": 0,
+          "fingerprint": ""
         }
       },
       {
         "key": "streamer_recent_context",
         "name": "최근 공개 맥락",
         "required": false,
-        "status": "present",
-        "reason": "최근 공개 맥락 후보가 요약 보조 입력으로 반영됩니다.",
+        "status": "not_configured",
+        "reason": "최근 공개 맥락 파일럿이 이 실행에서 사용되지 않았습니다.",
         "retry_condition": "streamer_recent_context_enabled=true 후 공개 소스 수집을 다시 실행합니다. 실패해도 요약은 계속 진행됩니다.",
         "detail": {
-          "item_count": 7,
-          "source_count": 2,
-          "sources": [
-            "fmkorea",
-            "chzzk_public"
-          ],
-          "diagnostic_status_counts": {
-            "ok": 3
-          }
+          "item_count": 0,
+          "source_count": 0
         }
       },
       {
@@ -5586,7 +5579,7 @@
         "reason": "시청자 클립 anchor 후보가 있습니다.",
         "retry_condition": "viewer clip 수집/anchor 회수 뒤 다시 요약합니다.",
         "detail": {
-          "total": 4,
+          "total": 5,
           "with_offset": 4,
           "with_engagement": 4,
           "status": "ok"
@@ -6367,23 +6360,6 @@
     -27.611,
     -54.588
   ],
-  "audio_feature_source": {
-    "kind": "relative_loudness_main_pipeline",
-    "enabled_by_default": true,
-    "window_sec": 5,
-    "min_percentile": 0.95,
-    "min_gap_sec": 30,
-    "chat_overlap_sec": 60,
-    "max_peaks": 20,
-    "waveform_max_points": 720,
-    "normalization": "per_vod_relative_percentile_and_z_score",
-    "decision_rule": "audio is supporting evidence; audio-only peaks do not prove highlight importance",
-    "sample_count": 21786,
-    "source_kind": "whisper_wav_cache",
-    "sample_extraction": "wav_pcm_python",
-    "source_count": 7,
-    "include_lufs": false
-  },
   "audio_waveform": {
     "schema_version": "audio_waveform.v1",
     "source": "audio_loudness_windows",
@@ -9996,6 +9972,24 @@
         "value": 0.6496
       }
     ]
+  },
+  "audio_feature_source": {
+    "kind": "relative_loudness_main_pipeline",
+    "enabled_by_default": true,
+    "window_sec": 5,
+    "min_percentile": 0.95,
+    "min_gap_sec": 30,
+    "chat_overlap_sec": 60,
+    "max_peaks": 20,
+    "waveform_max_points": 720,
+    "normalization": "per_vod_relative_percentile_and_z_score",
+    "decision_rule": "audio is supporting evidence; audio-only peaks do not prove highlight importance",
+    "sample_count": 21786,
+    "source_kind": "whisper_wav_cache",
+    "sample_extraction": "wav_pcm_python",
+    "source_count": 7,
+    "include_lufs": false,
+    "reused_from_cache": true
   },
   "summary_run_ledger": {
     "schema_version": "summary_run_ledger.v1",

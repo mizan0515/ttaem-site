@@ -1,12 +1,44 @@
 {
   "streamer": {
     "streamer_id": "truman-server-pilot",
-    "streamer_name": "비공개 항목",
-    "channel_id": null,
+    "streamer_name": "TRUMAN 서버 파일럿",
+    "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
     "platform": "chzzk",
-    "vod_count": 0
+    "vod_count": 1
   },
-  "vods": [],
+  "vods": [
+    {
+      "kind": "vod",
+      "video_no": "truman_server_20260702162353_stage-c-smoke-20260702-142625",
+      "streamer_id": "truman-server-pilot",
+      "streamer_name": "TRUMAN 서버 파일럿",
+      "title": "TRUMAN 서버 격리 수집 후보",
+      "published_at": "2026-07-02T16:23:53+00:00",
+      "ended_at": "",
+      "duration_sec": 0,
+      "platform_category": "server_role_import",
+      "stats": {
+        "total_chats": 0,
+        "highlight_count": 0
+      }
+    }
+  ],
   "bundles": [],
-  "reports": []
+  "reports": [
+    {
+      "kind": "vod",
+      "video_no": "truman_server_20260702162353_stage-c-smoke-20260702-142625",
+      "streamer_id": "truman-server-pilot",
+      "streamer_name": "TRUMAN 서버 파일럿",
+      "title": "TRUMAN 서버 격리 수집 후보",
+      "published_at": "2026-07-02T16:23:53+00:00",
+      "ended_at": "",
+      "duration_sec": 0,
+      "platform_category": "server_role_import",
+      "stats": {
+        "total_chats": 0,
+        "highlight_count": 0
+      }
+    }
+  ]
 }

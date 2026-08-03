@@ -20,7 +20,7 @@
         "chat",
         "chat_surprise",
         "laughter_burst",
-        "question_cluster"
+        "chat_laughter"
       ],
       "laughter_burst": true,
       "segment_id": "seg_highlight_candidate_20d913a9748b",
@@ -539,7 +539,7 @@
       "count": 28,
       "source_signals": [
         "chat",
-        "question_cluster"
+        "chat_laughter"
       ],
       "laughter_burst": false,
       "segment_id": "seg_highlight_candidate_cb5a2d6e7400",

@@ -1,0 +1,26 @@
+{
+  "category": "server_role_import",
+  "channel": "TRUMAN 서버 파일럿",
+  "channel_id": "",
+  "duration": 0,
+  "publish_date": "2026-07-02T16:23:53Z",
+  "schema_version": 1,
+  "server_role_import": {
+    "candidate_id": "stage-c-smoke-20260702-142625",
+    "imported_at": "2026-07-02T16:23:53Z",
+    "isolated_source_label": ".codex-work isolated TRUMAN collection result",
+    "learning_eligibility": "pending_manager_review_or_edit",
+    "manager_edited_label": "created only after Report Admin save/edit",
+    "not_default_applied": true,
+    "not_published": true,
+    "original_generated_label": "imported local review draft, not manager edited yet",
+    "publish_revision_label": "created only through existing publish revision flow",
+    "raw_collection_label": "TRUMAN raw/sidecar data remains isolated until explicitly classified",
+    "schema_version": "report_admin_server_role_import.v1",
+    "source_status_artifact_ref": ".codex-work/remote-pc-server-transition/chzz/phase1-serverization-pilot/stage-c-bounded-default/g7/stage-c-current-status.json",
+    "source_status_path": ".codex-work/remote-pc-server-transition/chzz/phase1-serverization-pilot/stage-c-bounded-default/g7/stage-c-current-status.json"
+  },
+  "streamer_id": "truman-server-pilot",
+  "title": "TRUMAN 서버 격리 수집 후보",
+  "video_no": "truman_server_20260702162353_stage-c-smoke-20260702-142625"
+}

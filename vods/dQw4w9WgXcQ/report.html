@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster) — YouTube 방송 분석 리포트</title>
+<style>
+body{margin:0;background:#111827;color:#e5e7eb;font-family:system-ui,sans-serif;line-height:1.7}
+main{max-width:900px;margin:0 auto;padding:32px 20px 64px}
+.source{padding:16px;border:1px solid #374151;border-radius:12px;background:#1f2937}
+a{color:#60a5fa;word-break:break-all} article{margin-top:24px;padding:24px;background:#1f2937;border-radius:12px}
+h1,h2,h3{line-height:1.3;color:#f9fafb} .muted{color:#9ca3af}
+.public-report-nav {
+    position: sticky; top: 0; z-index: 1000;
+    background: rgba(26,27,38,0.96);
+    border-bottom: 1px solid var(--border, #363b54);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .public-report-nav-inner {
+    max-width: 960px; margin: 0 auto; padding: 12px 40px;
+    display: flex; justify-content: space-between; gap: 16px;
+    align-items: center;
+  }
+  .public-report-nav-links {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  }
+  .public-report-brand {
+    color: var(--text-strong, #e8ebf3); font-weight: 800; font-size: 15px;
+    text-decoration: none; white-space: nowrap;
+  }
+  .public-report-brand:hover { color: var(--text-strong, #e8ebf3); text-decoration: none; }
+  .public-report-nav-link {
+    color: var(--muted, #7982a9); padding: 6px 10px; border-radius: 8px;
+    font: inherit; font-size: 13px; font-weight: 700; text-decoration: none;
+    white-space: nowrap;
+  }
+  .public-report-nav-link:hover {
+    background: rgba(122,162,247,0.12); color: var(--text-strong, #e8ebf3);
+    text-decoration: none;
+  }
+  .public-report-hero-tools {
+    margin: 0 0 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  }
+  .public-report-vod-switcher {
+    display: inline-flex; align-items: center; min-width: 0; overflow: hidden;
+    border: 1px solid rgba(121,130,169,0.24); border-radius: 999px;
+    background: rgba(255,255,255,0.025);
+  }
+  .public-report-vod-link,
+  .public-report-copy-button {
+    color: var(--muted, #7982a9); font: inherit; font-size: 12px; font-weight: 800;
+    line-height: 1.2; text-decoration: none; white-space: nowrap;
+  }
+  .public-report-vod-link {
+    display: inline-flex; align-items: center; gap: 5px; min-height: 30px;
+    padding: 0 10px; border-right: 1px solid rgba(121,130,169,0.18);
+  }
+  .public-report-vod-link:last-child { border-right: 0; }
+  .public-report-vod-link:hover,
+  .public-report-copy-button:hover {
+    background: rgba(122,162,247,0.10); color: var(--text-strong, #e8ebf3);
+    text-decoration: none;
+  }
+  .public-report-vod-link.is-current {
+    color: var(--text, #c0caf5); background: rgba(122,162,247,0.08);
+  }
+  .public-report-vod-link.is-disabled {
+    color: rgba(121,130,169,0.46); pointer-events: none;
+  }
+  .public-report-share {
+    display: flex; align-items: center; gap: 8px; flex: 0 0 auto;
+  }
+  .public-report-copy-button {
+    appearance: none; border: 1px solid rgba(121,130,169,0.32);
+    border-radius: 999px; background: rgba(255,255,255,0.03); cursor: pointer;
+    display: inline-flex; align-items: center; gap: 6px; min-height: 28px;
+    padding: 5px 10px;
+  }
+  .public-report-vod-link svg,
+  .public-report-copy-button svg {
+    width: 14px; height: 14px; stroke: currentColor; stroke-width: 2;
+    fill: none; flex: 0 0 auto;
+    stroke-linecap: round; stroke-linejoin: round;
+  }
+  .public-report-toast {
+    position: fixed; right: 24px; bottom: 24px; z-index: 2000;
+    display: inline-flex; align-items: center; gap: 8px;
+    max-width: min(360px, calc(100vw - 32px)); padding: 10px 14px;
+    border: 1px solid rgba(158,206,106,0.42); border-radius: 999px;
+    background: rgba(26,27,38,0.96); color: var(--text-strong, #e8ebf3);
+    box-shadow: 0 16px 42px rgba(0,0,0,0.34);
+    font: inherit; font-size: 13px; font-weight: 800; line-height: 1.3;
+    opacity: 0; transform: translateY(10px); pointer-events: none;
+    transition: opacity 160ms ease, transform 160ms ease;
+  }
+  .public-report-toast.is-visible {
+    opacity: 1; transform: translateY(0);
+  }
+  .public-report-toast svg {
+    width: 15px; height: 15px; stroke: var(--accent, #9ece6a);
+    stroke-width: 2.2; fill: none; stroke-linecap: round; stroke-linejoin: round;
+  }
+  .main { padding-top: 32px !important; }
+  @media (max-width: 760px) {
+    .public-report-nav-inner { padding: 10px 16px; }
+    .public-report-nav-links { overflow-x: auto; max-width: 100%; flex-wrap: nowrap; padding-bottom: 2px; }
+    .public-report-hero-tools { margin-bottom: 18px; gap: 10px; overflow-x: auto; }
+    .public-report-vod-switcher { flex: 0 0 auto; }
+    .public-report-toast { right: 12px; left: 12px; bottom: 14px; justify-content: center; }
+  }
+
+</style>
+</head>
+<body>
+<nav class="public-report-nav" data-report-block="public-report-nav" aria-label="리포트 이동">
+  <div class="public-report-nav-inner">
+    <a class="public-report-brand" href="../../index.html">VOD 요약 허브</a>
+    <div class="public-report-nav-links">
+      <a class="public-report-nav-link" href="../../index.html">스트리머</a>
+      <a class="public-report-nav-link" href="../../search.html">검색</a>
+      <button type="button" class="report-editor-nav-button" hidden>편집자 모드로 보기</button>
+    </div>
+  </div>
+</nav>
+<main>
+<header>
+<div class="public-report-hero-tools" data-report-block="public-report-tools" aria-label="현재 리포트 도구">
+  <div class="public-report-vod-switcher" aria-label="방송 이동">
+    <span class="public-report-vod-link is-disabled" aria-label="이전 방송 없음" title="이전 방송 없음"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg><span>이전</span></span>
+    <a class="public-report-vod-link is-current" href="../../streamer.html?s=channel-CAF17aCfd5" aria-label="Rick Astley 방송 목록" title="Rick Astley 방송 목록">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13"></path><path d="M8 12h13"></path><path d="M8 18h13"></path><path d="M3 6h.01"></path><path d="M3 12h.01"></path><path d="M3 18h.01"></path></svg><span>목록</span>
+    </a>
+    <span class="public-report-vod-link is-disabled" aria-label="다음 방송 없음" title="다음 방송 없음"><span>다음</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></span>
+  </div>
+  <div class="public-report-share">
+    <button class="public-report-copy-button" type="button" data-copy-report-link aria-label="현재 리포트 링크 복사">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1"></path><path d="M14 11a5 5 0 0 0-7.1 0l-2 2a5 5 0 0 0 7.1 7.1l1.1-1.1"></path></svg><span>복사</span>
+    </button>
+  </div>
+</div>
+<h1>Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)</h1><p class="muted">Rick Astley</p>
+<p class="source"><strong>원본:</strong> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a></p></header>
+<article><p>- <strong>▶️ YouTube 원본 영상:</strong> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a></p><p><h2>📋 방송 분석 리포트: Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)</h2></p><p>- <strong>🔗 요약 웹페이지:</strong> <a href="https://ttaem.com/vods/dQw4w9WgXcQ/report" target="_blank" rel="noopener">https://ttaem.com/vods/dQw4w9WgXcQ/report</a></p><p>- <strong>핵심 요약:</strong> #NeverGonnaGiveYouUp #사랑의약속 #후렴명곡</p><p>&gt; &quot;절대 떠나지 않겠다는 약속이 반복될수록, 이 노래의 한마디는 더 강한 선언이 된다.&quot;</p><p><h3>📍 타임라인 상세 요약</h3></p><p>    - 내용: “A full commitment's what I'm thinking of”라는 가사로 가벼운 사랑이 아닌 진지한 약속을 먼저 꺼낸다.</p><p>    - 내용: “We're no strangers to love”라며 서로 사랑을 낯설어하지 않는 관계임을 짚고, 헌신의 메시지를 이어간다.</p><p>    - 내용: “Never gonna give you up”, “Never gonna let you down”을 연달아 부르며 포기와 실망을 모두 부정하는 핵심 약속을 선명하게 던진다.</p><p>    - 내용: “We've known each other for so long” 뒤에 “Your heart's been aching but you're too shy to say it”이 이어지며, 말하지 못한 마음을 조심스럽게 드러낸다.</p><p>    - 내용: “Never gonna make you cry”, “Never gonna say goodbye”, “Never gonna tell a lie and hurt you”로 약속의 범위를 더 넓히며 후렴을 거듭 강조한다.</p><p>    - 내용: “(Ooh, give you up)”과 “Never gonna give, never gonna give”가 짧게 반복되며 다음 전개로 넘어갈 추진력을 만든다.</p><p>    - 내용: “Inside we both know what's been going on”, “We know the game and we're gonna play it”이라며 두 사람이 이미 관계의 상황을 알고 있음을 다시 확인한다.</p><p>    - 내용: “Never gonna give you up”, “Never gonna let you down”, “Never gonna say goodbye”가 이어지며 포기하지 않겠다는 노래의 중심 메시지를 마지막까지 밀어붙인다.</p><p><h3>🎬 하이라이트 추천 구간</h3></p><p>    - 추천 이유: 대표 후렴과 관계의 고백이 연달아 배치돼 곡의 메시지를 가장 빠르게 전달하는 구간이다.</p><p>    - 추천 이유: “울게 하지 않겠다”, “거짓말로 상처 주지 않겠다”는 가사가 한 번에 이어져 감정선이 또렷하다.</p><p>    - 추천 이유: 짧고 중독적인 반복 구절이 다음 파트로 향하는 전환점 역할을 한다.</p><p>    - 추천 이유: 서로의 마음을 확인한 뒤 대표 후렴으로 돌아가는 구조가 곡의 결말을 압축한다.</p><p><h3>📝 에디터의 방송 후기</h3></p><p>이 곡은 시작부터 “A full commitment's what I'm thinking of”라고 못 박으며 사랑을 가볍게 다루지 않는다. 오래 알고 지낸 두 사람이 서로의 마음을 알면서도 말하지 못했다는 고백이 이어지고, 후렴은 그 망설임에 대한 단호한 답처럼 들린다.</p><p>“Never gonna give you up”이라는 한 문장은 단순히 반복되는 훅이 아니라, 포기하지 않겠다는 약속을 여러 방식으로 확장하는 중심축이다. 실망시키지 않겠고, 떠나지 않겠고, 울리지 않겠고, 거짓말로 상처 주지도 않겠다는 선언이 마지막 후렴까지 이어지며 노래 전체를 선명하게 완성한다.<br>
+</p></article>
+</main><div class="public-report-toast" data-copy-report-toast role="status" aria-live="polite"></div>
+<script id="publicReportNavScript">
+(() => {
+  const copyBtn = document.querySelector('[data-copy-report-link]');
+  const toast = document.querySelector('[data-copy-report-toast]');
+  let toastTimer = null;
+  const showToast = (message, ok = true) => {
+    if (!toast) return;
+    toast.innerHTML = ok
+      ? '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>' + message + '</span>'
+      : '<span>' + message + '</span>';
+    toast.classList.add('is-visible');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => { toast.classList.remove('is-visible'); }, 1700);
+  };
+  if (!copyBtn) return;
+  copyBtn.addEventListener('click', async () => {
+    const href = location.href.split('#')[0];
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(href);
+      } else {
+        const ta = document.createElement('textarea');
+        ta.value = href;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        ta.remove();
+      }
+      showToast('링크 복사됨');
+    } catch {
+      showToast('복사 실패', false);
+    }
+  });
+})();
+</script>
+</body></html>

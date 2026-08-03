@@ -4,9 +4,354 @@
     "streamer_name": "탬탬버린",
     "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
     "platform": "chzzk",
-    "vod_count": 108
+    "vod_count": 131
   },
   "vods": [
+    {
+      "kind": "vod",
+      "video_no": "14514842",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "벨튀방송 ٩(●'▿'●)۶",
+      "published_at": "2026-08-03T20:52:37+09:00",
+      "ended_at": "2026-08-03T22:05:30+09:00",
+      "duration_sec": 4373,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 16359,
+        "highlight_count": 23
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14462631",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "생존신고 방송 ٩(●'▿'●)۶",
+      "published_at": "2026-07-31T16:09:55+09:00",
+      "ended_at": "2026-07-31T17:01:38+09:00",
+      "duration_sec": 3103,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 10040,
+        "highlight_count": 17
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14356803",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까? ٩(●'▿'●)۶",
+      "published_at": "2026-07-24T18:54:47+09:00",
+      "ended_at": "2026-07-25T00:55:25+09:00",
+      "duration_sec": 21638,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 102095,
+        "highlight_count": 21
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14338032",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "카밀서폿이 1티어인 세계선에서 살아남으려면 나도 카밀에 탑승해야해 ٩(●'▿'●)۶",
+      "published_at": "2026-07-23T17:38:20+09:00",
+      "ended_at": "2026-07-23T23:19:02+09:00",
+      "duration_sec": 20442,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 54770,
+        "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14282426",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 스페인 vs 아르헨티나 메시 우승 가즈아 ٩(●'▿'●)۶",
+      "published_at": "2026-07-20T02:34:05+09:00",
+      "ended_at": "2026-07-20T07:57:37+09:00",
+      "duration_sec": 19412,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 72359,
+        "highlight_count": 23
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14277773",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "오늘의 경기력은 어떨까요~?? GEN vs T1 - KC vs DK | 3,4위전 - 결승 #EWC2026 ٩(●'▿'●)۶",
+      "published_at": "2026-07-19T18:54:16+09:00",
+      "ended_at": "2026-07-20T01:06:52+09:00",
+      "duration_sec": 22356,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 92526,
+        "highlight_count": 22
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14265918",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 3,4위전 프랑스 VS 잉글랜드 ٩(●'▿'●)۶",
+      "published_at": "2026-07-19T05:34:47+09:00",
+      "ended_at": "2026-07-19T08:31:32+09:00",
+      "duration_sec": 10605,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 29451,
+        "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14262358",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "난 꿈을 꾸고 있는걸까 KC vs T1 - GEN vs DK 4강 EWC 2026 #EWC2026٩(●'▿'●)۶",
+      "published_at": "2026-07-18T19:50:54+09:00",
+      "ended_at": "2026-07-19T02:25:12+09:00",
+      "duration_sec": 23658,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 99114,
+        "highlight_count": 19
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14254433",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "한시간 동안 마구 떠들기 ٩(●'▿'●)۶",
+      "published_at": "2026-07-18T19:09:01+09:00",
+      "ended_at": "2026-07-18T19:50:32+09:00",
+      "duration_sec": 2491,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 4663,
+        "highlight_count": 16
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14244140",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "즐겨욧 DK VS BLG EWC 2026  #EWC2026٩(●'▿'●)۶",
+      "published_at": "2026-07-17T20:03:22+09:00",
+      "ended_at": "2026-07-18T01:12:31+09:00",
+      "duration_sec": 18549,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 88336,
+        "highlight_count": 22
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14237823",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "게시판 열기 ٩(●'▿'●)۶",
+      "published_at": "2026-07-17T19:06:33+09:00",
+      "ended_at": "2026-07-17T20:03:02+09:00",
+      "duration_sec": 3389,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 8633,
+        "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14230248",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "힐링 데바데 즐기기 ٩(●'▿'●)۶",
+      "published_at": "2026-07-16T22:20:07+09:00",
+      "ended_at": "2026-07-17T03:36:32+09:00",
+      "duration_sec": 18985,
+      "platform_category": "데드 바이 데이라이트",
+      "stats": {
+        "total_chats": 23807,
+        "highlight_count": 19
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14223026",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "티원 제발 화이팅 T1 VS GAM EWC 2026 #EWC2026 ٩(●'▿'●)۶",
+      "published_at": "2026-07-16T17:29:13+09:00",
+      "ended_at": "2026-07-16T22:19:31+09:00",
+      "duration_sec": 17418,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 57206,
+        "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14215674",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 4깅 잉글랜드 VS 아르헨티나 레츠고 ٩(●'▿'●)۶",
+      "published_at": "2026-07-16T03:36:03+09:00",
+      "ended_at": "2026-07-16T06:16:15+09:00",
+      "duration_sec": 9612,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 26315,
+        "highlight_count": 21
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14205098",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "렛츠고 T1!!! GEN vs KC - GAM vs T1 리그오브레전드 EWC 2026 #EWC2026 ٩(●'▿'●)۶",
+      "published_at": "2026-07-15T18:52:42+09:00",
+      "ended_at": "2026-07-15T20:31:58+09:00",
+      "duration_sec": 5956,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 22895,
+        "highlight_count": 21
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14204008",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "올만에 데바데 내전 ٩(●'▿'●)۶",
+      "published_at": "2026-07-15T14:44:04+09:00",
+      "ended_at": "2026-07-15T18:52:12+09:00",
+      "duration_sec": 14888,
+      "platform_category": "데드 바이 데이라이트",
+      "stats": {
+        "total_chats": 22112,
+        "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14199763",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북미 월드컵 4강 프랑스 VS 스페인 가자아ㅏㅏㅏㅏㅏ ٩(●'▿'●)۶",
+      "published_at": "2026-07-15T03:35:13+09:00",
+      "ended_at": "2026-07-15T06:08:35+09:00",
+      "duration_sec": 9202,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 24728,
+        "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14190341",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "울밥탬 보스 트라이 가보자 ٩(●'▿'●)۶",
+      "published_at": "2026-07-14T15:17:11+09:00",
+      "ended_at": "2026-07-14T21:36:01+09:00",
+      "duration_sec": 22730,
+      "platform_category": "메이플스토리",
+      "stats": {
+        "total_chats": 31280,
+        "highlight_count": 21
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14161468",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "한화 우승 가자!!!!!!!!!!!!!! BLG vs HLE | 결승전 | MSI 2026 #MSI2026 ٩(●'▿'●)۶",
+      "published_at": "2026-07-12T15:19:18+09:00",
+      "ended_at": "2026-07-12T22:18:02+09:00",
+      "duration_sec": 25124,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 93995,
+        "highlight_count": 22
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14153661",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 8깅 노르웨이 vs 잉글랜드 드가자ㅏㅏ ٩(●'▿'●)۶",
+      "published_at": "2026-07-12T05:45:18+09:00",
+      "ended_at": "2026-07-12T08:52:14+09:00",
+      "duration_sec": 11216,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 31903,
+        "highlight_count": 19
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14143426",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "제발 한국인이면 한화 응원합시다 HLE vs LYON | 브래킷 스테이지 패자조 최종전 #MSI2026 ٩(●'▿'●)۶",
+      "published_at": "2026-07-11T12:23:38+09:00",
+      "ended_at": "2026-07-11T21:26:28+09:00",
+      "duration_sec": 32570,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 123465,
+        "highlight_count": 24
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14109505",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "LCK의 희망!!!!!! BLG vs HLE | 브래킷 스테이지 승자조 최종전 | MSI 2026 ٩(●'▿'●)۶",
+      "published_at": "2026-07-09T15:28:06+09:00",
+      "ended_at": "2026-07-09T20:59:25+09:00",
+      "duration_sec": 19879,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 58806,
+        "highlight_count": 23
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14098455",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "FC온라인 처음 해봅니다. 치아조심. 탬명보 아닙니다. 저는 저를 안버렸습니다. ٩(●'▿'●)۶",
+      "published_at": "2026-07-08T14:28:13+09:00",
+      "ended_at": "2026-07-09T00:29:11+09:00",
+      "duration_sec": 36058,
+      "platform_category": "FC온라인",
+      "stats": {
+        "total_chats": 159355,
+        "highlight_count": 21
+      }
+    },
     {
       "kind": "vod",
       "video_no": "14061877",
@@ -1719,6 +2064,351 @@
     }
   ],
   "reports": [
+    {
+      "kind": "vod",
+      "video_no": "14514842",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "벨튀방송 ٩(●'▿'●)۶",
+      "published_at": "2026-08-03T20:52:37+09:00",
+      "ended_at": "2026-08-03T22:05:30+09:00",
+      "duration_sec": 4373,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 16359,
+        "highlight_count": 23
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14462631",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "생존신고 방송 ٩(●'▿'●)۶",
+      "published_at": "2026-07-31T16:09:55+09:00",
+      "ended_at": "2026-07-31T17:01:38+09:00",
+      "duration_sec": 3103,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 10040,
+        "highlight_count": 17
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14356803",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까? ٩(●'▿'●)۶",
+      "published_at": "2026-07-24T18:54:47+09:00",
+      "ended_at": "2026-07-25T00:55:25+09:00",
+      "duration_sec": 21638,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 102095,
+        "highlight_count": 21
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14338032",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "카밀서폿이 1티어인 세계선에서 살아남으려면 나도 카밀에 탑승해야해 ٩(●'▿'●)۶",
+      "published_at": "2026-07-23T17:38:20+09:00",
+      "ended_at": "2026-07-23T23:19:02+09:00",
+      "duration_sec": 20442,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 54770,
+        "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14282426",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 스페인 vs 아르헨티나 메시 우승 가즈아 ٩(●'▿'●)۶",
+      "published_at": "2026-07-20T02:34:05+09:00",
+      "ended_at": "2026-07-20T07:57:37+09:00",
+      "duration_sec": 19412,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 72359,
+        "highlight_count": 23
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14277773",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "오늘의 경기력은 어떨까요~?? GEN vs T1 - KC vs DK | 3,4위전 - 결승 #EWC2026 ٩(●'▿'●)۶",
+      "published_at": "2026-07-19T18:54:16+09:00",
+      "ended_at": "2026-07-20T01:06:52+09:00",
+      "duration_sec": 22356,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 92526,
+        "highlight_count": 22
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14265918",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 3,4위전 프랑스 VS 잉글랜드 ٩(●'▿'●)۶",
+      "published_at": "2026-07-19T05:34:47+09:00",
+      "ended_at": "2026-07-19T08:31:32+09:00",
+      "duration_sec": 10605,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 29451,
+        "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14262358",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "난 꿈을 꾸고 있는걸까 KC vs T1 - GEN vs DK 4강 EWC 2026 #EWC2026٩(●'▿'●)۶",
+      "published_at": "2026-07-18T19:50:54+09:00",
+      "ended_at": "2026-07-19T02:25:12+09:00",
+      "duration_sec": 23658,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 99114,
+        "highlight_count": 19
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14254433",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "한시간 동안 마구 떠들기 ٩(●'▿'●)۶",
+      "published_at": "2026-07-18T19:09:01+09:00",
+      "ended_at": "2026-07-18T19:50:32+09:00",
+      "duration_sec": 2491,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 4663,
+        "highlight_count": 16
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14244140",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "즐겨욧 DK VS BLG EWC 2026  #EWC2026٩(●'▿'●)۶",
+      "published_at": "2026-07-17T20:03:22+09:00",
+      "ended_at": "2026-07-18T01:12:31+09:00",
+      "duration_sec": 18549,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 88336,
+        "highlight_count": 22
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14237823",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "게시판 열기 ٩(●'▿'●)۶",
+      "published_at": "2026-07-17T19:06:33+09:00",
+      "ended_at": "2026-07-17T20:03:02+09:00",
+      "duration_sec": 3389,
+      "platform_category": "talk",
+      "stats": {
+        "total_chats": 8633,
+        "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14230248",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "힐링 데바데 즐기기 ٩(●'▿'●)۶",
+      "published_at": "2026-07-16T22:20:07+09:00",
+      "ended_at": "2026-07-17T03:36:32+09:00",
+      "duration_sec": 18985,
+      "platform_category": "데드 바이 데이라이트",
+      "stats": {
+        "total_chats": 23807,
+        "highlight_count": 19
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14223026",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "티원 제발 화이팅 T1 VS GAM EWC 2026 #EWC2026 ٩(●'▿'●)۶",
+      "published_at": "2026-07-16T17:29:13+09:00",
+      "ended_at": "2026-07-16T22:19:31+09:00",
+      "duration_sec": 17418,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 57206,
+        "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14215674",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 4깅 잉글랜드 VS 아르헨티나 레츠고 ٩(●'▿'●)۶",
+      "published_at": "2026-07-16T03:36:03+09:00",
+      "ended_at": "2026-07-16T06:16:15+09:00",
+      "duration_sec": 9612,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 26315,
+        "highlight_count": 21
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14205098",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "렛츠고 T1!!! GEN vs KC - GAM vs T1 리그오브레전드 EWC 2026 #EWC2026 ٩(●'▿'●)۶",
+      "published_at": "2026-07-15T18:52:42+09:00",
+      "ended_at": "2026-07-15T20:31:58+09:00",
+      "duration_sec": 5956,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 22895,
+        "highlight_count": 21
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14204008",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "올만에 데바데 내전 ٩(●'▿'●)۶",
+      "published_at": "2026-07-15T14:44:04+09:00",
+      "ended_at": "2026-07-15T18:52:12+09:00",
+      "duration_sec": 14888,
+      "platform_category": "데드 바이 데이라이트",
+      "stats": {
+        "total_chats": 22112,
+        "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14199763",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북미 월드컵 4강 프랑스 VS 스페인 가자아ㅏㅏㅏㅏㅏ ٩(●'▿'●)۶",
+      "published_at": "2026-07-15T03:35:13+09:00",
+      "ended_at": "2026-07-15T06:08:35+09:00",
+      "duration_sec": 9202,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 24728,
+        "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14190341",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "울밥탬 보스 트라이 가보자 ٩(●'▿'●)۶",
+      "published_at": "2026-07-14T15:17:11+09:00",
+      "ended_at": "2026-07-14T21:36:01+09:00",
+      "duration_sec": 22730,
+      "platform_category": "메이플스토리",
+      "stats": {
+        "total_chats": 31280,
+        "highlight_count": 21
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14161468",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "한화 우승 가자!!!!!!!!!!!!!! BLG vs HLE | 결승전 | MSI 2026 #MSI2026 ٩(●'▿'●)۶",
+      "published_at": "2026-07-12T15:19:18+09:00",
+      "ended_at": "2026-07-12T22:18:02+09:00",
+      "duration_sec": 25124,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 93995,
+        "highlight_count": 22
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14153661",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "북중미 월드컵 8깅 노르웨이 vs 잉글랜드 드가자ㅏㅏ ٩(●'▿'●)۶",
+      "published_at": "2026-07-12T05:45:18+09:00",
+      "ended_at": "2026-07-12T08:52:14+09:00",
+      "duration_sec": 11216,
+      "platform_category": "2026 FIFA 북중미 월드컵",
+      "stats": {
+        "total_chats": 31903,
+        "highlight_count": 19
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14143426",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "제발 한국인이면 한화 응원합시다 HLE vs LYON | 브래킷 스테이지 패자조 최종전 #MSI2026 ٩(●'▿'●)۶",
+      "published_at": "2026-07-11T12:23:38+09:00",
+      "ended_at": "2026-07-11T21:26:28+09:00",
+      "duration_sec": 32570,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 123465,
+        "highlight_count": 24
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14109505",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "LCK의 희망!!!!!! BLG vs HLE | 브래킷 스테이지 승자조 최종전 | MSI 2026 ٩(●'▿'●)۶",
+      "published_at": "2026-07-09T15:28:06+09:00",
+      "ended_at": "2026-07-09T20:59:25+09:00",
+      "duration_sec": 19879,
+      "platform_category": "리그 오브 레전드",
+      "stats": {
+        "total_chats": 58806,
+        "highlight_count": 23
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14098455",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "FC온라인 처음 해봅니다. 치아조심. 탬명보 아닙니다. 저는 저를 안버렸습니다. ٩(●'▿'●)۶",
+      "published_at": "2026-07-08T14:28:13+09:00",
+      "ended_at": "2026-07-09T00:29:11+09:00",
+      "duration_sec": 36058,
+      "platform_category": "FC온라인",
+      "stats": {
+        "total_chats": 159355,
+        "highlight_count": 21
+      }
+    },
     {
       "kind": "vod",
       "video_no": "14061877",

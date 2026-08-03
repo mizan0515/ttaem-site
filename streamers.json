@@ -4,7 +4,7 @@
     "streamer_name": "탬탬버린",
     "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
     "platform": "chzzk",
-    "vod_count": 108
+    "vod_count": 131
   },
   {
     "streamer_id": "channel-0dad8baf12a436f722faa8e5001c5011",
@@ -24,6 +24,34 @@
     "streamer_id": "channel-c42cd75ec4855a9edf204a407c3c1dd2",
     "streamer_name": "치지직",
     "channel_id": "c42cd75ec4855a9edf204a407c3c1dd2",
+    "platform": "chzzk",
+    "vod_count": 1
+  },
+  {
+    "streamer_id": "channel-Cbb9FF242",
+    "streamer_name": "스텔누키 KR",
+    "channel_id": "UCRisJkbQjMb9FQFRmoz242w",
+    "platform": "chzzk",
+    "vod_count": 1
+  },
+  {
+    "streamer_id": "channel-C9D051AA",
+    "streamer_name": "나나 다시보기",
+    "channel_id": "UCmmzr9DL0_t5ui1TAZjv-nA",
+    "platform": "chzzk",
+    "vod_count": 1
+  },
+  {
+    "streamer_id": "channel-CAF17aCfd5",
+    "streamer_name": "Rick Astley",
+    "channel_id": "UCuAXFkgsw1L7xaCfnd5JJOw",
+    "platform": "chzzk",
+    "vod_count": 1
+  },
+  {
+    "streamer_id": "truman-server-pilot",
+    "streamer_name": "TRUMAN 서버 파일럿",
+    "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
     "platform": "chzzk",
     "vod_count": 1
   }

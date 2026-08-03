@@ -1,6 +1,5 @@
 ## 📋 방송 분석 리포트: 레테 공주님 숙제 ㄱㄱ링 ٩(●'▿'●)۶
 
-- **🔗 요약 웹페이지:** [https://ttaem.com/vods/14061877/report](https://ttaem.com/vods/14061877/report)
 - **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/14061877](https://chzzk.naver.com/video/14061877)
 
 - **핵심 요약:** #T1 #메이플스토리 #숙제방송
@@ -9,43 +8,43 @@
 
 ### 📍 타임라인 상세 요약
 
-- **[00:13:02](https://chzzk.naver.com/video/14061877?currentTime=782) T1 비상! -> 우승 , 비상! -> 우승** (분위기: 😬)
+- **[00:13:02](https://chzzk.naver.com/video/14061877?currentTime=782) T1 위기 경고가 초반부터 방송을 흔들어버림** (분위기: 😬)
     - 경기 흐름을 보며 T1이 크게 흔들린다고 짚고, “이번엔 진짜 비상”이라는 표현으로 초반 긴장감을 확 끌어올린다.
     - 근거: “아, 비상. 비상! 비상!! 이번엔 진짜 비상!!!” “이번엔 T1 진.짜 비상!!!! 탈락인까!”
 
-- **[00:26:50](https://chzzk.naver.com/video/14061877?currentTime=1610) 멜밀 밴픽 토론에서 신드라 선택! 달아오르게 만듦** (분위기: 🎮)
-    - 멜과 카밀 관련 밴픽 해석이 이어지고, 채팅도 “멜 드가자” 식으로 반응하며 조합 계산이 본격적으로 붙다가 신드라가 나오자 달아오른다.
+- **[00:26:50](https://chzzk.naver.com/video/14061877?currentTime=1610) 멜밀 밴픽 토론이 채팅까지 달아오르게 만듦** (분위기: 🎮)
+    - 멜과 밀 관련 밴픽 해석이 이어지고, 채팅도 “멜 드가자” 식으로 반응하며 조합 계산이 본격적으로 붙는다.
     - 근거: “멜 가자” “멜 드가자ㅏㅏ” “멜밀 카운터 준비했나?”
 
-- **[00:29:04](https://chzzk.naver.com/video/14061877?currentTime=1744) 1세트 게임 시작** (분위기: 🎮)
+- **[00:29:04](https://chzzk.naver.com/video/14061877?currentTime=1744) 티원 템포 신호가 나오며 운영 기대감이 커짐** (분위기: 🎮)
     - 미니언 운영과 템포를 언급하며 “가보자, 티원이”로 분위기를 끌어올린다. 빠른 움직임과 주도권이 핵심으로 잡힌다.
     - 근거: “미니언스 스포이네요. 오케이, 가보자, 티원이.” “믿을게!” “미드께!”
 
-- **[00:33:05](https://chzzk.naver.com/video/14061877?currentTime=1985) 리신 굴리기 시작하면서 스노우볼이 눈에 띄게 커짐** (분위기: 🔥)
+- **[00:33:24](https://chzzk.naver.com/video/14061877?currentTime=2004) 리신 굴리기 시작하면서 스노우볼이 눈에 띄게 커짐** (분위기: 🔥)
     - 리신 킬과 연계가 이어지며 “리신 굴린다”는 반응이 나온다. 한 번 이득이 나자 흐름이 급격히 기울어지는 장면이다.
     - 근거: “리신 킬만 쓰는 게 더 비상인데” “아, 미쳤다, 이거, 힙하다, 이거 리신 굴린다.”
 
-- **[00:34:44](https://chzzk.naver.com/video/14061877?currentTime=2084) 바텀 다이브** (분위기: 😂)
-    - 밴하다 경기를 제대로 못본것과 바텀 다이브가 겹친 구간.
+- **[00:35:00](https://chzzk.naver.com/video/14061877?currentTime=2100) 안 죽고 버티는 장면에 채팅이 폭소로 터져버림** (분위기: 😂)
+    - 안 죽는 생존 타이밍에 채팅이 연속으로 터지고, 해설도 점멸과 생존 타이밍을 아쉬워하며 웃음 포인트를 만든다.
     - 근거: “아 저게 안죽네” “이게 사네” “ㅋㅋㅋㅋㅋ”
 
-- **[00:40:49](https://chzzk.naver.com/video/14061877?currentTime=2449) 한타에 이어서 제이스 점멸 수싸움이 미묘한 불리함으로 굳어짐** (분위기: 😬)
+- **[00:41:06](https://chzzk.naver.com/video/14061877?currentTime=2466) 제이스 점멸 수싸움이 미묘한 불리함으로 굳어짐** (분위기: 😬)
     - 제이스가 점멸까지 써서 한 번 막아보려 했던 장면을 짚으며, 턴을 쓰는 흐름이 약간 불리하다고 본다.
     - 근거: “제이스가 점멸까지 쓰면서 한 번 막을 생각이었는데” “이건 약간 기분 나쁘긴 하네요.”
 
-- **[01:01:59](https://chzzk.naver.com/video/14061877?currentTime=3719) T1이 1세트를 선취하면서 경기 흐름을 잡아버림** (분위기: 🎮)
+- **[01:12:56](https://chzzk.naver.com/video/14061877?currentTime=4376) T1이 1세트를 선취하면서 경기 흐름을 잡아버림** (분위기: 🎮)
     - 브레이킷 스테이지 1라운드 1세트를 T1이 가져가며 1대0 구도가 된다. 압도적으로 승리했다는 평가가 붙는다.
     - 근거: “첫 번째 세트 T1이 담아내면서 1대0입니다” “압도적으로 승리를 따냈습니다”
 
-- **[01:27:50](https://chzzk.naver.com/video/14061877?currentTime=5270) 상대팀 바드 로밍이 묶이며 답답함이 본격적으로 드러남** (분위기: 🎮)
+- **[01:27:50](https://chzzk.naver.com/video/14061877?currentTime=5270) 바드 로밍이 묶이며 답답함이 본격적으로 드러남** (분위기: 🎮)
     - T1이 바드의 움직임을 봉쇄해 로밍 자체를 못 가게 만든다. 바드가 한타 변수는 있어도 당장은 답답하다는 흐름이다.
     - 근거: “지금 바드는 똥마려워” “로밍도 못 가? 존재의 이유가 뭐야?”
 
-- **[01:30:25](https://chzzk.naver.com/video/14061877?currentTime=5425) 2세트 초반 용 한타구간** (분위기: 😂)
-    - 이즈한테 자르반이 빨리며 t1이 기분좋은 출발을 가져가지는 못한다
-    - 근거: "-"
+- **[01:30:29](https://chzzk.naver.com/video/14061877?currentTime=5429) 바드 밴픽 밈·드립이 완전히 터져버림** (분위기: 😂)
+    - 럭스 대신 바드였으면 더 터졌을 거라는 농담과 함께 밴픽 밈·드립이 오간다. 조합 딜레마를 웃음으로 풀어내는 구간이다.
+    - 근거: “저 럭스가 바드였으면 더터짐 ㅋㅋ” “밴할 것인가 바드를?”
 
-- **[01:46:56](https://chzzk.naver.com/video/14061877?currentTime=6416) 결국 캐틀한테 다 써야 한다는 결론이 선명해짐** (분위기: 🎮)
+- **[01:43:16](https://chzzk.naver.com/video/14061877?currentTime=6196) 결국 캐틀한테 다 써야 한다는 결론이 선명해짐** (분위기: 🎮)
     - 상대 핵심 딜러를 어떻게 처리할지 판단이 모이고, 이후 교전의 초점이 캐틀 쪽으로 완전히 쏠린다.
     - 근거: “캐틀한테 다써야됩니다, 결국에” “그거 아니면 게임 못 이기고”
 
@@ -57,12 +56,16 @@
     - 승리 직후에는 결과를 정리하며 넘어가지만, 내용이 좋았다고 보긴 어려운 톤이 남는다.
     - 근거: “이겼으니까 뭐 더 말은 안 하겠습니다” “고생했다” “제발 우승하자 ㅠㅠㅠㅠ”
 
+- **[03:05:37](https://chzzk.naver.com/video/14061877?currentTime=11137) 이겼으니 분노를 다스리자고 정리해버림** (분위기: 💬)
+    - 경기 내용이 마음에 들지 않아도 결국 승리했으니 넘어가자는 식으로 감정을 수습한다.
+    - 근거: “이겼으니까 내 분노를 다스리자” “그냥 이겼으니깐 오케이 넘어가야지!”
+
 - **[03:14:33](https://chzzk.naver.com/video/14061877?currentTime=11673) 2부 숙제 선택지로 메이플 보스와 피파게임이 갈림** (분위기: 💬)
     - 방송 후반부 숙제로 무엇을 할지 두고 메이플 보스와 피파게임 사이에서 고민이 이어진다.
     - 근거: “메이플 보스냐, 아니면 피파게임이냐?” “그냥 지금 보스를 도는 게 맞을 듯?”
 
-- **[03:20:14](https://chzzk.naver.com/video/14061877?currentTime=12014) 통나무·지게꾼·골프채 티어중 통나무 티어로 피파대회 참가 ** (분위기: 😂)
-    - 통나무·지게꾼·골프채 티어중 통나무 티어로 피파대회 참가한것을 이야기한다. 채팅 반응도 함께 살아난다.
+- **[03:20:14](https://chzzk.naver.com/video/14061877?currentTime=12014) 통나무·지게꾼 밈·드립이 한꺼번에 번져버림** (분위기: 😂)
+    - 선수/팀 표현을 통나무, 지게꾼 같은 말로 바꿔 부르며 밈·드립처럼 확산된다. 채팅 반응도 함께 살아난다.
     - 근거: “골프채, 지게꾼, 통나무!” “지게꾼ㅋㅋㅋ” “통나무가 제일 강해보이네”
 
 - **[03:39:59](https://chzzk.naver.com/video/14061877?currentTime=13199) 메이플 숙제에 본격 진입하면서 극딜 준비가 시작됨** (분위기: 🎮)
@@ -102,6 +105,8 @@
 5. **[05:39:01~05:41:06](https://chzzk.naver.com/video/14061877?currentTime=20341) 숙제 종료 후 보상 정산과 불만 토크가 섞인 엔딩 구간**
     - 추천 이유: 전투가 끝난 뒤의 여운과 평가가 같이 담겨 있어 방송 마무리 클립으로 좋다.
 
+6. **[03:01:39~03:01:39](https://chzzk.naver.com/video/14061877?currentTime=10899)** ㅇㄹㅂ [INJECTED · 시청자 클립 2/309]
+    - 추천 이유: 시청자가 직접 클립으로 잘라낸 호평 신호 시점.
 
 
 ### 📝 에디터의 방송 후기
@@ -112,23 +117,23 @@
 
 ### 치지직 댓글 타임라인
 
-- [00:13:02](https://chzzk.naver.com/video/14061877?currentTime=782) T1 비상! -> 우승 , 비상! -> 우승
-- [00:26:50](https://chzzk.naver.com/video/14061877?currentTime=1610) 멜밀 밴픽 토론에서 신드라 선택! 달아오르게 만듦
-- [00:29:04](https://chzzk.naver.com/video/14061877?currentTime=1744) 1세트 게임 시작
-- [00:33:05](https://chzzk.naver.com/video/14061877?currentTime=1985) 리신 굴리기 시작하면서 스노우볼이 눈에 띄게 커짐
-- [00:34:44](https://chzzk.naver.com/video/14061877?currentTime=2084) 바텀 다이브
-- [00:40:49](https://chzzk.naver.com/video/14061877?currentTime=2449) 한타에 이어서 제이스 점멸 수싸움이 미묘한 불리함으로 굳어짐
-- [01:01:59](https://chzzk.naver.com/video/14061877?currentTime=3719) T1이 1세트를 선취하면서 경기 흐름을 잡아버림
-- [01:27:50](https://chzzk.naver.com/video/14061877?currentTime=5270) 상대팀 바드 로밍이 묶이며 답답함이 본격적으로 드러남
-- [01:30:25](https://chzzk.naver.com/video/14061877?currentTime=5425) 2세트 초반 용 한타구간
-- [01:46:56](https://chzzk.naver.com/video/14061877?currentTime=6416) 결국 캐틀한테 다 써야 한다는 결론이 선명해짐
-- [01:56:16](https://chzzk.naver.com/video/14061877?currentTime=6976) 2세트 승리 뒤에도 찝찝함이 남는 이상한 분위기
-- [03:00:56](https://chzzk.naver.com/video/14061877?currentTime=10856) 경기 끝나고 쿨하게 마무리했지만 분위기는 여전히 매움
-- [03:14:33](https://chzzk.naver.com/video/14061877?currentTime=11673) 2부 숙제 선택지로 메이플 보스와 피파게임이 갈림
-- [03:20:14](https://chzzk.naver.com/video/14061877?currentTime=12014) 통나무·지게꾼·골프채 티어중 통나무 티어로 피파대회 참가
-- [03:39:59](https://chzzk.naver.com/video/14061877?currentTime=13199) 메이플 숙제에 본격 진입하면서 극딜 준비가 시작됨
-- [04:02:37](https://chzzk.naver.com/video/14061877?currentTime=14557) 빨강 상태로 안정화되며 진행이 살아남
-- [04:20:26](https://chzzk.naver.com/video/14061877?currentTime=15626) 게이지 안 채우면 추방이라는 기믹이 방송을 비상으로 몰아넣음
-- [04:43:00](https://chzzk.naver.com/video/14061877?currentTime=16980) 제네 무적로 아슬아슬하게 위기를 넘겨버림
-- [05:39:01](https://chzzk.naver.com/video/14061877?currentTime=20341) 숙제 마무리와 보상 정산으로 방송이 편안하게 내려감
-
+- [00:13:02](https://chzzk.naver.com/video/14061877?currentTime=782) T1 위기 경고
+- [00:26:50](https://chzzk.naver.com/video/14061877?currentTime=1610) 멜밀 밴픽 토론
+- [00:29:04](https://chzzk.naver.com/video/14061877?currentTime=1744) 티원 템포 신호
+- [00:33:24](https://chzzk.naver.com/video/14061877?currentTime=2004) 리신 스노우볼 시작
+- [00:35:00](https://chzzk.naver.com/video/14061877?currentTime=2100) 생존 장면
+- [00:41:06](https://chzzk.naver.com/video/14061877?currentTime=2466) 제이스 점멸 수싸움
+- [01:12:56](https://chzzk.naver.com/video/14061877?currentTime=4376) T1 1세트 선취
+- [01:27:50](https://chzzk.naver.com/video/14061877?currentTime=5270) 바드 로밍 봉쇄
+- [01:30:29](https://chzzk.naver.com/video/14061877?currentTime=5429) 바드 밴픽 밈
+- [01:43:16](https://chzzk.naver.com/video/14061877?currentTime=6196) 캐틀 집중 판단
+- [01:56:16](https://chzzk.naver.com/video/14061877?currentTime=6976) 2세트 승리 후 불안
+- [03:00:56](https://chzzk.naver.com/video/14061877?currentTime=10856) 경기 후 마무리
+- [03:05:37](https://chzzk.naver.com/video/14061877?currentTime=11137) 분노 다스리기
+- [03:14:33](https://chzzk.naver.com/video/14061877?currentTime=11673) 2부 숙제 선택
+- [03:20:14](https://chzzk.naver.com/video/14061877?currentTime=12014) 통나무 지게꾼 밈
+- [03:39:59](https://chzzk.naver.com/video/14061877?currentTime=13199) 메이플 숙제 시작
+- [04:02:37](https://chzzk.naver.com/video/14061877?currentTime=14557) 빨강 상태 안정화
+- [04:20:26](https://chzzk.naver.com/video/14061877?currentTime=15626) 추방 기믹 경고
+- [04:43:00](https://chzzk.naver.com/video/14061877?currentTime=16980) 제네 무적 생존
+- [05:39:01](https://chzzk.naver.com/video/14061877?currentTime=20341) 숙제 마무리
