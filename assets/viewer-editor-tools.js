@@ -1638,6 +1638,58 @@ function initViewerEditorTools() {
     startOnce();
   }
 }
+function initViewerClipPlayers() {
+  if (document.documentElement.dataset.viewerClipPlayersInitialized === '1') return;
+  document.documentElement.dataset.viewerClipPlayersInitialized = '1';
+
+  const closePlayer = (dialog, returnFocus) => {
+    dialog.querySelector('iframe')?.remove();
+    if (dialog.open) dialog.close();
+    dialog.remove();
+    if (returnFocus?.isConnected) returnFocus.focus();
+  };
+
+  document.addEventListener('click', (event) => {
+      const button = event.target.closest('.user-clip-play[data-clip-id]');
+      if (!button) return;
+      const clipId = button.dataset.clipId || '';
+      if (!clipId) return;
+      document.querySelector('.user-clip-dialog')?.remove();
+
+      const params = new URLSearchParams({
+        parent: window.location.hostname || 'localhost',
+        autoplay: '0',
+        muted: '1',
+      });
+      const frame = document.createElement('iframe');
+      frame.className = 'user-clip-dialog-frame';
+      frame.src = `https://chzzk.naver.com/embed/clip/${encodeURIComponent(clipId)}?${params}`;
+      frame.title = `${button.dataset.clipTitle || 'CHZZK 클립'} 플레이어`;
+      frame.allow = 'autoplay; clipboard-write; web-share';
+      frame.allowFullscreen = true;
+      const dialog = document.createElement('dialog');
+      dialog.className = 'user-clip-dialog';
+      dialog.setAttribute('aria-label', frame.title);
+      dialog.innerHTML = `<div class="user-clip-dialog-head"><strong></strong><button type="button" class="user-clip-dialog-close" aria-label="클립 영상 닫기">×</button></div><div class="user-clip-dialog-body"></div>`;
+      dialog.querySelector('strong').textContent = button.dataset.clipTitle || 'CHZZK 클립';
+      dialog.querySelector('.user-clip-dialog-body').appendChild(frame);
+      document.body.appendChild(dialog);
+      dialog.querySelector('.user-clip-dialog-close').addEventListener('click', () => closePlayer(dialog, button));
+      dialog.addEventListener('cancel', (event) => {
+        event.preventDefault();
+        closePlayer(dialog, button);
+      });
+      dialog.addEventListener('click', (event) => {
+        if (event.target === dialog) closePlayer(dialog, button);
+      });
+      dialog.showModal();
+  });
+}
 document.addEventListener('DOMContentLoaded', initEditorSplitMode);
 document.addEventListener('DOMContentLoaded', initEditorEntryState);
 document.addEventListener('DOMContentLoaded', initViewerEditorTools);
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initViewerClipPlayers);
+} else {
+  initViewerClipPlayers();
+}

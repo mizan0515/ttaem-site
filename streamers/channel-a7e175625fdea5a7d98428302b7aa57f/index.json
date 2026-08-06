@@ -4,7 +4,7 @@
     "streamer_name": "탬탬버린",
     "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
     "platform": "chzzk",
-    "vod_count": 131
+    "vod_count": 132
   },
   "vods": [
     {
@@ -1970,6 +1970,21 @@
       "stats": {
         "total_chats": 53729,
         "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14555580",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "오늘 잎이 떨어지더라도 데바데 내전을 하고싶어 ٩(●'▿'●)۶",
+      "published_at": "2026-08-05T21:42:32+09:00",
+      "ended_at": "2026-08-06T06:40:27+09:00",
+      "duration_sec": 32275,
+      "platform_category": "데드 바이 데이라이트",
+      "stats": {
+        "total_chats": 79055,
+        "highlight_count": 27
       }
     }
   ],
@@ -4115,6 +4130,21 @@
       "stats": {
         "total_chats": 53729,
         "highlight_count": 20
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14555580",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "오늘 잎이 떨어지더라도 데바데 내전을 하고싶어 ٩(●'▿'●)۶",
+      "published_at": "2026-08-05T21:42:32+09:00",
+      "ended_at": "2026-08-06T06:40:27+09:00",
+      "duration_sec": 32275,
+      "platform_category": "데드 바이 데이라이트",
+      "stats": {
+        "total_chats": 79055,
+        "highlight_count": 27
       }
     }
   ]
