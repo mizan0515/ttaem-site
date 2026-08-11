@@ -175,14 +175,12 @@ function initViewerEditorTools() {
   const dataNode = document.getElementById('viewerEditorToolsData');
   const axisEl = document.getElementById('viewerEditorAxis');
   const evidenceEl = document.getElementById('viewerEditorEvidence');
-  const cutsEl = document.getElementById('viewerEditorCuts');
-  if (!dataNode || !axisEl || !evidenceEl || !cutsEl) return;
+  if (!dataNode || !axisEl || !evidenceEl) return;
   const dataSrc = dataNode.getAttribute('data-src') || '';
   function loadMessage(message) {
     const html = `<div class="viewer-editor-empty">${message}</div>`;
     axisEl.innerHTML = html;
     evidenceEl.innerHTML = html;
-    cutsEl.innerHTML = html;
   }
   function parseInlineData() {
     try { return JSON.parse(dataNode.textContent || '{}'); } catch (_err) { return {}; }
@@ -195,6 +193,7 @@ function initViewerEditorTools() {
   }
   function startViewerEditorTools(data) {
   const events = Array.isArray(data.events) ? data.events : [];
+  const outlineProjection = Array.isArray(data.outline_projection) ? data.outline_projection : [];
   const eventsById = new Map(events.map((event) => [String(event && event.id || ''), event]).filter(([id]) => id));
   const editPointClusterView = data.edit_point_clusters && typeof data.edit_point_clusters === 'object' ? data.edit_point_clusters : {};
   const editPointClusters = Array.isArray(editPointClusterView.clusters) ? editPointClusterView.clusters : [];
@@ -203,14 +202,15 @@ function initViewerEditorTools() {
   const audioWaveform = data.audio_waveform && typeof data.audio_waveform === 'object' ? data.audio_waveform : {};
   const waveformSamples = Array.isArray(audioWaveform.samples) ? audioWaveform.samples : [];
   const preview = data.edit_export_preview && typeof data.edit_export_preview === 'object' ? data.edit_export_preview : {};
-  const duration = Math.max(1, Number(data.duration_sec || 0), Number(audioWaveform.duration_sec || 0), ...events.map((event) => Number(event.end_sec || event.start_sec || 0)), ...buckets.map((row) => Number(row.end_sec || row.start_sec || 0)), ...waveformSamples.map((row) => Number(row.end_sec || row.start_sec || 0)));
+  const duration = Math.max(1, Number(data.duration_sec || 0), Number(audioWaveform.duration_sec || 0), ...events.map((event) => Number(event.end_sec || event.start_sec || 0)), ...outlineProjection.map((event) => Number(event.end_sec || event.start_sec || 0)), ...buckets.map((row) => Number(row.end_sec || row.start_sec || 0)), ...waveformSamples.map((row) => Number(row.end_sec || row.start_sec || 0)));
   const labelsMap = data.labels || {};
   const viewerLabelsMap = data.viewer_labels || {};
   const colorsMap = data.colors || {};
   const purposesMap = data.purposes || {};
   const overviewOnlyLaneKinds = new Set(['audio_waveform', 'chat_volume']);
+  const optionalSceneLaneKinds = new Set(['live_context', 'visual_scene']);
   const eventCountsByKind = events.reduce((map, event) => {
-    const kind = String(event && event.kind || '');
+    const kind = String(event && (event.kind || event.lane) || '');
     if (kind) map.set(kind, (map.get(kind) || 0) + 1);
     return map;
   }, new Map());
@@ -218,6 +218,7 @@ function initViewerEditorTools() {
     return eventCountsByKind.get(String(kind || '')) || 0;
   }
   function shouldHideSceneLane(key) {
+    if (optionalSceneLaneKinds.has(key) && laneActualEventCount(key) === 0) return true;
     return key === 'comment_replay' && laneActualEventCount('chapter') > 0;
   }
   function isRenderableSceneLane(lane) {
@@ -226,8 +227,9 @@ function initViewerEditorTools() {
     if (shouldHideSceneLane(key)) return false;
     const role = String(lane && lane.display_role || '').toLowerCase();
     if (role === 'overview' || overviewOnlyLaneKinds.has(key)) return false;
-    if (laneActualEventCount(key) > 0) return true;
-    return false;
+    // Required lanes keep their empty state; optional producers do not create
+    // placeholder scene rows in the normal editor workspace.
+    return true;
   }
   const lanes = Array.isArray(data.lanes) && data.lanes.length
     ? data.lanes.filter(isRenderableSceneLane)
@@ -235,9 +237,6 @@ function initViewerEditorTools() {
   const kinds = lanes.map((lane) => lane.key);
   const filterEl = document.getElementById('viewerEditorFilter');
   const countEl = document.getElementById('viewerEditorCount');
-  const copyBtn = document.getElementById('viewerEditorCopyCutsBtn');
-  const copyJsonBtn = document.getElementById('viewerEditorCopyJsonBtn');
-  const copyStatus = document.getElementById('viewerEditorCopyStatus');
   const zoomRange = document.getElementById('viewerEditorZoomRange');
   const zoomValue = document.getElementById('viewerEditorZoomValue');
   const zoomOutBtn = document.getElementById('viewerEditorZoomOutBtn');
@@ -253,7 +252,6 @@ function initViewerEditorTools() {
   let selectedEventId = '';
   let renderedAxisEvents = new Map();
   let densityScrollFrame = 0;
-  let cutlistConfirmed = false;
 
   function esc(value) {
     return String(value == null ? '' : value)
@@ -290,6 +288,10 @@ function initViewerEditorTools() {
     const targetSec = row && row.seek_sec != null ? row.seek_sec : sec;
     return `https://chzzk.naver.com/video/${encodeURIComponent(videoNo)}?currentTime=${Math.max(0, Math.floor(Number(targetSec || 0)))}`;
   }
+  function evidenceSourceRow(sec) {
+    const videoNo = String(data.evidence_video_no || '');
+    return videoNo ? { video_no: videoNo, seek_sec: sec } : null;
+  }
   function syncSplitEditorSeek(sec, row) {
     const url = seekUrl(sec, row);
     if (!url) return '';
@@ -298,6 +300,97 @@ function initViewerEditorTools() {
     const splitLink = document.querySelector('.editor-split-action[href*="chzzk.naver.com/video/"]');
     if (splitLink) splitLink.setAttribute('href', url);
     return url;
+  }
+  let activeAxisDisclosure = null;
+  function axisDisclosurePosition(panel, trigger) {
+    const gap = 10, edge = 12;
+    const anchor = trigger.getBoundingClientRect();
+    const panelRect = panel.getBoundingClientRect();
+    const width = panelRect.width, height = panelRect.height;
+    const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+    const maxLeft = Math.max(edge, window.innerWidth - width - edge);
+    const maxTop = Math.max(edge, window.innerHeight - height - edge);
+    const candidates = [
+      {left: anchor.right + gap, top: anchor.top + (anchor.height - height) / 2},
+      {left: anchor.left - width - gap, top: anchor.top + (anchor.height - height) / 2},
+      {left: anchor.left + (anchor.width - width) / 2, top: anchor.bottom + gap},
+      {left: anchor.left + (anchor.width - width) / 2, top: anchor.top - height - gap},
+    ].map((candidate) => ({left: clamp(candidate.left, edge, maxLeft), top: clamp(candidate.top, edge, maxTop)}));
+    const visibleMarkers = Array.from(axisEl.querySelectorAll('.viewer-editor-marker:not([aria-hidden="true"]),.viewer-editor-outline-range,.viewer-editor-outline-point'))
+      .filter((marker) => marker !== trigger && marker.getClientRects().length)
+      .map((marker) => marker.getBoundingClientRect());
+    const overlapArea = (candidate, marker) => Math.max(0, Math.min(candidate.left + width, marker.right) - Math.max(candidate.left, marker.left)) * Math.max(0, Math.min(candidate.top + height, marker.bottom) - Math.max(candidate.top, marker.top));
+    const best = candidates
+      .map((candidate, index) => ({...candidate, score: visibleMarkers.reduce((total, marker) => total + overlapArea(candidate, marker), 0), index}))
+      .sort((a, b) => a.score - b.score || a.index - b.index)[0];
+    panel.style.left = `${Math.round(best.left)}px`;
+    panel.style.top = `${Math.round(best.top)}px`;
+  }
+  function hideAxisHierarchyPreview() {
+    const preview = document.getElementById('viewer-editor-collision-shared-preview');
+    if (preview) preview.hidden = true;
+    axisEl.querySelectorAll('[aria-describedby="viewer-editor-collision-shared-preview"]').forEach((node) => node.removeAttribute('aria-describedby'));
+  }
+  function setAxisDisclosure(panel, trigger, open, restoreFocus = false) {
+    const cluster = trigger.closest('.viewer-editor-collision-cluster');
+    if (open) {
+      if (activeAxisDisclosure && activeAxisDisclosure.panel !== panel) {
+        setAxisDisclosure(activeAxisDisclosure.panel, activeAxisDisclosure.trigger, false);
+      }
+      hideAxisHierarchyPreview();
+      panel.classList.add('viewer-editor-floating-disclosure');
+      document.body.append(panel);
+      panel.hidden = false;
+      axisDisclosurePosition(panel, trigger);
+      trigger.setAttribute('aria-expanded', 'true');
+      cluster?.classList.add('viewer-editor-disclosure-open');
+      activeAxisDisclosure = { panel, trigger };
+      return;
+    }
+    panel.hidden = true;
+    panel.classList.remove('viewer-editor-floating-disclosure');
+    panel.style.left = '';
+    panel.style.top = '';
+    trigger.setAttribute('aria-expanded', 'false');
+    cluster?.classList.remove('viewer-editor-disclosure-open');
+    panel.remove();
+    if (activeAxisDisclosure && activeAxisDisclosure.panel === panel) activeAxisDisclosure = null;
+    if (restoreFocus && trigger.isConnected) trigger.focus();
+  }
+  function closeActiveAxisDisclosure(exceptTrigger = null, restoreFocus = false) {
+    if (!activeAxisDisclosure || activeAxisDisclosure.trigger === exceptTrigger) return;
+    setAxisDisclosure(activeAxisDisclosure.panel, activeAxisDisclosure.trigger, false, restoreFocus);
+  }
+  document.addEventListener('pointerdown', (event) => {
+    if (!activeAxisDisclosure) return;
+    const { panel, trigger } = activeAxisDisclosure;
+    if (panel.contains(event.target) || trigger.contains(event.target)) return;
+    closeActiveAxisDisclosure();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape' || !activeAxisDisclosure) return;
+    event.preventDefault();
+    closeActiveAxisDisclosure(null, true);
+  });
+  if (typeof axisEl.addEventListener === 'function') {
+    axisEl.addEventListener('scroll', () => closeActiveAxisDisclosure(), {passive: true});
+  }
+  if (typeof window !== 'undefined') {
+    window.addEventListener('resize', () => closeActiveAxisDisclosure());
+  }
+  function bindMarkerActivation(marker, activate) {
+    marker.addEventListener('click', activate);
+    marker.addEventListener('keydown', (event) => {
+      if (event.key !== 'Enter' && event.key !== ' ') return;
+      event.preventDefault();
+      activate();
+    });
+  }
+  function activateAxisEventMarker(marker) {
+    closeActiveAxisDisclosure(marker);
+    const event = renderedAxisEvents.get(String(marker.dataset.eventId || '')) || events.find((item) => item.id === marker.dataset.eventId);
+    syncSplitEditorSeek(event && event.start_sec, event);
+    renderEvidence(event || null);
   }
   function clipUrl(uid) {
     const raw = String(uid || '').trim();
@@ -332,6 +425,18 @@ function initViewerEditorTools() {
         : sampleSeek;
     }
     return scoped;
+  }
+  function hasVerifiedExplicitSource(row) {
+    if (!row || typeof row !== 'object') return false;
+    const status = String(row.verifier_status || row.source_verification_status || '').trim().toUpperCase();
+    return row.verified_source === true || row.source_verified === true || status === 'VERIFIED_SOURCE_VIDEO';
+  }
+  function canonicalSelectedSourceRow(row, selectedEvent) {
+    const scoped = contextSourceRow(row);
+    if (hasVerifiedExplicitSource(scoped) && (scoped.video_no || scoped.source_video_no)) return scoped;
+    const canonicalVideoNo = String(selectedEvent && (selectedEvent.video_no || selectedEvent.source_video_no) || '').trim();
+    if (!canonicalVideoNo) return scoped;
+    return { ...scoped, video_no: canonicalVideoNo, source_video_no: canonicalVideoNo };
   }
   function timecodeToSec(value) {
     const parts = String(value || '').split(':').map((part) => Number(part));
@@ -648,56 +753,6 @@ function initViewerEditorTools() {
     }
     return messages;
   }
-  function friendlyPreviewStatus(status) {
-    const raw = String(status || '').toLowerCase();
-    if (!raw || raw === 'unverified' || raw === 'draft') return '검토용';
-    if (raw === 'pass' || raw === 'ok' || raw === 'ready') return '복사 가능';
-    if (raw === 'fail' || raw === 'error') return '확인 필요';
-    return String(status || '검토용');
-  }
-  function friendlyPreviewSource(source) {
-    const raw = String(source || '');
-    if (!raw || raw === 'segment_ledger') return '요약·하이라이트·댓글 시각 기준';
-    return raw;
-  }
-  function clipTitle(clip, index) {
-    const title = String(clip && clip.title || '').trim();
-    if (title) return title;
-    return `컷 후보 ${index}`;
-  }
-  function clipMemoText(clips) {
-    return clips.map((clip, index) => {
-      const title = clipTitle(clip, index + 1);
-      const start = displayTime(clip, clip.start_sec);
-      const end = clip && clip.end_seek_sec != null
-        ? displayTime({ ...clip, seek_sec: clip.end_seek_sec }, clip.end_sec)
-        : displayTime(clip, clip.end_sec);
-      return `${index + 1}. ${start}-${end} | ${title}`;
-    }).join('\n');
-  }
-  function publicEdlText() {
-    return String(preview.edl || '')
-      .split('\n')
-      .filter((line) => !line.startsWith('* SEGMENT_ID:'))
-      .join('\n');
-  }
-  function currentCutMemoText() {
-    return clipMemoText(Array.isArray(preview.clips) ? preview.clips : []) || publicEdlText();
-  }
-  function currentCutJsonText() {
-    return JSON.stringify(preview.otio || preview || {}, null, 2);
-  }
-  function updateCutCopyButtons() {
-    const memoText = currentCutMemoText();
-    const jsonText = currentCutJsonText();
-    if (copyBtn) copyBtn.disabled = !cutlistConfirmed || !memoText;
-    if (copyJsonBtn) copyJsonBtn.disabled = !cutlistConfirmed || !jsonText || jsonText === '{}';
-    if (copyStatus) {
-      copyStatus.textContent = cutlistConfirmed
-        ? '확인 완료. 복사 버튼을 사용할 수 있습니다.'
-        : (memoText || jsonText !== '{}' ? '컷 후보를 확인하면 복사 버튼이 켜집니다.' : '');
-    }
-  }
   function isTimeOnlyTitle(title, sec) {
     const raw = String(title || '').trim();
     if (!raw) return true;
@@ -713,6 +768,10 @@ function initViewerEditorTools() {
   }
   function selectedSummaryStatus(event, nearbyEvents) {
     const kind = String(event && event.kind || '');
+    const explicitLabels = Array.isArray(event && event.status_labels) ? event.status_labels.filter(Boolean) : [];
+    if (explicitLabels.length) {
+      return { label: explicitLabels.join(' · '), inSummary: true, warning: false };
+    }
     if (kind === 'timeline' || kind === 'existing_segments') {
       return { label: '요약에 포함됨', inSummary: true, warning: false };
     }
@@ -725,11 +784,11 @@ function initViewerEditorTools() {
     if (nearHighlight) return { label: '하이라이트 근처', inSummary: true, warning: false };
     return { label: '요약 밖 참고 장면', inSummary: false, warning: true };
   }
-  function contextLine(row) {
-    const scoped = contextSourceRow(row);
+  function contextLine(row, selectedEvent) {
+    const scoped = canonicalSelectedSourceRow(row, selectedEvent);
     return `<div class="viewer-editor-context-line"><span class="viewer-editor-context-time">${timeLink(scoped.start_sec, scoped)}</span><span class="viewer-editor-context-text">${linkTimecodesText(scoped.text || '', scoped)}</span></div>`;
   }
-  function renderContextSummary(nearbySubtitles, nearbyBuckets) {
+  function renderContextSummary(nearbySubtitles, nearbyBuckets, selectedEvent) {
     const subtitleRows = nearbySubtitles
       .filter((row) => row && row.text)
       .slice(0, 3);
@@ -737,14 +796,14 @@ function initViewerEditorTools() {
       .filter((row) => row && row.text)
       .slice(3);
     const subtitleHtml = subtitleRows.length
-      ? subtitleRows.map(contextLine).join('') + (hiddenSubtitleRows.length ? `<details class="viewer-editor-context-more"><summary>자막 ${hiddenSubtitleRows.length}줄 더 보기</summary>${hiddenSubtitleRows.map(contextLine).join('')}</details>` : '')
+      ? subtitleRows.map((row) => contextLine(row, selectedEvent)).join('') + (hiddenSubtitleRows.length ? `<details class="viewer-editor-context-more"><summary>자막 ${hiddenSubtitleRows.length}줄 더 보기</summary>${hiddenSubtitleRows.map((row) => contextLine(row, selectedEvent)).join('')}</details>` : '')
       : '<div class="viewer-editor-empty">근처 자막 없음</div>';
     const chatRows = nearbyBuckets
       .filter((row) => Number(row.count || 0) > 0 || (row.samples || []).length)
       .slice(0, 2);
     const chatHtml = chatRows.length
       ? chatRows.map((row) => {
-          const scoped = contextSourceRow(row);
+          const scoped = canonicalSelectedSourceRow(row, selectedEvent);
           const sample = (scoped.samples || []).map((item) => item.text).filter(Boolean).slice(0, 3).join(' / ');
           return `<div class="viewer-editor-context-line"><span class="viewer-editor-context-time">${timeLink(scoped.start_sec, scoped)}</span><span class="viewer-editor-context-text">채팅 ${Number(scoped.count || 0)}개${sample ? ` · ${linkTimecodesText(sample, scoped)}` : ''}</span></div>`;
         }).join('')
@@ -790,7 +849,7 @@ function initViewerEditorTools() {
   }
   function renderWaveformRow() {
     if (!waveformSamples.length) {
-      return `<div class="viewer-editor-waveform-row" data-waveform-row="true"><div class="viewer-editor-waveform-label"><strong>소리 파형</strong><span>파형 데이터 없음</span></div><div class="viewer-editor-waveform"><div class="viewer-editor-empty">소리 파형 데이터 없음</div></div></div>`;
+      return `<div class="viewer-editor-waveform-row" data-waveform-row="true"><div class="viewer-editor-waveform-label"><strong>소리 파형</strong><span>이 신호 없음</span></div><div class="viewer-editor-waveform"><div class="viewer-editor-empty">소리 이 신호 없음</div></div></div>`;
     }
     const bars = waveformSamples.map((row) => {
       const start = Math.max(0, Number(row.start_sec || 0));
@@ -1225,8 +1284,15 @@ function initViewerEditorTools() {
     return `<div class="viewer-editor-density-row" data-real-heatmap-row="true" data-heatmap-zone-count="${zones.length}" data-heatmap-background-density="true"><div class="viewer-editor-density-label"><strong>먼저 볼 구간</strong><span>겹친 신호는 봉우리로, 약한 신호는 배경 밀도로 표시</span><div class="viewer-editor-heatmap-legend" aria-label="열지도 강도 범례">${legend}</div></div><div class="viewer-editor-density viewer-editor-heatmap-track" aria-label="전체 방송 편집 후보 열지도">${surface}${zoneButtons}</div></div>`;
   }
   function renderAxis(options = {}) {
+    closeActiveAxisDisclosure();
     const filter = filterEl ? filterEl.value : '';
-    const visibleEvents = filter ? events.filter((event) => event.kind === filter) : events;
+    // Summary-output lanes remain available through their explicit filters,
+    // but the default editor view shows one official structural answer plus
+    // supporting evidence.  Raw data is retained in the payload.
+    const defaultHiddenLaneKinds = new Set(['existing_segments', 'highlight']);
+    const visibleEvents = filter
+      ? events.filter((event) => event.kind === filter)
+      : events.filter((event) => !defaultHiddenLaneKinds.has(String(event.kind || '')));
     const visibleSceneEvents = eventsForDensity(visibleEvents);
     renderedAxisEvents = new Map();
     const preservedScrollLeft = options.preserveScroll ? axisEl.scrollLeft : null;
@@ -1237,7 +1303,7 @@ function initViewerEditorTools() {
     const visibleMaxChat = maxChatCount(visibleBuckets.length ? visibleBuckets : buckets);
     const densityScaleLabel = buckets.length
       ? `현재 화면 최대 ${visibleMaxChat}개 / 전체 방송 최대 ${globalMaxChat}개 · ${buckets.length}개`
-      : '채팅 데이터 없음';
+      : '이 신호 없음';
     const densityBars = buckets.map((row) => {
       const start = Number(row.start_sec || 0);
       const end = Number(row.end_sec || start + 30);
@@ -1253,13 +1319,63 @@ function initViewerEditorTools() {
       const scaleText = `현재 화면 기준 최대 ${visibleMaxChat}개, 전체 방송 기준 최대 ${globalMaxChat}개`;
       return `<button type="button" class="viewer-editor-density-bar ${stateClass}" data-sec="${start}" aria-label="${esc(`${fmt(start)} ${stateText}. ${scaleText}`)}" title="${esc(`${fmt(start)} ${stateText} · ${scaleText}`)}" style="left:${left}%;width:${width}%"><span style="--bar-h:${h}px;--global-h:${globalH}px"></span></button>`;
     }).join('');
-    const laneRows = lanes.map((lane) => {
-      const kind = lane.key;
-      if (filter && filter !== kind) return '';
-      const laneAllEvents = visibleEvents.filter((event) => event.kind === kind);
+    // Keep the production axis aligned with the shared payload contract. The design
+    // pattern is reusable, but neither its example lane list nor VOD copy is data.
+    // Keep the approved summary-scene signal as its own evidence lane. It is
+    // related to the outline hierarchy, but is not interchangeable with it.
+    const eventLaneKeys = new Set(events.map((event) => String(event && (event.kind || event.lane) || '')).filter(Boolean));
+    const signalTrackDefinitions = lanes
+      .filter((lane) => {
+        const key = String(lane && lane.key || '');
+        if (!filter && defaultHiddenLaneKinds.has(key)) return false;
+        if (filter && defaultHiddenLaneKinds.has(key) && key !== filter) return false;
+        return !optionalSceneLaneKinds.has(key) || eventLaneKeys.has(key);
+      })
+      .map((lane) => {
+        const key = String(lane && lane.key || '');
+        return {
+          key,
+          label: String(viewerLabelsMap[key] || labelsMap[key] || lane.label || key),
+          eventKinds: [key],
+        };
+      });
+    const configuredSignalTrackKeys = new Set(signalTrackDefinitions.map((definition) => definition.key));
+    Array.from(eventLaneKeys).forEach((key) => {
+      if (defaultHiddenLaneKinds.has(key) && key !== filter) return;
+      if (configuredSignalTrackKeys.has(key) || key.startsWith('outline_')) return;
+      signalTrackDefinitions.push({key, label:String(viewerLabelsMap[key]||labelsMap[key]||key), eventKinds:[key]});
+      configuredSignalTrackKeys.add(key);
+    });
+    function signalStateText(definition, matchingLanes, eventCount) {
+      const statuses = matchingLanes.map((lane) => String(lane.status || '').toLowerCase());
+      if (statuses.some((status) => status === 'loading')) return '불러오는 중';
+      if (statuses.some((status) => status === 'error' || status === 'failed')) return '불러오지 못했습니다 · 다시 시도';
+      if (eventCount > 0) return `${eventCount}개`;
+      if (matchingLanes.length) return '이 신호 없음';
+      return '이번 방송에서는 사용되지 않음';
+    }
+    function preserveDensityCollisionCandidates(allEvents, selectedEvents) {
+      const selectedIds = new Set((selectedEvents || []).map((event) => String(event && event.id || '')));
+      const projected = (allEvents || []).map((event, index) => {
+        const start = Math.max(0, Number(event && event.start_sec || 0));
+        const end = Number(event && event.end_sec);
+        const left = (start / duration) * timelineWidth;
+        const rangeWidth = Number.isFinite(end) && end > start + 1 ? ((end - start) / duration) * timelineWidth : 0;
+        const width = Math.max(14, rangeWidth);
+        return {marker:event, left, right:left + width, width, index};
+      }).sort((a, b) => a.left - b.left || a.index - b.index);
+      fixedRepresentativeCollisionGroups(projected, 3)
+        .filter((group) => group.items.length > 1)
+        .forEach((group) => group.items.forEach((item) => selectedIds.add(String(item.marker && item.marker.id || ''))));
+      return (allEvents || []).filter((event) => selectedIds.has(String(event && event.id || '')));
+    }
+    const renderSignalTrackRows = (definitions) => definitions.map((definition) => {
+      const kind = definition.key;
+      if (filter && !definition.eventKinds.includes(filter)) return '';
+      const matchingLanes = lanes.filter((lane) => definition.eventKinds.includes(String(lane.key || '')));
+      const laneAllEvents = visibleEvents.filter((event) => definition.eventKinds.includes(String(event.kind || '')));
       const densityEvents = laneEventsForDensity(kind, laneAllEvents, visibleEvents);
       const laneEvents = clusterLaneEvents(kind, densityEvents);
-      const emptyText = lane.empty_reason || lane.reason || lane.message || '표시할 장면 없음';
       const markers = laneEvents.map((event) => {
         const start = Math.max(0, Number(event.start_sec || 0));
         const end = event.end_sec != null ? Number(event.end_sec) : NaN;
@@ -1270,20 +1386,65 @@ function initViewerEditorTools() {
         const style = hasRange ? `left:${left}%;width:${width}%;${colorStyle}` : `left:${left}%;${colorStyle}`;
         const clusterCount = Number(event.clip_cluster_count || 0);
         const clusterAttrs = clusterCount > 1 ? ` data-cluster-count="${clusterCount}" aria-label="${esc(`${fmt(start)} 시청자 클립 ${clusterCount}개 묶음`)}"` : '';
-        const clusterClass = clusterCount > 1 ? ' clip-cluster' : '';
+        const clusterClass = clusterCount > 1 ? ' clip-cluster viewer-editor-cluster-grain' : '';
         renderedAxisEvents.set(String(event.id || ''), event);
         return `<button type="button" class="viewer-editor-marker ${hasRange ? 'range' : ''}${clusterClass}" data-kind="${esc(kind)}" data-event-id="${esc(event.id)}"${clusterAttrs} title="${esc(`${fmt(start)} ${friendlyEventTitle(event) || ''}`)}" style="${style}"></button>`;
       }).join('');
+      const stateText = signalStateText(definition, matchingLanes, laneEvents.length);
       const hiddenCount = Math.max(0, laneAllEvents.length - densityEvents.length);
       const clusterCount = kind === 'viewer_clip' ? laneEvents.length : 0;
-      const laneCountText = hiddenCount ? `${densityEvents.length}/${laneAllEvents.length}개 표시` : kind === 'viewer_clip' && clusterCount !== laneAllEvents.length ? `${clusterCount}묶음 · ${laneAllEvents.length}개` : `${laneEvents.length}개`;
-      return `<div class="viewer-editor-lane-row" data-kind-row="${esc(kind)}" data-lane-status="${esc(lane.status || '')}"><div class="viewer-editor-lane-label"><strong>${esc(optionLabel(kind))}</strong><span>${esc(lanePurpose(kind))} · ${laneCountText}</span></div><div class="viewer-editor-track">${markers || `<div class="viewer-editor-empty">${esc(emptyText)}</div>`}</div></div>`;
+      const laneCountText = laneAllEvents.length
+        ? hiddenCount
+          ? `${densityEvents.length}/${laneAllEvents.length}개 표시`
+          : kind === 'viewer_clip' && clusterCount !== laneAllEvents.length
+            ? `${clusterCount}묶음 · ${laneAllEvents.length}개`
+            : `${laneEvents.length}개`
+        : stateText;
+      const trackAttribute = kind === 'existing_segments'
+        ? `data-summary-track="${esc(kind)}"`
+        : `data-signal-track="${esc(kind)}"`;
+      return `<div class="viewer-editor-lane-row" ${trackAttribute}><div class="viewer-editor-lane-label"><strong>${esc(definition.label)}</strong><span>${esc(laneCountText)}</span></div><div class="viewer-editor-track">${markers || `<div class="viewer-editor-empty">${esc(stateText)}</div>`}</div></div>`;
+    }).join('');
+    const summaryLaneRows = renderSignalTrackRows(signalTrackDefinitions.filter((definition) => definition.key === 'existing_segments'));
+    const laneRows = renderSignalTrackRows(signalTrackDefinitions.filter((definition) => definition.key !== 'existing_segments'));
+    const projectedCandidates = outlineProjection.filter((event) => String(event.level || '') === 'Candidate');
+    const outlineGroups = [
+      { level: 'D1', key: 'flow', label: '방송 흐름', color: '#7aa2f7' },
+      { level: 'D2', key: 'subject', label: '세부 흐름', color: '#9ece6a' },
+      { level: 'Point', key: 'scene', label: '주요 장면', color: '#f7768e' },
+      { level: 'Candidate', key: 'inspect', label: '하이라이트 후보', color: '#e0af68', events: projectedCandidates },
+    ];
+    const outlineRows = outlineGroups.map((group) => {
+      const groupLabel = String(group.label || group.title || '구조');
+      const groupedEvents = group.events
+        ? group.events
+        : outlineProjection.filter((event) => String(event.level || '') === group.level);
+      const markers = groupedEvents.map((event, index) => {
+        const start = Math.max(0, Number(event.start_sec || 0));
+        const end = event.end_sec != null ? Number(event.end_sec) : NaN;
+        const left = Math.max(0, Math.min(100, (start / duration) * 100));
+        const hasRange = Number.isFinite(end) && end > start + 1;
+        const width = hasRange ? Math.max(0.25, Math.min(100 - left, ((end - start) / duration) * 100)) : 0;
+        const id = `outline-${String(event.kind || group.level)}-${String(event.id || start)}`;
+        const markerTitle = String(event.title || '');
+        const statusLabels = Array.isArray(event.status_labels) ? event.status_labels.filter(Boolean) : [];
+        const markerEvent = {...event, id, title: markerTitle, kind_label: groupLabel, timecode: group.level === 'Point' ? String(event.timestamp || '') : `${String(event.start || '')}-${String(event.end || '')}`};
+        renderedAxisEvents.set(id, markerEvent);
+        const style = hasRange ? `left:${left}%;width:${width}%;--outline-stack:${index % 3}` : `left:${left}%;--outline-stack:${index % 3}`;
+        const ariaType = groupLabel;
+        const statusText = statusLabels.length ? ` · ${statusLabels.join(' · ')}` : '';
+        return `<button type="button" class="${hasRange ? 'viewer-editor-outline-range' : 'viewer-editor-outline-point'} viewer-editor-outline-marker" data-outline-item="true" data-event-id="${esc(id)}" data-evidence-preview="${esc(`${markerTitle}${statusText}`)}" aria-label="${esc(`${ariaType}, ${markerTitle}, ${fmt(start)}${hasRange ? `부터 ${fmt(end)}` : ''}${statusText}`)}" title="${esc(`${markerTitle} · ${fmt(start)}${hasRange ? `-${fmt(end)}` : ''}${statusText}`)}" style="${style}">${hasRange ? esc(markerTitle) : ''}</button>`;
+      }).join('');
+      const stateText = groupedEvents.length ? `${groupedEvents.length}개` : '이 구조 없음';
+      return `<div class="viewer-editor-lane-row viewer-editor-outline-row" data-kind-row="viewer-editor-outline-${esc(group.key)}" data-outline-track="${esc(group.level)}" data-outline-level="${esc(group.level)}" style="--viewer-editor-outline-color:${group.color}"><div class="viewer-editor-lane-label"><strong>${esc(groupLabel)}</strong><span>${stateText}</span></div><div class="viewer-editor-track viewer-editor-outline-track">${markers || `<div class="viewer-editor-empty">${stateText}</div>`}</div></div>`;
     }).join('');
     axisEl.innerHTML = `<div class="viewer-editor-axis-canvas">
       <div class="viewer-editor-scale-row"><div class="viewer-editor-scale-label"><strong>전체 흐름</strong><span>${fmt(duration)}</span></div><div class="viewer-editor-scale">${renderScale()}</div></div>
       ${renderHeatmapOverviewRow()}
       ${renderWaveformRow()}
-      <div class="viewer-editor-density-row"><div class="viewer-editor-density-label"><strong>전체 채팅량</strong><span>${densityScaleLabel}</span></div><div class="viewer-editor-density">${densityBars || '<div class="viewer-editor-empty">채팅 데이터 없음</div>'}</div></div>
+      <div class="viewer-editor-density-row"><div class="viewer-editor-density-label"><strong>전체 채팅량</strong><span>${densityScaleLabel}</span></div><div class="viewer-editor-density">${densityBars || '<div class="viewer-editor-empty">이 신호 없음</div>'}</div></div>
+      ${outlineRows}
+      ${summaryLaneRows}
       ${laneRows || '<div class="viewer-editor-empty">표시할 장면 데이터가 없습니다.</div>'}
     </div>`;
     if (densityValue) densityValue.textContent = markerDensityLabel();
@@ -1295,15 +1456,12 @@ function initViewerEditorTools() {
     axisEl.addEventListener('scroll', scheduleDensityScaleRefresh, { passive: true });
     axisEl.querySelectorAll('[data-event-id]').forEach((marker) => {
       marker.classList.toggle('selected', marker.dataset.eventId === selectedEventId);
-      marker.addEventListener('click', () => {
-        const event = renderedAxisEvents.get(String(marker.dataset.eventId || '')) || events.find((item) => item.id === marker.dataset.eventId);
-        syncSplitEditorSeek(event && event.start_sec, event);
-        renderEvidence(event || null);
-      });
+      const activate = () => activateAxisEventMarker(marker);
+      bindMarkerActivation(marker, activate);
     });
     axisEl.querySelectorAll('[data-edit-point-cluster-id]').forEach((marker) => {
       marker.classList.toggle('selected', selectedEventId === `edit_point_cluster_${marker.dataset.editPointClusterId || ''}`);
-      marker.addEventListener('click', () => {
+      const activate = () => {
         const event = editPointClusterEvent(String(marker.dataset.editPointClusterId || ''));
         if (event) {
           event.heatmap_zone_families = String(marker.dataset.clusterSignalFamilies || '').split(/\s+/).filter(Boolean);
@@ -1311,16 +1469,446 @@ function initViewerEditorTools() {
         }
         syncSplitEditorSeek(event && event.start_sec, event);
         renderEvidence(event || null);
-      });
+      };
+      bindMarkerActivation(marker, activate);
     });
     axisEl.querySelectorAll('[data-sec]').forEach((bar) => {
       if (bar.dataset.editPointClusterId) return;
-      bar.addEventListener('click', () => {
+      const activate = () => {
         const sec = Number(bar.dataset.sec || 0);
-        syncSplitEditorSeek(sec);
-        renderEvidence({ start_sec: sec, kind: 'chat', kind_label: '전체 채팅량', title: '전체 채팅량', evidence: [] });
+        const sourceRow = evidenceSourceRow(sec);
+        syncSplitEditorSeek(sec, sourceRow);
+        renderEvidence({ start_sec: sec, kind: 'chat', kind_label: '전체 채팅량', title: '전체 채팅량', evidence: [], ...(sourceRow || {}) });
+      };
+      bindMarkerActivation(bar, activate);
+    });
+    installAxisCollisionDisclosure();
+    bindNativeViewerClipClusters();
+  }
+  function fixedRepresentativeCollisionGroups(points, tolerance) {
+    const groups = [];
+    points.forEach((item) => {
+      const width = Number.isFinite(item.width) ? item.width : Math.max(0, item.right - item.left);
+      const group = width <= 32
+        ? groups.find((candidate) => candidate.representativeWidth <= 32 && item.left <= candidate.representativeRight + tolerance && item.right >= candidate.representativeLeft - tolerance)
+        : null;
+      if (group) {
+        group.items.push({...item, width});
+        return;
+      }
+      groups.push({
+        representativeLeft: item.left,
+        representativeRight: item.right,
+        representativeWidth: width,
+        items: [{...item, width}],
       });
     });
+    return groups;
+  }
+  function semanticMarkerMembers(marker, detailFor) {
+    const event = detailFor(marker);
+    const expected = Number(marker && marker.dataset.clusterCount || 0);
+    const start = Number(event && event.start_sec);
+    if (String(event && event.kind || '') !== 'viewer_clip' || !Number.isFinite(start) || expected < 2) return [event];
+    const members = clipClusterEvents(event).filter((member) =>
+      String(member && member.kind || '') === 'viewer_clip' && Number(member && member.start_sec) === start
+    );
+    return members.length === expected ? members : [event];
+  }
+  function bindNativeViewerClipClusters() {
+    axisEl.querySelectorAll('.viewer-editor-marker.clip-cluster').forEach((marker) => {
+      if (marker.dataset.nativeClipBound === '1') return;
+      const event = renderedAxisEvents.get(String(marker.dataset.eventId || '')) || {};
+      const members = semanticMarkerMembers(marker, () => event);
+      if (members.length < 2) return;
+      const track = marker.closest('.viewer-editor-track');
+      if (!track) return;
+      marker.dataset.nativeClipBound = '1';
+      const pinned = document.createElement('span');
+      const list = document.createElement('span');
+      const id = `viewer-editor-native-cluster-${String(marker.dataset.eventId || event.start_sec || '').replace(/[^a-zA-Z0-9_-]/g, '')}`;
+      pinned.id = id;
+      pinned.className = 'viewer-editor-collision-pinned viewer-editor-native-clip-pinned';
+      pinned.hidden = true;
+      pinned.setAttribute('role', 'dialog');
+      pinned.setAttribute('aria-label', '시청자 클립 묶음');
+      pinned.style.left = `${marker.offsetLeft + 18}px`;
+      list.setAttribute('role', 'list');
+      list.setAttribute('aria-label', '시청자 클립 목록');
+      members.forEach((member) => {
+        const row = document.createElement('span');
+        const time = document.createElement('time');
+        const text = document.createElement('span');
+        const evidence = [].concat(member.evidence || []).find((item) => item && (item.text || item.title));
+        row.className = 'viewer-editor-collision-member viewer-editor-native-clip-list-member';
+        row.setAttribute('role', 'listitem');
+        time.textContent = fmt(member.start_sec || 0);
+        text.textContent = `${member.kind_label || member.kind || '시청자 클립'} · ${member.title || '제목 없음'} — ${evidence ? String(evidence.text || evidence.title) : '확인 가능한 자막·채팅 근거 없음'}`;
+        row.append(time, text); list.append(row);
+      });
+      pinned.append(list);
+      const close = (restoreFocus = false) => setAxisDisclosure(pinned, marker, false, restoreFocus);
+      const toggle = () => setAxisDisclosure(pinned, marker, pinned.hidden);
+      marker.setAttribute('aria-controls', id);
+      marker.setAttribute('aria-expanded', 'false');
+      marker.addEventListener('click', toggle);
+      marker.addEventListener('keydown', (event) => { if (event.key === 'Escape') { event.preventDefault(); close(); } });
+      pinned.addEventListener('keydown', (event) => { if (event.key === 'Escape') { event.preventDefault(); close(true); } });
+      track.append(pinned);
+    });
+  }
+  function collisionGroupMembers(group, detailFor) {
+    const seen = new Set();
+    return group.items
+      .flatMap((item) => semanticMarkerMembers(item.marker, detailFor).map((detail) => ({ marker: item.marker, detail })))
+      .filter((member) => {
+        const id = String(member.detail.id || member.marker.dataset.eventId || '');
+        if (!id || seen.has(id)) return false;
+        seen.add(id);
+        return true;
+      })
+      .sort((a, b) => Number(a.detail.start_sec || 0) - Number(b.detail.start_sec || 0) || String(a.detail.id || '').localeCompare(String(b.detail.id || '')));
+  }
+  function collisionExpandedTrackHeight(collisions, detailFor) {
+    const largestCanonicalGroup = Math.max(
+      1,
+      ...collisions.map((group) => collisionGroupMembers(group, detailFor).length),
+    );
+    return 34 + (largestCanonicalGroup - 1) * 30;
+  }
+  function installAxisCollisionDisclosure() {
+    axisEl.querySelectorAll('.viewer-editor-collision-cluster,.viewer-editor-lane-disclosure,.viewer-editor-collision-pinned:not(.viewer-editor-native-clip-pinned)').forEach((node) => node.remove());
+    axisEl.querySelectorAll('.viewer-editor-marker.viewer-editor-collision-source').forEach((marker) => {
+      marker.classList.remove('viewer-editor-collision-source');
+      marker.removeAttribute('aria-hidden');
+      marker.tabIndex = 0;
+    });
+    const detailFor = (marker) => renderedAxisEvents.get(String(marker.dataset.eventId || '')) || {};
+    const evidenceText = (event) => {
+      const rows = [].concat(event.evidence || []);
+      const first = rows.find((row) => row && (row.text || row.title));
+      return first ? String(first.text || first.title) : '확인 가능한 자막·채팅 근거 없음';
+    };
+    const activateSemanticMember = (marker, event) => {
+      closeActiveAxisDisclosure();
+      syncSplitEditorSeek(event && event.start_sec, event);
+      renderEvidence(event || detailFor(marker) || null);
+    };
+    const memberButton = (marker, event) => {
+      const button = document.createElement('button');
+      button.type = 'button'; button.className = 'viewer-editor-collision-member';
+      const time = document.createElement('time'); time.textContent = fmt(event.start_sec || 0);
+      const text = document.createElement('span');
+      text.textContent = `${event.kind_label || optionLabel(event.kind)} · ${friendlyEventTitle(event) || marker.title || '제목 없음'} — ${evidenceText(event)}`;
+      button.append(time, text);
+      bindMarkerActivation(button, (activationEvent) => { activationEvent.stopPropagation(); activateSemanticMember(marker, event); });
+      return button;
+    };
+    const mountPinned = (track, trigger, members, label, className = '') => {
+      const pinned = document.createElement('span');
+      pinned.className = `viewer-editor-collision-pinned ${className}`.trim(); pinned.hidden = true;
+      pinned.setAttribute('role', 'dialog'); pinned.setAttribute('aria-label', label);
+      members.forEach(({marker, event}) => pinned.append(memberButton(marker, event)));
+      const close = (restoreFocus = false) => setAxisDisclosure(pinned, trigger, false, restoreFocus);
+      const toggle = (event) => { event.preventDefault(); event.stopPropagation(); setAxisDisclosure(pinned, trigger, pinned.hidden); };
+      trigger.setAttribute('aria-haspopup', 'dialog'); trigger.setAttribute('aria-expanded', 'false');
+      trigger.addEventListener('click', toggle);
+      trigger.addEventListener('keydown', (event) => { if (event.key === 'Enter' || event.key === ' ') toggle(event); if (event.key === 'Escape') close(true); });
+      pinned.addEventListener('keydown', (event) => { if (event.key === 'Escape') { event.preventDefault(); close(true); } });
+      track.append(pinned);
+    };
+    axisEl.querySelectorAll('.viewer-editor-axis-canvas > .viewer-editor-lane-row:not(.viewer-editor-outline-row):not([hidden])').forEach((row) => {
+      const label = row.querySelector('.viewer-editor-lane-label'), track = row.querySelector('.viewer-editor-track');
+      if (!label || !track) return;
+      const markers = Array.from(track.querySelectorAll(':scope > [data-event-id]'));
+      const ordinaryMarkers = markers.filter((marker) => !marker.classList.contains('viewer-editor-cluster-control') && !marker.classList.contains('clip-cluster'));
+      const points = ordinaryMarkers
+        .map((marker) => ({marker, rect: marker.getBoundingClientRect()}))
+        .filter((item) => item.rect.width > 0 && item.rect.height > 0)
+        .map((item) => ({marker: item.marker, left: item.rect.left, right: item.rect.right, width: item.rect.width}))
+        .sort((a, b) => a.left - b.left);
+      const groups = fixedRepresentativeCollisionGroups(points, 3);
+      const ordinaryCollisions = groups.filter((group) => collisionGroupMembers(group, detailFor).length > 1);
+      const nativeClipGroups = markers
+        .filter((marker) => marker.classList.contains('clip-cluster') || marker.classList.contains('viewer-editor-cluster-grain'))
+        .map((marker) => ({marker, members: semanticMarkerMembers(marker, detailFor)}))
+        .filter((group) => group.members.length > 1);
+      if (!ordinaryCollisions.length && !nativeClipGroups.length) return;
+      const disclosure = document.createElement('details'); disclosure.className = 'viewer-editor-lane-disclosure';
+      const summary = document.createElement('summary'); summary.setAttribute('aria-label', '겹친 신호 펼치기'); disclosure.append(summary); label.append(disclosure);
+      const render = (expanded) => {
+        row.classList.toggle('viewer-editor-lane-expanded', expanded);
+        row.querySelectorAll('.viewer-editor-collision-cluster,.viewer-editor-native-clip-member').forEach((node) => node.remove());
+        markers.forEach((marker) => { marker.classList.remove('viewer-editor-collision-source'); marker.removeAttribute('aria-hidden'); marker.tabIndex = 0; marker.style.transform = ''; });
+        ordinaryCollisions.forEach((group) => {
+          const canonicalMembers = collisionGroupMembers(group, detailFor);
+          if (expanded) { canonicalMembers.forEach(({marker}, index) => { marker.style.transform = `translateY(${index * 30}px)`; }); return; }
+          canonicalMembers.forEach(({marker}) => { marker.classList.add('viewer-editor-collision-source'); marker.setAttribute('aria-hidden', 'true'); marker.tabIndex = -1; });
+          const representative = canonicalMembers[0].marker, event = canonicalMembers[0].detail, cluster = document.createElement('span'), trigger = representative.cloneNode(false);
+          cluster.className = 'viewer-editor-collision-cluster'; cluster.style.left = `${representative.offsetLeft}px`;
+          trigger.className = `viewer-editor-marker viewer-editor-collision-trigger viewer-editor-cluster-grain${representative.classList.contains('range') ? ' range' : ''}`;
+          // The wrapper owns the absolute position. Keeping the cloned marker's
+          // original percentage left would apply the offset twice and separate
+          // the grain, count badge, hover card, and click target.
+          trigger.style.left = '0px';
+          // A collision is a compact point of interaction even when its
+          // representative happens to be a long range.  Inheriting the full
+          // range width makes one cluster cover unrelated, distant markers.
+          trigger.style.width = `${Math.min(20, Math.max(8, representative.offsetWidth))}px`;
+          trigger.removeAttribute('aria-hidden');
+          trigger.tabIndex = 0;
+          trigger.dataset.clusterMemberIds = canonicalMembers.map((member) => String(member.detail.id || member.marker.dataset.eventId)).join(',');
+          trigger.dataset.clusterCount = String(canonicalMembers.length); trigger.setAttribute('aria-label', `같은 위치 신호 ${canonicalMembers.length}개`);
+          event.__collision_members = canonicalMembers.map((member) => member.detail);
+          cluster.append(trigger); track.append(cluster); mountPinned(cluster, trigger, canonicalMembers.map(({marker, detail}) => ({marker, event: detail})), '겹친 신호 목록');
+        });
+        nativeClipGroups.forEach(({marker, members}) => {
+          if (!expanded) return;
+          marker.classList.add('viewer-editor-collision-source');
+          marker.setAttribute('aria-hidden', 'true'); marker.tabIndex = -1;
+          members.forEach((event, index) => {
+            const member = marker.cloneNode(false);
+            member.classList.remove('clip-cluster', 'viewer-editor-cluster-grain', 'viewer-editor-collision-source', 'selected');
+            member.classList.add('viewer-editor-native-clip-member');
+            member.dataset.eventId = String(event.id || '');
+            member.dataset.kind = String(event.kind || 'viewer_clip');
+            delete member.dataset.clusterCount;
+            delete member.dataset.eventCount;
+            delete member.dataset.nativeClipBound;
+            member.removeAttribute('aria-controls');
+            member.removeAttribute('aria-expanded');
+            member.removeAttribute('aria-haspopup');
+            member.removeAttribute('aria-describedby');
+            member.style.left = `${Math.max(0, Math.min(100, (Number(event.start_sec || 0) / duration) * 100))}%`;
+            member.style.transform = `translateY(${index * 30}px)`;
+            member.style.zIndex = String(10 - index);
+            member.title = `${fmt(event.start_sec || 0)} ${event.title || event.kind_label || '시청자 클립'}`;
+            member.setAttribute('aria-label', `${fmt(event.start_sec || 0)} ${event.kind_label || event.kind || '시청자 클립'} ${event.title || '제목 없음'}`);
+            member.addEventListener('click', (clickEvent) => { clickEvent.stopPropagation(); marker.click(); });
+            track.append(member);
+          });
+        });
+        const largestNativeClipGroup = Math.max(1, ...nativeClipGroups.map((group) => group.members.length));
+        const expandedMemberCount = Math.max(collisionExpandedTrackHeight(ordinaryCollisions, detailFor), 34 + (largestNativeClipGroup - 1) * 30);
+        track.style.minHeight = expanded ? `${expandedMemberCount}px` : '';
+        summary.setAttribute('aria-label', expanded ? '겹친 신호 접기' : '겹친 신호 펼치기');
+        summary.setAttribute('aria-expanded', String(expanded));
+      };
+      disclosure.addEventListener('toggle', () => render(disclosure.open)); render(false);
+    });
+  }
+  function installHierarchyPreviews() {
+    if (axisEl.dataset.hierarchyPreviewBound === '1') return;
+    axisEl.dataset.hierarchyPreviewBound = '1';
+    const sharedPreview = document.createElement('aside');
+    const preview = sharedPreview;
+    preview.className = 'viewer-editor-hierarchy-preview viewer-editor-collision-shared-preview';
+    preview.id = 'viewer-editor-collision-shared-preview';
+    preview.setAttribute('role', 'tooltip');
+    preview.hidden = true;
+    document.body.append(preview);
+    const targetFor = (node) => node && node.closest ? node.closest('.viewer-editor-marker[data-event-id], .viewer-editor-outline-range[data-event-id], .viewer-editor-outline-point[data-event-id]') : null;
+    const detailFor = (marker) => {
+      const event = renderedAxisEvents.get(String(marker && marker.dataset.eventId || '')) || {};
+      const evidence = [].concat(Array.isArray(event.evidence) ? event.evidence : []);
+      const first = evidence.find((row) => row && (row.text || row.title));
+      const clusterCount = Math.max(1, Number(marker && marker.dataset.clusterCount || event.cluster_count || event.event_count || 1));
+      return {
+        time: displayTime(event, Number(event.start_sec || 0)),
+        source: event.kind_label || optionLabel(event.kind),
+        title: friendlyEventTitle(event) || marker.getAttribute('data-evidence-preview') || '편집 후보',
+        evidence: first ? String(first.text || first.title || '') : '',
+        count: clusterCount,
+      };
+    };
+    const show = (marker) => {
+      if (!marker || activeAxisDisclosure) return;
+      const detail = detailFor(marker);
+      // Every dynamic field is HTML-escaped by esc() before insertion.
+      preview.innerHTML = `<span class="viewer-editor-hierarchy-preview-meta"><span>${esc(detail.time)}</span><span>${esc(detail.source)}</span></span><strong>${esc(detail.title)}</strong><p>${esc(detail.evidence)}</p><p>${detail.count > 1 ? `${detail.count}개 묶음 · 선택하면 펼쳐서 확인` : '선택하면 상세 근거 확인'}</p>`;
+      preview.hidden = false;
+      marker.setAttribute('aria-describedby', preview.id);
+      const rect = marker.getBoundingClientRect();
+      const left = Math.max(12, Math.min(window.innerWidth - 260, rect.left));
+      preview.style.left = `${left}px`;
+      const below = rect.bottom + 8;
+      preview.style.top = `${below + preview.offsetHeight > window.innerHeight ? Math.max(8, rect.top - preview.offsetHeight - 8) : below}px`;
+    };
+    const hide = (marker) => {
+      if (marker && marker.getAttribute('aria-describedby') === preview.id) marker.removeAttribute('aria-describedby');
+      preview.hidden = true;
+    };
+    axisEl.addEventListener('mouseover', (event) => {
+      const marker = targetFor(event.target);
+      if (marker && !marker.contains(event.relatedTarget)) show(marker);
+    });
+    axisEl.addEventListener('mouseout', (event) => {
+      const marker = targetFor(event.target);
+      if (marker && !marker.contains(event.relatedTarget)) hide(marker);
+    });
+    axisEl.addEventListener('focusin', (event) => show(targetFor(event.target)));
+    axisEl.addEventListener('focusout', (event) => hide(targetFor(event.target)));
+  }
+  function renderDetailedSummaryHierarchy() {
+    const timeline = document.querySelector('.timeline');
+    if (!timeline || timeline.dataset.managerOutlineHierarchy === 'ready') return;
+    const d1Rows = outlineProjection.filter((row) => String(row.level || '') === 'D1');
+    const d2Rows = outlineProjection.filter((row) => String(row.level || '') === 'D2');
+    const pointRows = outlineProjection.filter((row) => String(row.level || '') === 'Point');
+    const cards = Array.from(timeline.querySelectorAll(':scope > .t-item'));
+    if (!d1Rows.length || !cards.length) return;
+    const parseTime = (value) => String(value || '').trim().split(':').reduce((total, token) => total * 60 + Number(token || 0), 0);
+    const projectionById = new Map(outlineProjection.map((row) => [String(row.id || ''), row]));
+    // Timeline cards use segment-ledger ids while saved outline Points use
+    // outline-local ids. Their shared source identity is the exact timestamp.
+    const pointProjectionBySecond = new Map(pointRows.map((row) => [Number(row.start_sec || parseTime(row.timestamp)), row]));
+    const cardRows = cards.map((card) => ({
+      card,
+      sec: parseTime(card.querySelector('.tc') && card.querySelector('.tc').textContent),
+    })).map((row) => ({
+      ...row,
+      outline: projectionById.get(String(row.card.dataset.segmentId || '')) || pointProjectionBySecond.get(row.sec) || {},
+    }));
+    const assigned = new Set();
+    const heading = (level, row) => {
+      const el = document.createElement(level === 'D1' ? 'h3' : 'h4');
+      el.className = level === 'D1' ? 'viewer-detail-flow-title' : 'viewer-detail-subflow-title';
+      const title = document.createElement('span');
+      const timeLink = document.createElement('a');
+      const time = document.createElement('time');
+      title.textContent = String(row.title || (level === 'D1' ? '방송 흐름' : '세부 흐름'));
+      time.textContent = `${String(row.start || '')}–${String(row.end || '')}`;
+      timeLink.className = 'viewer-detail-heading-time';
+      timeLink.href = seekUrl(Number(row.start_sec || 0), row);
+      timeLink.target = '_blank';
+      timeLink.rel = 'noopener';
+      timeLink.append(time);
+      el.append(title, timeLink);
+      return el;
+    };
+    const pointList = (rows) => {
+      const list = document.createElement('div');
+      list.className = 'viewer-detail-scene-list';
+      list.setAttribute('aria-label', '주요 장면');
+      rows.forEach(({card, sec, outline}) => {
+        card.classList.add('viewer-editor-point-row');
+        if (!card.querySelector('.viewer-editor-point-icon-slot')) {
+          const iconSlot = document.createElement('span');
+          iconSlot.className = 'viewer-editor-point-icon-slot viewer-editor-icon-slot';
+          iconSlot.setAttribute('aria-hidden', 'true');
+          card.prepend(iconSlot);
+        }
+        let badgeSlot = card.querySelector('.viewer-editor-point-badge-slot');
+        if (!badgeSlot) {
+          badgeSlot = document.createElement('span');
+          badgeSlot.className = 'viewer-editor-point-badge-slot viewer-editor-badge-slot';
+          badgeSlot.setAttribute('aria-hidden', 'true');
+          card.append(badgeSlot);
+        }
+        const injectedBadge = card.querySelector('.injected-badge');
+        if (injectedBadge && injectedBadge.parentElement !== badgeSlot) {
+          badgeSlot.removeAttribute('aria-hidden');
+          badgeSlot.replaceChildren(injectedBadge);
+        }
+        const statusLabels = Array.isArray(outline && outline.status_labels) ? outline.status_labels.filter(Boolean) : [];
+        statusLabels.forEach((label) => {
+          if (Array.from(badgeSlot.children).some((child) => child.dataset.outlineStatus === label)) return;
+          badgeSlot.removeAttribute('aria-hidden');
+          const statusBadge = document.createElement('span');
+          statusBadge.className = 'viewer-editor-status-badge';
+          statusBadge.dataset.outlineStatus = label;
+          statusBadge.textContent = label;
+          badgeSlot.append(statusBadge);
+        });
+        if (outline && outline.id) card.id = `manager-outline-${String(outline.id).replace(/[^a-zA-Z0-9_-]/g, '')}`;
+        const body = card.querySelector('.t-body');
+        const bodyText = String(body && body.textContent || '').trim();
+        const internalBodyToken = /(?:supporting_signal_only|proximity_signal|temporal_candidate|deterministic_injection)/i.test(bodyText);
+        if (body && (/읽기 전용 (정확한 시각|방송 목차)/.test(bodyText) || internalBodyToken)) {
+          const evidence = events
+            .filter((event) => {
+              const eventStart = Number(event.start_sec || 0);
+              const eventEnd = Number(event.end_sec != null && event.end_sec !== '' ? event.end_sec : eventStart);
+              return eventStart <= sec && sec <= eventEnd;
+            })
+            .flatMap((event) => [].concat(event.evidence || []))
+            .find((item) => {
+              const candidate = String(item && (item.text || item.title) || '').trim();
+              return candidate && !/(?:supporting_signal_only|proximity_signal|temporal_candidate|deterministic_injection)/i.test(candidate);
+            });
+          body.textContent = evidence
+            ? friendlyEvidenceText(evidence.label || evidence.title || '', evidence.text || evidence.title || '')
+            : '확인 가능한 자막·채팅 근거 없음';
+        }
+        list.append(card);
+      });
+      return list;
+    };
+    const navigator = document.createElement('nav');
+    navigator.className = 'timeline-navigator';
+    navigator.setAttribute('aria-label', '상세 타임라인 목차 이동');
+    const duration = Math.max(1, Number(data.duration_sec || 0), ...outlineProjection.map((row) => Number(row.end_sec || row.start_sec || 0)));
+    const ruler = document.createElement('div'); ruler.className = 'timeline-nav-ruler';
+    const rulerAxis = document.createElement('span'); rulerAxis.className = 'timeline-nav-ruler-axis';
+    const rulerStart = document.createElement('span'); rulerStart.textContent = '00:00';
+    const rulerEnd = document.createElement('span'); rulerEnd.textContent = fmt(duration);
+    rulerAxis.append(rulerStart, rulerEnd); ruler.append(document.createElement('span'), rulerAxis); navigator.append(ruler);
+    const addNavRow = (label, rows, kind) => {
+      const line = document.createElement('div'); line.className = 'timeline-nav-row';
+      const name = document.createElement('span'); name.className = 'timeline-nav-label'; name.textContent = label;
+      const axis = document.createElement('span'); axis.className = 'timeline-nav-axis';
+      rows.forEach((row, index) => {
+        const button = document.createElement('button'); button.type = 'button';
+        button.className = `timeline-nav-button ${kind === 'scene' ? 'timeline-nav-point' : 'timeline-nav-range'}`;
+        const start = Number(row.start_sec || 0), end = Number(row.end_sec || start);
+        button.style.left = `${Math.max(0, Math.min(100, start / duration * 100))}%`;
+        button.textContent = String(row.title || label);
+        if (kind !== 'scene') button.style.width = `${Math.max(0.8, (end - start) / duration * 100)}%`;
+        button.title = `${row.start || row.timestamp || ''} · ${row.title || label}`;
+        button.setAttribute('aria-label', button.title);
+        button.addEventListener('click', () => document.getElementById(`manager-outline-${String(row.id || index).replace(/[^a-zA-Z0-9_-]/g, '')}`)?.scrollIntoView({behavior: 'smooth', block: 'start'}));
+        axis.append(button);
+      });
+      line.append(name, axis); navigator.append(line);
+    };
+    addNavRow('방송 흐름', d1Rows, 'flow');
+    addNavRow('세부 흐름', d2Rows, 'subject');
+    addNavRow('주요 장면', pointRows, 'scene');
+    const hierarchy = document.createElement('div');
+    hierarchy.className = 'viewer-detail-hierarchy';
+    hierarchy.append(navigator);
+    d1Rows.forEach((d1) => {
+      const flow = document.createElement('section');
+      flow.className = 'viewer-detail-flow';
+      flow.id = `manager-outline-${String(d1.id || '').replace(/[^a-zA-Z0-9_-]/g, '')}`;
+      flow.tabIndex = 0;
+      flow.append(heading('D1', d1));
+      const children = d2Rows.filter((row) => String(row.parent_id || '') === String(d1.id || ''));
+      children.forEach((d2) => {
+        const start = Number(d2.start_sec || 0), end = Number(d2.end_sec || start);
+        const inside = cardRows.filter((row) => !assigned.has(row.card) && row.sec >= start && row.sec < end);
+        inside.forEach((row) => assigned.add(row.card));
+        const subflow = document.createElement('section');
+        subflow.className = 'viewer-detail-subflow';
+        subflow.id = `manager-outline-${String(d2.id || '').replace(/[^a-zA-Z0-9_-]/g, '')}`;
+        subflow.tabIndex = 0;
+        subflow.append(heading('D2', d2));
+        inside.forEach(({card}) => subflow.append(card));
+        flow.append(subflow);
+      });
+      const start = Number(d1.start_sec || 0), end = Number(d1.end_sec || start);
+      const direct = cardRows.filter((row) => !assigned.has(row.card) && row.sec >= start && row.sec < end);
+      direct.forEach((row) => assigned.add(row.card));
+      if (direct.length) flow.append(pointList(direct));
+      hierarchy.append(flow);
+    });
+    // Cards outside every accepted range still belong to the approved
+    // standalone major-scenes section. Hierarchy enrichment must never be an
+    // inclusion filter for real Markdown scenes.
+    const unowned = cardRows.filter((row) => !assigned.has(row.card));
+    if (unowned.length) hierarchy.append(pointList(unowned));
+    timeline.replaceChildren(hierarchy);
+    timeline.dataset.managerOutlineHierarchy = 'ready';
   }
   function renderEvidence(event) {
     if (!event || typeof event !== 'object') {
@@ -1346,7 +1934,7 @@ function initViewerEditorTools() {
     selectedEventId = String(event.id || '');
     axisEl.querySelectorAll('[data-event-id]').forEach((marker) => marker.classList.toggle('selected', marker.dataset.eventId === selectedEventId));
     axisEl.querySelectorAll('[data-edit-point-cluster-id]').forEach((marker) => marker.classList.remove('selected'));
-    const clusterEvents = event.kind === 'viewer_clip' ? clipClusterEvents(event) : [];
+    const clusterEvents = clipClusterEvents(event);
     const clusterEventIds = clusterEventIdSet(clusterEvents);
     const nearbyEvents = events
       .filter((row) => near(row, sec, 45) && !clusterEventIds.has(String(row && row.id || '')))
@@ -1356,7 +1944,7 @@ function initViewerEditorTools() {
     const selectedTitleText = selectedTitle(event, sec);
     const selectedClipLink = event.kind === 'viewer_clip' ? viewerClipLinkInfo(clusterEvents.concat(nearbyEvents), clusterEvents[0] || event) : { uid: '', url: '', title: '' };
     const evidenceTargets = evidenceTargetsForEvent(event, sec);
-    const clusterEvidenceRows = clusterEvents.length > 1 ? clipRowsForCluster(clusterEvents) : [];
+    const clusterEvidenceRows = event.kind === 'viewer_clip' ? clipRowsForCluster(clusterEvents) : [];
     const extraEvidenceRows = []
       .concat((event.evidence || []).map((item) => {
         const rawLabel = String(item.label || '').trim();
@@ -1374,9 +1962,9 @@ function initViewerEditorTools() {
         ['start_sec', 'sec', 'seek_sec', 'end_sec', 'end_seek_sec', 'video_no', 'source_video_no', 'vod_label', 'timecode'].forEach((key) => {
           if (item && item[key] != null && item[key] !== '') row[key] = item[key];
         });
-        return row;
+        return canonicalSelectedSourceRow(row, event);
       }))
-      .concat(nearbyEvents.filter((row) => row.id !== event.id).map((row) => ({
+      .concat(nearbyEvents.filter((row) => row.id !== event.id).map((row) => canonicalSelectedSourceRow({
         label: row.vod_label ? `${row.vod_label} · ${optionLabel(row.kind)}` : optionLabel(row.kind),
         sec: row.start_sec,
         seek_sec: row.seek_sec,
@@ -1384,15 +1972,16 @@ function initViewerEditorTools() {
         vod_label: row.vod_label,
         timecode: row.timecode,
         text: isTimeOnlyTitle(row.title, row.start_sec) || friendlyEventTitle(row) === selectedTitleText ? '' : friendlyEventTitle(row)
-      })))
+      }, event)))
       .filter((row) => row.text)
       .slice(0, 10);
     const evidenceRows = clusterEvidenceRows.concat(extraEvidenceRows);
     const summaryStatus = selectedSummaryStatus(event, nearbyEvents);
-    const guidanceRows = Array.isArray(event.guidance) && event.guidance.length
-      ? event.guidance
-      : fallbackGuidance(event.kind);
-    const guidanceHtml = guidanceRows.map((row) => `<div class="viewer-editor-row reason"><strong>${esc(row.title)}</strong><br>${esc(row.text)}</div>`).join('');
+    const hasTimestampEvidence = nearbySubtitles.some((row) => row && row.text)
+      || nearbyBuckets.some((row) => row && (Number(row.count || 0) > 0 || (row.samples || []).length));
+    const guidanceHtml = hasTimestampEvidence
+      ? ''
+      : '<div class="viewer-editor-row reason">확인 가능한 자막·채팅 근거 없음</div>';
     const selectedColor = markerColor(event.kind);
     const kindLabel = optionLabel(event.kind);
     const titleMatchesKind = selectedTitleText === kindLabel;
@@ -1415,7 +2004,7 @@ function initViewerEditorTools() {
       </div>
     </div>
     ${renderEvidenceTargetPicker(evidenceTargets, sec)}
-    ${renderContextSummary(nearbySubtitles, nearbyBuckets)}
+    ${renderContextSummary(nearbySubtitles, nearbyBuckets, event)}
     ${guidanceHtml}
     ${seekUrl(sec, event) ? `<div class="viewer-editor-row"><strong>원본 확인</strong><br><a href="${esc(seekUrl(sec, event))}" target="_blank" rel="noopener" style="color:var(--tc)">치지직에서 이 시각 열기</a></div>` : ''}
     <div class="viewer-editor-list">${evidenceRows.map(renderEvidenceRow).join('') || '<div class="viewer-editor-empty">근처 근거가 없습니다.</div>'}</div>`;
@@ -1428,49 +2017,13 @@ function initViewerEditorTools() {
       });
     });
   }
-  function renderCuts() {
-    const clips = Array.isArray(preview.clips) ? preview.clips : [];
-    const failures = preview.validation && Array.isArray(preview.validation.failures) ? preview.validation.failures : [];
-    const memoText = clipMemoText(clips);
-    const edlText = publicEdlText();
-    const copyText = memoText || edlText;
-    const rows = clips.slice(0, 12).map((clip, index) => {
-      const duration = Math.max(0, Math.floor(Number(clip.end_sec || 0) - Number(clip.start_sec || 0)));
-      const start = displayTime(clip, clip.start_sec);
-      const end = clip && clip.end_seek_sec != null
-        ? displayTime({ ...clip, seek_sec: clip.end_seek_sec }, clip.end_sec)
-        : displayTime(clip, clip.end_sec);
-      return `<div class="viewer-editor-row"><strong>${esc(clipTitle(clip, index + 1))}</strong><br>${esc(start)}-${esc(end)} · ${duration}초</div>`;
-    }).join('');
-    const status = failures.length ? '일부 후보는 시각이나 길이를 다시 확인해야 합니다.' : '자동 편집이나 업로드는 하지 않습니다. 사람이 확인할 시간표만 제공합니다.';
-    const jsonText = JSON.stringify(preview.otio || preview || {}, null, 2);
-    cutsEl.innerHTML = `<div class="viewer-editor-summary">
-      <div class="viewer-editor-stat"><span>상태</span><strong>${esc(friendlyPreviewStatus(preview.status))}</strong></div>
-      <div class="viewer-editor-stat"><span>컷 수</span><strong>${Number(preview.clip_count || clips.length || 0)}</strong></div>
-      <div class="viewer-editor-stat"><span>기준</span><strong>${esc(friendlyPreviewSource(preview.source))}</strong></div>
-    </div>
-    <div class="viewer-editor-row">${esc(status)}</div>
-    <div class="viewer-editor-confirm">
-      <label for="viewerEditorCutConfirm"><input id="viewerEditorCutConfirm" type="checkbox" ${cutlistConfirmed ? 'checked' : ''} ${!copyText && (!jsonText || jsonText === '{}') ? 'disabled' : ''}>컷 후보 시간을 눈으로 확인했습니다</label>
-      <span>이 확인은 복사 버튼만 켭니다. 영상 생성, 업로드, 저장, 공개 배포는 실행하지 않습니다.</span>
-    </div>
-    <div class="viewer-editor-list">${rows || '<div class="viewer-editor-empty">표시할 컷이 없습니다.</div>'}</div>
-    ${clips.length > 12 ? `<div class="viewer-editor-empty">외 ${clips.length - 12}개 후보도 복사한 메모에 포함됩니다.</div>` : ''}`;
-    const confirmEl = document.getElementById('viewerEditorCutConfirm');
-    if (confirmEl) {
-      confirmEl.addEventListener('change', () => {
-        cutlistConfirmed = Boolean(confirmEl.checked);
-        updateCutCopyButtons();
-      });
-    }
-    updateCutCopyButtons();
-  }
   function renderViewerEditorToolsNow() {
     if (axisRendered) return;
     axisRendered = true;
     renderFilter();
     renderAxis();
-    renderCuts();
+    installHierarchyPreviews();
+    renderDetailedSummaryHierarchy();
     if (events.length) {
       const initialCluster = events[0].kind === 'viewer_clip'
         ? renderedAxisEvents.get(`cluster_${viewerClipClusterKey(events[0])}`)
@@ -1480,95 +2033,11 @@ function initViewerEditorTools() {
       renderEvidence(null);
     }
   }
-  async function copyFromPre(preId, text, copiedMessage, emptyMessage, manualMessage) {
-    if (!text) {
-      if (copyStatus) copyStatus.textContent = emptyMessage;
-      return;
-    }
-    const fallbackCopy = () => {
-      const pre = document.getElementById(preId);
-      if (pre) {
-        const details = pre.closest('details');
-        if (details) details.open = true;
-        const range = document.createRange();
-        range.selectNodeContents(pre);
-        const selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-        const ok = document.execCommand('copy');
-        selection.removeAllRanges();
-        return ok;
-      }
-      const temp = document.createElement('textarea');
-      temp.value = text;
-      temp.setAttribute('readonly', '');
-      temp.style.position = 'fixed';
-      temp.style.left = '-9999px';
-      temp.style.top = '0';
-      document.body.appendChild(temp);
-      temp.select();
-      const ok = document.execCommand('copy');
-      document.body.removeChild(temp);
-      return ok;
-    };
-    const selectManualCopyText = () => {
-      const pre = document.getElementById(preId);
-      if (!pre) return false;
-      const details = pre.closest('details');
-      if (details) details.open = true;
-      const range = document.createRange();
-      range.selectNodeContents(pre);
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-      return true;
-    };
-    try {
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        await navigator.clipboard.writeText(text);
-      } else {
-        if (!fallbackCopy()) throw new Error('execCommand copy failed');
-      }
-      if (copyStatus) copyStatus.textContent = copiedMessage;
-    } catch (_err) {
-      if (fallbackCopy()) {
-        if (copyStatus) copyStatus.textContent = copiedMessage;
-      } else if (copyStatus) {
-        const selected = selectManualCopyText();
-        copyStatus.textContent = selected
-          ? manualMessage
-          : '브라우저가 복사를 막았습니다. 페이지 권한을 확인한 뒤 다시 시도해 주세요.';
-      }
-    }
-  }
-  function copyCuts() {
-    if (!cutlistConfirmed) {
-      if (copyStatus) copyStatus.textContent = '컷 후보 시간을 먼저 확인해 주세요.';
-      return Promise.resolve();
-    }
-    return copyFromPre(
-      'viewerEditorEdlText',
-      currentCutMemoText(),
-      '컷 후보 메모를 복사했습니다.',
-      '복사할 컷 후보가 없습니다.',
-      '브라우저가 복사를 막았습니다. 선택된 컷 후보 메모를 Ctrl+C로 복사해 주세요.'
-    );
-  }
-  function copyJson() {
-    if (!cutlistConfirmed) {
-      if (copyStatus) copyStatus.textContent = '컷 후보 시간을 먼저 확인해 주세요.';
-      return Promise.resolve();
-    }
-    return copyFromPre(
-      'viewerEditorJsonText',
-      currentCutJsonText(),
-      '원본 데이터를 복사했습니다.',
-      '복사할 원본 데이터가 없습니다.',
-      '브라우저가 복사를 막았습니다. 선택된 원본 데이터를 Ctrl+C로 복사해 주세요.'
-    );
-  }
-  cutsEl.innerHTML = '<div class="viewer-editor-empty">편집자 도구가 화면에 가까워지면 컷 목록을 불러옵니다.</div>';
   evidenceEl.innerHTML = '<div class="viewer-editor-empty">장면 찾기에서 시각을 선택하면 근거가 여기에 표시됩니다.</div>';
+  // The detailed-summary hierarchy is core report content, not a lazy editor
+  // tool. Render it immediately so a delayed or non-firing IntersectionObserver
+  // cannot leave the accepted outline as the legacy flat timeline.
+  renderDetailedSummaryHierarchy();
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
       if (entries.some((entry) => entry.isIntersecting)) {
@@ -1580,9 +2049,6 @@ function initViewerEditorTools() {
   } else {
     window.setTimeout(renderViewerEditorToolsNow, 400);
   }
-  document.querySelectorAll('a[href="#youtube-editor-tools"]').forEach((link) => {
-    link.addEventListener('click', () => window.setTimeout(renderViewerEditorToolsNow, 0));
-  });
   if (axisEl) {
     const handleZoomWheel = (event) => {
       if (!event.ctrlKey && !event.metaKey) return;
@@ -1602,8 +2068,6 @@ function initViewerEditorTools() {
   if (zoomOutBtn) zoomOutBtn.addEventListener('click', () => applyTimelineZoom(timelineZoom / 1.25));
   if (zoomInBtn) zoomInBtn.addEventListener('click', () => applyTimelineZoom(timelineZoom * 1.25));
   if (zoomResetBtn) zoomResetBtn.addEventListener('click', () => applyTimelineZoom(1));
-  if (copyBtn) copyBtn.addEventListener('click', copyCuts);
-  if (copyJsonBtn) copyJsonBtn.addEventListener('click', copyJson);
   }
 
   if (!dataSrc) {
@@ -1685,11 +2149,14 @@ function initViewerClipPlayers() {
       dialog.showModal();
   });
 }
-document.addEventListener('DOMContentLoaded', initEditorSplitMode);
-document.addEventListener('DOMContentLoaded', initEditorEntryState);
-document.addEventListener('DOMContentLoaded', initViewerEditorTools);
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initViewerClipPlayers);
-} else {
+function initViewerEditorRuntime() {
+  initEditorSplitMode();
+  initEditorEntryState();
+  initViewerEditorTools();
   initViewerClipPlayers();
+}
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initViewerEditorRuntime);
+} else {
+  initViewerEditorRuntime();
 }
