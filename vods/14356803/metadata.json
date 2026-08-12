@@ -1,6 +1,6 @@
 {
   "video_no": "14356803",
-  "title": "폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까? ٩(●'▿'●)۶",
+  "title": "폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶",
   "channel": "탬탬버린",
   "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
   "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
@@ -11,7 +11,7 @@
   "duration": 21638,
   "publish_date": "2026-07-24 18:54:47",
   "category": "talk",
-  "thumbnail_url": "https://video-phinf.pstatic.net/20260725_257/1784908902010qFCuj_JPEG/AMgUYsFQ6x_01.jpg",
+  "thumbnail_url": null,
   "total_chats": 102095,
   "highlight_count": 21,
   "optional_inputs": null,
@@ -583,7 +583,7 @@
       "timecode": "",
       "start_sec": null,
       "end_sec": null,
-      "title": "폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까? ٩(●'▿'●)۶",
+      "title": "폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶",
       "sources": [
         {
           "source_type": "summary_markdown",
@@ -600,10 +600,9 @@
         "해외축구",
         "퍼스널팀",
         "토트넘",
-        "아스날",
-        "밈드립"
+        "아스날"
       ],
-      "pull_quote": "응원할 팀을 찾으려던 축구 뉴비의 탐방은 구장 감탄, 실종자 밈·드립, 아르테타식 정신교육을 지나 ‘경기를 보고르겠다’는 결론으로 향했다."
+      "pull_quote": "글로 시작한 응원팀 찾기가 손흥민의 낭만과 아르테타 문학을 지나, 결국 직접 경기를 봐야 한다는 결론으로 가버림."
     },
     {
       "segment_id": "seg_timeline_12d44b9cd502",
@@ -613,7 +612,7 @@
       "timecode": "00:05:52",
       "start_sec": 352,
       "end_sec": null,
-      "title": "녹화 시작부터 축구팀 찾기 여정 열어버림",
+      "title": "녹화 켜자마자 롤 끊김 이슈부터 점검해버림 [📎 시청자 클립]",
       "sources": [
         {
           "source_type": "summary_markdown",
@@ -643,20 +642,20 @@
         }
       ],
       "risk_flags": [],
-      "summary": "저장 공간을 정리한 뒤 “됐다. 녹화 시작! 하이하이요”라고 인사하며 방송을 연다. 초반 모니터 교체와 게임 토크를 거쳐 본격적인 축구팀 탐색 준비에 들어갔다.",
+      "summary": "저장공간을 정리한 뒤 “됐다. 녹화 시작! 하이하이요.”라고 인사했다. 모니터를 바꾼 뒤 롤이 덜 끊기는 것 같다고 말하며 방송을 열었다.",
       "timestamp_confidence": {
         "status": "verified"
       }
     },
     {
-      "segment_id": "seg_timeline_457014e76a01",
+      "segment_id": "seg_timeline_031f1d450e1e",
       "kind": "timeline",
       "section": "timeline",
       "index": 2,
-      "timecode": "00:27:06",
-      "start_sec": 1626,
+      "timecode": "00:27:23",
+      "start_sec": 1643,
       "end_sec": null,
-      "title": "법사템만 뜨자 확률 조작 의혹 터져버림",
+      "title": "법사템 합성 망하자 확률 공개 요구 사태가 터져버림",
       "sources": [
         {
           "source_type": "summary_markdown",
@@ -667,7 +666,7 @@
             "summary",
             "evidence"
           ],
-          "timecode": "00:27:06"
+          "timecode": "00:27:23"
         },
         {
           "source_type": "chat_or_text_evidence",
@@ -678,14 +677,14 @@
         {
           "source_type": "audio_reaction_peak",
           "center_sec": 1652.5,
-          "delta_sec": 26,
+          "delta_sec": 10,
           "role": "supporting_signal_only"
         }
       ],
       "risk_flags": [
         "audio_peak_supporting_signal"
       ],
-      "summary": "합성에서도 법사 장비가 나오자 “이거, 조작, 주작이야”라며 억울함을 터뜨렸다. 결국 법사 확률을 공개하라는 밈·드립으로 번졌다.",
+      "summary": "법사 3단계 합성 결과가 기대와 다르자 “이거, 조작, 주작이야”라며 과장된 항의에 들어갔다. 법사템만 나오는 확률을 공개하라고 몰아붙이며 게임 재화를 둘러싼 밈·드립을 만들었다.",
       "timestamp_confidence": {
         "status": "verified"
       }
@@ -698,7 +697,7 @@
       "timecode": "00:39:42",
       "start_sec": 2382,
       "end_sec": null,
-      "title": "FC 온라인 노래 타고 퍼스널 축구팀 탐색 시작됨",
+      "title": "퍼스널 해외축구 팀 찾기 본격 출항해버림",
       "sources": [
         {
           "source_type": "summary_markdown",
@@ -715,20 +714,20 @@
       "risk_flags": [
         "missing_evidence"
       ],
-      "summary": "FC 온라인에서 들었던 익숙한 노래를 꺼낸 뒤, 시청자들이 준비한 해외축구 클럽 추천 자료를 보기 시작했다. 이날의 큰 질문인 ‘어느 팀을 응원할 것인가’가 본격적으로 출발한 순간이다.",
+      "summary": "FC 온라인 이용자에게 익숙한 음악을 듣고 분위기를 잡은 뒤, 시청자 추천을 바탕으로 해외축구 응원팀을 고르는 콘텐츠를 시작했다.",
       "timestamp_confidence": {
         "status": "verified"
       }
     },
     {
-      "segment_id": "seg_timeline_e451e0d6d4be",
+      "segment_id": "seg_timeline_ce63c7d9809c",
       "kind": "timeline",
       "section": "timeline",
       "index": 4,
-      "timecode": "00:50:46",
-      "start_sec": 3046,
+      "timecode": "00:51:27",
+      "start_sec": 3087,
       "end_sec": null,
-      "title": "선더랜드 8년 만의 복귀와 낭만에 빠져버림",
+      "title": "선더랜드 1부 복귀 서사가 낭만으로 꽂혀버림",
       "sources": [
         {
           "source_type": "summary_markdown",
@@ -739,17 +738,13 @@
             "summary",
             "evidence"
           ],
-          "timecode": "00:50:46"
-        },
-        {
-          "source_type": "chat_or_text_evidence",
-          "section": "timeline",
-          "field": "evidence",
-          "text": "“위아 선덜랜드” “낭만”"
+          "timecode": "00:51:27"
         }
       ],
-      "risk_flags": [],
-      "summary": "선더랜드의 1부 복귀 과정과 복귀 첫 시즌 성과를 보며 “진짜 힘들게 올라왔는데”, “와, 7위?”라고 놀랐다. 응원가까지 듣자 팀의 역사와 팬덤이 가진 낭만을 함께 받아들였다.",
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "선더랜드의 오랜 기다림 끝 1부 복귀와 첫 시즌 성과를 읽으며 놀랐다. 앞서 확인한 대형 관중과 단순명확한 전술 철학까지 더해져 첫 후보의 팬덤 서사가 잡혔다.",
       "timestamp_confidence": {
         "status": "verified"
       }
@@ -800,10 +795,40 @@
       "comment_timeline_supplement": true
     },
     {
-      "segment_id": "seg_timeline_81c31e893763",
+      "segment_id": "seg_timeline_b5fb494fe25b",
       "kind": "timeline",
       "section": "timeline",
       "index": 6,
+      "timecode": "01:03:10",
+      "start_sec": 3790,
+      "end_sec": null,
+      "title": "뉴캐슬과 선더랜드가 축구 이전부터 원수였던 이유",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "timeline",
+          "fields": [
+            "timecode",
+            "title",
+            "summary",
+            "evidence"
+          ],
+          "timecode": "01:03:10"
+        }
+      ],
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "뉴캐슬과 선더랜드의 북동부 더비가 단순한 경기 라이벌전이 아니라, 두 도시의 오래된 대립에서 이어졌다는 배경을 이해했다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_timeline_81c31e893763",
+      "kind": "timeline",
+      "section": "timeline",
+      "index": 7,
       "timecode": "01:11:31",
       "start_sec": 4291,
       "end_sec": null,
@@ -848,7 +873,7 @@
       "segment_id": "seg_timeline_048d1e6d9239",
       "kind": "timeline",
       "section": "timeline",
-      "index": 7,
+      "index": 8,
       "timecode": "01:28:53",
       "start_sec": 5333,
       "end_sec": null,
@@ -897,56 +922,14 @@
       "comment_timeline_supplement": true
     },
     {
-      "segment_id": "seg_timeline_3a16d4f0b59f",
-      "kind": "timeline",
-      "section": "timeline",
-      "index": 8,
-      "timecode": "01:40:38",
-      "start_sec": 6038,
-      "end_sec": null,
-      "title": "슝슝~~~",
-      "sources": [
-        {
-          "source_type": "summary_markdown",
-          "section": "timeline",
-          "fields": [
-            "timecode",
-            "title",
-            "summary",
-            "evidence"
-          ],
-          "timecode": "01:40:38"
-        },
-        {
-          "source_type": "chat_or_text_evidence",
-          "section": "timeline",
-          "field": "evidence",
-          "text": "채팅 01:40:47 · 채팅 01:40:48 · 채팅 01:40:51 · 시청자 클립 01:40:38"
-        },
-        {
-          "source_type": "audio_reaction_peak",
-          "center_sec": 6017.5,
-          "delta_sec": 20,
-          "role": "supporting_signal_only"
-        }
-      ],
-      "risk_flags": [
-        "audio_peak_supporting_signal"
-      ],
-      "summary": "같은 시각의 실제 자막 또는 채팅과 시청자 인기 클립으로 확인된 장면. 시청자 클립: [슝슝~~~](https://chzzk.naver.com/clips/GTDJGakctJ)",
-      "timestamp_confidence": {
-        "status": "verified"
-      }
-    },
-    {
-      "segment_id": "seg_timeline_ea0645ec683c",
+      "segment_id": "seg_timeline_78fce8a9ae4a",
       "kind": "timeline",
       "section": "timeline",
       "index": 9,
-      "timecode": "01:54:40",
-      "start_sec": 6880,
+      "timecode": "02:08:31",
+      "start_sec": 7711,
       "end_sec": null,
-      "title": "빌라 홈 15연승 보고 왕의 팀 인정해버림",
+      "title": "토트넘은 팀보다 구장이 먼저 기억나는 팀이 되어버림",
       "sources": [
         {
           "source_type": "summary_markdown",
@@ -957,47 +940,13 @@
             "summary",
             "evidence"
           ],
-          "timecode": "01:54:40"
+          "timecode": "02:08:31"
         }
       ],
       "risk_flags": [
         "missing_evidence"
       ],
-      "summary": "아스톤 빌라가 강팀들을 상대로 홈 15연승을 거둔 기록을 보고 “홈 15연승은 좀 지리네?”라고 감탄했다. 다만 공격도 실점도 시원한 팀이라는 평가까지 붙으며, 예측 불가한 매력으로 정리됐다.",
-      "timestamp_confidence": {
-        "status": "verified"
-      }
-    },
-    {
-      "segment_id": "seg_timeline_440d3bbc5899",
-      "kind": "timeline",
-      "section": "timeline",
-      "index": 10,
-      "timecode": "02:09:25",
-      "start_sec": 7765,
-      "end_sec": null,
-      "title": "토트넘은 팀보다 구장이 위대해져버림",
-      "sources": [
-        {
-          "source_type": "summary_markdown",
-          "section": "timeline",
-          "fields": [
-            "timecode",
-            "title",
-            "summary",
-            "evidence"
-          ],
-          "timecode": "02:09:25"
-        },
-        {
-          "source_type": "chat_or_text_evidence",
-          "section": "timeline",
-          "field": "evidence",
-          "text": "“팀보다 위대한 구장이요?”"
-        }
-      ],
-      "risk_flags": [],
-      "summary": "토트넘 홋스퍼 스타디움의 큰 규모와 외관, 경기장 내 전기카트 시설과 다목적 활용을 보며 연달아 감탄했다. 팬들의 “팀보다 위대한 구장” 농담도 구장 탐방의 핵심 밈·드립으로 받아들였다.",
+      "summary": "오래된 우승 기록과 챔피언스리그 무관 이야기를 읽은 뒤, 대형 홈구장의 시설과 규모에 감탄했다. 이어 북런던 더비의 유래를 보며 아스날을 향한 토트넘 팬들의 원한에도 공감했다.",
       "timestamp_confidence": {
         "status": "verified"
       }
@@ -1006,11 +955,11 @@
       "segment_id": "seg_timeline_781423e46a48",
       "kind": "timeline",
       "section": "timeline",
-      "index": 11,
+      "index": 10,
       "timecode": "02:23:21",
       "start_sec": 8601,
       "end_sec": null,
-      "title": "토트넘행 비행기에서 선수가 실종돼버림",
+      "title": "토트넘 이적생이 런던에서 실종돼버린 밈·드립 [📎 시청자 클립]",
       "sources": [
         {
           "source_type": "summary_markdown",
@@ -1027,7 +976,7 @@
           "source_type": "chat_or_text_evidence",
           "section": "timeline",
           "field": "evidence",
-          "text": "“토트넘에 저런선수없음” “비행기 타고 런던오다가 실종됨” “토트넘시절은....없어......”"
+          "text": "“토트넘에 저런선수없음” “런던행 실종임” “토트넘시절은....없어......”"
         },
         {
           "source_type": "viewer_clip_anchor",
@@ -1040,37 +989,7 @@
         }
       ],
       "risk_flags": [],
-      "summary": "토트넘 관련 영상에 나온 선수를 두고 시청자들이 토트넘 시절을 기억하지 못한다며 ‘런던행 비행기에서 실종됐다’는 밈·드립을 이어갔다. 선수 소개보다 채팅의 집단 기억 삭제 개그가 더 강하게 남은 구간이다.",
-      "timestamp_confidence": {
-        "status": "verified"
-      }
-    },
-    {
-      "segment_id": "seg_timeline_11e69711edc9",
-      "kind": "timeline",
-      "section": "timeline",
-      "index": 12,
-      "timecode": "02:38:41",
-      "start_sec": 9521,
-      "end_sec": null,
-      "title": "흥민존 한 장면으로 전설 확인해버림",
-      "sources": [
-        {
-          "source_type": "summary_markdown",
-          "section": "timeline",
-          "fields": [
-            "timecode",
-            "title",
-            "summary",
-            "evidence"
-          ],
-          "timecode": "02:38:41"
-        }
-      ],
-      "risk_flags": [
-        "missing_evidence"
-      ],
-      "summary": "손흥민의 득점 장면을 보자 특유의 슈팅 구역을 바로 알아보고 “저기가 바로 그 흥민존이구만”이라고 반응했다. 토트넘 파트에서 선수의 상징성을 가장 직관적으로 체감한 장면이었다.",
+      "summary": "이적생 소개 영상에서 토트넘 시절 장면보다 이전 팀 하이라이트가 두드러지자, 해당 선수가 토트넘에 없던 것처럼 보인다며 ‘런던행 실종’ 밈·드립이어졌다.",
       "timestamp_confidence": {
         "status": "verified"
       }
@@ -1079,11 +998,11 @@
       "segment_id": "seg_timeline_7f1e70450d21",
       "kind": "timeline",
       "section": "timeline",
-      "index": 13,
+      "index": 11,
       "timecode": "02:44:25",
       "start_sec": 9865,
       "end_sec": null,
-      "title": "손흥민과 토트넘",
+      "title": "손흥민 토트넘 10년사가 낭만 서사로 터져버림",
       "sources": [
         {
           "source_type": "summary_markdown",
@@ -1095,36 +1014,21 @@
             "evidence"
           ],
           "timecode": "02:44:25"
-        },
-        {
-          "source_type": "chat_or_text_evidence",
-          "section": "timeline",
-          "field": "evidence",
-          "text": "방송 흐름 전환점"
-        },
-        {
-          "source_type": "comment_timeline_supplement",
-          "section": "chzzk_comment_timeline",
-          "role": "private_rewritten_anchor",
-          "tc": "02:44:25",
-          "raw_comment_text_included": false,
-          "recommendation_counts_included": false
         }
       ],
       "risk_flags": [
-        "comment_timeline_supplement"
+        "missing_evidence"
       ],
-      "summary": "방송 흐름을 보완하는 전환점입니다.",
+      "summary": "“손흥민과 함께한 토트넘, 그 10년의 역사”를 읽으며 구장 방문 욕심을 드러냈다. DESK 라인, 번리전 단독 질주 골, 흥민존 장면을 감탄하며 보고 병역 변수에도 재계약한 구단의 신뢰를 “낭만”으로 받아들였다.",
       "timestamp_confidence": {
         "status": "verified"
-      },
-      "comment_timeline_supplement": true
+      }
     },
     {
       "segment_id": "seg_timeline_9f8db999c640",
       "kind": "timeline",
       "section": "timeline",
-      "index": 14,
+      "index": 12,
       "timecode": "03:31:04",
       "start_sec": 12664,
       "end_sec": null,
@@ -1169,11 +1073,11 @@
       "segment_id": "seg_timeline_404961dc05d6",
       "kind": "timeline",
       "section": "timeline",
-      "index": 15,
+      "index": 13,
       "timecode": "03:43:18",
       "start_sec": 13398,
       "end_sec": null,
-      "title": "아르테타 연설이 결국 싸워 두 글자로 압축됨",
+      "title": "아르테타의 긴 연설이 결국 싸워 두 글자가 되어버림",
       "sources": [
         {
           "source_type": "summary_markdown",
@@ -1190,24 +1094,24 @@
           "source_type": "chat_or_text_evidence",
           "section": "timeline",
           "field": "evidence",
-          "text": "“요약 : 싸워” “두글자로 줄이면 싸워”"
+          "text": "“싸워” “요약 : 싸워” “두글자로 줄이면 싸워”"
         }
       ],
       "risk_flags": [],
-      "summary": "아르테타가 선수들에게 “나를 믿고 싸워. 내가 책임질게”라고 말한 연설을 듣고, 방송과 채팅은 이를 단 두 글자 ‘싸워’로 정리했다. 과한 열정처럼 들리던 메시지가 이후 반등으로 이어졌다는 흐름까지 확인했다.",
+      "summary": "아르테타의 연설을 “나를 믿고 싸워, 내가 책임질게”로 압축하며 채팅과 함께 ‘싸워’ 밈·드립으로 소비했다. 이후 전구·검은 트로피·소매치기팀 등 독특한 동기부여 사례까지 이어지며 아르테타식 축구론에 과몰입했다.",
       "timestamp_confidence": {
         "status": "verified"
       }
     },
     {
-      "segment_id": "seg_timeline_2cfad89f2dc2",
+      "segment_id": "seg_timeline_b947f3064a0e",
       "kind": "timeline",
       "section": "timeline",
-      "index": 16,
-      "timecode": "03:50:30",
-      "start_sec": 13830,
+      "index": 14,
+      "timecode": "03:49:45",
+      "start_sec": 13785,
       "end_sec": null,
-      "title": "아르테타 정신교육이 소매치기팀까지 불러버림",
+      "title": "아스날 이상한 아르테타 사건들",
       "sources": [
         {
           "source_type": "summary_markdown",
@@ -1218,26 +1122,41 @@
             "summary",
             "evidence"
           ],
-          "timecode": "03:50:30"
+          "timecode": "03:49:45"
+        },
+        {
+          "source_type": "chat_or_text_evidence",
+          "section": "timeline",
+          "field": "evidence",
+          "text": "방송 흐름 전환점"
+        },
+        {
+          "source_type": "comment_timeline_supplement",
+          "section": "chzzk_comment_timeline",
+          "role": "private_rewritten_anchor",
+          "tc": "03:49:45",
+          "raw_comment_text_included": false,
+          "recommendation_counts_included": false
         }
       ],
       "risk_flags": [
-        "missing_evidence"
+        "comment_timeline_supplement"
       ],
-      "summary": "소매치기팀 고용, 전구, 검은 트로피, 탑건 등 아르테타의 독특한 동기부여 사례를 훑으며 황당함과 웃음을 터뜨렸다. “전문 소매치기팀을 고용한 게 정말 웃겼어”라는 반응이 아스날 파트의 밈·드립 포인트가 됐다.",
+      "summary": "방송 흐름을 보완하는 전환점입니다.",
       "timestamp_confidence": {
         "status": "verified"
-      }
+      },
+      "comment_timeline_supplement": true
     },
     {
       "segment_id": "seg_timeline_ada44b01b44f",
       "kind": "timeline",
       "section": "timeline",
-      "index": 17,
+      "index": 15,
       "timecode": "04:12:31",
       "start_sec": 15151,
       "end_sec": null,
-      "title": "지루한 뻥축구 아스날의 과거가 소환됨",
+      "title": "과거 아스날 뻥축구가 지루함 논쟁으로 되살아남 [📎 시청자 클립]",
       "sources": [
         {
           "source_type": "summary_markdown",
@@ -1254,7 +1173,7 @@
           "source_type": "chat_or_text_evidence",
           "section": "timeline",
           "field": "evidence",
-          "text": "“지금도 지루해”"
+          "text": "“지금도 지루해” “다시 지루해짐..” “축구나 잘해라!”"
         },
         {
           "source_type": "viewer_clip_anchor",
@@ -1267,50 +1186,7 @@
         }
       ],
       "risk_flags": [],
-      "summary": "80~90년대 아스날이 수비와 롱볼 중심으로 1대0 승리를 노리던 팀이었다는 역사를 살폈다. 지금의 이미지와 대비되는 ‘지루함의 대명사’ 시절을 알아가며 아스날 탐방을 이어갔다.",
-      "timestamp_confidence": {
-        "status": "verified"
-      }
-    },
-    {
-      "segment_id": "seg_timeline_3ed5ea9932f2",
-      "kind": "timeline",
-      "section": "timeline",
-      "index": 18,
-      "timecode": "04:13:31",
-      "start_sec": 15211,
-      "end_sec": null,
-      "title": "토옥~~~",
-      "sources": [
-        {
-          "source_type": "summary_markdown",
-          "section": "timeline",
-          "fields": [
-            "timecode",
-            "title",
-            "summary",
-            "evidence"
-          ],
-          "timecode": "04:13:31"
-        },
-        {
-          "source_type": "chat_or_text_evidence",
-          "section": "timeline",
-          "field": "evidence",
-          "text": "채팅 04:13:45 · 시청자 클립 04:13:31"
-        },
-        {
-          "source_type": "viewer_clip_anchor",
-          "offset_sec": 15211,
-          "role": "proximity_signal",
-          "clip_uid": "5W3nKMMuVm",
-          "title": "토옥~~~",
-          "like_count": 4,
-          "play_count": 814
-        }
-      ],
-      "risk_flags": [],
-      "summary": "같은 시각의 실제 자막 또는 채팅과 시청자 인기 클립으로 확인된 장면. 시청자 클립: [토옥~~~](https://chzzk.naver.com/clips/5W3nKMMuVm)",
+      "summary": "과거 아스날이 수비와 롱볼 위주의 이른바 ‘뻥축구’로 지루하다는 평가를 받았다는 소개가 나오자, 현재의 이미지까지 끌어와 반응했다.",
       "timestamp_confidence": {
         "status": "verified"
       }
@@ -1319,7 +1195,7 @@
       "segment_id": "seg_timeline_4962a2f82393",
       "kind": "timeline",
       "section": "timeline",
-      "index": 19,
+      "index": 16,
       "timecode": "04:29:51",
       "start_sec": 16191,
       "end_sec": null,
@@ -1364,7 +1240,7 @@
       "segment_id": "seg_timeline_040e0c6bb76e",
       "kind": "timeline",
       "section": "timeline",
-      "index": 20,
+      "index": 17,
       "timecode": "05:19:41",
       "start_sec": 19181,
       "end_sec": null,
@@ -1416,11 +1292,11 @@
       "segment_id": "seg_timeline_3d24c7e7c38e",
       "kind": "timeline",
       "section": "timeline",
-      "index": 21,
+      "index": 18,
       "timecode": "05:23:07",
       "start_sec": 19387,
       "end_sec": null,
-      "title": "기적 서사에 끌린 축구 뉴비의 최종 결론 나옴",
+      "title": "글만 보고르지 말고 한 시즌 직접 보기로 결론남",
       "sources": [
         {
           "source_type": "summary_markdown",
@@ -1437,11 +1313,11 @@
           "source_type": "chat_or_text_evidence",
           "section": "timeline",
           "field": "evidence",
-          "text": "“팀컬러 ㅋㅋㅋㅋ” “경기 봐야함 결국”"
+          "text": "“꿀벌” “조옴비” “경기 봐야함 결국”"
         }
       ],
       "risk_flags": [],
-      "summary": "압도적인 강팀보다는 반전과 기적을 만드는 팀에 더 끌린다고 자신의 취향을 정리했다. 리버풀에는 높은 점수를 줬지만, 소개글만으로 결정하지 않고 한 시즌 주요 경기를 본 뒤 최종 선택하겠다고 결론냈다.",
+      "summary": "후보 팀들이 강팀이지만 압도적인 강팀은 아니라는 공통점을 정리했다. 메모장으로 팀별명과 인상을 복습한 끝에, 소개글만으로 정하지 않고 한 시즌 주요 경기를 본 뒤 응원팀을 결정하겠다고 했다.",
       "timestamp_confidence": {
         "status": "verified"
       }
@@ -1450,7 +1326,7 @@
       "segment_id": "seg_timeline_4a891247f9eb",
       "kind": "timeline",
       "section": "timeline",
-      "index": 22,
+      "index": 19,
       "timecode": "05:33:57",
       "start_sec": 20037,
       "end_sec": null,
@@ -1492,14 +1368,14 @@
       "comment_timeline_supplement": true
     },
     {
-      "segment_id": "seg_timeline_388f485c297e",
+      "segment_id": "seg_timeline_ef0038a1926e",
       "kind": "timeline",
       "section": "timeline",
-      "index": 23,
-      "timecode": "05:54:39",
-      "start_sec": 21279,
+      "index": 20,
+      "timecode": "05:59:05",
+      "start_sec": 21545,
       "end_sec": null,
-      "title": "홀란드 고기 먹방 보고 결국 영상을 꺼버림",
+      "title": "내일 팀 선정 끝내겠다는 약속으로 방송 마무리됨",
       "sources": [
         {
           "source_type": "summary_markdown",
@@ -1510,30 +1386,26 @@
             "summary",
             "evidence"
           ],
-          "timecode": "05:54:39"
-        },
-        {
-          "source_type": "chat_or_text_evidence",
-          "section": "timeline",
-          "field": "evidence",
-          "text": "“ㅋㅋㅋㅋㅋ” “내일보자에요~”"
+          "timecode": "05:59:05"
         }
       ],
-      "risk_flags": [],
-      "summary": "홀란드 쇼츠를 귀엽게 봤다가 하루 종일 고기만 먹는 영상을 보고 “그래서 끄긴 했는데”라고 덧붙였다. 이후 남은 팀 분석은 다음 방송으로 넘기고, 내일 오후 5시에 다시 보자며 마무리했다.",
+      "risk_flags": [
+        "missing_evidence"
+      ],
+      "summary": "목 상태 때문에 남은 분석 일정을 조정한 뒤, 다음 날 오후 5시에 꼭 팀 선정을 끝내겠다고 약속했다. “미안합니다. 내일은 꼭 끝낼게요. 5시에 봅시다.”라고 인사하며 방송을 마쳤다.",
       "timestamp_confidence": {
         "status": "verified"
       }
     },
     {
-      "segment_id": "seg_highlight_e1a1d4d56657",
+      "segment_id": "seg_highlight_9c6c228366da",
       "kind": "highlight",
       "section": "highlights",
       "index": 1,
-      "timecode": "00:05:52~00:06:01",
+      "timecode": "00:05:52~00:06:26",
       "start_sec": 352,
-      "end_sec": 361,
-      "title": "녹화 시작과 축구 뉴비 출석",
+      "end_sec": 386,
+      "title": "녹화 켜자마자 롤 끊김 이슈부터 점검해버림",
       "sources": [
         {
           "source_type": "summary_markdown",
@@ -1543,13 +1415,13 @@
             "title",
             "reason"
           ],
-          "timecode": "00:05:52~00:06:01"
+          "timecode": "00:05:52~00:06:26"
         },
         {
           "source_type": "llm_highlight_reason",
           "section": "highlights",
           "field": "reason",
-          "text": "방송의 출발점에서 시청자 인사와 이날의 편안한 라이브 분위기를 짧게 보여줄 수 있는 오프닝 구간이다."
+          "text": "방송 시작 직후의 자연스러운 인사와 장비 교체 후 체감 리액션이 짧은 도입 클립으로 잘 맞는다."
         },
         {
           "source_type": "viewer_clip_anchor",
@@ -1562,20 +1434,20 @@
         }
       ],
       "risk_flags": [],
-      "reason": "방송의 출발점에서 시청자 인사와 이날의 편안한 라이브 분위기를 짧게 보여줄 수 있는 오프닝 구간이다.",
+      "reason": "방송 시작 직후의 자연스러운 인사와 장비 교체 후 체감 리액션이 짧은 도입 클립으로 잘 맞는다.",
       "timestamp_confidence": {
         "status": "verified"
       }
     },
     {
-      "segment_id": "seg_highlight_9ba2e74d6a91",
+      "segment_id": "seg_highlight_08864618bcac",
       "kind": "highlight",
       "section": "highlights",
       "index": 2,
-      "timecode": "02:23:21~02:23:21",
-      "start_sec": 8601,
+      "timecode": "02:16:06~02:23:21",
+      "start_sec": 8166,
       "end_sec": 8601,
-      "title": "토트넘행 비행기 실종자 밈·드립",
+      "title": "북런던 더비 원한이 런던행 실종 밈·드립으로 번져버림",
       "sources": [
         {
           "source_type": "summary_markdown",
@@ -1585,13 +1457,13 @@
             "title",
             "reason"
           ],
-          "timecode": "02:23:21~02:23:21"
+          "timecode": "02:16:06~02:23:21"
         },
         {
           "source_type": "llm_highlight_reason",
           "section": "highlights",
           "field": "reason",
-          "text": "“토트넘에 저런선수없음”부터 실종자 설정까지 채팅이 한 방향으로 붙는 즉시성 있는 집단 밈·드립 구간이다."
+          "text": "토트넘-아스날 라이벌 배경 설명 뒤 이적생 소개 영상 리액션까지 이어져, 축구 지식과 즉석 밈·드립이 함께 살아난다."
         },
         {
           "source_type": "viewer_clip_anchor",
@@ -1601,23 +1473,31 @@
           "title": "축구 못하는 나라",
           "like_count": 4,
           "play_count": 920
+        },
+        {
+          "source_type": "audio_reaction_peak",
+          "center_sec": 8182.5,
+          "delta_sec": 0,
+          "role": "supporting_signal_only"
         }
       ],
-      "risk_flags": [],
-      "reason": "“토트넘에 저런선수없음”부터 실종자 설정까지 채팅이 한 방향으로 붙는 즉시성 있는 집단 밈·드립 구간이다.",
+      "risk_flags": [
+        "audio_peak_supporting_signal"
+      ],
+      "reason": "토트넘-아스날 라이벌 배경 설명 뒤 이적생 소개 영상 리액션까지 이어져, 축구 지식과 즉석 밈·드립이 함께 살아난다.",
       "timestamp_confidence": {
         "status": "verified"
       }
     },
     {
-      "segment_id": "seg_highlight_de9de9cf84d9",
+      "segment_id": "seg_highlight_dcf3987eee53",
       "kind": "highlight",
       "section": "highlights",
       "index": 3,
-      "timecode": "03:43:18~03:43:47",
-      "start_sec": 13398,
-      "end_sec": 13427,
-      "title": "아르테타 연설을 싸워로 요약해버림",
+      "timecode": "02:44:25~02:52:03",
+      "start_sec": 9865,
+      "end_sec": 10323,
+      "title": "손흥민 토트넘 10년사가 낭만 서사로 터져버림",
       "sources": [
         {
           "source_type": "summary_markdown",
@@ -1627,17 +1507,50 @@
             "title",
             "reason"
           ],
-          "timecode": "03:43:18~03:43:47"
+          "timecode": "02:44:25~02:52:03"
         },
         {
           "source_type": "llm_highlight_reason",
           "section": "highlights",
           "field": "reason",
-          "text": "진지한 감독 연설이 채팅의 두 글자 요약으로 반전되는 구조라 짧은 클립의 도입과 결말이 분명하다."
+          "text": "손흥민의 주요 장면, 흥민존, 재계약 일화가 한 흐름으로 이어져 축구 입문자의 감탄 리액션을 담기 좋다."
         }
       ],
       "risk_flags": [],
-      "reason": "진지한 감독 연설이 채팅의 두 글자 요약으로 반전되는 구조라 짧은 클립의 도입과 결말이 분명하다.",
+      "reason": "손흥민의 주요 장면, 흥민존, 재계약 일화가 한 흐름으로 이어져 축구 입문자의 감탄 리액션을 담기 좋다.",
+      "timestamp_confidence": {
+        "status": "verified"
+      }
+    },
+    {
+      "segment_id": "seg_highlight_c215b27896fe",
+      "kind": "highlight",
+      "section": "highlights",
+      "index": 4,
+      "timecode": "03:43:18~03:55:22",
+      "start_sec": 13398,
+      "end_sec": 14122,
+      "title": "아르테타 연설이 싸워 밈·드립으로 압축돼버림",
+      "sources": [
+        {
+          "source_type": "summary_markdown",
+          "section": "highlights",
+          "fields": [
+            "timecode",
+            "title",
+            "reason"
+          ],
+          "timecode": "03:43:18~03:55:22"
+        },
+        {
+          "source_type": "llm_highlight_reason",
+          "section": "highlights",
+          "field": "reason",
+          "text": "긴 설명을 단 두 글자로 정리하는 리액션부터 아르테타의 기행 동기부여 사례까지 개그 밀도가 높다."
+        }
+      ],
+      "risk_flags": [],
+      "reason": "긴 설명을 단 두 글자로 정리하는 리액션부터 아르테타의 기행 동기부여 사례까지 개그 밀도가 높다.",
       "timestamp_confidence": {
         "status": "verified"
       }
@@ -1646,11 +1559,11 @@
       "segment_id": "seg_highlight_6a344765f549",
       "kind": "highlight",
       "section": "highlights",
-      "index": 4,
+      "index": 5,
       "timecode": "04:12:31~04:12:31",
       "start_sec": 15151,
       "end_sec": 15151,
-      "title": "아스날 지루한 뻥축구 시절",
+      "title": "아스날 뻥축구 평가에 지루함 논쟁이 되살아남",
       "sources": [
         {
           "source_type": "summary_markdown",
@@ -1666,7 +1579,7 @@
           "source_type": "llm_highlight_reason",
           "section": "highlights",
           "field": "reason",
-          "text": "현재 이미지와 대비되는 아스날의 과거를 한 문장으로 전달할 수 있어 축구 입문 콘텐츠의 정보성 클립으로 적합하다."
+          "text": "과거 팀 스타일 소개에 채팅의 즉각적인 반응이 붙어, 짧고 명확한 축구 밈·드립 클립으로 편집하기 좋다."
         },
         {
           "source_type": "viewer_clip_anchor",
@@ -1679,40 +1592,7 @@
         }
       ],
       "risk_flags": [],
-      "reason": "현재 이미지와 대비되는 아스날의 과거를 한 문장으로 전달할 수 있어 축구 입문 콘텐츠의 정보성 클립으로 적합하다.",
-      "timestamp_confidence": {
-        "status": "verified"
-      }
-    },
-    {
-      "segment_id": "seg_highlight_2ce9462288d0",
-      "kind": "highlight",
-      "section": "highlights",
-      "index": 5,
-      "timecode": "05:54:39~05:59:05",
-      "start_sec": 21279,
-      "end_sec": 21545,
-      "title": "홀란드 고기 먹방에서 다음 방송 약속까지",
-      "sources": [
-        {
-          "source_type": "summary_markdown",
-          "section": "highlights",
-          "fields": [
-            "timecode",
-            "title",
-            "reason"
-          ],
-          "timecode": "05:54:39~05:59:05"
-        },
-        {
-          "source_type": "llm_highlight_reason",
-          "section": "highlights",
-          "field": "reason",
-          "text": "홀란드 쇼츠 일화의 소소한 웃음과 다음 방송 예고가 붙어 엔딩용 짧은 클립으로 쓰기 좋다."
-        }
-      ],
-      "risk_flags": [],
-      "reason": "홀란드 쇼츠 일화의 소소한 웃음과 다음 방송 예고가 붙어 엔딩용 짧은 클립으로 쓰기 좋다.",
+      "reason": "과거 팀 스타일 소개에 채팅의 즉각적인 반응이 붙어, 짧고 명확한 축구 밈·드립 클립으로 편집하기 좋다.",
       "timestamp_confidence": {
         "status": "verified"
       }
@@ -2552,12 +2432,12 @@
       "count": 0
     }
   ],
-  "processed_at": "2026-07-25T02:37:55.516566+09:00",
+  "processed_at": "2026-08-11T02:09:28.536377+09:00",
   "evidence_verifier": {
     "schema_version": "evidence_verifier.v1",
     "status": "pass",
     "summary": {
-      "checked_segments": 40,
+      "checked_segments": 37,
       "failure_count": 0,
       "warning_count": 1
     },
@@ -2589,15 +2469,15 @@
     "schema_version": "rendered_summary_evidence_payload.v1",
     "render_target": "report_html_script#summaryEvidencePackData",
     "raw_content_included": false,
-    "item_count": 61,
+    "item_count": 58,
     "status": "ready"
   },
   "summary_quote_citations": {
-    "schema_version": "public_quote_citations.v1",
+    "schema_version": "public_quote_citations.v2",
     "render_target": "report_html_script#summaryEvidenceQuoteCitationsData",
     "public_quote_text_included": true,
     "subtitle_cue_count": 5408,
-    "item_count": 9,
+    "item_count": 20,
     "status": "ready"
   },
   "candidate_report_alias": "",
@@ -2886,13 +2766,13 @@
     "semantic_index_ref": "summary_local_vector_index.v1",
     "raw_content_included": false,
     "summary": {
-      "segment_count": 61,
-      "matched_segment_count": 61,
+      "segment_count": 58,
+      "matched_segment_count": 58,
       "unmatched_segment_count": 0,
       "timed_evidence_count": 16,
       "semantic_index_item_count": 16,
       "semantic_index_vectorized_count": 16,
-      "semantic_matched_ref_count": 13,
+      "semantic_matched_ref_count": 15,
       "window_sec": 90,
       "top_k": 3
     },
@@ -2907,7 +2787,7 @@
           {
             "evidence_id": "te_14356803_1_10_7b24bcd4dd2d",
             "rank": 1,
-            "score": 118.279675,
+            "score": 119.2354,
             "match_reason": "timestamp_contains_point+semantic_vector",
             "source_type": "subtitle_chunk",
             "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
@@ -2919,22 +2799,22 @@
             "public_safe": true,
             "raw_content_included": false,
             "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
-            "semantic_score": 0.045729
+            "semantic_score": 0.058472
           }
         ],
         "retrieval_status": "matched"
       },
       {
-        "segment_id": "seg_timeline_457014e76a01",
+        "segment_id": "seg_timeline_031f1d450e1e",
         "kind": "timeline",
         "section": "timeline",
-        "start_sec": 1626,
+        "start_sec": 1643,
         "end_sec": null,
         "evidence_refs": [
           {
             "evidence_id": "te_14356803_1_10_7b24bcd4dd2d",
             "rank": 1,
-            "score": 125.4121,
+            "score": 121.558525,
             "match_reason": "timestamp_contains_point+semantic_vector",
             "source_type": "subtitle_chunk",
             "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
@@ -2946,7 +2826,7 @@
             "public_safe": true,
             "raw_content_included": false,
             "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
-            "semantic_score": 0.140828
+            "semantic_score": 0.089447
           }
         ],
         "retrieval_status": "matched"
@@ -2978,16 +2858,16 @@
         "retrieval_status": "matched"
       },
       {
-        "segment_id": "seg_timeline_e451e0d6d4be",
+        "segment_id": "seg_timeline_ce63c7d9809c",
         "kind": "timeline",
         "section": "timeline",
-        "start_sec": 3046,
+        "start_sec": 3087,
         "end_sec": null,
         "evidence_refs": [
           {
             "evidence_id": "te_14356803_2_1800_80dab7eaba55",
             "rank": 1,
-            "score": 151.239367,
+            "score": 138.072742,
             "match_reason": "timestamp_contains_point+semantic_vector",
             "source_type": "subtitle_chunk",
             "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
@@ -2999,7 +2879,7 @@
             "public_safe": true,
             "raw_content_included": false,
             "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
-            "semantic_score": 0.456636
+            "semantic_score": 0.281081
           }
         ],
         "retrieval_status": "matched"
@@ -3026,6 +2906,33 @@
             "public_safe": true,
             "raw_content_included": false,
             "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt"
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_timeline_b5fb494fe25b",
+        "kind": "timeline",
+        "section": "timeline",
+        "start_sec": 3790,
+        "end_sec": null,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14356803_3_3337_b4ad7e6079e0",
+            "rank": 1,
+            "score": 122.685867,
+            "match_reason": "timestamp_contains_point+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 3337,
+            "end_sec": 4532,
+            "text_hash": "b4ad7e6079e005176308774d40eac8ea42196452a99b2f68437373e23f315c8e",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.035256
           }
         ],
         "retrieval_status": "matched"
@@ -3100,69 +3007,16 @@
         "retrieval_status": "matched"
       },
       {
-        "segment_id": "seg_timeline_3a16d4f0b59f",
+        "segment_id": "seg_timeline_78fce8a9ae4a",
         "kind": "timeline",
         "section": "timeline",
-        "start_sec": 6038,
-        "end_sec": null,
-        "evidence_refs": [
-          {
-            "evidence_id": "te_14356803_5_5326_2b002d8b98d2",
-            "rank": 1,
-            "score": 125.755633,
-            "match_reason": "timestamp_contains_point+semantic_vector",
-            "source_type": "subtitle_chunk",
-            "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
-            "route_ref": "chunk_srt.sliding_window",
-            "start_sec": 5326,
-            "end_sec": 6447,
-            "text_hash": "2b002d8b98d24807133403dfdec31661ad043aeb589f5e87f3a328d4f3e58675",
-            "confidence": 1.0,
-            "public_safe": true,
-            "raw_content_included": false,
-            "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
-            "semantic_score": 0.067964
-          }
-        ],
-        "retrieval_status": "matched"
-      },
-      {
-        "segment_id": "seg_timeline_ea0645ec683c",
-        "kind": "timeline",
-        "section": "timeline",
-        "start_sec": 6880,
-        "end_sec": null,
-        "evidence_refs": [
-          {
-            "evidence_id": "te_14356803_6_6483_0d62ba90ab83",
-            "rank": 1,
-            "score": 119.916667,
-            "match_reason": "timestamp_contains_point",
-            "source_type": "subtitle_chunk",
-            "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
-            "route_ref": "chunk_srt.sliding_window",
-            "start_sec": 6483,
-            "end_sec": 7693,
-            "text_hash": "0d62ba90ab83bc322685627a70670551c941cf8fb90428357810c0e14d142880",
-            "confidence": 1.0,
-            "public_safe": true,
-            "raw_content_included": false,
-            "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt"
-          }
-        ],
-        "retrieval_status": "matched"
-      },
-      {
-        "segment_id": "seg_timeline_440d3bbc5899",
-        "kind": "timeline",
-        "section": "timeline",
-        "start_sec": 7765,
+        "start_sec": 7711,
         "end_sec": null,
         "evidence_refs": [
           {
             "evidence_id": "te_14356803_7_7675_689dc0e4af7c",
             "rank": 1,
-            "score": 131.749308,
+            "score": 139.904208,
             "match_reason": "timestamp_contains_point+semantic_vector",
             "source_type": "subtitle_chunk",
             "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
@@ -3174,7 +3028,7 @@
             "public_safe": true,
             "raw_content_included": false,
             "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
-            "semantic_score": 0.127213
+            "semantic_score": 0.235945
           }
         ],
         "retrieval_status": "matched"
@@ -3189,8 +3043,8 @@
           {
             "evidence_id": "te_14356803_7_7675_689dc0e4af7c",
             "rank": 1,
-            "score": 122.208333,
-            "match_reason": "timestamp_contains_point",
+            "score": 128.498133,
+            "match_reason": "timestamp_contains_point+semantic_vector",
             "source_type": "subtitle_chunk",
             "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
             "route_ref": "chunk_srt.sliding_window",
@@ -3200,37 +3054,12 @@
             "confidence": 1.0,
             "public_safe": true,
             "raw_content_included": false,
-            "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt"
+            "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.083864
           },
           {
             "evidence_id": "te_14356803_8_8591_feb001bdffcb",
             "rank": 2,
-            "score": 115.858333,
-            "match_reason": "timestamp_contains_point",
-            "source_type": "subtitle_chunk",
-            "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
-            "route_ref": "chunk_srt.sliding_window",
-            "start_sec": 8591,
-            "end_sec": 10288,
-            "text_hash": "feb001bdffcbfe1c1c171fa6b3b5283501940508a771b6f191d39c8366eb6e9c",
-            "confidence": 1.0,
-            "public_safe": true,
-            "raw_content_included": false,
-            "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt"
-          }
-        ],
-        "retrieval_status": "matched"
-      },
-      {
-        "segment_id": "seg_timeline_11e69711edc9",
-        "kind": "timeline",
-        "section": "timeline",
-        "start_sec": 9521,
-        "end_sec": null,
-        "evidence_refs": [
-          {
-            "evidence_id": "te_14356803_8_8591_feb001bdffcb",
-            "rank": 1,
             "score": 115.858333,
             "match_reason": "timestamp_contains_point",
             "source_type": "subtitle_chunk",
@@ -3327,10 +3156,10 @@
         "retrieval_status": "matched"
       },
       {
-        "segment_id": "seg_timeline_2cfad89f2dc2",
+        "segment_id": "seg_timeline_b947f3064a0e",
         "kind": "timeline",
         "section": "timeline",
-        "start_sec": 13830,
+        "start_sec": 13785,
         "end_sec": null,
         "evidence_refs": [
           {
@@ -3362,7 +3191,7 @@
           {
             "evidence_id": "te_14356803_13_14430_0ae647e74fcb",
             "rank": 1,
-            "score": 125.323383,
+            "score": 125.047533,
             "match_reason": "timestamp_contains_point+semantic_vector",
             "source_type": "subtitle_chunk",
             "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
@@ -3374,33 +3203,7 @@
             "public_safe": true,
             "raw_content_included": false,
             "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
-            "semantic_score": 0.162534
-          }
-        ],
-        "retrieval_status": "matched"
-      },
-      {
-        "segment_id": "seg_timeline_3ed5ea9932f2",
-        "kind": "timeline",
-        "section": "timeline",
-        "start_sec": 15211,
-        "end_sec": null,
-        "evidence_refs": [
-          {
-            "evidence_id": "te_14356803_13_14430_0ae647e74fcb",
-            "rank": 1,
-            "score": 113.133333,
-            "match_reason": "timestamp_contains_point",
-            "source_type": "subtitle_chunk",
-            "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
-            "route_ref": "chunk_srt.sliding_window",
-            "start_sec": 14430,
-            "end_sec": 16454,
-            "text_hash": "0ae647e74fcb9fdbbaa6c57513946e87eda97cb400f19469b703bc0103a1c4b6",
-            "confidence": 1.0,
-            "public_safe": true,
-            "raw_content_included": false,
-            "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt"
+            "semantic_score": 0.158856
           }
         ],
         "retrieval_status": "matched"
@@ -3526,17 +3329,17 @@
         "retrieval_status": "matched"
       },
       {
-        "segment_id": "seg_timeline_388f485c297e",
+        "segment_id": "seg_timeline_ef0038a1926e",
         "kind": "timeline",
         "section": "timeline",
-        "start_sec": 21279,
+        "start_sec": 21545,
         "end_sec": null,
         "evidence_refs": [
           {
             "evidence_id": "te_14356803_16_19357_76b461516be0",
             "rank": 1,
-            "score": 118.897267,
-            "match_reason": "timestamp_contains_point+semantic_vector",
+            "score": 110.991667,
+            "match_reason": "timestamp_contains_point",
             "source_type": "subtitle_chunk",
             "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
             "route_ref": "chunk_srt.sliding_window",
@@ -3546,23 +3349,22 @@
             "confidence": 1.0,
             "public_safe": true,
             "raw_content_included": false,
-            "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
-            "semantic_score": 0.105408
+            "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt"
           }
         ],
         "retrieval_status": "matched"
       },
       {
-        "segment_id": "seg_highlight_e1a1d4d56657",
+        "segment_id": "seg_highlight_9c6c228366da",
         "kind": "highlight",
         "section": "highlights",
         "start_sec": 352,
-        "end_sec": 361,
+        "end_sec": 386,
         "evidence_refs": [
           {
             "evidence_id": "te_14356803_1_10_7b24bcd4dd2d",
             "rank": 1,
-            "score": 100.247525,
+            "score": 100.935094,
             "match_reason": "timestamp_overlap",
             "source_type": "subtitle_chunk",
             "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
@@ -3579,17 +3381,17 @@
         "retrieval_status": "matched"
       },
       {
-        "segment_id": "seg_highlight_9ba2e74d6a91",
+        "segment_id": "seg_highlight_08864618bcac",
         "kind": "highlight",
         "section": "highlights",
-        "start_sec": 8601,
+        "start_sec": 8166,
         "end_sec": 8601,
         "evidence_refs": [
           {
             "evidence_id": "te_14356803_7_7675_689dc0e4af7c",
             "rank": 1,
-            "score": 122.208333,
-            "match_reason": "timestamp_contains_point",
+            "score": 123.262032,
+            "match_reason": "timestamp_overlap",
             "source_type": "subtitle_chunk",
             "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
             "route_ref": "chunk_srt.sliding_window",
@@ -3604,8 +3406,8 @@
           {
             "evidence_id": "te_14356803_8_8591_feb001bdffcb",
             "rank": 2,
-            "score": 115.858333,
-            "match_reason": "timestamp_contains_point",
+            "score": 103.289463,
+            "match_reason": "timestamp_overlap+semantic_vector",
             "source_type": "subtitle_chunk",
             "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
             "route_ref": "chunk_srt.sliding_window",
@@ -3615,22 +3417,82 @@
             "confidence": 1.0,
             "public_safe": true,
             "raw_content_included": false,
+            "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.039931
+          }
+        ],
+        "retrieval_status": "matched"
+      },
+      {
+        "segment_id": "seg_highlight_dcf3987eee53",
+        "kind": "highlight",
+        "section": "highlights",
+        "start_sec": 9865,
+        "end_sec": 10323,
+        "evidence_refs": [
+          {
+            "evidence_id": "te_14356803_8_8591_feb001bdffcb",
+            "rank": 1,
+            "score": 115.04167,
+            "match_reason": "timestamp_overlap+semantic_vector",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 8591,
+            "end_sec": 10288,
+            "text_hash": "feb001bdffcbfe1c1c171fa6b3b5283501940508a771b6f191d39c8366eb6e9c",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
+            "semantic_score": 0.03438
+          },
+          {
+            "evidence_id": "te_14356803_9_10267_c3d937675696",
+            "rank": 2,
+            "score": 102.791625,
+            "match_reason": "timestamp_overlap",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 10267,
+            "end_sec": 11270,
+            "text_hash": "c3d937675696dfdb4faf565183aa66a2b9de6b0a770dd438a74051da570efc47",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
             "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt"
           }
         ],
         "retrieval_status": "matched"
       },
       {
-        "segment_id": "seg_highlight_de9de9cf84d9",
+        "segment_id": "seg_highlight_c215b27896fe",
         "kind": "highlight",
         "section": "highlights",
         "start_sec": 13398,
-        "end_sec": 13427,
+        "end_sec": 14122,
         "evidence_refs": [
           {
-            "evidence_id": "te_14356803_11_12070_b6dfac43912f",
+            "evidence_id": "te_14356803_12_13471_29b373307cc2",
             "rank": 1,
-            "score": 101.013986,
+            "score": 132.61523,
+            "match_reason": "timestamp_overlap",
+            "source_type": "subtitle_chunk",
+            "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
+            "route_ref": "chunk_srt.sliding_window",
+            "start_sec": 13471,
+            "end_sec": 14469,
+            "text_hash": "29b373307cc28df145baf079a2522bd3aad3b2f0b45c6858fc485fe957900eb3",
+            "confidence": 1.0,
+            "public_safe": true,
+            "raw_content_included": false,
+            "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt"
+          },
+          {
+            "evidence_id": "te_14356803_11_12070_b6dfac43912f",
+            "rank": 2,
+            "score": 103.566434,
             "match_reason": "timestamp_overlap",
             "source_type": "subtitle_chunk",
             "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
@@ -3656,7 +3518,7 @@
           {
             "evidence_id": "te_14356803_13_14430_0ae647e74fcb",
             "rank": 1,
-            "score": 132.258408,
+            "score": 127.762608,
             "match_reason": "timestamp_contains_point+semantic_vector",
             "source_type": "subtitle_chunk",
             "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
@@ -3668,33 +3530,7 @@
             "public_safe": true,
             "raw_content_included": false,
             "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
-            "semantic_score": 0.255001
-          }
-        ],
-        "retrieval_status": "matched"
-      },
-      {
-        "segment_id": "seg_highlight_2ce9462288d0",
-        "kind": "highlight",
-        "section": "highlights",
-        "start_sec": 21279,
-        "end_sec": 21545,
-        "evidence_refs": [
-          {
-            "evidence_id": "te_14356803_16_19357_76b461516be0",
-            "rank": 1,
-            "score": 105.830776,
-            "match_reason": "timestamp_overlap",
-            "source_type": "subtitle_chunk",
-            "source_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt",
-            "route_ref": "chunk_srt.sliding_window",
-            "start_sec": 19357,
-            "end_sec": 21638,
-            "text_hash": "76b461516be0ce18cdc07206aa080dfddb43662e6c1b9c609f2c5725ae6f2faa",
-            "confidence": 1.0,
-            "public_safe": true,
-            "raw_content_included": false,
-            "path_ref": "work:14356803/14356803_폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶_144p.srt"
+            "semantic_score": 0.195057
           }
         ],
         "retrieval_status": "matched"
@@ -5475,7 +5311,7 @@
         "retry_condition": "요약 cache manifest 계산 후 다시 확인합니다.",
         "detail": {
           "schema_version": 10,
-          "manifest_key_count": 23,
+          "manifest_key_count": 24,
           "has_summary_hash": false
         }
       },
@@ -5487,752 +5323,17 @@
         "reason": "렌더링된 리포트의 segment ledger가 있습니다.",
         "retry_condition": "summary Markdown parser/metadata generation을 확인한 뒤 다시 렌더링합니다.",
         "detail": {
-          "segment_count": 62,
+          "segment_count": 59,
           "kind_counts": {
             "chapter": 12,
             "highlight": 5,
             "highlight_candidate": 21,
             "summary": 1,
-            "timeline": 23
+            "timeline": 20
           }
         }
       }
     ]
-  },
-  "audio_reaction_peaks": [
-    {
-      "start_sec": 1650.0,
-      "end_sec": 1655.0,
-      "center_sec": 1652.5,
-      "loudness_db": -15.674,
-      "peak_db": -1.193,
-      "percentile": 0.9985,
-      "z_score": 1.5241,
-      "normalized": 0.754,
-      "score": 0.834,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate"
-      ],
-      "primary_label": "voice_reaction_candidate",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 3300.0,
-      "end_sec": 3305.0,
-      "center_sec": 3302.5,
-      "loudness_db": -15.881,
-      "peak_db": -0.766,
-      "percentile": 0.9976,
-      "z_score": 1.498,
-      "normalized": 0.7497,
-      "score": 0.8297,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate"
-      ],
-      "primary_label": "voice_reaction_candidate",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 4355.0,
-      "end_sec": 4360.0,
-      "center_sec": 4357.5,
-      "loudness_db": -15.787,
-      "peak_db": -0.353,
-      "percentile": 0.9983,
-      "z_score": 1.5098,
-      "normalized": 0.7516,
-      "score": 0.8316,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "clipping_or_limiter_diagnostic",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 5065.0,
-      "end_sec": 5070.0,
-      "center_sec": 5067.5,
-      "loudness_db": -18.96,
-      "peak_db": -1.622,
-      "percentile": 0.9509,
-      "z_score": 1.1101,
-      "normalized": 0.685,
-      "score": 0.845,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 5100.0,
-      "end_sec": 5105.0,
-      "center_sec": 5102.5,
-      "loudness_db": -18.365,
-      "peak_db": -1.482,
-      "percentile": 0.9675,
-      "z_score": 1.185,
-      "normalized": 0.6975,
-      "score": 0.8575,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 5330.0,
-      "end_sec": 5335.0,
-      "center_sec": 5332.5,
-      "loudness_db": -15.878,
-      "peak_db": -1.285,
-      "percentile": 0.9978,
-      "z_score": 1.4984,
-      "normalized": 0.7497,
-      "score": 0.8297,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate"
-      ],
-      "primary_label": "voice_reaction_candidate",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 5660.0,
-      "end_sec": 5665.0,
-      "center_sec": 5662.5,
-      "loudness_db": -18.954,
-      "peak_db": -1.195,
-      "percentile": 0.9511,
-      "z_score": 1.1108,
-      "normalized": 0.6851,
-      "score": 0.8451,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 5950.0,
-      "end_sec": 5955.0,
-      "center_sec": 5952.5,
-      "loudness_db": -18.757,
-      "peak_db": -0.754,
-      "percentile": 0.9562,
-      "z_score": 1.1357,
-      "normalized": 0.6893,
-      "score": 0.8493,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 5985.0,
-      "end_sec": 5990.0,
-      "center_sec": 5987.5,
-      "loudness_db": -15.026,
-      "peak_db": -1.314,
-      "percentile": 0.9994,
-      "z_score": 1.6057,
-      "normalized": 0.7676,
-      "score": 0.9276,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 6015.0,
-      "end_sec": 6020.0,
-      "center_sec": 6017.5,
-      "loudness_db": -18.718,
-      "peak_db": -1.256,
-      "percentile": 0.9578,
-      "z_score": 1.1406,
-      "normalized": 0.6901,
-      "score": 0.8501,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 7125.0,
-      "end_sec": 7130.0,
-      "center_sec": 7127.5,
-      "loudness_db": -15.886,
-      "peak_db": -1.113,
-      "percentile": 0.9973,
-      "z_score": 1.4973,
-      "normalized": 0.7496,
-      "score": 0.8296,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate"
-      ],
-      "primary_label": "voice_reaction_candidate",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 7545.0,
-      "end_sec": 7550.0,
-      "center_sec": 7547.5,
-      "loudness_db": -18.911,
-      "peak_db": -1.562,
-      "percentile": 0.9523,
-      "z_score": 1.1162,
-      "normalized": 0.686,
-      "score": 0.846,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 7585.0,
-      "end_sec": 7590.0,
-      "center_sec": 7587.5,
-      "loudness_db": -17.778,
-      "peak_db": -1.434,
-      "percentile": 0.9805,
-      "z_score": 1.259,
-      "normalized": 0.7098,
-      "score": 0.8698,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 8180.0,
-      "end_sec": 8185.0,
-      "center_sec": 8182.5,
-      "loudness_db": -15.08,
-      "peak_db": -1.169,
-      "percentile": 0.9992,
-      "z_score": 1.5989,
-      "normalized": 0.7665,
-      "score": 0.8465,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate"
-      ],
-      "primary_label": "voice_reaction_candidate",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 9665.0,
-      "end_sec": 9670.0,
-      "center_sec": 9667.5,
-      "loudness_db": -18.199,
-      "peak_db": -1.983,
-      "percentile": 0.9715,
-      "z_score": 1.206,
-      "normalized": 0.701,
-      "score": 0.861,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 11150.0,
-      "end_sec": 11155.0,
-      "center_sec": 11152.5,
-      "loudness_db": -15.304,
-      "peak_db": -1.221,
-      "percentile": 0.999,
-      "z_score": 1.5706,
-      "normalized": 0.7618,
-      "score": 0.8418,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate"
-      ],
-      "primary_label": "voice_reaction_candidate",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 14310.0,
-      "end_sec": 14315.0,
-      "center_sec": 14312.5,
-      "loudness_db": -14.936,
-      "peak_db": 0.0,
-      "percentile": 0.9999,
-      "z_score": 1.617,
-      "normalized": 0.7695,
-      "score": 0.8495,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "clipping_or_limiter_diagnostic",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 14430.0,
-      "end_sec": 14435.0,
-      "center_sec": 14432.5,
-      "loudness_db": -14.946,
-      "peak_db": -1.02,
-      "percentile": 0.9997,
-      "z_score": 1.6158,
-      "normalized": 0.7693,
-      "score": 0.8493,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate"
-      ],
-      "primary_label": "voice_reaction_candidate",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 17390.0,
-      "end_sec": 17395.0,
-      "center_sec": 17392.5,
-      "loudness_db": -15.827,
-      "peak_db": -1.187,
-      "percentile": 0.998,
-      "z_score": 1.5048,
-      "normalized": 0.7508,
-      "score": 0.9108,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 19170.0,
-      "end_sec": 19175.0,
-      "center_sec": 19172.5,
-      "loudness_db": -18.928,
-      "peak_db": -1.393,
-      "percentile": 0.9518,
-      "z_score": 1.1141,
-      "normalized": 0.6857,
-      "score": 0.8457,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    }
-  ],
-  "audio_loudness_per_min": [
-    -30.843,
-    -29.837,
-    -29.258,
-    -37.746,
-    -33.725,
-    -29.56,
-    -26.129,
-    -27.035,
-    -27.642,
-    -32.207,
-    -29.567,
-    -28.588,
-    -30.047,
-    -29.497,
-    -30.221,
-    -29.431,
-    -28.711,
-    -29.781,
-    -25.894,
-    -30.517,
-    -30.376,
-    -28.129,
-    -24.384,
-    -25.521,
-    -23.153,
-    -28.526,
-    -27.693,
-    -23.659,
-    -33.517,
-    -27.223,
-    -22.256,
-    -35.41,
-    -32.594,
-    -31.371,
-    -36.642,
-    -29.981,
-    -34.498,
-    -31.927,
-    -37.815,
-    -35.865,
-    -28.126,
-    -25.334,
-    -23.741,
-    -24.422,
-    -23.153,
-    -24.183,
-    -23.807,
-    -20.722,
-    -29.658,
-    -22.152,
-    -23.407,
-    -22.705,
-    -22.553,
-    -23.005,
-    -22.122,
-    -23.022,
-    -18.546,
-    -55.992,
-    -32.151,
-    -22.939,
-    -28.062,
-    -25.931,
-    -26.877,
-    -26.371,
-    -27.853,
-    -25.716,
-    -26.237,
-    -29.78,
-    -27.383,
-    -24.233,
-    -27.435,
-    -23.124,
-    -23.292,
-    -22.905,
-    -22.526,
-    -23.922,
-    -24.218,
-    -23.727,
-    -25.452,
-    -37.222,
-    -30.186,
-    -22.637,
-    -26.375,
-    -31.851,
-    -22.728,
-    -23.879,
-    -22.82,
-    -20.291,
-    -24.155,
-    -21.532,
-    -27.123,
-    -29.339,
-    -24.754,
-    -25.399,
-    -29.795,
-    -23.347,
-    -23.035,
-    -22.774,
-    -26.099,
-    -22.119,
-    -23.186,
-    -25.023,
-    -36.556,
-    -34.296,
-    -26.992,
-    -25.775,
-    -22.773,
-    -24.92,
-    -26.481,
-    -29.013,
-    -25.637,
-    -29.898,
-    -26.949,
-    -23.122,
-    -25.106,
-    -26.263,
-    -26.038,
-    -31.827,
-    -24.693,
-    -24.394,
-    -26.222,
-    -29.085,
-    -23.883,
-    -29.919,
-    -26.315,
-    -31.478,
-    -46.005,
-    -44.279,
-    -23.361,
-    -24.731,
-    -23.575,
-    -24.451,
-    -22.736,
-    -25.684,
-    -26.268,
-    -26.276,
-    -23.264,
-    -24.743,
-    -25.05,
-    -23.689,
-    -23.608,
-    -26.617,
-    -24.237,
-    -24.773,
-    -25.82,
-    -28.093,
-    -42.015,
-    -35.674,
-    -28.991,
-    -26.77,
-    -24.075,
-    -27.842,
-    -29.277,
-    -26.689,
-    -28.393,
-    -30.188,
-    -33.657,
-    -28.923,
-    -27.862,
-    -29.748,
-    -23.865,
-    -33.398,
-    -37.763,
-    -35.818,
-    -28.928,
-    -31.396,
-    -23.721,
-    -24.749,
-    -25.384,
-    -28.792,
-    -30.135,
-    -23.436,
-    -31.372,
-    -30.229,
-    -24.826,
-    -25.673,
-    -27.125,
-    -29.863,
-    -26.655,
-    -26.53,
-    -31.338,
-    -24.294,
-    -28.081,
-    -32.373,
-    -29.593,
-    -28.49,
-    -25.544,
-    -28.587,
-    -31.266,
-    -26.428,
-    -30.491,
-    -30.223,
-    -27.908,
-    -25.228,
-    -28.421,
-    -27.385,
-    -27.481,
-    -29.864,
-    -30.522,
-    -25.666,
-    -31.494,
-    -26.578,
-    -24.173,
-    -25.676,
-    -27.345,
-    -31.403,
-    -29.653,
-    -26.286,
-    -40.698,
-    -34.298,
-    -33.674,
-    -25.382,
-    -24.706,
-    -25.473,
-    -25.504,
-    -25.61,
-    -28.982,
-    -26.31,
-    -25.247,
-    -25.932,
-    -36.18,
-    -23.049,
-    -22.774,
-    -25.524,
-    -27.491,
-    -26.659,
-    -27.975,
-    -31.923,
-    -26.781,
-    -31.2,
-    -34.489,
-    -22.154,
-    -25.356,
-    -23.462,
-    -21.556,
-    -20.348,
-    -20.545,
-    -24.389,
-    -25.369,
-    -27.294,
-    -22.499,
-    -25.353,
-    -28.677,
-    -25.912,
-    -24.742,
-    -27.345,
-    -24.047,
-    -25.271,
-    -26.549,
-    -25.292,
-    -29.706,
-    -27.125,
-    -30.512,
-    -36.797,
-    -28.727,
-    -31.647,
-    -27.902,
-    -21.936,
-    -22.726,
-    -29.391,
-    -24.974,
-    -30.344,
-    -28.965,
-    -27.88,
-    -25.918,
-    -24.898,
-    -24.732,
-    -33.918,
-    -48.668,
-    -39.588,
-    -40.969,
-    -28.458,
-    -27.499,
-    -37.769,
-    -31.407,
-    -28.306,
-    -27.041,
-    -25.262,
-    -26.344,
-    -25.844,
-    -22.613,
-    -30.059,
-    -34.8,
-    -25.739,
-    -24.561,
-    -23.719,
-    -27.72,
-    -24.445,
-    -25.808,
-    -29.644,
-    -22.778,
-    -27.046,
-    -23.854,
-    -23.994,
-    -26.116,
-    -27.72,
-    -24.27,
-    -25.594,
-    -26.981,
-    -28.15,
-    -25.7,
-    -24.216,
-    -27.472,
-    -24.431,
-    -23.759,
-    -25.113,
-    -23.722,
-    -29.314,
-    -27.333,
-    -27.515,
-    -26.895,
-    -29.662,
-    -30.01,
-    -31.785,
-    -32.762,
-    -28.07,
-    -27.073,
-    -28.467,
-    -33.719,
-    -25.655,
-    -25.128,
-    -25.14,
-    -29.337,
-    -30.298,
-    -30.479,
-    -33.855,
-    -37.734,
-    -39.981,
-    -37.994,
-    -24.636,
-    -24.079,
-    -22.07,
-    -24.416,
-    -27.703,
-    -30.934,
-    -34.055,
-    -30.23,
-    -29.416,
-    -25.963,
-    -35.152,
-    -36.322,
-    -29.711,
-    -22.427,
-    -31.576,
-    -29.444,
-    -37.225,
-    -33.673,
-    -22.99,
-    -23.946,
-    -24.697,
-    -26.374,
-    -23.597,
-    -21.257,
-    -22.754,
-    -23.547,
-    -29.147,
-    -27.883,
-    -29.137,
-    -27.439,
-    -26.577,
-    -25.142
-  ],
-  "audio_feature_source": {
-    "kind": "relative_loudness_main_pipeline",
-    "enabled_by_default": true,
-    "window_sec": 5,
-    "min_percentile": 0.95,
-    "min_gap_sec": 30,
-    "chat_overlap_sec": 60,
-    "max_peaks": 20,
-    "waveform_max_points": 720,
-    "normalization": "per_vod_relative_percentile_and_z_score",
-    "decision_rule": "audio is supporting evidence; audio-only peaks do not prove highlight importance",
-    "sample_count": 21640,
-    "source_kind": "whisper_wav_cache",
-    "sample_extraction": "wav_pcm_python",
-    "source_count": 7,
-    "include_lufs": false
   },
   "audio_waveform": {
     "schema_version": "audio_waveform.v1",
@@ -9847,6 +8948,742 @@
       }
     ]
   },
+  "audio_feature_source": {
+    "kind": "relative_loudness_main_pipeline",
+    "enabled_by_default": true,
+    "window_sec": 5,
+    "min_percentile": 0.95,
+    "min_gap_sec": 30,
+    "chat_overlap_sec": 60,
+    "max_peaks": 20,
+    "waveform_max_points": 720,
+    "normalization": "per_vod_relative_percentile_and_z_score",
+    "decision_rule": "audio is supporting evidence; audio-only peaks do not prove highlight importance",
+    "sample_count": 21640,
+    "source_kind": "whisper_wav_cache",
+    "sample_extraction": "wav_pcm_python",
+    "source_count": 7,
+    "include_lufs": false,
+    "reused_from_cache": true
+  },
+  "audio_loudness_per_min": [
+    -30.843,
+    -29.837,
+    -29.258,
+    -37.746,
+    -33.725,
+    -29.56,
+    -26.129,
+    -27.035,
+    -27.642,
+    -32.207,
+    -29.567,
+    -28.588,
+    -30.047,
+    -29.497,
+    -30.221,
+    -29.431,
+    -28.711,
+    -29.781,
+    -25.894,
+    -30.517,
+    -30.376,
+    -28.129,
+    -24.384,
+    -25.521,
+    -23.153,
+    -28.526,
+    -27.693,
+    -23.659,
+    -33.517,
+    -27.223,
+    -22.256,
+    -35.41,
+    -32.594,
+    -31.371,
+    -36.642,
+    -29.981,
+    -34.498,
+    -31.927,
+    -37.815,
+    -35.865,
+    -28.126,
+    -25.334,
+    -23.741,
+    -24.422,
+    -23.153,
+    -24.183,
+    -23.807,
+    -20.722,
+    -29.658,
+    -22.152,
+    -23.407,
+    -22.705,
+    -22.553,
+    -23.005,
+    -22.122,
+    -23.022,
+    -18.546,
+    -55.992,
+    -32.151,
+    -22.939,
+    -28.062,
+    -25.931,
+    -26.877,
+    -26.371,
+    -27.853,
+    -25.716,
+    -26.237,
+    -29.78,
+    -27.383,
+    -24.233,
+    -27.435,
+    -23.124,
+    -23.292,
+    -22.905,
+    -22.526,
+    -23.922,
+    -24.218,
+    -23.727,
+    -25.452,
+    -37.222,
+    -30.186,
+    -22.637,
+    -26.375,
+    -31.851,
+    -22.728,
+    -23.879,
+    -22.82,
+    -20.291,
+    -24.155,
+    -21.532,
+    -27.123,
+    -29.339,
+    -24.754,
+    -25.399,
+    -29.795,
+    -23.347,
+    -23.035,
+    -22.774,
+    -26.099,
+    -22.119,
+    -23.186,
+    -25.023,
+    -36.556,
+    -34.296,
+    -26.992,
+    -25.775,
+    -22.773,
+    -24.92,
+    -26.481,
+    -29.013,
+    -25.637,
+    -29.898,
+    -26.949,
+    -23.122,
+    -25.106,
+    -26.263,
+    -26.038,
+    -31.827,
+    -24.693,
+    -24.394,
+    -26.222,
+    -29.085,
+    -23.883,
+    -29.919,
+    -26.315,
+    -31.478,
+    -46.005,
+    -44.279,
+    -23.361,
+    -24.731,
+    -23.575,
+    -24.451,
+    -22.736,
+    -25.684,
+    -26.268,
+    -26.276,
+    -23.264,
+    -24.743,
+    -25.05,
+    -23.689,
+    -23.608,
+    -26.617,
+    -24.237,
+    -24.773,
+    -25.82,
+    -28.093,
+    -42.015,
+    -35.674,
+    -28.991,
+    -26.77,
+    -24.075,
+    -27.842,
+    -29.277,
+    -26.689,
+    -28.393,
+    -30.188,
+    -33.657,
+    -28.923,
+    -27.862,
+    -29.748,
+    -23.865,
+    -33.398,
+    -37.763,
+    -35.818,
+    -28.928,
+    -31.396,
+    -23.721,
+    -24.749,
+    -25.384,
+    -28.792,
+    -30.135,
+    -23.436,
+    -31.372,
+    -30.229,
+    -24.826,
+    -25.673,
+    -27.125,
+    -29.863,
+    -26.655,
+    -26.53,
+    -31.338,
+    -24.294,
+    -28.081,
+    -32.373,
+    -29.593,
+    -28.49,
+    -25.544,
+    -28.587,
+    -31.266,
+    -26.428,
+    -30.491,
+    -30.223,
+    -27.908,
+    -25.228,
+    -28.421,
+    -27.385,
+    -27.481,
+    -29.864,
+    -30.522,
+    -25.666,
+    -31.494,
+    -26.578,
+    -24.173,
+    -25.676,
+    -27.345,
+    -31.403,
+    -29.653,
+    -26.286,
+    -40.698,
+    -34.298,
+    -33.674,
+    -25.382,
+    -24.706,
+    -25.473,
+    -25.504,
+    -25.61,
+    -28.982,
+    -26.31,
+    -25.247,
+    -25.932,
+    -36.18,
+    -23.049,
+    -22.774,
+    -25.524,
+    -27.491,
+    -26.659,
+    -27.975,
+    -31.923,
+    -26.781,
+    -31.2,
+    -34.489,
+    -22.154,
+    -25.356,
+    -23.462,
+    -21.556,
+    -20.348,
+    -20.545,
+    -24.389,
+    -25.369,
+    -27.294,
+    -22.499,
+    -25.353,
+    -28.677,
+    -25.912,
+    -24.742,
+    -27.345,
+    -24.047,
+    -25.271,
+    -26.549,
+    -25.292,
+    -29.706,
+    -27.125,
+    -30.512,
+    -36.797,
+    -28.727,
+    -31.647,
+    -27.902,
+    -21.936,
+    -22.726,
+    -29.391,
+    -24.974,
+    -30.344,
+    -28.965,
+    -27.88,
+    -25.918,
+    -24.898,
+    -24.732,
+    -33.918,
+    -48.668,
+    -39.588,
+    -40.969,
+    -28.458,
+    -27.499,
+    -37.769,
+    -31.407,
+    -28.306,
+    -27.041,
+    -25.262,
+    -26.344,
+    -25.844,
+    -22.613,
+    -30.059,
+    -34.8,
+    -25.739,
+    -24.561,
+    -23.719,
+    -27.72,
+    -24.445,
+    -25.808,
+    -29.644,
+    -22.778,
+    -27.046,
+    -23.854,
+    -23.994,
+    -26.116,
+    -27.72,
+    -24.27,
+    -25.594,
+    -26.981,
+    -28.15,
+    -25.7,
+    -24.216,
+    -27.472,
+    -24.431,
+    -23.759,
+    -25.113,
+    -23.722,
+    -29.314,
+    -27.333,
+    -27.515,
+    -26.895,
+    -29.662,
+    -30.01,
+    -31.785,
+    -32.762,
+    -28.07,
+    -27.073,
+    -28.467,
+    -33.719,
+    -25.655,
+    -25.128,
+    -25.14,
+    -29.337,
+    -30.298,
+    -30.479,
+    -33.855,
+    -37.734,
+    -39.981,
+    -37.994,
+    -24.636,
+    -24.079,
+    -22.07,
+    -24.416,
+    -27.703,
+    -30.934,
+    -34.055,
+    -30.23,
+    -29.416,
+    -25.963,
+    -35.152,
+    -36.322,
+    -29.711,
+    -22.427,
+    -31.576,
+    -29.444,
+    -37.225,
+    -33.673,
+    -22.99,
+    -23.946,
+    -24.697,
+    -26.374,
+    -23.597,
+    -21.257,
+    -22.754,
+    -23.547,
+    -29.147,
+    -27.883,
+    -29.137,
+    -27.439,
+    -26.577,
+    -25.142
+  ],
+  "audio_reaction_peaks": [
+    {
+      "start_sec": 1650.0,
+      "end_sec": 1655.0,
+      "center_sec": 1652.5,
+      "loudness_db": -15.674,
+      "peak_db": -1.193,
+      "percentile": 0.9985,
+      "z_score": 1.5241,
+      "normalized": 0.754,
+      "score": 0.834,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 3300.0,
+      "end_sec": 3305.0,
+      "center_sec": 3302.5,
+      "loudness_db": -15.881,
+      "peak_db": -0.766,
+      "percentile": 0.9976,
+      "z_score": 1.498,
+      "normalized": 0.7497,
+      "score": 0.8297,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4355.0,
+      "end_sec": 4360.0,
+      "center_sec": 4357.5,
+      "loudness_db": -15.787,
+      "peak_db": -0.353,
+      "percentile": 0.9983,
+      "z_score": 1.5098,
+      "normalized": 0.7516,
+      "score": 0.8316,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5065.0,
+      "end_sec": 5070.0,
+      "center_sec": 5067.5,
+      "loudness_db": -18.96,
+      "peak_db": -1.622,
+      "percentile": 0.9509,
+      "z_score": 1.1101,
+      "normalized": 0.685,
+      "score": 0.845,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5100.0,
+      "end_sec": 5105.0,
+      "center_sec": 5102.5,
+      "loudness_db": -18.365,
+      "peak_db": -1.482,
+      "percentile": 0.9675,
+      "z_score": 1.185,
+      "normalized": 0.6975,
+      "score": 0.8575,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5330.0,
+      "end_sec": 5335.0,
+      "center_sec": 5332.5,
+      "loudness_db": -15.878,
+      "peak_db": -1.285,
+      "percentile": 0.9978,
+      "z_score": 1.4984,
+      "normalized": 0.7497,
+      "score": 0.8297,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5660.0,
+      "end_sec": 5665.0,
+      "center_sec": 5662.5,
+      "loudness_db": -18.954,
+      "peak_db": -1.195,
+      "percentile": 0.9511,
+      "z_score": 1.1108,
+      "normalized": 0.6851,
+      "score": 0.8451,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5950.0,
+      "end_sec": 5955.0,
+      "center_sec": 5952.5,
+      "loudness_db": -18.757,
+      "peak_db": -0.754,
+      "percentile": 0.9562,
+      "z_score": 1.1357,
+      "normalized": 0.6893,
+      "score": 0.8493,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 5985.0,
+      "end_sec": 5990.0,
+      "center_sec": 5987.5,
+      "loudness_db": -15.026,
+      "peak_db": -1.314,
+      "percentile": 0.9994,
+      "z_score": 1.6057,
+      "normalized": 0.7676,
+      "score": 0.9276,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 6015.0,
+      "end_sec": 6020.0,
+      "center_sec": 6017.5,
+      "loudness_db": -18.718,
+      "peak_db": -1.256,
+      "percentile": 0.9578,
+      "z_score": 1.1406,
+      "normalized": 0.6901,
+      "score": 0.8501,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 7125.0,
+      "end_sec": 7130.0,
+      "center_sec": 7127.5,
+      "loudness_db": -15.886,
+      "peak_db": -1.113,
+      "percentile": 0.9973,
+      "z_score": 1.4973,
+      "normalized": 0.7496,
+      "score": 0.8296,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 7545.0,
+      "end_sec": 7550.0,
+      "center_sec": 7547.5,
+      "loudness_db": -18.911,
+      "peak_db": -1.562,
+      "percentile": 0.9523,
+      "z_score": 1.1162,
+      "normalized": 0.686,
+      "score": 0.846,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 7585.0,
+      "end_sec": 7590.0,
+      "center_sec": 7587.5,
+      "loudness_db": -17.778,
+      "peak_db": -1.434,
+      "percentile": 0.9805,
+      "z_score": 1.259,
+      "normalized": 0.7098,
+      "score": 0.8698,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 8180.0,
+      "end_sec": 8185.0,
+      "center_sec": 8182.5,
+      "loudness_db": -15.08,
+      "peak_db": -1.169,
+      "percentile": 0.9992,
+      "z_score": 1.5989,
+      "normalized": 0.7665,
+      "score": 0.8465,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 9665.0,
+      "end_sec": 9670.0,
+      "center_sec": 9667.5,
+      "loudness_db": -18.199,
+      "peak_db": -1.983,
+      "percentile": 0.9715,
+      "z_score": 1.206,
+      "normalized": 0.701,
+      "score": 0.861,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 11150.0,
+      "end_sec": 11155.0,
+      "center_sec": 11152.5,
+      "loudness_db": -15.304,
+      "peak_db": -1.221,
+      "percentile": 0.999,
+      "z_score": 1.5706,
+      "normalized": 0.7618,
+      "score": 0.8418,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 14310.0,
+      "end_sec": 14315.0,
+      "center_sec": 14312.5,
+      "loudness_db": -14.936,
+      "peak_db": 0.0,
+      "percentile": 0.9999,
+      "z_score": 1.617,
+      "normalized": 0.7695,
+      "score": 0.8495,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 14430.0,
+      "end_sec": 14435.0,
+      "center_sec": 14432.5,
+      "loudness_db": -14.946,
+      "peak_db": -1.02,
+      "percentile": 0.9997,
+      "z_score": 1.6158,
+      "normalized": 0.7693,
+      "score": 0.8493,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate"
+      ],
+      "primary_label": "voice_reaction_candidate",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 17390.0,
+      "end_sec": 17395.0,
+      "center_sec": 17392.5,
+      "loudness_db": -15.827,
+      "peak_db": -1.187,
+      "percentile": 0.998,
+      "z_score": 1.5048,
+      "normalized": 0.7508,
+      "score": 0.9108,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 19170.0,
+      "end_sec": 19175.0,
+      "center_sec": 19172.5,
+      "loudness_db": -18.928,
+      "peak_db": -1.393,
+      "percentile": 0.9518,
+      "z_score": 1.1141,
+      "normalized": 0.6857,
+      "score": 0.8457,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    }
+  ],
   "summary_run_ledger": {
     "schema_version": "summary_run_ledger.v1",
     "run_id": "14356803_20260724_e70d7c4eec1e",

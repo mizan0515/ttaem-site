@@ -1,0 +1,23 @@
+{
+  "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_name": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "platform": "chzzk",
+  "video_no": "14636761",
+  "title": "데바데 청소년풀장 내전 (●'▿'●)۶",
+  "published_at": "2026-08-11T02:17:48+09:00",
+  "published_date_str": "20260811",
+  "duration_sec": 8033,
+  "platform_category": "데드 바이 데이라이트",
+  "content_judgement": null,
+  "summary_md_path": "vods/14636761/report.md",
+  "summary_html_path": "vods/14636761/report.html",
+  "metadata_json_path": "vods/14636761/metadata.json",
+  "thumbnail_url": null,
+  "search_text": "탬탬버린 | 데바데 청소년풀장 내전 (●'▿'●)۶",
+  "stats": {
+    "total_chats": 10501,
+    "highlight_count": 18
+  },
+  "processed_at": "2026-08-12T19:39:22.733961+09:00"
+}
