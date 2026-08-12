@@ -2087,20 +2087,10 @@ function initViewerEditorTools() {
       loadMessage('장면 도구 데이터를 불러오지 못했습니다. 요약 본문은 그대로 볼 수 있고, 페이지를 새로고침해 다시 시도할 수 있습니다.');
     }
   };
-  loadMessage('장면 도구는 이 영역에 가까워지거나 클릭하면 불러옵니다.');
-  const container = document.getElementById('youtube-editor-tools');
-  if (container) container.addEventListener('click', startOnce, { once: true });
-  if ('IntersectionObserver' in window && container) {
-    const observer = new IntersectionObserver((entries) => {
-      if (entries.some((entry) => entry.isIntersecting)) {
-        observer.disconnect();
-        startOnce();
-      }
-    }, { rootMargin: '480px 0px' });
-    observer.observe(container);
-  } else {
-    startOnce();
-  }
+  // The split sidecar also owns the accepted D1/D2/Point/Candidate projection
+  // rendered in the report body. Fetch it at page start; only the heavier axis
+  // rendering remains lazy inside startViewerEditorTools().
+  startOnce();
 }
 function initViewerClipPlayers() {
   if (document.documentElement.dataset.viewerClipPlayersInitialized === '1') return;
