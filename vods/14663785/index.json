@@ -1,0 +1,23 @@
+{
+  "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_name": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "platform": "chzzk",
+  "video_no": "14663785",
+  "title": "졸려도 데바데는 하고싶은 나 낮내전 출발 ٩(●'▿'●)۶",
+  "published_at": "2026-08-12T14:45:51+09:00",
+  "published_date_str": "20260812",
+  "duration_sec": 32868,
+  "platform_category": "데드 바이 데이라이트",
+  "content_judgement": null,
+  "summary_md_path": "vods/14663785/report.md",
+  "summary_html_path": "vods/14663785/report.html",
+  "metadata_json_path": "vods/14663785/metadata.json",
+  "thumbnail_url": null,
+  "search_text": "탬탬버린 | 졸려도 데바데는 하고싶은 나 낮내전 출발 ٩(●'▿'●)۶",
+  "stats": {
+    "total_chats": 79900,
+    "highlight_count": 27
+  },
+  "processed_at": "2026-08-15T01:50:05.357354+09:00"
+}

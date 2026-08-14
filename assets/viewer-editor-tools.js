@@ -247,6 +247,8 @@ function initViewerEditorTools() {
   const baseTimelineWidth = Math.max(760, Math.min(1600, Math.round(duration / 22)));
   const timelineLabelColumnWidth = 144;
   let timelineZoom = 1;
+  let timelineAutoFit = true;
+  let timelineFitFrame = 0;
   let markerDensityLevel = 6;
   let axisRendered = false;
   let selectedEventId = '';
@@ -816,6 +818,17 @@ function initViewerEditorTools() {
   function clampZoom(value) {
     return Math.max(0.1, Math.min(2.6, Number(value) || 1));
   }
+  function fitTimelineZoom() {
+    if (!axisEl) return 0.1;
+    const axisStyle = window.getComputedStyle(axisEl);
+    const horizontalPadding = (parseFloat(axisStyle.paddingLeft) || 0) + (parseFloat(axisStyle.paddingRight) || 0);
+    const availableWidth = Math.max(0, axisEl.clientWidth - timelineLabelColumnWidth - horizontalPadding);
+    return availableWidth > 0 ? clampZoom(Math.min(1, availableWidth / baseTimelineWidth)) : 0.1;
+  }
+  function syncTimelineZoomControls() {
+    if (zoomRange) zoomRange.value = String(Math.round(timelineZoom * 100));
+    if (zoomValue) zoomValue.textContent = `${timelineZoom.toFixed(2)}x`;
+  }
   function applyTimelineZoom(nextZoom, anchorClientX) {
     if (!axisEl) return;
     const canvas = axisEl.querySelector('.viewer-editor-axis-canvas');
@@ -829,9 +842,30 @@ function initViewerEditorTools() {
     const nextWidth = Math.max(96, Math.round(baseTimelineWidth * timelineZoom));
     canvas.style.setProperty('--viewer-editor-w', `${nextWidth}px`);
     axisEl.scrollLeft = Math.max(0, timeRatio * nextWidth + timelineLabelColumnWidth - (anchorX - rect.left));
-    if (zoomRange) zoomRange.value = String(Math.round(timelineZoom * 100));
-    if (zoomValue) zoomValue.textContent = `${timelineZoom.toFixed(2)}x`;
+    syncTimelineZoomControls();
     renderAxis({ preserveScroll: true });
+  }
+  function scheduleTimelineAutoFit() {
+    if (!axisEl || !axisRendered || !timelineAutoFit) return;
+    if (timelineFitFrame) window.cancelAnimationFrame(timelineFitFrame);
+    // The admin panels and iframe settle after the first render. Measure on the
+    // second animation frame so the chosen zoom belongs to the final viewport.
+    timelineFitFrame = window.requestAnimationFrame(() => {
+      timelineFitFrame = window.requestAnimationFrame(() => {
+        timelineFitFrame = 0;
+        if (!timelineAutoFit) return;
+        const fittedZoom = fitTimelineZoom();
+        if (Math.abs(fittedZoom - timelineZoom) > 0.001) {
+          applyTimelineZoom(fittedZoom);
+        } else {
+          syncTimelineZoomControls();
+        }
+      });
+    });
+  }
+  function useManualTimelineZoom(nextZoom, anchorClientX) {
+    timelineAutoFit = false;
+    applyTimelineZoom(nextZoom, anchorClientX);
   }
   function renderFilter() {
     if (!filterEl) return;
@@ -1756,19 +1790,34 @@ function initViewerEditorTools() {
     const d2Rows = outlineProjection.filter((row) => String(row.level || '') === 'D2');
     const pointRows = outlineProjection.filter((row) => String(row.level || '') === 'Point');
     const cards = Array.from(timeline.querySelectorAll(':scope > .t-item'));
-    if (!d1Rows.length || !cards.length) return;
-    const parseTime = (value) => String(value || '').trim().split(':').reduce((total, token) => total * 60 + Number(token || 0), 0);
+    if (!d1Rows.length || !cards.length) {
+      if (timeline.dataset.managerOutlineHierarchy === 'pending') {
+        timeline.dataset.managerOutlineHierarchy = 'error';
+      }
+      return;
+    }
+    const parseTime = (value) => {
+      const match = String(value || '').match(/\b\d{1,2}:\d{2}(?::\d{2})?\b/);
+      return match ? match[0].split(':').reduce((total, token) => total * 60 + Number(token || 0), 0) : Number.NaN;
+    };
     const projectionById = new Map(outlineProjection.map((row) => [String(row.id || ''), row]));
     // Timeline cards use segment-ledger ids while saved outline Points use
     // outline-local ids. Their shared source identity is the exact timestamp.
     const pointProjectionBySecond = new Map(pointRows.map((row) => [Number(row.start_sec || parseTime(row.timestamp)), row]));
-    const cardRows = cards.map((card) => ({
+    const parsedCardRows = cards.map((card) => ({
       card,
       sec: parseTime(card.querySelector('.tc') && card.querySelector('.tc').textContent),
-    })).map((row) => ({
-      ...row,
-      outline: projectionById.get(String(row.card.dataset.segmentId || '')) || pointProjectionBySecond.get(row.sec) || {},
     }));
+    const cardRows = parsedCardRows.map((row) => {
+      const outlineId = String(row.card.dataset.outlineId || row.card.dataset.segmentId || '');
+      const outline = projectionById.get(outlineId) || pointProjectionBySecond.get(row.sec) || {};
+      const outlineStart = Number(outline.start_sec);
+      return {
+        ...row,
+        sec: Number.isFinite(outlineStart) ? outlineStart : row.sec,
+        outline,
+      };
+    });
     const assigned = new Set();
     const heading = (level, row) => {
       const el = document.createElement(level === 'D1' ? 'h3' : 'h4');
@@ -1824,7 +1873,7 @@ function initViewerEditorTools() {
         const body = card.querySelector('.t-body');
         const bodyText = String(body && body.textContent || '').trim();
         const internalBodyToken = /(?:supporting_signal_only|proximity_signal|temporal_candidate|deterministic_injection)/i.test(bodyText);
-        if (body && (/읽기 전용 (정확한 시각|방송 목차)/.test(bodyText) || internalBodyToken)) {
+        if (body && (!bodyText || /읽기 전용 (정확한 시각|방송 목차)/.test(bodyText) || internalBodyToken)) {
           const evidence = events
             .filter((event) => {
               const eventStart = Number(event.start_sec || 0);
@@ -1836,9 +1885,14 @@ function initViewerEditorTools() {
               const candidate = String(item && (item.text || item.title) || '').trim();
               return candidate && !/(?:supporting_signal_only|proximity_signal|temporal_candidate|deterministic_injection)/i.test(candidate);
             });
-          body.textContent = evidence
-            ? friendlyEvidenceText(evidence.label || evidence.title || '', evidence.text || evidence.title || '')
-            : '확인 가능한 자막·채팅 근거 없음';
+          if (evidence) {
+            body.textContent = friendlyEvidenceText(
+              evidence.label || evidence.title || '',
+              evidence.text || evidence.title || ''
+            );
+          } else {
+            body.remove();
+          }
         }
         list.append(card);
       });
@@ -1886,18 +1940,26 @@ function initViewerEditorTools() {
       const children = d2Rows.filter((row) => String(row.parent_id || '') === String(d1.id || ''));
       children.forEach((d2) => {
         const start = Number(d2.start_sec || 0), end = Number(d2.end_sec || start);
-        const inside = cardRows.filter((row) => !assigned.has(row.card) && row.sec >= start && row.sec < end);
+        const inside = cardRows.filter((row) => {
+          if (assigned.has(row.card)) return false;
+          const level = String(row.outline.level || '');
+          return !['D1', 'D2', 'Candidate'].includes(level) && row.sec >= start && row.sec < end;
+        });
         inside.forEach((row) => assigned.add(row.card));
         const subflow = document.createElement('section');
         subflow.className = 'viewer-detail-subflow';
         subflow.id = `manager-outline-${String(d2.id || '').replace(/[^a-zA-Z0-9_-]/g, '')}`;
         subflow.tabIndex = 0;
         subflow.append(heading('D2', d2));
-        inside.forEach(({card}) => subflow.append(card));
+        if (inside.length) subflow.append(pointList(inside));
         flow.append(subflow);
       });
       const start = Number(d1.start_sec || 0), end = Number(d1.end_sec || start);
-      const direct = cardRows.filter((row) => !assigned.has(row.card) && row.sec >= start && row.sec < end);
+      const direct = cardRows.filter((row) => {
+        if (assigned.has(row.card)) return false;
+        const level = String(row.outline.level || '');
+        return !['D1', 'D2', 'Candidate'].includes(level) && row.sec >= start && row.sec < end;
+      });
       direct.forEach((row) => assigned.add(row.card));
       if (direct.length) flow.append(pointList(direct));
       hierarchy.append(flow);
@@ -1905,7 +1967,10 @@ function initViewerEditorTools() {
     // Cards outside every accepted range still belong to the approved
     // standalone major-scenes section. Hierarchy enrichment must never be an
     // inclusion filter for real Markdown scenes.
-    const unowned = cardRows.filter((row) => !assigned.has(row.card));
+    const unowned = cardRows.filter((row) => {
+      const level = String(row.outline.level || '');
+      return !['D1', 'D2', 'Candidate'].includes(level) && !assigned.has(row.card);
+    });
     if (unowned.length) hierarchy.append(pointList(unowned));
     timeline.replaceChildren(hierarchy);
     timeline.dataset.managerOutlineHierarchy = 'ready';
@@ -2021,7 +2086,10 @@ function initViewerEditorTools() {
     if (axisRendered) return;
     axisRendered = true;
     renderFilter();
+    timelineZoom = fitTimelineZoom();
+    syncTimelineZoomControls();
     renderAxis();
+    scheduleTimelineAutoFit();
     installHierarchyPreviews();
     renderDetailedSummaryHierarchy();
     if (events.length) {
@@ -2034,9 +2102,14 @@ function initViewerEditorTools() {
     }
   }
   evidenceEl.innerHTML = '<div class="viewer-editor-empty">장면 찾기에서 시각을 선택하면 근거가 여기에 표시됩니다.</div>';
-  // The detailed-summary hierarchy is core report content, not a lazy editor
-  // tool. Render it immediately so a delayed or non-firing IntersectionObserver
-  // cannot leave the accepted outline as the legacy flat timeline.
+  // The established report groups semantic scene cards under D1/D2 headings.
+  // Range rows and manager Candidates are not timeline cards.  A pending
+  // hierarchy never reveals the flat pre-enhancement layout if rendering fails.
+  window.setTimeout(() => {
+    document.querySelectorAll('.timeline[data-manager-outline-hierarchy="pending"]').forEach((timeline) => {
+      timeline.dataset.managerOutlineHierarchy = 'error';
+    });
+  }, 2500);
   renderDetailedSummaryHierarchy();
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
@@ -2054,20 +2127,32 @@ function initViewerEditorTools() {
       if (!event.ctrlKey && !event.metaKey) return;
       event.preventDefault();
       event.stopPropagation();
-      applyTimelineZoom(timelineZoom * (event.deltaY < 0 ? 1.14 : 1 / 1.14), event.clientX);
+      useManualTimelineZoom(timelineZoom * (event.deltaY < 0 ? 1.14 : 1 / 1.14), event.clientX);
     };
     axisEl.addEventListener('wheel', handleZoomWheel, { passive: false });
     const sectionEl = document.getElementById('youtube-editor-tools');
     if (sectionEl) sectionEl.addEventListener('wheel', handleZoomWheel, { passive: false });
+    if ('ResizeObserver' in window) {
+      let lastAxisWidth = axisEl.clientWidth;
+      const axisResizeObserver = new ResizeObserver(() => {
+        const nextAxisWidth = axisEl.clientWidth;
+        if (Math.abs(nextAxisWidth - lastAxisWidth) < 1) return;
+        lastAxisWidth = nextAxisWidth;
+        scheduleTimelineAutoFit();
+      });
+      axisResizeObserver.observe(axisEl);
+    } else {
+      window.addEventListener('resize', scheduleTimelineAutoFit);
+    }
   }
-  if (zoomRange) zoomRange.addEventListener('input', () => applyTimelineZoom(Number(zoomRange.value || 100) / 100));
+  if (zoomRange) zoomRange.addEventListener('input', () => useManualTimelineZoom(Number(zoomRange.value || 100) / 100));
   if (densityRange) densityRange.addEventListener('input', () => {
     markerDensityLevel = Math.max(0, Math.min(10, Number(densityRange.value || 0)));
     renderAxis({ preserveScroll: true });
   });
-  if (zoomOutBtn) zoomOutBtn.addEventListener('click', () => applyTimelineZoom(timelineZoom / 1.25));
-  if (zoomInBtn) zoomInBtn.addEventListener('click', () => applyTimelineZoom(timelineZoom * 1.25));
-  if (zoomResetBtn) zoomResetBtn.addEventListener('click', () => applyTimelineZoom(1));
+  if (zoomOutBtn) zoomOutBtn.addEventListener('click', () => useManualTimelineZoom(timelineZoom / 1.25));
+  if (zoomInBtn) zoomInBtn.addEventListener('click', () => useManualTimelineZoom(timelineZoom * 1.25));
+  if (zoomResetBtn) zoomResetBtn.addEventListener('click', () => useManualTimelineZoom(1));
   }
 
   if (!dataSrc) {
