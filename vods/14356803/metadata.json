@@ -9688,5 +9688,27 @@
     "schema_version": "summary_run_ledger.v1",
     "run_id": "14356803_20260724_e70d7c4eec1e",
     "path_ref": "output:summary_run_ledger.jsonl"
+  },
+  "report_artifact_family": {
+    "schema_version": "report_artifact_family.v1",
+    "generation_id": "20260814T210841109516Z-a5ddb88bc3e9",
+    "generation_sequence": 3,
+    "parent_generation_id": "20260814T205857234352Z-8fb3dd24abd4",
+    "authority_revision_id": "",
+    "artifacts": {
+      "markdown": {
+        "name": "14356803_20260724_e70d7c4eec1e.md",
+        "sha256": "06fad99d2df37bbf280f126ac0c9f36635af919dc14e62092d5f3a4d50ecde13"
+      },
+      "html": {
+        "name": "14356803_20260724_e70d7c4eec1e.html",
+        "sha256": "a5b992cac87a6fd024f8c9ddd6526718f4a4a1e5acecb2a0491b7df767e8f133"
+      },
+      "metadata": {
+        "name": "14356803_20260724_e70d7c4eec1e_metadata.json"
+      }
+    },
+    "viewer_payload_sha256": "7f414598e45bec2dea3e2b3e3ec6fa37d4772c0451350c7a31f23fded03e90fc",
+    "metadata_payload_sha256": "c835290af61176d41fadd22281413e4c2ce101a3a3ca6728050cf5f987c23f6d"
   }
 }
