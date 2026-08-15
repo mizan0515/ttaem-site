@@ -1,0 +1,23 @@
+{
+  "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_name": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "platform": "chzzk",
+  "video_no": "14601791",
+  "title": "vr챗 방탈출 진우 너불 먼지모름٩(●'▿'●)۶",
+  "published_at": "2026-08-08T16:32:57+09:00",
+  "published_date_str": "20260808",
+  "duration_sec": 32360,
+  "platform_category": "VR챗",
+  "content_judgement": null,
+  "summary_md_path": "vods/14601791/report.md",
+  "summary_html_path": "vods/14601791/report.html",
+  "metadata_json_path": "vods/14601791/metadata.json",
+  "thumbnail_url": null,
+  "search_text": "탬탬버린 | vr챗 방탈출 진우 너불 먼지모름٩(●'▿'●)۶",
+  "stats": {
+    "total_chats": 83720,
+    "highlight_count": 20
+  },
+  "processed_at": "2026-08-15T04:08:24.180025+09:00"
+}

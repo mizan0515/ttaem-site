@@ -4,7 +4,7 @@
     "streamer_name": "탬탬버린",
     "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
     "platform": "chzzk",
-    "vod_count": 134
+    "vod_count": 135
   },
   "vods": [
     {
@@ -2015,6 +2015,21 @@
       "stats": {
         "total_chats": 79900,
         "highlight_count": 27
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14601791",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "vr챗 방탈출 진우 너불 먼지모름٩(●'▿'●)۶",
+      "published_at": "2026-08-08T16:32:57+09:00",
+      "ended_at": "2026-08-09T01:32:17+09:00",
+      "duration_sec": 32360,
+      "platform_category": "VR챗",
+      "stats": {
+        "total_chats": 83720,
+        "highlight_count": 20
       }
     }
   ],
@@ -4205,6 +4220,21 @@
       "stats": {
         "total_chats": 79900,
         "highlight_count": 27
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14601791",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "vr챗 방탈출 진우 너불 먼지모름٩(●'▿'●)۶",
+      "published_at": "2026-08-08T16:32:57+09:00",
+      "ended_at": "2026-08-09T01:32:17+09:00",
+      "duration_sec": 32360,
+      "platform_category": "VR챗",
+      "stats": {
+        "total_chats": 83720,
+        "highlight_count": 20
       }
     }
   ]

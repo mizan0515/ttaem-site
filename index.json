@@ -3,7 +3,7 @@
   "built_at": "2026-08-03T14:13:12+00:00",
   "latest_processed_at": "2026-08-03T22:19:07.365410+09:00",
   "total_streamers": 8,
-  "total_vods": 142,
+  "total_vods": 143,
   "total_bundles": 8,
   "streamers": [
     {
@@ -11,7 +11,7 @@
       "streamer_name": "탬탬버린",
       "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
       "platform": "chzzk",
-      "vod_count": 134,
+      "vod_count": 135,
       "last_vod_at": "2026-08-03T20:52:37+09:00",
       "last_vod_ended_at": "2026-08-03T22:05:30+09:00"
     },
@@ -99,6 +99,15 @@
       "duration_sec": 8033
     },
     {
+      "video_no": "14601791",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "vr챗 방탈출 진우 너불 먼지모름٩(●'▿'●)۶",
+      "published_at": "2026-08-08T16:32:57+09:00",
+      "ended_at": "2026-08-09T01:32:17+09:00",
+      "duration_sec": 32360
+    },
+    {
       "video_no": "14555580",
       "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
       "streamer_name": "탬탬버린",
@@ -124,15 +133,6 @@
       "published_at": "2026-07-31T16:09:55+09:00",
       "ended_at": "2026-07-31T17:01:38+09:00",
       "duration_sec": 3103
-    },
-    {
-      "video_no": "14356803",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶",
-      "published_at": "2026-07-24T18:54:47+09:00",
-      "ended_at": "2026-07-25T00:55:25+09:00",
-      "duration_sec": 21638
     }
   ],
   "recent_updates": [
@@ -164,6 +164,21 @@
       "stats": {
         "total_chats": 10501,
         "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "14601791",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "vr챗 방탈출 진우 너불 먼지모름٩(●'▿'●)۶",
+      "published_at": "2026-08-08T16:32:57+09:00",
+      "ended_at": "2026-08-09T01:32:17+09:00",
+      "duration_sec": 32360,
+      "platform_category": "VR챗",
+      "stats": {
+        "total_chats": 83720,
+        "highlight_count": 20
       }
     },
     {
@@ -209,21 +224,6 @@
       "stats": {
         "total_chats": 10040,
         "highlight_count": 17
-      }
-    },
-    {
-      "kind": "vod",
-      "video_no": "14356803",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "폭 풍 전 야 과연 나의 퍼스널 해외축구 팀은 어딜까 ٩(●'▿'●)۶",
-      "published_at": "2026-07-24T18:54:47+09:00",
-      "ended_at": "2026-07-25T00:55:25+09:00",
-      "duration_sec": 21638,
-      "platform_category": "talk",
-      "stats": {
-        "total_chats": 102095,
-        "highlight_count": 21
       }
     }
   ]
