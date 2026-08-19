@@ -1089,14 +1089,14 @@
       "count": 113
     }
   ],
-  "processed_at": "2026-08-15T04:08:24.180025+09:00",
+  "processed_at": "2026-08-18T14:00:35.743608+09:00",
   "summary_pipeline": {
     "schema_version": "chzz.summary_pipeline.v2",
     "requested_version": "pipeline_2_5",
     "actual_version": "pipeline_2_5",
     "label": "Pipeline 2.5",
     "fallback_used": false,
-    "producer_code_version": "be71fcaafd1697ee58c88c6bef2031cc1d368374"
+    "producer_code_version": "116536efbaa3eba33de382fa8cd9185f459c0c18"
   },
   "evidence_verifier": {
     "schema_version": "evidence_verifier.v1",
@@ -1138,7 +1138,7 @@
     "schema_version": "public_quote_citations.v2",
     "render_target": "report_html_script#summaryEvidenceQuoteCitationsData",
     "public_quote_text_included": true,
-    "subtitle_cue_count": 9206,
+    "subtitle_cue_count": 4603,
     "item_count": 0,
     "status": "empty"
   },
@@ -1150,7 +1150,7 @@
         "parent_id": "",
         "start": "00:03:24",
         "end": "00:20:08",
-        "title": "합방 전 잡담 - T1 선수와 커스텀 키보드",
+        "title": "잡담 - e스포츠·키보드·스파이더맨",
         "content": ""
       },
       {
@@ -1159,115 +1159,115 @@
         "parent_id": "range-0",
         "start": "00:03:24",
         "end": "00:10:43",
-        "title": "T1 선수 기용과 경기력",
+        "title": "T1 경기력·콜업 대화",
         "content": ""
       },
       {
         "id": "range-2",
         "level": "D2",
         "parent_id": "range-0",
-        "start": "00:10:58",
-        "end": "00:17:52",
-        "title": "커스텀 키보드 타건과 구매 고민",
+        "start": "00:11:07",
+        "end": "00:17:35",
+        "title": "커스텀 키보드 구매·타건감",
         "content": ""
       },
       {
         "id": "range-3",
-        "level": "D1",
-        "parent_id": "",
-        "start": "00:37:52",
-        "end": "03:10:04",
-        "title": "LoL 경기 관전 - T1 대 한화생명 분석",
+        "level": "D2",
+        "parent_id": "range-0",
+        "start": "00:17:52",
+        "end": "00:20:08",
+        "title": "T1 경기 종료·스파이더맨 감상 예정",
         "content": ""
       },
       {
         "id": "range-4",
-        "level": "D2",
-        "parent_id": "range-3",
+        "level": "D1",
+        "parent_id": "",
         "start": "00:37:52",
-        "end": "01:14:07",
-        "title": "1세트 - 우세 운영과 승리 복기",
+        "end": "03:10:04",
+        "title": "리그 오브 레전드 경기 관전 - T1 경기 해설",
         "content": ""
       },
       {
         "id": "range-5",
         "level": "D2",
-        "parent_id": "range-3",
-        "start": "01:19:46",
-        "end": "02:12:33",
-        "title": "2세트 - 밴픽부터 넥서스 공방까지",
+        "parent_id": "range-4",
+        "start": "00:37:52",
+        "end": "01:20:00",
+        "title": "1세트 - 경기 중계와 종료 분석",
         "content": ""
       },
       {
         "id": "range-6",
         "level": "D2",
-        "parent_id": "range-3",
-        "start": "02:15:31",
-        "end": "03:10:04",
-        "title": "다음 세트 - 밴픽과 장로 교전, 패배 분석",
+        "parent_id": "range-4",
+        "start": "01:20:00",
+        "end": "02:08:34",
+        "title": "2세트 - 밴픽·경기 중계",
         "content": ""
       },
       {
         "id": "range-7",
-        "level": "D1",
-        "parent_id": "",
-        "start": "03:13:37",
-        "end": "04:31:38",
-        "title": "스파이더맨 감상 - 성장 서사와 시리즈 비교",
+        "level": "D2",
+        "parent_id": "range-4",
+        "start": "02:10:59",
+        "end": "03:10:04",
+        "title": "후속 세트 - 밴픽과 경기 관전",
         "content": ""
       },
       {
         "id": "range-8",
-        "level": "D2",
-        "parent_id": "range-7",
+        "level": "D1",
+        "parent_id": "",
         "start": "03:13:37",
-        "end": "03:39:03",
-        "title": "성장 서사와 액션 연출",
+        "end": "04:32:05",
+        "title": "영화 감상 대화 - 스파이더맨·마블 평가",
         "content": ""
       },
       {
         "id": "range-9",
         "level": "D2",
-        "parent_id": "range-7",
-        "start": "03:39:41",
-        "end": "04:13:32",
-        "title": "역대 스파이더맨과 멀티버스 전망",
+        "parent_id": "range-8",
+        "start": "03:13:37",
+        "end": "03:39:40",
+        "title": "스파이더맨 서사·연출 평가",
         "content": ""
       },
       {
         "id": "range-10",
         "level": "D2",
-        "parent_id": "range-7",
-        "start": "04:14:00",
-        "end": "04:31:38",
-        "title": "배우와 관련 작품 이야기",
+        "parent_id": "range-8",
+        "start": "03:39:41",
+        "end": "04:32:05",
+        "title": "스파이더맨 버전·마블 후속작 대화",
         "content": ""
       },
       {
         "id": "range-11",
         "level": "D1",
         "parent_id": "",
-        "start": "04:38:07",
-        "end": "04:47:30",
-        "title": "VRChat 합류 준비 - 설정 조절과 참가자 확인",
+        "start": "04:32:05",
+        "end": "04:49:40",
+        "title": "VR챗 준비 - 참가자 대기·환경 설정",
         "content": ""
       },
       {
         "id": "range-12",
         "level": "D1",
         "parent_id": "",
-        "start": "04:49:44",
-        "end": "08:44:32",
-        "title": "VRChat 판타지 방탈출 - 저주 해결과 드래곤 여정",
+        "start": "04:50:07",
+        "end": "08:42:37",
+        "title": "VR챗 판타지 방탈출 - 드래곤 저주 해결",
         "content": ""
       },
       {
         "id": "range-13",
         "level": "D2",
         "parent_id": "range-12",
-        "start": "04:49:44",
-        "end": "05:02:37",
-        "title": "첫 방 퍼즐과 국왕의 의뢰",
+        "start": "04:50:07",
+        "end": "05:03:09",
+        "title": "도입 - 집 퍼즐·왕궁 출정",
         "content": ""
       },
       {
@@ -1275,192 +1275,2463 @@
         "level": "D2",
         "parent_id": "range-12",
         "start": "05:03:09",
-        "end": "05:29:17",
-        "title": "배역 설정과 여정 출발",
+        "end": "06:29:41",
+        "title": "여정 - 마을 진입과 의뢰 탐색",
         "content": ""
       },
       {
         "id": "range-15",
         "level": "D2",
         "parent_id": "range-12",
-        "start": "05:29:21",
-        "end": "05:48:03",
-        "title": "서버 장애 후 재합류",
+        "start": "06:36:09",
+        "end": "07:18:04",
+        "title": "주점·대장간 - 요리와 장비 제작",
         "content": ""
       },
       {
         "id": "range-16",
         "level": "D2",
         "parent_id": "range-12",
-        "start": "05:48:03",
-        "end": "06:29:41",
-        "title": "벨루아 마을 - 검문과 내부 탐색",
+        "start": "07:27:04",
+        "end": "08:22:40",
+        "title": "숲 과제 - 요정·정령 설득",
         "content": ""
       },
       {
         "id": "range-17",
         "level": "D2",
         "parent_id": "range-12",
-        "start": "06:30:41",
-        "end": "07:05:03",
-        "title": "주점 의뢰 - 조리와 서빙",
+        "start": "08:22:40",
+        "end": "08:42:37",
+        "title": "드래곤 알 퍼즐 - 알 반환과 결말",
         "content": ""
       },
       {
         "id": "range-18",
-        "level": "D2",
-        "parent_id": "range-12",
-        "start": "07:05:03",
-        "end": "07:21:01",
-        "title": "대장간 작업과 열쇠 획득",
-        "content": ""
-      },
-      {
-        "id": "range-19",
-        "level": "D2",
-        "parent_id": "range-12",
-        "start": "07:27:04",
-        "end": "07:46:31",
-        "title": "농작물 퍼즐과 물품 교섭",
-        "content": ""
-      },
-      {
-        "id": "range-20",
-        "level": "D2",
-        "parent_id": "range-12",
-        "start": "07:47:02",
-        "end": "08:22:07",
-        "title": "숲 의뢰와 드래곤 알 탐색",
-        "content": ""
-      },
-      {
-        "id": "range-21",
-        "level": "D2",
-        "parent_id": "range-12",
-        "start": "08:22:40",
-        "end": "08:44:32",
-        "title": "드래곤 알 반환과 저주 해제",
-        "content": ""
-      },
-      {
-        "id": "range-22",
         "level": "D1",
         "parent_id": "",
-        "start": "08:45:01",
-        "end": "08:56:05",
-        "title": "VRChat 방탈출 복기 - 놓친 분기와 해결법",
+        "start": "08:43:05",
+        "end": "08:59:13",
+        "title": "방탈출 회고 - 보상·숨은 선택 탐색",
         "content": ""
       }
     ],
     "points": [
       {
-        "id": "point-0",
-        "timestamp": "01:05:22",
-        "title": "1세트 종료 후 선수별 평가로 전환",
-        "content": ""
+        "id": "point-shadow-d45e644e583f7e344991f2f5",
+        "timestamp": "01:51:47",
+        "title": "페인터가 어그로와 회피로 불가능해 보인 한타를 설계하다",
+        "content": "",
+        "story_ref": "story-packet-e5a06f217ec3946d69a7d346",
+        "d1_ref": "range-4",
+        "d2_ref": "range-6",
+        "evidence_refs": [
+          "evidence-1313a500b7d0eccff9804109",
+          "evidence-527e36cc9ae198665e7b4f2b",
+          "evidence-ef1f53045ce473803b213bcf",
+          "evidence-0bb2881cd9b8741a4bdf5345",
+          "evidence-133d03efaef720dbcec8ccb8",
+          "evidence-4cb741b6576035bb5e7dd11a",
+          "evidence-c475ec2aff795553db3232ac",
+          "evidence-1f13c7ccf19986711baf811e",
+          "evidence-f99091b151a6167ef3eca6b9"
+        ]
       },
       {
-        "id": "point-1",
-        "timestamp": "02:00:56",
-        "title": "넥서스 공방 끝에 2세트 종료",
-        "content": ""
+        "id": "point-shadow-0a94fcd1280c341c09628e66",
+        "timestamp": "02:57:49",
+        "title": "한화생명이 거센 저항을 낚시로 뒤집고 넥서스까지 마무리",
+        "content": "",
+        "story_ref": "story-packet-2d8ba06a3308a5cb9e4d6ac4",
+        "d1_ref": "range-4",
+        "d2_ref": "range-7",
+        "evidence_refs": [
+          "evidence-38a84ada9b6b73e33c0a9eef",
+          "evidence-8191b9ffbb74e97439b874a6",
+          "evidence-a77ac77e05d464b74e09ed3c",
+          "evidence-b1cbb16e930e63645ba838ad",
+          "evidence-304675b3b3b536e34ba85c4d",
+          "evidence-3055df8f2b5b16563e3b01e7",
+          "evidence-3ca171034025034d6b306407",
+          "evidence-bc574a26bd4049b722fd6e88",
+          "evidence-2ae78d80bcbbd4c5db58072b"
+        ]
       },
       {
-        "id": "point-2",
-        "timestamp": "02:59:36",
-        "title": "한화생명 승리와 경기 중계 종료",
-        "content": ""
+        "id": "point-shadow-e441445c870547ae9297ec07",
+        "timestamp": "00:40:32",
+        "title": "귀환을 미룬 애니비아의 자신감을 도란이 정확히 응징",
+        "content": "",
+        "story_ref": "story-packet-e6f48513c6a4989cf285dd19",
+        "d1_ref": "range-4",
+        "d2_ref": "range-5",
+        "evidence_refs": [
+          "evidence-9762321bcffffa1e00e12a4b",
+          "evidence-626eb25923a48e592cc517cb",
+          "evidence-d694dc2e43b467f6467da8c7",
+          "evidence-06d71a12fa02dc7347fd392a",
+          "evidence-d23503cb1005d343fe41cafd",
+          "evidence-1f02403bec1312ad7cd7d948",
+          "evidence-2faa4d185f98cfdefbc35adb",
+          "evidence-42899cc136aa4e1d0e90ce14",
+          "evidence-52e7bfe6962255b492f25460",
+          "evidence-f550ba1ef155a99ea2615ea4"
+        ]
       },
       {
-        "id": "point-3",
-        "timestamp": "04:53:33",
-        "title": "첫 방의 본격적인 퍼즐 시작 선언",
-        "content": ""
+        "id": "point-shadow-970ad9cb896cad93abac20e5",
+        "timestamp": "05:48:29",
+        "title": "독촉 끝에 완성된 풀 영창, ‘익스플로우전’으로 폭발",
+        "content": "",
+        "story_ref": "story-packet-af167132680c8fd65e1d39ea",
+        "d1_ref": "range-12",
+        "d2_ref": "range-14",
+        "evidence_refs": [
+          "evidence-98adc812e1ce9c2699ae95a4",
+          "evidence-e5077f44a13f4d6b414d255b",
+          "evidence-87e072000e0e71e337c159bc",
+          "evidence-9e763de1d8febd11439ed0bb",
+          "evidence-cfb8633bdb3ea9343bc7c450",
+          "evidence-488af6e8639ce5beb6b92ea1",
+          "evidence-05f50ddd0eff9bd707ac2fa4",
+          "evidence-af20e4fcb0521e94a4746404",
+          "evidence-cf190a5e4428fd20f16f0d38",
+          "evidence-3472dd301fc64987745b651c"
+        ]
       },
       {
-        "id": "point-4",
-        "timestamp": "05:29:21",
-        "title": "이전 지점으로 되돌아온 뒤 서버 장애 확인",
-        "content": ""
-      },
-      {
-        "id": "point-5",
-        "timestamp": "05:49:37",
-        "title": "긴 영창 끝에 폭발 마법 발동",
-        "content": ""
-      },
-      {
-        "id": "point-6",
-        "timestamp": "08:30:18",
-        "title": "드래곤들이 고개를 숙이며 거대한 존재 등장",
-        "content": ""
-      },
-      {
-        "id": "point-7",
-        "timestamp": "08:40:08",
-        "title": "저주 해제 확인",
-        "content": ""
-      },
-      {
-        "id": "point-8",
-        "timestamp": "08:42:00",
-        "title": "일행 추방과 보상 결과 확인",
-        "content": ""
+        "id": "point-shadow-45da8a1e72e6e9db7e013ef9",
+        "timestamp": "08:31:02",
+        "title": "드래곤 앞에 무릎 꿇고 알을 돌려주려다 혼자 희생될 위기",
+        "content": "",
+        "story_ref": "story-packet-461ade7a7d68b81949ec9c29",
+        "d1_ref": "range-12",
+        "d2_ref": "range-17",
+        "evidence_refs": [
+          "evidence-edef0fef55716adfdd07b659",
+          "evidence-7418e0f00cca1eab73af22a6",
+          "evidence-aa0e778a7749e5d67c5691a4",
+          "evidence-c7efe3f337bb5b775dfe5abd",
+          "evidence-7aa2a0e0ff7fb7b0b92513ce",
+          "evidence-a0144b023a6d430a7ef02690",
+          "evidence-6f2c34b7bf5ed84cdcf9f45a",
+          "evidence-9bd6924016431cba764e3744",
+          "evidence-2a54e1d7887e17dd7e5898db",
+          "evidence-6e3cdc050b78e72c48c29857",
+          "evidence-8e0eda5bf7a4a21bf96ae898"
+        ]
       }
     ],
-    "candidates": [
-      {
-        "id": "candidate-0",
-        "start": "01:05:02",
-        "end": "01:06:02",
-        "title": "1세트 종료 후 선수별 평가로 전환 전후 확인",
-        "content": ""
-      },
-      {
-        "id": "candidate-1",
-        "start": "02:00:36",
-        "end": "02:01:36",
-        "title": "넥서스 공방 끝에 2세트 종료 전후 확인",
-        "content": ""
-      },
-      {
-        "id": "candidate-2",
-        "start": "02:59:16",
-        "end": "03:00:16",
-        "title": "한화생명 승리와 경기 중계 종료 전후 확인",
-        "content": ""
-      },
-      {
-        "id": "candidate-3",
-        "start": "04:53:13",
-        "end": "04:54:13",
-        "title": "첫 방의 본격적인 퍼즐 시작 선언 전후 확인",
-        "content": ""
-      },
-      {
-        "id": "candidate-4",
-        "start": "05:29:01",
-        "end": "05:30:01",
-        "title": "이전 지점으로 되돌아온 뒤 서버 장애 확인 전후 확인",
-        "content": ""
-      }
-    ],
-    "read_only": {
-      "broadcast_understanding": "초반 잡담 뒤 T1 대 한화생명 경기 관전과 스파이더맨 감상을 진행한다.\n이후 참가자들과 VRChat 판타지 방탈출에 합류해 역할극, 마을 의뢰, 숲과 드래곤 퍼즐을 거쳐 결말을 확인하고 플레이를 복기한다.",
-      "short_summary": "초반에는 T1 관련 대화와 키보드 소개가 이어진다.\n이어 T1 대 한화생명 경기 관전, 세트별 분석과 결과 복기가 진행된다.\n스파이더맨의 성장 서사와 역대 시리즈를 논한 뒤 VRChat 합류 준비로 넘어간다.\n판타지 방탈출에서는 국왕의 의뢰, 마을 활동, 숲 의뢰와 드래곤 알 탐색을 거쳐 저주 해제 결말에 도달한다.\n마지막에는 놓친 선택지와 해결법을 참가자들과 복기한다.",
-      "unknown_or_missing": "00:00:18-00:03:24 배경음 또는 오인식 가능성이 있어 활동을 확정할 수 없음\n00:20:08-00:37:52 STT 간격과 방송성 문구로 실제 활동 및 경기 관전 시작 시점이 불명확함\n01:14:07-01:19:46 세트 사이 활동의 연속성이 불명확함\n03:10:04-03:13:37 경기 분석과 영화 감상 사이 전환 내용이 불완전함\n04:31:38-04:38:07 영화 토론 종료와 VRChat 설정 시작 사이 맥락이 부족함\n05:29:21-05:31:42 되돌아감이 의도된 연출인지 서버 장애에 따른 초기화인지 불명확함\n07:21:01-07:27:04 대장간 이후 농작물 탐색까지의 연결 과정이 불완전함\n08:30:33-08:34:31 ‘에버그레이스’가 정식 이름인지 참가자 별칭인지 불명확함\n08:56:05-08:59:13 마무리 발화의 일부 대상과 다음 방송 시각이 불명확함\n전체적으로 중계 음성과 스트리머 발화가 섞여 선수·챔피언·등장인물 이름에 오인식 가능성이 있음",
-      "used_signals": "STT: used - raw timestamped speech\nreplay chat: not used - replay chat missing\nchat reaction/density: used: cached 10-second chat aggregates; used: chunk dialogue density\naudio: used: cached reaction peaks as Point support and bounded cached waveform samples\npublic timestamp comment: not used: cached timestamp comments unavailable\nviewer clip: not used: cached viewer clips unavailable\nvisual/OCR: not used: cached raw-free visual/OCR sidecar unavailable",
-      "content_info_usage": "없음",
-      "model_calls": "model: gpt-5.6-sol; call count: 21; retry: 0; fallback: 0"
-    },
-    "duration_sec": 32165
+    "candidates": [],
+    "read_only": {},
+    "duration_sec": 32360
   },
-  "manager_markdown": "- **🔗 요약 웹페이지:** [https://ttaem.com/vods/14601791/report](https://ttaem.com/vods/14601791/report)\n- **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/14601791](https://chzzk.naver.com/video/14601791)\n\n## 방송 흐름\n\n### 00:03:24–00:20:08 합방 전 잡담 - T1 선수와 커스텀 키보드\n\n#### 00:03:24–00:10:43 T1 선수 기용과 경기력\n\n#### 00:10:58–00:17:52 커스텀 키보드 타건과 구매 고민\n\n### 00:37:52–03:10:04 LoL 경기 관전 - T1 대 한화생명 분석\n\n#### 00:37:52–01:14:07 1세트 - 우세 운영과 승리 복기\n\n#### 01:19:46–02:12:33 2세트 - 밴픽부터 넥서스 공방까지\n\n#### 02:15:31–03:10:04 다음 세트 - 밴픽과 장로 교전, 패배 분석\n\n### 03:13:37–04:31:38 스파이더맨 감상 - 성장 서사와 시리즈 비교\n\n#### 03:13:37–03:39:03 성장 서사와 액션 연출\n\n#### 03:39:41–04:13:32 역대 스파이더맨과 멀티버스 전망\n\n#### 04:14:00–04:31:38 배우와 관련 작품 이야기\n\n### 04:38:07–04:47:30 VRChat 합류 준비 - 설정 조절과 참가자 확인\n\n### 04:49:44–08:44:32 VRChat 판타지 방탈출 - 저주 해결과 드래곤 여정\n\n#### 04:49:44–05:02:37 첫 방 퍼즐과 국왕의 의뢰\n\n#### 05:03:09–05:29:17 배역 설정과 여정 출발\n\n#### 05:29:21–05:48:03 서버 장애 후 재합류\n\n#### 05:48:03–06:29:41 벨루아 마을 - 검문과 내부 탐색\n\n#### 06:30:41–07:05:03 주점 의뢰 - 조리와 서빙\n\n#### 07:05:03–07:21:01 대장간 작업과 열쇠 획득\n\n#### 07:27:04–07:46:31 농작물 퍼즐과 물품 교섭\n\n#### 07:47:02–08:22:07 숲 의뢰와 드래곤 알 탐색\n\n#### 08:22:40–08:44:32 드래곤 알 반환과 저주 해제\n\n### 08:45:01–08:56:05 VRChat 방탈출 복기 - 놓친 분기와 해결법\n\n## 주요 장면\n\n### 01:05:22 1세트 종료 후 선수별 평가로 전환\n\n- 실제 반응: 오늘 페이즈 점멸 뺀 적이 있나...? / 서폿 제외 노데스 / 라이즈 쎄다\n\n- 확인 근거: 채팅, 자막\n\n### 02:00:56 넥서스 공방 끝에 2세트 종료\n\n- 실제 반응: 돼.. / 게임 던지네 / 도란아.. / 소리와 채팅이 함께 튄 구간\n\n- 확인 근거: 채팅, 오디오 반응, 시간축 신호\n\n### 02:59:36 한화생명 승리와 경기 중계 종료\n\n- 실제 반응: 엄 / 엄 / ㅈㅈ / 소리와 채팅이 함께 튄 구간\n\n- 확인 근거: 자막, 채팅, 오디오 반응, 시간축 신호\n\n### 04:53:33 첫 방의 본격적인 퍼즐 시작 선언\n\n- 실제 반응: 소리와 채팅이 함께 튄 구간 / ㅋㅋㅋㅋㅋㅋ / ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ / 어 문에 눈알이\n\n- 확인 근거: 오디오 반응, 채팅\n\n### 05:29:21 이전 지점으로 되돌아온 뒤 서버 장애 확인\n\n- 실제 반응: 빨간약 ㄷㄷㄷㄷ / 북미섭이 / 머리위에 뭐임 / 너무 레이시스트야 / 맞네 ? / 맞지\n\n- 확인 근거: 채팅\n\n### 05:49:37 긴 영창 끝에 폭발 마법 발동\n\n- 실제 반응: 소리와 채팅이 함께 튄 구간 / 오 / 파괴 마법 ㄷㄷㄷ / 와\n\n- 확인 근거: 오디오 반응, 채팅, 시간축 신호\n\n### 08:30:18 드래곤들이 고개를 숙이며 거대한 존재 등장\n\n- 실제 반응: 목소리 리액션이 커진 구간 / 오우야 / 어어엉 알 깨진다? / vr로 이런거하는거 신기하네\n\n- 확인 근거: 오디오 반응, 채팅\n\n### 08:40:08 저주 해제 확인\n\n### 08:42:00 일행 추방과 보상 결과 확인\n\n## 검토 범위\n\n### 01:05:02–01:06:02 1세트 종료 후 선수별 평가로 전환 전후 확인\n\n### 02:00:36–02:01:36 넥서스 공방 끝에 2세트 종료 전후 확인\n\n### 02:59:16–03:00:16 한화생명 승리와 경기 중계 종료 전후 확인\n\n### 04:53:13–04:54:13 첫 방의 본격적인 퍼즐 시작 선언 전후 확인\n\n### 05:29:01–05:30:01 이전 지점으로 되돌아온 뒤 서버 장애 확인 전후 확인\n",
+  "manager_markdown": "- **🔗 요약 웹페이지:** [https://ttaem.com/vods/14601791/report](https://ttaem.com/vods/14601791/report)\n- **▶️ 치지직 다시보기:** [https://chzzk.naver.com/video/14601791](https://chzzk.naver.com/video/14601791)\n\n## 방송 흐름\n\n### 00:03:24–00:20:08 잡담 - e스포츠·키보드·스파이더맨\n\n#### 00:03:24–00:10:43 T1 경기력·콜업 대화\n\n#### 00:11:07–00:17:35 커스텀 키보드 구매·타건감\n\n#### 00:17:52–00:20:08 T1 경기 종료·스파이더맨 감상 예정\n\n### 00:37:52–03:10:04 리그 오브 레전드 경기 관전 - T1 경기 해설\n\n#### 00:37:52–01:20:00 1세트 - 경기 중계와 종료 분석\n\n#### 01:20:00–02:08:34 2세트 - 밴픽·경기 중계\n\n#### 02:10:59–03:10:04 후속 세트 - 밴픽과 경기 관전\n\n### 03:13:37–04:32:05 영화 감상 대화 - 스파이더맨·마블 평가\n\n#### 03:13:37–03:39:40 스파이더맨 서사·연출 평가\n\n#### 03:39:41–04:32:05 스파이더맨 버전·마블 후속작 대화\n\n### 04:32:05–04:49:40 VR챗 준비 - 참가자 대기·환경 설정\n\n### 04:50:07–08:42:37 VR챗 판타지 방탈출 - 드래곤 저주 해결\n\n#### 04:50:07–05:03:09 도입 - 집 퍼즐·왕궁 출정\n\n#### 05:03:09–06:29:41 여정 - 마을 진입과 의뢰 탐색\n\n#### 06:36:09–07:18:04 주점·대장간 - 요리와 장비 제작\n\n#### 07:27:04–08:22:40 숲 과제 - 요정·정령 설득\n\n#### 08:22:40–08:42:37 드래곤 알 퍼즐 - 알 반환과 결말\n\n### 08:43:05–08:59:13 방탈출 회고 - 보상·숨은 선택 탐색\n\n## 주요 장면\n\n### 01:13:39 T1 1세트 승리 언급 후 경기 운영을 복기함\n\n### 02:00:09 나르 부재 상황에서 넥서스를 직접 공격하며 2세트가 급히 마무리됨\n\n### 02:58:46 핵심 인원 처치 뒤 넥서스가 파괴되고 상대 팀 승리로 해설됨\n\n### 05:49:37 파괴마법 시전 뒤 장애물 통과 흐름으로 전환됨\n\n### 06:08:25 마법 시연이 신분 인증으로 처리되어 마을 입장 허가를 받음\n\n### 08:29:12 드래곤 알 탐색을 멈추고 알을 직접 돌려주는 단계로 전환함\n\n### 08:41:31 문 개방을 확인한 직후 추방되었다고 언급됨\n\n---\n\n## 편집 Highlight\n\n### 페인터가 어그로와 회피로 불가능해 보인 한타를 설계하다\n상대의 움직임을 읽던 페인터가 불리한 진입 조건에서도 절묘한 회피와 어그로로 한타 구도를 만들고, 믿기 어려운 역전 결과까지 끌어낸다.\n- 왜 볼 가치가 있나: 발차기 각이 나오지 않는 상황에서도 페인터가 피할 것은 피하고 들어갈 때는 들어가며 상대 진입 핵심을 지웠고, 시청자와 해설 모두 믿기 어려워한 한타 역전 구도를 만들었다.\n- [Highlight 전체 재생 (6707–6803초)](https://chzzk.naver.com/video/14601791?currentTime=6707)\n- 편집 구간: 6707–6715초 (페인터가 상대가 공격하고 빠지는 타이밍을 관찰한 뒤 다른 리듬으로 진입한다는 플레이의 전제를 설명한다.); 6728–6733초 (발차기 각이 나오지 않는 난처한 조건과 동시에 페인터의 어그로 플레이를 알아본 시청자들의 즉각적인 놀라움을 담는다.); 6748–6803초 (피할 것은 피하고 진입할 때는 들어간 페인터가 상대 핵심 진입원을 제거해 한타를 설계한 사건과, 해설의 경탄 및 T1이 반격할 수 있게 된 결과를 완결한다.)\n- 이 시각부터 보기:\n  - [01:51:47 페인터가 어그로와 회피로 불가능해 보인 한타를 설계하다](https://chzzk.naver.com/video/14601791?currentTime=6707)\n    - 근거: 발차기 각이 나오지 않는 상황에서도 페인터가 피할 것은 피하고 들어갈 때는 들어가며 상대 진입 핵심을 지웠고, 시청자와 해설 모두 믿기 어려워한 한타 역전 구도를 만들었다.\n    - 이야기 흐름: 준비 → 특이한 행동·퍼포먼스 → 사건 → 반응 → 결과\n- Highlight 근거:\n  - 상대의 움직임을 읽던 페인터가 불리한 진입 조건에서도 절묘한 회피와 어그로로 한타 구도를 만들고, 믿기 어려운 역전 결과까지 끌어낸다.\n  - 페인터가 상대가 공격하고 빠지는 타이밍을 관찰한 뒤 다른 리듬으로 진입한다는 플레이의 전제를 설명한다.\n  - 발차기 각이 나오지 않는 난처한 조건과 동시에 페인터의 어그로 플레이를 알아본 시청자들의 즉각적인 놀라움을 담는다.\n  - 피할 것은 피하고 진입할 때는 들어간 페인터가 상대 핵심 진입원을 제거해 한타를 설계한 사건과, 해설의 경탄 및 T1이 반격할 수 있게 된 결과를 완결한다.\n\n### 한화생명이 거센 저항을 낚시로 뒤집고 넥서스까지 마무리\n초반부터 우위를 쌓은 한화생명이 T1의 끈질긴 저항을 침착한 운영과 낚시성 교전으로 무너뜨린 뒤 넥서스까지 파괴한다.\n- 왜 볼 가치가 있나: 오랫동안 유리했던 한화생명이 T1의 끈질긴 저항을 침착한 운영과 낚시성 교전으로 무너뜨린 뒤 곧바로 승부를 끝내는 완결된 클로징 장면이다.\n- [Highlight 전체 재생 (10669–10753초)](https://chzzk.naver.com/video/14601791?currentTime=10669)\n- 편집 구간: 10669–10676초 (T1의 저항이 거세지만 한화생명이 초반 용부터 유지해 온 우위를 명확히 제시한다.); 10694–10743초 (한화생명의 침착한 압박이 낚시성 교전으로 전환되고 핵심 대상을 노리는 순간부터 시청자들이 승부의 종결을 감지하는 반응까지 연결한다.); 10743–10753초 (교전 승리가 경기 종료 선언과 넥서스 파괴로 곧바로 이어지는 확정적 결말을 담는다.)\n- 이 시각부터 보기:\n  - [02:57:49 한화생명이 거센 저항을 낚시로 뒤집고 넥서스까지 마무리](https://chzzk.naver.com/video/14601791?currentTime=10669)\n    - 근거: 오랫동안 유리했던 한화생명이 T1의 끈질긴 저항을 침착한 운영과 낚시성 교전으로 무너뜨린 뒤 곧바로 승부를 끝내는 완결된 클로징 장면이다.\n    - 이야기 흐름: 준비 → 특이한 행동·퍼포먼스 → 사건 → 반응 → 결과\n- Highlight 근거:\n  - 초반부터 우위를 쌓은 한화생명이 T1의 끈질긴 저항을 침착한 운영과 낚시성 교전으로 무너뜨린 뒤 넥서스까지 파괴한다.\n  - T1의 저항이 거세지만 한화생명이 초반 용부터 유지해 온 우위를 명확히 제시한다.\n  - 한화생명의 침착한 압박이 낚시성 교전으로 전환되고 핵심 대상을 노리는 순간부터 시청자들이 승부의 종결을 감지하는 반응까지 연결한다.\n  - 교전 승리가 경기 종료 선언과 넥서스 파괴로 곧바로 이어지는 확정적 결말을 담는다.\n\n### 귀환을 미룬 애니비아의 자신감을 도란이 정확히 응징\n귀환을 미루며 버틴 애니비아의 자신감을 도란이 날카로운 킬각으로 응징하고 해설과 채팅의 찬사를 끌어낸다.\n- 왜 볼 가치가 있나: 애니비아의 생존 수단을 믿고 지나치게 오래 버틴 플레이를 도란이 심리의 빈틈으로 읽어 킬각으로 바꿨으며, 채팅도 즉시 과감한 응징에 환호했다.\n- [Highlight 전체 재생 (2432–2480초)](https://chzzk.naver.com/video/14601791?currentTime=2432)\n- 편집 구간: 2432–2449초 (귀환하지 않은 애니비아가 생존 수단을 믿고 버티는 상황과 이를 상대하기 까다롭다는 평가를 함께 제시해 킬 장면의 전제를 만든다.); 2450–2461초 (애니비아가 지나치게 버텼다는 채팅 반응과 실제 킬 가능성을 포착한 다급한 중계를 연결해 응징의 순간과 현장 열기를 전달한다.); 2462–2480초 (도란이 자신감의 심리적 빈틈을 정확히 찔렀다는 해설과 잘한 플레이였다는 최종 평가로 사건의 의미와 결말을 완성한다.)\n- 이 시각부터 보기:\n  - [00:40:32 귀환을 미룬 애니비아의 자신감을 도란이 정확히 응징](https://chzzk.naver.com/video/14601791?currentTime=2432)\n    - 근거: 애니비아의 생존 수단을 믿고 지나치게 오래 버틴 플레이를 도란이 심리의 빈틈으로 읽어 킬각으로 바꿨으며, 채팅도 즉시 과감한 응징에 환호했다.\n    - 이야기 흐름: 준비 → 특이한 행동·퍼포먼스 → 사건 → 반응 → 결과\n- Highlight 근거:\n  - 귀환을 미루며 버틴 애니비아의 자신감을 도란이 날카로운 킬각으로 응징하고 해설과 채팅의 찬사를 끌어낸다.\n  - 귀환하지 않은 애니비아가 생존 수단을 믿고 버티는 상황과 이를 상대하기 까다롭다는 평가를 함께 제시해 킬 장면의 전제를 만든다.\n  - 애니비아가 지나치게 버텼다는 채팅 반응과 실제 킬 가능성을 포착한 다급한 중계를 연결해 응징의 순간과 현장 열기를 전달한다.\n  - 도란이 자신감의 심리적 빈틈을 정확히 찔렀다는 해설과 잘한 플레이였다는 최종 평가로 사건의 의미와 결말을 완성한다.\n\n### 독촉 끝에 완성된 풀 영창, ‘익스플로우전’으로 폭발\n동료들의 독촉을 받은 참가자가 긴 주문을 끝까지 영창한 뒤 ‘익스플로우션’을 터뜨리고 현장을 소동으로 마무리한다.\n- 왜 볼 가치가 있나: 동료의 독촉을 받은 참가자가 긴 주문을 진지하게 이어가고 마침내 파괴 마법을 외치는 즉흥 퍼포먼스로, 채팅의 ‘풀영창’ 반응과 폭발 뒤의 소동까지 명확한 웃음 포인트를 만든다.\n- [Highlight 전체 재생 (20909–20990초)](https://chzzk.naver.com/video/14601791?currentTime=20909)\n- 편집 구간: 20909–20923초 (동료들이 세리에게 주문을 해보라고 거듭 독촉하고 격려하는 장면으로 즉흥 퍼포먼스의 동기를 분명히 한다.); 20924–20976초 (긴 주문을 진지하게 이어가는 과정과 이를 ‘풀영창’이라 부르며 웃고 놀라는 채팅을 함께 담아 기대와 웃음을 누적한다.); 20977–20990초 (마침내 ‘익스플로우션’을 외치는 절정과 직후 도망치라는 외침 및 소동을 연속으로 보여주며 퍼포먼스의 결과까지 마무리한다.)\n- 이 시각부터 보기:\n  - [05:48:29 독촉 끝에 완성된 풀 영창, ‘익스플로우전’으로 폭발](https://chzzk.naver.com/video/14601791?currentTime=20909)\n    - 근거: 동료의 독촉을 받은 참가자가 긴 주문을 진지하게 이어가고 마침내 파괴 마법을 외치는 즉흥 퍼포먼스로, 채팅의 ‘풀영창’ 반응과 폭발 뒤의 소동까지 명확한 웃음 포인트를 만든다.\n    - 이야기 흐름: 준비 → 특이한 행동·퍼포먼스 → 사건 → 반응 → 결과\n- Highlight 근거:\n  - 동료들의 독촉을 받은 참가자가 긴 주문을 끝까지 영창한 뒤 ‘익스플로우션’을 터뜨리고 현장을 소동으로 마무리한다.\n  - 동료들이 세리에게 주문을 해보라고 거듭 독촉하고 격려하는 장면으로 즉흥 퍼포먼스의 동기를 분명히 한다.\n  - 긴 주문을 진지하게 이어가는 과정과 이를 ‘풀영창’이라 부르며 웃고 놀라는 채팅을 함께 담아 기대와 웃음을 누적한다.\n  - 마침내 ‘익스플로우션’을 외치는 절정과 직후 도망치라는 외침 및 소동을 연속으로 보여주며 퍼포먼스의 결과까지 마무리한다.\n\n### 드래곤에게 알을 돌려주려다 혼자 희생될 위기\n화난 드래곤 앞에서 일행이 무릎을 꿇고 카일에게 알을 돌려주라고 재촉하지만, 접근이 잘못되면서 한 명만 죽고 나머지가 탈출할 상황임을 깨닫는다.\n- 왜 볼 가치가 있나: 거대한 드래곤을 달래려고 모두 복종 자세를 취하고 알을 돌려주는 역할을 서로 떠넘기지만, 접근이 잘못됐음을 깨닫고 한 명만 죽고 나머지가 탈출할 상황으로 번지는 코믹한 실패담이다.\n- [Highlight 전체 재생 (30662–30736초)](https://chzzk.naver.com/video/14601791?currentTime=30662)\n- 편집 구간: 30662–30736초 (드래곤의 분노를 걱정하는 도입부터 복종 자세, 알을 돌려줄 사람을 정하는 과정, 잘못된 접근과 희생 결말까지 하나의 연속된 사건으로 완결된다.)\n- 이 시각부터 보기:\n  - [08:31:02 드래곤 앞에 무릎 꿇고 알을 돌려주려다 혼자 희생될 위기](https://chzzk.naver.com/video/14601791?currentTime=30662)\n    - 근거: 거대한 드래곤을 달래려고 모두 복종 자세를 취하고 알을 돌려주는 역할을 서로 떠넘기지만, 접근이 잘못됐음을 깨닫고 한 명만 죽고 나머지가 탈출할 상황으로 번지는 코믹한 실패담이다.\n    - 이야기 흐름: 준비 → 특이한 행동·퍼포먼스 → 사건 → 반응 → 결과\n- Highlight 근거:\n  - 화난 드래곤 앞에서 일행이 무릎을 꿇고 카일에게 알을 돌려주라고 재촉하지만, 접근이 잘못되면서 한 명만 죽고 나머지가 탈출할 상황임을 깨닫는다.\n  - 드래곤의 분노를 걱정하는 도입부터 복종 자세, 알을 돌려줄 사람을 정하는 과정, 잘못된 접근과 희생 결말까지 하나의 연속된 사건으로 완결된다.\n",
   "manager_outline_artifacts": {
     "authority_kind": "generated_bootstrap",
     "authority_revision_id": "bootstrap",
     "markdown": "14601791_manager_outline.md",
     "html": "14601791_manager_outline.html"
+  },
+  "editorial_review_packet": {
+    "schema_version": "chzz.qg1_preview.v1",
+    "projection_mode": "qg1_review_candidate",
+    "authority_revision_id": "d29ea91fe952de426b8a803db1f047bcd8e15506f5eb7c10c6b11b229e374b36",
+    "broadcast_map_sha256": "987b6afde61debea7138420f4bd6b946b4b894fcfb99935d77bc492f1c668c39",
+    "source_broadcast_map_sha256": "43fd31a8ad6a17cd41d097f91e829270e3e582d520740544b7fec8cd74c5d8ba",
+    "broadcast_map": {
+      "d1": [
+        {
+          "id": "range-0",
+          "level": "D1",
+          "parent_id": "",
+          "start": "00:03:24",
+          "end": "00:20:08",
+          "title": "잡담 - e스포츠·키보드·스파이더맨",
+          "content": ""
+        },
+        {
+          "id": "range-4",
+          "level": "D1",
+          "parent_id": "",
+          "start": "00:37:52",
+          "end": "03:10:04",
+          "title": "리그 오브 레전드 경기 관전 - T1 경기 해설",
+          "content": ""
+        },
+        {
+          "id": "range-8",
+          "level": "D1",
+          "parent_id": "",
+          "start": "03:13:37",
+          "end": "04:32:05",
+          "title": "영화 감상 대화 - 스파이더맨·마블 평가",
+          "content": ""
+        },
+        {
+          "id": "range-11",
+          "level": "D1",
+          "parent_id": "",
+          "start": "04:32:05",
+          "end": "04:49:40",
+          "title": "VR챗 준비 - 참가자 대기·환경 설정",
+          "content": ""
+        },
+        {
+          "id": "range-12",
+          "level": "D1",
+          "parent_id": "",
+          "start": "04:50:07",
+          "end": "08:42:37",
+          "title": "VR챗 판타지 방탈출 - 드래곤 저주 해결",
+          "content": ""
+        },
+        {
+          "id": "range-18",
+          "level": "D1",
+          "parent_id": "",
+          "start": "08:43:05",
+          "end": "08:59:13",
+          "title": "방탈출 회고 - 보상·숨은 선택 탐색",
+          "content": ""
+        }
+      ],
+      "d2": [
+        {
+          "id": "range-1",
+          "level": "D2",
+          "parent_id": "range-0",
+          "start": "00:03:24",
+          "end": "00:10:43",
+          "title": "T1 경기력·콜업 대화",
+          "content": ""
+        },
+        {
+          "id": "range-2",
+          "level": "D2",
+          "parent_id": "range-0",
+          "start": "00:11:07",
+          "end": "00:17:35",
+          "title": "커스텀 키보드 구매·타건감",
+          "content": ""
+        },
+        {
+          "id": "range-3",
+          "level": "D2",
+          "parent_id": "range-0",
+          "start": "00:17:52",
+          "end": "00:20:08",
+          "title": "T1 경기 종료·스파이더맨 감상 예정",
+          "content": ""
+        },
+        {
+          "id": "range-5",
+          "level": "D2",
+          "parent_id": "range-4",
+          "start": "00:37:52",
+          "end": "01:20:00",
+          "title": "1세트 - 경기 중계와 종료 분석",
+          "content": ""
+        },
+        {
+          "id": "range-6",
+          "level": "D2",
+          "parent_id": "range-4",
+          "start": "01:20:00",
+          "end": "02:08:34",
+          "title": "2세트 - 밴픽·경기 중계",
+          "content": ""
+        },
+        {
+          "id": "range-7",
+          "level": "D2",
+          "parent_id": "range-4",
+          "start": "02:10:59",
+          "end": "03:10:04",
+          "title": "후속 세트 - 밴픽과 경기 관전",
+          "content": ""
+        },
+        {
+          "id": "range-9",
+          "level": "D2",
+          "parent_id": "range-8",
+          "start": "03:13:37",
+          "end": "03:39:40",
+          "title": "스파이더맨 서사·연출 평가",
+          "content": ""
+        },
+        {
+          "id": "range-10",
+          "level": "D2",
+          "parent_id": "range-8",
+          "start": "03:39:41",
+          "end": "04:32:05",
+          "title": "스파이더맨 버전·마블 후속작 대화",
+          "content": ""
+        },
+        {
+          "id": "range-13",
+          "level": "D2",
+          "parent_id": "range-12",
+          "start": "04:50:07",
+          "end": "05:03:09",
+          "title": "도입 - 집 퍼즐·왕궁 출정",
+          "content": ""
+        },
+        {
+          "id": "range-14",
+          "level": "D2",
+          "parent_id": "range-12",
+          "start": "05:03:09",
+          "end": "06:29:41",
+          "title": "여정 - 마을 진입과 의뢰 탐색",
+          "content": ""
+        },
+        {
+          "id": "range-15",
+          "level": "D2",
+          "parent_id": "range-12",
+          "start": "06:36:09",
+          "end": "07:18:04",
+          "title": "주점·대장간 - 요리와 장비 제작",
+          "content": ""
+        },
+        {
+          "id": "range-16",
+          "level": "D2",
+          "parent_id": "range-12",
+          "start": "07:27:04",
+          "end": "08:22:40",
+          "title": "숲 과제 - 요정·정령 설득",
+          "content": ""
+        },
+        {
+          "id": "range-17",
+          "level": "D2",
+          "parent_id": "range-12",
+          "start": "08:22:40",
+          "end": "08:42:37",
+          "title": "드래곤 알 퍼즐 - 알 반환과 결말",
+          "content": ""
+        }
+      ],
+      "points": [
+        {
+          "id": "point-shadow-d45e644e583f7e344991f2f5",
+          "timestamp": "01:51:47",
+          "title": "페인터가 어그로와 회피로 불가능해 보인 한타를 설계하다",
+          "content": "",
+          "story_ref": "story-packet-e5a06f217ec3946d69a7d346",
+          "d1_ref": "range-4",
+          "d2_ref": "range-6",
+          "evidence_refs": [
+            "evidence-1313a500b7d0eccff9804109",
+            "evidence-527e36cc9ae198665e7b4f2b",
+            "evidence-ef1f53045ce473803b213bcf",
+            "evidence-0bb2881cd9b8741a4bdf5345",
+            "evidence-133d03efaef720dbcec8ccb8",
+            "evidence-4cb741b6576035bb5e7dd11a",
+            "evidence-c475ec2aff795553db3232ac",
+            "evidence-1f13c7ccf19986711baf811e",
+            "evidence-f99091b151a6167ef3eca6b9"
+          ]
+        },
+        {
+          "id": "point-shadow-0a94fcd1280c341c09628e66",
+          "timestamp": "02:57:49",
+          "title": "한화생명이 거센 저항을 낚시로 뒤집고 넥서스까지 마무리",
+          "content": "",
+          "story_ref": "story-packet-2d8ba06a3308a5cb9e4d6ac4",
+          "d1_ref": "range-4",
+          "d2_ref": "range-7",
+          "evidence_refs": [
+            "evidence-38a84ada9b6b73e33c0a9eef",
+            "evidence-8191b9ffbb74e97439b874a6",
+            "evidence-a77ac77e05d464b74e09ed3c",
+            "evidence-b1cbb16e930e63645ba838ad",
+            "evidence-304675b3b3b536e34ba85c4d",
+            "evidence-3055df8f2b5b16563e3b01e7",
+            "evidence-3ca171034025034d6b306407",
+            "evidence-bc574a26bd4049b722fd6e88",
+            "evidence-2ae78d80bcbbd4c5db58072b"
+          ]
+        },
+        {
+          "id": "point-shadow-e441445c870547ae9297ec07",
+          "timestamp": "00:40:32",
+          "title": "귀환을 미룬 애니비아의 자신감을 도란이 정확히 응징",
+          "content": "",
+          "story_ref": "story-packet-e6f48513c6a4989cf285dd19",
+          "d1_ref": "range-4",
+          "d2_ref": "range-5",
+          "evidence_refs": [
+            "evidence-9762321bcffffa1e00e12a4b",
+            "evidence-626eb25923a48e592cc517cb",
+            "evidence-d694dc2e43b467f6467da8c7",
+            "evidence-06d71a12fa02dc7347fd392a",
+            "evidence-d23503cb1005d343fe41cafd",
+            "evidence-1f02403bec1312ad7cd7d948",
+            "evidence-2faa4d185f98cfdefbc35adb",
+            "evidence-42899cc136aa4e1d0e90ce14",
+            "evidence-52e7bfe6962255b492f25460",
+            "evidence-f550ba1ef155a99ea2615ea4"
+          ]
+        },
+        {
+          "id": "point-shadow-970ad9cb896cad93abac20e5",
+          "timestamp": "05:48:29",
+          "title": "독촉 끝에 완성된 풀 영창, ‘익스플로우전’으로 폭발",
+          "content": "",
+          "story_ref": "story-packet-af167132680c8fd65e1d39ea",
+          "d1_ref": "range-12",
+          "d2_ref": "range-14",
+          "evidence_refs": [
+            "evidence-98adc812e1ce9c2699ae95a4",
+            "evidence-e5077f44a13f4d6b414d255b",
+            "evidence-87e072000e0e71e337c159bc",
+            "evidence-9e763de1d8febd11439ed0bb",
+            "evidence-cfb8633bdb3ea9343bc7c450",
+            "evidence-488af6e8639ce5beb6b92ea1",
+            "evidence-05f50ddd0eff9bd707ac2fa4",
+            "evidence-af20e4fcb0521e94a4746404",
+            "evidence-cf190a5e4428fd20f16f0d38",
+            "evidence-3472dd301fc64987745b651c"
+          ]
+        },
+        {
+          "id": "point-shadow-45da8a1e72e6e9db7e013ef9",
+          "timestamp": "08:31:02",
+          "title": "드래곤 앞에 무릎 꿇고 알을 돌려주려다 혼자 희생될 위기",
+          "content": "",
+          "story_ref": "story-packet-461ade7a7d68b81949ec9c29",
+          "d1_ref": "range-12",
+          "d2_ref": "range-17",
+          "evidence_refs": [
+            "evidence-edef0fef55716adfdd07b659",
+            "evidence-7418e0f00cca1eab73af22a6",
+            "evidence-aa0e778a7749e5d67c5691a4",
+            "evidence-c7efe3f337bb5b775dfe5abd",
+            "evidence-7aa2a0e0ff7fb7b0b92513ce",
+            "evidence-a0144b023a6d430a7ef02690",
+            "evidence-6f2c34b7bf5ed84cdcf9f45a",
+            "evidence-9bd6924016431cba764e3744",
+            "evidence-2a54e1d7887e17dd7e5898db",
+            "evidence-6e3cdc050b78e72c48c29857",
+            "evidence-8e0eda5bf7a4a21bf96ae898"
+          ]
+        }
+      ]
+    },
+    "stories": [
+      {
+        "story_ref": "story-packet-e5a06f217ec3946d69a7d346",
+        "title": "페인터가 어그로와 회피로 불가능해 보인 한타를 설계하다",
+        "why_notable": "발차기 각이 나오지 않는 상황에서도 페인터가 피할 것은 피하고 들어갈 때는 들어가며 상대 진입 핵심을 지웠고, 시청자와 해설 모두 믿기 어려워한 한타 역전 구도를 만들었다.",
+        "roles": {
+          "setup": [
+            "evidence-1313a500b7d0eccff9804109"
+          ],
+          "performance": [
+            "evidence-527e36cc9ae198665e7b4f2b"
+          ],
+          "event": [
+            "evidence-ef1f53045ce473803b213bcf"
+          ],
+          "reaction": [
+            "evidence-0bb2881cd9b8741a4bdf5345",
+            "evidence-133d03efaef720dbcec8ccb8",
+            "evidence-4cb741b6576035bb5e7dd11a"
+          ],
+          "result": [
+            "evidence-c475ec2aff795553db3232ac",
+            "evidence-1f13c7ccf19986711baf811e",
+            "evidence-f99091b151a6167ef3eca6b9"
+          ]
+        },
+        "evidence_refs": [
+          "evidence-1313a500b7d0eccff9804109",
+          "evidence-527e36cc9ae198665e7b4f2b",
+          "evidence-ef1f53045ce473803b213bcf",
+          "evidence-0bb2881cd9b8741a4bdf5345",
+          "evidence-133d03efaef720dbcec8ccb8",
+          "evidence-4cb741b6576035bb5e7dd11a",
+          "evidence-c475ec2aff795553db3232ac",
+          "evidence-1f13c7ccf19986711baf811e",
+          "evidence-f99091b151a6167ef3eca6b9"
+        ]
+      },
+      {
+        "story_ref": "story-packet-2d8ba06a3308a5cb9e4d6ac4",
+        "title": "한화생명이 거센 저항을 낚시로 뒤집고 넥서스까지 마무리",
+        "why_notable": "오랫동안 유리했던 한화생명이 T1의 끈질긴 저항을 침착한 운영과 낚시성 교전으로 무너뜨린 뒤 곧바로 승부를 끝내는 완결된 클로징 장면이다.",
+        "roles": {
+          "setup": [
+            "evidence-38a84ada9b6b73e33c0a9eef"
+          ],
+          "performance": [
+            "evidence-8191b9ffbb74e97439b874a6",
+            "evidence-a77ac77e05d464b74e09ed3c"
+          ],
+          "event": [
+            "evidence-b1cbb16e930e63645ba838ad"
+          ],
+          "reaction": [
+            "evidence-304675b3b3b536e34ba85c4d",
+            "evidence-3055df8f2b5b16563e3b01e7",
+            "evidence-3ca171034025034d6b306407"
+          ],
+          "result": [
+            "evidence-bc574a26bd4049b722fd6e88",
+            "evidence-2ae78d80bcbbd4c5db58072b"
+          ]
+        },
+        "evidence_refs": [
+          "evidence-38a84ada9b6b73e33c0a9eef",
+          "evidence-8191b9ffbb74e97439b874a6",
+          "evidence-a77ac77e05d464b74e09ed3c",
+          "evidence-b1cbb16e930e63645ba838ad",
+          "evidence-304675b3b3b536e34ba85c4d",
+          "evidence-3055df8f2b5b16563e3b01e7",
+          "evidence-3ca171034025034d6b306407",
+          "evidence-bc574a26bd4049b722fd6e88",
+          "evidence-2ae78d80bcbbd4c5db58072b"
+        ]
+      },
+      {
+        "story_ref": "story-packet-e6f48513c6a4989cf285dd19",
+        "title": "귀환을 미룬 애니비아의 자신감을 도란이 정확히 응징",
+        "why_notable": "애니비아의 생존 수단을 믿고 지나치게 오래 버틴 플레이를 도란이 심리의 빈틈으로 읽어 킬각으로 바꿨으며, 채팅도 즉시 과감한 응징에 환호했다.",
+        "roles": {
+          "setup": [
+            "evidence-9762321bcffffa1e00e12a4b"
+          ],
+          "performance": [
+            "evidence-626eb25923a48e592cc517cb",
+            "evidence-d694dc2e43b467f6467da8c7"
+          ],
+          "event": [
+            "evidence-06d71a12fa02dc7347fd392a",
+            "evidence-d23503cb1005d343fe41cafd"
+          ],
+          "reaction": [
+            "evidence-1f02403bec1312ad7cd7d948",
+            "evidence-2faa4d185f98cfdefbc35adb",
+            "evidence-42899cc136aa4e1d0e90ce14",
+            "evidence-52e7bfe6962255b492f25460"
+          ],
+          "result": [
+            "evidence-f550ba1ef155a99ea2615ea4"
+          ]
+        },
+        "evidence_refs": [
+          "evidence-9762321bcffffa1e00e12a4b",
+          "evidence-626eb25923a48e592cc517cb",
+          "evidence-d694dc2e43b467f6467da8c7",
+          "evidence-06d71a12fa02dc7347fd392a",
+          "evidence-d23503cb1005d343fe41cafd",
+          "evidence-1f02403bec1312ad7cd7d948",
+          "evidence-2faa4d185f98cfdefbc35adb",
+          "evidence-42899cc136aa4e1d0e90ce14",
+          "evidence-52e7bfe6962255b492f25460",
+          "evidence-f550ba1ef155a99ea2615ea4"
+        ]
+      },
+      {
+        "story_ref": "story-packet-af167132680c8fd65e1d39ea",
+        "title": "독촉 끝에 완성된 풀 영창, ‘익스플로우전’으로 폭발",
+        "why_notable": "동료의 독촉을 받은 참가자가 긴 주문을 진지하게 이어가고 마침내 파괴 마법을 외치는 즉흥 퍼포먼스로, 채팅의 ‘풀영창’ 반응과 폭발 뒤의 소동까지 명확한 웃음 포인트를 만든다.",
+        "roles": {
+          "setup": [
+            "evidence-98adc812e1ce9c2699ae95a4"
+          ],
+          "performance": [
+            "evidence-e5077f44a13f4d6b414d255b",
+            "evidence-87e072000e0e71e337c159bc",
+            "evidence-9e763de1d8febd11439ed0bb"
+          ],
+          "event": [
+            "evidence-cfb8633bdb3ea9343bc7c450",
+            "evidence-488af6e8639ce5beb6b92ea1"
+          ],
+          "reaction": [
+            "evidence-05f50ddd0eff9bd707ac2fa4",
+            "evidence-af20e4fcb0521e94a4746404",
+            "evidence-cf190a5e4428fd20f16f0d38"
+          ],
+          "result": [
+            "evidence-3472dd301fc64987745b651c"
+          ]
+        },
+        "evidence_refs": [
+          "evidence-98adc812e1ce9c2699ae95a4",
+          "evidence-e5077f44a13f4d6b414d255b",
+          "evidence-87e072000e0e71e337c159bc",
+          "evidence-9e763de1d8febd11439ed0bb",
+          "evidence-cfb8633bdb3ea9343bc7c450",
+          "evidence-488af6e8639ce5beb6b92ea1",
+          "evidence-05f50ddd0eff9bd707ac2fa4",
+          "evidence-af20e4fcb0521e94a4746404",
+          "evidence-cf190a5e4428fd20f16f0d38",
+          "evidence-3472dd301fc64987745b651c"
+        ]
+      },
+      {
+        "story_ref": "story-packet-461ade7a7d68b81949ec9c29",
+        "title": "드래곤 앞에 무릎 꿇고 알을 돌려주려다 혼자 희생될 위기",
+        "why_notable": "거대한 드래곤을 달래려고 모두 복종 자세를 취하고 알을 돌려주는 역할을 서로 떠넘기지만, 접근이 잘못됐음을 깨닫고 한 명만 죽고 나머지가 탈출할 상황으로 번지는 코믹한 실패담이다.",
+        "roles": {
+          "setup": [
+            "evidence-edef0fef55716adfdd07b659"
+          ],
+          "performance": [
+            "evidence-7418e0f00cca1eab73af22a6",
+            "evidence-aa0e778a7749e5d67c5691a4",
+            "evidence-c7efe3f337bb5b775dfe5abd",
+            "evidence-7aa2a0e0ff7fb7b0b92513ce"
+          ],
+          "event": [
+            "evidence-a0144b023a6d430a7ef02690",
+            "evidence-6f2c34b7bf5ed84cdcf9f45a"
+          ],
+          "reaction": [
+            "evidence-9bd6924016431cba764e3744",
+            "evidence-2a54e1d7887e17dd7e5898db",
+            "evidence-6e3cdc050b78e72c48c29857"
+          ],
+          "result": [
+            "evidence-8e0eda5bf7a4a21bf96ae898"
+          ]
+        },
+        "evidence_refs": [
+          "evidence-edef0fef55716adfdd07b659",
+          "evidence-7418e0f00cca1eab73af22a6",
+          "evidence-aa0e778a7749e5d67c5691a4",
+          "evidence-c7efe3f337bb5b775dfe5abd",
+          "evidence-7aa2a0e0ff7fb7b0b92513ce",
+          "evidence-a0144b023a6d430a7ef02690",
+          "evidence-6f2c34b7bf5ed84cdcf9f45a",
+          "evidence-9bd6924016431cba764e3744",
+          "evidence-2a54e1d7887e17dd7e5898db",
+          "evidence-6e3cdc050b78e72c48c29857",
+          "evidence-8e0eda5bf7a4a21bf96ae898"
+        ]
+      }
+    ],
+    "editorial_highlights": [
+      {
+        "schema_version": "chzz.editorial_highlight.v1",
+        "authority_revision_id": "d29ea91fe952de426b8a803db1f047bcd8e15506f5eb7c10c6b11b229e374b36",
+        "title": "페인터가 어그로와 회피로 불가능해 보인 한타를 설계하다",
+        "story_summary": "상대의 움직임을 읽던 페인터가 불리한 진입 조건에서도 절묘한 회피와 어그로로 한타 구도를 만들고, 믿기 어려운 역전 결과까지 끌어낸다.",
+        "d1_refs": [
+          "range-4"
+        ],
+        "d2_refs": [
+          "range-6"
+        ],
+        "point_refs": [
+          "point-shadow-d45e644e583f7e344991f2f5"
+        ],
+        "story_ref": "story-packet-e5a06f217ec3946d69a7d346",
+        "source_spans": [
+          {
+            "span_index": 0,
+            "start_sec": 6707,
+            "end_sec": 6715,
+            "duration_sec": 8,
+            "story_roles": [
+              "setup"
+            ],
+            "d1_refs": [
+              "range-4"
+            ],
+            "d2_refs": [
+              "range-6"
+            ],
+            "point_refs": [
+              "point-shadow-d45e644e583f7e344991f2f5"
+            ],
+            "evidence_refs": [
+              "evidence-1313a500b7d0eccff9804109"
+            ],
+            "reason": "페인터가 상대가 공격하고 빠지는 타이밍을 관찰한 뒤 다른 리듬으로 진입한다는 플레이의 전제를 설명한다."
+          },
+          {
+            "span_index": 1,
+            "start_sec": 6728,
+            "end_sec": 6733,
+            "duration_sec": 5,
+            "story_roles": [
+              "performance",
+              "reaction"
+            ],
+            "d1_refs": [
+              "range-4"
+            ],
+            "d2_refs": [
+              "range-6"
+            ],
+            "point_refs": [],
+            "evidence_refs": [
+              "evidence-527e36cc9ae198665e7b4f2b",
+              "evidence-0bb2881cd9b8741a4bdf5345",
+              "evidence-133d03efaef720dbcec8ccb8",
+              "evidence-4cb741b6576035bb5e7dd11a"
+            ],
+            "reason": "발차기 각이 나오지 않는 난처한 조건과 동시에 페인터의 어그로 플레이를 알아본 시청자들의 즉각적인 놀라움을 담는다."
+          },
+          {
+            "span_index": 2,
+            "start_sec": 6748,
+            "end_sec": 6803,
+            "duration_sec": 55,
+            "story_roles": [
+              "event",
+              "result"
+            ],
+            "d1_refs": [
+              "range-4"
+            ],
+            "d2_refs": [
+              "range-6"
+            ],
+            "point_refs": [],
+            "evidence_refs": [
+              "evidence-ef1f53045ce473803b213bcf",
+              "evidence-c475ec2aff795553db3232ac",
+              "evidence-1f13c7ccf19986711baf811e",
+              "evidence-f99091b151a6167ef3eca6b9"
+            ],
+            "reason": "피할 것은 피하고 진입할 때는 들어간 페인터가 상대 핵심 진입원을 제거해 한타를 설계한 사건과, 해설의 경탄 및 T1이 반격할 수 있게 된 결과를 완결한다."
+          }
+        ],
+        "edit_mode": "multi_span",
+        "story_beats": [
+          {
+            "role": "introduction",
+            "span_indexes": [
+              0
+            ],
+            "evidence_refs": [
+              "evidence-1313a500b7d0eccff9804109"
+            ],
+            "reason": "페인터가 상대의 리듬을 읽고 있다는 사전 맥락을 제시한다."
+          },
+          {
+            "role": "development",
+            "span_indexes": [
+              1
+            ],
+            "evidence_refs": [
+              "evidence-527e36cc9ae198665e7b4f2b"
+            ],
+            "reason": "정상적인 발차기 각이 없는 어려운 조건에서 플레이가 시작됨을 보여준다."
+          },
+          {
+            "role": "reaction",
+            "span_indexes": [
+              1
+            ],
+            "evidence_refs": [
+              "evidence-0bb2881cd9b8741a4bdf5345",
+              "evidence-133d03efaef720dbcec8ccb8",
+              "evidence-4cb741b6576035bb5e7dd11a"
+            ],
+            "reason": "시청자가 페인터의 어그로와 예상 밖 생존에 즉각 반응하며 장면의 충격을 강화한다."
+          },
+          {
+            "role": "core_event",
+            "span_indexes": [
+              2
+            ],
+            "evidence_refs": [
+              "evidence-ef1f53045ce473803b213bcf"
+            ],
+            "reason": "회피와 진입을 정교하게 배분해 한타 구도를 만든 핵심 플레이를 설명한다."
+          },
+          {
+            "role": "ending",
+            "span_indexes": [
+              2
+            ],
+            "evidence_refs": [
+              "evidence-c475ec2aff795553db3232ac",
+              "evidence-1f13c7ccf19986711baf811e",
+              "evidence-f99091b151a6167ef3eca6b9"
+            ],
+            "reason": "페인터가 한타를 만들었다는 평가와 상대 핵심의 이탈로 T1의 반격 구도가 완성된 결과를 정리한다."
+          }
+        ],
+        "story_completeness": {
+          "state": "complete",
+          "present_roles": [
+            "core_event",
+            "development",
+            "ending",
+            "introduction",
+            "reaction"
+          ]
+        },
+        "total_source_duration_sec": 68,
+        "estimated_edited_duration": {
+          "min_sec": 68,
+          "max_sec": 68,
+          "category": "완결형 한타 서사"
+        },
+        "excluded_gap_duration_sec": 28,
+        "used_evidence_refs": [
+          "evidence-0bb2881cd9b8741a4bdf5345",
+          "evidence-1313a500b7d0eccff9804109",
+          "evidence-133d03efaef720dbcec8ccb8",
+          "evidence-1f13c7ccf19986711baf811e",
+          "evidence-4cb741b6576035bb5e7dd11a",
+          "evidence-527e36cc9ae198665e7b4f2b",
+          "evidence-c475ec2aff795553db3232ac",
+          "evidence-ef1f53045ce473803b213bcf",
+          "evidence-f99091b151a6167ef3eca6b9"
+        ],
+        "required_story_roles": {
+          "setup": [
+            "evidence-1313a500b7d0eccff9804109"
+          ],
+          "performance": [
+            "evidence-527e36cc9ae198665e7b4f2b"
+          ],
+          "event": [
+            "evidence-ef1f53045ce473803b213bcf"
+          ],
+          "reaction": [
+            "evidence-0bb2881cd9b8741a4bdf5345",
+            "evidence-133d03efaef720dbcec8ccb8",
+            "evidence-4cb741b6576035bb5e7dd11a"
+          ],
+          "result": [
+            "evidence-c475ec2aff795553db3232ac",
+            "evidence-1f13c7ccf19986711baf811e",
+            "evidence-f99091b151a6167ef3eca6b9"
+          ]
+        },
+        "required_evidence_refs": [
+          "evidence-1313a500b7d0eccff9804109",
+          "evidence-527e36cc9ae198665e7b4f2b",
+          "evidence-ef1f53045ce473803b213bcf",
+          "evidence-0bb2881cd9b8741a4bdf5345",
+          "evidence-133d03efaef720dbcec8ccb8",
+          "evidence-4cb741b6576035bb5e7dd11a",
+          "evidence-c475ec2aff795553db3232ac",
+          "evidence-1f13c7ccf19986711baf811e",
+          "evidence-f99091b151a6167ef3eca6b9"
+        ],
+        "evidence_dispositions": [
+          {
+            "evidence_id": "evidence-01c72e9fd4e263ba5fbd8085",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-18da6d086ef7e7b141db91a4",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-f64fb7517452045d2eb6a308",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-107e5be698f160ad81cd8c79",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-32ddbad05ae933aac4ef4352",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-1313a500b7d0eccff9804109",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-a56c14fa9da21d3115977171",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-1ff056e5995063fd183eb6a4",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-527e36cc9ae198665e7b4f2b",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-765ebc554f394b56bbe8f268",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-0a1c7086ba119a53a9162b5e",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-0bb2881cd9b8741a4bdf5345",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-133d03efaef720dbcec8ccb8",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-2b0c3103649ea2635820c2e0",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-2d90e7435a43a20f1cc38eea",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-2f144cd34df9a119444e16d8",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-4a9ba81a2d2befe404ba0e7c",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-4cb741b6576035bb5e7dd11a",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-69a58c2da4d4fefe2fab4a1e",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-7589ee5f44ec167b2c1d7911",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-9a98c1cd8a17918715849395",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-ef1f53045ce473803b213bcf",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-86afcf56843a966ccb382fd0",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-c475ec2aff795553db3232ac",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-d763660bb2c434c4dd6d3314",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-1f13c7ccf19986711baf811e",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-bc539354c8b0dd0bdc8066dd",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-f99091b151a6167ef3eca6b9",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          }
+        ],
+        "missing_information": [],
+        "uncertainties": [
+          "일부 STT의 선수명과 기술명이 부정확하게 전사되어 세부 동작 명칭보다 확인 가능한 어그로·회피·진입 및 한타 결과를 중심으로 구성했다."
+        ],
+        "highlight_producer_run_ref": "highlight-approved-r1:complete",
+        "classification": "editorial_highlight",
+        "counts_as_highlight": true,
+        "highlight_id": "highlight-4bd06e9cd1898d25a6520e2f6702517e76f834f0f69cfe12ad022b49a16fa239"
+      },
+      {
+        "schema_version": "chzz.editorial_highlight.v1",
+        "authority_revision_id": "d29ea91fe952de426b8a803db1f047bcd8e15506f5eb7c10c6b11b229e374b36",
+        "title": "한화생명이 거센 저항을 낚시로 뒤집고 넥서스까지 마무리",
+        "story_summary": "초반부터 우위를 쌓은 한화생명이 T1의 끈질긴 저항을 침착한 운영과 낚시성 교전으로 무너뜨린 뒤 넥서스까지 파괴한다.",
+        "d1_refs": [
+          "range-4"
+        ],
+        "d2_refs": [
+          "range-7"
+        ],
+        "point_refs": [
+          "point-shadow-0a94fcd1280c341c09628e66"
+        ],
+        "story_ref": "story-packet-2d8ba06a3308a5cb9e4d6ac4",
+        "source_spans": [
+          {
+            "span_index": 0,
+            "start_sec": 10669,
+            "end_sec": 10676,
+            "duration_sec": 7,
+            "story_roles": [
+              "setup"
+            ],
+            "d1_refs": [
+              "range-4"
+            ],
+            "d2_refs": [
+              "range-7"
+            ],
+            "point_refs": [
+              "point-shadow-0a94fcd1280c341c09628e66"
+            ],
+            "evidence_refs": [
+              "evidence-38a84ada9b6b73e33c0a9eef"
+            ],
+            "reason": "T1의 저항이 거세지만 한화생명이 초반 용부터 유지해 온 우위를 명확히 제시한다."
+          },
+          {
+            "span_index": 1,
+            "start_sec": 10694,
+            "end_sec": 10743,
+            "duration_sec": 49,
+            "story_roles": [
+              "performance",
+              "event",
+              "reaction"
+            ],
+            "d1_refs": [
+              "range-4"
+            ],
+            "d2_refs": [
+              "range-7"
+            ],
+            "point_refs": [],
+            "evidence_refs": [
+              "evidence-8191b9ffbb74e97439b874a6",
+              "evidence-a77ac77e05d464b74e09ed3c",
+              "evidence-b1cbb16e930e63645ba838ad",
+              "evidence-304675b3b3b536e34ba85c4d",
+              "evidence-3055df8f2b5b16563e3b01e7",
+              "evidence-3ca171034025034d6b306407"
+            ],
+            "reason": "한화생명의 침착한 압박이 낚시성 교전으로 전환되고 핵심 대상을 노리는 순간부터 시청자들이 승부의 종결을 감지하는 반응까지 연결한다."
+          },
+          {
+            "span_index": 2,
+            "start_sec": 10743,
+            "end_sec": 10753,
+            "duration_sec": 10,
+            "story_roles": [
+              "result"
+            ],
+            "d1_refs": [
+              "range-4"
+            ],
+            "d2_refs": [
+              "range-7"
+            ],
+            "point_refs": [],
+            "evidence_refs": [
+              "evidence-bc574a26bd4049b722fd6e88",
+              "evidence-2ae78d80bcbbd4c5db58072b"
+            ],
+            "reason": "교전 승리가 경기 종료 선언과 넥서스 파괴로 곧바로 이어지는 확정적 결말을 담는다."
+          }
+        ],
+        "edit_mode": "multi_span",
+        "story_beats": [
+          {
+            "role": "introduction",
+            "span_indexes": [
+              0
+            ],
+            "evidence_refs": [
+              "evidence-38a84ada9b6b73e33c0a9eef"
+            ],
+            "reason": "한화생명의 장기적인 우위와 T1의 거센 저항이라는 마지막 공방의 조건을 설정한다."
+          },
+          {
+            "role": "development",
+            "span_indexes": [
+              1
+            ],
+            "evidence_refs": [
+              "evidence-8191b9ffbb74e97439b874a6",
+              "evidence-a77ac77e05d464b74e09ed3c"
+            ],
+            "reason": "침착한 운영 압박이 상대를 끌어들이는 낚시성 교전으로 바뀌는 과정을 보여준다."
+          },
+          {
+            "role": "core_event",
+            "span_indexes": [
+              1
+            ],
+            "evidence_refs": [
+              "evidence-b1cbb16e930e63645ba838ad"
+            ],
+            "reason": "한화생명이 다음 핵심 대상을 포착하며 T1의 저항을 결정적으로 무너뜨리는 순간이다."
+          },
+          {
+            "role": "reaction",
+            "span_indexes": [
+              1
+            ],
+            "evidence_refs": [
+              "evidence-304675b3b3b536e34ba85c4d",
+              "evidence-3055df8f2b5b16563e3b01e7",
+              "evidence-3ca171034025034d6b306407"
+            ],
+            "reason": "시청자들이 즉시 경기 종료와 T1의 패배를 예상하며 핵심 교전의 결정성을 확인한다."
+          },
+          {
+            "role": "ending",
+            "span_indexes": [
+              2
+            ],
+            "evidence_refs": [
+              "evidence-bc574a26bd4049b722fd6e88",
+              "evidence-2ae78d80bcbbd4c5db58072b"
+            ],
+            "reason": "한화생명이 교전의 이득을 넥서스 파괴까지 연결해 이야기를 완결한다."
+          }
+        ],
+        "story_completeness": {
+          "state": "complete",
+          "present_roles": [
+            "core_event",
+            "development",
+            "ending",
+            "introduction",
+            "reaction"
+          ]
+        },
+        "total_source_duration_sec": 66,
+        "estimated_edited_duration": {
+          "min_sec": 66,
+          "max_sec": 66,
+          "category": "경기 클로징 서사"
+        },
+        "excluded_gap_duration_sec": 18,
+        "used_evidence_refs": [
+          "evidence-2ae78d80bcbbd4c5db58072b",
+          "evidence-304675b3b3b536e34ba85c4d",
+          "evidence-3055df8f2b5b16563e3b01e7",
+          "evidence-38a84ada9b6b73e33c0a9eef",
+          "evidence-3ca171034025034d6b306407",
+          "evidence-8191b9ffbb74e97439b874a6",
+          "evidence-a77ac77e05d464b74e09ed3c",
+          "evidence-b1cbb16e930e63645ba838ad",
+          "evidence-bc574a26bd4049b722fd6e88"
+        ],
+        "required_story_roles": {
+          "setup": [
+            "evidence-38a84ada9b6b73e33c0a9eef"
+          ],
+          "performance": [
+            "evidence-8191b9ffbb74e97439b874a6",
+            "evidence-a77ac77e05d464b74e09ed3c"
+          ],
+          "event": [
+            "evidence-b1cbb16e930e63645ba838ad"
+          ],
+          "reaction": [
+            "evidence-304675b3b3b536e34ba85c4d",
+            "evidence-3055df8f2b5b16563e3b01e7",
+            "evidence-3ca171034025034d6b306407"
+          ],
+          "result": [
+            "evidence-bc574a26bd4049b722fd6e88",
+            "evidence-2ae78d80bcbbd4c5db58072b"
+          ]
+        },
+        "required_evidence_refs": [
+          "evidence-38a84ada9b6b73e33c0a9eef",
+          "evidence-8191b9ffbb74e97439b874a6",
+          "evidence-a77ac77e05d464b74e09ed3c",
+          "evidence-b1cbb16e930e63645ba838ad",
+          "evidence-304675b3b3b536e34ba85c4d",
+          "evidence-3055df8f2b5b16563e3b01e7",
+          "evidence-3ca171034025034d6b306407",
+          "evidence-bc574a26bd4049b722fd6e88",
+          "evidence-2ae78d80bcbbd4c5db58072b"
+        ],
+        "evidence_dispositions": [
+          {
+            "evidence_id": "evidence-38a84ada9b6b73e33c0a9eef",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-17719c19fd876f8b9c5cfc4d",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-15d5187456c92f18ec5b80fd",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-0ec1d502eff427b1fdd062f0",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-8191b9ffbb74e97439b874a6",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-a77ac77e05d464b74e09ed3c",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-fb41df9a1b6fe89b1b90e967",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-87ecbc98ed7dd29756117cd2",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-298e02764d12d91f82a0be59",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-89279793be4d002a8f464b0b",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-a495113fc61b6c4166c9e495",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-43d03f95b498bfbb060a7fad",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-049c0a9299980fae7bb382ae",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-0ffa33e8aeaf3b3e1d31506d",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-1ebf3bc7714b8306715108c0",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-2dcd6661c77a5b9bc0f5fce5",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-304675b3b3b536e34ba85c4d",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-3055df8f2b5b16563e3b01e7",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-394ac0bea241d76d3419748a",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-3ca171034025034d6b306407",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-40834a1ff3ce4996ef4e08cc",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-4338c1033f2ba30ed13b615a",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-b1cbb16e930e63645ba838ad",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-bc574a26bd4049b722fd6e88",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-a9a78b99b717129ffee37c6d",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-2ae78d80bcbbd4c5db58072b",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-3c96807da0cd8ace9803dc47",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-f7f97c7c797a7b874ac4c8d8",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          }
+        ],
+        "missing_information": [],
+        "uncertainties": [
+          "일부 STT의 선수명과 경기 종료 표현이 부정확하게 전사되어, 명확히 확인되는 운영 우위·낚시성 교전·종료 선언·넥서스 결과를 중심으로 구성했다."
+        ],
+        "highlight_producer_run_ref": "highlight-approved-r1:complete",
+        "classification": "editorial_highlight",
+        "counts_as_highlight": true,
+        "highlight_id": "highlight-eaf36af29840e3e780404a24319ace3f08c42193d273dc64219c36befdfa39df"
+      },
+      {
+        "schema_version": "chzz.editorial_highlight.v1",
+        "authority_revision_id": "d29ea91fe952de426b8a803db1f047bcd8e15506f5eb7c10c6b11b229e374b36",
+        "title": "귀환을 미룬 애니비아의 자신감을 도란이 정확히 응징",
+        "story_summary": "귀환을 미루며 버틴 애니비아의 자신감을 도란이 날카로운 킬각으로 응징하고 해설과 채팅의 찬사를 끌어낸다.",
+        "d1_refs": [
+          "range-4"
+        ],
+        "d2_refs": [
+          "range-5"
+        ],
+        "point_refs": [
+          "point-shadow-e441445c870547ae9297ec07"
+        ],
+        "story_ref": "story-packet-e6f48513c6a4989cf285dd19",
+        "source_spans": [
+          {
+            "span_index": 0,
+            "start_sec": 2432,
+            "end_sec": 2449,
+            "duration_sec": 17,
+            "story_roles": [
+              "setup",
+              "performance"
+            ],
+            "d1_refs": [
+              "range-4"
+            ],
+            "d2_refs": [
+              "range-5"
+            ],
+            "point_refs": [
+              "point-shadow-e441445c870547ae9297ec07"
+            ],
+            "evidence_refs": [
+              "evidence-9762321bcffffa1e00e12a4b",
+              "evidence-626eb25923a48e592cc517cb",
+              "evidence-d694dc2e43b467f6467da8c7"
+            ],
+            "reason": "귀환하지 않은 애니비아가 생존 수단을 믿고 버티는 상황과 이를 상대하기 까다롭다는 평가를 함께 제시해 킬 장면의 전제를 만든다."
+          },
+          {
+            "span_index": 1,
+            "start_sec": 2450,
+            "end_sec": 2461,
+            "duration_sec": 11,
+            "story_roles": [
+              "event",
+              "reaction"
+            ],
+            "d1_refs": [
+              "range-4"
+            ],
+            "d2_refs": [
+              "range-5"
+            ],
+            "point_refs": [],
+            "evidence_refs": [
+              "evidence-1f02403bec1312ad7cd7d948",
+              "evidence-2faa4d185f98cfdefbc35adb",
+              "evidence-42899cc136aa4e1d0e90ce14",
+              "evidence-52e7bfe6962255b492f25460",
+              "evidence-06d71a12fa02dc7347fd392a"
+            ],
+            "reason": "애니비아가 지나치게 버텼다는 채팅 반응과 실제 킬 가능성을 포착한 다급한 중계를 연결해 응징의 순간과 현장 열기를 전달한다."
+          },
+          {
+            "span_index": 2,
+            "start_sec": 2462,
+            "end_sec": 2480,
+            "duration_sec": 18,
+            "story_roles": [
+              "event",
+              "result"
+            ],
+            "d1_refs": [
+              "range-4"
+            ],
+            "d2_refs": [
+              "range-5"
+            ],
+            "point_refs": [],
+            "evidence_refs": [
+              "evidence-d23503cb1005d343fe41cafd",
+              "evidence-f550ba1ef155a99ea2615ea4"
+            ],
+            "reason": "도란이 자신감의 심리적 빈틈을 정확히 찔렀다는 해설과 잘한 플레이였다는 최종 평가로 사건의 의미와 결말을 완성한다."
+          }
+        ],
+        "edit_mode": "multi_span",
+        "story_beats": [
+          {
+            "role": "introduction",
+            "span_indexes": [
+              0
+            ],
+            "evidence_refs": [
+              "evidence-9762321bcffffa1e00e12a4b"
+            ],
+            "reason": "애니비아가 귀환하지 않고 남은 상황을 먼저 알려 이후의 위험과 응징을 이해하게 한다."
+          },
+          {
+            "role": "development",
+            "span_indexes": [
+              0
+            ],
+            "evidence_refs": [
+              "evidence-626eb25923a48e592cc517cb",
+              "evidence-d694dc2e43b467f6467da8c7"
+            ],
+            "reason": "애니비아의 생존 능력과 버티는 플레이가 얼마나 까다로운지 보여주며 긴장을 축적한다."
+          },
+          {
+            "role": "core_event",
+            "span_indexes": [
+              1,
+              2
+            ],
+            "evidence_refs": [
+              "evidence-06d71a12fa02dc7347fd392a",
+              "evidence-d23503cb1005d343fe41cafd"
+            ],
+            "reason": "도란이 상대의 과도한 자신감을 킬각으로 전환한 핵심 사건을 제시한다."
+          },
+          {
+            "role": "reaction",
+            "span_indexes": [
+              1
+            ],
+            "evidence_refs": [
+              "evidence-1f02403bec1312ad7cd7d948",
+              "evidence-2faa4d185f98cfdefbc35adb",
+              "evidence-42899cc136aa4e1d0e90ce14",
+              "evidence-52e7bfe6962255b492f25460"
+            ],
+            "reason": "놀라움과 환호, 지나치게 버텼다는 평가가 담긴 채팅으로 응징의 통쾌함을 강화한다."
+          },
+          {
+            "role": "ending",
+            "span_indexes": [
+              2
+            ],
+            "evidence_refs": [
+              "evidence-f550ba1ef155a99ea2615ea4"
+            ],
+            "reason": "플레이가 훌륭했다는 명시적 평가로 이야기를 닫는다."
+          }
+        ],
+        "story_completeness": {
+          "state": "complete",
+          "present_roles": [
+            "core_event",
+            "development",
+            "ending",
+            "introduction",
+            "reaction"
+          ]
+        },
+        "total_source_duration_sec": 46,
+        "estimated_edited_duration": {
+          "min_sec": 46,
+          "max_sec": 46,
+          "category": "짧은 완결형 경기 하이라이트"
+        },
+        "excluded_gap_duration_sec": 2,
+        "used_evidence_refs": [
+          "evidence-06d71a12fa02dc7347fd392a",
+          "evidence-1f02403bec1312ad7cd7d948",
+          "evidence-2faa4d185f98cfdefbc35adb",
+          "evidence-42899cc136aa4e1d0e90ce14",
+          "evidence-52e7bfe6962255b492f25460",
+          "evidence-626eb25923a48e592cc517cb",
+          "evidence-9762321bcffffa1e00e12a4b",
+          "evidence-d23503cb1005d343fe41cafd",
+          "evidence-d694dc2e43b467f6467da8c7",
+          "evidence-f550ba1ef155a99ea2615ea4"
+        ],
+        "required_story_roles": {
+          "setup": [
+            "evidence-9762321bcffffa1e00e12a4b"
+          ],
+          "performance": [
+            "evidence-626eb25923a48e592cc517cb",
+            "evidence-d694dc2e43b467f6467da8c7"
+          ],
+          "event": [
+            "evidence-06d71a12fa02dc7347fd392a",
+            "evidence-d23503cb1005d343fe41cafd"
+          ],
+          "reaction": [
+            "evidence-1f02403bec1312ad7cd7d948",
+            "evidence-2faa4d185f98cfdefbc35adb",
+            "evidence-42899cc136aa4e1d0e90ce14",
+            "evidence-52e7bfe6962255b492f25460"
+          ],
+          "result": [
+            "evidence-f550ba1ef155a99ea2615ea4"
+          ]
+        },
+        "required_evidence_refs": [
+          "evidence-9762321bcffffa1e00e12a4b",
+          "evidence-626eb25923a48e592cc517cb",
+          "evidence-d694dc2e43b467f6467da8c7",
+          "evidence-06d71a12fa02dc7347fd392a",
+          "evidence-d23503cb1005d343fe41cafd",
+          "evidence-1f02403bec1312ad7cd7d948",
+          "evidence-2faa4d185f98cfdefbc35adb",
+          "evidence-42899cc136aa4e1d0e90ce14",
+          "evidence-52e7bfe6962255b492f25460",
+          "evidence-f550ba1ef155a99ea2615ea4"
+        ],
+        "evidence_dispositions": [
+          {
+            "evidence_id": "evidence-8d223a4307dbdfc89d591225",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-413444726fb825fc41c31eed",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-bb2101d7d953ab9948964111",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-15d66aa9b17c22db5d2108ca",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-451bf53d884a93279861b18e",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-9762321bcffffa1e00e12a4b",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-626eb25923a48e592cc517cb",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-d694dc2e43b467f6467da8c7",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-1f02403bec1312ad7cd7d948",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-22428614314aad6d8efa51dc",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-2faa4d185f98cfdefbc35adb",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-32bdca59301fbd4660f7ae28",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-3d19eb15bd4f0f5f8fdb0c72",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-42899cc136aa4e1d0e90ce14",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-4b01396f41050faab0af588f",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-52e7bfe6962255b492f25460",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-6b617a412e9d84c029fae04e",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-7f22ab55cc3ba78ef92035ee",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-06d71a12fa02dc7347fd392a",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-7f656564ce9426dd5868411b",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-d23503cb1005d343fe41cafd",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-f550ba1ef155a99ea2615ea4",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-09990b87e6ea4bfabd9633de",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-073c75177dfc4a91d7f9ac25",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-a72a25a4b89ec622db219a8f",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-ffe78acd55c2faeb5c128b89",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-ffcc0e0cf1d0bafdf683e057",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-a1a5fca5d19167fd12f4e15f",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          }
+        ],
+        "missing_information": [],
+        "uncertainties": [],
+        "highlight_producer_run_ref": "highlight-approved-r1:complete",
+        "classification": "editorial_highlight",
+        "counts_as_highlight": true,
+        "highlight_id": "highlight-cf0a8bf7927d49c0874301e7d5230a297febf1055bf7f24a8d6da1ad157b52e7"
+      },
+      {
+        "schema_version": "chzz.editorial_highlight.v1",
+        "authority_revision_id": "d29ea91fe952de426b8a803db1f047bcd8e15506f5eb7c10c6b11b229e374b36",
+        "title": "독촉 끝에 완성된 풀 영창, ‘익스플로우전’으로 폭발",
+        "story_summary": "동료들의 독촉을 받은 참가자가 긴 주문을 끝까지 영창한 뒤 ‘익스플로우션’을 터뜨리고 현장을 소동으로 마무리한다.",
+        "d1_refs": [
+          "range-12"
+        ],
+        "d2_refs": [
+          "range-14"
+        ],
+        "point_refs": [
+          "point-shadow-970ad9cb896cad93abac20e5"
+        ],
+        "story_ref": "story-packet-af167132680c8fd65e1d39ea",
+        "source_spans": [
+          {
+            "span_index": 0,
+            "start_sec": 20909,
+            "end_sec": 20923,
+            "duration_sec": 14,
+            "story_roles": [
+              "setup",
+              "conversation"
+            ],
+            "d1_refs": [
+              "range-12"
+            ],
+            "d2_refs": [
+              "range-14"
+            ],
+            "point_refs": [
+              "point-shadow-970ad9cb896cad93abac20e5"
+            ],
+            "evidence_refs": [
+              "evidence-98adc812e1ce9c2699ae95a4"
+            ],
+            "reason": "동료들이 세리에게 주문을 해보라고 거듭 독촉하고 격려하는 장면으로 즉흥 퍼포먼스의 동기를 분명히 한다."
+          },
+          {
+            "span_index": 1,
+            "start_sec": 20924,
+            "end_sec": 20976,
+            "duration_sec": 52,
+            "story_roles": [
+              "performance",
+              "reaction",
+              "development"
+            ],
+            "d1_refs": [
+              "range-12"
+            ],
+            "d2_refs": [
+              "range-14"
+            ],
+            "point_refs": [],
+            "evidence_refs": [
+              "evidence-e5077f44a13f4d6b414d255b",
+              "evidence-05f50ddd0eff9bd707ac2fa4",
+              "evidence-af20e4fcb0521e94a4746404",
+              "evidence-cf190a5e4428fd20f16f0d38",
+              "evidence-87e072000e0e71e337c159bc",
+              "evidence-9e763de1d8febd11439ed0bb"
+            ],
+            "reason": "긴 주문을 진지하게 이어가는 과정과 이를 ‘풀영창’이라 부르며 웃고 놀라는 채팅을 함께 담아 기대와 웃음을 누적한다."
+          },
+          {
+            "span_index": 2,
+            "start_sec": 20977,
+            "end_sec": 20990,
+            "duration_sec": 13,
+            "story_roles": [
+              "event",
+              "result",
+              "reaction"
+            ],
+            "d1_refs": [
+              "range-12"
+            ],
+            "d2_refs": [
+              "range-14"
+            ],
+            "point_refs": [],
+            "evidence_refs": [
+              "evidence-cfb8633bdb3ea9343bc7c450",
+              "evidence-488af6e8639ce5beb6b92ea1",
+              "evidence-3472dd301fc64987745b651c"
+            ],
+            "reason": "마침내 ‘익스플로우션’을 외치는 절정과 직후 도망치라는 외침 및 소동을 연속으로 보여주며 퍼포먼스의 결과까지 마무리한다."
+          }
+        ],
+        "edit_mode": "multi_span",
+        "story_beats": [
+          {
+            "role": "introduction",
+            "span_indexes": [
+              0
+            ],
+            "evidence_refs": [
+              "evidence-98adc812e1ce9c2699ae95a4"
+            ],
+            "reason": "동료의 독촉과 격려로 주문 퍼포먼스가 시작되는 이유를 제시한다."
+          },
+          {
+            "role": "development",
+            "span_indexes": [
+              1
+            ],
+            "evidence_refs": [
+              "evidence-e5077f44a13f4d6b414d255b",
+              "evidence-87e072000e0e71e337c159bc",
+              "evidence-9e763de1d8febd11439ed0bb"
+            ],
+            "reason": "참가자가 긴 주문을 여러 구절에 걸쳐 진지하게 이어가며 폭발을 향한 기대를 쌓는다."
+          },
+          {
+            "role": "core_event",
+            "span_indexes": [
+              2
+            ],
+            "evidence_refs": [
+              "evidence-cfb8633bdb3ea9343bc7c450",
+              "evidence-488af6e8639ce5beb6b92ea1"
+            ],
+            "reason": "완성된 주문 끝에 파괴 마법 ‘익스플로우션’을 외치는 퍼포먼스의 절정을 담는다."
+          },
+          {
+            "role": "reaction",
+            "span_indexes": [
+              1
+            ],
+            "evidence_refs": [
+              "evidence-05f50ddd0eff9bd707ac2fa4",
+              "evidence-af20e4fcb0521e94a4746404",
+              "evidence-cf190a5e4428fd20f16f0d38"
+            ],
+            "reason": "웃음과 ‘풀영창’, 놀람이 섞인 채팅으로 긴 주문 자체가 만든 현장 반응을 보여준다."
+          },
+          {
+            "role": "ending",
+            "span_indexes": [
+              2
+            ],
+            "evidence_refs": [
+              "evidence-3472dd301fc64987745b651c"
+            ],
+            "reason": "폭발 뒤 이어진 당황스러운 소동을 남겨 즉흥극의 웃음까지 완결한다."
+          }
+        ],
+        "story_completeness": {
+          "state": "complete",
+          "present_roles": [
+            "core_event",
+            "development",
+            "ending",
+            "introduction",
+            "reaction"
+          ]
+        },
+        "total_source_duration_sec": 79,
+        "estimated_edited_duration": {
+          "min_sec": 79,
+          "max_sec": 79,
+          "category": "중간 길이 퍼포먼스 하이라이트"
+        },
+        "excluded_gap_duration_sec": 2,
+        "used_evidence_refs": [
+          "evidence-05f50ddd0eff9bd707ac2fa4",
+          "evidence-3472dd301fc64987745b651c",
+          "evidence-488af6e8639ce5beb6b92ea1",
+          "evidence-87e072000e0e71e337c159bc",
+          "evidence-98adc812e1ce9c2699ae95a4",
+          "evidence-9e763de1d8febd11439ed0bb",
+          "evidence-af20e4fcb0521e94a4746404",
+          "evidence-cf190a5e4428fd20f16f0d38",
+          "evidence-cfb8633bdb3ea9343bc7c450",
+          "evidence-e5077f44a13f4d6b414d255b"
+        ],
+        "required_story_roles": {
+          "setup": [
+            "evidence-98adc812e1ce9c2699ae95a4"
+          ],
+          "performance": [
+            "evidence-e5077f44a13f4d6b414d255b",
+            "evidence-87e072000e0e71e337c159bc",
+            "evidence-9e763de1d8febd11439ed0bb"
+          ],
+          "event": [
+            "evidence-cfb8633bdb3ea9343bc7c450",
+            "evidence-488af6e8639ce5beb6b92ea1"
+          ],
+          "reaction": [
+            "evidence-05f50ddd0eff9bd707ac2fa4",
+            "evidence-af20e4fcb0521e94a4746404",
+            "evidence-cf190a5e4428fd20f16f0d38"
+          ],
+          "result": [
+            "evidence-3472dd301fc64987745b651c"
+          ]
+        },
+        "required_evidence_refs": [
+          "evidence-98adc812e1ce9c2699ae95a4",
+          "evidence-e5077f44a13f4d6b414d255b",
+          "evidence-87e072000e0e71e337c159bc",
+          "evidence-9e763de1d8febd11439ed0bb",
+          "evidence-cfb8633bdb3ea9343bc7c450",
+          "evidence-488af6e8639ce5beb6b92ea1",
+          "evidence-05f50ddd0eff9bd707ac2fa4",
+          "evidence-af20e4fcb0521e94a4746404",
+          "evidence-cf190a5e4428fd20f16f0d38",
+          "evidence-3472dd301fc64987745b651c"
+        ],
+        "evidence_dispositions": [
+          {
+            "evidence_id": "evidence-45048508a6f41f4ad6aa9796",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-3e280ef81c22301b88cf26de",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-14bd15a1aa7c28f7f20e8667",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-0c817cb7c7dba5643f45b425",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-9c83cf9ced01125d0148c5aa",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-e3adbd518a0f64b169929753",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-6ba11386366d347639363273",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-98adc812e1ce9c2699ae95a4",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-e5077f44a13f4d6b414d255b",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-05f50ddd0eff9bd707ac2fa4",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-2a8a7db315e58ddee2b473bc",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-44f491cdcd3090e92ca1e59a",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-54e7d86acec7880b96337ff9",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-657438b21a5668483123ad18",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-7c4d9420c80545389a3b9d89",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-a12b9ebf41a7b4ba2369dafe",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-af20e4fcb0521e94a4746404",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-cf190a5e4428fd20f16f0d38",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-d7b16262265a462c6720ded9",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-87e072000e0e71e337c159bc",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-f947a999b30b6eab99da93e2",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-5cbb9866204c2e9e80139db1",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-96b1806a606e786ae91264c7",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-9e763de1d8febd11439ed0bb",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-b3a067d20b9e7a22a6006b96",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-cfb8633bdb3ea9343bc7c450",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-488af6e8639ce5beb6b92ea1",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-3472dd301fc64987745b651c",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          }
+        ],
+        "missing_information": [],
+        "uncertainties": [],
+        "highlight_producer_run_ref": "highlight-approved-r1:complete",
+        "classification": "editorial_highlight",
+        "counts_as_highlight": true,
+        "highlight_id": "highlight-51aa18a6e82d4917da118636a14ca5da6d2e3ab5199921a50ce904303a43b4fd"
+      },
+      {
+        "schema_version": "chzz.editorial_highlight.v1",
+        "authority_revision_id": "d29ea91fe952de426b8a803db1f047bcd8e15506f5eb7c10c6b11b229e374b36",
+        "title": "드래곤에게 알을 돌려주려다 혼자 희생될 위기",
+        "story_summary": "화난 드래곤 앞에서 일행이 무릎을 꿇고 카일에게 알을 돌려주라고 재촉하지만, 접근이 잘못되면서 한 명만 죽고 나머지가 탈출할 상황임을 깨닫는다.",
+        "d1_refs": [
+          "range-12"
+        ],
+        "d2_refs": [
+          "range-17"
+        ],
+        "point_refs": [
+          "point-shadow-45da8a1e72e6e9db7e013ef9"
+        ],
+        "story_ref": "story-packet-461ade7a7d68b81949ec9c29",
+        "source_spans": [
+          {
+            "span_index": 0,
+            "start_sec": 30662,
+            "end_sec": 30736,
+            "duration_sec": 74,
+            "story_roles": [
+              "setup",
+              "performance",
+              "reaction",
+              "event",
+              "result"
+            ],
+            "d1_refs": [
+              "range-12"
+            ],
+            "d2_refs": [
+              "range-17"
+            ],
+            "point_refs": [
+              "point-shadow-45da8a1e72e6e9db7e013ef9"
+            ],
+            "evidence_refs": [
+              "evidence-edef0fef55716adfdd07b659",
+              "evidence-7418e0f00cca1eab73af22a6",
+              "evidence-9bd6924016431cba764e3744",
+              "evidence-2a54e1d7887e17dd7e5898db",
+              "evidence-6e3cdc050b78e72c48c29857",
+              "evidence-aa0e778a7749e5d67c5691a4",
+              "evidence-c7efe3f337bb5b775dfe5abd",
+              "evidence-7aa2a0e0ff7fb7b0b92513ce",
+              "evidence-a0144b023a6d430a7ef02690",
+              "evidence-6f2c34b7bf5ed84cdcf9f45a",
+              "evidence-8e0eda5bf7a4a21bf96ae898"
+            ],
+            "reason": "드래곤의 분노를 걱정하는 도입부터 복종 자세, 알을 돌려줄 사람을 정하는 과정, 잘못된 접근과 희생 결말까지 하나의 연속된 사건으로 완결된다."
+          }
+        ],
+        "edit_mode": "continuous",
+        "story_beats": [
+          {
+            "role": "introduction",
+            "span_indexes": [
+              0
+            ],
+            "evidence_refs": [
+              "evidence-edef0fef55716adfdd07b659"
+            ],
+            "reason": "드래곤이 화를 내며 브레스를 뿜을 수 있다는 위협을 제시한다."
+          },
+          {
+            "role": "development",
+            "span_indexes": [
+              0
+            ],
+            "evidence_refs": [
+              "evidence-7418e0f00cca1eab73af22a6",
+              "evidence-9bd6924016431cba764e3744",
+              "evidence-2a54e1d7887e17dd7e5898db",
+              "evidence-6e3cdc050b78e72c48c29857",
+              "evidence-aa0e778a7749e5d67c5691a4",
+              "evidence-c7efe3f337bb5b775dfe5abd",
+              "evidence-7aa2a0e0ff7fb7b0b92513ce"
+            ],
+            "reason": "일행이 무릎을 꿇고 카일에게 알을 돌려주라고 몰아붙이는 코믹한 대응과 채팅 반응을 보여준다."
+          },
+          {
+            "role": "core_event",
+            "span_indexes": [
+              0
+            ],
+            "evidence_refs": [
+              "evidence-a0144b023a6d430a7ef02690",
+              "evidence-6f2c34b7bf5ed84cdcf9f45a"
+            ],
+            "reason": "카일이 너무 가까이 접근한 뒤 방법이 잘못됐음을 깨닫는 실패의 전환점이다."
+          },
+          {
+            "role": "ending",
+            "span_indexes": [
+              0
+            ],
+            "evidence_refs": [
+              "evidence-8e0eda5bf7a4a21bf96ae898"
+            ],
+            "reason": "한 명만 죽고 세 명이 탈출하는 상황이라는 자조적인 인식으로 사건을 마무리한다."
+          },
+          {
+            "role": "reaction",
+            "span_indexes": [
+              0
+            ],
+            "evidence_refs": [
+              "evidence-2a54e1d7887e17dd7e5898db",
+              "evidence-6e3cdc050b78e72c48c29857",
+              "evidence-6f2c34b7bf5ed84cdcf9f45a",
+              "evidence-7418e0f00cca1eab73af22a6",
+              "evidence-7aa2a0e0ff7fb7b0b92513ce",
+              "evidence-8e0eda5bf7a4a21bf96ae898",
+              "evidence-9bd6924016431cba764e3744",
+              "evidence-a0144b023a6d430a7ef02690",
+              "evidence-aa0e778a7749e5d67c5691a4",
+              "evidence-c7efe3f337bb5b775dfe5abd",
+              "evidence-edef0fef55716adfdd07b659"
+            ],
+            "reason": "source_spans의 정본 story role에서 계산된 표시 역할"
+          }
+        ],
+        "story_completeness": {
+          "state": "complete",
+          "present_roles": [
+            "core_event",
+            "development",
+            "ending",
+            "introduction",
+            "reaction"
+          ]
+        },
+        "total_source_duration_sec": 74,
+        "estimated_edited_duration": {
+          "min_sec": 74,
+          "max_sec": 74,
+          "category": "약 1분 내외의 완결형 코미디 위기 장면"
+        },
+        "excluded_gap_duration_sec": 0,
+        "used_evidence_refs": [
+          "evidence-2a54e1d7887e17dd7e5898db",
+          "evidence-6e3cdc050b78e72c48c29857",
+          "evidence-6f2c34b7bf5ed84cdcf9f45a",
+          "evidence-7418e0f00cca1eab73af22a6",
+          "evidence-7aa2a0e0ff7fb7b0b92513ce",
+          "evidence-8e0eda5bf7a4a21bf96ae898",
+          "evidence-9bd6924016431cba764e3744",
+          "evidence-a0144b023a6d430a7ef02690",
+          "evidence-aa0e778a7749e5d67c5691a4",
+          "evidence-c7efe3f337bb5b775dfe5abd",
+          "evidence-edef0fef55716adfdd07b659"
+        ],
+        "required_story_roles": {
+          "setup": [
+            "evidence-edef0fef55716adfdd07b659"
+          ],
+          "performance": [
+            "evidence-7418e0f00cca1eab73af22a6",
+            "evidence-aa0e778a7749e5d67c5691a4",
+            "evidence-c7efe3f337bb5b775dfe5abd",
+            "evidence-7aa2a0e0ff7fb7b0b92513ce"
+          ],
+          "event": [
+            "evidence-a0144b023a6d430a7ef02690",
+            "evidence-6f2c34b7bf5ed84cdcf9f45a"
+          ],
+          "reaction": [
+            "evidence-9bd6924016431cba764e3744",
+            "evidence-2a54e1d7887e17dd7e5898db",
+            "evidence-6e3cdc050b78e72c48c29857"
+          ],
+          "result": [
+            "evidence-8e0eda5bf7a4a21bf96ae898"
+          ]
+        },
+        "required_evidence_refs": [
+          "evidence-edef0fef55716adfdd07b659",
+          "evidence-7418e0f00cca1eab73af22a6",
+          "evidence-aa0e778a7749e5d67c5691a4",
+          "evidence-c7efe3f337bb5b775dfe5abd",
+          "evidence-7aa2a0e0ff7fb7b0b92513ce",
+          "evidence-a0144b023a6d430a7ef02690",
+          "evidence-6f2c34b7bf5ed84cdcf9f45a",
+          "evidence-9bd6924016431cba764e3744",
+          "evidence-2a54e1d7887e17dd7e5898db",
+          "evidence-6e3cdc050b78e72c48c29857",
+          "evidence-8e0eda5bf7a4a21bf96ae898"
+        ],
+        "evidence_dispositions": [
+          {
+            "evidence_id": "evidence-86c3921a6f4b66b6b52cb82c",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-307274eabe40a367946598a8",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-3028a25d90686f84cbc075f5",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-e2c1ced266e41eb1e4227021",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-5874790823d5332f5c8bfeff",
+            "disposition": "unused_with_reason",
+            "reason": "outside_selected_source_spans"
+          },
+          {
+            "evidence_id": "evidence-edef0fef55716adfdd07b659",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-7eccb06bb45a74203cb8a0f7",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-7418e0f00cca1eab73af22a6",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-00a52afed2cdcfb3b435c83d",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-9bd6924016431cba764e3744",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-209132edfa35fb957d5d2866",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-29e2fdeb55f8c371185a1751",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-de96da564dc463a2d92fee5b",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-2a54e1d7887e17dd7e5898db",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-6e3cdc050b78e72c48c29857",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-a7b430c861a74ba980b9f70d",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-bbd50293a07509bb8c53dd6e",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-72f87e5cb98213ad69bf7907",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-c26ab43705fed35de854c9a6",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-aa0e778a7749e5d67c5691a4",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-c7efe3f337bb5b775dfe5abd",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-df4882b5e6b5c71b0dd6097b",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-a9f731f892de7048e3093cc1",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-29df296918b8b2d85d1bb54e",
+            "disposition": "unused_with_reason",
+            "reason": "available_inside_span_but_not_required_by_approved_story_roles"
+          },
+          {
+            "evidence_id": "evidence-7aa2a0e0ff7fb7b0b92513ce",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-a0144b023a6d430a7ef02690",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-6f2c34b7bf5ed84cdcf9f45a",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          },
+          {
+            "evidence_id": "evidence-8e0eda5bf7a4a21bf96ae898",
+            "disposition": "included",
+            "reason": "referenced_by_persisted_source_span"
+          }
+        ],
+        "missing_information": [],
+        "uncertainties": [
+          "마지막 발언은 희생 위험에 대한 인식은 명확히 보여주지만 실제 사망이나 탈출이 실행됐는지는 확인되지 않는다."
+        ],
+        "highlight_producer_run_ref": "highlight-approved-r1:complete",
+        "classification": "editorial_highlight",
+        "counts_as_highlight": true,
+        "highlight_id": "highlight-621057e61059baf17bcbbf90fa4a852722aedafa24a3d0acdbf13f5758fe27ca"
+      }
+    ],
+    "story_dispositions": [
+      {
+        "story_ref": "story-packet-e5a06f217ec3946d69a7d346",
+        "disposition": "materialized"
+      },
+      {
+        "story_ref": "story-packet-2d8ba06a3308a5cb9e4d6ac4",
+        "disposition": "materialized"
+      },
+      {
+        "story_ref": "story-packet-e6f48513c6a4989cf285dd19",
+        "disposition": "materialized"
+      },
+      {
+        "story_ref": "story-packet-af167132680c8fd65e1d39ea",
+        "disposition": "materialized"
+      },
+      {
+        "story_ref": "story-packet-461ade7a7d68b81949ec9c29",
+        "disposition": "materialized"
+      }
+    ],
+    "rejected_stories": [],
+    "inputs_and_calls": {
+      "broadcast_map_counts": {
+        "d1": 6,
+        "d2": 13,
+        "points": 5
+      },
+      "highlight_count": 5,
+      "rejected_proposal_count": 0,
+      "projection_model_call_count": 0,
+      "source_highlight_model_call_count": 3,
+      "source_successful_model_call_count": 3,
+      "source_failed_model_call_count": 0
+    },
+    "safety": {
+      "broadcast_map_is_frozen": true,
+      "point_structure_preserved": true,
+      "source_spans_are_only_highlight_time_authority": true,
+      "stable_saved_public_changed": false
+    }
   },
   "timed_evidence_manifest": {
     "schema_version": "summary_timed_evidence_manifest.v1",
@@ -3275,7 +5546,7 @@
         "reason": "이전 관리자 수정 사례가 프롬프트에 반영됩니다.",
         "retry_condition": "관리자 저장 이력이 쌓인 뒤 다시 요약합니다.",
         "detail": {
-          "lesson_count": 3
+          "lesson_count": 4
         }
       },
       {
@@ -3314,14 +5585,14 @@
         "key": "user_clips",
         "name": "시청자 클립",
         "required": false,
-        "status": "present",
-        "reason": "시청자 클립 anchor 후보가 있습니다.",
+        "status": "missing_optional",
+        "reason": "시청자 클립 anchor 없이 요약합니다.",
         "retry_condition": "viewer clip 수집/anchor 회수 뒤 다시 요약합니다.",
         "detail": {
-          "total": 16,
+          "total": 0,
           "with_offset": 0,
-          "with_engagement": 16,
-          "status": "ok"
+          "with_engagement": 0,
+          "status": "playwright_missing"
         }
       },
       {
@@ -3366,383 +5637,6 @@
       }
     ]
   },
-  "audio_reaction_peaks": [
-    {
-      "start_sec": 2425.0,
-      "end_sec": 2430.0,
-      "center_sec": 2427.5,
-      "loudness_db": -14.565,
-      "peak_db": -0.674,
-      "percentile": 0.9914,
-      "z_score": 0.8725,
-      "normalized": 0.6454,
-      "score": 0.8054,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 2455.0,
-      "end_sec": 2460.0,
-      "center_sec": 2457.5,
-      "loudness_db": -13.075,
-      "peak_db": 0.0,
-      "percentile": 0.9982,
-      "z_score": 1.0004,
-      "normalized": 0.6667,
-      "score": 0.8267,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 2640.0,
-      "end_sec": 2645.0,
-      "center_sec": 2642.5,
-      "loudness_db": -15.311,
-      "peak_db": 0.0,
-      "percentile": 0.9835,
-      "z_score": 0.8085,
-      "normalized": 0.6348,
-      "score": 0.7948,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 2675.0,
-      "end_sec": 2680.0,
-      "center_sec": 2677.5,
-      "loudness_db": -15.018,
-      "peak_db": 0.0,
-      "percentile": 0.9882,
-      "z_score": 0.8337,
-      "normalized": 0.6389,
-      "score": 0.7989,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 4150.0,
-      "end_sec": 4155.0,
-      "center_sec": 4152.5,
-      "loudness_db": -15.936,
-      "peak_db": -0.263,
-      "percentile": 0.973,
-      "z_score": 0.7549,
-      "normalized": 0.6258,
-      "score": 0.7858,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 4210.0,
-      "end_sec": 4215.0,
-      "center_sec": 4212.5,
-      "loudness_db": -15.316,
-      "peak_db": -0.255,
-      "percentile": 0.9832,
-      "z_score": 0.8081,
-      "normalized": 0.6347,
-      "score": 0.7947,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 4285.0,
-      "end_sec": 4290.0,
-      "center_sec": 4287.5,
-      "loudness_db": -15.872,
-      "peak_db": -0.466,
-      "percentile": 0.9746,
-      "z_score": 0.7604,
-      "normalized": 0.6267,
-      "score": 0.7867,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 4915.0,
-      "end_sec": 4920.0,
-      "center_sec": 4917.5,
-      "loudness_db": -15.298,
-      "peak_db": 0.0,
-      "percentile": 0.9843,
-      "z_score": 0.8096,
-      "normalized": 0.6349,
-      "score": 0.7949,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 6735.0,
-      "end_sec": 6740.0,
-      "center_sec": 6737.5,
-      "loudness_db": -13.824,
-      "peak_db": 0.0,
-      "percentile": 0.9965,
-      "z_score": 0.9361,
-      "normalized": 0.656,
-      "score": 0.816,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 6775.0,
-      "end_sec": 6780.0,
-      "center_sec": 6777.5,
-      "loudness_db": -15.868,
-      "peak_db": -0.255,
-      "percentile": 0.9747,
-      "z_score": 0.7608,
-      "normalized": 0.6268,
-      "score": 0.7868,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 7220.0,
-      "end_sec": 7225.0,
-      "center_sec": 7222.5,
-      "loudness_db": -14.627,
-      "peak_db": 0.0,
-      "percentile": 0.9903,
-      "z_score": 0.8672,
-      "normalized": 0.6445,
-      "score": 0.8045,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 10715.0,
-      "end_sec": 10720.0,
-      "center_sec": 10717.5,
-      "loudness_db": -12.728,
-      "peak_db": -1.148,
-      "percentile": 0.9988,
-      "z_score": 1.0302,
-      "normalized": 0.6717,
-      "score": 0.8317,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 17650.0,
-      "end_sec": 17655.0,
-      "center_sec": 17652.5,
-      "loudness_db": -16.367,
-      "peak_db": -0.877,
-      "percentile": 0.9618,
-      "z_score": 0.7179,
-      "normalized": 0.6197,
-      "score": 0.7797,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 17700.0,
-      "end_sec": 17705.0,
-      "center_sec": 17702.5,
-      "loudness_db": -14.851,
-      "peak_db": -0.032,
-      "percentile": 0.989,
-      "z_score": 0.8481,
-      "normalized": 0.6413,
-      "score": 0.8013,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 17730.0,
-      "end_sec": 17735.0,
-      "center_sec": 17732.5,
-      "loudness_db": -15.585,
-      "peak_db": 0.0,
-      "percentile": 0.9792,
-      "z_score": 0.7851,
-      "normalized": 0.6308,
-      "score": 0.7908,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 20935.0,
-      "end_sec": 20940.0,
-      "center_sec": 20937.5,
-      "loudness_db": -13.015,
-      "peak_db": -0.144,
-      "percentile": 0.9984,
-      "z_score": 1.0056,
-      "normalized": 0.6676,
-      "score": 0.8276,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 20980.0,
-      "end_sec": 20985.0,
-      "center_sec": 20982.5,
-      "loudness_db": -9.222,
-      "peak_db": 0.0,
-      "percentile": 0.9998,
-      "z_score": 1.331,
-      "normalized": 0.7218,
-      "score": 0.8818,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 22070.0,
-      "end_sec": 22075.0,
-      "center_sec": 22072.5,
-      "loudness_db": -14.386,
-      "peak_db": 0.0,
-      "percentile": 0.9927,
-      "z_score": 0.8879,
-      "normalized": 0.648,
-      "score": 0.808,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "chat_audio_overlap",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "chat_audio_overlap",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 30590.0,
-      "end_sec": 30595.0,
-      "center_sec": 30592.5,
-      "loudness_db": -9.785,
-      "peak_db": 0.0,
-      "percentile": 0.9995,
-      "z_score": 1.2827,
-      "normalized": 0.7138,
-      "score": 0.7938,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "clipping_or_limiter_diagnostic",
-      "caution": "supporting_signal_only"
-    },
-    {
-      "start_sec": 30680.0,
-      "end_sec": 30685.0,
-      "center_sec": 30682.5,
-      "loudness_db": -8.468,
-      "peak_db": 0.0,
-      "percentile": 0.9999,
-      "z_score": 1.3957,
-      "normalized": 0.7326,
-      "score": 0.8126,
-      "labels": [
-        "audio_energy_peak",
-        "voice_reaction_candidate",
-        "clipping_or_limiter_diagnostic"
-      ],
-      "primary_label": "clipping_or_limiter_diagnostic",
-      "caution": "supporting_signal_only"
-    }
-  ],
   "audio_feature_source": {
     "kind": "relative_loudness_main_pipeline",
     "enabled_by_default": true,
@@ -3761,548 +5655,6 @@
     "include_lufs": false,
     "reused_from_cache": true
   },
-  "audio_loudness_per_min": [
-    -52.928,
-    -36.331,
-    -35.784,
-    -26.096,
-    -24.738,
-    -26.305,
-    -22.989,
-    -25.678,
-    -26.367,
-    -23.494,
-    -25.915,
-    -23.788,
-    -26.072,
-    -26.293,
-    -28.244,
-    -27.339,
-    -26.704,
-    -29.219,
-    -27.932,
-    -23.143,
-    -23.403,
-    -23.044,
-    -20.958,
-    -23.015,
-    -18.789,
-    -20.247,
-    -20.617,
-    -21.492,
-    -22.706,
-    -23.581,
-    -24.613,
-    -22.777,
-    -21.885,
-    -24.236,
-    -21.304,
-    -21.145,
-    -22.511,
-    -23.315,
-    -22.544,
-    -20.563,
-    -19.295,
-    -19.784,
-    -18.417,
-    -18.938,
-    -19.596,
-    -20.468,
-    -18.703,
-    -20.936,
-    -15.847,
-    -18.214,
-    -20.338,
-    -20.391,
-    -18.191,
-    -18.921,
-    -18.96,
-    -19.15,
-    -20.816,
-    -18.921,
-    -19.45,
-    -16.676,
-    -19.845,
-    -17.344,
-    -18.537,
-    -18.494,
-    -18.29,
-    -18.102,
-    -18.156,
-    -19.838,
-    -18.812,
-    -22.937,
-    -19.157,
-    -20.072,
-    -21.989,
-    -18.048,
-    -18.523,
-    -19.539,
-    -20.023,
-    -18.659,
-    -20.269,
-    -19.508,
-    -22.945,
-    -21.102,
-    -19.049,
-    -20.718,
-    -21.07,
-    -20.601,
-    -20.034,
-    -20.377,
-    -20.862,
-    -22.719,
-    -22.85,
-    -22.797,
-    -22.445,
-    -22.123,
-    -20.813,
-    -19.944,
-    -20.417,
-    -21.677,
-    -23.298,
-    -22.247,
-    -21.794,
-    -21.202,
-    -20.909,
-    -21.379,
-    -20.681,
-    -20.425,
-    -21.701,
-    -23.427,
-    -21.598,
-    -20.555,
-    -21.527,
-    -20.993,
-    -16.789,
-    -20.104,
-    -17.714,
-    -20.817,
-    -21.856,
-    -19.252,
-    -19.877,
-    -17.704,
-    -17.276,
-    -19.603,
-    -19.727,
-    -19.939,
-    -23.078,
-    -22.762,
-    -22.893,
-    -20.326,
-    -21.032,
-    -20.143,
-    -21.646,
-    -21.549,
-    -21.932,
-    -20.627,
-    -23.843,
-    -24.504,
-    -26.173,
-    -27.701,
-    -24.558,
-    -25.307,
-    -27.441,
-    -27.244,
-    -24.64,
-    -23.089,
-    -24.512,
-    -27.384,
-    -27.208,
-    -23.455,
-    -22.867,
-    -22.527,
-    -21.299,
-    -21.027,
-    -22.928,
-    -24.757,
-    -24.376,
-    -23.162,
-    -24.728,
-    -23.732,
-    -25.243,
-    -25.75,
-    -21.895,
-    -21.472,
-    -21.454,
-    -22.161,
-    -22.746,
-    -22.046,
-    -21.172,
-    -20.321,
-    -22.014,
-    -21.4,
-    -22.745,
-    -19.457,
-    -22.128,
-    -17.979,
-    -19.993,
-    -18.276,
-    -22.812,
-    -20.668,
-    -18.007,
-    -20.891,
-    -23.04,
-    -22.954,
-    -18.216,
-    -17.555,
-    -18.723,
-    -19.366,
-    -20.08,
-    -23.136,
-    -20.587,
-    -24.437,
-    -32.197,
-    -37.0,
-    -38.219,
-    -29.849,
-    -21.685,
-    -21.757,
-    -23.013,
-    -23.816,
-    -24.407,
-    -19.907,
-    -19.722,
-    -21.903,
-    -21.093,
-    -25.885,
-    -20.217,
-    -23.875,
-    -21.703,
-    -25.401,
-    -20.053,
-    -23.718,
-    -25.661,
-    -23.217,
-    -20.053,
-    -21.768,
-    -23.288,
-    -21.035,
-    -21.832,
-    -31.915,
-    -23.361,
-    -24.974,
-    -25.95,
-    -22.918,
-    -20.697,
-    -23.076,
-    -30.069,
-    -24.698,
-    -24.29,
-    -23.828,
-    -21.916,
-    -24.537,
-    -23.743,
-    -23.355,
-    -23.582,
-    -23.521,
-    -25.105,
-    -20.828,
-    -22.458,
-    -21.816,
-    -26.395,
-    -26.352,
-    -35.573,
-    -19.114,
-    -31.05,
-    -33.22,
-    -25.323,
-    -32.145,
-    -37.216,
-    -28.624,
-    -25.133,
-    -28.128,
-    -24.437,
-    -36.981,
-    -37.562,
-    -28.267,
-    -35.021,
-    -34.248,
-    -27.337,
-    -37.413,
-    -36.839,
-    -40.515,
-    -29.88,
-    -23.068,
-    -26.534,
-    -25.597,
-    -49.024,
-    -89.298,
-    -106.191,
-    -91.101,
-    -75.925,
-    -88.074,
-    -89.589,
-    -95.344,
-    -108.888,
-    -63.36,
-    -43.622,
-    -40.327,
-    -37.398,
-    -36.455,
-    -38.086,
-    -42.291,
-    -32.741,
-    -27.032,
-    -21.647,
-    -18.36,
-    -22.726,
-    -22.324,
-    -22.106,
-    -20.591,
-    -26.071,
-    -26.403,
-    -20.722,
-    -18.968,
-    -18.621,
-    -22.182,
-    -19.037,
-    -20.125,
-    -20.155,
-    -22.686,
-    -27.279,
-    -27.227,
-    -28.989,
-    -25.474,
-    -23.808,
-    -17.258,
-    -17.184,
-    -19.39,
-    -19.986,
-    -21.554,
-    -21.037,
-    -21.477,
-    -22.395,
-    -21.223,
-    -22.682,
-    -19.131,
-    -19.514,
-    -25.018,
-    -22.289,
-    -23.207,
-    -20.069,
-    -18.934,
-    -21.556,
-    -23.106,
-    -20.023,
-    -24.11,
-    -24.738,
-    -22.659,
-    -22.02,
-    -19.357,
-    -28.171,
-    -41.083,
-    -35.112,
-    -52.017,
-    -23.354,
-    -23.021,
-    -21.682,
-    -22.006,
-    -31.412,
-    -20.673,
-    -20.497,
-    -22.065,
-    -25.671,
-    -23.102,
-    -22.434,
-    -21.655,
-    -19.742,
-    -20.925,
-    -20.703,
-    -19.884,
-    -18.551,
-    -17.887,
-    -21.007,
-    -22.462,
-    -21.198,
-    -21.831,
-    -21.043,
-    -21.652,
-    -21.767,
-    -21.789,
-    -23.979,
-    -22.099,
-    -22.424,
-    -26.109,
-    -25.161,
-    -24.656,
-    -20.794,
-    -21.963,
-    -20.825,
-    -18.396,
-    -25.077,
-    -23.517,
-    -24.748,
-    -24.376,
-    -24.739,
-    -24.883,
-    -22.873,
-    -23.136,
-    -25.924,
-    -22.305,
-    -22.221,
-    -22.708,
-    -21.996,
-    -22.383,
-    -24.252,
-    -22.79,
-    -27.134,
-    -22.78,
-    -20.262,
-    -23.404,
-    -21.855,
-    -20.899,
-    -22.609,
-    -20.947,
-    -22.441,
-    -25.74,
-    -22.83,
-    -22.821,
-    -22.126,
-    -22.336,
-    -22.101,
-    -22.874,
-    -22.433,
-    -24.159,
-    -25.121,
-    -22.615,
-    -23.694,
-    -23.771,
-    -22.395,
-    -22.661,
-    -22.837,
-    -25.322,
-    -22.251,
-    -23.395,
-    -22.715,
-    -25.283,
-    -26.983,
-    -22.838,
-    -22.524,
-    -23.737,
-    -24.973,
-    -23.322,
-    -25.83,
-    -30.847,
-    -23.43,
-    -23.456,
-    -21.111,
-    -22.998,
-    -24.716,
-    -26.686,
-    -27.29,
-    -23.67,
-    -23.863,
-    -22.826,
-    -24.27,
-    -24.329,
-    -25.896,
-    -28.166,
-    -24.119,
-    -25.59,
-    -24.073,
-    -23.304,
-    -21.805,
-    -21.884,
-    -18.353,
-    -21.04,
-    -23.012,
-    -21.125,
-    -20.889,
-    -24.643,
-    -26.757,
-    -26.715,
-    -27.726,
-    -29.602,
-    -21.148,
-    -24.0,
-    -23.553,
-    -23.514,
-    -23.923,
-    -23.062,
-    -21.286,
-    -24.201,
-    -26.536,
-    -24.612,
-    -22.647,
-    -24.002,
-    -21.405,
-    -25.901,
-    -25.536,
-    -24.798,
-    -24.267,
-    -25.56,
-    -25.051,
-    -24.377,
-    -22.178,
-    -18.997,
-    -17.444,
-    -19.211,
-    -19.693,
-    -18.796,
-    -21.572,
-    -23.735,
-    -20.519,
-    -19.11,
-    -19.663,
-    -19.009,
-    -20.748,
-    -27.782,
-    -22.643,
-    -22.949,
-    -23.343,
-    -29.207,
-    -26.792,
-    -23.328,
-    -30.664,
-    -23.103,
-    -25.097,
-    -24.939,
-    -22.646,
-    -24.089,
-    -23.588,
-    -24.685,
-    -21.927,
-    -26.638,
-    -25.282,
-    -25.163,
-    -29.887,
-    -28.389,
-    -29.119,
-    -31.905,
-    -30.44,
-    -20.738,
-    -18.292,
-    -18.526,
-    -22.162,
-    -20.607,
-    -20.172,
-    -24.45,
-    -25.616,
-    -27.247,
-    -24.285,
-    -24.849,
-    -21.902,
-    -26.942,
-    -29.418,
-    -33.792,
-    -26.909,
-    -23.964,
-    -21.641,
-    -24.559,
-    -23.608,
-    -25.584,
-    -24.0,
-    -24.121,
-    -21.754,
-    -25.171,
-    -27.867,
-    -26.033,
-    -24.107,
-    -31.079,
-    -26.318,
-    -29.69
-  ],
   "audio_waveform": {
     "schema_version": "audio_waveform.v1",
     "source": "audio_loudness_windows",
@@ -7916,6 +9268,925 @@
       }
     ]
   },
+  "audio_reaction_peaks": [
+    {
+      "start_sec": 2425.0,
+      "end_sec": 2430.0,
+      "center_sec": 2427.5,
+      "loudness_db": -14.565,
+      "peak_db": -0.674,
+      "percentile": 0.9914,
+      "z_score": 0.8725,
+      "normalized": 0.6454,
+      "score": 0.8054,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 2455.0,
+      "end_sec": 2460.0,
+      "center_sec": 2457.5,
+      "loudness_db": -13.075,
+      "peak_db": 0.0,
+      "percentile": 0.9982,
+      "z_score": 1.0004,
+      "normalized": 0.6667,
+      "score": 0.8267,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 2640.0,
+      "end_sec": 2645.0,
+      "center_sec": 2642.5,
+      "loudness_db": -15.311,
+      "peak_db": 0.0,
+      "percentile": 0.9835,
+      "z_score": 0.8085,
+      "normalized": 0.6348,
+      "score": 0.7948,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 2675.0,
+      "end_sec": 2680.0,
+      "center_sec": 2677.5,
+      "loudness_db": -15.018,
+      "peak_db": 0.0,
+      "percentile": 0.9882,
+      "z_score": 0.8337,
+      "normalized": 0.6389,
+      "score": 0.7989,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4150.0,
+      "end_sec": 4155.0,
+      "center_sec": 4152.5,
+      "loudness_db": -15.936,
+      "peak_db": -0.263,
+      "percentile": 0.973,
+      "z_score": 0.7549,
+      "normalized": 0.6258,
+      "score": 0.7858,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4210.0,
+      "end_sec": 4215.0,
+      "center_sec": 4212.5,
+      "loudness_db": -15.316,
+      "peak_db": -0.255,
+      "percentile": 0.9832,
+      "z_score": 0.8081,
+      "normalized": 0.6347,
+      "score": 0.7947,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4285.0,
+      "end_sec": 4290.0,
+      "center_sec": 4287.5,
+      "loudness_db": -15.872,
+      "peak_db": -0.466,
+      "percentile": 0.9746,
+      "z_score": 0.7604,
+      "normalized": 0.6267,
+      "score": 0.7867,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 4915.0,
+      "end_sec": 4920.0,
+      "center_sec": 4917.5,
+      "loudness_db": -15.298,
+      "peak_db": 0.0,
+      "percentile": 0.9843,
+      "z_score": 0.8096,
+      "normalized": 0.6349,
+      "score": 0.7949,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 6735.0,
+      "end_sec": 6740.0,
+      "center_sec": 6737.5,
+      "loudness_db": -13.824,
+      "peak_db": 0.0,
+      "percentile": 0.9965,
+      "z_score": 0.9361,
+      "normalized": 0.656,
+      "score": 0.816,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 6775.0,
+      "end_sec": 6780.0,
+      "center_sec": 6777.5,
+      "loudness_db": -15.868,
+      "peak_db": -0.255,
+      "percentile": 0.9747,
+      "z_score": 0.7608,
+      "normalized": 0.6268,
+      "score": 0.7868,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 7220.0,
+      "end_sec": 7225.0,
+      "center_sec": 7222.5,
+      "loudness_db": -14.627,
+      "peak_db": 0.0,
+      "percentile": 0.9903,
+      "z_score": 0.8672,
+      "normalized": 0.6445,
+      "score": 0.8045,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 10715.0,
+      "end_sec": 10720.0,
+      "center_sec": 10717.5,
+      "loudness_db": -12.728,
+      "peak_db": -1.148,
+      "percentile": 0.9988,
+      "z_score": 1.0302,
+      "normalized": 0.6717,
+      "score": 0.8317,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 17650.0,
+      "end_sec": 17655.0,
+      "center_sec": 17652.5,
+      "loudness_db": -16.367,
+      "peak_db": -0.877,
+      "percentile": 0.9618,
+      "z_score": 0.7179,
+      "normalized": 0.6197,
+      "score": 0.7797,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 17700.0,
+      "end_sec": 17705.0,
+      "center_sec": 17702.5,
+      "loudness_db": -14.851,
+      "peak_db": -0.032,
+      "percentile": 0.989,
+      "z_score": 0.8481,
+      "normalized": 0.6413,
+      "score": 0.8013,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 17730.0,
+      "end_sec": 17735.0,
+      "center_sec": 17732.5,
+      "loudness_db": -15.585,
+      "peak_db": 0.0,
+      "percentile": 0.9792,
+      "z_score": 0.7851,
+      "normalized": 0.6308,
+      "score": 0.7908,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 20935.0,
+      "end_sec": 20940.0,
+      "center_sec": 20937.5,
+      "loudness_db": -13.015,
+      "peak_db": -0.144,
+      "percentile": 0.9984,
+      "z_score": 1.0056,
+      "normalized": 0.6676,
+      "score": 0.8276,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 20980.0,
+      "end_sec": 20985.0,
+      "center_sec": 20982.5,
+      "loudness_db": -9.222,
+      "peak_db": 0.0,
+      "percentile": 0.9998,
+      "z_score": 1.331,
+      "normalized": 0.7218,
+      "score": 0.8818,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 22070.0,
+      "end_sec": 22075.0,
+      "center_sec": 22072.5,
+      "loudness_db": -14.386,
+      "peak_db": 0.0,
+      "percentile": 0.9927,
+      "z_score": 0.8879,
+      "normalized": 0.648,
+      "score": 0.808,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "chat_audio_overlap",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "chat_audio_overlap",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 30590.0,
+      "end_sec": 30595.0,
+      "center_sec": 30592.5,
+      "loudness_db": -9.785,
+      "peak_db": 0.0,
+      "percentile": 0.9995,
+      "z_score": 1.2827,
+      "normalized": 0.7138,
+      "score": 0.7938,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    },
+    {
+      "start_sec": 30680.0,
+      "end_sec": 30685.0,
+      "center_sec": 30682.5,
+      "loudness_db": -8.468,
+      "peak_db": 0.0,
+      "percentile": 0.9999,
+      "z_score": 1.3957,
+      "normalized": 0.7326,
+      "score": 0.8126,
+      "labels": [
+        "audio_energy_peak",
+        "voice_reaction_candidate",
+        "clipping_or_limiter_diagnostic"
+      ],
+      "primary_label": "clipping_or_limiter_diagnostic",
+      "caution": "supporting_signal_only"
+    }
+  ],
+  "audio_loudness_per_min": [
+    -52.928,
+    -36.331,
+    -35.784,
+    -26.096,
+    -24.738,
+    -26.305,
+    -22.989,
+    -25.678,
+    -26.367,
+    -23.494,
+    -25.915,
+    -23.788,
+    -26.072,
+    -26.293,
+    -28.244,
+    -27.339,
+    -26.704,
+    -29.219,
+    -27.932,
+    -23.143,
+    -23.403,
+    -23.044,
+    -20.958,
+    -23.015,
+    -18.789,
+    -20.247,
+    -20.617,
+    -21.492,
+    -22.706,
+    -23.581,
+    -24.613,
+    -22.777,
+    -21.885,
+    -24.236,
+    -21.304,
+    -21.145,
+    -22.511,
+    -23.315,
+    -22.544,
+    -20.563,
+    -19.295,
+    -19.784,
+    -18.417,
+    -18.938,
+    -19.596,
+    -20.468,
+    -18.703,
+    -20.936,
+    -15.847,
+    -18.214,
+    -20.338,
+    -20.391,
+    -18.191,
+    -18.921,
+    -18.96,
+    -19.15,
+    -20.816,
+    -18.921,
+    -19.45,
+    -16.676,
+    -19.845,
+    -17.344,
+    -18.537,
+    -18.494,
+    -18.29,
+    -18.102,
+    -18.156,
+    -19.838,
+    -18.812,
+    -22.937,
+    -19.157,
+    -20.072,
+    -21.989,
+    -18.048,
+    -18.523,
+    -19.539,
+    -20.023,
+    -18.659,
+    -20.269,
+    -19.508,
+    -22.945,
+    -21.102,
+    -19.049,
+    -20.718,
+    -21.07,
+    -20.601,
+    -20.034,
+    -20.377,
+    -20.862,
+    -22.719,
+    -22.85,
+    -22.797,
+    -22.445,
+    -22.123,
+    -20.813,
+    -19.944,
+    -20.417,
+    -21.677,
+    -23.298,
+    -22.247,
+    -21.794,
+    -21.202,
+    -20.909,
+    -21.379,
+    -20.681,
+    -20.425,
+    -21.701,
+    -23.427,
+    -21.598,
+    -20.555,
+    -21.527,
+    -20.993,
+    -16.789,
+    -20.104,
+    -17.714,
+    -20.817,
+    -21.856,
+    -19.252,
+    -19.877,
+    -17.704,
+    -17.276,
+    -19.603,
+    -19.727,
+    -19.939,
+    -23.078,
+    -22.762,
+    -22.893,
+    -20.326,
+    -21.032,
+    -20.143,
+    -21.646,
+    -21.549,
+    -21.932,
+    -20.627,
+    -23.843,
+    -24.504,
+    -26.173,
+    -27.701,
+    -24.558,
+    -25.307,
+    -27.441,
+    -27.244,
+    -24.64,
+    -23.089,
+    -24.512,
+    -27.384,
+    -27.208,
+    -23.455,
+    -22.867,
+    -22.527,
+    -21.299,
+    -21.027,
+    -22.928,
+    -24.757,
+    -24.376,
+    -23.162,
+    -24.728,
+    -23.732,
+    -25.243,
+    -25.75,
+    -21.895,
+    -21.472,
+    -21.454,
+    -22.161,
+    -22.746,
+    -22.046,
+    -21.172,
+    -20.321,
+    -22.014,
+    -21.4,
+    -22.745,
+    -19.457,
+    -22.128,
+    -17.979,
+    -19.993,
+    -18.276,
+    -22.812,
+    -20.668,
+    -18.007,
+    -20.891,
+    -23.04,
+    -22.954,
+    -18.216,
+    -17.555,
+    -18.723,
+    -19.366,
+    -20.08,
+    -23.136,
+    -20.587,
+    -24.437,
+    -32.197,
+    -37.0,
+    -38.219,
+    -29.849,
+    -21.685,
+    -21.757,
+    -23.013,
+    -23.816,
+    -24.407,
+    -19.907,
+    -19.722,
+    -21.903,
+    -21.093,
+    -25.885,
+    -20.217,
+    -23.875,
+    -21.703,
+    -25.401,
+    -20.053,
+    -23.718,
+    -25.661,
+    -23.217,
+    -20.053,
+    -21.768,
+    -23.288,
+    -21.035,
+    -21.832,
+    -31.915,
+    -23.361,
+    -24.974,
+    -25.95,
+    -22.918,
+    -20.697,
+    -23.076,
+    -30.069,
+    -24.698,
+    -24.29,
+    -23.828,
+    -21.916,
+    -24.537,
+    -23.743,
+    -23.355,
+    -23.582,
+    -23.521,
+    -25.105,
+    -20.828,
+    -22.458,
+    -21.816,
+    -26.395,
+    -26.352,
+    -35.573,
+    -19.114,
+    -31.05,
+    -33.22,
+    -25.323,
+    -32.145,
+    -37.216,
+    -28.624,
+    -25.133,
+    -28.128,
+    -24.437,
+    -36.981,
+    -37.562,
+    -28.267,
+    -35.021,
+    -34.248,
+    -27.337,
+    -37.413,
+    -36.839,
+    -40.515,
+    -29.88,
+    -23.068,
+    -26.534,
+    -25.597,
+    -49.024,
+    -89.298,
+    -106.191,
+    -91.101,
+    -75.925,
+    -88.074,
+    -89.589,
+    -95.344,
+    -108.888,
+    -63.36,
+    -43.622,
+    -40.327,
+    -37.398,
+    -36.455,
+    -38.086,
+    -42.291,
+    -32.741,
+    -27.032,
+    -21.647,
+    -18.36,
+    -22.726,
+    -22.324,
+    -22.106,
+    -20.591,
+    -26.071,
+    -26.403,
+    -20.722,
+    -18.968,
+    -18.621,
+    -22.182,
+    -19.037,
+    -20.125,
+    -20.155,
+    -22.686,
+    -27.279,
+    -27.227,
+    -28.989,
+    -25.474,
+    -23.808,
+    -17.258,
+    -17.184,
+    -19.39,
+    -19.986,
+    -21.554,
+    -21.037,
+    -21.477,
+    -22.395,
+    -21.223,
+    -22.682,
+    -19.131,
+    -19.514,
+    -25.018,
+    -22.289,
+    -23.207,
+    -20.069,
+    -18.934,
+    -21.556,
+    -23.106,
+    -20.023,
+    -24.11,
+    -24.738,
+    -22.659,
+    -22.02,
+    -19.357,
+    -28.171,
+    -41.083,
+    -35.112,
+    -52.017,
+    -23.354,
+    -23.021,
+    -21.682,
+    -22.006,
+    -31.412,
+    -20.673,
+    -20.497,
+    -22.065,
+    -25.671,
+    -23.102,
+    -22.434,
+    -21.655,
+    -19.742,
+    -20.925,
+    -20.703,
+    -19.884,
+    -18.551,
+    -17.887,
+    -21.007,
+    -22.462,
+    -21.198,
+    -21.831,
+    -21.043,
+    -21.652,
+    -21.767,
+    -21.789,
+    -23.979,
+    -22.099,
+    -22.424,
+    -26.109,
+    -25.161,
+    -24.656,
+    -20.794,
+    -21.963,
+    -20.825,
+    -18.396,
+    -25.077,
+    -23.517,
+    -24.748,
+    -24.376,
+    -24.739,
+    -24.883,
+    -22.873,
+    -23.136,
+    -25.924,
+    -22.305,
+    -22.221,
+    -22.708,
+    -21.996,
+    -22.383,
+    -24.252,
+    -22.79,
+    -27.134,
+    -22.78,
+    -20.262,
+    -23.404,
+    -21.855,
+    -20.899,
+    -22.609,
+    -20.947,
+    -22.441,
+    -25.74,
+    -22.83,
+    -22.821,
+    -22.126,
+    -22.336,
+    -22.101,
+    -22.874,
+    -22.433,
+    -24.159,
+    -25.121,
+    -22.615,
+    -23.694,
+    -23.771,
+    -22.395,
+    -22.661,
+    -22.837,
+    -25.322,
+    -22.251,
+    -23.395,
+    -22.715,
+    -25.283,
+    -26.983,
+    -22.838,
+    -22.524,
+    -23.737,
+    -24.973,
+    -23.322,
+    -25.83,
+    -30.847,
+    -23.43,
+    -23.456,
+    -21.111,
+    -22.998,
+    -24.716,
+    -26.686,
+    -27.29,
+    -23.67,
+    -23.863,
+    -22.826,
+    -24.27,
+    -24.329,
+    -25.896,
+    -28.166,
+    -24.119,
+    -25.59,
+    -24.073,
+    -23.304,
+    -21.805,
+    -21.884,
+    -18.353,
+    -21.04,
+    -23.012,
+    -21.125,
+    -20.889,
+    -24.643,
+    -26.757,
+    -26.715,
+    -27.726,
+    -29.602,
+    -21.148,
+    -24.0,
+    -23.553,
+    -23.514,
+    -23.923,
+    -23.062,
+    -21.286,
+    -24.201,
+    -26.536,
+    -24.612,
+    -22.647,
+    -24.002,
+    -21.405,
+    -25.901,
+    -25.536,
+    -24.798,
+    -24.267,
+    -25.56,
+    -25.051,
+    -24.377,
+    -22.178,
+    -18.997,
+    -17.444,
+    -19.211,
+    -19.693,
+    -18.796,
+    -21.572,
+    -23.735,
+    -20.519,
+    -19.11,
+    -19.663,
+    -19.009,
+    -20.748,
+    -27.782,
+    -22.643,
+    -22.949,
+    -23.343,
+    -29.207,
+    -26.792,
+    -23.328,
+    -30.664,
+    -23.103,
+    -25.097,
+    -24.939,
+    -22.646,
+    -24.089,
+    -23.588,
+    -24.685,
+    -21.927,
+    -26.638,
+    -25.282,
+    -25.163,
+    -29.887,
+    -28.389,
+    -29.119,
+    -31.905,
+    -30.44,
+    -20.738,
+    -18.292,
+    -18.526,
+    -22.162,
+    -20.607,
+    -20.172,
+    -24.45,
+    -25.616,
+    -27.247,
+    -24.285,
+    -24.849,
+    -21.902,
+    -26.942,
+    -29.418,
+    -33.792,
+    -26.909,
+    -23.964,
+    -21.641,
+    -24.559,
+    -23.608,
+    -25.584,
+    -24.0,
+    -24.121,
+    -21.754,
+    -25.171,
+    -27.867,
+    -26.033,
+    -24.107,
+    -31.079,
+    -26.318,
+    -29.69
+  ],
   "summary_run_ledger": {
     "schema_version": "summary_run_ledger.v1",
     "run_id": "14601791_20260808_829b7670f27f",
@@ -7923,24 +10194,24 @@
   },
   "report_artifact_family": {
     "schema_version": "report_artifact_family.v1",
-    "generation_id": "20260815T015021281938Z-f84cb8926638",
-    "generation_sequence": 6,
-    "parent_generation_id": "20260815T014949181955Z-2ef3b2d611cc",
-    "authority_revision_id": "20260815T014942763659Z",
+    "generation_id": "20260819T181535154000Z-c96bb92e9b92",
+    "generation_sequence": 11,
+    "parent_generation_id": "20260819T181454108037Z-503758e854a9",
+    "authority_revision_id": "d29ea91fe952de426b8a803db1f047bcd8e15506f5eb7c10c6b11b229e374b36",
     "artifacts": {
       "markdown": {
         "name": "14601791_20260808_829b7670f27f.md",
-        "sha256": "7139d8aafc99c83125830b03cab210d559c35694588fb9302360f823002de1db"
+        "sha256": "e29eb68eeb8b1456fdcec47a536a0bcf632fa7818340c78781fba2f1bc182e57"
       },
       "html": {
         "name": "14601791_20260808_829b7670f27f.html",
-        "sha256": "e3346f46b452705b93caa7d294a19dbfb1de3285d595740e9a01eff75ae39c5e"
+        "sha256": "20612fc5c7c129900985509b7dde6a51a10288de228918f499dca959250dcfd1"
       },
       "metadata": {
         "name": "14601791_20260808_829b7670f27f_metadata.json"
       }
     },
-    "viewer_payload_sha256": "9031c21cbbff70dd974abd1fbc65269da54f7d3d735f82da4f6964bfc2995bab",
-    "metadata_payload_sha256": "302776f7be84bf9de5cad3e3cdb5ecb78d70d38cb0f3e05d0523bf05b5cafb4c"
+    "viewer_payload_sha256": "fd4b4125ad2d289ebd940974447f5ffddbd4e65049f895f5bc85bf7ac7a7ccb7",
+    "metadata_payload_sha256": "94f65d7f71b9a2e6a1138d9e6255053fc8b3de1f92ca55f8b89f4bb725fc80fd"
   }
 }

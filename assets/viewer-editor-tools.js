@@ -1050,9 +1050,20 @@ function initViewerEditorTools() {
         if (a.priority.startSec !== b.priority.startSec) return a.priority.startSec - b.priority.startSec;
         if (a.priority.index !== b.priority.index) return a.priority.index - b.priority.index;
         return a.priority.id.localeCompare(b.priority.id);
-      })
-      .slice(0, target);
-    const selected = new Set(ranked.map((item) => item.priority.index));
+      });
+    const selected = new Set();
+    if (target === 1) {
+      selected.add(ranked[0].priority.index);
+    } else {
+      const coverageTarget = Math.min(target, Math.max(2, Math.ceil(target / 2)));
+      for (let slot = 0; slot < coverageTarget; slot += 1) {
+        selected.add(Math.round(slot * (rows.length - 1) / (coverageTarget - 1)));
+      }
+      for (const item of ranked) {
+        if (selected.size >= target) break;
+        selected.add(item.priority.index);
+      }
+    }
     return rows.filter((_row, index) => selected.has(index));
   }
   function eventsForDensity(eventList) {
@@ -1441,12 +1452,12 @@ function initViewerEditorTools() {
     }).join('');
     const summaryLaneRows = renderSignalTrackRows(signalTrackDefinitions.filter((definition) => definition.key === 'existing_segments'));
     const laneRows = renderSignalTrackRows(signalTrackDefinitions.filter((definition) => definition.key !== 'existing_segments'));
-    const projectedCandidates = outlineProjection.filter((event) => String(event.level || '') === 'Candidate');
+    const projectedHighlights = outlineProjection.filter((event) => ['Highlight', 'Candidate'].includes(String(event.level || '')));
     const outlineGroups = [
       { level: 'D1', key: 'flow', label: '방송 흐름', color: '#7aa2f7' },
       { level: 'D2', key: 'subject', label: '세부 흐름', color: '#9ece6a' },
       { level: 'Point', key: 'scene', label: '주요 장면', color: '#f7768e' },
-      { level: 'Candidate', key: 'inspect', label: '하이라이트 후보', color: '#e0af68', events: projectedCandidates },
+      { level: 'Highlight', key: 'inspect', label: 'Highlight', color: '#e0af68', events: projectedHighlights },
     ];
     const outlineRows = outlineGroups.map((group) => {
       const groupLabel = String(group.label || group.title || '구조');
@@ -1943,7 +1954,13 @@ function initViewerEditorTools() {
         const inside = cardRows.filter((row) => {
           if (assigned.has(row.card)) return false;
           const level = String(row.outline.level || '');
-          return !['D1', 'D2', 'Candidate'].includes(level) && row.sec >= start && row.sec < end;
+          if (['D1', 'D2', 'Candidate'].includes(level)) return false;
+          if (row.sec >= start && row.sec < end) return true;
+          if (level !== 'Point' || row.sec !== end) return false;
+          return !children.some((sibling) => (
+            String(sibling.id || '') !== String(d2.id || '')
+            && Number(sibling.start_sec || 0) === row.sec
+          ));
         });
         inside.forEach((row) => assigned.add(row.card));
         const subflow = document.createElement('section');
@@ -1967,10 +1984,7 @@ function initViewerEditorTools() {
     // Cards outside every accepted range still belong to the approved
     // standalone major-scenes section. Hierarchy enrichment must never be an
     // inclusion filter for real Markdown scenes.
-    const unowned = cardRows.filter((row) => {
-      const level = String(row.outline.level || '');
-      return !['D1', 'D2', 'Candidate'].includes(level) && !assigned.has(row.card);
-    });
+    const unowned = cardRows.filter((row) => !assigned.has(row.card));
     if (unowned.length) hierarchy.append(pointList(unowned));
     timeline.replaceChildren(hierarchy);
     timeline.dataset.managerOutlineHierarchy = 'ready';
