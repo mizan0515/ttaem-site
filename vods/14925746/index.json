@@ -1,0 +1,23 @@
+{
+  "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_name": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "platform": "chzzk",
+  "video_no": "14925746",
+  "title": "빅워크 합방 w. 진우,뿡,현찌 ٩(●'▿'●)۶",
+  "published_at": "2026-08-28T14:09:26+09:00",
+  "published_date_str": "20260828",
+  "duration_sec": 41956,
+  "platform_category": "빅 워크",
+  "content_judgement": null,
+  "summary_md_path": "vods/14925746/report.md",
+  "summary_html_path": "vods/14925746/report.html",
+  "metadata_json_path": "vods/14925746/metadata.json",
+  "thumbnail_url": null,
+  "search_text": "탬탬버린 | 빅워크 합방 w. 진우,뿡,현찌 ٩(●'▿'●)۶",
+  "stats": {
+    "total_chats": 38783,
+    "highlight_count": 27
+  },
+  "processed_at": "2026-08-30T17:18:46.265557+09:00"
+}
