@@ -1,0 +1,23 @@
+{
+  "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_name": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "platform": "chzzk",
+  "video_no": "14933039",
+  "title": "초승달 이춘향 티뭉 머신파티 ٩(●'▿'●)۶",
+  "published_at": "2026-08-29T13:55:11+09:00",
+  "published_date_str": "20260829",
+  "duration_sec": 10585,
+  "platform_category": "머신 파티",
+  "content_judgement": null,
+  "summary_md_path": "vods/14933039/report.md",
+  "summary_html_path": "vods/14933039/report.html",
+  "metadata_json_path": "vods/14933039/metadata.json",
+  "thumbnail_url": null,
+  "search_text": "탬탬버린 | 초승달 이춘향 티뭉 머신파티 ٩(●'▿'●)۶",
+  "stats": {
+    "total_chats": 21406,
+    "highlight_count": 20
+  },
+  "processed_at": "2026-08-30T16:20:00.392173+09:00"
+}

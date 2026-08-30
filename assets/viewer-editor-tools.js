@@ -207,6 +207,9 @@ function initViewerEditorTools() {
   const viewerLabelsMap = data.viewer_labels || {};
   const colorsMap = data.colors || {};
   const purposesMap = data.purposes || {};
+  const viewerClipSource = data.viewer_clip_source && typeof data.viewer_clip_source === 'object'
+    ? data.viewer_clip_source
+    : null;
   const overviewOnlyLaneKinds = new Set(['audio_waveform', 'chat_volume']);
   const optionalSceneLaneKinds = new Set(['live_context', 'visual_scene']);
   const eventCountsByKind = events.reduce((map, event) => {
@@ -252,6 +255,8 @@ function initViewerEditorTools() {
   let markerDensityLevel = 6;
   let axisRendered = false;
   let selectedEventId = '';
+  let selectedHighlightId = '';
+  let selectedHighlightSpanIndex = -1;
   let renderedAxisEvents = new Map();
   let densityScrollFrame = 0;
 
@@ -386,6 +391,50 @@ function initViewerEditorTools() {
       if (event.key !== 'Enter' && event.key !== ' ') return;
       event.preventDefault();
       activate();
+    });
+  }
+  function highlightIdForEvent(event) {
+    return String(event && (event.highlight_id || (Number.isInteger(event.source_span_index) ? event.id : '')) || '');
+  }
+  function highlightSpanIndexForEvent(event) {
+    const index = Number(event && event.source_span_index);
+    return Number.isInteger(index) ? index : -1;
+  }
+  function syncAxisMarkerSelection() {
+    axisEl.querySelectorAll('[data-event-id]').forEach((marker) => {
+      const isHighlightSibling = Boolean(selectedHighlightId) && marker.dataset.highlightId === selectedHighlightId;
+      const isCurrentSpan = isHighlightSibling && Number(marker.dataset.highlightSpanIndex) === selectedHighlightSpanIndex;
+      marker.classList.toggle('selected', isHighlightSibling || marker.dataset.eventId === selectedEventId);
+      marker.classList.toggle('highlight-group-selected', isHighlightSibling);
+      marker.classList.toggle('highlight-span-current', isCurrentSpan);
+      marker.setAttribute('aria-pressed', String(isHighlightSibling || marker.dataset.eventId === selectedEventId));
+      if (isCurrentSpan) marker.setAttribute('aria-current', 'true');
+      else marker.removeAttribute('aria-current');
+    });
+    const highlightRow = axisEl.querySelector('.viewer-editor-outline-row[data-outline-level="Highlight"]');
+    const selectionStatus = highlightRow && highlightRow.querySelector('.viewer-editor-highlight-selection-status');
+    if (highlightRow && selectionStatus) {
+      const selectedMarkers = Array.from(highlightRow.querySelectorAll('[data-event-id][data-highlight-id]'))
+        .filter((marker) => marker.dataset.highlightId === selectedHighlightId);
+      const firstMarker = selectedMarkers.find((marker) => Number(marker.dataset.highlightSpanIndex) === 0) || selectedMarkers[0];
+      const spanCount = Math.max(0, Number(firstMarker && firstMarker.dataset.highlightSpanCount || 0));
+      const highlightLabel = String(firstMarker && firstMarker.dataset.highlightGroupLabel || '').trim() || 'Highlight';
+      const hasSelection = Boolean(selectedHighlightId) && selectedMarkers.length > 0;
+      highlightRow.classList.toggle('highlight-group-active', hasSelection);
+      selectionStatus.hidden = !hasSelection;
+      selectionStatus.textContent = hasSelection ? `${highlightLabel} 선택 · ${spanCount}장면` : '';
+    }
+  }
+  function selectAxisEvent(event) {
+    selectedEventId = String(event && event.id || '');
+    selectedHighlightId = highlightIdForEvent(event);
+    selectedHighlightSpanIndex = selectedHighlightId ? highlightSpanIndexForEvent(event) : -1;
+    syncAxisMarkerSelection();
+  }
+  function setHighlightGroupEmphasis(highlightId, active) {
+    if (!highlightId) return;
+    axisEl.querySelectorAll('[data-highlight-id]').forEach((marker) => {
+      if (marker.dataset.highlightId === highlightId) marker.classList.toggle('highlight-group-emphasis', Boolean(active));
     });
   }
   function activateAxisEventMarker(marker) {
@@ -1399,6 +1448,41 @@ function initViewerEditorTools() {
       if (matchingLanes.length) return '이 신호 없음';
       return '이번 방송에서는 사용되지 않음';
     }
+    function viewerClipSourceSummary() {
+      if (!viewerClipSource) return null;
+      const orderType = String(viewerClipSource.order_type || 'unknown').toUpperCase();
+      const status = String(viewerClipSource.status || 'unknown').toLowerCase();
+      const statusText = ({
+        partial: '일부 응답',
+        present: '확인됨',
+        present_zero: '응답 완료 · 후보 없음',
+        missing: '자료 없음',
+        invalid: '날짜 정보 오류',
+        excluded: 'same-VOD offset 제외',
+      })[status] || '상태 확인 필요';
+      const verifiedCount = Math.max(0, Number(viewerClipSource.verified_offset_count || 0));
+      const engagementText = viewerClipSource.engagement_available ? '반응 수치 있음' : '반응 수치 없음';
+      const coverage = viewerClipSource.temporal_coverage && typeof viewerClipSource.temporal_coverage === 'object'
+        ? viewerClipSource.temporal_coverage
+        : {};
+      const bucketCount = Math.max(0, Number(coverage.bucket_count || 0));
+      const nonemptyBucketCount = Math.max(0, Number(coverage.nonempty_bucket_count || 0));
+      const coverageText = bucketCount > 0
+        ? `시간 분산 ${nonemptyBucketCount}/${bucketCount}`
+        : '시간 분산 미확인';
+      const label = ({
+        partial: `${orderType} 일부 · 검증 ${verifiedCount}개`,
+        present: `${orderType} · 검증 ${verifiedCount}개`,
+        present_zero: `${orderType} · 확인된 클립 없음`,
+        missing: '출처 자료 없음',
+        invalid: '출처 날짜 확인 필요',
+        excluded: '대상 VOD 구간 없음',
+      })[status] || '출처 상태 확인 필요';
+      return {
+        label,
+        title: `${orderType} · ${statusText} · same-VOD offset ${verifiedCount}개 · ${coverageText} · ${engagementText}`,
+      };
+    }
     function preserveDensityCollisionCandidates(allEvents, selectedEvents) {
       const selectedIds = new Set((selectedEvents || []).map((event) => String(event && event.id || '')));
       const projected = (allEvents || []).map((event, index) => {
@@ -1448,11 +1532,15 @@ function initViewerEditorTools() {
       const trackAttribute = kind === 'existing_segments'
         ? `data-summary-track="${esc(kind)}"`
         : `data-signal-track="${esc(kind)}"`;
-      return `<div class="viewer-editor-lane-row" ${trackAttribute}><div class="viewer-editor-lane-label"><strong>${esc(definition.label)}</strong><span>${esc(laneCountText)}</span></div><div class="viewer-editor-track">${markers || `<div class="viewer-editor-empty">${esc(stateText)}</div>`}</div></div>`;
+      const sourceSummary = kind === 'viewer_clip' ? viewerClipSourceSummary() : null;
+      const sourceSummaryHtml = sourceSummary
+        ? `<span class="viewer-editor-lane-source" title="${esc(sourceSummary.title)}">${esc(sourceSummary.label)}</span>`
+        : '';
+      return `<div class="viewer-editor-lane-row" ${trackAttribute}><div class="viewer-editor-lane-label"><strong>${esc(definition.label)}</strong><span>${esc(laneCountText)}</span>${sourceSummaryHtml}</div><div class="viewer-editor-track">${markers || `<div class="viewer-editor-empty">${esc(stateText)}</div>`}</div></div>`;
     }).join('');
     const summaryLaneRows = renderSignalTrackRows(signalTrackDefinitions.filter((definition) => definition.key === 'existing_segments'));
     const laneRows = renderSignalTrackRows(signalTrackDefinitions.filter((definition) => definition.key !== 'existing_segments'));
-    const projectedHighlights = outlineProjection.filter((event) => ['Highlight', 'Candidate'].includes(String(event.level || '')));
+    const projectedHighlights = outlineProjection.filter((event) => String(event.level || '') === 'Highlight');
     const outlineGroups = [
       { level: 'D1', key: 'flow', label: '방송 흐름', color: '#7aa2f7' },
       { level: 'D2', key: 'subject', label: '세부 흐름', color: '#9ece6a' },
@@ -1464,24 +1552,58 @@ function initViewerEditorTools() {
       const groupedEvents = group.events
         ? group.events
         : outlineProjection.filter((event) => String(event.level || '') === group.level);
-      const markers = groupedEvents.map((event, index) => {
+      const markerEvents = groupedEvents.flatMap((event, highlightIndex) => {
+        const spans = group.level === 'Highlight' && Array.isArray(event.source_spans)
+          ? event.source_spans.filter((span) => Number(span && span.end_sec) >= Number(span && span.start_sec))
+          : [];
+        if (!spans.length) return [{...event, __highlight_index: highlightIndex}];
+        return spans.map((span, spanIndex) => ({
+          ...event,
+          highlight_id: String(event.highlight_id || event.id || ''),
+          start_sec: Number(span.start_sec),
+          end_sec: Number(span.end_sec),
+          source_span_index: spanIndex,
+          source_span_count: spans.length,
+          source_span_reason: String(span.reason || ''),
+          source_span_exclusion_before: span.exclusion_before && typeof span.exclusion_before === 'object'
+            ? span.exclusion_before
+            : null,
+          __highlight_index: highlightIndex,
+        }));
+      });
+      const markers = markerEvents.map((event, index) => {
         const start = Math.max(0, Number(event.start_sec || 0));
         const end = event.end_sec != null ? Number(event.end_sec) : NaN;
         const left = Math.max(0, Math.min(100, (start / duration) * 100));
         const hasRange = Number.isFinite(end) && end > start + 1;
         const width = hasRange ? Math.max(0.25, Math.min(100 - left, ((end - start) / duration) * 100)) : 0;
-        const id = `outline-${String(event.kind || group.level)}-${String(event.id || start)}`;
+        const spanSuffix = Number.isInteger(event.source_span_index) ? `-span-${event.source_span_index}` : '';
+        const id = `outline-${String(event.kind || group.level)}-${String(event.id || start)}${spanSuffix}`;
         const markerTitle = String(event.title || '');
         const statusLabels = Array.isArray(event.status_labels) ? event.status_labels.filter(Boolean) : [];
-        const markerEvent = {...event, id, title: markerTitle, kind_label: groupLabel, timecode: group.level === 'Point' ? String(event.timestamp || '') : `${String(event.start || '')}-${String(event.end || '')}`};
+        const markerEvent = {...event, id, highlight_id: group.level === 'Highlight' ? String(event.highlight_id || event.id || '') : '', title: markerTitle, kind_label: groupLabel, timecode: group.level === 'Point' ? String(event.timestamp || '') : `${fmt(start)}-${fmt(end)}`};
         renderedAxisEvents.set(id, markerEvent);
         const style = hasRange ? `left:${left}%;width:${width}%;--outline-stack:${index % 3}` : `left:${left}%;--outline-stack:${index % 3}`;
+        const spanText = Number.isInteger(event.source_span_index)
+          ? `, 장면 ${event.source_span_index + 1}/${event.source_span_count}`
+          : '';
         const ariaType = groupLabel;
         const statusText = statusLabels.length ? ` · ${statusLabels.join(' · ')}` : '';
-        return `<button type="button" class="${hasRange ? 'viewer-editor-outline-range' : 'viewer-editor-outline-point'} viewer-editor-outline-marker" data-outline-item="true" data-event-id="${esc(id)}" data-evidence-preview="${esc(`${markerTitle}${statusText}`)}" aria-label="${esc(`${ariaType}, ${markerTitle}, ${fmt(start)}${hasRange ? `부터 ${fmt(end)}` : ''}${statusText}`)}" title="${esc(`${markerTitle} · ${fmt(start)}${hasRange ? `-${fmt(end)}` : ''}${statusText}`)}" style="${style}">${hasRange ? esc(markerTitle) : ''}</button>`;
+        const overviewText = group.level === 'Highlight'
+          ? (event.source_span_index === 0 ? `H${event.__highlight_index + 1}` : '')
+          : (hasRange ? markerTitle : '');
+        return `<button type="button" class="${hasRange ? 'viewer-editor-outline-range' : 'viewer-editor-outline-point'} viewer-editor-outline-marker" data-outline-item="true" data-event-id="${esc(id)}"${Number.isInteger(event.source_span_index) ? ` data-highlight-id="${esc(String(event.highlight_id || event.id || ''))}" data-highlight-span-index="${event.source_span_index}" data-highlight-span-count="${event.source_span_count}"` : ''} data-evidence-preview="${esc(`${markerTitle}${spanText}${statusText}`)}" aria-label="${esc(`${ariaType}, ${markerTitle}${spanText}, ${fmt(start)}${hasRange ? `부터 ${fmt(end)}` : ''}${statusText}`)}" title="${esc(`${markerTitle}${spanText} · ${fmt(start)}${hasRange ? `-${fmt(end)}` : ''}${statusText}`)}" style="${style}">${esc(overviewText)}</button>`;
       }).join('');
-      const stateText = groupedEvents.length ? `${groupedEvents.length}개` : '이 구조 없음';
-      return `<div class="viewer-editor-lane-row viewer-editor-outline-row" data-kind-row="viewer-editor-outline-${esc(group.key)}" data-outline-track="${esc(group.level)}" data-outline-level="${esc(group.level)}" style="--viewer-editor-outline-color:${group.color}"><div class="viewer-editor-lane-label"><strong>${esc(groupLabel)}</strong><span>${stateText}</span></div><div class="viewer-editor-track viewer-editor-outline-track">${markers || `<div class="viewer-editor-empty">${stateText}</div>`}</div></div>`;
+      const pointCount = outlineProjection.filter((event) => String(event.level || '') === 'Point').length;
+      const stateText = groupedEvents.length
+        ? `${groupedEvents.length}개`
+        : group.level === 'Highlight'
+          ? `완결된 편집 Highlight 없음 · Point ${pointCount}개 유지`
+          : '이 구조 없음';
+      const highlightSelectionStatus = group.level === 'Highlight'
+        ? '<span class="viewer-editor-highlight-selection-status" hidden></span>'
+        : '';
+      return `<div class="viewer-editor-lane-row viewer-editor-outline-row" data-kind-row="viewer-editor-outline-${esc(group.key)}" data-outline-track="${esc(group.level)}" data-outline-level="${esc(group.level)}" style="--viewer-editor-outline-color:${group.color}"><div class="viewer-editor-lane-label"><strong>${esc(groupLabel)}</strong><span>${stateText}</span>${highlightSelectionStatus}</div><div class="viewer-editor-track viewer-editor-outline-track">${markers || `<div class="viewer-editor-empty">${stateText}</div>`}</div></div>`;
     }).join('');
     axisEl.innerHTML = `<div class="viewer-editor-axis-canvas">
       <div class="viewer-editor-scale-row"><div class="viewer-editor-scale-label"><strong>전체 흐름</strong><span>${fmt(duration)}</span></div><div class="viewer-editor-scale">${renderScale()}</div></div>
@@ -1500,9 +1622,25 @@ function initViewerEditorTools() {
     axisEl.removeEventListener('scroll', scheduleDensityScaleRefresh);
     axisEl.addEventListener('scroll', scheduleDensityScaleRefresh, { passive: true });
     axisEl.querySelectorAll('[data-event-id]').forEach((marker) => {
-      marker.classList.toggle('selected', marker.dataset.eventId === selectedEventId);
+      const isHighlightSibling = Boolean(selectedHighlightId) && marker.dataset.highlightId === selectedHighlightId;
+      marker.classList.toggle('selected', isHighlightSibling || marker.dataset.eventId === selectedEventId);
+      marker.classList.toggle('highlight-group-selected', isHighlightSibling);
+      const isCurrentHighlightSpan = isHighlightSibling && Number(marker.dataset.highlightSpanIndex) === selectedHighlightSpanIndex;
+      marker.classList.toggle('highlight-span-current', isCurrentHighlightSpan);
+      marker.setAttribute('aria-pressed', String(isHighlightSibling || marker.dataset.eventId === selectedEventId));
+      if (isCurrentHighlightSpan) marker.setAttribute('aria-current', 'true');
+      else marker.removeAttribute('aria-current');
       const activate = () => activateAxisEventMarker(marker);
       bindMarkerActivation(marker, activate);
+      if (marker.dataset.highlightId) {
+        marker.addEventListener('pointerenter', () => setHighlightGroupEmphasis(marker.dataset.highlightId, true));
+        marker.addEventListener('pointerleave', () => setHighlightGroupEmphasis(marker.dataset.highlightId, false));
+        marker.addEventListener('focusin', () => setHighlightGroupEmphasis(marker.dataset.highlightId, true));
+        marker.addEventListener('focusout', (event) => {
+          if (event.relatedTarget && event.relatedTarget.dataset && event.relatedTarget.dataset.highlightId === marker.dataset.highlightId) return;
+          setHighlightGroupEmphasis(marker.dataset.highlightId, false);
+        });
+      }
     });
     axisEl.querySelectorAll('[data-edit-point-cluster-id]').forEach((marker) => {
       marker.classList.toggle('selected', selectedEventId === `edit_point_cluster_${marker.dataset.editPointClusterId || ''}`);
@@ -1528,6 +1666,7 @@ function initViewerEditorTools() {
       bindMarkerActivation(bar, activate);
     });
     installAxisCollisionDisclosure();
+    syncAxisMarkerSelection();
     bindNativeViewerClipClusters();
   }
   function fixedRepresentativeCollisionGroups(points, tolerance) {
@@ -1622,7 +1761,7 @@ function initViewerEditorTools() {
     return 34 + (largestCanonicalGroup - 1) * 30;
   }
   function installAxisCollisionDisclosure() {
-    axisEl.querySelectorAll('.viewer-editor-collision-cluster,.viewer-editor-lane-disclosure,.viewer-editor-collision-pinned:not(.viewer-editor-native-clip-pinned)').forEach((node) => node.remove());
+    axisEl.querySelectorAll('.viewer-editor-collision-cluster,.viewer-editor-lane-disclosure,.viewer-editor-collision-pinned:not(.viewer-editor-native-clip-pinned),.viewer-editor-highlight-span-cluster').forEach((node) => node.remove());
     axisEl.querySelectorAll('.viewer-editor-marker.viewer-editor-collision-source').forEach((marker) => {
       marker.classList.remove('viewer-editor-collision-source');
       marker.removeAttribute('aria-hidden');
@@ -1635,18 +1774,38 @@ function initViewerEditorTools() {
       return first ? String(first.text || first.title) : '확인 가능한 자막·채팅 근거 없음';
     };
     const activateSemanticMember = (marker, event) => {
-      closeActiveAxisDisclosure();
+      closeActiveAxisDisclosure(null, true);
+      selectAxisEvent(event || detailFor(marker) || null);
       syncSplitEditorSeek(event && event.start_sec, event);
       renderEvidence(event || detailFor(marker) || null);
     };
     const memberButton = (marker, event) => {
       const button = document.createElement('button');
       button.type = 'button'; button.className = 'viewer-editor-collision-member';
+      if (event.highlight_id) button.dataset.highlightId = String(event.highlight_id);
+      if (Number.isInteger(event.source_span_index)) {
+        button.dataset.highlightSpanIndex = String(event.source_span_index);
+        button.dataset.highlightSpanCount = String(event.source_span_count || 1);
+        button.setAttribute('aria-label', `${event.kind_label || optionLabel(event.kind)}, 장면 ${event.source_span_index + 1}/${event.source_span_count || 1}, ${fmt(event.start_sec || 0)}부터 ${fmt(event.end_sec || event.start_sec || 0)}`);
+      }
+      if (event.highlight_id) {
+        button.addEventListener('pointerenter', () => setHighlightGroupEmphasis(String(event.highlight_id), true));
+        button.addEventListener('pointerleave', () => setHighlightGroupEmphasis(String(event.highlight_id), false));
+        button.addEventListener('focusin', () => setHighlightGroupEmphasis(String(event.highlight_id), true));
+        button.addEventListener('focusout', () => setHighlightGroupEmphasis(String(event.highlight_id), false));
+      }
       const time = document.createElement('time'); time.textContent = fmt(event.start_sec || 0);
       const text = document.createElement('span');
-      text.textContent = `${event.kind_label || optionLabel(event.kind)} · ${friendlyEventTitle(event) || marker.title || '제목 없음'} — ${evidenceText(event)}`;
+      const spanNumber = Number.isInteger(event.source_span_index)
+        ? `장면 ${event.source_span_index + 1}/${event.source_span_count} · ${fmt(event.start_sec || 0)}-${fmt(event.end_sec || event.start_sec || 0)}`
+        : '';
+      const exclusion = event.source_span_exclusion_before && String(event.source_span_exclusion_before.reason || '').trim();
+      const spanMeaning = spanNumber
+        ? `${spanNumber}${event.source_span_reason ? ` · ${event.source_span_reason}` : ''}${exclusion ? ` · 앞 공백 제외: ${exclusion}` : ''}`
+        : evidenceText(event);
+      text.textContent = `${event.kind_label || optionLabel(event.kind)} · ${friendlyEventTitle(event) || marker.title || '제목 없음'} — ${spanMeaning}`;
       button.append(time, text);
-      bindMarkerActivation(button, (activationEvent) => { activationEvent.stopPropagation(); activateSemanticMember(marker, event); });
+      bindMarkerActivation(button, () => activateSemanticMember(marker, event));
       return button;
     };
     const mountPinned = (track, trigger, members, label, className = '') => {
@@ -1740,6 +1899,117 @@ function initViewerEditorTools() {
         summary.setAttribute('aria-expanded', String(expanded));
       };
       disclosure.addEventListener('toggle', () => render(disclosure.open)); render(false);
+    });
+    axisEl.querySelectorAll('.viewer-editor-outline-row[data-outline-level="Highlight"]:not([hidden])').forEach((row) => {
+      const label = row.querySelector('.viewer-editor-lane-label');
+      const track = row.querySelector('.viewer-editor-track');
+      if (!label || !track) return;
+      const canonicalMarkers = Array.from(
+        track.querySelectorAll(':scope > [data-event-id][data-highlight-id][data-highlight-span-index]')
+      );
+      if (!canonicalMarkers.length) return;
+      const grouped = new Map();
+      canonicalMarkers.forEach((marker) => {
+        const highlightId = String(marker.dataset.highlightId || '');
+        if (!highlightId) return;
+        if (!grouped.has(highlightId)) grouped.set(highlightId, []);
+        grouped.get(highlightId).push(marker);
+      });
+      const highlightGroups = Array.from(grouped.entries())
+        .map(([highlightId, markers]) => ({
+          highlightId,
+          markers: markers.sort((a, b) => Number(a.dataset.highlightSpanIndex || 0) - Number(b.dataset.highlightSpanIndex || 0)),
+        }))
+        .sort((a, b) => Number(detailFor(a.markers[0]).start_sec || 0) - Number(detailFor(b.markers[0]).start_sec || 0));
+      highlightGroups.forEach((group, highlightIndex) => {
+        const groupLabel = `H${highlightIndex + 1}`;
+        const firstEvent = detailFor(group.markers[0]);
+        group.label = groupLabel;
+        group.title = friendlyEventTitle(firstEvent) || `Highlight ${highlightIndex + 1}`;
+        group.markers.forEach((marker) => {
+          marker.dataset.highlightGroupLabel = groupLabel;
+          const accessibleName = String(marker.getAttribute('aria-label') || '').trim();
+          if (accessibleName && !accessibleName.startsWith(`${groupLabel},`)) {
+            marker.setAttribute('aria-label', `${groupLabel}, ${accessibleName}`);
+          }
+        });
+      });
+      const selectionStatus = label.querySelector('.viewer-editor-highlight-selection-status');
+      const laneToggle = document.createElement('button');
+      const toggleName = document.createElement('strong');
+      const toggleCount = document.createElement('span');
+      laneToggle.type = 'button';
+      laneToggle.className = 'viewer-editor-highlight-lane-toggle';
+      toggleName.textContent = 'Highlight';
+      toggleCount.textContent = `${highlightGroups.length}개`;
+      laneToggle.append(toggleName, toggleCount);
+      label.replaceChildren(laneToggle);
+      if (selectionStatus) label.append(selectionStatus);
+      const groupContainer = document.createElement('div');
+      groupContainer.className = 'viewer-editor-highlight-expanded-groups';
+      groupContainer.hidden = true;
+      highlightGroups.forEach((group) => {
+        const groupRow = document.createElement('div');
+        const groupLabel = document.createElement('div');
+        const groupTrack = document.createElement('div');
+        const groupName = document.createElement('strong');
+        const groupTitle = document.createElement('span');
+        groupRow.className = 'viewer-editor-highlight-group-row';
+        groupRow.setAttribute('role', 'group');
+        groupRow.setAttribute('aria-label', `${group.label}, ${group.title}, 장면 ${group.markers.length}개`);
+        groupLabel.className = 'viewer-editor-highlight-group-label';
+        groupName.textContent = group.label;
+        groupTitle.textContent = group.title;
+        groupLabel.append(groupName, groupTitle);
+        groupTrack.className = 'viewer-editor-outline-track viewer-editor-highlight-group-track';
+        groupRow.append(groupLabel, groupTrack);
+        groupContainer.append(groupRow);
+        group.row = groupRow;
+        group.track = groupTrack;
+      });
+      row.append(groupContainer);
+      const groupColors = ['#e0af68', '#7dcfff', '#bb9af7', '#9ece6a', '#f7768e'];
+      highlightGroups.forEach((group, index) => {
+        const color = groupColors[index % groupColors.length];
+        group.row.style.setProperty('--viewer-editor-highlight-group-color', color);
+        group.markers.forEach((marker) => {
+          marker.style.setProperty('--viewer-editor-highlight-group-color', color);
+        });
+      });
+      const render = (expanded) => {
+        row.classList.toggle('viewer-editor-lane-expanded', expanded);
+        groupContainer.hidden = !expanded;
+        canonicalMarkers.forEach((marker) => {
+          marker.classList.remove('viewer-editor-collision-source');
+          marker.classList.remove('viewer-editor-highlight-overview-span');
+          marker.style.transform = '';
+          marker.textContent = '';
+        });
+        if (expanded) {
+          highlightGroups.forEach((group) => {
+            group.track.append(...group.markers);
+            group.markers.forEach((marker) => {
+              marker.removeAttribute('aria-hidden');
+              marker.tabIndex = 0;
+            });
+          });
+        } else {
+          highlightGroups.forEach((group) => {
+            track.append(...group.markers);
+            group.markers.forEach((marker) => {
+              marker.classList.add('viewer-editor-highlight-overview-span');
+              marker.removeAttribute('aria-hidden');
+              marker.tabIndex = 0;
+            });
+          });
+        }
+        laneToggle.setAttribute('aria-label', expanded ? 'Highlight별 구간 접기' : 'Highlight별 구간 펼치기');
+        laneToggle.setAttribute('aria-expanded', String(expanded));
+      };
+      laneToggle.addEventListener('click', () => {
+        render(laneToggle.getAttribute('aria-expanded') !== 'true');
+      });
+      render(false);
     });
   }
   function installHierarchyPreviews() {
@@ -1858,30 +2128,81 @@ function initViewerEditorTools() {
           iconSlot.setAttribute('aria-hidden', 'true');
           card.prepend(iconSlot);
         }
-        let badgeSlot = card.querySelector('.viewer-editor-point-badge-slot');
-        if (!badgeSlot) {
-          badgeSlot = document.createElement('span');
-          badgeSlot.className = 'viewer-editor-point-badge-slot viewer-editor-badge-slot';
-          badgeSlot.setAttribute('aria-hidden', 'true');
-          card.append(badgeSlot);
+        const head = card.querySelector('.t-head');
+        const mood = head && head.querySelector('.mood');
+        if (mood && String(mood.textContent || '').trim() === 'Point') mood.textContent = '';
+        const evidenceBadges = Array.from(card.querySelectorAll('.injected-badge,.audio-peak-badge'));
+        const exactViewerClip = events.find((event) => String(event && event.kind || '') === 'viewer_clip' && Math.abs(Number(event.start_sec || 0) - sec) <= 1);
+        if (exactViewerClip && !evidenceBadges.some((badge) => badge.classList.contains('injected-badge'))) {
+          const badge = document.createElement('span');
+          badge.className = 'injected-badge';
+          badge.title = '시청자 클립 anchor와 같은 시각의 Point';
+          badge.textContent = '📎 시청자 클립';
+          evidenceBadges.push(badge);
         }
-        const injectedBadge = card.querySelector('.injected-badge');
-        if (injectedBadge && injectedBadge.parentElement !== badgeSlot) {
-          badgeSlot.removeAttribute('aria-hidden');
-          badgeSlot.replaceChildren(injectedBadge);
+        const nearestAudio = events
+          .filter((event) => String(event && event.kind || '') === 'audio_peak')
+          .map((event) => {
+            const start = Number(event.start_sec || 0);
+            const end = Number(event.end_sec != null ? event.end_sec : start);
+            const delta = start <= sec && sec <= end ? 0 : Math.min(Math.abs(start - sec), Math.abs(end - sec));
+            return {event, delta};
+          })
+          .filter((row) => row.delta <= 30)
+          .sort((a, b) => a.delta - b.delta)[0];
+        if (nearestAudio && !evidenceBadges.some((badge) => badge.classList.contains('audio-peak-badge'))) {
+          const badge = document.createElement('span');
+          badge.className = 'audio-peak-badge';
+          badge.title = '오디오 반응 피크와 가까운 Point';
+          badge.textContent = `🔊 오디오 피크 ${nearestAudio.delta === 0 ? '구간 내' : `±${Math.round(nearestAudio.delta)}s`}`;
+          evidenceBadges.push(badge);
         }
-        const statusLabels = Array.isArray(outline && outline.status_labels) ? outline.status_labels.filter(Boolean) : [];
+        const statusLabels = Array.isArray(outline && outline.status_labels)
+          ? outline.status_labels.filter((label) => label && label !== '요약에 포함됨')
+          : [];
+        let evidenceRow = card.querySelector('.viewer-detail-point-evidence-row');
+        if ((evidenceBadges.length || statusLabels.length) && !evidenceRow) {
+          evidenceRow = document.createElement('div');
+          evidenceRow.className = 'viewer-detail-point-evidence-row';
+          evidenceRow.setAttribute('aria-label', '이 Point의 보조 근거');
+          if (head) head.insertAdjacentElement('afterend', evidenceRow);
+          else card.prepend(evidenceRow);
+        }
+        evidenceBadges.forEach((badge) => {
+          if (badge.parentElement !== evidenceRow) evidenceRow.append(badge);
+        });
         statusLabels.forEach((label) => {
-          if (Array.from(badgeSlot.children).some((child) => child.dataset.outlineStatus === label)) return;
-          badgeSlot.removeAttribute('aria-hidden');
+          if (Array.from(evidenceRow.children).some((child) => child.dataset.outlineStatus === label)) return;
           const statusBadge = document.createElement('span');
           statusBadge.className = 'viewer-editor-status-badge';
           statusBadge.dataset.outlineStatus = label;
           statusBadge.textContent = label;
-          badgeSlot.append(statusBadge);
+          evidenceRow.append(statusBadge);
         });
         if (outline && outline.id) card.id = `manager-outline-${String(outline.id).replace(/[^a-zA-Z0-9_-]/g, '')}`;
-        const body = card.querySelector('.t-body');
+        let body = card.querySelector('.t-body');
+        const storyTitle = String(outline && outline.story_title || '').trim();
+        const storyContent = String(outline && outline.story_content || '').trim();
+        if (storyTitle || storyContent) {
+          if (!body) {
+            body = document.createElement('div');
+            body.className = 't-body';
+            card.append(body);
+          }
+          body.replaceChildren();
+          if (storyTitle) {
+            const storyTitleNode = document.createElement('strong');
+            storyTitleNode.className = 'viewer-detail-point-story-title';
+            storyTitleNode.textContent = storyTitle;
+            body.append(storyTitleNode);
+          }
+          if (storyContent) {
+            const storyContentNode = document.createElement('p');
+            storyContentNode.className = 'viewer-detail-point-story-content';
+            storyContentNode.textContent = storyContent;
+            body.append(storyContentNode);
+          }
+        }
         const bodyText = String(body && body.textContent || '').trim();
         const internalBodyToken = /(?:supporting_signal_only|proximity_signal|temporal_candidate|deterministic_injection)/i.test(bodyText);
         if (body && (!bodyText || /읽기 전용 (정확한 시각|방송 목차)/.test(bodyText) || internalBodyToken)) {
@@ -1904,6 +2225,45 @@ function initViewerEditorTools() {
           } else {
             body.remove();
           }
+        }
+        if (body && body.isConnected && String(body.textContent || '').trim()) {
+          const storyDisclosure = document.createElement('details');
+          storyDisclosure.className = 'viewer-detail-point-story';
+          const storySummary = document.createElement('summary');
+          storySummary.className = 'viewer-detail-point-story-summary';
+          const titleNode = head && head.querySelector('.t-title');
+          const pointTitle = String(titleNode && titleNode.textContent || outline && outline.title || '주요 장면').trim();
+          const chevron = document.createElement('span');
+          chevron.className = 'viewer-detail-point-story-chevron';
+          chevron.setAttribute('aria-hidden', 'true');
+          chevron.textContent = '›';
+          if (titleNode) storySummary.append(titleNode, chevron);
+          else {
+            const fallbackTitle = document.createElement('span');
+            fallbackTitle.className = 't-title';
+            fallbackTitle.textContent = pointTitle;
+            storySummary.append(fallbackTitle, chevron);
+          }
+          const syncStoryDisclosureLabel = () => {
+            storySummary.setAttribute('aria-label', `${pointTitle} Story ${storyDisclosure.open ? '접기' : '펼치기'}`);
+          };
+          storySummary.addEventListener('keydown', (event) => {
+            if (event.key !== 'Enter' && event.key !== ' ') return;
+            event.preventDefault();
+            storyDisclosure.open = !storyDisclosure.open;
+          });
+          storyDisclosure.addEventListener('toggle', () => {
+            list.querySelectorAll('details.viewer-detail-point-story[open]').forEach((details) => {
+              if (details === storyDisclosure) return;
+              details.open = false;
+            });
+            syncStoryDisclosureLabel();
+          });
+          syncStoryDisclosureLabel();
+          body.classList.add('viewer-detail-point-story-body');
+          storyDisclosure.append(storySummary, body);
+          if (head) head.append(storyDisclosure);
+          else card.prepend(storyDisclosure);
         }
         list.append(card);
       });
@@ -1989,6 +2349,35 @@ function initViewerEditorTools() {
     timeline.replaceChildren(hierarchy);
     timeline.dataset.managerOutlineHierarchy = 'ready';
   }
+  function highlightSourceSpanChips(event) {
+    const spans = Array.isArray(event && event.source_spans) ? event.source_spans : [];
+    if (!spans.length) return '';
+    return `<nav class="viewer-editor-highlight-scenes" aria-label="선택한 Highlight 원본 장면">${spans.map((span, index) => {
+      const start = Number(span && span.start_sec);
+      const end = Number(span && span.end_sec);
+      if (!Number.isFinite(start) || !Number.isFinite(end)) return '';
+      const url = seekUrl(start, event);
+      const label = `장면 ${index + 1}/${spans.length}, ${fmt(start)}부터 ${fmt(end)}까지`;
+      const current = index === selectedHighlightSpanIndex ? ' aria-current="true"' : '';
+      return url
+        ? `<a class="viewer-editor-chip viewer-editor-highlight-scene-chip" data-highlight-span-index="${index}" data-start="${start}" href="${esc(url)}" target="_blank" rel="noopener"${current} aria-label="${esc(`${label}, 시작으로 이동`)}">[${esc(fmt(start))}–${esc(fmt(end))}]</a>`
+        : `<span class="viewer-editor-chip viewer-editor-highlight-scene-chip" aria-label="${esc(label)}">[${esc(fmt(start))}–${esc(fmt(end))}]</span>`;
+    }).join('')}</nav>`;
+  }
+  function highlightPointChips(event) {
+    const refs = Array.isArray(event && event.point_refs) ? event.point_refs.map(String) : [];
+    if (!refs.length) return '';
+    const points = refs.map((ref) => outlineProjection.find((row) => String(row && row.level || '') === 'Point' && String(row && row.id || '') === ref)).filter(Boolean);
+    if (!points.length) return '';
+    return `<div class="viewer-editor-highlight-points" aria-label="선택한 Highlight 연결 Point">${points.map((point) => {
+      const start = Number(point.start_sec);
+      const url = Number.isFinite(start) ? seekUrl(start, point) : '';
+      const title = String(point.title || '주요 장면');
+      return url
+        ? `<a class="viewer-editor-chip" data-start="${start}" href="${esc(url)}" target="_blank" rel="noopener" aria-label="${esc(`${point.timestamp || fmt(start)} ${title} Point로 이동`)}">${esc(point.timestamp || fmt(start))} · ${esc(title)}</a>`
+        : `<span class="viewer-editor-chip">${esc(point.timestamp || '')} · ${esc(title)}</span>`;
+    }).join('')}</div>`;
+  }
   function renderEvidence(event) {
     if (!event || typeof event !== 'object') {
       const introEl = document.getElementById('viewerEditorEvidenceIntro');
@@ -2010,8 +2399,7 @@ function initViewerEditorTools() {
     const introEl = document.getElementById('viewerEditorEvidenceIntro');
     if (introEl) introEl.hidden = true;
     syncSplitEditorSeek(sec, event);
-    selectedEventId = String(event.id || '');
-    axisEl.querySelectorAll('[data-event-id]').forEach((marker) => marker.classList.toggle('selected', marker.dataset.eventId === selectedEventId));
+    selectAxisEvent(event);
     axisEl.querySelectorAll('[data-edit-point-cluster-id]').forEach((marker) => marker.classList.remove('selected'));
     const clusterEvents = clipClusterEvents(event);
     const clusterEventIds = clusterEventIdSet(clusterEvents);
@@ -2062,7 +2450,7 @@ function initViewerEditorTools() {
       ? ''
       : '<div class="viewer-editor-row reason">확인 가능한 자막·채팅 근거 없음</div>';
     const selectedColor = markerColor(event.kind);
-    const kindLabel = optionLabel(event.kind);
+    const kindLabel = selectedHighlightId ? 'Highlight' : optionLabel(event.kind);
     const titleMatchesKind = selectedTitleText === kindLabel;
     const chipRows = [timeChip(sec, event)];
     if (summaryStatus.label === kindLabel) {
@@ -2081,6 +2469,7 @@ function initViewerEditorTools() {
       <div class="viewer-editor-selected-meta">
         ${chipRows.join('')}
       </div>
+      ${selectedHighlightId ? highlightSourceSpanChips(event) + highlightPointChips(event) : ''}
     </div>
     ${renderEvidenceTargetPicker(evidenceTargets, sec)}
     ${renderContextSummary(nearbySubtitles, nearbyBuckets, event)}
@@ -2238,11 +2627,28 @@ function initViewerClipPlayers() {
       dialog.showModal();
   });
 }
+function initPointStoryDisclosures() {
+  document.querySelectorAll('details.point-evidence-panel').forEach((details) => {
+    const summary = details.querySelector(':scope > summary');
+    const title = String(summary && summary.querySelector('.standalone-point-disclosure-title')?.textContent || '주요 장면').trim();
+    if (!summary || details.dataset.storyDisclosureReady === 'true') return;
+    const syncLabel = () => summary.setAttribute('aria-label', `${title} Story ${details.open ? '접기' : '펼치기'}`);
+    details.dataset.storyDisclosureReady = 'true';
+    summary.addEventListener('keydown', (event) => {
+      if (event.key !== 'Enter' && event.key !== ' ') return;
+      event.preventDefault();
+      details.open = !details.open;
+    });
+    details.addEventListener('toggle', syncLabel);
+    syncLabel();
+  });
+}
 function initViewerEditorRuntime() {
   initEditorSplitMode();
   initEditorEntryState();
   initViewerEditorTools();
   initViewerClipPlayers();
+  initPointStoryDisclosures();
 }
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initViewerEditorRuntime);

@@ -3,7 +3,7 @@
   "built_at": "2026-08-03T14:13:12+00:00",
   "latest_processed_at": "2026-08-03T22:19:07.365410+09:00",
   "total_streamers": 8,
-  "total_vods": 143,
+  "total_vods": 144,
   "total_bundles": 8,
   "streamers": [
     {
@@ -11,7 +11,7 @@
       "streamer_name": "탬탬버린",
       "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
       "platform": "chzzk",
-      "vod_count": 135,
+      "vod_count": 136,
       "last_vod_at": "2026-08-03T20:52:37+09:00",
       "last_vod_ended_at": "2026-08-03T22:05:30+09:00"
     },
@@ -81,6 +81,15 @@
   ],
   "recent_vods": [
     {
+      "video_no": "14933039",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "초승달 이춘향 티뭉 머신파티 ٩(●'▿'●)۶",
+      "published_at": "2026-08-29T13:55:11+09:00",
+      "ended_at": "2026-08-29T16:51:36+09:00",
+      "duration_sec": 10585
+    },
+    {
       "video_no": "14663785",
       "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
       "streamer_name": "탬탬버린",
@@ -124,18 +133,24 @@
       "published_at": "2026-08-03T20:52:37+09:00",
       "ended_at": "2026-08-03T22:05:30+09:00",
       "duration_sec": 4373
-    },
-    {
-      "video_no": "14462631",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "생존신고 방송 ٩(●'▿'●)۶",
-      "published_at": "2026-07-31T16:09:55+09:00",
-      "ended_at": "2026-07-31T17:01:38+09:00",
-      "duration_sec": 3103
     }
   ],
   "recent_updates": [
+    {
+      "kind": "vod",
+      "video_no": "14933039",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "초승달 이춘향 티뭉 머신파티 ٩(●'▿'●)۶",
+      "published_at": "2026-08-29T13:55:11+09:00",
+      "ended_at": "2026-08-29T16:51:36+09:00",
+      "duration_sec": 10585,
+      "platform_category": "머신 파티",
+      "stats": {
+        "total_chats": 21406,
+        "highlight_count": 20
+      }
+    },
     {
       "kind": "vod",
       "video_no": "14663785",
@@ -209,21 +224,6 @@
       "stats": {
         "total_chats": 16359,
         "highlight_count": 23
-      }
-    },
-    {
-      "kind": "vod",
-      "video_no": "14462631",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "생존신고 방송 ٩(●'▿'●)۶",
-      "published_at": "2026-07-31T16:09:55+09:00",
-      "ended_at": "2026-07-31T17:01:38+09:00",
-      "duration_sec": 3103,
-      "platform_category": "talk",
-      "stats": {
-        "total_chats": 10040,
-        "highlight_count": 17
       }
     }
   ]
