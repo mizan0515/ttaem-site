@@ -2921,9 +2921,9 @@
     "requested_version": "pipeline_2_5",
     "actual_version": "pipeline_2_5",
     "mechanism_name": "Loki",
-    "mechanism_version": "2.9.2",
-    "aemeth_version": "2.9.2",
-    "label": "Loki 2.9.2",
+    "mechanism_version": "2.9.4",
+    "aemeth_version": "2.9.4",
+    "label": "Loki 2.9.4",
     "fallback_used": false,
     "producer_code_version": "0ac59cc1afb81894d804eae34ff29e1fd947d330"
   },
@@ -24872,9 +24872,9 @@
   },
   "report_artifact_family": {
     "schema_version": "report_artifact_family.v1",
-    "generation_id": "20260830T114423730490Z-9488d890dd7f",
-    "generation_sequence": 2,
-    "parent_generation_id": "20260830T114352920273Z-a0567e1a105f",
+    "generation_id": "20260830T123952191553Z-6a9adbed9104",
+    "generation_sequence": 6,
+    "parent_generation_id": "20260830T123701271815Z-65befcf5de3d",
     "authority_revision_id": "61bac4d997654e43dd1cf946c81f859ea158c880961ab43ff34a566f027a6c1a",
     "artifacts": {
       "markdown": {
@@ -24883,7 +24883,7 @@
       },
       "html": {
         "name": "14933039_20260829_30144bf1342b.html",
-        "sha256": "ec7077efcf6113364aecf556b17232afee147a5d4a1c18dceaabbe9c198bc213"
+        "sha256": "4331ea4b67d88610b4717631e5beb5995bd46a8fc0b5f682d190b63bdd7fb297"
       },
       "metadata": {
         "name": "14933039_20260829_30144bf1342b_metadata.json"
@@ -24892,6 +24892,6 @@
     "viewer_payload_sha256": "738996e8b7590c53bc7ea133705a19b028d9ee136f24f8f7315aca43b2e0d16f",
     "editorial_packet_sha256": "6ba7d25a6711c0d35575cb423b43939684b5ae75993d3f89bc6918754c0c58ab",
     "viewer_asset_version": "highlight-duration-bars-v8",
-    "metadata_payload_sha256": "3a19a9cf6cbb71a14c06977c64479688c161ae7527dcba0a86f84d81a70c2df6"
+    "metadata_payload_sha256": "52cd9b8e8f0d8e2c78b63b4af699070dcc35d234f35d09aadad86ac19ffdd184"
   }
 }
