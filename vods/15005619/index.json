@@ -1,0 +1,23 @@
+{
+  "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_name": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "platform": "chzzk",
+  "video_no": "15005619",
+  "title": "우리 데바데 정상 영업합니다 ٩(●'▿'●)۶",
+  "published_at": "2026-09-02T21:21:38+09:00",
+  "published_date_str": "20260902",
+  "duration_sec": 14634,
+  "platform_category": "데드 바이 데이라이트",
+  "content_judgement": null,
+  "summary_md_path": "vods/15005619/report.md",
+  "summary_html_path": "vods/15005619/report.html",
+  "metadata_json_path": "vods/15005619/metadata.json",
+  "thumbnail_url": null,
+  "search_text": "탬탬버린 | 우리 데바데 정상 영업합니다 ٩(●'▿'●)۶",
+  "stats": {
+    "total_chats": 24832,
+    "highlight_count": 18
+  },
+  "processed_at": "2026-09-03T18:28:08.503189+09:00"
+}
