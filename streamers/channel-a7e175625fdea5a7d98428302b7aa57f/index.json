@@ -4,7 +4,7 @@
     "streamer_name": "탬탬버린",
     "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
     "platform": "chzzk",
-    "vod_count": 139
+    "vod_count": 140
   },
   "vods": [
     {
@@ -2090,6 +2090,21 @@
       "stats": {
         "total_chats": 24832,
         "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "15036939",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "7시 공겜동 렛츠고!! ٩(●'▿'●)۶",
+      "published_at": "2026-09-04T18:26:03+09:00",
+      "ended_at": "2026-09-05T01:03:25+09:00",
+      "duration_sec": 23842,
+      "platform_category": "종합 게임",
+      "stats": {
+        "total_chats": 31403,
+        "highlight_count": 16
       }
     }
   ],
@@ -4355,6 +4370,21 @@
       "stats": {
         "total_chats": 24832,
         "highlight_count": 18
+      }
+    },
+    {
+      "kind": "vod",
+      "video_no": "15036939",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "7시 공겜동 렛츠고!! ٩(●'▿'●)۶",
+      "published_at": "2026-09-04T18:26:03+09:00",
+      "ended_at": "2026-09-05T01:03:25+09:00",
+      "duration_sec": 23842,
+      "platform_category": "종합 게임",
+      "stats": {
+        "total_chats": 31403,
+        "highlight_count": 16
       }
     }
   ]

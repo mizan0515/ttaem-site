@@ -3,7 +3,7 @@
   "built_at": "2026-08-03T14:13:12+00:00",
   "latest_processed_at": "2026-08-03T22:19:07.365410+09:00",
   "total_streamers": 8,
-  "total_vods": 147,
+  "total_vods": 148,
   "total_bundles": 8,
   "streamers": [
     {
@@ -11,7 +11,7 @@
       "streamer_name": "탬탬버린",
       "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
       "platform": "chzzk",
-      "vod_count": 139,
+      "vod_count": 140,
       "last_vod_at": "2026-08-03T20:52:37+09:00",
       "last_vod_ended_at": "2026-08-03T22:05:30+09:00"
     },
@@ -81,6 +81,15 @@
   ],
   "recent_vods": [
     {
+      "video_no": "15036939",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "7시 공겜동 렛츠고!! ٩(●'▿'●)۶",
+      "published_at": "2026-09-04T18:26:03+09:00",
+      "ended_at": "2026-09-05T01:03:25+09:00",
+      "duration_sec": 23842
+    },
+    {
       "video_no": "15005619",
       "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
       "streamer_name": "탬탬버린",
@@ -124,18 +133,24 @@
       "published_at": "2026-08-12T14:45:51+09:00",
       "ended_at": "2026-08-12T23:53:39+09:00",
       "duration_sec": 32868
-    },
-    {
-      "video_no": "14636761",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "데바데 청소년풀장 내전 (●'▿'●)۶",
-      "published_at": "2026-08-11T02:17:48+09:00",
-      "ended_at": "2026-08-11T04:31:41+09:00",
-      "duration_sec": 8033
     }
   ],
   "recent_updates": [
+    {
+      "kind": "vod",
+      "video_no": "15036939",
+      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+      "streamer_name": "탬탬버린",
+      "title": "7시 공겜동 렛츠고!! ٩(●'▿'●)۶",
+      "published_at": "2026-09-04T18:26:03+09:00",
+      "ended_at": "2026-09-05T01:03:25+09:00",
+      "duration_sec": 23842,
+      "platform_category": "종합 게임",
+      "stats": {
+        "total_chats": 31403,
+        "highlight_count": 16
+      }
+    },
     {
       "kind": "vod",
       "video_no": "15005619",
@@ -209,21 +224,6 @@
       "stats": {
         "total_chats": 79900,
         "highlight_count": 27
-      }
-    },
-    {
-      "kind": "vod",
-      "video_no": "14636761",
-      "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
-      "streamer_name": "탬탬버린",
-      "title": "데바데 청소년풀장 내전 (●'▿'●)۶",
-      "published_at": "2026-08-11T02:17:48+09:00",
-      "ended_at": "2026-08-11T04:31:41+09:00",
-      "duration_sec": 8033,
-      "platform_category": "데드 바이 데이라이트",
-      "stats": {
-        "total_chats": 10501,
-        "highlight_count": 18
       }
     }
   ]

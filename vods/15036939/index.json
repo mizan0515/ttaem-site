@@ -1,0 +1,23 @@
+{
+  "streamer_id": "channel-a7e175625fdea5a7d98428302b7aa57f",
+  "streamer_name": "탬탬버린",
+  "channel_id": "a7e175625fdea5a7d98428302b7aa57f",
+  "platform": "chzzk",
+  "video_no": "15036939",
+  "title": "7시 공겜동 렛츠고!! ٩(●'▿'●)۶",
+  "published_at": "2026-09-04T18:26:03+09:00",
+  "published_date_str": "20260904",
+  "duration_sec": 23842,
+  "platform_category": "종합 게임",
+  "content_judgement": null,
+  "summary_md_path": "vods/15036939/report.md",
+  "summary_html_path": "vods/15036939/report.html",
+  "metadata_json_path": "vods/15036939/metadata.json",
+  "thumbnail_url": null,
+  "search_text": "탬탬버린 | 7시 공겜동 렛츠고!! ٩(●'▿'●)۶",
+  "stats": {
+    "total_chats": 31403,
+    "highlight_count": 16
+  },
+  "processed_at": "2026-09-05T10:01:39.928589+09:00"
+}
