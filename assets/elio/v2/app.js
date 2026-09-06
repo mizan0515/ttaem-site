@@ -204,7 +204,7 @@ function showWatchTransition({ streamer, provider, providerLabel, time }) {
   overlay.appendChild(panel);
   overlay.prepend(space, warp);
   watchFxLayer.appendChild(overlay);
-  watchTransitionTimer = window.setTimeout(() => overlay.remove(), 1550);
+  watchTransitionTimer = window.setTimeout(() => overlay.remove(), 2150);
 }
 
 function launchWatchEffect(link, event, { showTransition = false } = {}) {
@@ -271,8 +271,13 @@ document.addEventListener('click', (event) => {
   const link = event.target.closest('a[data-watch-transition="true"]');
   if (!link) return;
   link.closest('.streamer-picker')?.removeAttribute('open');
-  const plainPrimaryClick = event.button === 0 && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey;
-  const delayedExternalLink = plainPrimaryClick && link.matches('a[href]');
+  // A click event is already the browser's primary activation signal. Some
+  // embedded browsers omit `button` for synthetic or accessibility-driven
+  // activations, so gating on `event.button === 0` can skip the travel overlay
+  // and let the target open immediately. Modifier keys still preserve the
+  // browser's explicit open-in-new-tab/window gestures.
+  const plainActivation = !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey;
+  const delayedExternalLink = plainActivation && link.matches('a[href]');
   if (!delayedExternalLink) {
     launchWatchEffect(link, event);
     return;
@@ -285,7 +290,7 @@ document.addEventListener('click', (event) => {
     const opened = window.open(destination, '_blank');
     if (opened) opened.opener = null;
     else window.location.assign(destination);
-  }, 1220);
+  }, 1750);
 });
 
 window.addEventListener('hashchange', revealAnchor);
