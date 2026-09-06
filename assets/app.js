@@ -151,6 +151,29 @@
     const emptyEl = document.getElementById("empty");
     const recentEl = document.getElementById("recent-strip");
     const recentSec = document.getElementById("recent-section");
+    const storySec = document.getElementById("storytimeline-section");
+    const storyList = document.getElementById("storytimeline-list");
+
+    if (storySec && storyList) {
+      fetchJson("storytimelines.json")
+        .then((payload) => {
+          const rows = Array.isArray(payload.units)
+            ? payload.units.filter((row) => row.publication_status === "publishable")
+            : [];
+          if (!rows.length) return;
+          storyList.innerHTML = rows.map((row) => `
+<li class="storytimeline-card">
+  <a href="${escapeHtml(String(row.route || "").replace(/^\//, ""))}">
+    <span class="storytimeline-card__work">${escapeHtml(row.work_title)}</span>
+    <strong>${escapeHtml(row.unit_label)}</strong>
+    <p>${escapeHtml(row.intro)}</p>
+    <span class="storytimeline-card__meta">장면 ${Number(row.event_count || 0).toLocaleString()}개${row.stream_count ? ` · 같이보기 ${Number(row.stream_count).toLocaleString()}명` : ""}</span>
+  </a>
+</li>`).join("");
+          storySec.hidden = false;
+        })
+        .catch(() => { storySec.hidden = true; });
+    }
 
     fetchJson("index.json")
       .then((idx) => {

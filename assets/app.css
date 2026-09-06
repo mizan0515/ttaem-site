@@ -186,6 +186,37 @@ code {
 .streamer-card .meta-dot { margin: 0 6px; color: var(--faint); }
 .streamer-card .meta-recent { color: var(--accent); }
 
+/* ── Elio story timeline discovery ── */
+.storytimeline-section { margin-bottom: 30px; }
+.storytimeline-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+.storytimeline-card {
+  border: 1px solid rgba(122,162,247,0.35);
+  border-radius: var(--r-lg);
+  background: linear-gradient(145deg, rgba(122,162,247,0.10), rgba(36,40,59,0.96));
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.storytimeline-card:hover {
+  border-color: var(--tc);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.storytimeline-card a { display: block; padding: 20px; color: inherit; text-decoration: none; }
+.storytimeline-card a:hover { text-decoration: none; }
+.storytimeline-card__work {
+  display: block; margin-bottom: 7px; color: var(--tc-soft); font-size: 12px; font-weight: 700;
+}
+.storytimeline-card strong { display: block; color: var(--text-strong); font-size: 18px; line-height: 1.35; }
+.storytimeline-card p { margin-top: 9px; color: var(--muted); font-size: 13px; line-height: 1.65; }
+.storytimeline-card__meta {
+  display: block; margin-top: 14px; color: var(--accent); font-family: var(--font-mono); font-size: 11px;
+}
+
 /* ── vod list ── */
 .vod-list {
   list-style: none; display: flex; flex-direction: column; gap: 10px;
@@ -310,15 +341,6 @@ mark {
   .streamer-grid { grid-template-columns: 1fr; gap: 10px; }
   .streamer-card { padding: 14px 16px; }
   .vod-row { padding: 12px 14px; }
-}
-
-/* ── 접근성: prefers-reduced-motion ── */
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.001ms !important;
-    animation-delay: 0ms !important;
-    transition-duration: 0.001ms !important;
-  }
 }
 
 /* ─────────────────────────────────────────────────────────────
