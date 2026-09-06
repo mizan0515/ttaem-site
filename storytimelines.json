@@ -1,0 +1,50 @@
+{
+  "schema_version": "elio.public-index.v1",
+  "elio_version": "1.0",
+  "product_contract_version": "elio.product-contract.v1",
+  "generated_at": "2026-09-06T21:04:35+00:00",
+  "renderer_version": "v2",
+  "works": [
+    {
+      "work_id": "wutheringwaves",
+      "work_title": "명조: 워더링 웨이브",
+      "route": "/storytimeline/wutheringwaves/",
+      "unit_count": 1,
+      "event_count": 8,
+      "image_count": 8,
+      "stream_count": 1,
+      "moment_count": 1,
+      "publishable_count": 1
+    }
+  ],
+  "units": [
+    {
+      "schema_version": "elio.public-unit.v1",
+      "elio_version": "1.0",
+      "work_id": "wutheringwaves",
+      "unit_id": "ch1-act8",
+      "work_title": "명조: 워더링 웨이브",
+      "unit_label": "제1장 제8막 「해안의 끝을 찾아서」",
+      "title": "명조: 워더링 웨이브 제1장 제8막 이야기 타임라인",
+      "intro": "오르디가 깨운 과거에서 시작해 검은 해안과 테티스의 모순을 마주하고, 파수인의 희생을 거부한 방랑자가 모두를 위한 새로운 해답을 선택하는 이야기다.",
+      "tags": [
+        "오르디",
+        "검은해안",
+        "파수인",
+        "테티스",
+        "멸망의별"
+      ],
+      "route": "/storytimeline/wutheringwaves/ch1-act8/",
+      "publication_status": "publishable",
+      "event_count": 8,
+      "image_count": 8,
+      "stream_count": 1,
+      "connected_event_count": 8,
+      "moment_count": 1,
+      "source_retrieved_at": "2026-09-05T10:28:09.696828+00:00",
+      "source_hash": "3f7dd5784435cd33e71d6dd044a77faf4879ed05dcd7bd976454fa4541617e04",
+      "html_hash": "1fe46d6bc67ae96d9a8126e3345c73949c758c6926ddad0bc5dad86770ecc1c4",
+      "renderer_version": "v2"
+    }
+  ]
+}
