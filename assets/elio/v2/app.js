@@ -6,9 +6,21 @@ const sceneLinks = Array.from(document.querySelectorAll('.scene-nav__link'));
 const currentSceneLabel = document.getElementById('scene-current-label');
 const spoilerToggle = document.getElementById('spoiler-toggle');
 const spoilerToggleLabel = spoilerToggle?.querySelector('.spoiler-toggle__label');
+const sceneNav = document.querySelector('.scene-nav');
+const sceneDock = document.getElementById('scene-dock');
+const sceneDockCurrent = document.getElementById('scene-dock-current');
+const sceneDockCount = document.getElementById('scene-dock-count');
+const sceneDockLabel = document.getElementById('scene-dock-label');
+const sceneDockPrevious = document.getElementById('scene-dock-previous');
+const sceneDockNext = document.getElementById('scene-dock-next');
+const watchEnding = document.querySelector('.ending');
 const watchFxLayer = document.getElementById('watch-fx-layer');
 const watchLiveStatus = document.getElementById('watch-live-status');
 let watchTransitionTimer;
+let activeSceneLink = sceneLinks.find((link) => link.getAttribute('aria-current') === 'step');
+let activeScene = activeSceneLink
+  ? document.getElementById(activeSceneLink.dataset.scene || '')
+  : undefined;
 
 document.documentElement.classList.add('motion-ready');
 requestAnimationFrame(() => document.documentElement.classList.add('motion-loaded'));
@@ -16,12 +28,43 @@ requestAnimationFrame(() => document.documentElement.classList.add('motion-loade
 function setCurrentScene(sceneId) {
   const active = sceneLinks.find((link) => link.dataset.scene === sceneId);
   if (!active) return;
-  sceneLinks.forEach((link) => {
-    if (link === active) link.setAttribute('aria-current', 'step');
-    else link.removeAttribute('aria-current');
-  });
-  scenes.forEach((scene) => scene.classList.toggle('is-current', scene.id === sceneId));
+  const nextScene = document.getElementById(sceneId);
+  if (activeSceneLink !== active) {
+    activeSceneLink?.removeAttribute('aria-current');
+    activeScene?.classList.remove('is-current');
+    active.setAttribute('aria-current', 'step');
+    nextScene?.classList.add('is-current');
+    activeSceneLink = active;
+    activeScene = nextScene;
+  } else if (nextScene && !nextScene.classList.contains('is-current')) {
+    nextScene.classList.add('is-current');
+    activeScene = nextScene;
+  }
   if (currentSceneLabel) currentSceneLabel.textContent = active.dataset.title || '';
+  const sceneIndex = sceneLinks.indexOf(active);
+  if (sceneDockCount) {
+    sceneDockCount.textContent = `${String(sceneIndex + 1).padStart(2, '0')} / ${String(sceneLinks.length).padStart(2, '0')}`;
+  }
+  if (sceneDockLabel) sceneDockLabel.textContent = active.dataset.title || '';
+  if (sceneDockCurrent) sceneDockCurrent.href = `#${sceneId}`;
+  sceneDockPrevious?.toggleAttribute('disabled', sceneIndex <= 0);
+  sceneDockNext?.toggleAttribute('disabled', sceneIndex >= sceneLinks.length - 1);
+  if (sceneDock) {
+    const accent = getComputedStyle(active).getPropertyValue('--nav-accent').trim();
+    if (accent) sceneDock.style.setProperty('--dock-accent', accent);
+  }
+}
+
+function moveToScene(offset) {
+  if (!activeSceneLink) return;
+  const currentIndex = sceneLinks.indexOf(activeSceneLink);
+  const targetLink = sceneLinks[currentIndex + offset];
+  if (!targetLink) return;
+  const target = document.getElementById(targetLink.dataset.scene || '');
+  setCurrentScene(targetLink.dataset.scene || '');
+  history.replaceState(null, '', `#${targetLink.dataset.scene}`);
+  markSceneArrival(target);
+  target?.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
 function revealAnchor() {
@@ -80,13 +123,40 @@ sceneLinks.forEach((link) => {
   });
 });
 
+sceneDockPrevious?.addEventListener('click', () => moveToScene(-1));
+sceneDockNext?.addEventListener('click', () => moveToScene(1));
+sceneDockCurrent?.addEventListener('click', () => markSceneArrival(activeScene));
+if (activeSceneLink) setCurrentScene(activeSceneLink.dataset.scene || '');
+
 if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver((entries) => {
+  const sceneObserver = new IntersectionObserver((entries) => {
     const visible = entries.filter((entry) => entry.isIntersecting)
       .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
     if (visible) setCurrentScene(visible.target.id);
   }, { rootMargin: '-28% 0px -58% 0px', threshold: [0, 0.25, 0.5] });
-  scenes.forEach((scene) => observer.observe(scene));
+  scenes.forEach((scene) => sceneObserver.observe(scene));
+
+  if (sceneDock && sceneNav && timeline) {
+    let sceneNavVisible = true;
+    let timelineVisible = false;
+    let watchEndingVisible = false;
+    const updateDockVisibility = () => {
+      const visible = !sceneNavVisible && timelineVisible && !watchEndingVisible;
+      sceneDock.hidden = !visible;
+      sceneDock.setAttribute('aria-hidden', String(!visible));
+    };
+    const dockVisibilityObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.target === sceneNav) sceneNavVisible = entry.isIntersecting;
+        if (entry.target === timeline) timelineVisible = entry.isIntersecting;
+        if (entry.target === watchEnding) watchEndingVisible = entry.isIntersecting;
+      });
+      updateDockVisibility();
+    }, { threshold: 0 });
+    dockVisibilityObserver.observe(sceneNav);
+    dockVisibilityObserver.observe(timeline);
+    if (watchEnding) dockVisibilityObserver.observe(watchEnding);
+  }
 
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -105,43 +175,34 @@ if ('IntersectionObserver' in window) {
     .forEach((item) => item.classList.add('is-visible'));
 }
 
-const pageProgress = document.createElement('span');
-pageProgress.className = 'page-progress';
-pageProgress.setAttribute('aria-hidden', 'true');
-document.body.appendChild(pageProgress);
-let progressFrame;
-function updatePageProgress() {
-  const scrollRange = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
-  const pageRatio = Math.min(Math.max(window.scrollY / scrollRange, 0), 1);
-  pageProgress.style.setProperty('--page-progress', pageRatio);
-  if (timeline) {
-    const rect = timeline.getBoundingClientRect();
-    const start = window.innerHeight * 0.48;
-    const storyRange = Math.max(rect.height - window.innerHeight * 0.28, 1);
-    const storyRatio = Math.min(Math.max((start - rect.top) / storyRange, 0), 1);
-    timeline.style.setProperty('--story-progress', storyRatio);
-  }
-  progressFrame = undefined;
-}
-function queueProgressUpdate() {
-  if (!progressFrame) progressFrame = requestAnimationFrame(updatePageProgress);
-}
-window.addEventListener('scroll', queueProgressUpdate, { passive: true });
-window.addEventListener('resize', queueProgressUpdate);
-updatePageProgress();
-
 if (window.matchMedia('(pointer:fine)').matches) {
   document.querySelectorAll('.visual').forEach((visual) => {
-    visual.addEventListener('pointermove', (event) => {
-      const rect = visual.getBoundingClientRect();
-      const x = (event.clientX - rect.left) / rect.width - 0.5;
-      const y = (event.clientY - rect.top) / rect.height - 0.5;
+    let pointerFrame;
+    let pointerBounds;
+    let pointerX = 0;
+    let pointerY = 0;
+    const applyPointerTilt = () => {
+      if (!pointerBounds) return;
+      const x = (pointerX - pointerBounds.left) / pointerBounds.width - 0.5;
+      const y = (pointerY - pointerBounds.top) / pointerBounds.height - 0.5;
       visual.style.setProperty('--tilt-x', `${(-y * 5).toFixed(2)}deg`);
       visual.style.setProperty('--tilt-y', `${(x * 5).toFixed(2)}deg`);
       visual.style.setProperty('--glow-x', `${((x + 0.5) * 100).toFixed(1)}%`);
       visual.style.setProperty('--glow-y', `${((y + 0.5) * 100).toFixed(1)}%`);
+      pointerFrame = undefined;
+    };
+    visual.addEventListener('pointerenter', () => {
+      pointerBounds = visual.getBoundingClientRect();
+    });
+    visual.addEventListener('pointermove', (event) => {
+      pointerX = event.clientX;
+      pointerY = event.clientY;
+      if (!pointerFrame) pointerFrame = requestAnimationFrame(applyPointerTilt);
     });
     visual.addEventListener('pointerleave', () => {
+      if (pointerFrame) cancelAnimationFrame(pointerFrame);
+      pointerFrame = undefined;
+      pointerBounds = undefined;
       visual.style.removeProperty('--tilt-x');
       visual.style.removeProperty('--tilt-y');
       visual.style.removeProperty('--glow-x');
