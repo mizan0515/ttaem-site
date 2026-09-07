@@ -1,7 +1,9 @@
 const timeline = document.querySelector('.timeline');
+const page = document.querySelector('.page');
 const scenes = Array.from(document.querySelectorAll('.timeline .item'));
 const moments = Array.from(document.querySelectorAll('.timeline .watch-moment'));
-const spoilerItems = [...scenes, ...moments];
+const guides = Array.from(document.querySelectorAll('.reader-guide'));
+const spoilerItems = [...scenes, ...moments, ...guides];
 const sceneLinks = Array.from(document.querySelectorAll('.scene-nav__link'));
 const currentSceneLabel = document.getElementById('scene-current-label');
 const spoilerToggle = document.getElementById('spoiler-toggle');
@@ -21,9 +23,51 @@ let activeSceneLink = sceneLinks.find((link) => link.getAttribute('aria-current'
 let activeScene = activeSceneLink
   ? document.getElementById(activeSceneLink.dataset.scene || '')
   : undefined;
+let scenePositions = [];
+let sceneScrollFrame;
+let sceneGeometryFrame;
+let sceneNavigationUnlockTimer;
+let sceneNavigationLockUntil = 0;
+const SCENE_MARKER_RATIO = 0.42;
+const SCENE_SWITCH_HYSTERESIS = 36;
 
 document.documentElement.classList.add('motion-ready');
 requestAnimationFrame(() => document.documentElement.classList.add('motion-loaded'));
+
+function sceneNumber(link) {
+  return String(sceneLinks.indexOf(link) + 1).padStart(2, '0');
+}
+
+function sceneIsCovered(scene) {
+  return Boolean(timeline?.classList.contains('spoilers-on') && scene && !scene.classList.contains('spoiler-revealed'));
+}
+
+function sceneDisplayTitle(link, scene) {
+  return sceneIsCovered(scene) ? `장면 ${sceneNumber(link)} · 숨겨진 이야기` : (link?.dataset.title || '');
+}
+
+function updateSceneLinkLabel(link, scene) {
+  if (!link) return;
+  const number = sceneNumber(link);
+  const label = sceneIsCovered(scene)
+    ? `장면 ${number}, 내용 보기`
+    : `장면 ${number}, ${link.dataset.title || ''}`;
+  link.setAttribute('aria-label', label);
+}
+
+function updateActiveScenePresentation() {
+  if (!activeSceneLink) return;
+  const title = sceneDisplayTitle(activeSceneLink, activeScene);
+  if (currentSceneLabel) currentSceneLabel.textContent = title;
+  if (sceneDockLabel) sceneDockLabel.textContent = title;
+  updateSceneLinkLabel(activeSceneLink, activeScene);
+}
+
+function lockSceneNavigation(duration = 1050) {
+  sceneNavigationLockUntil = performance.now() + duration;
+  window.clearTimeout(sceneNavigationUnlockTimer);
+  sceneNavigationUnlockTimer = window.setTimeout(() => scheduleSceneSync(), duration + 40);
+}
 
 function setCurrentScene(sceneId) {
   const active = sceneLinks.find((link) => link.dataset.scene === sceneId);
@@ -40,12 +84,11 @@ function setCurrentScene(sceneId) {
     nextScene.classList.add('is-current');
     activeScene = nextScene;
   }
-  if (currentSceneLabel) currentSceneLabel.textContent = active.dataset.title || '';
   const sceneIndex = sceneLinks.indexOf(active);
   if (sceneDockCount) {
     sceneDockCount.textContent = `${String(sceneIndex + 1).padStart(2, '0')} / ${String(sceneLinks.length).padStart(2, '0')}`;
   }
-  if (sceneDockLabel) sceneDockLabel.textContent = active.dataset.title || '';
+  updateActiveScenePresentation();
   if (sceneDockCurrent) sceneDockCurrent.href = `#${sceneId}`;
   sceneDockPrevious?.toggleAttribute('disabled', sceneIndex <= 0);
   sceneDockNext?.toggleAttribute('disabled', sceneIndex >= sceneLinks.length - 1);
@@ -61,6 +104,7 @@ function moveToScene(offset) {
   const targetLink = sceneLinks[currentIndex + offset];
   if (!targetLink) return;
   const target = document.getElementById(targetLink.dataset.scene || '');
+  lockSceneNavigation();
   setCurrentScene(targetLink.dataset.scene || '');
   history.replaceState(null, '', `#${targetLink.dataset.scene}`);
   markSceneArrival(target);
@@ -72,6 +116,7 @@ function revealAnchor() {
   try { fragment = decodeURIComponent(location.hash.slice(1)); } catch (_) { return; }
   const target = document.getElementById(fragment);
   if (target?.classList.contains('item') || target?.classList.contains('watch-moment')) {
+    lockSceneNavigation(650);
     if (target.classList.contains('item')) setCurrentScene(fragment);
     requestAnimationFrame(() => target.scrollIntoView());
   }
@@ -86,13 +131,18 @@ function markSceneArrival(item) {
 
 function setItemCovered(item, covered) {
   const cover = item.querySelector('.spoiler-cover');
-  item.querySelectorAll('.copy, .visual, .watch-moment__card').forEach((content) => {
+  item.querySelectorAll('.copy, .visual, .watch-moment__card, .reader-guide__content').forEach((content) => {
     content.toggleAttribute('inert', covered);
     if (covered) content.setAttribute('aria-hidden', 'true');
     else content.removeAttribute('aria-hidden');
   });
   if (cover) cover.hidden = !covered;
   item.classList.toggle('spoiler-revealed', !covered);
+  if (item.classList.contains('item')) {
+    const link = sceneLinks.find((sceneLink) => sceneLink.dataset.scene === item.id);
+    updateSceneLinkLabel(link, item);
+  }
+  if (item === activeScene) updateActiveScenePresentation();
   if (!covered) {
     item.classList.remove('is-uncovering');
     requestAnimationFrame(() => item.classList.add('is-uncovering'));
@@ -101,10 +151,12 @@ function setItemCovered(item, covered) {
 }
 
 function setSpoilerMode(enabled) {
+  page?.classList.toggle('spoilers-on', enabled);
   timeline?.classList.toggle('spoilers-on', enabled);
   spoilerToggle?.setAttribute('aria-pressed', String(enabled));
   if (spoilerToggleLabel) spoilerToggleLabel.textContent = enabled ? '스포일러 모두 보기' : '스포일러 가리기';
   spoilerItems.forEach((item) => setItemCovered(item, enabled));
+  updateActiveScenePresentation();
 }
 
 spoilerToggle?.addEventListener('click', () => {
@@ -118,6 +170,7 @@ spoilerItems.forEach((item) => {
 sceneLinks.forEach((link) => {
   link.addEventListener('click', () => {
     const target = document.getElementById(link.dataset.scene || '');
+    lockSceneNavigation();
     setCurrentScene(link.dataset.scene || '');
     markSceneArrival(target);
   });
@@ -125,17 +178,70 @@ sceneLinks.forEach((link) => {
 
 sceneDockPrevious?.addEventListener('click', () => moveToScene(-1));
 sceneDockNext?.addEventListener('click', () => moveToScene(1));
-sceneDockCurrent?.addEventListener('click', () => markSceneArrival(activeScene));
+sceneDockCurrent?.addEventListener('click', () => {
+  lockSceneNavigation();
+  markSceneArrival(activeScene);
+});
 if (activeSceneLink) setCurrentScene(activeSceneLink.dataset.scene || '');
 
-if ('IntersectionObserver' in window) {
-  const sceneObserver = new IntersectionObserver((entries) => {
-    const visible = entries.filter((entry) => entry.isIntersecting)
-      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-    if (visible) setCurrentScene(visible.target.id);
-  }, { rootMargin: '-28% 0px -58% 0px', threshold: [0, 0.25, 0.5] });
-  scenes.forEach((scene) => sceneObserver.observe(scene));
+function refreshSceneGeometry() {
+  sceneGeometryFrame = undefined;
+  scenePositions = scenes.map((scene) => {
+    const bounds = scene.getBoundingClientRect();
+    return bounds.top + window.scrollY + Math.min(bounds.height * 0.18, 96);
+  });
+  syncSceneFromScroll(true);
+}
 
+function scheduleSceneGeometryRefresh() {
+  if (sceneGeometryFrame) return;
+  sceneGeometryFrame = requestAnimationFrame(refreshSceneGeometry);
+}
+
+function sceneIndexAt(marker) {
+  let low = 0;
+  let high = scenePositions.length - 1;
+  let result = 0;
+  while (low <= high) {
+    const middle = Math.floor((low + high) / 2);
+    if (scenePositions[middle] <= marker) {
+      result = middle;
+      low = middle + 1;
+    } else {
+      high = middle - 1;
+    }
+  }
+  return result;
+}
+
+function syncSceneFromScroll(force = false) {
+  sceneScrollFrame = undefined;
+  if (!scenePositions.length || performance.now() < sceneNavigationLockUntil) return;
+  const marker = window.scrollY + window.innerHeight * SCENE_MARKER_RATIO;
+  const candidateIndex = sceneIndexAt(marker);
+  const currentIndex = Math.max(0, scenes.indexOf(activeScene));
+  if (!force && candidateIndex > currentIndex
+      && marker < scenePositions[candidateIndex] + SCENE_SWITCH_HYSTERESIS) return;
+  if (!force && candidateIndex < currentIndex
+      && marker > scenePositions[currentIndex] - SCENE_SWITCH_HYSTERESIS) return;
+  if (candidateIndex !== currentIndex) setCurrentScene(scenes[candidateIndex]?.id || '');
+}
+
+function scheduleSceneSync() {
+  if (sceneScrollFrame) return;
+  sceneScrollFrame = requestAnimationFrame(() => syncSceneFromScroll(false));
+}
+
+window.addEventListener('scroll', scheduleSceneSync, { passive: true });
+window.addEventListener('resize', scheduleSceneGeometryRefresh, { passive: true });
+window.addEventListener('load', scheduleSceneGeometryRefresh, { once: true });
+if ('ResizeObserver' in window && timeline) {
+  const sceneGeometryObserver = new ResizeObserver(scheduleSceneGeometryRefresh);
+  sceneGeometryObserver.observe(timeline);
+}
+scheduleSceneGeometryRefresh();
+
+if ('IntersectionObserver' in window) {
   if (sceneDock && sceneNav && timeline) {
     let sceneNavVisible = true;
     let timelineVisible = false;
