@@ -211,7 +211,6 @@ function initViewerEditorTools() {
     ? data.viewer_clip_source
     : null;
   const overviewOnlyLaneKinds = new Set(['audio_waveform', 'chat_volume']);
-  const optionalSceneLaneKinds = new Set(['live_context', 'visual_scene']);
   const eventCountsByKind = events.reduce((map, event) => {
     const kind = String(event && (event.kind || event.lane) || '');
     if (kind) map.set(kind, (map.get(kind) || 0) + 1);
@@ -221,7 +220,7 @@ function initViewerEditorTools() {
     return eventCountsByKind.get(String(kind || '')) || 0;
   }
   function shouldHideSceneLane(key) {
-    if (optionalSceneLaneKinds.has(key) && laneActualEventCount(key) === 0) return true;
+    if (!overviewOnlyLaneKinds.has(key) && laneActualEventCount(key) === 0) return true;
     return key === 'comment_replay' && laneActualEventCount('chapter') > 0;
   }
   function isRenderableSceneLane(lane) {
@@ -230,9 +229,7 @@ function initViewerEditorTools() {
     if (shouldHideSceneLane(key)) return false;
     const role = String(lane && lane.display_role || '').toLowerCase();
     if (role === 'overview' || overviewOnlyLaneKinds.has(key)) return false;
-    // Required lanes keep their empty state; optional producers do not create
-    // placeholder scene rows in the normal editor workspace.
-    return true;
+    return laneActualEventCount(key) > 0;
   }
   const lanes = Array.isArray(data.lanes) && data.lanes.length
     ? data.lanes.filter(isRenderableSceneLane)
@@ -932,7 +929,7 @@ function initViewerEditorTools() {
   }
   function renderWaveformRow() {
     if (!waveformSamples.length) {
-      return `<div class="viewer-editor-waveform-row" data-waveform-row="true"><div class="viewer-editor-waveform-label"><strong>소리 파형</strong><span>이 신호 없음</span></div><div class="viewer-editor-waveform"><div class="viewer-editor-empty">소리 이 신호 없음</div></div></div>`;
+      return '';
     }
     const bars = waveformSamples.map((row) => {
       const start = Math.max(0, Number(row.start_sec || 0));
@@ -1349,7 +1346,7 @@ function initViewerEditorTools() {
   function renderHeatmapOverviewRow() {
     const clusters = renderableEditPointClusters();
     if (!clusters.length) {
-      return `<div class="viewer-editor-density-row" data-real-heatmap-row="true"><div class="viewer-editor-density-label"><strong>먼저 볼 구간</strong><span>겹친 신호 없음</span></div><div class="viewer-editor-density"><div class="viewer-editor-empty">표시할 열 구간이 없습니다.</div></div></div>`;
+      return '';
     }
     const scored = clusters.map((cluster, index) => ({ cluster, index, score: clusterHeatScore(cluster), bounds: clusterTimeBounds(cluster) }));
     const maxScore = Math.max(1, ...scored.map((row) => row.score));
@@ -1423,7 +1420,7 @@ function initViewerEditorTools() {
         const key = String(lane && lane.key || '');
         if (!filter && defaultHiddenLaneKinds.has(key)) return false;
         if (filter && defaultHiddenLaneKinds.has(key) && key !== filter) return false;
-        return !optionalSceneLaneKinds.has(key) || eventLaneKeys.has(key);
+        return eventLaneKeys.has(key);
       })
       .map((lane) => {
         const key = String(lane && lane.key || '');
@@ -1552,6 +1549,7 @@ function initViewerEditorTools() {
       const groupedEvents = group.events
         ? group.events
         : outlineProjection.filter((event) => String(event.level || '') === group.level);
+      if (!groupedEvents.length) return '';
       const markerEvents = groupedEvents.flatMap((event, highlightIndex) => {
         const spans = group.level === 'Highlight' && Array.isArray(event.source_spans)
           ? event.source_spans.filter((span) => Number(span && span.end_sec) >= Number(span && span.start_sec))
@@ -1609,10 +1607,10 @@ function initViewerEditorTools() {
       <div class="viewer-editor-scale-row"><div class="viewer-editor-scale-label"><strong>전체 흐름</strong><span>${fmt(duration)}</span></div><div class="viewer-editor-scale">${renderScale()}</div></div>
       ${renderHeatmapOverviewRow()}
       ${renderWaveformRow()}
-      <div class="viewer-editor-density-row"><div class="viewer-editor-density-label"><strong>전체 채팅량</strong><span>${densityScaleLabel}</span></div><div class="viewer-editor-density">${densityBars || '<div class="viewer-editor-empty">이 신호 없음</div>'}</div></div>
+      ${buckets.length ? `<div class="viewer-editor-density-row"><div class="viewer-editor-density-label"><strong>전체 채팅량</strong><span>${densityScaleLabel}</span></div><div class="viewer-editor-density">${densityBars}</div></div>` : ''}
       ${outlineRows}
       ${summaryLaneRows}
-      ${laneRows || '<div class="viewer-editor-empty">표시할 장면 데이터가 없습니다.</div>'}
+      ${laneRows}
     </div>`;
     if (densityValue) densityValue.textContent = markerDensityLabel();
     if (countEl) countEl.textContent = `표시 중인 장면 후보 ${visibleSceneEvents.length}/${visibleEvents.length}개 · 메모용 컷 후보 ${Number(preview.clip_count || 0)}개`;
