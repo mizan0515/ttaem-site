@@ -11480,9 +11480,9 @@
   },
   "report_artifact_family": {
     "schema_version": "report_artifact_family.v1",
-    "generation_id": "20260908T083317651495Z-b4556f2ff6c1",
-    "generation_sequence": 15,
-    "parent_generation_id": "20260908T082630926447Z-40d7a014142a",
+    "generation_id": "20260909T140955803266Z-153fe989a7e9",
+    "generation_sequence": 16,
+    "parent_generation_id": "20260908T083317651495Z-b4556f2ff6c1",
     "authority_revision_id": "42b3f56f7d1f5bc1e091fe98caf37ba4aa1ef9c29667f6e11b779486736766ff",
     "artifacts": {
       "markdown": {
@@ -11500,6 +11500,6 @@
     "viewer_payload_sha256": "9354b8ee9f54cee5e4f5d07f1dd660fc908aa6c7cc0c0caaec4e523c51b65a04",
     "editorial_packet_sha256": "7895039d01a1bf7d8e78cae22ea47874528f7c7ae76d3816c32fdc1969628b44",
     "viewer_asset_version": "highlight-duration-bars-v8",
-    "metadata_payload_sha256": "7eecb7ed6838f5adf06250a449db827c71a807ee1d1b6ab0e9ef3de401e76f3a"
+    "metadata_payload_sha256": "18d8310363846179ce8444663bea840c21e9b72ce0bf63f611bb2a3e8a2304fc"
   }
 }

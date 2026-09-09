@@ -30,6 +30,66 @@
     display: inline-flex; align-items: center; min-height: 16px;
     color: var(--muted); font-size: 12px; line-height: 1.45;
   }
+  .editor-companion-guide {
+    position: relative; display: inline-flex; align-items: center; gap: 10px;
+    max-width: 620px; margin-left: 4px; padding: 10px 13px;
+    border: 2px solid #7aa2f7; border-radius: 9px;
+    background: #202a44; color: #e7ecff; text-align: left;
+    box-shadow: 0 8px 22px rgba(31,42,68,0.42), 0 0 0 3px rgba(122,162,247,0.10);
+    font-size: 14px; line-height: 1.4;
+  }
+  .editor-companion-guide::before {
+    content: ''; position: absolute; left: -7px; top: 50%; width: 12px; height: 12px;
+    border-left: 2px solid #7aa2f7; border-bottom: 2px solid #7aa2f7;
+    background: #202a44; transform: translateY(-50%) rotate(45deg);
+  }
+  .editor-companion-entry-link {
+    flex: 0 0 auto; min-height: 44px; padding: 0 16px;
+    border: 1px solid #80ffd0 !important; background: #00e89b !important;
+    color: #032b1f !important; box-shadow: 0 7px 18px rgba(0,232,155,0.24);
+    font-size: 14px; font-weight: 850;
+  }
+  .editor-companion-entry-link:hover,
+  .editor-companion-entry-link:focus-visible {
+    border-color: #b5ffe2 !important; background: #32f3af !important; color: #022219 !important;
+    outline: 3px solid rgba(0,232,155,0.24); outline-offset: 2px;
+  }
+  .editor-companion-tooltip-label {
+    position: relative; z-index: 1; flex: 0 0 auto; padding: 3px 7px;
+    border-radius: 999px; background: rgba(122,162,247,0.18);
+    color: #c9d8ff; font-size: 12px; font-weight: 850; white-space: nowrap;
+  }
+  .editor-companion-tooltip-flow { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 8px; }
+  .editor-companion-tooltip-flow strong { color: #ffffff; font-weight: 800; }
+  .editor-companion-tooltip-flow .editor-companion-keyword {
+    color: #ff8fa6; font-weight: 850;
+  }
+  .editor-companion-tooltip-arrow { color: #9bb8ff; font-weight: 900; }
+  .editor-companion-secondary-actions {
+    display: flex; flex: 0 0 100%; align-items: center; margin-top: -2px;
+  }
+  body.editor-companion-mode .report-editor-entry .editor-companion-scene-link {
+    width: auto; min-width: 0; min-height: 30px; padding: 3px 2px !important;
+    border-color: transparent !important; background: transparent !important;
+    color: var(--muted, rgba(226,232,240,0.68)) !important; font-size: 12px;
+  }
+  body.editor-companion-mode .report-editor-entry .editor-companion-scene-link:hover,
+  body.editor-companion-mode .report-editor-entry .editor-companion-scene-link:focus-visible {
+    color: var(--text-strong, #f8fafc) !important; background: transparent !important;
+    border-color: transparent !important; text-decoration: underline !important;
+  }
+  .editor-companion-scene-label { white-space: nowrap; }
+  .editor-companion-workspace-guide {
+    max-width: none; margin: 0 0 20px; padding: 16px 20px 18px;
+    display: flex; align-items: center; justify-content: center; gap: 12px;
+    border: 0; border-top: 1px solid rgba(122,162,247,0.20);
+    border-bottom: 1px solid rgba(122,162,247,0.20); border-radius: 0;
+    background: linear-gradient(90deg, transparent, rgba(122,162,247,0.07) 18%, rgba(122,162,247,0.07) 82%, transparent);
+    box-shadow: none;
+  }
+  .editor-companion-workspace-link {
+    flex: 0 0 auto; text-decoration: none;
+  }
   .report-editor-entry[data-editor-entry-state="installed"] .editor-entry-status { color: var(--accent); }
   .report-editor-entry[data-editor-entry-state="missing"] .editor-entry-status,
   .report-editor-entry[data-editor-entry-state="fallback"] .editor-entry-status { color: #a9b1d6; }
@@ -724,6 +784,14 @@
   .viewer-editor-status { color: var(--muted); font-size: 13px; min-height: 18px; }
   .viewer-editor-empty { color: var(--muted); font-size: 14px; line-height: 1.65; padding: 10px 0; }
   @media (max-width: 900px) {
+    body.editor-companion-mode .report-editor-entry { align-items: stretch; }
+    .editor-companion-guide { margin: 8px 0 0; flex-direction: column; align-items: flex-start; }
+    .editor-companion-guide::before {
+      left: 20px; top: -7px; transform: rotate(135deg);
+    }
+    .editor-companion-tooltip-flow { align-items: flex-start; flex-wrap: wrap; }
+    .editor-companion-workspace-guide { align-items: stretch; flex-direction: column; padding: 14px 12px 18px; }
+    .editor-companion-workspace-link { justify-content: center; width: 100%; }
     .editor-entry { grid-template-columns: 1fr; align-items: start; }
     .editor-entry-actions { justify-content: flex-start; }
     .editor-split-shell { grid-template-columns: 1fr; grid-template-rows: minmax(240px, 42vh) 1fr; }

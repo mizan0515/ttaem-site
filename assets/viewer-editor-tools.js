@@ -1,3 +1,20 @@
+const CHZZK_COMPANION_WINDOW_NAME = 'ttaem-chzzk-companion';
+
+function isChzzkCompanionEditorMode() {
+  return new URLSearchParams(location.search).get('editor') === 'companion';
+}
+
+function normalizeChzzkCompanionUrl(value) {
+  try {
+    const url = new URL(String(value || ''), location.href);
+    if (url.protocol !== 'https:' || url.hostname !== 'chzzk.naver.com') return '';
+    if (!/^\/video\/\d+\/?$/.test(url.pathname)) return '';
+    return url.href;
+  } catch (_err) {
+    return '';
+  }
+}
+
 function initEditorSplitMode() {
   const entry = document.querySelector('[data-editor-entry]');
   const workspace = document.getElementById('youtube-editor-tools');
@@ -85,6 +102,101 @@ function initEditorSplitMode() {
     history.replaceState(null, '', editorModeUrlOn());
   }
 
+  function installCompanionEditorMode() {
+    const safeChzzkUrl = normalizeChzzkCompanionUrl(chzzkUrl);
+    if (!safeChzzkUrl) return;
+    document.body.classList.add('editor-companion-mode');
+    const vodLink = document.createElement('a');
+    vodLink.className = primaryBtn.className;
+    vodLink.setAttribute('data-editor-entry-primary', '');
+    vodLink.href = safeChzzkUrl;
+    vodLink.target = CHZZK_COMPANION_WINDOW_NAME;
+    vodLink.classList.add('editor-companion-entry-link');
+    vodLink.textContent = 'CHZZK VOD 링크';
+    vodLink.setAttribute('aria-label', 'CHZZK VOD 링크. 우클릭 후 분할 보기에서 링크 열기');
+    primaryBtn.replaceWith(vodLink);
+
+    let guide = entry.querySelector('[data-editor-companion-guide]');
+    if (!guide) {
+      guide = document.createElement('section');
+      guide.className = 'editor-companion-guide';
+      guide.setAttribute('data-editor-companion-guide', '');
+      guide.setAttribute('role', 'tooltip');
+      guide.setAttribute('aria-label', 'Chrome 분할 보기 설정');
+      guide.innerHTML = `
+        <span class="editor-companion-tooltip-label">분할 보기</span>
+        <span class="editor-companion-tooltip-flow">
+          <span>이 링크를 <strong class="editor-companion-keyword">우클릭</strong></span>
+          <span class="editor-companion-tooltip-arrow" aria-hidden="true">→</span>
+          <span><strong class="editor-companion-keyword">분할 보기에서 링크 열기</strong> 선택</span>
+        </span>
+      `;
+      vodLink.insertAdjacentElement('afterend', guide);
+    }
+    guide.id = 'editor-companion-entry-tooltip';
+    vodLink.setAttribute('aria-describedby', guide.id);
+
+    const sceneLink = entry.querySelector('.report-editor-tool-link');
+    if (sceneLink) {
+      sceneLink.classList.add('editor-companion-scene-link');
+      if (!sceneLink.querySelector('.editor-companion-scene-label')) {
+        const sceneLabel = document.createElement('span');
+        sceneLabel.className = 'editor-companion-scene-label';
+        sceneLabel.textContent = '장면 도구로 이동';
+        sceneLink.appendChild(sceneLabel);
+      }
+      let secondaryActions = entry.querySelector('[data-editor-companion-secondary]');
+      if (!secondaryActions) {
+        secondaryActions = document.createElement('div');
+        secondaryActions.className = 'editor-companion-secondary-actions';
+        secondaryActions.setAttribute('data-editor-companion-secondary', '');
+        guide.insertAdjacentElement('afterend', secondaryActions);
+      }
+      secondaryActions.appendChild(sceneLink);
+    }
+
+    let workspaceGuide = workspace.querySelector('[data-editor-companion-workspace-guide]');
+    if (!workspaceGuide) {
+      workspaceGuide = document.createElement('section');
+      workspaceGuide.className = 'editor-companion-workspace-guide';
+      workspaceGuide.setAttribute('data-editor-companion-workspace-guide', '');
+      workspaceGuide.setAttribute('aria-label', 'Chrome 분할 보기 설정');
+      const workspaceVodLink = vodLink.cloneNode(true);
+      workspaceVodLink.classList.add('editor-companion-workspace-link');
+      workspaceGuide.appendChild(workspaceVodLink);
+      const workspaceTooltip = guide.cloneNode(true);
+      workspaceTooltip.classList.add('editor-companion-workspace-tooltip');
+      workspaceTooltip.id = 'editor-companion-workspace-tooltip';
+      workspaceVodLink.setAttribute('aria-describedby', workspaceTooltip.id);
+      workspaceGuide.appendChild(workspaceTooltip);
+      const workspaceHead = workspace.querySelector('.viewer-editor-head');
+      if (workspaceHead) workspaceHead.insertAdjacentElement('afterend', workspaceGuide);
+      else workspace.prepend(workspaceGuide);
+    }
+
+    const prepareCompanionLink = (link) => {
+      const safeUrl = normalizeChzzkCompanionUrl(link.href);
+      if (!safeUrl) return false;
+      link.href = safeUrl;
+      link.target = CHZZK_COMPANION_WINDOW_NAME;
+      // Named-target reuse and rel=noopener are mutually exclusive. This is
+      // bounded to the strictly normalized CHZZK VOD URL above.
+      link.relList.remove('noopener', 'noreferrer');
+      link.relList.add('opener');
+      return true;
+    };
+    document.querySelectorAll('a[href*="chzzk.naver.com/video/"]').forEach(prepareCompanionLink);
+    document.addEventListener('click', (event) => {
+      const link = event.target.closest?.('a[href*="chzzk.naver.com/video/"]');
+      if (link) prepareCompanionLink(link);
+    }, true);
+  }
+
+  if (isChzzkCompanionEditorMode()) {
+    installCompanionEditorMode();
+    return;
+  }
+
   let navToggleButton = null;
   function updateNavToggleVisibility() {
     if (!navToggleButton) return;
@@ -139,6 +251,10 @@ function initEditorEntryState() {
     }
   };
   const target = document.getElementById('youtube-editor-tools');
+  if (isChzzkCompanionEditorMode()) {
+    setState('fallback', '');
+    return;
+  }
   setState('loading', '');
   window.setTimeout(() => {
     if (entry.getAttribute('data-editor-entry-state') !== 'loading') return;
@@ -296,9 +412,13 @@ function initViewerEditorTools() {
     const videoNo = String(data.evidence_video_no || '');
     return videoNo ? { video_no: videoNo, seek_sec: sec } : null;
   }
-  function syncSplitEditorSeek(sec, row) {
+  function syncSplitEditorSeek(sec, row, navigateCompanion = false) {
     const url = seekUrl(sec, row);
     if (!url) return '';
+    if (typeof isChzzkCompanionEditorMode === 'function' && isChzzkCompanionEditorMode()) {
+      if (navigateCompanion) window.open(url, CHZZK_COMPANION_WINDOW_NAME);
+      return url;
+    }
     const frame = document.querySelector('[data-editor-chzzk-frame]');
     if (frame) frame.setAttribute('src', url);
     const splitLink = document.querySelector('.editor-split-action[href*="chzzk.naver.com/video/"]');
@@ -437,7 +557,7 @@ function initViewerEditorTools() {
   function activateAxisEventMarker(marker) {
     closeActiveAxisDisclosure(marker);
     const event = renderedAxisEvents.get(String(marker.dataset.eventId || '')) || events.find((item) => item.id === marker.dataset.eventId);
-    syncSplitEditorSeek(event && event.start_sec, event);
+    syncSplitEditorSeek(event && event.start_sec, event, true);
     renderEvidence(event || null);
   }
   function clipUrl(uid) {
@@ -1256,12 +1376,10 @@ function initViewerEditorTools() {
   const HEATMAP_PROFILE_SAMPLE_COUNT = 120;
   const MAX_PROMINENT_HEAT_ZONES = 12;
   const MIN_PROMINENT_HEAT_ZONES = 5;
-  function clusterHeatClass(cluster, score, maxScore) {
-    const signalCount = Math.max(0, Number(cluster && cluster.signal_count || 0));
-    const familyCount = Math.max(0, Number(cluster && cluster.family_count || 0));
-    if (signalCount <= 1 && familyCount <= 1) return 'low';
-    if (score >= Math.max(3, maxScore * 0.66)) return 'hot';
-    if (score >= Math.max(2, maxScore * 0.34)) return 'medium';
+  const MIN_PROMINENT_HEAT_RATIO = 0.18;
+  function heatmapPeakClass(normalized) {
+    if (normalized >= 0.66) return 'hot';
+    if (normalized >= 0.34) return 'medium';
     return 'low';
   }
   function clusterTimeBounds(cluster) {
@@ -1289,6 +1407,29 @@ function initViewerEditorTools() {
     const maxValue = Math.max(1, ...samples.map((sample) => sample.value));
     return samples.map((sample) => ({ sec: sample.sec, value: sample.value, normalized: sample.value / maxValue }));
   }
+  function heatmapProfilePeaks(samples) {
+    if (!samples.length) return [];
+    const peaks = samples.filter((sample, index) => {
+      const left = index > 0 ? Number(samples[index - 1].value || 0) : -1;
+      const right = index + 1 < samples.length ? Number(samples[index + 1].value || 0) : -1;
+      return Number(sample.value || 0) > 0 && Number(sample.value || 0) >= left && Number(sample.value || 0) > right;
+    });
+    if (peaks.length) return peaks;
+    return [samples.reduce((best, sample) => Number(sample.value || 0) > Number(best.value || 0) ? sample : best, samples[0])];
+  }
+  function heatmapPeakAnchor(scored, peakSec) {
+    return scored
+      .map((row) => {
+        const bounds = row.bounds || clusterTimeBounds(row.cluster);
+        const halfWidth = Math.max(45, (bounds.end - bounds.start) / 2);
+        const radius = Math.max(120, Math.min(420, duration * 0.018)) + halfWidth;
+        const distance = Math.abs(peakSec - bounds.center);
+        const influence = distance <= radius ? 1 - (distance / radius) : 0;
+        return { ...row, bounds, distance, contribution: row.score * influence * influence };
+      })
+      .filter((row) => row.contribution > 0)
+      .sort((a, b) => b.contribution - a.contribution || a.distance - b.distance || a.index - b.index)[0] || null;
+  }
   function heatmapAreaPath(samples) {
     if (!samples.length) return '';
     const points = samples.map((sample, index) => {
@@ -1306,24 +1447,29 @@ function initViewerEditorTools() {
       return `${index ? 'L' : 'M'}${x.toFixed(1)},${y.toFixed(1)}`;
     }).join(' ');
   }
-  function heatmapVisualZones(scored, maxScore) {
+  function heatmapVisualZones(scored, profileSamples) {
     const baseZoneRadiusSec = Math.max(140, Math.min(420, duration * 0.014));
     const minDistanceSec = Math.max(180, Math.min(540, duration * 0.018));
     const selected = [];
     const candidates = scored
       .map((row) => ({ ...row, bounds: row.bounds || clusterTimeBounds(row.cluster) }))
       .sort((a, b) => b.score - a.score);
-    candidates.forEach((candidate) => {
+    const peaks = heatmapProfilePeaks(profileSamples)
+      .slice()
+      .sort((a, b) => b.value - a.value || a.sec - b.sec);
+    peaks.forEach((peak) => {
       if (selected.length >= MAX_PROMINENT_HEAT_ZONES) return;
-      const tooClose = selected.some((zone) => Math.abs(zone.center - candidate.bounds.center) < minDistanceSec);
-      const heatClass = clusterHeatClass(candidate.cluster, candidate.score, maxScore);
-      if (tooClose || (heatClass === 'low' && selected.length >= MIN_PROMINENT_HEAT_ZONES)) return;
-      const strengthRatio = Math.max(0.24, Math.min(1, candidate.score / Math.max(1, maxScore)));
+      const tooClose = selected.some((zone) => Math.abs(zone.center - peak.sec) < minDistanceSec);
+      const strengthRatio = Math.max(0, Math.min(1, Number(peak.normalized || 0)));
+      if (tooClose || (strengthRatio < MIN_PROMINENT_HEAT_RATIO && selected.length >= MIN_PROMINENT_HEAT_ZONES)) return;
+      const candidate = heatmapPeakAnchor(candidates, peak.sec);
+      if (!candidate) return;
+      const heatClass = heatmapPeakClass(strengthRatio);
       const zoneRadiusSec = baseZoneRadiusSec * (0.68 + (strengthRatio * 0.72));
-      const zoneStart = Math.max(0, candidate.bounds.center - zoneRadiusSec);
-      const zoneEnd = Math.min(duration, candidate.bounds.center + zoneRadiusSec);
+      const zoneStart = Math.max(0, peak.sec - zoneRadiusSec);
+      const zoneEnd = Math.min(duration, peak.sec + zoneRadiusSec);
       const related = candidates.filter((row) => {
-        const centerDistance = Math.abs(row.bounds.center - candidate.bounds.center);
+        const centerDistance = Math.abs(row.bounds.center - peak.sec);
         return centerDistance <= zoneRadiusSec || (row.bounds.start <= zoneEnd && row.bounds.end >= zoneStart);
       });
       const familyKeys = Array.from(new Set(related.flatMap((row) => clusterFamilyKeys(row.cluster)))).filter(Boolean);
@@ -1333,7 +1479,7 @@ function initViewerEditorTools() {
         index: candidate.index,
         score: candidate.score,
         heatClass,
-        center: candidate.bounds.center,
+        center: peak.sec,
         start: zoneStart,
         end: zoneEnd,
         familyKeys,
@@ -1349,9 +1495,8 @@ function initViewerEditorTools() {
       return '';
     }
     const scored = clusters.map((cluster, index) => ({ cluster, index, score: clusterHeatScore(cluster), bounds: clusterTimeBounds(cluster) }));
-    const maxScore = Math.max(1, ...scored.map((row) => row.score));
     const profileSamples = heatmapProfileSamples(scored);
-    const zones = heatmapVisualZones(scored, maxScore);
+    const zones = heatmapVisualZones(scored, profileSamples);
     const areaPath = heatmapAreaPath(profileSamples);
     const linePath = heatmapLinePath(profileSamples);
     const zoneButtons = zones.map((zone, index) => {
@@ -1366,9 +1511,11 @@ function initViewerEditorTools() {
       const viewerClipCount = Math.max(0, Number(cluster.viewer_clip_count || 0));
       const familyKeys = zone.familyKeys.length ? zone.familyKeys : clusterFamilyKeys(cluster);
       const heatClass = zone.heatClass;
-      const title = `${fmt(zone.center)} ${clusterFamilyText(cluster)} 열 구간 · 묶음 ${zone.relatedCount}개 · 신호 ${zone.relatedSignalCount || signalCount}개 · 자료 ${familyKeys.length || familyCount}종 · 클립 ${viewerClipCount}개`;
+      const anchorSec = Math.max(0, Number(cluster.start_sec || 0));
+      const anchorHint = Math.abs(zone.center - anchorSec) >= 30 ? ` · 연결 근거 ${fmt(anchorSec)}` : '';
+      const title = `합산 봉우리 ${fmt(zone.center)}${anchorHint} · ${clusterFamilyText(cluster)} · 묶음 ${zone.relatedCount}개 · 신호 ${zone.relatedSignalCount || signalCount}개 · 자료 ${familyKeys.length || familyCount}종 · 클립 ${viewerClipCount}개`;
       const selected = selectedEventId === `edit_point_cluster_${clusterId}`;
-      return `<button type="button" class="viewer-editor-heatmap-zone ${heatClass}${selected ? ' selected' : ''}" data-real-heatmap-zone="true" data-heatmap-prominent-zone="true" data-heatmap-zone-visual="hit-target" data-edit-point-cluster-id="${esc(clusterId)}" data-overview-rank="${index + 1}" data-overview-strength="${esc(heatClass)}" data-cluster-signal-count="${signalCount}" data-cluster-family-count="${familyCount}" data-cluster-viewer-clip-count="${viewerClipCount}" data-cluster-signal-families="${esc(familyKeys.join(' '))}" data-heatmap-zone-related-count="${zone.relatedCount}" data-sec="${Math.round(zone.center)}" aria-label="${esc(`${fmt(zone.center)} 먼저 볼 열 구간. ${title}. 클릭하면 근거 펼침`)}" title="${esc(`${title} · 클릭하면 근거 펼침`)}" style="left:${left}%;width:${width}%"></button>`;
+      return `<button type="button" class="viewer-editor-heatmap-zone ${heatClass}${selected ? ' selected' : ''}" data-real-heatmap-zone="true" data-heatmap-prominent-zone="true" data-heatmap-zone-visual="hit-target" data-edit-point-cluster-id="${esc(clusterId)}" data-overview-rank="${index + 1}" data-overview-strength="${esc(heatClass)}" data-cluster-signal-count="${signalCount}" data-cluster-family-count="${familyCount}" data-cluster-viewer-clip-count="${viewerClipCount}" data-cluster-signal-families="${esc(familyKeys.join(' '))}" data-heatmap-zone-related-count="${zone.relatedCount}" data-heatmap-anchor-sec="${Math.round(anchorSec)}" data-sec="${Math.round(zone.center)}" aria-label="${esc(`${title}. 클릭하면 근거 펼침`)}" title="${esc(`${title} · 클릭하면 근거 펼침`)}" style="left:${left}%;width:${width}%"></button>`;
     }).join('');
     const surface = `<svg class="viewer-editor-heatmap-surface" viewBox="0 0 1000 44" preserveAspectRatio="none" aria-hidden="true" data-real-heatmap-surface="true" data-heatmap-area="true" data-heatmap-profile-samples="${profileSamples.length}"><defs><linearGradient id="viewerEditorHeatmapGradient" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="rgba(122,162,247,0.10)"/><stop offset="58%" stop-color="rgba(224,175,104,0.36)"/><stop offset="100%" stop-color="rgba(247,118,142,0.70)"/></linearGradient></defs><path class="heatmap-fill" d="${areaPath}"></path><path class="heatmap-line" d="${linePath}"></path></svg>`;
     const legend = '<span class="low">약함</span><span class="medium">중간</span><span class="hot">강함</span>';
@@ -1648,7 +1795,7 @@ function initViewerEditorTools() {
           event.heatmap_zone_families = String(marker.dataset.clusterSignalFamilies || '').split(/\s+/).filter(Boolean);
           event.heatmap_zone_related_count = Number(marker.dataset.heatmapZoneRelatedCount || 0);
         }
-        syncSplitEditorSeek(event && event.start_sec, event);
+        syncSplitEditorSeek(event && event.start_sec, event, true);
         renderEvidence(event || null);
       };
       bindMarkerActivation(marker, activate);
@@ -1658,7 +1805,7 @@ function initViewerEditorTools() {
       const activate = () => {
         const sec = Number(bar.dataset.sec || 0);
         const sourceRow = evidenceSourceRow(sec);
-        syncSplitEditorSeek(sec, sourceRow);
+        syncSplitEditorSeek(sec, sourceRow, true);
         renderEvidence({ start_sec: sec, kind: 'chat', kind_label: '전체 채팅량', title: '전체 채팅량', evidence: [], ...(sourceRow || {}) });
       };
       bindMarkerActivation(bar, activate);
@@ -1774,7 +1921,7 @@ function initViewerEditorTools() {
     const activateSemanticMember = (marker, event) => {
       closeActiveAxisDisclosure(null, true);
       selectAxisEvent(event || detailFor(marker) || null);
-      syncSplitEditorSeek(event && event.start_sec, event);
+      syncSplitEditorSeek(event && event.start_sec, event, true);
       renderEvidence(event || detailFor(marker) || null);
     };
     const memberButton = (marker, event) => {
@@ -2479,6 +2626,7 @@ function initViewerEditorTools() {
         const index = Number(button.getAttribute('data-evidence-target-index'));
         const target = evidenceTargets[index];
         if (!target || !target.row) return;
+        syncSplitEditorSeek(Number(target.row.start_sec ?? target.row.sec), target.row, true);
         renderEvidence(target.row);
       });
     });
