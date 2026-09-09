@@ -11480,9 +11480,9 @@
   },
   "report_artifact_family": {
     "schema_version": "report_artifact_family.v1",
-    "generation_id": "20260909T140955803266Z-153fe989a7e9",
-    "generation_sequence": 16,
-    "parent_generation_id": "20260908T083317651495Z-b4556f2ff6c1",
+    "generation_id": "20260909T200033510702Z-9b3e4e4517df",
+    "generation_sequence": 20,
+    "parent_generation_id": "20260909T194210977971Z-fe20fee20023",
     "authority_revision_id": "42b3f56f7d1f5bc1e091fe98caf37ba4aa1ef9c29667f6e11b779486736766ff",
     "artifacts": {
       "markdown": {
@@ -11500,6 +11500,6 @@
     "viewer_payload_sha256": "9354b8ee9f54cee5e4f5d07f1dd660fc908aa6c7cc0c0caaec4e523c51b65a04",
     "editorial_packet_sha256": "7895039d01a1bf7d8e78cae22ea47874528f7c7ae76d3816c32fdc1969628b44",
     "viewer_asset_version": "highlight-duration-bars-v8",
-    "metadata_payload_sha256": "18d8310363846179ce8444663bea840c21e9b72ce0bf63f611bb2a3e8a2304fc"
+    "metadata_payload_sha256": "f1d16fb54edad7b18e626859070c04ec28b4160892cbb02fee2ff157ba656c25"
   }
 }

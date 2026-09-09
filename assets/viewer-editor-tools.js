@@ -1,7 +1,8 @@
 const CHZZK_COMPANION_WINDOW_NAME = 'ttaem-chzzk-companion';
+const DEFAULT_EDITOR_MODE = 'companion';
 
 function isChzzkCompanionEditorMode() {
-  return new URLSearchParams(location.search).get('editor') === 'companion';
+  return DEFAULT_EDITOR_MODE === 'companion';
 }
 
 function normalizeChzzkCompanionUrl(value) {
@@ -15,18 +16,16 @@ function normalizeChzzkCompanionUrl(value) {
   }
 }
 
-function initEditorSplitMode() {
+function initEditorCompanionMode() {
+  if (!isChzzkCompanionEditorMode()) return;
   const entry = document.querySelector('[data-editor-entry]');
   const workspace = document.getElementById('youtube-editor-tools');
-  const primaryBtn = document.querySelector('[data-editor-entry-primary]');
-  if (!entry || !workspace || !primaryBtn) return;
+  const primaryControl = document.querySelector('[data-editor-entry-primary]');
+  if (!entry || !workspace || !primaryControl) return;
 
   const explicitUrl = entry.getAttribute('data-editor-chzzk-url') || '';
   const sourceLink = document.querySelector('a[href*="chzzk.naver.com/video/"]');
   const chzzkUrl = explicitUrl || sourceLink?.href || '';
-  let placeholder = null;
-  let shell = null;
-
   function setEntryState(state, message) {
     entry.setAttribute('data-editor-entry-state', state);
     const status = entry.querySelector('[data-editor-entry-status]');
@@ -36,85 +35,25 @@ function initEditorSplitMode() {
     }
   }
 
-  function editorModeUrlOff() {
-    const url = new URL(location.href);
-    url.searchParams.delete('editor');
-    return `${url.pathname}${url.search}${url.hash}`;
-  }
-
-  function editorModeUrlOn() {
-    const url = new URL(location.href);
-    url.searchParams.set('editor', '1');
-    if (!url.hash) url.hash = 'youtube-editor-tools';
-    return `${url.pathname}${url.search}${url.hash}`;
-  }
-
-  function closeSplitEditorMode() {
-    if (!shell) return;
-    if (placeholder && workspace) {
-      placeholder.replaceWith(workspace);
-    }
-    shell.remove();
-    shell = null;
-    placeholder = null;
-    document.body.classList.remove('editor-split-active');
-    setEntryState('fallback', '');
-    updateNavToggleVisibility();
-    history.replaceState(null, '', editorModeUrlOff());
-  }
-
-  function openSplitEditorMode() {
-    if (!chzzkUrl) {
-      workspace.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  function installCompanionEditorMode() {
+    const safeChzzkUrl = normalizeChzzkCompanionUrl(chzzkUrl);
+    if (!safeChzzkUrl) {
       setEntryState('error', 'CHZZK 주소 없음');
       return;
     }
-    if (shell) return;
-    placeholder = document.createElement('div');
-    placeholder.className = 'editor-split-placeholder';
-    placeholder.setAttribute('data-editor-split-placeholder', '');
-    workspace.replaceWith(placeholder);
-
-    shell = document.createElement('section');
-    shell.className = 'editor-split-shell';
-    shell.setAttribute('data-editor-split-shell', '');
-    shell.setAttribute('aria-label', 'CHZZK 원본과 편집자 워크스페이스 나란히 보기');
-    shell.innerHTML = `
-      <div class="editor-split-player" data-editor-split-player>
-        <div class="editor-split-toolbar">
-          <strong class="editor-split-title">CHZZK 원본 화면</strong>
-          <div class="editor-split-actions">
-            <a class="editor-split-action" href="${chzzkUrl}" target="_blank" rel="noopener">새 탭</a>
-            <button type="button" class="editor-split-action" data-editor-split-close>요약으로 돌아가기</button>
-          </div>
-        </div>
-        <iframe class="editor-split-frame" data-editor-chzzk-frame src="${chzzkUrl}" title="CHZZK 원본 방송 화면" allow="autoplay; fullscreen; picture-in-picture; encrypted-media" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        <div class="editor-split-fallback">CHZZK가 iframe 재생을 제한하면 왼쪽의 새 탭 버튼으로 원본을 열고, 오른쪽 워크스페이스에서 컷 후보를 계속 확인합니다.</div>
-      </div>
-      <div class="editor-split-workspace" data-editor-split-workspace></div>
-    `;
-    shell.querySelector('[data-editor-split-workspace]').appendChild(workspace);
-    shell.querySelector('[data-editor-split-close]').addEventListener('click', closeSplitEditorMode);
-    document.body.appendChild(shell);
-    document.body.classList.add('editor-split-active');
-    setEntryState('fallback', '');
-    updateNavToggleVisibility();
-    history.replaceState(null, '', editorModeUrlOn());
-  }
-
-  function installCompanionEditorMode() {
-    const safeChzzkUrl = normalizeChzzkCompanionUrl(chzzkUrl);
-    if (!safeChzzkUrl) return;
     document.body.classList.add('editor-companion-mode');
-    const vodLink = document.createElement('a');
-    vodLink.className = primaryBtn.className;
+    const existingLink = primaryControl.tagName === 'A' ? primaryControl : null;
+    const vodLink = existingLink || document.createElement('a');
+    vodLink.className = primaryControl.className;
     vodLink.setAttribute('data-editor-entry-primary', '');
+    vodLink.removeAttribute('data-report-editor');
     vodLink.href = safeChzzkUrl;
     vodLink.target = CHZZK_COMPANION_WINDOW_NAME;
+    vodLink.rel = 'opener';
     vodLink.classList.add('editor-companion-entry-link');
     vodLink.textContent = 'CHZZK VOD 링크';
     vodLink.setAttribute('aria-label', 'CHZZK VOD 링크. 우클릭 후 분할 보기에서 링크 열기');
-    primaryBtn.replaceWith(vodLink);
+    if (!existingLink) primaryControl.replaceWith(vodLink);
 
     let guide = entry.querySelector('[data-editor-companion-guide]');
     if (!guide) {
@@ -192,50 +131,7 @@ function initEditorSplitMode() {
     }, true);
   }
 
-  if (isChzzkCompanionEditorMode()) {
-    installCompanionEditorMode();
-    return;
-  }
-
-  let navToggleButton = null;
-  function updateNavToggleVisibility() {
-    if (!navToggleButton) return;
-    navToggleButton.hidden = document.body.classList.contains('editor-split-active') || window.scrollY <= 220;
-  }
-
-  function installNavToggleButton() {
-    const links = document.querySelector('.public-report-nav-links');
-    if (!links) return;
-    navToggleButton = links.querySelector('.report-editor-nav-button');
-    if (!navToggleButton) {
-      navToggleButton = document.createElement('button');
-      navToggleButton.type = 'button';
-      navToggleButton.className = 'report-editor-nav-button';
-      navToggleButton.textContent = '편집자 모드로 보기';
-      navToggleButton.hidden = true;
-      links.appendChild(navToggleButton);
-    }
-    if (navToggleButton.dataset.editorNavBound === '1') return;
-    navToggleButton.dataset.editorNavBound = '1';
-    navToggleButton.addEventListener('click', (event) => {
-      event.preventDefault();
-      openSplitEditorMode();
-    });
-    window.addEventListener('scroll', updateNavToggleVisibility, { passive: true });
-    window.addEventListener('resize', updateNavToggleVisibility);
-    updateNavToggleVisibility();
-  }
-
-  primaryBtn.addEventListener('click', (event) => {
-    event.preventDefault();
-    openSplitEditorMode();
-  });
-  installNavToggleButton();
-
-  const params = new URLSearchParams(location.search);
-  if (params.get('editor') === '1') {
-    window.setTimeout(openSplitEditorMode, 0);
-  }
+  installCompanionEditorMode();
 }
 
 function initEditorEntryState() {
@@ -251,40 +147,8 @@ function initEditorEntryState() {
     }
   };
   const target = document.getElementById('youtube-editor-tools');
-  if (isChzzkCompanionEditorMode()) {
-    setState('fallback', '');
-    return;
-  }
-  setState('loading', '');
-  window.setTimeout(() => {
-    if (entry.getAttribute('data-editor-entry-state') !== 'loading') return;
-    if (target) {
-      setState('fallback', '');
-    } else {
-      setState('error', '워크스페이스 없음');
-    }
-  }, 0);
-  if (primaryBtn) {
-    primaryBtn.addEventListener('click', () => {
-      setState('loading', '');
-      window.setTimeout(() => {
-        if (target) {
-          setState('fallback', '');
-        } else {
-          setState('error', '열기 실패');
-        }
-      }, 180);
-    });
-  }
-  window.addEventListener('chzzk-editor-extension-ready', () => {
-    setState('installed', '');
-  });
-  window.addEventListener('chzzk-editor-extension-missing', () => {
-    setState('missing', '');
-  });
-  window.addEventListener('chzzk-editor-extension-error', () => {
-    setState('error', '확인 필요');
-  });
+  if (target && primaryBtn) setState('fallback', '');
+  else setState('error', target ? 'CHZZK 링크 없음' : '워크스페이스 없음');
 }
 
 function initViewerEditorTools() {
@@ -415,14 +279,7 @@ function initViewerEditorTools() {
   function syncSplitEditorSeek(sec, row, navigateCompanion = false) {
     const url = seekUrl(sec, row);
     if (!url) return '';
-    if (typeof isChzzkCompanionEditorMode === 'function' && isChzzkCompanionEditorMode()) {
-      if (navigateCompanion) window.open(url, CHZZK_COMPANION_WINDOW_NAME);
-      return url;
-    }
-    const frame = document.querySelector('[data-editor-chzzk-frame]');
-    if (frame) frame.setAttribute('src', url);
-    const splitLink = document.querySelector('.editor-split-action[href*="chzzk.naver.com/video/"]');
-    if (splitLink) splitLink.setAttribute('href', url);
+    if (navigateCompanion) window.open(url, CHZZK_COMPANION_WINDOW_NAME);
     return url;
   }
   let activeAxisDisclosure = null;
@@ -2790,7 +2647,7 @@ function initPointStoryDisclosures() {
   });
 }
 function initViewerEditorRuntime() {
-  initEditorSplitMode();
+  initEditorCompanionMode();
   initEditorEntryState();
   initViewerEditorTools();
   initViewerClipPlayers();
