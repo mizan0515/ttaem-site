@@ -2,7 +2,7 @@
   "schema_version": "elio.public-index.v1",
   "elio_version": "1.0.1",
   "product_contract_version": "elio.product-contract.v1",
-  "generated_at": "2026-09-10T05:25:53+00:00",
+  "generated_at": "2026-09-10T06:50:07+00:00",
   "renderer_version": "v2",
   "works": [
     {
@@ -127,7 +127,7 @@
       "moment_count": 0,
       "source_retrieved_at": "2026-09-09T08:53:31.087551+00:00",
       "source_hash": "a07e0c71c03f80460d5894cb3139eca9d16a29aa32b4da94af64a25176d91d83",
-      "html_hash": "20fe3c3e4f08a994888a004bf67121e0eabbbb5b31631983669bddab65c93085",
+      "html_hash": "9c95772c9537c0b18c833bba43031f5ca2ae832f21fbff4a03d39923b6467b17",
       "renderer_version": "v2"
     }
   ]
