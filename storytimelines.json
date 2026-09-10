@@ -2,19 +2,19 @@
   "schema_version": "elio.public-index.v1",
   "elio_version": "1.0.1",
   "product_contract_version": "elio.product-contract.v1",
-  "generated_at": "2026-09-10T06:50:07+00:00",
+  "generated_at": "2026-09-10T11:35:51+00:00",
   "renderer_version": "v2",
   "works": [
     {
       "work_id": "wutheringwaves",
       "work_title": "명조: 워더링 웨이브",
       "route": "/storytimeline/wutheringwaves/",
-      "unit_count": 4,
-      "event_count": 41,
-      "image_count": 41,
-      "stream_count": 5,
-      "moment_count": 1,
-      "publishable_count": 4
+      "unit_count": 5,
+      "event_count": 57,
+      "image_count": 57,
+      "stream_count": 7,
+      "moment_count": 4,
+      "publishable_count": 5
     }
   ],
   "units": [
@@ -43,7 +43,7 @@
       "moment_count": 1,
       "source_retrieved_at": "2026-09-05T10:28:09.696828+00:00",
       "source_hash": "3f7dd5784435cd33e71d6dd044a77faf4879ed05dcd7bd976454fa4541617e04",
-      "html_hash": "8eedc9d98ab1804763afaaac3e6c8138e18bade1f516afd815a23aba2cf95dfa",
+      "html_hash": "aada80ff6009ee7a056658d6c5d9927d0038f717a587081cda6b5c922b2f35f2",
       "renderer_version": "v2"
     },
     {
@@ -71,7 +71,7 @@
       "moment_count": 0,
       "source_retrieved_at": "2026-09-09T09:54:35.888862+00:00",
       "source_hash": "e8c1c5a1a803abe79dfc643df46712631ee1d4e5c1fd9bc3723268ed3984ee92",
-      "html_hash": "d7489275ff3e6f5d11dba13dc56c911e17f5ce9b8b0ccbf740f4903b740dcb6f",
+      "html_hash": "d849fcabe56fe19622cf5e00ad1eaf9c7bb83b98f0d1d7555450c94b4362ad62",
       "renderer_version": "v2"
     },
     {
@@ -99,7 +99,36 @@
       "moment_count": 0,
       "source_retrieved_at": "2026-09-09T09:56:50.430722+00:00",
       "source_hash": "895ae00c99e654310e13094e7ef6dbe6b246a6168ad30e2395cb0f520fc11765",
-      "html_hash": "dcf12f5a9e0b481287713df7f4466f5920d1c62256234cb878ea669c0fd0323d",
+      "html_hash": "c37a06eb7f76bcdc9555c5dd33c077017d76044c96eb46ce7bfde2f9b47c5b12",
+      "renderer_version": "v2"
+    },
+    {
+      "schema_version": "elio.public-unit.v1",
+      "elio_version": "1.0.1",
+      "work_id": "wutheringwaves",
+      "unit_id": "ch2-act4",
+      "work_title": "명조: 워더링 웨이브",
+      "unit_label": "제2장 제4막 「성스러운 자, 거역하는 자, 죽음을 가져오는 자」",
+      "title": "제2장 제4막 「성스러운 자, 거역하는 자, 죽음을 가져오는 자」",
+      "intro": "거꾸로 매달린 탑에서 되찾은 기억은 카르티시아가 누구의 성녀인지를 밝히는 데 그치지 않고, 누구를 위해 검을 들 것인지를 묻는다. 방랑자와 카르티시아는 세 자루 검에 봉인된 과거를 따라 레비아탄의 지배와 임페라토르의 계획을 파헤치고, 예정된 희생과 다른 결말을 선택한다.",
+      "tags": [
+        "카르티시아",
+        "성녀의선택",
+        "기억회복",
+        "신과명식",
+        "자기희생",
+        "정체성"
+      ],
+      "route": "/storytimeline/wutheringwaves/ch2-act4/",
+      "publication_status": "publishable",
+      "event_count": 16,
+      "image_count": 16,
+      "stream_count": 2,
+      "connected_event_count": 0,
+      "moment_count": 3,
+      "source_retrieved_at": "2026-09-10T04:21:18.697629+00:00",
+      "source_hash": "5e62718ebdef5e483f3a66ad404262248db1eb1f1ae01b73b61d163edf8595eb",
+      "html_hash": "ee46f2a3217b5e480535128196151aba89f91ab09bf0bfb6c27800c169c26b61",
       "renderer_version": "v2"
     },
     {
@@ -127,7 +156,7 @@
       "moment_count": 0,
       "source_retrieved_at": "2026-09-09T08:53:31.087551+00:00",
       "source_hash": "a07e0c71c03f80460d5894cb3139eca9d16a29aa32b4da94af64a25176d91d83",
-      "html_hash": "9c95772c9537c0b18c833bba43031f5ca2ae832f21fbff4a03d39923b6467b17",
+      "html_hash": "925dff19667115e84e2c75776575af0fe3caa98dabc42a9369eafa3f63002a09",
       "renderer_version": "v2"
     }
   ]

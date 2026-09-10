@@ -317,7 +317,7 @@ if (window.matchMedia('(pointer:fine)').matches) {
   });
 }
 
-function showWatchTransition({ streamer, provider, providerLabel, time }) {
+function showWatchTransition({ streamer, provider, providerLabel, time, transitionText }) {
   if (!watchFxLayer) return;
   window.clearTimeout(watchTransitionTimer);
   watchFxLayer.querySelector('.watch-transition')?.remove();
@@ -361,7 +361,7 @@ function showWatchTransition({ streamer, provider, providerLabel, time }) {
   const eyebrow = document.createElement('small');
   eyebrow.textContent = `WATCH PORTAL · ${providerLabel}`;
   const heading = document.createElement('strong');
-  heading.textContent = `${streamer}의 ${providerLabel} 같이보기로 이동합니다`;
+  heading.textContent = transitionText || `${streamer}의 ${providerLabel} 같이보기로 이동합니다`;
   const detail = document.createElement('span');
   detail.className = 'watch-transition__detail';
   detail.textContent = time ? `${time} 장면에서 이어집니다.` : '전체 방송을 새 탭에서 엽니다.';
@@ -378,6 +378,7 @@ function launchWatchEffect(link, event, { showTransition = false } = {}) {
   const streamer = link.dataset.streamer || '방송';
   const provider = link.dataset.provider || 'external';
   const time = link.dataset.time;
+  const transitionText = link.dataset.watchText;
   const providerLabel = provider === 'chzzk' ? 'CHZZK' : provider === 'youtube' ? 'YouTube' : '다시보기';
   const destination = time ? `${streamer} ${time} 같이보기` : `${streamer} 전체 방송`;
   if (watchLiveStatus) {
@@ -387,7 +388,7 @@ function launchWatchEffect(link, event, { showTransition = false } = {}) {
   requestAnimationFrame(() => link.classList.add('is-launching'));
   window.setTimeout(() => link.classList.remove('is-launching'), 700);
   if (showTransition) {
-    showWatchTransition({ streamer, provider, providerLabel, time });
+    showWatchTransition({ streamer, provider, providerLabel, time, transitionText });
   }
   if (!watchFxLayer) return;
 
@@ -417,7 +418,7 @@ function launchWatchEffect(link, event, { showTransition = false } = {}) {
   const badge = document.createElement('small');
   badge.textContent = providerLabel;
   const message = document.createElement('span');
-  message.textContent = `${destination}로 이동합니다`;
+  message.textContent = transitionText || `${destination}로 이동합니다`;
   toast.append(badge, message);
   document.body.appendChild(toast);
   window.setTimeout(() => effect.remove(), 950);
