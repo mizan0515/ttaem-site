@@ -2,8 +2,8 @@ const timeline = document.querySelector('.timeline');
 const page = document.querySelector('.page');
 const scenes = Array.from(document.querySelectorAll('.timeline .item'));
 const moments = Array.from(document.querySelectorAll('.timeline .watch-moment'));
-const guides = Array.from(document.querySelectorAll('.reader-guide'));
-const spoilerItems = [...scenes, ...moments, ...guides];
+const guideModules = Array.from(document.querySelectorAll('.reader-guide'));
+const spoilerItems = [...scenes, ...moments, ...guideModules];
 const sceneLinks = Array.from(document.querySelectorAll('.scene-nav__link'));
 const currentSceneLabel = document.getElementById('scene-current-label');
 const spoilerToggle = document.getElementById('spoiler-toggle');
@@ -430,6 +430,13 @@ document.addEventListener('click', (event) => {
     document.querySelectorAll('.streamer-picker[open]').forEach((picker) => {
       if (picker !== pickerSummary.parentElement) picker.removeAttribute('open');
     });
+    window.requestAnimationFrame(() => {
+      const picker = pickerSummary.parentElement;
+      if (!picker?.open) return;
+      picker.querySelector('.streamer-picker__panel')?.scrollIntoView({
+        block: 'nearest', inline: 'nearest', behavior: 'smooth',
+      });
+    });
     return;
   }
   if (!event.target.closest('.streamer-picker')) {
@@ -462,3 +469,10 @@ document.addEventListener('click', (event) => {
 
 window.addEventListener('hashchange', revealAnchor);
 revealAnchor();
+
+document.querySelectorAll('.reader-guide__disclosure, .reader-guide__sources').forEach((detail) => {
+  detail.addEventListener('toggle', () => {
+    const guide = detail.closest('.reader-guide');
+    guide?.classList.toggle('is-disclosure-active', detail.open);
+  });
+});

@@ -2,19 +2,19 @@
   "schema_version": "elio.public-index.v1",
   "elio_version": "1.0.1",
   "product_contract_version": "elio.product-contract.v1",
-  "generated_at": "2026-09-07T23:13:46+00:00",
+  "generated_at": "2026-09-10T05:25:53+00:00",
   "renderer_version": "v2",
   "works": [
     {
       "work_id": "wutheringwaves",
       "work_title": "명조: 워더링 웨이브",
       "route": "/storytimeline/wutheringwaves/",
-      "unit_count": 1,
-      "event_count": 8,
-      "image_count": 8,
-      "stream_count": 2,
+      "unit_count": 4,
+      "event_count": 41,
+      "image_count": 41,
+      "stream_count": 5,
       "moment_count": 1,
-      "publishable_count": 1
+      "publishable_count": 4
     }
   ],
   "units": [
@@ -43,7 +43,91 @@
       "moment_count": 1,
       "source_retrieved_at": "2026-09-05T10:28:09.696828+00:00",
       "source_hash": "3f7dd5784435cd33e71d6dd044a77faf4879ed05dcd7bd976454fa4541617e04",
-      "html_hash": "e8e79b5978b8b86ada7fedf7cedc4c5ca9949fa618af7efdd3f3ce4cc50f3f4e",
+      "html_hash": "8eedc9d98ab1804763afaaac3e6c8138e18bade1f516afd815a23aba2cf95dfa",
+      "renderer_version": "v2"
+    },
+    {
+      "schema_version": "elio.public-unit.v1",
+      "elio_version": "1.0.1",
+      "work_id": "wutheringwaves",
+      "unit_id": "ch2-act2",
+      "work_title": "명조: 워더링 웨이브",
+      "unit_label": "제2장 제2막 「밤과 낮, 모두 베일을 벗는다」",
+      "title": "제2장 제2막 「밤과 낮, 모두 베일을 벗는다」",
+      "intro": "질베르토를 쫓던 방랑자는 에코 폭주가 카니발을 겨냥한 대규모 음모임을 알아낸다. 로렐라이의 증언과 카를로타의 협력은 피살리아 가문, 수도회, 잔성회와 몬텔리 내부 배신자의 연결을 드러내고, 폐허에 감춰진 예언은 라군나의 공인된 신앙을 뒤흔든다.",
+      "tags": [
+        "라군나",
+        "에코",
+        "수도회",
+        "예언",
+        "카를로타"
+      ],
+      "route": "/storytimeline/wutheringwaves/ch2-act2/",
+      "publication_status": "publishable",
+      "event_count": 10,
+      "image_count": 10,
+      "stream_count": 1,
+      "connected_event_count": 10,
+      "moment_count": 0,
+      "source_retrieved_at": "2026-09-09T09:54:35.888862+00:00",
+      "source_hash": "e8c1c5a1a803abe79dfc643df46712631ee1d4e5c1fd9bc3723268ed3984ee92",
+      "html_hash": "d7489275ff3e6f5d11dba13dc56c911e17f5ce9b8b0ccbf740f4903b740dcb6f",
+      "renderer_version": "v2"
+    },
+    {
+      "schema_version": "elio.public-unit.v1",
+      "elio_version": "1.0.1",
+      "work_id": "wutheringwaves",
+      "unit_id": "ch2-act3",
+      "work_title": "명조: 워더링 웨이브",
+      "unit_label": "제2장 제3막 「슬펐던 내가 지금은 노래를 부르기로 한다」",
+      "title": "제2장 제3막 「슬펐던 내가 지금은 노래를 부르기로 한다」",
+      "intro": "탄식 무덤의 섬에 추락한 방랑자는 우인 극단과 함께 수도회가 신앙과 순례를 통치 수단으로 바꾼 흔적을 발견한다. 카니발을 되찾기 위한 연극은 플로로의 습격을 막아내지만, 축제 뒤에는 죽은 성녀 플뢰르 드 리스와 정체불명의 소녀 카르티시아를 둘러싼 더 큰 의문이 남는다.",
+      "tags": [
+        "탄식무덤",
+        "우인극단",
+        "카니발",
+        "성녀의정체",
+        "2차공명"
+      ],
+      "route": "/storytimeline/wutheringwaves/ch2-act3/",
+      "publication_status": "publishable",
+      "event_count": 12,
+      "image_count": 12,
+      "stream_count": 1,
+      "connected_event_count": 12,
+      "moment_count": 0,
+      "source_retrieved_at": "2026-09-09T09:56:50.430722+00:00",
+      "source_hash": "895ae00c99e654310e13094e7ef6dbe6b246a6168ad30e2395cb0f520fc11765",
+      "html_hash": "dcf12f5a9e0b481287713df7f4466f5920d1c62256234cb878ea669c0fd0323d",
+      "renderer_version": "v2"
+    },
+    {
+      "schema_version": "elio.public-unit.v1",
+      "elio_version": "1.0.1",
+      "work_id": "wutheringwaves",
+      "unit_id": "ch2-prologue-act1",
+      "work_title": "명조: 워더링 웨이브",
+      "unit_label": "제2장 서막 「망망대해를 누비는 작은 배처럼」·제1막 「늘 불어오는 신성한 바람」",
+      "title": "제2장 서막 「망망대해를 누비는 작은 배처럼」·제1막 「늘 불어오는 신성한 바람」",
+      "intro": "아브의 약해진 주파수를 회복할 단서를 찾아 리나시타로 향한 방랑자는 축제와 신앙으로 빛나는 라군나에서 강압적인 순례와 조작된 에코 사건을 마주한다. 임페라토르가 수도회를 거치지 않고 직접 도움을 청하자, 치료를 위한 방문은 수호신과 도시 권력 사이의 균열을 추적하는 조사로 바뀐다.",
+      "tags": [
+        "리나시타",
+        "아브",
+        "임페라토르",
+        "에코폭주",
+        "카니발"
+      ],
+      "route": "/storytimeline/wutheringwaves/ch2-prologue-act1/",
+      "publication_status": "publishable",
+      "event_count": 11,
+      "image_count": 11,
+      "stream_count": 1,
+      "connected_event_count": 11,
+      "moment_count": 0,
+      "source_retrieved_at": "2026-09-09T08:53:31.087551+00:00",
+      "source_hash": "a07e0c71c03f80460d5894cb3139eca9d16a29aa32b4da94af64a25176d91d83",
+      "html_hash": "20fe3c3e4f08a994888a004bf67121e0eabbbb5b31631983669bddab65c93085",
       "renderer_version": "v2"
     }
   ]
