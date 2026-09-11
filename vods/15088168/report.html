@@ -11804,16 +11804,16 @@
   }
 
 </style>
-<link rel="stylesheet" href="../../assets/viewer-editor-tools.css?v=0fab50c0453b">
+<link rel="stylesheet" href="../../assets/viewer-editor-tools.css?v=d67f1ba67ea5">
 </head>
 <body data-default-editor-mode="companion">
 <nav class="public-report-nav" data-report-block="public-report-nav" aria-label="리포트 이동">
   <div class="public-report-nav-inner">
-    <a class="public-report-brand" href="../../index.html">VOD 요약 허브</a>
+    <a class="public-report-brand" href="../../index.html">CVA</a>
     <div class="public-report-nav-links">
       <a class="public-report-nav-link" href="../../index.html">스트리머</a>
       <a class="public-report-nav-link" href="../../search.html">검색</a>
-      <button type="button" class="report-editor-nav-button" hidden>편집자 모드로 보기</button>
+      <a class="public-report-nav-link public-report-editor-link" href="#youtube-editor-tools">장면 도구</a>
     </div>
   </div>
 </nav>
@@ -12688,35 +12688,9 @@ function initEditorSplitMode() {
     updateNavToggleVisibility();
     history.replaceState(null, '', editorModeUrlOn());
   }
+  function updateNavToggleVisibility() {}
+  function installNavToggleButton() {}
 
-  let navToggleButton = null;
-  function updateNavToggleVisibility() {
-    if (!navToggleButton) return;
-    navToggleButton.hidden = document.body.classList.contains('editor-split-active') || window.scrollY <= 220;
-  }
-
-  function installNavToggleButton() {
-    const links = document.querySelector('.public-report-nav-links');
-    if (!links) return;
-    navToggleButton = links.querySelector('.report-editor-nav-button');
-    if (!navToggleButton) {
-      navToggleButton = document.createElement('button');
-      navToggleButton.type = 'button';
-      navToggleButton.className = 'report-editor-nav-button';
-      navToggleButton.textContent = '편집자 모드로 보기';
-      navToggleButton.hidden = true;
-      links.appendChild(navToggleButton);
-    }
-    if (navToggleButton.dataset.editorNavBound === '1') return;
-    navToggleButton.dataset.editorNavBound = '1';
-    navToggleButton.addEventListener('click', (event) => {
-      event.preventDefault();
-      openSplitEditorMode();
-    });
-    window.addEventListener('scroll', updateNavToggleVisibility, { passive: true });
-    window.addEventListener('resize', updateNavToggleVisibility);
-    updateNavToggleVisibility();
-  }
 
   primaryBtn.addEventListener('click', (event) => {
     event.preventDefault();

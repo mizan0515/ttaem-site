@@ -126,19 +126,6 @@
     background: rgba(158,206,106,0.10) !important;
     outline: 3px solid rgba(158,206,106,0.22); outline-offset: 2px;
   }
-  .report-editor-nav-button {
-    display: inline-flex; align-items: center; justify-content: center;
-    min-height: 31px; padding: 0 10px; border: 1px solid rgba(158,206,106,0.42);
-    border-radius: 8px; background: rgba(158,206,106,0.12);
-    color: var(--text-strong, #e8ebf3) !important;
-    font: 800 12px/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    white-space: nowrap; cursor: pointer;
-  }
-  .report-editor-nav-button:hover,
-  .report-editor-nav-button:focus-visible {
-    border-color: rgba(158,206,106,0.62); background: rgba(158,206,106,0.22);
-    outline: 2px solid rgba(158,206,106,0.24); outline-offset: 2px;
-  }
   .editor-entry {
     margin-top: 18px; display: grid; grid-template-columns: minmax(0, 1fr) auto;
     gap: 10px; align-items: center; padding: 10px 12px; border-radius: 8px;

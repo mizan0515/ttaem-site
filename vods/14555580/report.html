@@ -482,17 +482,713 @@
 
 
 
+  .editor-jump {
+    margin-top: 18px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  .editor-jump-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    min-height: 40px; padding: 9px 14px; border-radius: 8px;
+    border: 1px solid rgba(158,206,106,0.36);
+    background: rgba(158,206,106,0.12); color: var(--text-strong);
+    font-size: 13px; font-weight: 700; text-decoration: none;
+  }
+  .editor-jump-link:hover {
+    background: rgba(158,206,106,0.18); text-decoration: none;
+  }
+  .editor-jump-note { color: var(--muted); font-size: 12px; }
+  .report-editor-inline-button,
+  .report-editor-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 38px; padding: 0 15px; border: 1px solid rgba(158,206,106,0.56);
+    border-radius: 8px; background: rgba(158,206,106,0.16);
+    color: var(--text-strong, #f8fafc) !important;
+    font: 800 13px/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    text-decoration: none; cursor: pointer; box-shadow: none;
+  }
+  .report-editor-inline-button { margin-left: 0; vertical-align: middle; }
+  .report-editor-entry {
+    display: inline-flex !important; align-items: center; gap: 8px; flex-wrap: wrap;
+    margin-top: 14px; padding: 0; border: 0; border-radius: 0; background: transparent;
+  }
+  .report-editor-entry .editor-entry-status {
+    display: inline-flex; align-items: center; min-height: 16px;
+    color: var(--muted); font-size: 12px; line-height: 1.45;
+  }
+  .report-editor-entry[data-editor-entry-state="installed"] .editor-entry-status { color: var(--accent); }
+  .report-editor-entry[data-editor-entry-state="missing"] .editor-entry-status,
+  .report-editor-entry[data-editor-entry-state="fallback"] .editor-entry-status { color: #a9b1d6; }
+  .report-editor-entry[data-editor-entry-state="loading"] .editor-entry-status { color: var(--accent-warm); }
+  .report-editor-entry[data-editor-entry-state="error"] .editor-entry-status { color: #f7768e; }
+  .report-editor-entry .editor-jump-link {
+    display: inline-flex !important; align-items: center; justify-content: center;
+    width: 38px; min-width: 38px; min-height: 38px; padding: 0 !important;
+    border: 1px solid var(--border-soft, rgba(148,163,184,0.22)) !important;
+    border-radius: 8px !important; background: rgba(255,255,255,0.04) !important;
+    color: var(--muted, rgba(226,232,240,0.72)) !important;
+    text-decoration: none !important;
+  }
+  .report-editor-entry .editor-jump-link svg {
+    width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2;
+    stroke-linecap: round; stroke-linejoin: round;
+  }
+  .report-editor-visually-hidden {
+    position: absolute !important; width: 1px !important; height: 1px !important;
+    padding: 0 !important; margin: -1px !important; overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;
+  }
+  .report-editor-inline-button:hover,
+  .report-editor-inline-button:focus-visible,
+  .report-editor-toggle:hover,
+  .report-editor-toggle:focus-visible {
+    background: rgba(158,206,106,0.28);
+    outline: 3px solid rgba(158,206,106,0.26); outline-offset: 2px;
+  }
+  .report-editor-entry .editor-jump-link:hover,
+  .report-editor-entry .editor-jump-link:focus-visible {
+    color: var(--text-strong, #f8fafc) !important;
+    border-color: rgba(158,206,106,0.42) !important;
+    background: rgba(158,206,106,0.10) !important;
+    outline: 3px solid rgba(158,206,106,0.22); outline-offset: 2px;
+  }
+  .report-editor-nav-button {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 31px; padding: 0 10px; border: 1px solid rgba(158,206,106,0.42);
+    border-radius: 8px; background: rgba(158,206,106,0.12);
+    color: var(--text-strong, #e8ebf3) !important;
+    font: 800 12px/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    white-space: nowrap; cursor: pointer;
+  }
+  .report-editor-nav-button:hover,
+  .report-editor-nav-button:focus-visible {
+    border-color: rgba(158,206,106,0.62); background: rgba(158,206,106,0.22);
+    outline: 2px solid rgba(158,206,106,0.24); outline-offset: 2px;
+  }
+  .editor-entry {
+    margin-top: 18px; display: grid; grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px; align-items: center; padding: 10px 12px; border-radius: 8px;
+    border: 1px solid rgba(158,206,106,0.32);
+    background: rgba(36,40,59,0.78);
+  }
+  .editor-entry-copy { min-width: 0; }
+  .editor-entry-title {
+    display: block; color: var(--text-strong); font-size: 14px; font-weight: 760;
+    line-height: 1.35; margin-bottom: 2px;
+  }
+  .editor-entry-status {
+    display: block; min-height: 16px; color: var(--muted); font-size: 12px;
+    line-height: 1.45;
+  }
+  .editor-entry[data-editor-entry-state="installed"] .editor-entry-status { color: var(--accent); }
+  .editor-entry[data-editor-entry-state="missing"] .editor-entry-status,
+  .editor-entry[data-editor-entry-state="fallback"] .editor-entry-status { color: #a9b1d6; }
+  .editor-entry[data-editor-entry-state="loading"] .editor-entry-status { color: var(--accent-warm); }
+  .editor-entry[data-editor-entry-state="error"] .editor-entry-status { color: #f7768e; }
+  .editor-entry-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+  .editor-entry-button {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 36px; padding: 8px 12px; border-radius: 8px; text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.16); color: var(--muted);
+    background: rgba(255,255,255,0.045); font-size: 13px; font-weight: 720;
+  }
+  .editor-entry-button.primary {
+    border-color: rgba(158,206,106,0.46);
+    background: rgba(158,206,106,0.16); color: var(--text-strong);
+  }
+  .editor-entry-button:hover {
+    background: rgba(255,255,255,0.075); color: var(--text-strong); text-decoration: none;
+  }
+  .editor-entry-button.primary:hover { background: rgba(158,206,106,0.23); }
+  .editor-entry-button:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.62); outline-offset: 2px;
+  }
+  .editor-split-shell {
+    position: fixed; inset: 0; z-index: 10000; display: grid;
+    grid-template-columns: minmax(420px, 52vw) minmax(420px, 1fr);
+    background: var(--bg); color: var(--text);
+  }
+  body.editor-split-active { overflow: hidden; }
+  .editor-split-player {
+    min-width: 0; border-right: 1px solid rgba(158,206,106,0.34);
+    background: #05070d; display: grid; grid-template-rows: auto 1fr auto;
+  }
+  .editor-split-toolbar {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    min-height: 48px; padding: 9px 12px; border-bottom: 1px solid rgba(255,255,255,0.10);
+    background: rgba(15,18,30,0.96);
+  }
+  .editor-split-title {
+    min-width: 0; color: var(--text-strong); font-size: 13px; font-weight: 760;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .editor-split-actions { display: flex; gap: 8px; align-items: center; flex-shrink: 0; }
+  .editor-split-action {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 34px; padding: 7px 10px; border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.16); background: rgba(255,255,255,0.055);
+    color: var(--text-strong); font-size: 12px; font-weight: 720; text-decoration: none; cursor: pointer;
+  }
+  .editor-split-action:hover { background: rgba(255,255,255,0.09); text-decoration: none; }
+  .editor-split-frame {
+    width: 100%; height: 100%; border: 0; background: #05070d; display: block;
+  }
+  .editor-split-workspace {
+    min-width: 0; height: 100vh; overflow: auto; background: var(--bg);
+    padding: 16px;
+  }
+  .editor-split-workspace .viewer-editor-tools {
+    margin: 0; min-height: calc(100vh - 32px);
+  }
+  .editor-split-placeholder { display: none; }
+  .editor-split-fallback {
+    padding: 12px; color: var(--muted); font-size: 12px; line-height: 1.55;
+    border-top: 1px solid rgba(255,255,255,0.10); background: rgba(15,18,30,0.96);
+  }
+  .viewer-editor-tools {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-color: rgba(158,206,106,0.34);
+    background: linear-gradient(180deg, rgba(158,206,106,0.055), transparent 170px), var(--surface);
+  }
+  .viewer-editor-head {
+    display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px;
+    align-items: start; padding: 22px 24px; border-bottom: 1px solid var(--border-soft);
+  }
+  .viewer-editor-title {
+    margin: 0 0 6px; color: var(--text-strong);
+    font-size: 21px; line-height: 1.35; letter-spacing: 0;
+  }
+  .viewer-editor-lead {
+    margin: 0; color: var(--muted); font-size: 14px; line-height: 1.65;
+  }
+  .viewer-editor-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+  .viewer-editor-button {
+    appearance: none; border: 1px solid rgba(122,162,247,0.38); cursor: pointer;
+    background: rgba(122,162,247,0.12); color: var(--text-strong);
+    padding: 10px 13px; border-radius: 8px; font-size: 13px; font-weight: 700;
+  }
+  .viewer-editor-button:hover { background: rgba(122,162,247,0.18); }
+  .viewer-editor-button.secondary {
+    border-color: rgba(255,255,255,0.16);
+    background: rgba(255,255,255,0.045); color: var(--muted);
+  }
+  .viewer-editor-button.secondary:hover { background: rgba(255,255,255,0.075); color: var(--text-strong); }
+  .viewer-editor-button:disabled {
+    opacity: 0.46; cursor: not-allowed; background: rgba(255,255,255,0.035);
+  }
+  .viewer-editor-button:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.62); outline-offset: 2px;
+  }
+  .viewer-editor-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 22px;
+    padding: 26px 24px 28px;
+  }
+  .viewer-editor-panel {
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(26,27,38,0.34); padding: 18px; min-width: 0; width: 100%;
+  }
+  .viewer-editor-panel.evidence-panel,
+  .viewer-editor-panel.cut-panel {
+    background: rgba(26,27,38,0.46);
+  }
+  .viewer-editor-panel h3 {
+    margin: 0 0 10px; color: var(--text-strong);
+    font-size: 17px; line-height: 1.4; letter-spacing: 0; font-weight: 750;
+  }
+  .viewer-editor-panel.cut-panel > summary {
+    cursor: pointer; margin: 0; color: var(--text-strong);
+    font-size: 17px; line-height: 1.4; letter-spacing: 0; font-weight: 750;
+    list-style: none;
+  }
+  .viewer-editor-panel.cut-panel > summary::-webkit-details-marker { display: none; }
+  .viewer-editor-panel.cut-panel > summary::before {
+    content: "▸"; display: inline-block; margin-right: 8px;
+    color: var(--muted); transition: transform 160ms ease;
+  }
+  .viewer-editor-panel.cut-panel[open] > summary::before { transform: rotate(90deg); }
+  .viewer-editor-panel.cut-panel > summary:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.62); outline-offset: 3px;
+    border-radius: 6px;
+  }
+  .viewer-editor-panel.cut-panel[open] > summary { margin-bottom: 10px; }
+  .viewer-editor-panel p {
+    margin: 0 0 14px; color: var(--muted); font-size: 14px; line-height: 1.75;
+    max-width: 72ch;
+  }
+  .viewer-editor-filter {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px;
+    color: var(--muted); font-size: 13px;
+  }
+  .viewer-editor-filter select {
+    min-height: 34px; border: 1px solid var(--border); border-radius: 8px;
+    background: var(--surface-2); color: var(--text); padding: 6px 9px; font: inherit;
+  }
+  .viewer-editor-axis {
+    overflow-x: auto; border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.24); padding: 8px;
+    overscroll-behavior: contain;
+    touch-action: pan-x;
+  }
+  .viewer-editor-zoom {
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 0 0 10px;
+    color: var(--muted); font-size: 12px;
+  }
+  .viewer-editor-zoom button,
+  .viewer-editor-zoom-btn {
+    appearance: none; -webkit-appearance: none;
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 34px; min-height: 32px; padding: 0 10px;
+    border: 1px solid rgba(122,162,247,0.38);
+    border-radius: 8px; background: rgba(122,162,247,0.12); color: var(--text-strong);
+    cursor: pointer; font: inherit; font-size: 12px; font-weight: 700;
+    line-height: 1;
+  }
+  .viewer-editor-zoom button:hover,
+  .viewer-editor-zoom-btn:hover { background: rgba(122,162,247,0.20); }
+  .viewer-editor-zoom button:focus-visible,
+  .viewer-editor-zoom-btn:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.55); outline-offset: 2px;
+  }
+  .viewer-editor-zoom input[type="range"] { width: min(220px, 100%); }
+  .viewer-editor-zoom-value {
+    min-width: 44px; color: var(--text-strong);
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+  }
+  .viewer-editor-axis-canvas {
+    display: grid; gap: 10px; min-width: calc(var(--viewer-editor-w, 960px) + 144px);
+  }
+  .viewer-editor-scale-row,
+  .viewer-editor-density-row,
+  .viewer-editor-waveform-row,
+  .viewer-editor-cluster-row,
+  .viewer-editor-lane-row {
+    display: grid; grid-template-columns: 136px var(--viewer-editor-w, 960px);
+    gap: 8px; align-items: center;
+  }
+  .viewer-editor-lane-label,
+  .viewer-editor-scale-label,
+  .viewer-editor-cluster-label,
+  .viewer-editor-density-label,
+  .viewer-editor-waveform-label {
+    position: sticky; left: 0; z-index: 2;
+    display: flex; flex-direction: column; justify-content: center;
+    min-height: 36px; padding: 6px 8px; border-radius: 6px;
+    background: rgba(26,27,38,0.96); color: var(--muted);
+    font-size: 12px; line-height: 1.32;
+  }
+  .viewer-editor-lane-label strong,
+  .viewer-editor-cluster-label strong,
+  .viewer-editor-density-label strong,
+  .viewer-editor-waveform-label strong,
+  .viewer-editor-scale-label strong {
+    color: var(--text-strong); font-size: 12px;
+  }
+  .viewer-editor-lane-label span,
+  .viewer-editor-cluster-label span,
+  .viewer-editor-density-label span,
+  .viewer-editor-waveform-label span,
+  .viewer-editor-scale-label span {
+    color: var(--muted); font-size: 11px;
+  }
+  .viewer-editor-scale {
+    position: relative; height: 24px; min-width: var(--viewer-editor-w, 960px); border-radius: 6px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px) 0 0 / 8.333% 100%;
+  }
+  .viewer-editor-scale span {
+    position: absolute; top: 3px; transform: translateX(-50%);
+    color: var(--muted); font-size: 10px; white-space: nowrap;
+  }
+  .viewer-editor-density {
+    position: relative; height: 42px; min-width: var(--viewer-editor-w, 960px); border: 1px solid var(--border);
+    border-radius: 6px; background: rgba(10,12,22,0.34);
+  }
+  .viewer-editor-cluster-track {
+    position: relative; height: 64px; min-width: var(--viewer-editor-w, 960px);
+    border: 1px solid rgba(158,206,106,0.24); border-radius: 6px;
+    background:
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px) 0 0 / 8.333% 100%,
+      rgba(10,12,22,0.30);
+  }
+  .viewer-editor-cluster-marker {
+    position: absolute; top: var(--cluster-marker-top, 7px); min-width: 24px; height: 24px; padding: 0 7px;
+    border: 1px solid rgba(255,255,255,0.25); border-radius: 999px;
+    transform: translateX(-50%); cursor: pointer;
+    background: rgba(158,206,106,0.76); color: #0b1020;
+    font: inherit; font-size: 11px; font-weight: 820; line-height: 1;
+    display: inline-flex; align-items: center; justify-content: center;
+    box-shadow: 0 0 0 3px rgba(158,206,106,0.10);
+  }
+  .viewer-editor-cluster-marker.medium {
+    background: rgba(224,175,104,0.82);
+    box-shadow: 0 0 0 3px rgba(224,175,104,0.10);
+  }
+  .viewer-editor-cluster-marker.low {
+    background: rgba(122,162,247,0.78);
+    box-shadow: 0 0 0 3px rgba(122,162,247,0.10);
+  }
+  .viewer-editor-cluster-marker:hover,
+  .viewer-editor-cluster-marker:focus-visible {
+    outline: 2px solid rgba(158,206,106,0.50); outline-offset: 2px;
+  }
+  .viewer-editor-cluster-marker.selected {
+    outline: 2px solid var(--accent-warm); outline-offset: 2px;
+  }
+  .viewer-editor-cluster-marker.lane-b {
+    --cluster-marker-top: 34px;
+  }
+  .viewer-editor-density-bar {
+    position: absolute; bottom: 0; min-width: 1px; height: 100%;
+    border: 0; border-radius: 4px; background: transparent; cursor: pointer; padding: 0;
+    box-sizing: border-box;
+  }
+  .viewer-editor-density-bar span {
+    position: absolute; left: 0; right: 0; bottom: 0; display: block;
+    height: var(--bar-h, 3px); min-height: 3px; border-radius: 3px 3px 0 0;
+    background: rgba(247,118,142,0.52);
+  }
+  .viewer-editor-density-bar span::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0;
+    height: var(--global-h, 0px); min-height: 0; border-radius: 3px 3px 0 0;
+    background: rgba(255,255,255,0.20);
+  }
+  .viewer-editor-density-bar.low span { min-height: 5px; }
+  .viewer-editor-density-bar.zero span {
+    height: 2px; min-height: 2px; background: rgba(154,165,190,0.26);
+  }
+  .viewer-editor-density-bar.missing span {
+    height: 2px; min-height: 2px;
+    background: repeating-linear-gradient(90deg, rgba(154,165,190,0.32) 0 3px, transparent 3px 6px);
+  }
+  .viewer-editor-density-bar.hot span { background: rgba(247,118,142,0.82); }
+  .viewer-editor-heatmap-track {
+    overflow: hidden;
+    background:
+      linear-gradient(90deg, rgba(255,255,255,0.055) 1px, transparent 1px) 0 0 / 8.333% 100%,
+      linear-gradient(180deg, rgba(122,162,247,0.06), rgba(10,12,22,0.34));
+  }
+  .viewer-editor-heatmap-surface {
+    position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none;
+    z-index: 1;
+    filter: drop-shadow(0 0 12px rgba(247,118,142,0.18));
+  }
+  .viewer-editor-heatmap-surface .heatmap-fill {
+    fill: url(#viewerEditorHeatmapGradient); opacity: 0.86;
+  }
+  .viewer-editor-heatmap-surface .heatmap-line {
+    fill: none; stroke: rgba(255,199,119,0.72); stroke-width: 2.4;
+    stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke;
+  }
+  .viewer-editor-heatmap-zone {
+    position: absolute; top: 0; bottom: 0; min-width: 22px;
+    border: 0; border-radius: 0;
+    cursor: pointer; padding: 0; box-sizing: border-box;
+    background: transparent;
+    box-shadow: none;
+    z-index: 2;
+  }
+  .viewer-editor-heatmap-zone.medium {
+    background: transparent;
+    box-shadow: none;
+  }
+  .viewer-editor-heatmap-zone.low {
+    background: transparent;
+    box-shadow: none;
+  }
+  .viewer-editor-heatmap-zone.selected {
+    outline: 2px solid var(--accent-warm); outline-offset: -2px;
+    border-radius: 4px;
+    background: rgba(255,199,119,0.07);
+    box-shadow: inset 0 0 0 1px rgba(255,199,119,0.72), 0 0 18px rgba(255,199,119,0.20);
+  }
+  .viewer-editor-heatmap-zone.selected::after {
+    content: '';
+    position: absolute; top: 4px; bottom: 4px; left: 50%; width: 2px;
+    transform: translateX(-50%);
+    border-radius: 999px;
+    background: rgba(255,235,170,0.95);
+    box-shadow: 0 0 10px rgba(255,199,119,0.46);
+  }
+  .viewer-editor-heatmap-zone:hover,
+  .viewer-editor-heatmap-zone:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.44); outline-offset: -2px;
+  }
+  .viewer-editor-heatmap-legend {
+    display: inline-flex; flex-wrap: wrap; gap: 4px 6px; align-items: center; margin-top: 4px;
+  }
+  .viewer-editor-heatmap-legend span {
+    display: inline-flex; align-items: center; gap: 4px; color: var(--muted); font-size: 10px;
+  }
+  .viewer-editor-heatmap-legend span::before {
+    content: ""; width: 18px; height: 6px; border-radius: 999px; background: rgba(122,162,247,0.46);
+  }
+  .viewer-editor-heatmap-legend .medium::before {
+    background: linear-gradient(90deg, rgba(224,175,104,0.86), rgba(158,206,106,0.58));
+  }
+  .viewer-editor-heatmap-legend .hot::before {
+    background: linear-gradient(90deg, rgba(224,175,104,0.72), rgba(247,118,142,0.92));
+  }
+  .viewer-editor-waveform {
+    position: relative; height: 46px; min-width: var(--viewer-editor-w, 960px);
+    border: 1px solid rgba(224,175,104,0.20); border-radius: 6px;
+    background:
+      linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px) 0 0 / 8.333% 100%,
+      linear-gradient(180deg, rgba(224,175,104,0.05), rgba(10,12,22,0.22));
+    overflow: hidden;
+  }
+  .viewer-editor-waveform svg {
+    position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none;
+  }
+  .viewer-editor-waveform-bar {
+    stroke: rgba(184,194,215,0.58); stroke-width: 1.35;
+    stroke-linecap: round; vector-effect: non-scaling-stroke;
+  }
+  .viewer-editor-waveform-bar.hot {
+    stroke: rgba(224,175,104,0.92); stroke-width: 1.8;
+  }
+  .viewer-editor-waveform-midline {
+    stroke: rgba(224,175,104,0.24); stroke-width: 1; stroke-dasharray: 4 5;
+  }
+  .viewer-editor-track {
+    position: relative; height: 38px; min-width: var(--viewer-editor-w, 960px); border: 1px solid var(--border);
+    border-radius: 6px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.055) 1px, transparent 1px) 0 0 / 8.333% 100%, rgba(10,12,22,0.24);
+  }
+  .viewer-editor-density-control {
+    display: flex; flex-wrap: wrap;
+    gap: 8px 10px; align-items: center; margin: 10px 0 12px;
+    max-width: 460px;
+  }
+  .viewer-editor-density-control label {
+    flex: 0 1 130px;
+    color: var(--text-strong); font-size: 12px; font-weight: 720;
+  }
+  .viewer-editor-density-control input[type="range"] { flex: 1 1 140px; min-width: 0; accent-color: var(--tc); }
+  .viewer-editor-density-value {
+    flex: 0 0 auto;
+    min-width: 62px; text-align: left; color: var(--muted); font-size: 12px; font-weight: 700;
+  }
+  .viewer-editor-marker {
+    position: absolute; top: 0; bottom: 0; min-width: 16px;
+    border: 0; border-radius: 6px; background: transparent; cursor: pointer;
+    transform: translateX(-50%); padding: 0;
+  }
+  .viewer-editor-marker.range { transform: none; min-width: 14px; }
+  .viewer-editor-marker::before {
+    content: ""; position: absolute; left: 50%; top: 6px;
+    width: 11px; height: 22px; transform: translateX(-50%);
+    border: 1px solid rgba(255,255,255,0.24); border-radius: 999px;
+    background: var(--viewer-marker-color, var(--tc));
+  }
+  .viewer-editor-marker.range::before {
+    left: 0; right: 0; width: auto; transform: none;
+    background: var(--viewer-marker-color, rgba(158,206,106,0.72));
+  }
+  .viewer-editor-marker:hover,
+  .viewer-editor-marker:focus-visible,
+  .viewer-editor-density-bar:hover,
+  .viewer-editor-density-bar:focus-visible {
+    outline: 2px solid rgba(122,162,247,0.38); outline-offset: 2px;
+    background: rgba(122,162,247,0.08);
+  }
+  .viewer-editor-marker.selected { outline: 2px solid var(--accent-warm); outline-offset: 2px; }
+  .viewer-editor-marker[data-kind="highlight"]::before { background: var(--viewer-marker-color, rgba(224,175,104,0.86)); }
+  .viewer-editor-marker[data-kind="highlight_candidate"]::before { background: var(--viewer-marker-color, rgba(247,118,142,0.78)); }
+  .viewer-editor-marker[data-kind="chapter"]::before { background: var(--viewer-marker-color, rgba(187,154,247,0.74)); }
+  .viewer-editor-marker[data-kind="existing_segments"]::before { background: var(--viewer-marker-color, rgba(122,162,247,0.86)); }
+  .viewer-editor-marker[data-kind="chat_laughter"]::before,
+  .viewer-editor-marker[data-kind="chat_surprise"]::before { background: var(--viewer-marker-color, rgba(247,118,142,0.82)); }
+  .viewer-editor-marker[data-kind="comment_replay"]::before { background: var(--viewer-marker-color, rgba(187,154,247,0.74)); }
+  .viewer-editor-marker[data-kind="viewer_clip"]::before { background: var(--viewer-marker-color, rgba(158,206,106,0.82)); }
+  .viewer-editor-marker.clip-cluster::after {
+    content: attr(data-cluster-count);
+    position: absolute; left: 50%; top: -8px; transform: translateX(2px);
+    min-width: 18px; height: 18px; padding: 0 4px; border-radius: 999px;
+    display: inline-flex; align-items: center; justify-content: center;
+    border: 1px solid rgba(255,255,255,0.36); background: rgba(158,206,106,0.94);
+    color: #0b1020; font-size: 11px; font-weight: 820; line-height: 1;
+  }
+  .viewer-editor-marker[data-kind="audio_peak"]::before { background: var(--viewer-marker-color, rgba(224,175,104,0.86)); }
+  .viewer-editor-marker[data-kind="subtitle_density"]::before { background: var(--viewer-marker-color, rgba(125,207,255,0.76)); }
+  .viewer-editor-summary {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-bottom: 12px;
+  }
+  .viewer-editor-stat {
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.20); padding: 10px;
+  }
+  .viewer-editor-stat span { display: block; color: var(--muted); font-size: 11px; }
+  .viewer-editor-stat strong {
+    display: block; color: var(--text-strong); font-size: 14px; line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+  .viewer-editor-selected-card {
+    border: 1px solid var(--border); border-left: 4px solid var(--viewer-marker-color, var(--tc));
+    border-radius: 8px; background: rgba(10,12,22,0.22);
+    padding: 15px 16px 16px 18px; margin-bottom: 14px;
+  }
+  .viewer-editor-selected-kicker {
+    display: block; margin-bottom: 6px;
+    color: var(--muted); font-size: 12.5px; font-weight: 650;
+  }
+  .viewer-editor-selected-title {
+    color: var(--text-strong); font-size: 17px; line-height: 1.5; font-weight: 750;
+    overflow-wrap: anywhere;
+  }
+  .viewer-editor-selected-meta {
+    display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px;
+  }
+  .viewer-editor-chip {
+    display: inline-flex; align-items: center; min-height: 27px;
+    border: 1px solid rgba(122,162,247,0.26); border-radius: 999px;
+    background: rgba(122,162,247,0.09); color: var(--text);
+    padding: 4px 10px; font-size: 12.5px; line-height: 1.45; font-weight: 650;
+  }
+  a.viewer-editor-chip, .viewer-editor-time-link, .viewer-editor-evidence-link {
+    color: var(--tc); text-decoration: none; font-weight: 700;
+  }
+  a.viewer-editor-chip:hover, .viewer-editor-time-link:hover, .viewer-editor-evidence-link:hover {
+    text-decoration: underline;
+  }
+  .viewer-editor-chip.warning {
+    border-color: rgba(224,175,104,0.34);
+    background: rgba(224,175,104,0.10);
+  }
+  button.viewer-editor-chip {
+    cursor: pointer;
+    font: inherit;
+  }
+  .viewer-editor-chip.selected {
+    border-color: rgba(158,206,106,0.48);
+    background: rgba(158,206,106,0.13);
+    color: var(--text-strong);
+  }
+  .viewer-editor-target-picker {
+    border: 1px solid rgba(122,162,247,0.20);
+    border-radius: 8px;
+    background: rgba(122,162,247,0.055);
+    padding: 12px 13px;
+    margin: -4px 0 14px;
+  }
+  .viewer-editor-target-picker strong {
+    display: block; margin-bottom: 8px; color: var(--text-strong); font-size: 13px;
+  }
+  .viewer-editor-target-buttons {
+    display: flex; flex-wrap: wrap; gap: 7px;
+  }
+  .viewer-editor-guide {
+    margin: 0 0 14px; color: var(--muted); font-size: 14px; line-height: 1.7;
+  }
+  .viewer-editor-context {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch; gap: 12px; margin-bottom: 14px;
+  }
+  .viewer-editor-context-card {
+    border: 1px solid rgba(122,162,247,0.22); border-radius: 8px;
+    background: rgba(122,162,247,0.055); padding: 14px 15px; min-height: 124px;
+    color: var(--text); font-size: 14px; line-height: 1.72;
+  }
+  .viewer-editor-context-card strong {
+    display: block; margin-bottom: 8px; color: var(--text-strong); font-size: 14px; font-weight: 750;
+  }
+  .viewer-editor-context-line {
+    display: flex; gap: 10px; align-items: baseline; margin-top: 6px;
+  }
+  .viewer-editor-context-time {
+    flex: 0 0 auto; color: var(--tc);
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+    font-size: 12.5px; font-weight: 700;
+  }
+  .viewer-editor-context-text {
+    min-width: 0; color: var(--text); overflow-wrap: anywhere;
+  }
+  .viewer-editor-context-more {
+    margin-top: 7px; color: var(--muted); font-size: 13px;
+  }
+  .viewer-editor-context-more summary {
+    cursor: pointer; color: var(--tc); font-weight: 700;
+  }
+  .viewer-editor-context-more[open] summary { margin-bottom: 6px; }
+  .viewer-editor-list { display: grid; gap: 10px; }
+  .viewer-editor-row {
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.18); padding: 13px 14px;
+    color: var(--text); font-size: 14px; line-height: 1.72;
+  }
+  .viewer-editor-row strong { color: var(--text-strong); font-weight: 720; }
+  .viewer-editor-row-note {
+    margin-top: 7px; color: var(--muted); font-size: 13px; line-height: 1.6;
+  }
+  .viewer-editor-row.reason {
+    border-color: rgba(224,175,104,0.30);
+    background: rgba(224,175,104,0.08);
+  }
+  .viewer-editor-row.cluster-member {
+    border-color: rgba(158,206,106,0.22);
+    background: rgba(158,206,106,0.07);
+  }
+  .viewer-editor-row.cluster-member.rest {
+    border-color: rgba(122,162,247,0.18);
+    background: rgba(122,162,247,0.055);
+  }
+  .viewer-editor-row.cluster-member .viewer-editor-member-rank {
+    display: inline-flex; margin: 0 0 5px; padding: 2px 7px;
+    border-radius: 999px; background: rgba(255,255,255,0.08);
+    color: var(--muted); font-size: 11px; font-weight: 750;
+  }
+  .viewer-editor-source-badges {
+    display: flex; flex-wrap: wrap; gap: 5px; margin: 6px 0 2px;
+  }
+  .viewer-editor-source-badges .viewer-editor-chip {
+    font-size: 11px; padding: 2px 7px;
+  }
+  .viewer-editor-confirm {
+    display: grid; gap: 6px; margin: 12px 0;
+    padding: 12px; border: 1px solid rgba(158,206,106,0.26);
+    border-radius: 8px; background: rgba(158,206,106,0.07);
+    color: var(--muted); font-size: 13px; line-height: 1.55;
+  }
+  .viewer-editor-confirm label {
+    display: flex; align-items: flex-start; gap: 8px;
+    color: var(--text-strong); font-weight: 750;
+  }
+  .viewer-editor-confirm input {
+    flex: 0 0 auto; margin-top: 2px; accent-color: var(--accent);
+  }
+  .viewer-editor-pre {
+    max-height: 300px; overflow: auto; margin: 10px 0 0;
+    border: 1px solid var(--border); border-radius: 8px;
+    background: rgba(10,12,22,0.32); padding: 12px;
+    color: var(--text); white-space: pre-wrap; word-break: break-word;
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+    font-size: 13px; line-height: 1.65;
+  }
+  .viewer-editor-status { color: var(--muted); font-size: 13px; min-height: 18px; }
+  .viewer-editor-empty { color: var(--muted); font-size: 14px; line-height: 1.65; padding: 10px 0; }
+  @media (max-width: 900px) {
+    .editor-entry { grid-template-columns: 1fr; align-items: start; }
+    .editor-entry-actions { justify-content: flex-start; }
+    .editor-split-shell { grid-template-columns: 1fr; grid-template-rows: minmax(240px, 42vh) 1fr; }
+    .editor-split-player { border-right: 0; border-bottom: 1px solid rgba(158,206,106,0.34); }
+    .editor-split-workspace { height: auto; min-height: 0; padding: 10px; }
+    .viewer-editor-head { grid-template-columns: 1fr; }
+    .viewer-editor-actions { justify-content: flex-start; }
+    .viewer-editor-grid { padding: 18px; }
+    .viewer-editor-summary { grid-template-columns: 1fr; }
+    .viewer-editor-context { grid-template-columns: 1fr; }
+  }
+
 </style>
-<link rel="stylesheet" href="../../assets/viewer-editor-tools.css?v=0fab50c0453b">
+<link rel="stylesheet" href="../../assets/viewer-editor-tools.css?v=d67f1ba67ea5">
 </head>
-<body>
+<body data-default-editor-mode="companion">
 <nav class="public-report-nav" data-report-block="public-report-nav" aria-label="리포트 이동">
   <div class="public-report-nav-inner">
-    <a class="public-report-brand" href="../../index.html">VOD 요약 허브</a>
+    <a class="public-report-brand" href="../../index.html">CVA</a>
     <div class="public-report-nav-links">
       <a class="public-report-nav-link" href="../../index.html">스트리머</a>
       <a class="public-report-nav-link" href="../../search.html">검색</a>
-      <button type="button" class="report-editor-nav-button" hidden>편집자 모드로 보기</button>
+      <a class="public-report-nav-link public-report-editor-link" href="#youtube-editor-tools">장면 도구</a>
     </div>
   </div>
 </nav>
@@ -521,9 +1217,9 @@
     <span>08:57:55</span>
     <span>데드 바이 데이라이트</span>
     <span class="top-vod-link-row"><a class="top-vod-link" href="https://chzzk.naver.com/video/14555580" target="_blank" rel="noopener" title="치지직에서 원본 방송을 새 탭으로 엽니다">원본 방송 보기</a></span></div>
-  
-  <div class="editor-jump report-editor-entry" data-editor-entry data-editor-entry-state="loading" data-editor-split="chzzk-workspace" data-editor-video-no="14555580" data-editor-chzzk-url="https://chzzk.naver.com/video/14555580">
-    <button type="button" class="report-editor-inline-button" data-editor-entry-primary data-report-editor="toggle" aria-label="편집자 모드로 보기: 왼쪽 CHZZK 화면과 오른쪽 편집자 워크스페이스 열기">편집자 모드로 보기</button>
+
+  <div class="editor-jump report-editor-entry" data-editor-entry data-editor-entry-state="fallback" data-editor-mode="companion" data-editor-video-no="14555580" data-editor-chzzk-url="https://chzzk.naver.com/video/14555580">
+    <a class="report-editor-inline-button editor-companion-entry-link" data-editor-entry-primary href="https://chzzk.naver.com/video/14555580" target="ttaem-chzzk-companion" rel="opener" aria-label="CHZZK VOD 링크. 우클릭 후 분할 보기에서 링크 열기">CHZZK VOD 링크</a>
     <span class="editor-entry-status" data-editor-entry-status hidden></span>
     <a class="editor-jump-link report-editor-tool-link" href="#youtube-editor-tools" aria-label="유튜브 편집자용 장면 도구로 이동" title="장면 도구로 이동">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -1142,7 +1838,159 @@ async function copyChzzkCommentText(btn) {
   }
 </script>
 
-<script id="viewerEditorToolsScript"></script>
+<script id="viewerEditorToolsScript">
+function initEditorSplitMode() {
+  const entry = document.querySelector('[data-editor-entry]');
+  const workspace = document.getElementById('youtube-editor-tools');
+  const primaryBtn = document.querySelector('[data-editor-entry-primary]');
+  if (!entry || !workspace || !primaryBtn) return;
+
+  const explicitUrl = entry.getAttribute('data-editor-chzzk-url') || '';
+  const sourceLink = document.querySelector('a[href*="chzzk.naver.com/video/"]');
+  const chzzkUrl = explicitUrl || sourceLink?.href || '';
+  let placeholder = null;
+  let shell = null;
+
+  function setEntryState(state, message) {
+    entry.setAttribute('data-editor-entry-state', state);
+    const status = entry.querySelector('[data-editor-entry-status]');
+    if (status) {
+      status.textContent = message || '';
+      status.hidden = !message;
+    }
+  }
+
+  function editorModeUrlOff() {
+    const url = new URL(location.href);
+    url.searchParams.delete('editor');
+    return `${url.pathname}${url.search}${url.hash}`;
+  }
+
+  function editorModeUrlOn() {
+    const url = new URL(location.href);
+    url.searchParams.set('editor', '1');
+    if (!url.hash) url.hash = 'youtube-editor-tools';
+    return `${url.pathname}${url.search}${url.hash}`;
+  }
+
+  function closeSplitEditorMode() {
+    if (!shell) return;
+    if (placeholder && workspace) {
+      placeholder.replaceWith(workspace);
+    }
+    shell.remove();
+    shell = null;
+    placeholder = null;
+    document.body.classList.remove('editor-split-active');
+    setEntryState('fallback', '');
+    updateNavToggleVisibility();
+    history.replaceState(null, '', editorModeUrlOff());
+  }
+
+  function openSplitEditorMode() {
+    if (!chzzkUrl) {
+      workspace.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setEntryState('error', 'CHZZK 주소 없음');
+      return;
+    }
+    if (shell) return;
+    placeholder = document.createElement('div');
+    placeholder.className = 'editor-split-placeholder';
+    placeholder.setAttribute('data-editor-split-placeholder', '');
+    workspace.replaceWith(placeholder);
+
+    shell = document.createElement('section');
+    shell.className = 'editor-split-shell';
+    shell.setAttribute('data-editor-split-shell', '');
+    shell.setAttribute('aria-label', 'CHZZK 원본과 편집자 워크스페이스 나란히 보기');
+    shell.innerHTML = `
+      <div class="editor-split-player" data-editor-split-player>
+        <div class="editor-split-toolbar">
+          <strong class="editor-split-title">CHZZK 원본 화면</strong>
+          <div class="editor-split-actions">
+            <a class="editor-split-action" href="${chzzkUrl}" target="_blank" rel="noopener">새 탭</a>
+            <button type="button" class="editor-split-action" data-editor-split-close>요약으로 돌아가기</button>
+          </div>
+        </div>
+        <iframe class="editor-split-frame" data-editor-chzzk-frame src="${chzzkUrl}" title="CHZZK 원본 방송 화면" allow="autoplay; fullscreen; picture-in-picture; encrypted-media" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="editor-split-fallback">CHZZK가 iframe 재생을 제한하면 왼쪽의 새 탭 버튼으로 원본을 열고, 오른쪽 워크스페이스에서 컷 후보를 계속 확인합니다.</div>
+      </div>
+      <div class="editor-split-workspace" data-editor-split-workspace></div>
+    `;
+    shell.querySelector('[data-editor-split-workspace]').appendChild(workspace);
+    shell.querySelector('[data-editor-split-close]').addEventListener('click', closeSplitEditorMode);
+    document.body.appendChild(shell);
+    document.body.classList.add('editor-split-active');
+    setEntryState('fallback', '');
+    updateNavToggleVisibility();
+    history.replaceState(null, '', editorModeUrlOn());
+  }
+  function updateNavToggleVisibility() {}
+  function installNavToggleButton() {}
+
+
+  primaryBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+    openSplitEditorMode();
+  });
+  installNavToggleButton();
+
+  const params = new URLSearchParams(location.search);
+  if (params.get('editor') === '1') {
+    window.setTimeout(openSplitEditorMode, 0);
+  }
+}
+
+function initEditorEntryState() {
+  const entry = document.querySelector('[data-editor-entry]');
+  if (!entry) return;
+  const statusEl = entry.querySelector('[data-editor-entry-status]');
+  const primaryBtn = entry.querySelector('[data-editor-entry-primary]');
+  const setState = (state, message) => {
+    entry.setAttribute('data-editor-entry-state', state);
+    if (statusEl) {
+      statusEl.textContent = message || '';
+      statusEl.hidden = !message;
+    }
+  };
+  const target = document.getElementById('youtube-editor-tools');
+  setState('loading', '');
+  window.setTimeout(() => {
+    if (entry.getAttribute('data-editor-entry-state') !== 'loading') return;
+    if (target) {
+      setState('fallback', '');
+    } else {
+      setState('error', '워크스페이스 없음');
+    }
+  }, 0);
+  if (primaryBtn) {
+    primaryBtn.addEventListener('click', () => {
+      setState('loading', '');
+      window.setTimeout(() => {
+        if (target) {
+          setState('fallback', '');
+        } else {
+          setState('error', '열기 실패');
+        }
+      }, 180);
+    });
+  }
+  window.addEventListener('chzzk-editor-extension-ready', () => {
+    setState('installed', '');
+  });
+  window.addEventListener('chzzk-editor-extension-missing', () => {
+    setState('missing', '');
+  });
+  window.addEventListener('chzzk-editor-extension-error', () => {
+    setState('error', '확인 필요');
+  });
+}
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initViewerClipPlayers);
+} else {
+  initViewerClipPlayers();
+}
+</script>
 
 <script id="summaryEvidencePackData" type="application/json">{"schema_version":"rendered_summary_evidence_payload.v1","source_schema_version":"summary_evidence_pack.v1","render_target":"report_html_script#summaryEvidencePackData","raw_content_included":false,"summary":{"segment_count":76,"matched_segment_count":76,"unmatched_segment_count":0,"timed_evidence_count":25,"semantic_index_item_count":0,"semantic_index_vectorized_count":0,"semantic_matched_ref_count":0,"window_sec":90,"top_k":3},"items":[{"segment_id":"seg_timeline_7e43959bca6a","kind":"timeline","section":"timeline","start_sec":521,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_1_108_0558bb8b7c75","rank":1,"score":115.45,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":108,"end_sec":1854,"text_hash":"0558bb8b7c7568f163e1a0f94271aefaf03a88026977948cebdedc9cccd5d61d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_8e0191a3fc18","kind":"timeline","section":"timeline","start_sec":1000,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_1_108_0558bb8b7c75","rank":1,"score":115.45,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":108,"end_sec":1854,"text_hash":"0558bb8b7c7568f163e1a0f94271aefaf03a88026977948cebdedc9cccd5d61d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_8ec3cd22f49d","kind":"timeline","section":"timeline","start_sec":1066,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_1_108_0558bb8b7c75","rank":1,"score":115.45,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":108,"end_sec":1854,"text_hash":"0558bb8b7c7568f163e1a0f94271aefaf03a88026977948cebdedc9cccd5d61d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_4c9c24b00b5b","kind":"timeline","section":"timeline","start_sec":1853,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_2_1824_cdade6adfd1e","rank":1,"score":119.675,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":1824,"end_sec":3063,"text_hash":"cdade6adfd1efc71dce658190ff2fa1577eea7010b8723715bda4d9f4df46f37","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0},{"evidence_id":"te_14555580_1_108_0558bb8b7c75","rank":2,"score":115.45,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":108,"end_sec":1854,"text_hash":"0558bb8b7c7568f163e1a0f94271aefaf03a88026977948cebdedc9cccd5d61d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_6e49548ff5e3","kind":"timeline","section":"timeline","start_sec":2199,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_2_1824_cdade6adfd1e","rank":1,"score":119.675,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":1824,"end_sec":3063,"text_hash":"cdade6adfd1efc71dce658190ff2fa1577eea7010b8723715bda4d9f4df46f37","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_c37ff0185620","kind":"timeline","section":"timeline","start_sec":2717,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_2_1824_cdade6adfd1e","rank":1,"score":119.675,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":1824,"end_sec":3063,"text_hash":"cdade6adfd1efc71dce658190ff2fa1577eea7010b8723715bda4d9f4df46f37","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_6472f6a75cbc","kind":"timeline","section":"timeline","start_sec":3000,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_2_1824_cdade6adfd1e","rank":1,"score":119.675,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":1824,"end_sec":3063,"text_hash":"cdade6adfd1efc71dce658190ff2fa1577eea7010b8723715bda4d9f4df46f37","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_b362d22f7e5f","kind":"timeline","section":"timeline","start_sec":6563,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_6_6483_14adb7b513d3","rank":1,"score":119.016667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":6483,"end_sec":7801,"text_hash":"14adb7b513d39cbc44800c8467b3b6928c35968e25a53797edc25c4fef414d09","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_49eff156bdcb","kind":"timeline","section":"timeline","start_sec":7485,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_6_6483_14adb7b513d3","rank":1,"score":119.016667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":6483,"end_sec":7801,"text_hash":"14adb7b513d39cbc44800c8467b3b6928c35968e25a53797edc25c4fef414d09","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_bf7803572997","kind":"timeline","section":"timeline","start_sec":7683,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_6_6483_14adb7b513d3","rank":1,"score":119.016667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":6483,"end_sec":7801,"text_hash":"14adb7b513d39cbc44800c8467b3b6928c35968e25a53797edc25c4fef414d09","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_b794713e0e12","kind":"timeline","section":"timeline","start_sec":8475,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_8_8442_6831771a9a07","rank":1,"score":120.308333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":8442,"end_sec":9605,"text_hash":"6831771a9a07cfde2b4cb6f24c01d1318b009742126098dd43f22df3a8bcfb71","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_64caca8d1850","kind":"timeline","section":"timeline","start_sec":10926,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_10_10444_f4e20dca4e71","rank":1,"score":123.558333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":10444,"end_sec":11217,"text_hash":"f4e20dca4e71667816e7342ece9b63d509f77fe5c0225f4b5c365b4bb61149a7","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_ad76f7f67b59","kind":"timeline","section":"timeline","start_sec":11864,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_11_11187_7e96150f03c3","rank":1,"score":121.141667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":11187,"end_sec":12250,"text_hash":"7e96150f03c3714ea23e904fb0df9dd8ba7c90d330ce78e8e22198daafcbe81f","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_57340442b825","kind":"timeline","section":"timeline","start_sec":13149,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_13_13064_34600d048111","rank":1,"score":121.475,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":13064,"end_sec":14087,"text_hash":"34600d048111d6a92f60338faff64df9a5d670b4a9100bbfb8a34d4b17e5db6e","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_57093b9db03d","kind":"timeline","section":"timeline","start_sec":13847,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_13_13064_34600d048111","rank":1,"score":121.475,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":13064,"end_sec":14087,"text_hash":"34600d048111d6a92f60338faff64df9a5d670b4a9100bbfb8a34d4b17e5db6e","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_21c574178327","kind":"timeline","section":"timeline","start_sec":16058,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_15_15704_26027821f7d3","rank":1,"score":111.108333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":15704,"end_sec":17971,"text_hash":"26027821f7d3dedcb800594dc2469dfc4dad804268a4248723c136552d811e4f","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_b8d0cd13d5b9","kind":"timeline","section":"timeline","start_sec":17246,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_15_15704_26027821f7d3","rank":1,"score":111.108333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":15704,"end_sec":17971,"text_hash":"26027821f7d3dedcb800594dc2469dfc4dad804268a4248723c136552d811e4f","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_0602dfc34def","kind":"timeline","section":"timeline","start_sec":17950,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_15_15704_26027821f7d3","rank":1,"score":111.108333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":15704,"end_sec":17971,"text_hash":"26027821f7d3dedcb800594dc2469dfc4dad804268a4248723c136552d811e4f","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_65c30212c0c6","kind":"timeline","section":"timeline","start_sec":18429,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_16_18002_617c3b62e0ff","rank":1,"score":121.683333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":18002,"end_sec":19000,"text_hash":"617c3b62e0ff4fd79ff5f80c1c52656de8b4bae9b7501bc7e44288153e0a985c","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_4d14ae24a787","kind":"timeline","section":"timeline","start_sec":19107,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_17_18975_96266243472e","rank":1,"score":118.341667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":18975,"end_sec":20374,"text_hash":"96266243472e09e48c0b1c4e4b813b6159e246707126fb13734e7f56d8e0b68f","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_a846f263e55d","kind":"timeline","section":"timeline","start_sec":21438,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_18_20402_d328708e4224","rank":1,"score":117.85,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":20402,"end_sec":21860,"text_hash":"d328708e42244a3133dc2d2d976b4d2d8f17a87b36a70fdadd2a7627c4cd9a41","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_970664838b75","kind":"timeline","section":"timeline","start_sec":23406,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_20_22501_66dd5a1466f9","rank":1,"score":119.408333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":22501,"end_sec":23772,"text_hash":"66dd5a1466f9dd158792a3e61859fc3dfc31a1e9a4dcd6be5ffbf4c8672f0eb9","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_62482ce7ceb5","kind":"timeline","section":"timeline","start_sec":24090,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_21_23765_09653541aca9","rank":1,"score":109.791667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":23765,"end_sec":26190,"text_hash":"09653541aca99d7896f74259b04d431c8ca762a331f408b94433e4e443ecfc7d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_687dabcdc4c5","kind":"timeline","section":"timeline","start_sec":26168,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_22_26163_83bca48c64f0","rank":1,"score":112.183333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":26163,"end_sec":28301,"text_hash":"83bca48c64f05783990c6036a210eeda98ce28376c1b29127794f3a293f08185","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0},{"evidence_id":"te_14555580_21_23765_09653541aca9","rank":2,"score":109.791667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":23765,"end_sec":26190,"text_hash":"09653541aca99d7896f74259b04d431c8ca762a331f408b94433e4e443ecfc7d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_timeline_de8f19017a40","kind":"timeline","section":"timeline","start_sec":27691,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_22_26163_83bca48c64f0","rank":1,"score":112.183333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":26163,"end_sec":28301,"text_hash":"83bca48c64f05783990c6036a210eeda98ce28376c1b29127794f3a293f08185","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_bb5c710309ec","kind":"highlight","section":"highlights","start_sec":1000,"end_sec":1066,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_1_108_0558bb8b7c75","rank":1,"score":101.890034,"semantic_score":null,"match_reason":"timestamp_overlap","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":108,"end_sec":1854,"text_hash":"0558bb8b7c7568f163e1a0f94271aefaf03a88026977948cebdedc9cccd5d61d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_78d946f6a38a","kind":"highlight","section":"highlights","start_sec":1794,"end_sec":1853,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_1_108_0558bb8b7c75","rank":1,"score":101.689576,"semantic_score":null,"match_reason":"timestamp_overlap","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":108,"end_sec":1854,"text_hash":"0558bb8b7c7568f163e1a0f94271aefaf03a88026977948cebdedc9cccd5d61d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0},{"evidence_id":"te_14555580_2_1824_cdade6adfd1e","rank":2,"score":101.170299,"semantic_score":null,"match_reason":"timestamp_overlap","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":1824,"end_sec":3063,"text_hash":"cdade6adfd1efc71dce658190ff2fa1577eea7010b8723715bda4d9f4df46f37","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_b13069bee026","kind":"highlight","section":"highlights","start_sec":2147,"end_sec":2199,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_2_1824_cdade6adfd1e","rank":1,"score":102.098467,"semantic_score":null,"match_reason":"timestamp_overlap","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":1824,"end_sec":3063,"text_hash":"cdade6adfd1efc71dce658190ff2fa1577eea7010b8723715bda4d9f4df46f37","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_03dd56a81f16","kind":"highlight","section":"highlights","start_sec":13785,"end_sec":13847,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_13_13064_34600d048111","rank":1,"score":103.030303,"semantic_score":null,"match_reason":"timestamp_overlap","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":13064,"end_sec":14087,"text_hash":"34600d048111d6a92f60338faff64df9a5d670b4a9100bbfb8a34d4b17e5db6e","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_33da1a50f4a4","kind":"highlight","section":"highlights","start_sec":25894,"end_sec":26183,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_21_23765_09653541aca9","rank":1,"score":105.958763,"semantic_score":null,"match_reason":"timestamp_overlap","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":23765,"end_sec":26190,"text_hash":"09653541aca99d7896f74259b04d431c8ca762a331f408b94433e4e443ecfc7d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0},{"evidence_id":"te_14555580_22_26163_83bca48c64f0","rank":2,"score":100.467727,"semantic_score":null,"match_reason":"timestamp_overlap","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":26163,"end_sec":28301,"text_hash":"83bca48c64f05783990c6036a210eeda98ce28376c1b29127794f3a293f08185","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_bd6dbabde95a","kind":"highlight","section":"highlights","start_sec":17246,"end_sec":17246,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_15_15704_26027821f7d3","rank":1,"score":111.108333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":15704,"end_sec":17971,"text_hash":"26027821f7d3dedcb800594dc2469dfc4dad804268a4248723c136552d811e4f","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_07bf07a8d268","kind":"chapter","section":"chzzk_comment_timeline","start_sec":960,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_1_108_0558bb8b7c75","rank":1,"score":115.45,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":108,"end_sec":1854,"text_hash":"0558bb8b7c7568f163e1a0f94271aefaf03a88026977948cebdedc9cccd5d61d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_82085bbbb586","kind":"chapter","section":"chzzk_comment_timeline","start_sec":1860,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_2_1824_cdade6adfd1e","rank":1,"score":119.675,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":1824,"end_sec":3063,"text_hash":"cdade6adfd1efc71dce658190ff2fa1577eea7010b8723715bda4d9f4df46f37","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_b60e7baf63ca","kind":"chapter","section":"chzzk_comment_timeline","start_sec":3000,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_2_1824_cdade6adfd1e","rank":1,"score":119.675,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":1824,"end_sec":3063,"text_hash":"cdade6adfd1efc71dce658190ff2fa1577eea7010b8723715bda4d9f4df46f37","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_1b6112910be6","kind":"chapter","section":"chzzk_comment_timeline","start_sec":6815,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_6_6483_14adb7b513d3","rank":1,"score":119.016667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":6483,"end_sec":7801,"text_hash":"14adb7b513d39cbc44800c8467b3b6928c35968e25a53797edc25c4fef414d09","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_812ada273a82","kind":"chapter","section":"chzzk_comment_timeline","start_sec":7485,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_6_6483_14adb7b513d3","rank":1,"score":119.016667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":6483,"end_sec":7801,"text_hash":"14adb7b513d39cbc44800c8467b3b6928c35968e25a53797edc25c4fef414d09","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_f54c5725f1a6","kind":"chapter","section":"chzzk_comment_timeline","start_sec":8460,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_7_7777_9ccde4e089ca","rank":1,"score":124.275,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":7777,"end_sec":8464,"text_hash":"9ccde4e089ca5650687992fe66f8a3040c9ac4f365d2e277b4516372d45fd703","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0},{"evidence_id":"te_14555580_8_8442_6831771a9a07","rank":2,"score":120.308333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":8442,"end_sec":9605,"text_hash":"6831771a9a07cfde2b4cb6f24c01d1318b009742126098dd43f22df3a8bcfb71","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_ed3afa39ba22","kind":"chapter","section":"chzzk_comment_timeline","start_sec":9385,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_8_8442_6831771a9a07","rank":1,"score":120.308333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":8442,"end_sec":9605,"text_hash":"6831771a9a07cfde2b4cb6f24c01d1318b009742126098dd43f22df3a8bcfb71","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_77a021d681c3","kind":"chapter","section":"chzzk_comment_timeline","start_sec":10926,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_10_10444_f4e20dca4e71","rank":1,"score":123.558333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":10444,"end_sec":11217,"text_hash":"f4e20dca4e71667816e7342ece9b63d509f77fe5c0225f4b5c365b4bb61149a7","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_26a4411f7a41","kind":"chapter","section":"chzzk_comment_timeline","start_sec":12077,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_11_11187_7e96150f03c3","rank":1,"score":121.141667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":11187,"end_sec":12250,"text_hash":"7e96150f03c3714ea23e904fb0df9dd8ba7c90d330ce78e8e22198daafcbe81f","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_14878b76bfff","kind":"chapter","section":"chzzk_comment_timeline","start_sec":13149,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_13_13064_34600d048111","rank":1,"score":121.475,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":13064,"end_sec":14087,"text_hash":"34600d048111d6a92f60338faff64df9a5d670b4a9100bbfb8a34d4b17e5db6e","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_d53161353ced","kind":"chapter","section":"chzzk_comment_timeline","start_sec":14783,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_14_14061_d0a42089118c","rank":1,"score":116.1,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":14061,"end_sec":15729,"text_hash":"d0a42089118c7fcbf4ae24af21452d2cffe934d1f7be2f6fe415b8165881b6ef","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_55ac661cd39f","kind":"chapter","section":"chzzk_comment_timeline","start_sec":16058,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_15_15704_26027821f7d3","rank":1,"score":111.108333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":15704,"end_sec":17971,"text_hash":"26027821f7d3dedcb800594dc2469dfc4dad804268a4248723c136552d811e4f","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_fe74c66a3a22","kind":"chapter","section":"chzzk_comment_timeline","start_sec":16921,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_15_15704_26027821f7d3","rank":1,"score":111.108333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":15704,"end_sec":17971,"text_hash":"26027821f7d3dedcb800594dc2469dfc4dad804268a4248723c136552d811e4f","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_31ae02fa1799","kind":"chapter","section":"chzzk_comment_timeline","start_sec":17950,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_15_15704_26027821f7d3","rank":1,"score":111.108333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":15704,"end_sec":17971,"text_hash":"26027821f7d3dedcb800594dc2469dfc4dad804268a4248723c136552d811e4f","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_5d722762744e","kind":"chapter","section":"chzzk_comment_timeline","start_sec":18695,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_16_18002_617c3b62e0ff","rank":1,"score":121.683333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":18002,"end_sec":19000,"text_hash":"617c3b62e0ff4fd79ff5f80c1c52656de8b4bae9b7501bc7e44288153e0a985c","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_1bb722ef783a","kind":"chapter","section":"chzzk_comment_timeline","start_sec":21438,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_18_20402_d328708e4224","rank":1,"score":117.85,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":20402,"end_sec":21860,"text_hash":"d328708e42244a3133dc2d2d976b4d2d8f17a87b36a70fdadd2a7627c4cd9a41","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_d01e1bae11d2","kind":"chapter","section":"chzzk_comment_timeline","start_sec":22522,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_19_21832_d941514cc19b","rank":1,"score":124.225,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":21832,"end_sec":22525,"text_hash":"d941514cc19b046d8089b336b93b9b40e8f323ac6a0c402575cbd4444b3e60c8","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0},{"evidence_id":"te_14555580_20_22501_66dd5a1466f9","rank":2,"score":119.408333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":22501,"end_sec":23772,"text_hash":"66dd5a1466f9dd158792a3e61859fc3dfc31a1e9a4dcd6be5ffbf4c8672f0eb9","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_chapter_d04af39b43a2","kind":"chapter","section":"chzzk_comment_timeline","start_sec":23406,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_20_22501_66dd5a1466f9","rank":1,"score":119.408333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":22501,"end_sec":23772,"text_hash":"66dd5a1466f9dd158792a3e61859fc3dfc31a1e9a4dcd6be5ffbf4c8672f0eb9","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_62ae54f2abe7","kind":"highlight_candidate","section":"metadata.highlights","start_sec":13850,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_13_13064_34600d048111","rank":1,"score":121.475,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":13064,"end_sec":14087,"text_hash":"34600d048111d6a92f60338faff64df9a5d670b4a9100bbfb8a34d4b17e5db6e","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_8ea2a490bb33","kind":"highlight_candidate","section":"metadata.highlights","start_sec":11850,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_11_11187_7e96150f03c3","rank":1,"score":121.141667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":11187,"end_sec":12250,"text_hash":"7e96150f03c3714ea23e904fb0df9dd8ba7c90d330ce78e8e22198daafcbe81f","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_166fdcb95ef9","kind":"highlight_candidate","section":"metadata.highlights","start_sec":12950,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_12_12243_0ef557ada33b","rank":1,"score":122.933333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":12243,"end_sec":13091,"text_hash":"0ef557ada33b91f04e3cbbbdfbfcd1bc512572fe6d7e5db9c8611e55079d2972","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_34f0862cf46e","kind":"highlight_candidate","section":"metadata.highlights","start_sec":10580,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_10_10444_f4e20dca4e71","rank":1,"score":123.558333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":10444,"end_sec":11217,"text_hash":"f4e20dca4e71667816e7342ece9b63d509f77fe5c0225f4b5c365b4bb61149a7","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_dca175d6030e","kind":"highlight_candidate","section":"metadata.highlights","start_sec":2900,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_2_1824_cdade6adfd1e","rank":1,"score":119.675,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":1824,"end_sec":3063,"text_hash":"cdade6adfd1efc71dce658190ff2fa1577eea7010b8723715bda4d9f4df46f37","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_8c778f79d7c4","kind":"highlight_candidate","section":"metadata.highlights","start_sec":18440,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_16_18002_617c3b62e0ff","rank":1,"score":121.683333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":18002,"end_sec":19000,"text_hash":"617c3b62e0ff4fd79ff5f80c1c52656de8b4bae9b7501bc7e44288153e0a985c","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_afc4b411ca7e","kind":"highlight_candidate","section":"metadata.highlights","start_sec":8550,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_8_8442_6831771a9a07","rank":1,"score":120.308333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":8442,"end_sec":9605,"text_hash":"6831771a9a07cfde2b4cb6f24c01d1318b009742126098dd43f22df3a8bcfb71","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_a2642ed48dfb","kind":"highlight_candidate","section":"metadata.highlights","start_sec":6560,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_6_6483_14adb7b513d3","rank":1,"score":119.016667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":6483,"end_sec":7801,"text_hash":"14adb7b513d39cbc44800c8467b3b6928c35968e25a53797edc25c4fef414d09","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_238dd3e76bfe","kind":"highlight_candidate","section":"metadata.highlights","start_sec":31060,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_24_30070_d356ae36d9e4","rank":1,"score":119.183333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":30070,"end_sec":31368,"text_hash":"d356ae36d9e4cb8b7cf308b10b305a348de2d41887b670fb7afbc48d4ba0de7d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_5d11ce881ade","kind":"highlight_candidate","section":"metadata.highlights","start_sec":15608,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_14_14061_d0a42089118c","rank":1,"score":116.1,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":14061,"end_sec":15729,"text_hash":"d0a42089118c7fcbf4ae24af21452d2cffe934d1f7be2f6fe415b8165881b6ef","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_0ce4717c104d","kind":"highlight_candidate","section":"metadata.highlights","start_sec":5480,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_4_4433_d8971a047c65","rank":1,"score":119.783333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":4433,"end_sec":5659,"text_hash":"d8971a047c650c6a218d08916b238eeefe715083f2e4a11140247fa12c63b4ad","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_d0bd38fa670d","kind":"highlight_candidate","section":"metadata.highlights","start_sec":19332,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_17_18975_96266243472e","rank":1,"score":118.341667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":18975,"end_sec":20374,"text_hash":"96266243472e09e48c0b1c4e4b813b6159e246707126fb13734e7f56d8e0b68f","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_b0b97fda2b02","kind":"highlight_candidate","section":"metadata.highlights","start_sec":22238,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_19_21832_d941514cc19b","rank":1,"score":124.225,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":21832,"end_sec":22525,"text_hash":"d941514cc19b046d8089b336b93b9b40e8f323ac6a0c402575cbd4444b3e60c8","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_f442fbbff9ff","kind":"highlight_candidate","section":"metadata.highlights","start_sec":23208,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_20_22501_66dd5a1466f9","rank":1,"score":119.408333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":22501,"end_sec":23772,"text_hash":"66dd5a1466f9dd158792a3e61859fc3dfc31a1e9a4dcd6be5ffbf4c8672f0eb9","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_a604866b3066","kind":"highlight_candidate","section":"metadata.highlights","start_sec":7978,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_7_7777_9ccde4e089ca","rank":1,"score":124.275,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":7777,"end_sec":8464,"text_hash":"9ccde4e089ca5650687992fe66f8a3040c9ac4f365d2e277b4516372d45fd703","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_adc0360dc38b","kind":"highlight_candidate","section":"metadata.highlights","start_sec":22148,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_19_21832_d941514cc19b","rank":1,"score":124.225,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":21832,"end_sec":22525,"text_hash":"d941514cc19b046d8089b336b93b9b40e8f323ac6a0c402575cbd4444b3e60c8","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_c639982cf8c0","kind":"highlight_candidate","section":"metadata.highlights","start_sec":6382,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_5_5629_b5a7fb36aebf","rank":1,"score":122.725,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":5629,"end_sec":6502,"text_hash":"b5a7fb36aebf475cfad921d64f87352078a0f083ec118f7402c7c287ce232e24","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_99a7b713d658","kind":"highlight_candidate","section":"metadata.highlights","start_sec":8780,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_8_8442_6831771a9a07","rank":1,"score":120.308333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":8442,"end_sec":9605,"text_hash":"6831771a9a07cfde2b4cb6f24c01d1318b009742126098dd43f22df3a8bcfb71","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_73aaf3eeafdb","kind":"highlight_candidate","section":"metadata.highlights","start_sec":21578,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_18_20402_d328708e4224","rank":1,"score":117.85,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":20402,"end_sec":21860,"text_hash":"d328708e42244a3133dc2d2d976b4d2d8f17a87b36a70fdadd2a7627c4cd9a41","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_fd2ee02a8dca","kind":"highlight_candidate","section":"metadata.highlights","start_sec":26192,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_22_26163_83bca48c64f0","rank":1,"score":112.183333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":26163,"end_sec":28301,"text_hash":"83bca48c64f05783990c6036a210eeda98ce28376c1b29127794f3a293f08185","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_b4fcbe77bfea","kind":"highlight_candidate","section":"metadata.highlights","start_sec":29780,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_23_28329_25b36d09e5d6","rank":1,"score":115.383333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":28329,"end_sec":30083,"text_hash":"25b36d09e5d6d669f39a14823fedb8277d58bb14a8fd7e8e7abf3c0f5dd5cb5a","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_d342857de908","kind":"highlight_candidate","section":"metadata.highlights","start_sec":12540,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_12_12243_0ef557ada33b","rank":1,"score":122.933333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":12243,"end_sec":13091,"text_hash":"0ef557ada33b91f04e3cbbbdfbfcd1bc512572fe6d7e5db9c8611e55079d2972","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_93dfeb05d253","kind":"highlight_candidate","section":"metadata.highlights","start_sec":4250,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_3_3035_0767ee3fe8af","rank":1,"score":119.008333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":3035,"end_sec":4354,"text_hash":"0767ee3fe8afa827e88fd25e8803892527a8b152502f9c40347f5537152d8c30","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_1eb21a5aa01b","kind":"highlight_candidate","section":"metadata.highlights","start_sec":19130,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_17_18975_96266243472e","rank":1,"score":118.341667,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":18975,"end_sec":20374,"text_hash":"96266243472e09e48c0b1c4e4b813b6159e246707126fb13734e7f56d8e0b68f","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_71d38dbc580e","kind":"highlight_candidate","section":"metadata.highlights","start_sec":11050,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_10_10444_f4e20dca4e71","rank":1,"score":123.558333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":10444,"end_sec":11217,"text_hash":"f4e20dca4e71667816e7342ece9b63d509f77fe5c0225f4b5c365b4bb61149a7","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_7469d75b9908","kind":"highlight_candidate","section":"metadata.highlights","start_sec":9770,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_9_9576_885c9050dd04","rank":1,"score":122.583333,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":9576,"end_sec":10466,"text_hash":"885c9050dd0489ab384521da8d0fb91e827377085665dc0526ba9b7247d177f1","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]},{"segment_id":"seg_highlight_candidate_d2f66aeefb14","kind":"highlight_candidate","section":"metadata.highlights","start_sec":570,"end_sec":null,"retrieval_status":"matched","evidence_refs":[{"evidence_id":"te_14555580_1_108_0558bb8b7c75","rank":1,"score":115.45,"semantic_score":null,"match_reason":"timestamp_contains_point","source_type":"subtitle_chunk","source_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","route_ref":"chunk_srt.sliding_window","start_sec":108,"end_sec":1854,"text_hash":"0558bb8b7c7568f163e1a0f94271aefaf03a88026977948cebdedc9cccd5d61d","confidence":1.0,"public_safe":true,"raw_content_included":false,"path_ref":"work:14555580/14555580_nodate_8303779996ff_144p.srt","token_count":0}]}]}</script>
 
@@ -1392,217 +2240,9 @@ function initEditorSplitMode() {
     updateNavToggleVisibility();
     history.replaceState(null, '', editorModeUrlOn());
   }
+  function updateNavToggleVisibility() {}
+  function installNavToggleButton() {}
 
-  let navToggleButton = null;
-  function updateNavToggleVisibility() {
-    if (!navToggleButton) return;
-    navToggleButton.hidden = document.body.classList.contains('editor-split-active') || window.scrollY <= 220;
-  }
-
-  function installNavToggleButton() {
-    const links = document.querySelector('.public-report-nav-links');
-    if (!links) return;
-    navToggleButton = links.querySelector('.report-editor-nav-button');
-    if (!navToggleButton) {
-      navToggleButton = document.createElement('button');
-      navToggleButton.type = 'button';
-      navToggleButton.className = 'report-editor-nav-button';
-      navToggleButton.textContent = '편집자 모드로 보기';
-      navToggleButton.hidden = true;
-      links.appendChild(navToggleButton);
-    }
-    if (navToggleButton.dataset.editorNavBound === '1') return;
-    navToggleButton.dataset.editorNavBound = '1';
-    navToggleButton.addEventListener('click', (event) => {
-      event.preventDefault();
-      openSplitEditorMode();
-    });
-    window.addEventListener('scroll', updateNavToggleVisibility, { passive: true });
-    window.addEventListener('resize', updateNavToggleVisibility);
-    updateNavToggleVisibility();
-  }
-
-  primaryBtn.addEventListener('click', (event) => {
-    event.preventDefault();
-    openSplitEditorMode();
-  });
-  installNavToggleButton();
-
-  const params = new URLSearchParams(location.search);
-  if (params.get('editor') === '1') {
-    window.setTimeout(openSplitEditorMode, 0);
-  }
-}
-
-function initEditorEntryState() {
-  const entry = document.querySelector('[data-editor-entry]');
-  if (!entry) return;
-  const statusEl = entry.querySelector('[data-editor-entry-status]');
-  const primaryBtn = entry.querySelector('[data-editor-entry-primary]');
-  const setState = (state, message) => {
-    entry.setAttribute('data-editor-entry-state', state);
-    if (statusEl) {
-      statusEl.textContent = message || '';
-      statusEl.hidden = !message;
-    }
-  };
-  const target = document.getElementById('youtube-editor-tools');
-  setState('loading', '');
-  window.setTimeout(() => {
-    if (entry.getAttribute('data-editor-entry-state') !== 'loading') return;
-    if (target) {
-      setState('fallback', '');
-    } else {
-      setState('error', '워크스페이스 없음');
-    }
-  }, 0);
-  if (primaryBtn) {
-    primaryBtn.addEventListener('click', () => {
-      setState('loading', '');
-      window.setTimeout(() => {
-        if (target) {
-          setState('fallback', '');
-        } else {
-          setState('error', '열기 실패');
-        }
-      }, 180);
-    });
-  }
-  window.addEventListener('chzzk-editor-extension-ready', () => {
-    setState('installed', '');
-  });
-  window.addEventListener('chzzk-editor-extension-missing', () => {
-    setState('missing', '');
-  });
-  window.addEventListener('chzzk-editor-extension-error', () => {
-    setState('error', '확인 필요');
-  });
-}
-
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initViewerClipPlayers);
-} else {
-  initViewerClipPlayers();
-}
-
-</script>
-<script src="../../assets/viewer-editor-tools.js?v=8ae659bae0bf">
-
-function initEditorSplitMode() {
-  const entry = document.querySelector('[data-editor-entry]');
-  const workspace = document.getElementById('youtube-editor-tools');
-  const primaryBtn = document.querySelector('[data-editor-entry-primary]');
-  if (!entry || !workspace || !primaryBtn) return;
-
-  const explicitUrl = entry.getAttribute('data-editor-chzzk-url') || '';
-  const sourceLink = document.querySelector('a[href*="chzzk.naver.com/video/"]');
-  const chzzkUrl = explicitUrl || sourceLink?.href || '';
-  let placeholder = null;
-  let shell = null;
-
-  function setEntryState(state, message) {
-    entry.setAttribute('data-editor-entry-state', state);
-    const status = entry.querySelector('[data-editor-entry-status]');
-    if (status) {
-      status.textContent = message || '';
-      status.hidden = !message;
-    }
-  }
-
-  function editorModeUrlOff() {
-    const url = new URL(location.href);
-    url.searchParams.delete('editor');
-    return `${url.pathname}${url.search}${url.hash}`;
-  }
-
-  function editorModeUrlOn() {
-    const url = new URL(location.href);
-    url.searchParams.set('editor', '1');
-    if (!url.hash) url.hash = 'youtube-editor-tools';
-    return `${url.pathname}${url.search}${url.hash}`;
-  }
-
-  function closeSplitEditorMode() {
-    if (!shell) return;
-    if (placeholder && workspace) {
-      placeholder.replaceWith(workspace);
-    }
-    shell.remove();
-    shell = null;
-    placeholder = null;
-    document.body.classList.remove('editor-split-active');
-    setEntryState('fallback', '');
-    updateNavToggleVisibility();
-    history.replaceState(null, '', editorModeUrlOff());
-  }
-
-  function openSplitEditorMode() {
-    if (!chzzkUrl) {
-      workspace.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      setEntryState('error', 'CHZZK 주소 없음');
-      return;
-    }
-    if (shell) return;
-    placeholder = document.createElement('div');
-    placeholder.className = 'editor-split-placeholder';
-    placeholder.setAttribute('data-editor-split-placeholder', '');
-    workspace.replaceWith(placeholder);
-
-    shell = document.createElement('section');
-    shell.className = 'editor-split-shell';
-    shell.setAttribute('data-editor-split-shell', '');
-    shell.setAttribute('aria-label', 'CHZZK 원본과 편집자 워크스페이스 나란히 보기');
-    shell.innerHTML = `
-      <div class="editor-split-player" data-editor-split-player>
-        <div class="editor-split-toolbar">
-          <strong class="editor-split-title">CHZZK 원본 화면</strong>
-          <div class="editor-split-actions">
-            <a class="editor-split-action" href="${chzzkUrl}" target="_blank" rel="noopener">새 탭</a>
-            <button type="button" class="editor-split-action" data-editor-split-close>요약으로 돌아가기</button>
-          </div>
-        </div>
-        <iframe class="editor-split-frame" data-editor-chzzk-frame src="${chzzkUrl}" title="CHZZK 원본 방송 화면" allow="autoplay; fullscreen; picture-in-picture; encrypted-media" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        <div class="editor-split-fallback">CHZZK가 iframe 재생을 제한하면 왼쪽의 새 탭 버튼으로 원본을 열고, 오른쪽 워크스페이스에서 컷 후보를 계속 확인합니다.</div>
-      </div>
-      <div class="editor-split-workspace" data-editor-split-workspace></div>
-    `;
-    shell.querySelector('[data-editor-split-workspace]').appendChild(workspace);
-    shell.querySelector('[data-editor-split-close]').addEventListener('click', closeSplitEditorMode);
-    document.body.appendChild(shell);
-    document.body.classList.add('editor-split-active');
-    setEntryState('fallback', '');
-    updateNavToggleVisibility();
-    history.replaceState(null, '', editorModeUrlOn());
-  }
-
-  let navToggleButton = null;
-  function updateNavToggleVisibility() {
-    if (!navToggleButton) return;
-    navToggleButton.hidden = document.body.classList.contains('editor-split-active') || window.scrollY <= 220;
-  }
-
-  function installNavToggleButton() {
-    const links = document.querySelector('.public-report-nav-links');
-    if (!links) return;
-    navToggleButton = links.querySelector('.report-editor-nav-button');
-    if (!navToggleButton) {
-      navToggleButton = document.createElement('button');
-      navToggleButton.type = 'button';
-      navToggleButton.className = 'report-editor-nav-button';
-      navToggleButton.textContent = '편집자 모드로 보기';
-      navToggleButton.hidden = true;
-      links.appendChild(navToggleButton);
-    }
-    if (navToggleButton.dataset.editorNavBound === '1') return;
-    navToggleButton.dataset.editorNavBound = '1';
-    navToggleButton.addEventListener('click', (event) => {
-      event.preventDefault();
-      openSplitEditorMode();
-    });
-    window.addEventListener('scroll', updateNavToggleVisibility, { passive: true });
-    window.addEventListener('resize', updateNavToggleVisibility);
-    updateNavToggleVisibility();
-  }
 
   primaryBtn.addEventListener('click', (event) => {
     event.preventDefault();

@@ -3,58 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VOD 요약 허브 — 스트리머 목록</title>
-<link rel="stylesheet" href="assets/app.css?v=815f9fe78236">
+<title>CVA — 보고 싶은 순간을 바로 찾기</title>
+<link rel="stylesheet" href="assets/app.css?v=7f9ee6ca6ffe">
 </head>
-<body>
+<body class="hub-home">
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="index.html">VOD 요약 허브</a>
+    <a class="brand" href="index.html">CVA</a>
     <nav>
-      <a href="index.html" class="active">스트리머</a>
+      <a href="index.html#streamers" class="active">스트리머</a>
       <a href="search.html">검색</a>
     </nav>
   </div>
 </header>
 
 <main class="wrap main">
-  <section class="kpi-hero" id="kpi-hero">
-    <div class="kpi-stat">
-      <div class="kpi-num" id="kpi-streamers">—</div>
-      <div class="kpi-label">스트리머</div>
-    </div>
-    <div class="kpi-stat">
-      <div class="kpi-num" id="kpi-vods">—</div>
-      <div class="kpi-label">VOD 요약</div>
-    </div>
-    <div class="kpi-stat">
-      <div class="kpi-num" id="kpi-updated">—</div>
-      <div class="kpi-label">최근 갱신</div>
-    </div>
+  <section class="home-search" aria-labelledby="home-search-title">
+    <h1 id="home-search-title">보고 싶은 순간을 바로 찾아보세요</h1>
+    <form class="home-search-form" action="search.html" method="get">
+      <div class="search-input-wrap">
+        <input name="q" type="search" placeholder="방송 제목, 게임, 키워드 검색"
+               autocomplete="off" aria-label="방송 요약 검색어">
+      </div>
+      <button type="submit">검색</button>
+    </form>
+    <p class="home-search-hint">스트리머를 몰라도 모든 방송 요약을 검색할 수 있습니다.</p>
   </section>
 
-  <p class="page-hint">
-    스트리머를 골라 모든 방송 요약을 보거나, <kbd>/</kbd> 키를 눌러 바로 검색할 수 있습니다.
-  </p>
+  <section class="summary-strip" id="kpi-hero" aria-label="공개 요약 현황">
+    <div class="summary-stat"><span>스트리머</span><strong id="kpi-streamers">—</strong></div>
+    <div class="summary-stat"><span>VOD 요약</span><strong id="kpi-vods">—</strong></div>
+    <div class="summary-stat"><span>최근 갱신</span><strong id="kpi-updated">—</strong></div>
+  </section>
 
   <section id="recent-section" hidden>
     <div class="section-head">
-      <span class="section-title">최근 업데이트</span>
-      <span class="section-aside"><a href="search.html">전체 검색 →</a></span>
+      <h2 class="section-title">최근 방송</h2>
+      <span class="section-aside"><a href="search.html">전체 보기 <span aria-hidden="true">→</span></a></span>
     </div>
     <ul id="recent-strip" class="recent-strip"></ul>
   </section>
 
-  <section id="storytimeline-section" class="storytimeline-section" hidden>
-    <div class="section-head">
-      <span class="section-title">스토리 타임라인</span>
-      <span class="section-aside">게임·드라마·영화 이야기를 장면별로</span>
-    </div>
-    <ul id="storytimeline-list" class="storytimeline-grid"></ul>
-  </section>
+  <a id="storytimeline-section" class="storytimeline-link" href="storytimeline/">
+    <strong>스토리 타임라인</strong>
+    <span>게임·드라마·영화 이야기를 장면별로</span>
+    <span class="storytimeline-link__action">전체 보기 <span aria-hidden="true">→</span></span>
+  </a>
 
-  <div class="section-head">
-    <span class="section-title">스트리머</span>
+  <div class="section-head" id="streamers">
+    <h2 class="section-title">스트리머</h2>
   </div>
   <ul id="streamer-list" class="streamer-grid"></ul>
   <div id="empty" class="empty" hidden>
@@ -68,7 +65,7 @@
   </div>
 </main>
 
-<script src="assets/app.js?v=3012962eb358"></script>
+<script src="assets/app.js?v=4f3bca8e9149"></script>
 <script>
 window.ACG.renderStreamerIndex();
 </script>

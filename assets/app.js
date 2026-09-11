@@ -151,29 +151,6 @@
     const emptyEl = document.getElementById("empty");
     const recentEl = document.getElementById("recent-strip");
     const recentSec = document.getElementById("recent-section");
-    const storySec = document.getElementById("storytimeline-section");
-    const storyList = document.getElementById("storytimeline-list");
-
-    if (storySec && storyList) {
-      fetchJson("storytimelines.json")
-        .then((payload) => {
-          const rows = Array.isArray(payload.units)
-            ? payload.units.filter((row) => row.publication_status === "publishable")
-            : [];
-          if (!rows.length) return;
-          storyList.innerHTML = rows.map((row) => `
-<li class="storytimeline-card">
-  <a href="${escapeHtml(String(row.route || "").replace(/^\//, ""))}">
-    <span class="storytimeline-card__work">${escapeHtml(row.work_title)}</span>
-    <strong>${escapeHtml(row.unit_label)}</strong>
-    <p>${escapeHtml(row.intro)}</p>
-    <span class="storytimeline-card__meta">장면 ${Number(row.event_count || 0).toLocaleString()}개${row.stream_count ? ` · 같이보기 ${Number(row.stream_count).toLocaleString()}명` : ""}</span>
-  </a>
-</li>`).join("");
-          storySec.hidden = false;
-        })
-        .catch(() => { storySec.hidden = true; });
-    }
 
     fetchJson("index.json")
       .then((idx) => {
@@ -209,6 +186,7 @@
         if (recentEl && recentSec) {
           const renderRecent = (rows) => {
             const top = rows
+              .filter((row) => row.kind !== "bundle")
               .slice()
               .sort((a, b) => String(b.published_at || b.created_at || "").localeCompare(String(a.published_at || a.created_at || "")))
               .slice(0, 5);
@@ -223,7 +201,10 @@
                 : (r.ended_at ? "종료 " + fmtRelative(r.ended_at) : fmtRelative(r.published_at));
               const extraMeta = isBundle && r.vod_count
                 ? `<span class="dot">·</span><span>VOD ${Number(r.vod_count).toLocaleString()}개</span>`
-                : (!isBundle && r.duration_sec ? `<span class="dot">·</span><span>${escapeHtml(secToHms(r.duration_sec))}</span>` : "");
+                : [
+                    r.duration_sec ? `<span class="dot">·</span><span>${escapeHtml(secToHms(r.duration_sec))}</span>` : "",
+                    r.platform_category ? `<span class="meta-cat">${escapeHtml(r.platform_category)}</span>` : "",
+                  ].join("");
               const badge = isBundle ? "통합 요약" : (r.streamer_name || r.streamer_id || "");
               return `
 <li class="recent-card">
@@ -286,8 +267,8 @@
 
     if (countEl) {
       countEl.textContent = _streamerCategory
-        ? `${rows.length}개 (전체 ${_streamerReports.length}개 중)`
-        : `${rows.length}개`;
+        ? `VOD ${rows.length}개 · 전체 요약 ${_streamerReports.length}개`
+        : `요약 ${rows.length}개`;
     }
 
     listEl.innerHTML = rows.map((v) => `
@@ -324,7 +305,7 @@
     }
   }
 
-  function renderCategoryFilter(sid, vods) {
+  function renderCategoryFilter(sid, vods, reports) {
     const wrap = document.getElementById("category-filter");
     const chipsEl = document.getElementById("category-filter-chips");
     if (!wrap || !chipsEl) return;
@@ -337,16 +318,18 @@
     if (counts.size <= 1) { wrap.hidden = true; return; }
     const ranked = [...counts.entries()].sort((a, b) => b[1] - a[1]);
     const html = [
-      `<button type="button" class="filter-chip${_streamerCategory === "" ? " is-active" : ""}" data-cat="">전체 <span class="chip-count">${vods.length}</span></button>`,
-      ...ranked.map(([cat, n]) => `<button type="button" class="filter-chip${_streamerCategory === cat ? " is-active" : ""}" data-cat="${escapeHtml(cat)}">${escapeHtml(cat)} <span class="chip-count">${n}</span></button>`),
+      `<button type="button" class="filter-chip${_streamerCategory === "" ? " is-active" : ""}" data-cat="" aria-pressed="${String(_streamerCategory === "")}">전체 요약 <span class="chip-count">${reports.length}</span></button>`,
+      ...ranked.map(([cat, n]) => `<button type="button" class="filter-chip${_streamerCategory === cat ? " is-active" : ""}" data-cat="${escapeHtml(cat)}" aria-pressed="${String(_streamerCategory === cat)}">${escapeHtml(cat)} <span class="chip-count">${n}</span></button>`),
     ].join("");
     chipsEl.innerHTML = html;
     wrap.hidden = false;
     chipsEl.querySelectorAll(".filter-chip").forEach((btn) => {
       btn.addEventListener("click", () => {
         _streamerCategory = btn.dataset.cat || "";
-        chipsEl.querySelectorAll(".filter-chip").forEach((b) =>
-          b.classList.toggle("is-active", b === btn));
+        chipsEl.querySelectorAll(".filter-chip").forEach((b) => {
+          b.classList.toggle("is-active", b === btn);
+          b.setAttribute("aria-pressed", String(b === btn));
+        });
         setUrlParam("cat", _streamerCategory);
         renderStreamerVodList(sid);
       });
@@ -378,7 +361,7 @@
         const reports = Array.isArray(doc.reports) && doc.reports.length
           ? doc.reports
           : (Array.isArray(doc.vods) ? doc.vods : []);
-        metaEl.textContent = `${s.platform} · VOD ${s.vod_count}편${bundles.length ? ` · 통합 요약 ${bundles.length}개` : ""}`;
+        metaEl.textContent = `${s.platform} · VOD 요약 ${s.vod_count}편${bundles.length ? ` · 묶음 ${bundles.length}개` : ""}`;
         if (!reports.length) {
           emptyEl.hidden = false;
           return;
@@ -407,7 +390,7 @@
 
         if (controlsEl) controlsEl.hidden = false;
         bindStreamerControls(sid);
-        renderCategoryFilter(sid, _streamerVods);
+        renderCategoryFilter(sid, _streamerVods, _streamerReports);
         renderStreamerVodList(sid);
       })
       .catch((e) => {
@@ -556,8 +539,8 @@
     if (filterEl && chipsEl) {
       if (ranked.length > 1) {
         const chipHtml = [
-          `<button type="button" class="filter-chip${_activeStreamerFilter === "" ? " is-active" : ""}" data-sid="">전체 <span class="chip-count">${allHits.length}</span></button>`,
-          ...ranked.map((r) => `<button type="button" class="filter-chip${_activeStreamerFilter === r.id ? " is-active" : ""}" data-sid="${escapeHtml(r.id)}">${escapeHtml(r.name)} <span class="chip-count">${r.count}</span></button>`),
+          `<button type="button" class="filter-chip${_activeStreamerFilter === "" ? " is-active" : ""}" data-sid="" aria-pressed="${String(_activeStreamerFilter === "")}">전체 <span class="chip-count">${allHits.length}</span></button>`,
+          ...ranked.map((r) => `<button type="button" class="filter-chip${_activeStreamerFilter === r.id ? " is-active" : ""}" data-sid="${escapeHtml(r.id)}" aria-pressed="${String(_activeStreamerFilter === r.id)}">${escapeHtml(r.name)} <span class="chip-count">${r.count}</span></button>`),
         ].join("");
         chipsEl.innerHTML = chipHtml;
         filterEl.hidden = false;
@@ -579,12 +562,12 @@
       : allHits;
 
     metaEl.textContent = _activeStreamerFilter
-      ? `"${query}" 에 대해 ${filtered.length}건 (전체 ${allHits.length}건 중).`
-      : `"${query}" 에 대해 ${allHits.length}건.`;
+      ? `“${query}” 검색 결과 ${filtered.length}개 · 전체 ${allHits.length}개`
+      : `“${query}” 검색 결과 ${allHits.length}개`;
 
     resEl.innerHTML = filtered
       .map((r) => {
-        const snippets = (r._snippets || [])
+        const snippets = (r._snippets || []).slice(0, 2)
           .map((s) => `<div class="search-snippet">${highlight(s, query)}</div>`)
           .join("");
         const isBundle = r.kind === "bundle";
@@ -606,6 +589,9 @@
 </li>`;
       })
       .join("");
+    if (!filtered.length) {
+      resEl.innerHTML = `<li class="empty search-empty">“${escapeHtml(query)}”와 일치하는 장면을 찾지 못했습니다.<span class="empty-hint">검색어를 짧게 줄이거나 게임·인물 이름으로 다시 찾아보세요.</span></li>`;
+    }
   }
 
   function renderDiscoverChips(rows) {
@@ -676,7 +662,8 @@
       });
       renderSearchResults(hits, query);
     }).catch((e) => {
-      metaEl.textContent = `검색 인덱스를 불러오지 못했습니다: ${e.message}`;
+      metaEl.textContent = "검색 결과를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.";
+      console.warn("loadSearchIndex failed:", e);
     });
   }
 

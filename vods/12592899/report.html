@@ -1181,16 +1181,16 @@
   }
 
 </style>
-<link rel="stylesheet" href="../../assets/viewer-editor-tools.css?v=0fab50c0453b">
+<link rel="stylesheet" href="../../assets/viewer-editor-tools.css?v=d67f1ba67ea5">
 </head>
-<body>
+<body data-default-editor-mode="companion">
 <nav class="public-report-nav" data-report-block="public-report-nav" aria-label="리포트 이동">
   <div class="public-report-nav-inner">
-    <a class="public-report-brand" href="../../index.html">VOD 요약 허브</a>
+    <a class="public-report-brand" href="../../index.html">CVA</a>
     <div class="public-report-nav-links">
       <a class="public-report-nav-link" href="../../index.html">스트리머</a>
       <a class="public-report-nav-link" href="../../search.html">검색</a>
-      <button type="button" class="report-editor-nav-button" hidden>편집자 모드로 보기</button>
+      <a class="public-report-nav-link public-report-editor-link" href="#youtube-editor-tools">장면 도구</a>
     </div>
   </div>
 </nav>
@@ -1220,8 +1220,9 @@
     <span>리그 오브 레전드</span>
     <span class="top-vod-link-row"><a class="top-vod-link" href="https://chzzk.naver.com/video/12592899" target="_blank" rel="noopener" title="치지직에서 원본 방송을 새 탭으로 엽니다">원본 방송 보기</a></span></div>
 
-  <div class="editor-jump report-editor-entry" data-editor-entry data-editor-entry-state="loading" data-editor-split="chzzk-workspace" data-editor-video-no="12592899" data-editor-chzzk-url="https://chzzk.naver.com/video/12592899">
-    <button type="button" class="report-editor-inline-button" data-editor-entry-primary data-report-editor="toggle" aria-label="편집자 모드로 보기: 왼쪽 CHZZK 화면과 오른쪽 편집자 워크스페이스 열기">편집자 모드로 보기</button>
+  <div class="editor-jump report-editor-entry" data-editor-entry data-editor-entry-state="fallback" data-editor-mode="companion" data-editor-video-no="12592899" data-editor-chzzk-url="https://chzzk.naver.com/video/12592899">
+    <a class="report-editor-inline-button editor-companion-entry-link" data-editor-entry-primary href="https://chzzk.naver.com/video/12592899" target="ttaem-chzzk-companion" rel="opener" aria-label="CHZZK VOD 링크. 우클릭 후 분할 보기에서 링크 열기">CHZZK VOD 링크</a>
+    <span class="editor-entry-status" data-editor-entry-status hidden></span>
     <a class="editor-jump-link report-editor-tool-link" href="#youtube-editor-tools" aria-label="유튜브 편집자용 장면 도구로 이동" title="장면 도구로 이동">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <path d="M7 4v16"></path>
